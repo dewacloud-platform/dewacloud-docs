@@ -1,11 +1,10 @@
 name: Deploy to Dewacloud
 
 on:
-  push:
-    branches:
-      - main
-    # Review gh actions docs if you want to further define triggers, paths, etc
-    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
+  workflow_run:
+    workflows: ["Test deployment"]
+    types:
+      - completed
 
 jobs:
   build:
@@ -38,7 +37,7 @@ jobs:
 
       - name: Deploy to NFS Node
         run: |
-          rsync -e "ssh -i /home/runner/.ssh/id_rsa -p 3022" -avz --delete ./build/ 49879-5737@gate.infra.dewacloud.com:/data
+          rsync -e "ssh -i ~/.ssh/id_rsa -p 3022" -avz --delete ./build/ 49879-5737@gate.infra.dewacloud.com:/data
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
 
