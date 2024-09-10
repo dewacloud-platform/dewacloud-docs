@@ -1,4 +1,4 @@
-name: Deploy to Dewacloud
+name: Deploy Docusaurus Site
 
 on:
   workflow_run:
@@ -7,41 +7,20 @@ on:
       - completed
 
 jobs:
-  build:
-    name: Build Docusaurus
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          cache: npm
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-      - name: Install dependencies
-        run: npm ci
-      - name: Build website
-        run: npm run build
-
-      - name: Set up SSH agent
-        uses: webfactory/ssh-agent@v0.5.3
-        with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-
-      - name: Add SSH Gate to known hosts
+      - name: Setup SSH Key
         run: |
           mkdir -p ~/.ssh
-          ssh-keyscan -p 3022 gate.infra.dewacloud.com >> ~/.ssh/known_hosts
-          cat ~/.ssh/known_hosts  # Check if the host was added correctly
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
 
-      - name: Deploy to NFS Node
+      - name: Deploy to Virtuozzo
         run: |
           rsync -e "ssh -i ~/.ssh/id_rsa -p 3022" -avz --delete ./build/ 49879-5737@gate.infra.dewacloud.com:/data
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-
-      - name: Clean up SSH
-        run: |
-          rm -rf ~/.ssh/id_rsa
-          rm -rf ~/.ssh/known_hosts
