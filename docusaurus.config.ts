@@ -66,6 +66,8 @@ const config: Config = {
     ],
   ],
 
+  themes: ["docusaurus-theme-search-typesense"],
+
   themeConfig: {
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
@@ -138,6 +140,28 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+    },
+    typesense: {
+      // Replace this with the name of your index/collection.
+      // It should match the "index_name" entry in the scraper's "config.json" file.
+      typesenseCollectionName: "dewacloud-docs",
+
+      typesenseServerConfig: {
+        nodes: [
+          {
+            host: "typesense-dewacloud-docs.user.cloudjkt02.com",
+            port: 443,
+            protocol: "https",
+          },
+        ],
+        apiKey: "xyz",
+      },
+
+      // Optional: Typesense search parameters: https://typesense.org/docs/0.24.0/api/search.html#search-parameters
+      typesenseSearchParameters: {},
+
+      // Optional
+      contextualSearch: true,
     },
   } satisfies Preset.ThemeConfig,
 };
