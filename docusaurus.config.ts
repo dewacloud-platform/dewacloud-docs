@@ -123,8 +123,8 @@ const config: Config = {
           title: "More",
           items: [
             {
-              label: "Blog",
-              to: "/blog",
+              label: "Release Notes",
+              to: "/release-notes",
             },
             {
               label: "GitHub",
