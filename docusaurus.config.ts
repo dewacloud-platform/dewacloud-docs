@@ -154,7 +154,7 @@ const config: Config = {
             protocol: "https",
           },
         ],
-        apiKey: "xyz",
+        apiKey: "g8WdShs2VzOtVzuDEWE27p0RI8CDnJyx",
       },
 
       // Optional: Typesense search parameters: https://typesense.org/docs/0.24.0/api/search.html#search-parameters
