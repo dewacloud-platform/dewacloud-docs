@@ -1,5 +1,5 @@
 ---
 sidebar_position: 1
-title: Ruby Dev Center 
+slug: /ruby-dev-center
+title: Ruby Dev Center
 ---
-# Ruby Developer's Center

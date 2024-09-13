@@ -1,6 +1,5 @@
 ---
 sidebar_position: 1
+slug: /java-dev-center
 title: Java Dev Center
 ---
-# Java Developer's Center
-**SSH (Secure Shell)** adalah

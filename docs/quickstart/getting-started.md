@@ -2,7 +2,7 @@
 sidebar_position: 1
 slug: /getting-started
 ---
-# Memulai
+# Getting Started
 
 Dengan antarmuka pengguna yang intuitif di platform, Anda dapat dengan cepat meng-deploy aplikasi Anda ke platform cloud tanpa perlu melakukan konfigurasi yang kompleks.
 

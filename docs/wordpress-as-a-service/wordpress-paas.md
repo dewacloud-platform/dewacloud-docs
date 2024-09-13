@@ -1,5 +1,5 @@
 ---
 sidebar_position: 1
+slug: /wordpress-paas
+title: WordPress PaaS
 ---
-# WordPress PaaS 
-The first step of any applicaiton hosting is a creation of the environment

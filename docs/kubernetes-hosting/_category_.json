@@ -1,7 +1,7 @@
 {
-    "label": "Hosting Kubernetes",
-    "position": 16,
-    "link": {
-      "type": "generated-index"
-    }
+  "label": "Kubernetes Hosting",
+  "position": 17,
+  "link": {
+    "type": "generated-index"
   }
+}

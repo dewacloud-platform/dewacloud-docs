@@ -1,6 +1,5 @@
 ---
 sidebar_position: 1
+slug: /zero-code-change-deploy
+title: Zero Code Change Deploy
 ---
-# Zero Code Change Deploy 
-## Zero Code Change Deploy with No Vendor Lock-In for Smooth Migration across Cloud Platforms
-The first step of any applicaiton hosting is a creation of the environment

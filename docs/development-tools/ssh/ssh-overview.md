@@ -1,5 +1,5 @@
 ---
 sidebar_position: 1
+slug: /ssh-overview
+title: SSH Overview
 ---
-# SSH Gate Overview
-**SSH (Secure Shell)** adalah

@@ -1,8 +1,7 @@
 {
-    "label": "Quickstart",
-    "position": 1,
-    "link": {
-      "type": "generated-index",
-      "description": "Pelajari platform Dewacloud dengan cepat."
-    }
+  "label": "Quickstart",
+  "position": 1,
+  "link": {
+    "type": "generated-index"
   }
+}

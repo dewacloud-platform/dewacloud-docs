@@ -1,5 +1,5 @@
 ---
 sidebar_position: 1
+slug: /data-storage-overview
+title: Data Storage Overview
 ---
-# Data Storage Overview
-The first step of any applicaiton hosting is a creation of the environment
