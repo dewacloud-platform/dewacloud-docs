@@ -1,5 +1,5 @@
 ---
 sidebar_position: 9
-slug: /mount-points
+slug: /cli-mount-points
 title: Mount Points
 ---

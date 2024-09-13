@@ -1,5 +1,5 @@
 ---
 sidebar_position: 7
-slug: /encryption-in-transit-add-on
+slug: /mongodb-ssl-addon
 title: Encryption in Transit Add-On
 ---

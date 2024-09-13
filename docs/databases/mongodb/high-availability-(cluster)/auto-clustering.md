@@ -1,5 +1,5 @@
 ---
 sidebar_position: 1
-slug: /auto-clustering
+slug: /mongodb-auto-clustering
 title: Auto-Clustering
 ---

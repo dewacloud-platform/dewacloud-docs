@@ -1,5 +1,5 @@
 ---
 sidebar_position: 1
-slug: /java-connection
+slug: /java-connection-to-postgresql
 title: Java Connection
 ---

@@ -1,5 +1,5 @@
 ---
 sidebar_position: 4
-slug: /multiple-domains-for-glassfish
+slug: /java-multiple-domains-for-glassfish
 title: Multiple Domains for GlassFish
 ---

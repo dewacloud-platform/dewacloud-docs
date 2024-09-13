@@ -1,5 +1,5 @@
 ---
 sidebar_position: 1
-slug: /vertical-scaling
+slug: /kubernetes-vertical-scaling
 title: Vertical Scaling
 ---

@@ -1,5 +1,5 @@
 ---
 sidebar_position: 2
-slug: /multi-region-cluster
+slug: /postgresql-multi-region-cluster
 title: Multi-Region Cluster
 ---

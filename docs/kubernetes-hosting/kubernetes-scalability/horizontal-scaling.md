@@ -1,5 +1,5 @@
 ---
 sidebar_position: 2
-slug: /horizontal-scaling
+slug: /kubernetes-horizontal-scaling
 title: Horizontal Scaling
 ---

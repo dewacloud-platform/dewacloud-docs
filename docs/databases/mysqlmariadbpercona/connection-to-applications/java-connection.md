@@ -1,5 +1,5 @@
 ---
 sidebar_position: 1
-slug: /java-connection
+slug: /connection-to-mysql
 title: Java Connection
 ---

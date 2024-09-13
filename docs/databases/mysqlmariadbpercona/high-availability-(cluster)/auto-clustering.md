@@ -1,5 +1,5 @@
 ---
 sidebar_position: 1
-slug: /auto-clustering
-title: Auto-Clustering
+slug: /db-auto-clustering
+title: Auto-Сlustering
 ---

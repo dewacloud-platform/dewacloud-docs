@@ -1,5 +1,5 @@
 ---
 sidebar_position: 5
-slug: /encryption-in-transit-add-on
+slug: /db-ssl-addon
 title: Encryption in Transit Add-On
 ---

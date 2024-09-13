@@ -1,5 +1,5 @@
 ---
 sidebar_position: 4
-slug: /multi-region-cluster
+slug: /mariadb-multi-region-cluster
 title: Multi-Region Cluster
 ---

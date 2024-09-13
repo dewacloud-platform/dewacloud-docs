@@ -1,5 +1,5 @@
 ---
 sidebar_position: 8
-slug: /remote-access
+slug: /remote-access-to-mongodb
 title: Remote Access
 ---

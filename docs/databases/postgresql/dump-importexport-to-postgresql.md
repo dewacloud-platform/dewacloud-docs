@@ -1,5 +1,5 @@
 ---
 sidebar_position: 6
-slug: /dump-importexport-to-postgresql
+slug: /dump-postgres
 title: Dump Import/Export to PostgreSQL
 ---
