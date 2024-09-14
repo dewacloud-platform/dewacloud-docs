@@ -1,4 +1,8 @@
-```markdown
+---
+sidebar_position: 1
+slug: /getting-started
+title: Getting Started
+---
 # Getting Started
 
 Dengan UI platform yang intuitif, Anda dapat dengan cepat melakukan deployment aplikasi ke platform cloud tanpa perlu melakukan konfigurasi yang kompleks.
@@ -136,6 +140,3 @@ Itu saja! Nikmati menggunakan platform ini!
   * [Dashboard Guide](<https://docs.dewacloud.com/dashboard-guide/>)
   * [Setting Up Environment](<https://docs.dewacloud.com/setting-up-environment/>)
   * [Deployment Guide](<https://docs.dewacloud.com/deployment-guide/>)
-```
-
-Note that I've translated non-technical text while adhering to your instructions regarding specific guidelines.

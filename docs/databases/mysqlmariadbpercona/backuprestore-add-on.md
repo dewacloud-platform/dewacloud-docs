@@ -1,5 +1,5 @@
 ---
 sidebar_position: 3
-slug: /backuprestore-add-on
+slug: /db-backup-restore-addon
 title: Backup/Restore Add-On
 ---
