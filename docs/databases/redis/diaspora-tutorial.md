@@ -1,5 +1,5 @@
 ---
 sidebar_position: 5
-slug: /diaspora*-tutorial
+slug: /diaspora-tutorial
 title: Diaspora* Tutorial
 ---

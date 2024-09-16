@@ -1,5 +1,5 @@
 ---
 sidebar_position: 2
-slug: /diaspora*
+slug: /diaspora
 title: Diaspora*
 ---
