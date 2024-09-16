@@ -1,7 +1,8 @@
 ---
 sidebar_position: 1
 slug: /.net-core
-title: NET Core
+title: .NET Core
+
 ---
 
 # Server Aplikasi .NET Core
