@@ -1,5 +1,5 @@
 ---
 sidebar_position: 12
-slug: /pricing-model-overview
+slug: /pricing-model
 title: Pricing Model Overview
 ---

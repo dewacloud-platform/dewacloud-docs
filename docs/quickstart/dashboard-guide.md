@@ -17,19 +17,19 @@ Tutorial pendek dan interaktif tersedia langsung di dalam dashboard melalui opsi
 
 Mari mulai eksplorasi mendetail dari dashboard platform:
 
-- [Creating and Managing Environments](https://docs.dewacloud.com/#creating-and-managing-environments)
-- [Function Icons for Environments](https://docs.dewacloud.com/#function-icons-for-environments)
-- [Environment Settings](https://docs.dewacloud.com/#environment-settings)
-- [Function Icons for Each Instance](https://docs.dewacloud.com/#function-icons-for-each-instance)
-- [Import](https://docs.dewacloud.com/#import)
-- [Marketplace](https://docs.dewacloud.com/#marketplace)
-- [Environment Groups](https://docs.dewacloud.com/#environment-groups)
-- [Dashboard Search](https://docs.dewacloud.com/#dashboard-search)
-- [Deployment Manager](https://docs.dewacloud.com/#deployment-manager)
-- [Tasks Panel](https://docs.dewacloud.com/#tasks-panel)
-- [User Settings](https://docs.dewacloud.com/#user-settings)
-- [Upgrade Trial Account & Balance](https://docs.dewacloud.com/#upgrade-trial-account--balance)
-- [Help and Account Options](https://docs.dewacloud.com/#help-and-account-options)
+- [Creating and Managing Environments](#creating-and-managing-environments)
+- [Function Icons for Environments](#function-icons-for-environments)
+- [Environment Settings](#environment-settings)
+- [Function Icons for Each Instance](#function-icons-for-each-instance)
+- [Import](#import)
+- [Marketplace](#marketplace)
+- [Environment Groups](#environment-groups)
+- [Dashboard Search](#dashboard-search)
+- [Deployment Manager](#deployment-manager)
+- [Tasks Panel](#tasks-panel)
+- [User Settings](#user-settings)
+- [Upgrade Trial Account & Balance](#upgrade-trial-account--balance)
+- [Help and Account Options](#help-and-account-options)
 
 ## Creating and Managing Environments{#creating-and-managing-environments}
 
@@ -53,7 +53,7 @@ Anda dapat menemukan informasi berikut pada kolom:
 
 - **Name** - mencakup nama (atau [alias](https://docs.dewacloud.com/environment-aliases/) jika ditentukan) dari environment dan domennya. Dengan menggunakan ikon _arrow_ sebelum nama environment, Anda bisa memperluas daftar node yang ada di dalamnya.
 - **Status** - menunjukkan status terkini dari environment Anda (_Running_, _Sleeping_, _Stopped_, _Creating_, _Launching_, _Stopping_, _Cloning_, _Redeploying_, _Exporting_, _Installing_, _Migrating_, _Deleting_).
-- **Tags** - menampilkan _[Environment Groups](https://docs.dewacloud.com/#environment-groups)_ dan [region](https://docs.dewacloud.com/environment-regions/) dari environment ini, versi (_tags_) dari container, dan nama dari _project_ yang dideploy.
+- **Tags** - menampilkan _[Environment Groups](https://docs.dewacloud.com/docs#environment-groups)_ dan [region](https://docs.dewacloud.com/environment-regions/) dari environment ini, versi (_tags_) dari container, dan nama dari _project_ yang dideploy.
 - **Usage** - menunjukkan beban saat ini (misal: penggunaan cloudlets dan ruang disk). Anda juga dapat menemukan tombol _**Billing History**_ ![billing history icon](#) di sini, yang mengarah ke tab terpisah dengan [statistik pengeluaran Anda](https://docs.dewacloud.com/monitoring-consumed-resources/#billing-history) pada environment saat ini.
 
 ## Function Icons for Environments{#function-icons-for-environments}
@@ -70,7 +70,7 @@ Arahkan kursor ke environment yang berjalan untuk melihat beberapa ikon untuk pe
 Opsi ini mungkin tidak tersedia jika environment Anda tidak termasuk server aplikasi dan layer load balancer.
 :::
 
-3. Klik pada **Settings** ![environment settings icon](#) untuk membuka tab terpisah dengan berbagai [configuration panels](https://docs.dewacloud.com/#environment-settings), cek deskripsi rinci di bagian yang ditautkan.
+3. Klik pada **Settings** ![environment settings icon](#) untuk membuka tab terpisah dengan berbagai [configuration panels](#environment-settings), cek deskripsi rinci di bagian yang ditautkan.
 
 4. Untuk **Change Environment Topology**, pilih opsi yang diperlukan ![change environment topology icon](#). Lakukan perubahan yang diperlukan dalam dialog _Topology Wizard_ yang muncul dan klik **Apply** untuk menyerahkannya.
 
@@ -408,7 +408,7 @@ Dua bagian terakhir dari dashboard adalah **Help** dan **Account** (alamat email
 
 2. Dalam daftar drop-down _**Account**_ (alamat email), opsi berikut tersedia:
 
-- **Settings** mengarahkan Anda ke bagian _[User Settings](https://docs.dewacloud.com/#user-settings)_
+- **Settings** mengarahkan Anda ke bagian _[User Settings](#user-settings)_
 - **Change Password** membuka kotak dialog dengan nama yang sama, di mana Anda perlu mengisi kolom yang diperlukan (_Current Password_, _New Password_, dan _Confirm Password_)
 - **Language** memungkinkan mengubah lokalisasi antarmuka dashboard (jika tersedia)
 - **Sign out** untuk keluar dari akun saat ini

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /node.js-dev-center
+slug: /nodejs-dev-center
 title: Node.js Dev Center
 ---
 

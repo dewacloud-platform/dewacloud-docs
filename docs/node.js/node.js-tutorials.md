@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-slug: /node.js-tutorials
+slug: /nodejs-tutorials
 title: Node.js Tutorials
 ---
 # Tutorial Node.js

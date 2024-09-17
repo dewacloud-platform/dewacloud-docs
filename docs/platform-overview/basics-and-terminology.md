@@ -1,5 +1,5 @@
 ---
 sidebar_position: 2
-slug: /basics-and-terminology
+slug: /paas-components-definition
 title: Basics & Terminology
 ---
