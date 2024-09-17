@@ -21,7 +21,7 @@ jobs:
           TYPESENSE_HOST: ${{ secrets.TYPESENSE_HOST }}
           TYPESENSE_PORT: 443
           TYPESENSE_PROTOCOL: https
-          CONFIG: ${{ secrets.TYPESENSE_CONFIG }} # Use GitHub's Secret Management for sensitive data
+          CONFIG: ${{ vars.TYPESENSE_CONFIG }} # Use GitHub's Secret Management for sensitive data
         run: |
           echo "${CONFIG}" | jq . > config.json
           docker run --rm \
@@ -29,6 +29,6 @@ jobs:
             -e "TYPESENSE_HOST=${{ secrets.TYPESENSE_HOST }}" \
             -e "TYPESENSE_PORT=443" \
             -e "TYPESENSE_PROTOCOL=https" \
-            -e "CONFIG=$(cat config.json | jq -c tostring)" \
+            -e "CONFIG=$(cat config.json | jq -r tostring)" \
             --dns=8.8.8.8 --dns=8.8.4.4 \
             typesense/docsearch-scraper:0.9.1
