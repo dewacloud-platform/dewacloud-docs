@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /node.js-versions
+slug: /nodejs-versions
 title: Node.js Versions
 ---
 
