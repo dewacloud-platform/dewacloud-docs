@@ -18,7 +18,7 @@ jobs:
       - name: Run DocSearch Scraper
         env:
           TYPESENSE_API_KEY: ${{ secrets.TYPESENSE_API_KEY }}
-          TYPESENSE_HOST: ${{ secrets.TYPESENSE_HOST }}
+          TYPESENSE_HOST: ${{ vars.TYPESENSE_HOST }}
           TYPESENSE_PORT: 443
           TYPESENSE_PROTOCOL: https
           CONFIG: ${{ vars.TYPESENSE_CONFIG }} # Use GitHub's Secret Management for sensitive data
