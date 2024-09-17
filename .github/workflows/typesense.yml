@@ -1,0 +1,30 @@
+name: Run DocSearch Scraper
+
+on:
+  # Runs on manual trigger
+  workflow_dispatch:
+
+jobs:
+  run-scraper:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Run DocSearch Scraper
+        env:
+          TYPESENSE_API_KEY: ${{ secrets.TYPESENSE_API_KEY }}
+          TYPESENSE_HOST: ${{ secrets.TYPESENSE_HOST }}
+          TYPESENSE_PORT: 443
+          TYPESENSE_PROTOCOL: https
+          CONFIG: ${{ secrets.TYPESENSE_CONFIG }} # Use GitHub's Secret Management for sensitive data
+        run: |
+          docker run -it \
+            -e "TYPESENSE_API_KEY=${{ secrets.TYPESENSE_API_KEY }}" \
+            -e "TYPESENSE_HOST=${{ secrets.TYPESENSE_HOST }}" \
+            -e "TYPESENSE_PORT=443" \
+            -e "TYPESENSE_PROTOCOL=https" \
+            -e "CONFIG=${CONFIG}" \
+            --dns=8.8.8.8 --dns=8.8.4.4 \
+            typesense/docsearch-scraper:0.9.1
