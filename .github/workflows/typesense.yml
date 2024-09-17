@@ -23,7 +23,7 @@ jobs:
           TYPESENSE_PROTOCOL: https
           CONFIG: ${{ vars.TYPESENSE_CONFIG }} # Use GitHub's Secret Management for sensitive data
         run: |
-          echo "${CONFIG}" | jq . > config.json
+          echo "${CONFIG}" | jq -c '.' > config.json
           docker run --rm \
             -e "TYPESENSE_API_KEY=${{ secrets.TYPESENSE_API_KEY }}" \
             -e "TYPESENSE_HOST=${{ secrets.TYPESENSE_HOST }}" \
