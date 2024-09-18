@@ -359,7 +359,7 @@ Di sini, Anda dapat menemukan bagian berikut: _Account_, _Access Tokens_, _SSH K
 
 Untuk ikhtisar terperinci tentang fitur [Account Collaboration](https://docs.dewacloud.com/account-collaboration/), rujuk ke panduan yang ditautkan.
 
-## Upgrade Trial Account & Balance{#upgrade-trial-account-and-balance}
+## Upgrade Trial Account & Balance{#upgrade-trial-account--balance}
 
 Tergantung pada [jenis akun](https://www.virtuozzo.com/application-platform-docs/types-of-accounts/) (trial atau billing), baik bagian **Upgrade Account** atau **Balance** ditampilkan di bagian atas panel dashboard.
 

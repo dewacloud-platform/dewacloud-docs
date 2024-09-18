@@ -17,7 +17,7 @@ Yang perlu diperhatikan, berbeda dengan konsumsi RAM (dengan unit MiB = 1024 KiB
 
 Berikut ini, kita akan mempertimbangkan [jenis-jenis cloudlet](#types) yang digunakan di platform, bagaimana [konsumsi cloudlet dihitung](#calculation), dan di mana melacak penggunaan sumber daya Anda.
 
-## Tipe-tipe Cloudlet {#cloudlet-types}
+## Tipe-tipe Cloudlet {#types}
 
 Ada dua jenis cloudlet di platform, tersedia untuk diatur untuk setiap server dalam environment melalui bagian _[Vertical Scaling per Node](https://docs.dewacloud.com/docs/automatic-vertical-scaling)_ di topology wizard: _**Reserved**_ dan _**Dynamic**_.
 

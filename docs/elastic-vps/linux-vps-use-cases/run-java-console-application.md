@@ -94,7 +94,7 @@ public class VdsSocket {
 }
 ```
 
-Setelah aplikasi Anda siap, Anda perlu mengemasnya ke dalam arsip _**.jar**_ dan mengunggahnya ke container VPS melalui klien transfer file yang dipilih. Dalam contoh kami, kami akan mengunggah file [vdssocket.jar](<vdssocket.jar>) menggunakan alat [WinSCP](https://winscp.net/eng/index.php). Untuk itu, mari lakukan langkah-langkah berikut.
+Setelah aplikasi Anda siap, Anda perlu mengemasnya ke dalam arsip _**.jar**_ dan mengunggahnya ke container VPS melalui klien transfer file yang dipilih. Dalam contoh kami, kami akan mengunggah file [vdssocket.jar](<https://www.virtuozzo.com/application-platform-docs/standalone-application/vdssocket.jar>) menggunakan alat [WinSCP](https://winscp.net/eng/index.php). Untuk itu, mari lakukan langkah-langkah berikut.
 
 1. Akses klien WinSCP dan hubungkan ke container VPS Anda menggunakan kredensial yang diterima melalui email saat instalasi server:
 
