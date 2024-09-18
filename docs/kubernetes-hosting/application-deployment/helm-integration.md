@@ -74,7 +74,7 @@ helm repo update
 
 Untuk memasang paket baru, gunakan perintah _**helm install**_. Secara sederhana, ini mengambil dua argumen:
 
-  * _**{name}**_ \- sebuah nama release yang Anda pilih (misal. _mywordpress_)
+  * _**\{name\}**_ \- sebuah nama release yang Anda pilih (misal. _mywordpress_)
   * _**\{chart\}**_ \- nama chart yang ingin Anda pasang (misal. _[bitnami/wordpress](<https://github.com/bitnami/charts/tree/master/bitnami/wordpress/>)_)
 
 Selain itu, Anda dapat menyediakan opsi chart untuk menyesuaikan aplikasi (lihat lebih detail di [bagian mengelola Helm](<#managing-helm-applications>)). Misalnya, mari kita ubah nama blog dengan parameter _\--set wordpressBlogName='My Blog!'_.
