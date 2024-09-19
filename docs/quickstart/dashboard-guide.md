@@ -10,7 +10,10 @@ Panduan berikut akan memberikan informasi yang diperlukan mengenai penggunaan da
 
 Untuk memulai, Anda bisa melihat video penjelasan singkat di bawah ini untuk mendapatkan informasi tentang fungsi utama yang tersedia melalui UI platform yang intuitif:
 
-![Fleksibilitas Pengelolaan Aplikasi di Dewacloud](https://youtu.be/z4DuDtYkUJU?si=8vQdOz3aiqrHL9fJ)
+<!-- ![Fleksibilitas Pengelolaan Aplikasi di Dewacloud](https://youtu.be/z4DuDtYkUJU?si=8vQdOz3aiqrHL9fJ) -->
+<div className="video-responsive">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/z4DuDtYkUJU?si=x75IZ-eCvpS1zgB0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 Untuk kenalan lebih baik, kami merekomendasikan membuat akun gratis (jika Anda belum mempunyainya) pada [Dewacloud](https://www.dewacloud.com/) dan mengikuti langkah-langkah panduan.
 
