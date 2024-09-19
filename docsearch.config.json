@@ -1,10 +1,10 @@
 {
     "index_name": "dewacloud-docs",
     "start_urls": [
-      "https://docs.dewacloud.com/"
+      "http://localhost:3000/"
     ],
     "sitemap_urls": [
-      "https://docs.dewacloud.com/sitemap.xml"
+      "http://localhost:3000/sitemap.xml"
     ],
     "sitemap_alternate_links": true,
     "stop_urls": [
