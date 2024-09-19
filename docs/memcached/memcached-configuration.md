@@ -17,17 +17,23 @@ Informasi lebih lanjut tentang penggunaan Memcached dapat Anda temukan dalam dok
 
 ## CONF{#conf}
 
-File konfigurasi utama Memcached terletak di folder **conf**.
+File konfigurasi utama Memcached terletak di path **etc/sysconfig/**, namun secara default file config **memcached** juga sudah dipin di tab Favorites.
 
-![memcached configuration conf](#)
+<p>
+<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-config-1.png" alt="memcached configuration conf" width="100%"/>
+</p>
+
 
 ## KEYS{#keys}
 
-Direktori **keys** digunakan sebagai lokasi untuk mengunggah kunci pribadi yang diperlukan untuk aplikasi Anda.  
-Buat kunci, simpan sebagai file sederhana, dan unggah ke folder **key**.  
-Sekarang Anda dapat menggunakannya untuk berbagai keperluan hanya dengan menyebutkan path ke kunci Anda:
+Direktori **keys** digunakan sebagai lokasi untuk menambahkan private key yang diperlukan untuk aplikasi Anda.  
+Buat key, simpan sebagai file key biasa, dan upload ke folder **key**.  
+Sekarang Anda dapat menggunakannya untuk berbagai keperluan hanya dengan mereferensikan path ke key Anda:
 
-_/var/lib/jelastic/keys/\{key_file_name\}_ ![memcached configuration memcached key](#)
+_/var/lib/jelastic/keys/\{key_file_name\}_ 
+<p>
+<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-config-2.png" alt="memcached configuration memcached key" width="100%"/>
+</p>
 
 ## Baca Juga{#whats-next}
 

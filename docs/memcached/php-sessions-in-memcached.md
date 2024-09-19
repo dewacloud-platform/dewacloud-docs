@@ -6,54 +6,63 @@ title: PHP Sessions in Memcached
 
 # PHP Sessions Clustering
 
-Ketersediaan tinggi untuk aplikasi PHP Anda dapat dicapai dengan mengimplementasikan clustering sesi PHP di cloud. Untuk menangani failover server aplikasi dengan sukses, kita membuat environment dengan Memcached, beberapa server Apache, dan load balancer NGINX:
+High availability untuk aplikasi PHP Anda dapat dicapai dengan mengimplementasikan clustering sesi PHP di cloud. Untuk menangani failover server aplikasi dengan sukses, kita membuat environment dengan Memcached, beberapa server Apache, dan load balancer NGINX:
 
-1. Masuk ke akun PaaS.
+1. Masuk ke dashboard Dewacloud.
 
 2. Klik tombol **Create environment**.
 
-3. Dalam jendela **Environment topology**, pilih dua atau lebih server yang ingin Anda gunakan (misalnya, dua instance **Apache**) dan node **Memcached**. Ketik nama environment dan klik **Create**.
+3. Dalam menu **Environment topology**, pilih dua atau lebih server yang ingin Anda gunakan (misalnya, dua instance **Apache**) dan node **Memcached**. Ketik nama environment dan klik **Create**.
 
-![Memcached environment](#)
+<p>
+<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-php-1.png" alt="Memcached environment" width="100%"/>
+</p>
 
-Node Memcached digunakan sebagai mesin caching terdistribusi dalam environment dengan beberapa node. Dalam kasus ini, ia menyediakan sesi Web dengan sesi sticky yang berjalan di beberapa server aplikasi. Jika satu server gagal, sesi-sesi tersebut disimpan untuk cadangan pada node Memcached. Server lain dapat mengambil sesi dari Memcached dan mulai melayani sesi.
+Node Memcached digunakan sebagai mesin caching terdistribusi dalam environment dengan beberapa node. Dalam kasus ini, memcached menyediakan sesi web yang bersifat sticky yang berjalan di beberapa server aplikasi. Jika satu server gagal, sesi-sesi tersebut disimpan sebagai backup pada node Memcached. Server lain dapat mengambil sesi dari Memcached dan mulai serving sesinya.
 
-![memcached PHP cluster](#)
+<p>
+<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-php-2.png" alt="memcached PHP cluster" width="100%"/>
+</p>
 
 ## Cara Kerjanya{#how-it-works}
 
-Ketika setiap permintaan sesi selesai, sesi dikirim ke node Memcached untuk cadangan. Sesi ini tetap tersedia di server aplikasi asli dan dapat digunakan untuk melayani permintaan berikutnya. Setelah permintaan kedua selesai, sesi diperbarui di Memcached.
+Ketika setiap permintaan sesi selesai, sesi dikirim ke node Memcached untuk backup. Sesi ini tetap tersedia di server aplikasi asli dan dapat digunakan untuk melayani permintaan berikutnya. Setelah permintaan kedua selesai, sesi diperbarui di Memcached.
 
-Jika server asli gagal, permintaan berikutnya dialihkan ke server aplikasi lain. Server yang baru diminta akan mencari sesi yang tidak dikenalnya. Maka server baru ini akan menemukan sesi yang diperlukan di node Memcached. Ia diidentifikasi sesuai dengan ID yang ditambahkan ke sessionID saat pembuatan sesi. Akibatnya, server dapat mengambil sesi dari node Memcached.
+Jika server asli gagal, permintaan berikutnya dialihkan ke server aplikasi lain. Server yang baru akan diminta mencari sesi yang tidak dikenalnya. Maka server baru ini akan menemukan sesi yang diperlukan di node Memcached. Hal tersebut diidentifikasi sesuai dengan ID yang ditambahkan ke sessionID saat pembuatan sesi. Hasilnya, server dapat mengambil sesi dari node Memcached.
 
 Ketika server menjawab permintaan, itu juga memperbarui sesi di node Memcached. Dengan demikian, tidak ada gangguan pada aplikasi yang disebabkan oleh kegagalan server asli - failover berhasil ditangani.
 
-Pada saat yang sama, load balancer NGINX mendistribusikan lalu lintas ke seluruh cluster yang berisi sumber daya HTTP. Anda dapat [memeriksa load balancing](https://docs.dewacloud.com/testing-load-balancing/) di platform menggunakan berbagai alat load balancing.
+Pada saat yang sama, load balancer NGINX mendistribusikan lalu lintas ke seluruh cluster yang berisi sumber daya HTTP. Anda dapat [memeriksa load balancing](https://docs.dewacloud.com/testing-load-balancing/) di Dewacloud menggunakan berbagai tool load balancing.
 
 ## Cara Mengkonfigurasi{#how-to-configure}
 
-1. Navigasikan ke environment Anda di dashboard dan klik tombol **Config** untuk Apache.
+1. Masuk ke environment Anda di dashboard dan klik tombol **Config** untuk Apache.
 
-2. Di tab yang terbuka, pergi ke _**etc > php.ini**_.
+2. Di tab yang terbuka, masuk ke directory _**etc > php.ini**_.
 
-3. Tambahkan baris berikut ke **Dynamic Extensions** :
+3. Pastikan extension **memcached** sudah di-enable. Jika belum, bisa tambahkan line berikut:
 
    ```
    extension=memcached.so
    ```
 
-![memcached enabling](#)
+<p>
+<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-php-3.png" alt="memcached enabling" width="100%"/>
+</p>
 
-4. Buat perubahan dalam blok **[Session]**:
+4. Buat perubahan pada line berikut:
 
    ```
-   session.save_handler = memcached session.save_path = "< server >:11211"
+   session.save_handler = memcached
+   session.save_path = "< server >:11211"
    ```
 
-![session save path](#)
+<p>
+<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-php-4.png" alt="session save path" width="100%"/>
+</p>
 
 :::note
-/<server/> menyatakan untuk memcached IP atau URL yang dapat Anda temukan dengan mengklik tombol Info untuk node memcached di environment Anda.
+**server** menyatakan IP atau URL yang dapat dilihat pada node memcached di environment Anda.
 :::
 
 5. Simpan perubahan dan restart node **Apache**.

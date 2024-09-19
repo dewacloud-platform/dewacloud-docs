@@ -6,15 +6,17 @@ title: Memcached System
 
 # Sistem Caching Memcached
 
-**[Memcached](http://memcached.org/)** adalah sistem caching objek memori terdistribusi yang berkinerja tinggi, gratis, dan sumber terbuka, bersifat umum, tetapi dimaksudkan untuk digunakan dalam mempercepat aplikasi web dinamis dengan mengurangi beban basis data.
+**[Memcached](http://memcached.org/)** adalah sistem caching objek memori terdistribusi yang berkinerja tinggi, gratis, dan open-source, bersifat umum, tetapi dimaksudkan untuk digunakan dalam mempercepat aplikasi web dinamis dengan mengurangi beban database.
 
 Anda dapat menganggapnya sebagai memori jangka pendek untuk aplikasi Anda.
 
-**API Memcached** menyediakan tabel hash raksasa yang didistribusikan di beberapa mesin. Ketika tabel penuh, penyisipan berikutnya membuat data lama dihapus dalam urutan paling jarang digunakan. Aplikasi yang menggunakan Memcached biasanya menempatkan permintaan dan penambahan ke dalam RAM sebelum kembali ke penyimpanan yang lebih lambat, seperti basis data.
+**API Memcached** menyediakan tabel hash raksasa yang didistribusikan di beberapa mesin. Ketika tabel penuh, penyisipan berikutnya membuat data lama dihapus dalam urutan paling jarang digunakan. Aplikasi yang menggunakan Memcached biasanya menempatkan permintaan dan penambahan ke dalam RAM sebelum kembali ke penyimpanan yang lebih lambat, seperti database.
 
-Sistem ini menggunakan arsitektur klien-server. Server memelihara sebuah array asosiatif key-value; klien mengisi array ini dan melakukan kueri. Kunci memiliki panjang hingga 250 byte dan nilai dapat maksimal 1 megabyte.
+Sistem ini menggunakan arsitektur klien-server. Server memelihara sebuah array asosiatif key-value; klien mengisi array ini dan melakukan query. Key memiliki panjang hingga 250 byte dan nilai maksimal 1 megabyte.
 
-![Memcached deployment scenario](#)
+<p>
+<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-3.png" alt="Memcached deployment scenario" width="100%"/>
+</p>
 
 **Memcached** juga memungkinkan Anda menggunakan memori dengan lebih baik.
 
@@ -37,11 +39,17 @@ Untuk mendapatkan **Memcached** di lingkungan Anda, cukup:
 
 3. Dalam dialog **Environment Topology**, pilih server aplikasi Anda (misalnya, **Tomcat**). Aktifkan **Memcached**. Skalakan secara vertikal. Kemudian masukkan nama environment Anda, misalnya, _memcached_, dan klik **Create**.
 
-![Memcached environment topology](#)
 
-Itu saja yang perlu Anda lakukan! Sekarang, Memcached tersedia di lingkungan Anda.
+<p>
+<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-1.png" alt="Memcached environment topology" width="100%"/>
+</p>
 
-![environment with Memcached created](#)
+
+Itu saja yang perlu Anda lakukan! Sekarang, Memcached tersedia di environment Anda.
+
+<p>
+<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-2.png" alt="environment with Memcached created" width="100%"/>
+</p>
 
 ## Baca Juga{#whats-next}
 
