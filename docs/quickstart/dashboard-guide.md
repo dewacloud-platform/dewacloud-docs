@@ -9,7 +9,9 @@ Panduan berikut akan memberikan informasi yang diperlukan mengenai penggunaan da
 
 Untuk memulai, Anda bisa melihat video penjelasan singkat di bawah ini untuk mendapatkan informasi tentang fungsi utama yang tersedia melalui UI platform yang intuitif:
 
-Untuk kenalan lebih baik, kami merekomendasikan membuat akun gratis (jika Anda belum mempunyainya) pada salah satu instalasi yang tersedia di [Cloud Union](https://www.virtuozzo.com/application-platform-partners/) dan mengikuti langkah-langkah panduan.
+![Fleksibilitas Pengelolaan Aplikasi di Dewacloud](https://youtu.be/z4DuDtYkUJU?si=8vQdOz3aiqrHL9fJ)
+
+Untuk kenalan lebih baik, kami merekomendasikan membuat akun gratis (jika Anda belum mempunyainya) pada [Dewacloud](https://www.dewacloud.com/) dan mengikuti langkah-langkah panduan.
 
 :::tip
 Tutorial pendek dan interaktif tersedia langsung di dalam dashboard melalui opsi Help > Tutorial di sudut kanan atas.
