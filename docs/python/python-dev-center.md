@@ -83,18 +83,20 @@ Untuk berhasil melakukan deployment dan menjalankan aplikasi Python, beberapa mo
 
 1\. Hubungkan ke lingkungan Python [via SSH](<https://docs.dewacloud.com/docs/ssh-access/>) (menggunakan _local_ atau _Web SSH_ client bawaan) untuk membuat dan memulai virtual environment baru. Jalankan perintah berikut:
 
-    virtualenv {appName} 
-    source {appName}/bin/activate
+```
+virtualenv {appName} 
+source {appName}/bin/activate
+```
 
 ![Python virtual environment](#)
 
 2\. Pengelolaan paket perangkat lunak yang diperlukan biasanya disediakan oleh _**[pip](<https://pip.pypa.io/en/stable/>)**_ \- sistem manajemen paket Python populer untuk repository [PiPI](<https://pypi.org/>). Di bawah ini adalah beberapa perintah umum:
 
-  * _**pip install {packageName}**_ \- menginstal modul yang diperlukan
-  * _**pip uninstall {packageName}**_ \- menghapus modul yang diinstal sebelumnya
-  * _**pip install -upgrade {packageName}**_ \- memperbarui modul ke versi terbaru
-  * _**pip install -r requirements.txt**_ \- menginstal semua modul yang terdaftar di file _requirements.txt_
-  * _**pip list**_ \- menampilkan set modul yang sudah diinstal
+  * `pip install {packageName}` \- menginstal modul yang diperlukan
+  * `pip uninstall {packageName}` \- menghapus modul yang diinstal sebelumnya
+  * `pip install -upgrade {packageName}` \- memperbarui modul ke versi terbaru
+  * `pip install -r requirements.txt` \- menginstal semua modul yang terdaftar di file _requirements.txt_
+  * `pip list` \- menampilkan set modul yang sudah diinstal
 
 :::tip
 Dalam kasus paket aplikasi yang telah dikonfigurasi sebelumnya (arsip), semua dependensi disediakan melalui file _requirements.txt_, yang dibaca selama proses deployment untuk menginstal modul Python yang tercantum secara otomatis. Juga, harus berisi file _wsgi.py_ dengan _entry point_ script untuk menjalankan aplikasi di dalam virtual environment menggunakan _mod_wsgi_ untuk Apache.

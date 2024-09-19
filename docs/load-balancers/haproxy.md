@@ -43,8 +43,7 @@ Sekarang Anda telah memiliki HAProxy load-balancer yang terinstal dan siap digun
 
 ## HAProxy Configurations{#haproxy-configurations}
 
-Seperti yang disebutkan di atas, HAProxy disediakan dengan panel admin terintegrasi, yang dapat diakses dengan mengklik tombol **Open in Browser** 
-![haproxy open in browser](#) dan menambahkan akhiran _**/haproxy_adm_panel**_ ke URL environment di bilah alamat browser. Setelah itu, Anda hanya perlu menentukan kredensial balancer (dikirimkan kepada Anda melalui email) di jendela otentikasi pop-up yang muncul.
+Seperti yang disebutkan di atas, HAProxy disediakan dengan panel admin terintegrasi, yang dapat diakses dengan mengklik tombol **Open in Browser** ![haproxy open in browser](#) dan menambahkan akhiran _**/haproxy_adm_panel**_ ke URL environment di bilah alamat browser. Setelah itu, Anda hanya perlu menentukan kredensial balancer (dikirimkan kepada Anda melalui email) di jendela otentikasi pop-up yang muncul.
 
 ![HAProxy admin panel](#)
 
@@ -58,20 +57,14 @@ Selain itu, Anda dapat menentukan beberapa pengaturan tambahan dengan cara berik
 
 Di sini, Anda juga dapat menghubungkan server aplikasi ke balancer Anda (bahkan dari environment lain) untuk ditempatkan di belakangnya. Cukup tambahkan catatan yang sesuai ke bagian **backend bk_http** dalam format berikut:
 
-    
-    
-    1 
+``` 
+server webserver{n} {server_intenal_ip}:80 cookie S{n} check   
+```
 
-|  
-    
-    server webserver{n} {server_intenal_ip}:80 cookie S{n} check   
-  
----|---  
-  
 di mana nilai di dalam kurung kurawal harus diganti dengan nilai kustom Anda:
 
-  * _{n}_ \- pengidentifikasi yang disukai untuk server yang ditautkan
-  * _{server_internal_ip}_ \- alamat server yang diperlukan, yang dapat ditemukan dengan memilih tombol **Additionally** di sebelahnya
+  * `{n}` \- pengidentifikasi yang disukai untuk server yang ditautkan
+  * `{server_internal_ip}` \- alamat server yang diperlukan, yang dapat ditemukan dengan memilih tombol **Additionally** di sebelahnya
 
 Setelah konfigurasi ini selesai, **Save** perubahan yang dibuat dan **Restart** server load-balancer untuk menerapkannya.
 

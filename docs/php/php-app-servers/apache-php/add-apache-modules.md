@@ -49,9 +49,9 @@ apxs -i -a -c mod_pony.c /usr/lib64/apr-1/build/libtool --silent --mode=compile 
 
 3\. Pergi ke folder **/etc/httpd/conf** dan edit file _**httpd.conf**_ dengan menambahkan string LoadModule dalam format berikut:
 
-_LoadModule {module-name}_module /usr/lib64/php/modules/{file-name}.so_
+`LoadModule {module-name}_module /usr/lib64/php/modules/{file-name}.so`
 
-Contoh: _LoadModule pony_module /usr/lib64/php/modules/mod_pony.so_
+Contoh: `LoadModule pony_module /usr/lib64/php/modules/mod_pony.so`
 
 **Simpan** perubahan.
 
@@ -63,9 +63,11 @@ Sebagai contoh, untuk konfigurasi lebih lanjut dari modul **mod_pony** kita perl
 
   * untuk melakukan navigasi ke folder **webroot > ROOT** dan membuat file **.htaccess**;
   * untuk menambahkan string berikut ke dalam file **.htaccess**:  
-\< Files pony>  
+```html
+<Files pony>  
 SetHandler pony  
-\</Files>
+</Files>
+```
 
 **Simpan** perubahan.
 

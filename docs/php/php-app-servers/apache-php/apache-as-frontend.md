@@ -150,7 +150,7 @@ Dengan langkah-langkah berikut, Anda dapat mengonfigurasi server Apache Anda unt
 
 3\. Tambahkan host aplikasi Anda yang dideploy ke file yang baru dibuat ini seperti yang ditunjukkan di bawah ini:
 
-_servers {env1_name}.{hoster_domain}|{env2_name}.{hoster_domain}_
+`servers {env1_name}.{hoster_domain}|{env2_name}.{hoster_domain}`
 
 ![hosts list for load balancing](#)
 

@@ -43,13 +43,13 @@ Untuk membantu Anda dalam pemeliharaan file-file ini, platform secara otomatis m
 2. Buat atau sesuaikan file _**.bashrc**_ di direktori home dengan menambahkan variabel kustom Anda dalam format berikut:
 
 ```bash
-export  {var_name}= {var_value}
+export {var_name} = {var_value}
 ```
 
 di mana:
 
-- _**{var_name}**_ adalah nama variabel yang ingin Anda tentukan
-- _**{var_value}**_ adalah nilai dari variabel tersebut
+- `{var_name}` adalah nama variabel yang ingin Anda tentukan
+- `{var_value}` adalah nilai dari variabel tersebut
 
 ![export custom variables via shell](#)
 
@@ -69,6 +69,7 @@ Seperti yang Anda lihat, perubahan berhasil diterapkan.
 Proses sederhana berikut berlaku sama untuk semua server aplikasi Java yang dikelola oleh platform.
 
 1. Klik tombol **Config** untuk server aplikasi Anda untuk mengakses [manajer file kontainer](<https://docs.dewacloud.com/docs/configuration-file-manager>).  
+
 ![configuration file manager button](#)
 
 2. Di tab yang terbuka, navigasikan ke file _**variables.conf**_ dalam salah satu lokasi berikut:

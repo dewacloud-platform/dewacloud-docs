@@ -17,7 +17,7 @@ Klik abstrak ini untuk melihat daftar lengkap variabel default yang digunakan da
 
 Nama Variabel | Dapat Diedit* | Stack | Deskripsi  
 ---|---|---|---  
-**{SOFTWARE}_VERSION** | - | Semua | Versi perangkat lunak yang ditentukan (stack, engine, template, modul, dll.).  
+**\{SOFTWARE\}_VERSION** | - | Semua | Versi perangkat lunak yang ditentukan (stack, engine, template, modul, dll.).  
 **ADMIN_USER** | - | GlassFish (Payara), WildFly, Couchbase, LiteSpeed Web Server, LiteSpeed ADC, LLSMP | Login dari pengguna admin untuk konsol administrasi.  
 **ADMINPANEL_ENABLED (PHPMYADMIN_ENABLED)** | + | Database, LLSMP, LEMP | Nilai " _true_ " dan " _1_ " mengizinkan penggunaan panel admin, sementara nilai lainnya menonaktifkannya. Diperlukan restart untuk menerapkan perubahan. Nilai dalam tanda kurung sudah usang tetapi masih dapat digunakan pada database MySQL dan MariaDB.  
 **APP_FILE** | + | Node.js | File aplikasi utama Node.js yang akan diluncurkan.  
@@ -34,7 +34,7 @@ Nama Variabel | Dapat Diedit* | Stack | Deskripsi
 **FULL_GC_AGENT_DEBUG** | + | Java | Mengaktifkan (_true_) atau menonaktifkan (_false_) mode debug untuk melacak proses GC Java di log.  
 **FULL_GC_PERIOD** | + | Java | Mengatur interval (dalam detik) antara panggilan GC penuh; _900_ secara default, yaitu 15 menit.  
 **G1PERIODIC_GC_INTERVAL** | + (untuk openJDK 12/13 saja) | Java | Frekuensi Koleksi Periodik G1 dalam milidetik (_G1PeriodicGCInterval - 15 menit_ secara default); setel sebagai _0_ untuk menonaktifkan.  
-**G1PERIODIC_GC_SYS_LOAD_THRESHOLD** | + (untuk openJDK 12/13 saja) | Java | Memungkinkan pelaksanaan Koleksi Periodik G1, jika rata-rata beban sistem satu menit di bawah nilai yang ditetapkan. Kondisi ini diabaikan jika disetel sebagai nol. Secara default sama dengan _{CPU_cores_number} * {GC_SYS_LOAD_THRESHOLD_RATE}_.  
+**G1PERIODIC_GC_SYS_LOAD_THRESHOLD** | + (untuk openJDK 12/13 saja) | Java | Memungkinkan pelaksanaan Koleksi Periodik G1, jika rata-rata beban sistem satu menit di bawah nilai yang ditetapkan. Kondisi ini diabaikan jika disetel sebagai nol. Secara default sama dengan _\{CPU_cores_number\} * \{GC_SYS_LOAD_THRESHOLD_RATE\}_.  
 **GC_SYS_LOAD_THRESHOLD_RATE** | + (untuk openJDK 12/13 saja) | Java | Pengali khusus untuk menyesuaikan nilai _G1PeriodicGCSystemLoadThreshold_ (_0.3_ secara default).  
 **GEM_HOME** | + | Ruby | Lokasi (dapat beberapa) di mana gem dapat ditemukan (harus menyertakan _GEM_PATH_).  
 **GEM_PATH** | - | Ruby | Lokasi tempat gem akan diinstal secara default.  

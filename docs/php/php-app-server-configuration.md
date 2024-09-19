@@ -151,7 +151,7 @@ Direktori **keys** digunakan sebagai lokasi untuk mengunggah kunci pribadi apa p
 
 Hasilkan kunci, simpan sebagai file sederhana dan unggah ke folder **key**. Sekarang, Anda dapat menggunakannya untuk kasus yang berbeda dengan cukup menyatakan path ke kunci Anda:
 
-_/var/lib/jelastic/keys/{key_file_name}_
+`/var/lib/jelastic/keys/{key_file_name}`
 
 ![keys folder for SSH keys](#)
 

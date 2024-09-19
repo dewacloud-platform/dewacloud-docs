@@ -218,7 +218,9 @@ Sekarang, konten statis aplikasi disimpan di direktori **~/ROOT/static**.
 
 4\. Buka file **/var/www/webroot/ROOT/ROOT/****_local_settings.py_** dan sesuaikan catatan _ALLOWED_HOSTS_ dengan menyediakan nama domain environment Anda:
 
-    ALLOWED_HOSTS = ["{envDomain}"]
+```
+ALLOWED_HOSTS = ["{envDomain}"]
+```
 
 ![mezzanine settings](#)
 

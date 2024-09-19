@@ -7,112 +7,188 @@ title: PHP Extensions
 
 Di platform, server aplikasi PHP disediakan dengan sejumlah modul bawaan, yang memungkinkan Anda untuk **mengatur berbagai ekstensi PHP** pada _httpd_ (Apache-PHP) dan _PHP-FPM_ (NGINX-PHP) daemon. Di antara ekstensi ini, berikut adalah beberapa yang umum diperlukan dan _**terpasang**_, yaitu dimuat dan dijalankan dengan PHP secara default:
 
-_ctype  
-date  
-dom  
-ereg  
-filter_|  _hash  
-libxml  
-mhash  
-pcre  
-Reflection_|  _session  
-SLPxml  
-sockets  
-_  
----|---|---  
+<table>
+  <tr>
+    <td>ctype</td>
+    <td>date</td>
+    <td>dom</td>
+  </tr>
+  <tr>
+    <td>ereg</td>
+    <td>filter</td>
+    <td>hash</td>
+  </tr>
+  <tr>
+    <td>libxml</td>
+    <td>mhash</td>
+    <td>pcre</td>
+  </tr>
+  <tr>
+    <td>Reflection</td>
+    <td>session</td>
+    <td>SLPxml</td>
+  </tr>
+  <tr>
+    <td>sockets</td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
   
 Sisanya dari ekstensi yang disediakan bersifat _**dinamis**_, yaitu mereka termasuk dalam build server yang sesuai (disimpan dalam folder _modules_ server khusus) dan dapat diaktifkan sesuai kebutuhan:
 
-_apc.so  
-apcu.so  
-bcmath.so  
-bz2.so  
-calendar.so  
-curl.so  
-dba.so  
-dom.so  
-enchant.so  
-event.so  
-exif.so  
-fileinfo.so  
-ftp.so  
-gd.so  
-gearman.so  
-geoip.so  
-gettext.so  
-gmp.so  
-http.so  
-iconv.so  
-igbinary.so  
-imagick.so  
-imap.so_ | _inotify.so  
-intl.so  
-json.so  
-ldap.so  
-mbstring.so  
-mcrypt.so  
-memcache.so  
-memcached_2_1_0.so  
-memcached_2_2_0.so  
-mongo.so  
-mongodb.so  
-mysql.so  
-mysqli.so  
-mysqlnd_ms.so  
-mysqlnd_qc.so  
-mysqlnd.so  
-ncurses.so  
-oauth.so  
-odbc.so  
-opcache.so  
-openssl.so  
-pcntl.so  
-pdo_dblib.so  
-_| _pdo_firebird.so  
-pdo_mysql.so  
-pdo_oci.so  
-pdo_odbc.so  
-pdo_pgsql.so  
-pdo_sqlite.so  
-pdo.so  
-pgsql.so  
-phar.so  
-posix.so  
-propro.so  
-pspell.so  
-raphf.so  
-rar.so  
-readline.so  
-recode.so  
-redis.so  
-shmop.so  
-simplexml.so  
-snmp.so  
-soap.so  
-solr.so  
-solr2.so  
-_| _sphinx.so  
-sqlite3.so  
-svn.so  
-sysvmsg.so  
-sysvsem.so  
-sysvshm.so  
-tidy.so  
-timezonedb.so  
-tokenizer.so  
-uuid.so  
-wddx.so  
-xcache.so  
-xdebug.so  
-xmlreader.so  
-xmlrpc.so  
-xmlwriter.so  
-xsl.so  
-yaml.so  
-ZendGuardLoader.so  
-zip.so  
-zlib.so_  
----|---|---|---  
+<table>
+  <tr>
+    <td>apc.so</td>
+    <td>apcu.so</td>
+    <td>bcmath.so</td>
+  </tr>
+  <tr>
+    <td>bz2.so</td>
+    <td>calendar.so</td>
+    <td>curl.so</td>
+  </tr>
+  <tr>
+    <td>dba.so</td>
+    <td>dom.so</td>
+    <td>enchant.so</td>
+  </tr>
+  <tr>
+    <td>event.so</td>
+    <td>exif.so</td>
+    <td>fileinfo.so</td>
+  </tr>
+  <tr>
+    <td>ftp.so</td>
+    <td>gd.so</td>
+    <td>gearman.so</td>
+  </tr>
+  <tr>
+    <td>geoip.so</td>
+    <td>gettext.so</td>
+    <td>gmp.so</td>
+  </tr>
+  <tr>
+    <td>http.so</td>
+    <td>iconv.so</td>
+    <td>igbinary.so</td>
+  </tr>
+  <tr>
+    <td>imagick.so</td>
+    <td>imap.so</td>
+    <td>inotify.so</td>
+  </tr>
+  <tr>
+    <td>intl.so</td>
+    <td>json.so</td>
+    <td>ldap.so</td>
+  </tr>
+  <tr>
+    <td>mbstring.so</td>
+    <td>mcrypt.so</td>
+    <td>memcache.so</td>
+  </tr>
+  <tr>
+    <td>memcached_2_1_0.so</td>
+    <td>memcached_2_2_0.so</td>
+    <td>mongo.so</td>
+  </tr>
+  <tr>
+    <td>mongodb.so</td>
+    <td>mysql.so</td>
+    <td>mysqli.so</td>
+  </tr>
+  <tr>
+    <td>mysqlnd_ms.so</td>
+    <td>mysqlnd_qc.so</td>
+    <td>mysqlnd.so</td>
+  </tr>
+  <tr>
+    <td>ncurses.so</td>
+    <td>oauth.so</td>
+    <td>odbc.so</td>
+  </tr>
+  <tr>
+    <td>opcache.so</td>
+    <td>openssl.so</td>
+    <td>pcntl.so</td>
+  </tr>
+  <tr>
+    <td>pdo_dblib.so</td>
+    <td>pdo_firebird.so</td>
+    <td>pdo_mysql.so</td>
+  </tr>
+  <tr>
+    <td>pdo_oci.so</td>
+    <td>pdo_odbc.so</td>
+    <td>pdo_pgsql.so</td>
+  </tr>
+  <tr>
+    <td>pdo_sqlite.so</td>
+    <td>pdo.so</td>
+    <td>pgsql.so</td>
+  </tr>
+  <tr>
+    <td>phar.so</td>
+    <td>posix.so</td>
+    <td>propro.so</td>
+  </tr>
+  <tr>
+    <td>pspell.so</td>
+    <td>raphf.so</td>
+    <td>rar.so</td>
+  </tr>
+  <tr>
+    <td>readline.so</td>
+    <td>recode.so</td>
+    <td>redis.so</td>
+  </tr>
+  <tr>
+    <td>shmop.so</td>
+    <td>simplexml.so</td>
+    <td>snmp.so</td>
+  </tr>
+  <tr>
+    <td>soap.so</td>
+    <td>solr.so</td>
+    <td>solr2.so</td>
+  </tr>
+  <tr>
+    <td>sphinx.so</td>
+    <td>sqlite3.so</td>
+    <td>svn.so</td>
+  </tr>
+  <tr>
+    <td>sysvmsg.so</td>
+    <td>sysvsem.so</td>
+    <td>sysvshm.so</td>
+  </tr>
+  <tr>
+    <td>tidy.so</td>
+    <td>timezonedb.so</td>
+    <td>tokenizer.so</td>
+  </tr>
+  <tr>
+    <td>uuid.so</td>
+    <td>wddx.so</td>
+    <td>xcache.so</td>
+  </tr>
+  <tr>
+    <td>xdebug.so</td>
+    <td>xmlreader.so</td>
+    <td>xmlrpc.so</td>
+  </tr>
+  <tr>
+    <td>xmlwriter.so</td>
+    <td>xsl.so</td>
+    <td>yaml.so</td>
+  </tr>
+  <tr>
+    <td>ZendGuardLoader.so</td>
+    <td>zip.so</td>
+    <td>zlib.so</td>
+  </tr>
+</table>
   
 Di bawah ini, Anda dapat menemukan cara:
 
@@ -136,7 +212,7 @@ Di bawah ini, Anda dapat mengetahui bagaimana hal ini dapat dilakukan:
 
 ![php extensions phpini](#)
 
-3\. Sekarang, temukan bagian yang diperlukan (mereka terdaftar dalam urutan alfabet) dan hapus komentar pada direktif _**extension={module_name}.so**_ di dalam (yaitu hapus titik koma di awal baris yang sesuai) untuk mengaktifkannya:
+3\. Sekarang, temukan bagian yang diperlukan (mereka terdaftar dalam urutan alfabet) dan hapus komentar pada direktif _**extension=\{module_name\}.so**_ di dalam (yaitu hapus titik koma di awal baris yang sesuai) untuk mengaktifkannya:
 
 ![php extensions soapso](#)
 

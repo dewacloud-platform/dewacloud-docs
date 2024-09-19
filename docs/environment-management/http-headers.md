@@ -11,13 +11,13 @@ Header utama yang digunakan dengan environment untuk melakukan deployment aplika
 
 Header | Deskripsi | Nilai  
 ---|---|---  
-**[host](<https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Host>)** | Menentukan host dan nomor port dari sumber daya (server) yang diminta. | _{envName}.{platformDomain}_  
+**[host](<https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Host>)** | Menentukan host dan nomor port dari sumber daya (server) yang diminta. | _\{envName\}.\{platformDomain\}_  
 **[x-forwarded-proto](<https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Forwarded-Proto>)** | Mengidentifikasi protokol (HTTP atau HTTPS) yang terhubung ke proxy atau load balancer Anda. | _http/https_  
 **[x-forwarded-for](<https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Forwarded-For>)** | Mengidentifikasi alamat IP asal dari klien yang terhubung ke server web melalui proxy HTTP atau load balancer. | _xx.xx.xx.xx, xx.xx.xx.xx_  
 Rantai IP atau rantai IPs (jika permintaan melewati beberapa proxy)  
 **x-real-ip** | Alamat IP akhir dalam rantai **x-forwarded-for**, yaitu proxy terbaru dari klien yang terhubung ke server web. | _xx.xx.xx.xx_  
 alamat IP paling kanan dalam **x-forwarded-for**  
-**x-host** | Nama domain asal dari server (untuk virtual hosting) dan opsional nomor port TCP. | _{envName}.{platformDomain}_  
+**x-host** | Nama domain asal dari server (untuk virtual hosting) dan opsional nomor port TCP. | _\{envName\}.\{platformDomain}_ 
 **x-uri** | Mengidentifikasi nama atau sumber daya web. | _/_  
 :::tip Header keamanan tambahan digunakan untuk beberapa stack tertentu. :::
 

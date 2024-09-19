@@ -60,12 +60,11 @@ Informasi detail tentang semua perintah ab yang digunakan selanjutnya dapat dite
 
 2\. Masukkan baris berikut di terminal:
 
-    
-    
-    ab -n 500 -c 10 -g res1.tsv {URL_to_your_env}
-    
+``` 
+ab -n 500 -c 10 -g res1.tsv {URL_to_your_env}
+```
 
-Gantikan bagian _{URL_to_your_env}_ dengan tautan ke environment Anda (misalnya, _https://balancer.jelastic.com/_ dalam kasus kami). Untuk mendapatkannya, klik tombol **Open in Browser** di sebelah environment Anda dan salin URL yang sesuai dari bilah alamat browser.
+Gantikan bagian `{URL_to_your_env}` dengan tautan ke environment Anda (misalnya, _https://balancer.jelastic.com/_ dalam kasus kami). Untuk mendapatkannya, klik tombol **Open in Browser** di sebelah environment Anda dan salin URL yang sesuai dari bilah alamat browser.
 
 ![open in browser](#)
 
@@ -119,10 +118,9 @@ Sekarang mari kita lanjutkan langsung ke pengujian [load balancing](<https://doc
 
 1\. Kembali ke terminal Anda dan jalankan pengujian **ab** lagi dengan parameter yang sama (kecuali file dengan hasil - tentukan nama lain untuknya, misalnya _res2.tsv_).
 
-    
-    
-    ab -n 500 -c 10 -g res2.tsv {URL_to_your_env}
-    
+``` 
+ab -n 500 -c 10 -g res2.tsv {URL_to_your_env}
+```
 
 ![load balancing testing](#)
 
@@ -133,14 +131,15 @@ Sekarang mari kita lanjutkan langsung ke pengujian [load balancing](<https://doc
 3\. Setelah itu, Anda perlu mengatur parameter untuk grafik yang akan kita buat:
 
     
-    
-    set size 1, 1
-    set title "Benchmark testing"
-    set key left top
-    set grid y
-    set xlabel 'requests'
-    set ylabel "response time (ms)"
-    set datafile separator '\t'
+```
+set size 1, 1
+set title "Benchmark testing"
+set key left top
+set grid y
+set xlabel 'requests'
+set ylabel "response time (ms)"
+set datafile separator '\t'
+```
     
 
 ![set gnuplot parameters](#)
@@ -148,17 +147,17 @@ Sekarang mari kita lanjutkan langsung ke pengujian [load balancing](<https://doc
 4\. Sekarang Anda siap untuk membuat grafik:
 
     
-    
-    plot "/home/res1.tsv" every ::2 using 5 title 'single server' with lines, "/home/res2.tsv" every ::2 using 5 title 'two servers with LB' with lines
-    
+```
+plot "/home/res1.tsv" every ::2 using 5 title 'single server' with lines, "/home/res2.tsv" every ::2 using 5 title 'two servers with LB' with lines
+```
 
 Perintah _plot_ ini akan membangun 2 grafik (dipisahkan dengan koma dalam perintah tersebut). Mari kita tinjau parameter yang digunakan lebih detail:
 
-  * _"/home/resN.tsv"_ mewakili path ke file dengan hasil pengujian Anda
-  * _every ::2_ menentukan bahwa gnuplot akan mulai membangun dari baris kedua (yaitu, baris pertama dengan judul akan dilewati)
-  * _using 5_ berarti kolom _time_ kelima (total response time) akan digunakan untuk membuat grafik
-  * _title 'N'_ memberikan nama tertentu untuk grafik untuk memudahkan pemisahan hasil pengujian
-  * _with lines_ digunakan agar grafik kita menjadi garis solid
+  * `"/home/resN.tsv"` mewakili path ke file dengan hasil pengujian Anda
+  * `every ::2` menentukan bahwa gnuplot akan mulai membangun dari baris kedua (yaitu, baris pertama dengan judul akan dilewati)
+  * `using 5` berarti kolom _time_ kelima (total response time) akan digunakan untuk membuat grafik
+  * `title 'N'` memberikan nama tertentu untuk grafik untuk memudahkan pemisahan hasil pengujian
+  * `with lines` digunakan agar grafik kita menjadi garis solid
 
 ![compose graphs](#)
 
