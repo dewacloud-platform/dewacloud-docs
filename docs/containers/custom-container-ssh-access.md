@@ -4,7 +4,7 @@ slug: /custom-container-ssh-access
 title: Custom Container SSH Access
 ---
 
-## Custom Container SSH Access{#custom-container-ssh-access}
+# Custom Container SSH Access{#custom-container-ssh-access}
 
 Karena custom containers tidak memiliki GUI bawaan untuk manajemennya, cara paling umum untuk mengambil kontrol penuh atas instance semacam itu adalah dengan menghubungkannya di bawah protokol SSH dan melakukan operasi apa pun yang diinginkan di dalamnya menggunakan perintah terminal yang sesuai.
 

@@ -17,7 +17,7 @@ Fitur khas dari Elastic VPS stacks adalah:
 - **insulasi** - setiap VPS yang diberikan merupakan instans yang sepenuhnya independen, yang hanya dapat diakses melalui [public IP](https://docs.dewacloud.com/public-ip/) khusus, sehingga tidak ada akun lain di perangkat keras yang dapat mempengaruhinya
 - **kontrol penuh** - dimungkinkan untuk mengelola server virtual Anda dalam cara yang diinginkan karena root permissions yang disediakan
 - **skalabilitas** - server dapat diatur untuk skalasi otomatis secara vertikal dan horizontal dengan menetapkan batasan sumber daya dan pemicu tertentu
-- **efisiensi biaya** - VPS adalah solusi yang relatif murah (dibandingkan dengan biaya pembelian dan pemeliharaan server fisik khusus nyata) dan berkat model [pengaturan harga berbasis penggunaan](https://docs.dewacloud.com/pricing-model/) platform
+- **efisiensi biaya** - VPS adalah solusi yang relatif murah (dibandingkan dengan biaya pembelian dan pemeliharaan server fisik khusus nyata) dan pricing model [pengaturan harga berbasis penggunaan](https://docs.dewacloud.com/pricing-model/) platform
 - **alat manajemen** - akses ke [alat bawaan](https://docs.dewacloud.com/vps-configuration/#elastic-vps-inbuilt-tools) platform untuk konfigurasi yang lebih sederhana melalui dashboard GUI
 - **stack dikelola** - Solusi perangkat lunak Elastic VPS dikelola oleh tim PaaS, memastikan pembaruan reguler dan kompatibilitas penuh dengan platform
 

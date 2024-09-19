@@ -20,7 +20,7 @@ Masuk ke dashboard platform Anda dan buka wizard topologi dengan mengklik tombol
 
 ![ubuntu vps topology wizard](#)
 
-Sesuaikan opsi lainnya (batas cloudlet, [jumlah](https://docs.dewacloud.com/horizontal-scaling/) instance server dan nama untuk lingkungan Anda) dan klik tombol **Create**.
+Sesuaikan opsi lainnya (batas cloudlet, [jumlah](https://docs.dewacloud.com/horizontal-scaling/) instance server dan nama untuk environment Anda) dan klik tombol **Create**.
 
 **Catatan:** Bekerja dengan **VPS** menyiratkan penggunaan alamat [external IP](https://docs.dewacloud.com/public-ip/) (satu per instance), yang secara otomatis terpasang pada container yang sesuai.
 

@@ -4,7 +4,7 @@ slug: /private-registry-inside-paas
 title: Private Registry inside PaaS
 ---
 
-## Private Registry inside PaaS{#private-registry-inside-paas}
+# Private Registry inside PaaS{#private-registry-inside-paas}
 
 ![Docker container private registry](#)
 
