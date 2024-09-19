@@ -24,7 +24,7 @@ Setelah [terhubung](https://docs.dewacloud.com/win-rdp-access/) ke desktop node 
 
 ![Windows server manager](#)
 
-2. Wizard yang sesuai akan dibuka di jendela baru dengan beberapa informasi pra-mulai dasar yang ditampilkan, maka periksalah dan klik **Next**.
+2. Wizard yang sesuai akan dibuka di window baru dengan beberapa informasi pra-mulai dasar yang ditampilkan, maka periksalah dan klik **Next**.
 
 ![Windows add roles](#)
 

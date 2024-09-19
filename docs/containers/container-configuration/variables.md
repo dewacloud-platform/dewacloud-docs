@@ -4,7 +4,7 @@ slug: /variables
 title: Variables
 ---
 
-## Variables{#variables}
+# Variables{#variables}
 
 Pada tab **Variables**, Anda dapat melihat dan mengelola daftar [environment variables](<https://docs.dewacloud.com/docs/environment-variables/>) untuk layer saat ini.
 

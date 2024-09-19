@@ -7,7 +7,7 @@ title: .NET Core
 
 # Server Aplikasi .NET Core
 
-**[.NET Core](https://docs.microsoft.com/en-us/dotnet/core/about)** adalah versi open-source dari .NET yang dapat dijalankan di berbagai platform untuk membangun website, layanan, dan aplikasi konsol. Sering kali digunakan untuk aplikasi cloud atau merestrukturisasi aplikasi perusahaan besar menjadi mikroservices.
+**[.NET Core](https://docs.microsoft.com/en-us/dotnet/core/about)** adalah versi open-source dari .NET yang dapat dijalankan di berbagai platform untuk membangun website, layanan, dan aplikasi console. Sering kali digunakan untuk aplikasi cloud atau merestrukturisasi aplikasi perusahaan besar menjadi mikroservices.
 
 .NET Core terdiri dari komponen berikut:
 
@@ -34,7 +34,7 @@ Klik **Create** untuk melanjutkan.
 
 ![.NET Core application server created](#)
 
-Server aplikasi beroperasi di dalam container (node) terpisah - instance virtual yang terisolasi - disediakan untuk stack perangkat lunak. Container memiliki IP privatnya sendiri dan catatan DNS unik.
+Server aplikasi beroperasi di dalam container (node) terpisah - instance virtual yang terisolasi - disediakan untuk stack perangkat lunak. Container memiliki private IP nya sendiri dan record DNS unik.
 
 ## Mendeploy Aplikasi ke Server .NET Core{#deploying-application-to-net-core-server}
 
@@ -83,7 +83,7 @@ Aplikasi web Anda harus terbuka di tab baru browser. Dalam kasus kami, ini hanya
 
 ![.NET Core web application](#)
 
-Gunakan panduan ini sebagai referensi untuk mendeply aplikasi Anda sendiri ke server .NET Core.
+Gunakan panduan ini sebagai referensi untuk mendeploy aplikasi Anda sendiri ke server .NET Core.
 
 ## Baca Juga{#whats-next}
 

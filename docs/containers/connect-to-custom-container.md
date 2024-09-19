@@ -4,7 +4,7 @@ slug: /connect-to-custom-container
 title: Connect to Custom Container
 ---
 
-## How to Connect to Your Custom Container{#how-to-connect-to-your-custom-container}
+# How to Connect to Your Custom Container{#how-to-connect-to-your-custom-container}
 
 Integrasi [Containers](<https://docs.dewacloud.com/docs/container-types/>) ke dalam platform adalah salah satu layanan yang paling penting dan banyak diminati. Sintesis portabilitas container, bersama dengan pengelolaan platform yang fleksibel, menarik bagi pengembang dan memungkinkan untuk hosting dan pemeliharaan semua jenis aplikasi yang tersedia dalam Docker templates dengan mudah.
 

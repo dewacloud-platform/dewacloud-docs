@@ -8,7 +8,7 @@ title: CentOS VPS
 
 ![centos vps logo](#)
 
-**[CentOS](https://www.centos.org/)** (Community ENTerprise Operating System) adalah proyek berbasis komunitas yang gratis, dengan kode sumber terbuka dari distribusi Linux RHEL.
+**[CentOS](https://www.centos.org/)** (Community ENTerprise Operating System) adalah proyek berbasis komunitas yang gratis, dengan kode sumber terbuka dari distribusi RHEL Linux.
 
 Karena kontribusi komunitas yang terus-menerus, CentOS menawarkan stabilitas tingkat enterprise yang diperkuat dengan kinerja yang kuat dan mewakili opsi yang andal, dengan perawatan rendah, dan aman untuk menjalankan virtual private server.
 

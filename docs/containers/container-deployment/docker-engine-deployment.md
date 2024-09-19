@@ -4,7 +4,7 @@ slug: /docker-engine-deployment
 title: Docker Engine Deployment
 ---
 
-## Docker Engine Deployment{#docker-engine-deployment}
+# Docker Engine Deployment{#docker-engine-deployment}
 
 Platform ini menyediakan dukungan untuk **Docker Engine Community Edition** dengan kompatibilitas penuh ke ekosistem Docker native. Integrasi tersebut memungkinkan bekerja dengan alat inti teknologi container Docker, yaitu:
 

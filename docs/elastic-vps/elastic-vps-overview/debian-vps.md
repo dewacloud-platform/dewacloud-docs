@@ -8,7 +8,7 @@ title: Debian VPS
 
 ![Debian VPS logo](#)
 
-**[Debian](https://www.debian.org/)** adalah sistem operasi gratis yang berkomitmen pada prinsip perangkat lunak sumber terbuka dan menawarkan solusi yang terus berkembang dengan kemampuan kinerja yang fleksibel, aman, dan serbaguna. Debian menyediakan serangkaian program dan utilitas dasar untuk menjalankan OS dan berbagai macam paket perangkat lunak aplikasi tambahan. Solusi seperti ini memiliki inti yang ringan yang dapat dengan mudah disesuaikan sesuai kebutuhan Anda menggunakan pengelola paket khusus untuk perangkat lunak yang dibutuhkan dan instalasi bundel.
+**[Debian](https://www.debian.org/)** adalah sistem operasi gratis yang berkomitmen pada prinsip open source software dan menawarkan solusi yang terus berkembang dengan kemampuan kinerja yang fleksibel, aman, dan serbaguna. Debian menyediakan serangkaian program dan utilitas dasar untuk menjalankan OS dan berbagai macam paket software aplikasi tambahan. Solusi seperti ini memiliki inti yang ringan yang dapat dengan mudah disesuaikan sesuai kebutuhan Anda menggunakan pengelola paket khusus untuk software yang dibutuhkan dan instalasi bundel.
 
 Platform ini menyediakan Debian dengan semua keuntungan dari [Elastic VPS](https://docs.dewacloud.com/vps/) (jaminan keamanan, efisiensi biaya, izin root, dll.).
 
@@ -24,7 +24,7 @@ Buka wizard topologi dengan mengklik tombol **New Environment** di bagian atas d
 
 Sesuaikan opsi lainnya sesuai kebutuhan Anda ([vertical](https://docs.dewacloud.com/automatic-vertical-scaling/) dan [horizontal scaling](https://docs.dewacloud.com/horizontal-scaling/), batas disk, dll.) dan klik tombol **Create**.
 
-Dalam sekejap, virtual server Anda yang sepenuhnya terisolasi dengan sistem operasi Debian akan siap bekerja, memungkinkan Anda melanjutkan dengan pemasangan perangkat lunak dan layanan yang diperlukan.
+Dalam sekejap, virtual server Anda yang sepenuhnya terisolasi dengan sistem operasi Debian akan siap bekerja, memungkinkan Anda melanjutkan dengan pemasangan software dan layanan yang diperlukan.
 
 ## Baca Juga{#whats-next}
 

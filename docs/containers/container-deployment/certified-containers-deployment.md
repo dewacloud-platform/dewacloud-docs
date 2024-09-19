@@ -4,7 +4,7 @@ slug: /certified-containers-deployment
 title: Certified Containers Deployment
 ---
 
-## Certified Containers Deployment{#certified-containers-deployment}
+# Certified Containers Deployment{#certified-containers-deployment}
 
 Platform menyediakan [software stacks](<https://docs.dewacloud.com/docs/software-stacks-versions/>) yang paling populer sebagai solusi yang sudah pre-configured dan managed untuk deployment yang cepat dan pengelolaan yang nyaman. Semua certified containers ini diuji secara menyeluruh dan dioptimalkan khusus untuk digunakan dalam platform. Kustomisasinya termasuk update rutin ke versi perangkat lunak terbaru dan integrasi tambahan (seperti optimalisasi otomatis berdasarkan sumber daya yang di-assign, instalasi otomatis sertifikat SSL dan deployment aplikasi, built-in [auto-clustering](<https://docs.dewacloud.com/docs/auto-clustering/>), dll.).
 
