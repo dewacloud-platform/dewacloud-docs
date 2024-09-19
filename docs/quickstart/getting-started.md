@@ -29,15 +29,15 @@ Akses platform dewacloud melalui [tautan ini](<https://app.infra.dewacloud.com/>
 
 1. Kembangkan menu di sudut kiri bawah dan pilih opsi **Signup**.
 
-<p>
+
   <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/1-signup.png" alt="PaaS dashboard signup button" width="35%"/>
-</p>
+
 
 2. Berikan _Email_ Anda dalam formulir yang muncul.
 
-<p>
+
   <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/2-email-sign-up.png" alt="registration via dashboard" width="35%"/>
-</p>
+
 
 Klik tombol **Sign Up!** untuk menyetujui _terms of use_ dan _privacy policy_ penyedia.
 
@@ -56,23 +56,23 @@ Anda dapat mengakses [platform Marketplace](<https://www.virtuozzo.com/applicati
 
 1. Klik tombol **Marketplace** di bagian atas dashboard.
 
-<p>
+
   <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/3-market-place.png" alt="PaaS main buttons" width="100%"/>
-</p>
+
 
 2. Temukan solusi yang diperlukan dalam daftar yang dikategorikan di sebelah kiri atau menggunakan kolom pencarian di bagian atas.
 
-<p>
+
   <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/4-marketplace-browser.png" alt="application marketplace" width="100%"/>
-</p>
+
 
 Arahkan ke plank aplikasi dan klik tombol **Install**.
 
 3. Konfigurasikan preferensi instalasi (mis. nama lingkungan, [alias](<https://docs.dewacloud.com/docs/environment-aliases/>), [region](<https://docs.dewacloud.com/docs/environment-regions/>), dll.) dan klik **Install** sekali lagi.
 
-<p>
+
   <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/5-marketplace-wordpress.png" alt="one-click WordPress installation" width="75%"/>
-</p>
+
 
 Semua langkah selanjutnya akan dilakukan secara otomatis oleh platform, yaitu pembuatan environment dengan topologi yang diperlukan, deployment aplikasi yang sesuai, instalasi dependensi yang diperlukan, koneksi (mis. dengan database) dan pengaturan konfigurasi.
 
@@ -84,9 +84,9 @@ Jika Anda ingin mendistribusikan aplikasi kustom dan mengendalikan proses deploy
 
 1. Klik tombol **New Environment** di sudut kiri atas dashboard.
 
-<p>
+
   <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/6-new-environment.png" alt="PaaS main buttons" width="100%"/>
-</p>
+
 
 2. **Topology Wizard** akan terbuka, di mana Anda dapat [mengatur environment](<https://docs.dewacloud.com/docs/setting-up-environment/>). Di antara fitur utama platform yang dapat konfigurasikan melalui formulir ini, ada:
 
@@ -95,23 +95,21 @@ Jika Anda ingin mendistribusikan aplikasi kustom dan mengendalikan proses deploy
   * [automatic vertical scaling](<https://docs.dewacloud.com/docs/automatic-vertical-scaling/>) untuk memastikan harga yang adil dan [horizontal scaling](<https://docs.dewacloud.com/docs/automatic-horizontal-scaling/>) untuk menyediakan fleksibilitas dan keandalan
   * lampiran [public IP](<https://docs.dewacloud.com/docs/public-ip/>) untuk akses langsung dari Internet
 
-<p>
-  <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/7-aplikasi-pertama.png" alt="topology wizard" width="100%"/>
-</p>
+<img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/7-aplikasi-pertama.png" alt="topology wizard" width="100%"/>
 
 Untuk sekarang, mari kita buat aplikasi server Tomcat tunggal.
 
 3. Dalam satu menit, environment Anda akan muncul di dashboard.
 
-<p>
+
   <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/8-deployment-manager.png" alt="dashboard environment created" width="100%"/>
-</p>
+
 
 4. Platform ini mendukung berbagai cara [deployment aplikasi](<https://docs.dewacloud.com/docs/deployment-guide/>) otomatis sehingga Anda dapat memilih opsi yang paling sesuai. Untuk contoh ini, kami akan menunjukkan deployment aplikasi _Hello World_ default dari arsip di deployment manager (terletak di bagian bawah dashboard).
 
-<p>
+
   <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/9-deploy.png" alt="application deploy from deployment manager" width="50%"/>
-</p>
+
 
 :::tip
 Anda dapat dengan mudah menambahkan aplikasi Anda ke Deployment Manager melalui pengunggahan arsip (baik dari mesin lokal atau melalui URL) atau menambahkan repository Git/SVN yang sesuai.
@@ -121,15 +119,15 @@ Arahkan ke proyek dan klik tombol **Deploy to**.
 
 5. Dalam frame _**Deploy**_ yang terbuka, pilih _Environment_ Anda dan lanjutkan dengan tombol **Deploy**.
 
-<p>
+
   <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/10-open-in-browser.png" alt="application deploy dialog" width="100%"/>
-</p>
+
 
 6. Tunggu pop-up deployment berhasil dan klik **Open in Browser** untuk memastikan semuanya berfungsi dengan baik.
 
-<p>
+
   <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/10-open-in-browser.png" alt="open in browser button" width="100%"/>
-</p>
+
 
 Dengan demikian, jika aplikasi Anda memerlukan sejumlah pengaturan tambahan atau tidak memiliki antarmuka web, jangan ragu untuk menggunakan berbagai [alat konfigurasi](<https://docs.dewacloud.com/docs/container-configuration/>) yang ada.
 

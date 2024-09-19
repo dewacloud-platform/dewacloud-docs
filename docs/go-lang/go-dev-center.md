@@ -51,9 +51,9 @@ Daftar terbaru dari rilis yang tersedia di platform disediakan melalui dokumen [
 
 Anda dapat memilih versi yang diinginkan selama pembuatan environment dan mengubahnya nanti melalui [container redeploy](<https://www.virtuozzo.com/application-platform-docs/container-redeploy/>). Di sini, semua data kustom di dalam node(s) akan disimpan, yang memungkinkan, misalnya, untuk dengan mudah meningkatkan versi perangkat lunak Anda setelah rilis template stack yang baru.
 
-<p>
+
 <img src="https://assets.dewacloud.com/dewacloud-docs/go-lang/03-go-containers-redeploy.png" alt="Go containers redeploy" width="50%"/>
-</p>
+
 
 ## Go Application Deployment{#go-application-deployment}
 
@@ -66,9 +66,9 @@ Ada kemungkinan untuk menyesuaikan proses pendistribusian dengan menyediakan ata
   * _**GO_BUILD_OPTIONS**_ \- menyediakan [opsi tambahan untuk operasi build](<https://golang.org/cmd/go/#hdr-Compile_packages_and_dependencies>) (_-a_, secara default, untuk memaksa membuat ulang paket yang sudah terbaru)
   * _**GO_RUN_OPTIONS**_ \- menyediakan [opsi tambahan untuk operasi run](<https://golang.org/cmd/go/#hdr-Compile_and_run_Go_program>)
 
-<p>
+
 <img src="https://assets.dewacloud.com/dewacloud-docs/go-lang/04-go-application-deployment.png" alt="Go application deployment" width="50%"/>
-</p>
+
 
 Selama pendistribusian, platform secara otomatis melaksanakan langkah-langkah berikut:
 
@@ -108,9 +108,9 @@ Skalabilitas vertikal otomatis dipastikan oleh kemampuan platform untuk secara d
 
 Proses skala secara otomatis ditangani oleh platform, Anda hanya perlu menentukan batas [cloudlets](<https://docs.dewacloud.com/docs/cloudlet/>) bawah dan atas (masing-masing setara dengan _128 MiB_ RAM dan _400 MHz_ CPU) untuk server Go Anda melalui topology wizard:
 
-<p>
+
 <img src="https://assets.dewacloud.com/dewacloud-docs/go-lang/06-golang-automatic-vertical-scaling.png" alt="Golang automatic vertical scaling" width="75%"/>
-</p>
+
 
 Aplikasi Anda akan bekerja dalam batas-batas ini mengurangi konsumsi sumber daya ketika beban rendah atau meningkatkannya ketika beban tinggi. Jadi, Anda hanya membayar untuk sumber daya yang benar-benar terpakai. Untuk informasi lebih lanjut, silakan merujuk ke dokumentasi [automatic vertical scaling](<https://docs.dewacloud.com/docs/automatic-vertical-scaling/>).
 
@@ -118,9 +118,9 @@ Aplikasi Anda akan bekerja dalam batas-batas ini mengurangi konsumsi sumber daya
 
 Server Golang tambahan dapat dengan mudah ditambahkan melalui topology wizard selama pembuatan atau penyesuaian environment. Cukup klik tombol “**+** ” pada bagian _Horizontal Scaling_ dan tambahkan jumlah instance yang diperlukan.
 
-<p>
+
 <img src="https://assets.dewacloud.com/dewacloud-docs/go-lang/07-golang-horizontal-scaling.png" alt="Golang horizontal scaling" width="50%"/>
-</p>
+
 
 Jumlah maksimum server jenis yang sama dalam satu lapisan environment tergantung pada pengaturan hosting provider tertentu (biasanya batas ini untuk 16 node dan dapat diperbesar dengan mengirimkan permintaan yang sesuai ke support).
 
