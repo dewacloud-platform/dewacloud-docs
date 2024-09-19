@@ -15,7 +15,7 @@ Selain itu, Kubernetes mendukung akses langsung ke layanan dengan menggunakan na
 
 Cluster Kubernetes menggunakan _CoreDNS_ untuk menyelesaikan nama DNS internal Kubernetes. Ini secara otomatis didefinisikan dalam file _**/etc/resolv.conf**_ dari setiap pod. Selain itu, CoreDNS memanfaatkan nameservers platform, yang memungkinkan membangun akses langsung antara K8s Cluster dan kontainer lainnya di dalam platform.
 
-__Sebagai contoh,__ jika Anda memiliki lingkungan dengan database di platform dan ingin menghubungkannya dari pod Kubernetes Anda, Anda perlu menggunakan hostname “_**$\{nodeId\}-$\{envName\}.$\{platformDomain\}**_” dan port default untuk database Anda (_3306_ untuk MySQL, _5432_ untuk Postgres, dll.).
+__Sebagai contoh,__ jika Anda memiliki lingkungan dengan database di platform dan ingin menghubungkannya dari pod Kubernetes Anda, Anda perlu menggunakan hostname `${nodeId}-${envName}.${platformDomain}` dan port default untuk database Anda (_3306_ untuk MySQL, _5432_ untuk Postgres, dll.).
 
 Namun, Anda perlu membuat [endpoint](<https://docs.dewacloud.com/docs/endpoints>) untuk terhubung ke database semacam ini dari luar platform.
 
