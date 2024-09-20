@@ -4,7 +4,7 @@ slug: /building-custom-container
 title: Building Custom Container
 ---
 
-## Building Custom Container{#building-custom-container}
+# Building Custom Container{#building-custom-container}
 
 Dengan platform ini, proses menyiapkan Docker image Anda sendiri dapat sangat disederhanakan dengan membangunnya di atas image yang sudah ada (yaitu - di atas template dasar platform **CentOS 7**). Ini memungkinkan untuk melewati semua langkah yang sudah diselesaikan dalam template "induk" tersebut, dan hanya menambahkan penyesuaian yang diperlukan. Kami akan mempertimbangkan prosedur ini pada contoh menyiapkan image [WildFly](<https://www.wildfly.org/>) custom - server aplikasi Java yang fleksibel dan ringan, yang merupakan penerus langsung dari JBoss yang populer.
 

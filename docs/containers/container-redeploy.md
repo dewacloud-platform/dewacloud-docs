@@ -4,7 +4,7 @@ slug: /container-redeploy
 title: Container Redeploy
 ---
 
-## Container Redeploy{#container-redeploy}
+# Container Redeploy{#container-redeploy}
 
 Mayoritas solusi berbasis Docker (termasuk [stacks](<https://docs.dewacloud.com/docs/software-stacks-versions/>) yang di-manage oleh platform) terus dikembangkan, menghadirkan versi produk serta perbaikan baru. Oleh karena itu, disarankan untuk memperbarui template Anda secara teratur ke tag terbaru mereka, yaitu rilis terbaru.
 

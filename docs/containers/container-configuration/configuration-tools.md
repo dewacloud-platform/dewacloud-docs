@@ -4,7 +4,7 @@ slug: /configuration-tools
 title: Configuration Tools
 ---
 
-## Container Configuration{#container-configuration}
+# Container Configuration{#container-configuration}
 
 Platform ini menyediakan kemungkinan untuk mengelola semua aspek utama dari siklus hidup containers secara langsung melalui sebuah [dashboard](<https://docs.dewacloud.com/docs/dashboard-guide/>). Ini mendukung sejumlah berbagai alat, yang dimaksudkan untuk membantu Anda mengonfigurasi environments Anda:
 

@@ -4,7 +4,7 @@ slug: /container-types
 title: Container Types
 ---
 
-## Container Types and Use Cases{#container-types-use-cases}
+# Container Types and Use Cases{#container-types-use-cases}
 
 PaaS menggabungkan dua jenis container dalam satu platform. Teknologi containerisasi ini diarahkan untuk memecahkan masalah yang berbeda, tetapi orkestrasi platform mewarisi manfaat dari kedua implementasi.
 

@@ -30,6 +30,41 @@
 }
 
 /* Custom Formatting */
-p:has(img) {
-  text-align: center;
+article img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1rem;
+}
+
+/* if image in p tag */
+p > img {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+li > img {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+table {
+  width: 100%;
 }

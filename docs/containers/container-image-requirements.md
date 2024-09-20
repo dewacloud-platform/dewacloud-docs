@@ -4,7 +4,7 @@ slug: /container-image-requirements
 title: Container Image Requirements
 ---
 
-## Container Image Requirements{#container-image-requirements}
+# Container Image Requirements{#container-image-requirements}
 
 Saat ini, platform containers memiliki persyaratan berikut untuk base image:
 

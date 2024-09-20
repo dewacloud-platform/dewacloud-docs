@@ -6,7 +6,7 @@ title: Setting Mail Server Inside VPS
 
 # Mengatur Mail Server di Dalam CentOS VPS
 
-Dengan platform ini, Anda dapat mengintegrasikan mail server ke mesin virtual privat Anda. Di bawah ini, kami akan memandu Anda melalui langkah-langkah yang diperlukan untuk mendapatkannya di [CentOS VPS](https://www.virtuozzo.com/application-platform-docs/vps-centos/). Untuk itu, Anda perlu mengakses container yang diperlukan melalui protokol SSH menggunakan alur koneksi yang disukai (misalnya, [klien berbasis web untuk CentOS](https://docs.dewacloud.com/vps-centos/#ssh-client) dalam kasus kami) dan melaksanakan langkah-langkah berikut:
+Dengan platform ini, Anda dapat mengintegrasikan mail server ke virtual private machine Anda. Di bawah ini, kami akan memandu Anda melalui langkah-langkah yang diperlukan untuk mendapatkannya di [CentOS VPS](https://www.virtuozzo.com/application-platform-docs/vps-centos/). Untuk itu, Anda perlu mengakses container yang diperlukan melalui protokol SSH menggunakan alur koneksi yang disukai (misalnya, [klien berbasis web untuk CentOS](https://docs.dewacloud.com/vps-centos/#ssh-client) dalam kasus kami) dan melaksanakan langkah-langkah berikut:
 
 - [Menginstal dan Menguji Mail Server](https://docs.dewacloud.com/#set-up-and-test-mail-server)
 - [Mengkonfigurasi Jaringan yang Diotorisasi](https://docs.dewacloud.com/#configure-postfix-authorized-networks)

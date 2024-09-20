@@ -6,7 +6,7 @@ title: Run Configuration
 
 Tentu, berikut adalah terjemahan dan penyesuaian markdown sesuai dengan instruksi Anda:
 
-## Run Configuration{#run-configuration}
+# Run Configuration{#run-configuration}
 
 Tab **CMD / Entry Point** terakhir berisi dua kolom input, di mana Anda dapat mengatur opsi run untuk container Anda:
 

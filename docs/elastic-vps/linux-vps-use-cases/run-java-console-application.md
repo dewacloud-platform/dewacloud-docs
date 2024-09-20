@@ -106,11 +106,11 @@ Setelah aplikasi Anda siap, Anda perlu mengemasnya ke dalam arsip _**.jar**_ dan
 
 Klik tombol **Login** untuk memulai pengaturan koneksi.
 
-2. Setelah terhubung ke node VPS Anda, navigasikan ke direktori _**home**_ dan buat konteks _**standalone_java**_ baru di dalamnya. Kemudian seret file _**.jar**_ yang diperlukan dengan aplikasi Anda dan letakkan ke dalam folder yang baru dibuat.
+2. Setelah terhubung ke node VPS Anda, navigasikan ke direktori _**home**_ dan buat konteks _**standalone_java**_ baru di dalamnya. Kemudian ambil file _**.jar**_ yang diperlukan dengan aplikasi Anda dan letakkan ke dalam folder yang baru dibuat.
 
 ![upload java app to vps](#)
 
-Dalam dialog pengaturan transfer yang muncul, klik **Copy** untuk memulai pengunggahan. Setelah selesai, Anda akan melihat file tersebut di direktori pada VPS jarak jauh.
+Dalam dialog pengaturan transfer yang muncul, klik **Copy** untuk memulai pengunggahan. Setelah selesai, Anda akan melihat file tersebut di direktori pada remote VPS.
 
 ## Akses Aplikasi via SSH{#aссess-application-via-ssh}
 

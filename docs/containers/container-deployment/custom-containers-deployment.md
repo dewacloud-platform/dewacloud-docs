@@ -4,7 +4,7 @@ slug: /custom-containers-deployment
 title: Custom Containers Deployment
 ---
 
-## Custom Containers Deployment{#custom-containers-deployment}
+# Custom Containers Deployment{#custom-containers-deployment}
 
 Platform ini dapat secara otomatis membuat _**custom containers**_ berdasarkan image Docker standar yang menggunakan [OS dan arsitektur yang didukung](<https://docs.dewacloud.com/docs/container-image-requirements/>) dan disimpan di Docker Hub atau registry publik/pribadi lainnya. Container tersebut mendapatkan semua manfaat dari platform (_automatic vertical_ dan _horizontal scaling_, _logs_, _statistics_ dan _alerts monitoring_, embedded _configuration file manager_, dll.) sambil menjaga perangkat lunak asli dari image tetap utuh. Perlu diingat bahwa operabilitas aplikasi itu sendiri tidak dapat dijamin karena dikelola oleh pengelola image pihak ketiga yang bersangkutan dan bukan oleh platform.
 

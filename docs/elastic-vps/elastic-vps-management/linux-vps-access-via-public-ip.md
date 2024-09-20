@@ -6,7 +6,7 @@ title: Linux VPS Access via Public IP
 
 # Akses Linux VPS melalui Public IP
 
-Anda dapat mengakses container VPS Anda menggunakan perangkat lunak SSH pihak ketiga yang Anda pilih melalui alamat IP eksternal yang telah terpasang. Koneksi semacam itu memberikan tingkat akses root penuh seperti saat bekerja melalui [SSH Gate](https://docs.dewacloud.com/vps-ssh-gate/).
+Anda dapat mengakses container VPS Anda menggunakan software third party SSH yang Anda pilih melalui alamat IP eksternal yang telah terpasang. Koneksi semacam itu memberikan tingkat akses root penuh seperti saat bekerja melalui [SSH Gate](https://docs.dewacloud.com/vps-ssh-gate/).
 
 :::tip
 Anda dapat menemukan Public IP Anda dengan memperluas node yang sesuai di dashboard platform atau dalam email pembuatan Elastic VPS yang sesuai.
@@ -30,6 +30,7 @@ di mana
 Jika terhubung untuk pertama kali, Anda mungkin diminta untuk mengonfirmasi akses dengan menambahkan alamat VPS Anda ke daftar host yang dikenal (ketik “_yes_” untuk melanjutkan). Selanjutnya, otentikasi di server dengan memberikan kata sandi (yang dikirim melalui email setelah pembuatan node).
 
 Itu saja! Mulai mengelola container VPS Anda dan terapkan konfigurasi yang diperlukan. Anda dapat menyesuaikan prosedur saat ini untuk membangun koneksi dengan alat SSH pihak ketiga yang Anda pilih.
+
 
 Itu saja! Sekarang, karena koneksi SSH melalui Public IP ke VPS jarak jauh telah dibangun, Anda dapat memulai manajemennya dengan izin root penuh diberikan.
 

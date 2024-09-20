@@ -10,6 +10,7 @@ title: CentOS VPS
 <img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/vps-centos-logo.png" alt="centos vps logo" width="20%"/>
 </p>
 
+
 **[CentOS](https://www.centos.org/)** (Community ENTerprise Operating System) adalah proyek berbasis komunitas yang gratis, dengan kode open source dari distribusi Linux RHEL.
 
 Karena kontribusi komunitas yang terus-menerus, CentOS menawarkan stabilitas tingkat enterprise yang diperkuat dengan kinerja yang kuat dan mewakili opsi yang andal, low-maintenance, dan aman untuk menjalankan virtual private server.
