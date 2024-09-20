@@ -6,25 +6,31 @@ title: Debian VPS
 
 # Elastic Debian VPS
 
-![Debian VPS logo](#)
+<p>
+<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/vps-debian-logo.png" alt="Debian VPS logo" width="20%"/>
+</p>
 
-**[Debian](https://www.debian.org/)** adalah sistem operasi gratis yang berkomitmen pada prinsip open source software dan menawarkan solusi yang terus berkembang dengan kemampuan kinerja yang fleksibel, aman, dan serbaguna. Debian menyediakan serangkaian program dan utilitas dasar untuk menjalankan OS dan berbagai macam paket software aplikasi tambahan. Solusi seperti ini memiliki inti yang ringan yang dapat dengan mudah disesuaikan sesuai kebutuhan Anda menggunakan pengelola paket khusus untuk software yang dibutuhkan dan instalasi bundel.
+**[Debian](https://www.debian.org/)** adalah sistem operasi gratis yang berkomitmen pada prinsip software open source dan menawarkan solusi yang terus berkembang dengan kemampuan kinerja yang fleksibel, aman, dan serbaguna. Debian menyediakan serangkaian program dan basic utility untuk menjalankan OS dan berbagai macam paket aplikasi software tambahan. Solusi seperti ini memiliki core yang ringan yang dapat dengan mudah disesuaikan sesuai kebutuhan Anda menggunakan package manager khusus untuk software yang dibutuhkan dan instalasi bundle.
 
-Platform ini menyediakan Debian dengan semua keuntungan dari [Elastic VPS](https://docs.dewacloud.com/vps/) (jaminan keamanan, efisiensi biaya, izin root, dll.).
+Dewacloud menyediakan Debian dengan semua keuntungan dari [Elastic VPS](https://docs.dewacloud.com/vps/) (jaminan keamanan, efisiensi biaya, root permission, dll.).
 
 ## Hosting Debian VPS{#debian-vps-hosting}
 
-Pembuatan Debian VPS semudah stack bersertifikat lainnya dan dapat dilakukan hanya dalam hitungan menit.
+Pembuatan VPS Debian semudah membuat certified stack lainnya dan dapat dilakukan hanya dalam hitungan menit.
 
-Buka wizard topologi dengan mengklik tombol **New Environment** di bagian atas dashboard platform. Perluas bagian _VPS_ dan pilih template _**Debian**_ versi yang diperlukan dari opsi yang tersedia.
+Buka wizard topologi environment dengan mengklik tombol **New Environment** di bagian atas dashboard Dewacloud. Perluas bagian _VPS_ dan pilih template _**Debian**_ dan versi yang diperlukan dari opsi yang tersedia.
 
-![Debian VPS wizard](#)
+<p>
+<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/vps-debian.png" alt="Debian VPS wizard" width="100%"/>
+</p>
 
-**Catatan:** Instance _**Elastic VPS**_ secara default memerlukan alamat [Public IP](https://docs.dewacloud.com/public-ip/) (satu per node).
+:::note
+Instance _**Elastic VPS**_ secara default memerlukan [Public IP address](https://docs.dewacloud.com/public-ip/) (satu per node).
+:::
 
-Sesuaikan opsi lainnya sesuai kebutuhan Anda ([vertical](https://docs.dewacloud.com/automatic-vertical-scaling/) dan [horizontal scaling](https://docs.dewacloud.com/horizontal-scaling/), batas disk, dll.) dan klik tombol **Create**.
+Sesuaikan opsi lainnya sesuai kebutuhan Anda ([vertical](https://docs.dewacloud.com/automatic-vertical-scaling/) dan [horizontal scaling](https://docs.dewacloud.com/horizontal-scaling/), disk limit, dll.) dan klik tombol **Create**.
 
-Dalam sekejap, virtual server Anda yang sepenuhnya terisolasi dengan sistem operasi Debian akan siap bekerja, memungkinkan Anda melanjutkan dengan pemasangan software dan layanan yang diperlukan.
+Dalam sekejap, virtual server Anda yang sepenuhnya terisolasi dengan sistem operasi Debian akan siap untuk dijalankan, memungkinkan Anda untuk melanjutkan dengan instalasi software dan layanan yang diperlukan.
 
 ## Baca Juga{#whats-next}
 
