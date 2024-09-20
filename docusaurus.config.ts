@@ -2,6 +2,8 @@ import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
+const githubRepo = "https://github.com/jon-mun/dewacloud-docs";
+
 const config: Config = {
   title: "Dewacloud",
   tagline:
@@ -40,6 +42,7 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           // editUrl:
           //   "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: `${githubRepo}/edit/main/`,
         },
         blog: {
           path: "./release-notes",
@@ -70,7 +73,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
+    image: "img/dewacloud-social-card.jpg",
     navbar: {
       logo: {
         alt: "Dewacloud Logo",
@@ -86,7 +89,7 @@ const config: Config = {
         },
         { to: "/release-notes", label: "Release Notes", position: "left" },
         {
-          href: "https://github.com/jon-mun/dewacloud-docs",
+          href: githubRepo,
           label: "GitHub",
           position: "right",
         },
@@ -107,17 +110,17 @@ const config: Config = {
         {
           title: "Community",
           items: [
+            // {
+            //   label: "Stack Overflow",
+            //   href: "https://stackoverflow.com/questions/tagged/docusaurus",
+            // },
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
-            },
-            {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
+              label: "Instagram",
+              href: "https://www.instagram.com/dewacloudofficial/",
             },
             {
               label: "Twitter",
-              href: "https://twitter.com/docusaurus",
+              href: "https://x.com/dewacloud",
             },
           ],
         },
@@ -130,7 +133,7 @@ const config: Config = {
             },
             {
               label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              href: githubRepo,
             },
           ],
         },
