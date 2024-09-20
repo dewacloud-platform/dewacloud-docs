@@ -10,7 +10,7 @@ Untuk aplikasi yang lebih kompleks dan padat, sebaiknya memusatkan data bersama 
 
 Di dalam platform, [Shared Storage Container](<https://docs.dewacloud.com/docs/shared-storage-container/>) direkomendasikan untuk digunakan dalam berbagi file di beberapa lapisan atau bahkan lingkungan dalam satu akun. Ini dioptimalkan secara khusus untuk penyimpanan data (yaitu berfokus pada kinerja dan menyediakan jumlah ruang disk yang diperbesar).
 
-![dedicated container storage](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/use-case/dedicated-container/01-dedicated-container-storage.png" alt="dedicated container storage" width="25%"/>
 
 Selain itu, dengan menggunakan Shared Storage Container terpisah, Anda mendapatkan manfaat berikut:
 
