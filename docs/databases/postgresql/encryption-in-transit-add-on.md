@@ -129,10 +129,10 @@ psql -U {userName} {dbName} -h {host} -p {port} -W
 
 Di sini:
 
-  * _**{userName}**_ \- nama pengguna database untuk koneksi
-  * _**{dbName}**_ \- nama database yang akan dihubungkan
-  * _**{host}**_ \- titik masuk database (endpoint, dalam kasus kami)
-  * _**{port}**_ \- port untuk koneksi (dari endpoint, dalam kasus kami)
+  * `{userName}` \- nama pengguna database untuk koneksi
+  * `{dbName}` \- nama database yang akan dihubungkan
+  * `{host}` \- titik masuk database (endpoint, dalam kasus kami)
+  * `{port}` \- port untuk koneksi (dari endpoint, dalam kasus kami)
 
 ![PostgreSQL SSL connect](#)
 

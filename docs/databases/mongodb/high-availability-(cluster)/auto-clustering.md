@@ -101,9 +101,9 @@ Jika bekerja dengan versi database yang lebih lama, gunakan perintah mongo (untu
 
 Di mana:
 
-  * _**{user}**_ – nama pengguna administrator (dikirim ke email Anda, _admin_ secara default)
-  * _**{password}**_ – kata sandi untuk pengguna DB yang sesuai (dapat ditemukan dalam email yang sama)
-  * _**{DB_name}**_ – nama database yang ingin Anda akses (kami akan menggunakan yang default _admin_)
+  * `{user}` – nama pengguna administrator (dikirim ke email Anda, _admin_ secara default)
+  * `{password}` – kata sandi untuk pengguna DB yang sesuai (dapat ditemukan dalam email yang sama)
+  * `{DB_name}` – nama database yang ingin Anda akses (kami akan menggunakan yang default _admin_)
 
 6\. Anda dapat memeriksa status replica set dengan perintah yang sesuai:
 

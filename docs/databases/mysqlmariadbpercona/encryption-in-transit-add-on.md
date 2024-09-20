@@ -104,15 +104,15 @@ Jika Anda bekerja dengan klien MariaDB, ganti opsi “--ssl-mode=required” den
 
 Di sini:
 
-  * _**{user}**_ \- nama pengguna database untuk koneksi
-  * _**{host}**_ \- titik masuk database (endpoint, dalam kasus kita)
-  * _**{port}**_ \- port untuk koneksi (dari endpoint, dalam kasus kita)
+  * `{user}` \- nama pengguna database untuk koneksi
+  * `{host}` \- titik masuk database (endpoint, dalam kasus kita)
+  * `{port}` \- port untuk koneksi (dari endpoint, dalam kasus kita)
 
 Setelah terhubung, jalankan perintah _**status**_ dan periksa lini SSL di output.
 
 ![MySQL remote connection with SSL](#)
 
-2\. Ketika terhubung ke server, Anda dapat mengonfigurasi penggunaan sertifikat klien untuk otentikasi untuk mendapatkan _**server- dan client-side encryption**_. Jalankan perintah di bawah ini untuk membuat otentikasi SSL wajib untuk pengguna yang ditentukan. Misalnya, kita akan memberikan “_**user-2700607**_ ” (gantilah placeholder _**{user}**_) dari email yang diterima setelah pembuatan environment:
+2\. Ketika terhubung ke server, Anda dapat mengonfigurasi penggunaan sertifikat klien untuk otentikasi untuk mendapatkan _**server- dan client-side encryption**_. Jalankan perintah di bawah ini untuk membuat otentikasi SSL wajib untuk pengguna yang ditentukan. Misalnya, kita akan memberikan “_**user-2700607**_ ” (gantilah placeholder `{user}`) dari email yang diterima setelah pembuatan environment:
 
 ```sql
 FLUSH PRIVILEGES;

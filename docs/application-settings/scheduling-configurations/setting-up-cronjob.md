@@ -52,7 +52,7 @@ Make sure the script you want to run is executable. If not, use a built-in inter
 
 ## Cron Event Scheduler
 
-1. In the configuration tab, navigate to the **cron** folder and open the _{nodeName}_ file.
+1. In the configuration tab, navigate to the **cron** folder and open the `{nodeName}` file.
 
 ![cron scheduler file](#)
 

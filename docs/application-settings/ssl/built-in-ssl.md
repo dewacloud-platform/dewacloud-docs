@@ -5,7 +5,7 @@ title: Built-In SSL
 ---
 # Built-In SSL Certificates
 
-The **built-in wildcard SSL** provided by the platform is a convenient solution for users looking for a fast and secure way to protect their websites. This SSL certificate (referred to as _**{hosterName} SSL**_ in the dashboard) offers the following key benefits:
+The **built-in wildcard SSL** provided by the platform is a convenient solution for users looking for a fast and secure way to protect their websites. This SSL certificate (referred to as _**\{hosterName\} SSL**_ in the dashboard) offers the following key benefits:
 
 - **Convenient Management**: SSL is pre-configured and can be enabled with just one click in the topology wizard.
 - **Fast Validation**: Domain-level verification is completed in minutes, and a security seal is issued promptly.

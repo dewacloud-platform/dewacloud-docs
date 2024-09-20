@@ -38,7 +38,9 @@ Konfigurasikan kolom _Environment_, _[Display Name](<https://docs.dewacloud.com/
 
 4\. Setelah instalasi berhasil, Anda dapat mengakses konsol Hasura untuk memastikan semuanya berjalan dengan baik.
 
-_http://**{envDomain}** :8080/console_
+```
+http://{envDomain}:8080/console
+```
 
 ![Hasura admin panel](#)
 

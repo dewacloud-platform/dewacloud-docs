@@ -7,7 +7,7 @@ title: Custom Domain Name
 
 ![custom domains](#)
 
-Dengan platform ini, Anda memiliki kemungkinan untuk menetapkan alamat domain eksternal untuk situs Anda, menggantikan URL lingkungan default (misalnya, _{env_name}.[hoster_domain_name](https://docs.dewacloud.com/docs/paas-hosting-providers/)_). Domain kustom memungkinkan Anda untuk mempromosikan branding unik dan meningkatkan pengenalan aplikasi web Anda di Internet.
+Dengan platform ini, Anda memiliki kemungkinan untuk menetapkan alamat domain eksternal untuk situs Anda, menggantikan URL lingkungan default (misalnya, _\{env_name\}.[hoster_domain_name](https://docs.dewacloud.com/docs/paas-hosting-providers/)_). Domain kustom memungkinkan Anda untuk mempromosikan branding unik dan meningkatkan pengenalan aplikasi web Anda di Internet.
 
 Sebelum memulai, mari kita pahami beberapa konsep dasar untuk pemahaman yang lebih baik:
 

@@ -44,8 +44,8 @@ Logs can be downloaded using FTP. For more details on the installation and usage
 | Node Type         | Available Log Files                |
 |-------------------|------------------------------------|
 | Tomcat 6, 7, TomEE| manager, localhost_access_log, catalina, host-manager, localhost |
-| Jetty             | {date}, request                    |
-| GlassFish         | {date}, request                    |
+| Jetty             | \{date\}, request                    |
+| GlassFish         | \{date\}, request                    |
 | MySQL, MariaDB    | mysqld                             |
 | PostgreSQL        | postgresql-`day of week`           |
 | CouchDB           | couch                              |

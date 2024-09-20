@@ -76,7 +76,7 @@ Setelah instalasi berhasil, Anda akan menerima sejumlah email dengan informasi k
 
 ![access phpMyAdmin](#)
 
-  * **Entry Point for Connections to Database Cluster** - [hostname dan kredensial untuk menghubungkan](<https://docs.dewacloud.com/docs/container-dns-hostnames/#hostnames-for-specific-layers>) aplikasi ke klaster basis data. Node-node ini membentuk layer proxy yang disebut sebagai titik masuk untuk klaster basis data dengan hostname sebagai berikut: _**proxy.${envName}.${platformDomain}**_.
+  * **Entry Point for Connections to Database Cluster** - [hostname dan kredensial untuk menghubungkan](<https://docs.dewacloud.com/docs/container-dns-hostnames/#hostnames-for-specific-layers>) aplikasi ke klaster basis data. Node-node ini membentuk layer proxy yang disebut sebagai titik masuk untuk klaster basis data dengan hostname sebagai berikut: _**proxy.$\{envName\}.$\{platformDomain\}**_.
 
 ![ProxySQL DB replication](#)
 

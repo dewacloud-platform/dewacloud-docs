@@ -50,19 +50,21 @@ Hasilnya, Anda akan menerima email dengan password baru untuk mengakses konsol a
 
 URL panel administrasi untuk server DB harus terdiri dari bagian-bagian berikut:
 
-_node{node_id}-{environment_name}.{hoster_domain}_
+```
+node{node_id}-{environment_name}.{hoster_domain}
+```
 
 di mana
 
-  * _{node_id}_ \- ID dari kontainer database yang dituju yang dapat ditemukan di dashboard (misalnya, _35316_ untuk MongoDB)
+  * `{node_id}` \- ID dari kontainer database yang dituju yang dapat ditemukan di dashboard (misalnya, _35316_ untuk MongoDB)
 
 ![database node ID](#)
 
-  * _{environment_name}_ \- nama environment yang Anda tambahkan server ke dalamnya (misalnya, _database_)
-  * _{hoster_domain}_ \- domain penyedia hosting Anda; dapat ditemukan di kolom terakhir tabel yang sesuai di halaman [Hosters Info](<https://docs.dewacloud.com/docs/paas-hosting-providers/>)
+  * `{environment_name}` \- nama environment yang Anda tambahkan server ke dalamnya (misalnya, _database_)
+  * `{hoster_domain}` \- domain penyedia hosting Anda; dapat ditemukan di kolom terakhir tabel yang sesuai di halaman [Hosters Info](<https://docs.dewacloud.com/docs/paas-hosting-providers/>)
 
 :::note
-Jika platform penyedia hosting Anda memiliki beberapa _environment regions_ untuk dipilih, nilai {hoster_domain} untuk environment Anda bisa berbeda dari platform umum.
+Jika platform penyedia hosting Anda memiliki beberapa _environment regions_ untuk dipilih, nilai `{hoster_domain}` untuk environment Anda bisa berbeda dari platform umum.
 :::
 
 Dengan demikian, URL akses lengkap untuk panel administrasi database dalam kasus kami akan menjadi:

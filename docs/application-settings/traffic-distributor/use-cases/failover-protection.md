@@ -28,13 +28,13 @@ title: Failover Protection
 
    ![Traffic Distributor failover parameters](#)
 
-   - **{interval}**: Time between consecutive check requests, in milliseconds.
-   - **{fail_count}**: Number of consecutive failed checkups required to mark the server as unavailable.
-   - **{rise_count}**: Number of successful checkups required to mark the server as available.
-   - **{timeout}**: Timeout period (in milliseconds) for a backend to respond before the check is considered a failure.
-   - **{default_down}**: Sets the initial state of the backends (true = down, false = up). By default, it's set to true.
-   - **{port}**: The port to use for connecting to the backend. If set to 0, the default server port (based on the protocol) is used.
-   - **{type}**: The protocol to use for the health check. Available options:
+   - **\{interval\}**: Time between consecutive check requests, in milliseconds.
+   - **\{fail_count\}**: Number of consecutive failed checkups required to mark the server as unavailable.
+   - **\{rise_count\}**: Number of successful checkups required to mark the server as available.
+   - **\{timeout\}**: Timeout period (in milliseconds) for a backend to respond before the check is considered a failure.
+   - **\{default_down\}**: Sets the initial state of the backends (true = down, false = up). By default, it's set to true.
+   - **\{port\}**: The port to use for connecting to the backend. If set to 0, the default server port (based on the protocol) is used.
+   - **\{type\}**: The protocol to use for the health check. Available options:
      - **tcp**: Basic TCP socket connection.
      - **ssl_hello**: Sends an SSL "Client Hello" message and expects a "Server Hello" response.
      - **http**: Sends an HTTP request and expects a response.

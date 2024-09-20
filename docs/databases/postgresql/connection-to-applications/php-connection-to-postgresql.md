@@ -51,11 +51,11 @@ pg_connect("host={host} port={port} dbname={dbname} user={user} password={passwo
 
   dimana:
 
-  * _**{host}**_ \- Host server PostgreSQL (yaitu URL akses _**tanpa http://**_) yang Anda terima melalui email, misalnya _node171206-php-postgresql.jelastic.com_
-  * _**{port}**_ \- port koneksi (defaultnya adalah _5432_)
-  * _**{dbname}**_ \- nama database Anda
-  * _**{user}**_ \- nama akun untuk mengakses database (kami akan menggunakan _webadmin_ sebagai default)
-  * _**{password}**_ \- password untuk pengguna yang sesuai
+  * `{host}` \- Host server PostgreSQL (yaitu URL akses _**tanpa http://**_) yang Anda terima melalui email, misalnya _node171206-php-postgresql.jelastic.com_
+  * `{port}` \- port koneksi (defaultnya adalah _5432_)
+  * `{dbname}` \- nama database Anda
+  * `{user}` \- nama akun untuk mengakses database (kami akan menggunakan _webadmin_ sebagai default)
+  * `{password}` \- password untuk pengguna yang sesuai
   * menutup koneksi PostgreSQL: _pg_close()_
 
 5\. Anda perlu menulis fungsi yang diperlukan di setiap halaman * **.php** yang harus terhubung ke database.

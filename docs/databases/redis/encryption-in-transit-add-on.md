@@ -101,7 +101,7 @@ redis-cli -p 6380 --tls --cacert /var/lib/jelastic/keys/SSL-TLS/client/root.crt 
 
 ![Redis secure connect](#)
 
-Anda dapat menjalankan _**{command}**_ apa pun yang diinginkan atau mengabaikannya untuk terhubung ke database dalam mode interaktif.
+Anda dapat menjalankan `{command}` apa pun yang diinginkan atau mengabaikannya untuk terhubung ke database dalam mode interaktif.
 
 Jika server memerlukan otentikasi menggunakan sertifikat klien, Anda dapat menentukan sertifikat dan kunci privat yang sesuai menggunakan parameter _**\--cert**_ dan _**\--key**_.
 

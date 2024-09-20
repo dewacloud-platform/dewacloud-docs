@@ -28,7 +28,7 @@ sudo localedef -i {language}_{country} -f {codeset} {language}_{country}.{codese
 ```
 
 Where:
-- **{language}_{country}**: Represents the language and country code. For example, `en_US` for U.S. English.
+- `{language}_{country}`: Represents the language and country code. For example, `en_US` for U.S. English.
   
 :::tip
 To see a list of available locales for generation, run the following command:
@@ -37,7 +37,7 @@ ls /usr/share/i18n/locales
 ```
 :::
   
-- **{codeset}**: Specifies the character encoding, typically `UTF-8`.
+- `{codeset}`: Specifies the character encoding, typically `UTF-8`.
 
 ![localedef to add new locale](#)
 

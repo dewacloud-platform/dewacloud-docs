@@ -55,10 +55,10 @@ Use the terminal on your local machine to connect to the database:
 mysql -h {host} -P {port} -u {user} -p
 ```
 
-- **{host}**: The endpoint Access URL without the port.
-- **{port}**: The public port assigned to the endpoint.
-- **{user}**: Database user (usually `root` by default).
-- **{password}**: The password is prompted after entering the command.
+- `{host}`: The endpoint Access URL without the port.
+- `{port}`: The public port assigned to the endpoint.
+- `{user}`: Database user (usually `root` by default).
+- `{password}`: The password is prompted after entering the command.
 
 #### Connection via Local Client (MySQL Workbench)
 

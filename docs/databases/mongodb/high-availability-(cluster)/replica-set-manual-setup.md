@@ -5,8 +5,6 @@ title: Replica Set Manual Setup
 ---
 # MongoDB Replication and Automated Failover: Configuration Guide
 
-[Vadym Lobzakov](<https://www.virtuozzo.com/company/blog/author/vadym-lobzakov/> "Posts by Vadym Lobzakov") | November 5, 2019 | [Containers](<https://www.virtuozzo.com/company/blog/category/containers/>), [DevOps PaaS](<https://www.virtuozzo.com/company/blog/category/devops-paas/>), [Installer](<https://www.virtuozzo.com/company/blog/category/installer/>)
-
 Replica set adalah istilah yang digunakan untuk mendefinisikan cluster database dengan beberapa node yang memiliki replikasi dan failover otomatis yang dikonfigurasi di antara mereka. Struktur semacam ini biasanya memerlukan jumlah anggota yang ganjil, baik dengan node [Arbiter](<https://docs.mongodb.com/manual/tutorial/add-replica-set-arbiter/>) atau tidak, untuk memastikan pemilihan database PRIMARY yang benar. Database yang terpilih ini akan memproses semua operasi tulis yang masuk, menyimpan informasi tentangnya dalam oplog-nya, di mana dapat diakses dan direplikasi oleh setiap anggota REPLIKA SEKUNDER untuk diterapkan pada dataset mereka. Dengan cara ini, semua server akan mewakili konten yang sama dan memastikan ketersediaannya.
 
 ![mongodb replica set](#)
@@ -81,15 +79,17 @@ _**replSetName: db-replication**_
 
 6\. Akses database yang harus direplikasi, dengan kredensial pengguna admin yang sesuai:  
 
-_mongo -u **{user}** -p **{password} {DB_name}**_
+```
+mongo -u {user} -p {password} {DB_name}
+```
 
 ![mongodb replica set access](#)
 
 Di mana:
 
-  * _**{user}**_ – nama pengguna administrator (dikirim ke email Anda, biasanya admin secara default)
-  * _**{password}**_ – kata sandi untuk pengguna DB yang sesuai (dapat ditemukan dalam email yang sama)
-  * _**{DB_name}**_ – nama database yang ingin Anda replikasi dalam replica set ini (kami akan menggunakan yang default admin)
+  * `{user}` – nama pengguna administrator (dikirim ke email Anda, biasanya admin secara default)
+  * `{password}` – kata sandi untuk pengguna DB yang sesuai (dapat ditemukan dalam email yang sama)
+  * `{DB_name}` – nama database yang ingin Anda replikasi dalam replica set ini (kami akan menggunakan yang default admin)
 
 **Note:** Jika pemilihan baru terjadi, kredensial pengguna admin untuk masuk ke database PRIMARY yang baru akan sama dengan yang Anda gunakan untuk yang lama.
 
@@ -102,8 +102,8 @@ rs.initiate()
 
 Jelas, nilai dalam tanda kurung harus diganti dengan data yang sesuai, yaitu:
 
-  * _**{replica_set}**_ – nama grup database Anda yang direplikasi, ditentukan di awal bagian ini (db-replication dalam kasus kami)
-  * _**{current_db_ip}**_ – alamat IP dari kontainer database yang dipilih
+  * `{replica_set}` – nama grup database Anda yang direplikasi, ditentukan di awal bagian ini (db-replication dalam kasus kami)
+  * `{current_db_ip}` – alamat IP dari kontainer database yang dipilih
 
 ![mongodb replica set parameters](#)  
 
@@ -119,10 +119,10 @@ _**rs.initiate()**_
 
 ![mongodb replica set setup](#)
 
-8\. Eksekusi perintah berikut untuk database lainnya di mana **{db_ip}** adalah alamat IP dari setiap database:
+8\. Eksekusi perintah berikut untuk database lainnya di mana `{db_ip}` adalah alamat IP dari setiap database:
 
 ```
-rs.add("**{db_ip}**:27017")
+rs.add("{db_ip}:27017")
 ```
 
 ![mongodb replica set add](#)
@@ -164,10 +164,10 @@ Mari kita tambahkan node Arbiter tambahan ke replica set kami:
 5\. Sekarang Arbiter siap ditambahkan ke replica set. Di node PRIMARY, keluarkan perintah untuk menambahkan arbiter ke cluster:
 
 ```
-rs.addArb("**{db_ip}**:27017")
+rs.addArb("{db_ip}:27017")
 ```
 
-_Di mana **{db_ip}** adalah alamat IP dari node yang baru ditambahkan._  
+_Di mana `{db_ip}` adalah alamat IP dari node yang baru ditambahkan._  
 
 ![mongodb replica set arbiter](#)
 
@@ -212,11 +212,11 @@ try {
 
 Di mana nilai berikut harus diganti dengan data yang sesuai:
 
-  * _**{replica_set_name}**_ – nama replica set Anda
-  * _**{db_username}**_ – pengguna admin dari database PRIMARY yang dipilih (admin, secara default)
-  * _**{db_password}**_ – kata sandi pengguna di atas
-  * _**{NodeID}**_ – nomor identifikasi node yang sesuai, yang dapat ditemukan di dashboard Jelastic
-  * _**{environment_domain}**_ \- domain environment yang dapat ditemukan di dashboard Jelastic
+  * `{replica_set_name}` – nama replica set Anda
+  * `{db_username}` – pengguna admin dari database PRIMARY yang dipilih (admin, secara default)
+  * `{db_password}` – kata sandi pengguna di atas
+  * `{NodeID}` – nomor identifikasi node yang sesuai, yang dapat ditemukan di dashboard Jelastic
+  * `{environment_domain}` \- domain environment yang dapat ditemukan di dashboard Jelastic
 
 ![mongodb replica set domain](#)
 

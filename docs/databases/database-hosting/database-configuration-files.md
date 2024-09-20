@@ -64,7 +64,7 @@ Folder **/var/lib/jelastic/backup** digunakan untuk menyimpan file [backup datab
 
 Direktori **/var/lib/jelastic/keys** digunakan sebagai lokasi untuk mengunggah kunci pribadi yang diperlukan untuk aplikasi Anda.
 
-Buat kunci, simpan sebagai file sederhana, dan unggah ke folder **keys**. Anda kemudian dapat menggunakannya untuk berbagai keperluan dengan hanya menyatakan path ke kunci Anda, yaitu _/var/lib/jelastic/keys/{keyName}_.
+Buat kunci, simpan sebagai file sederhana, dan unggah ke folder **keys**. Anda kemudian dapat menggunakannya untuk berbagai keperluan dengan hanya menyatakan path ke kunci Anda, yaitu `/var/lib/jelastic/keys/{keyName}`.
 
 ![database keys folder](#)
 

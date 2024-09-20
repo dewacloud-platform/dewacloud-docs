@@ -43,11 +43,11 @@ MongoClient.connect("mongodb://{user}:{password}@{host}:{port}/{database}", { us
 
 Di sini, Anda perlu menyesuaikan [connection string](<https://docs.mongodb.com/manual/reference/connection-string/>) (semua informasi yang diperlukan disediakan dalam email untuk node MongoDB Anda):
 
-  * _**{user}**_ \- nama pengguna untuk masuk ke database
-  * _**{password}**_ \- kata sandi untuk pengguna yang sesuai
-  * _**{host}**_ \- tautan ke kontainer MongoDB Anda
-  * _**{port}**_ \- port yang digunakan untuk koneksi (gunakan yang default - _27017_)
-  * _**{database}**_ \- database yang diakses (misalnya, yang default - _admin_)
+  * `{user}` \- nama pengguna untuk masuk ke database
+  * `{password}` \- kata sandi untuk pengguna yang sesuai
+  * `{host}` \- tautan ke kontainer MongoDB Anda
+  * `{port}` \- port yang digunakan untuk koneksi (gunakan yang default - _27017_)
+  * `{database}` \- database yang diakses (misalnya, yang default - _admin_)
 
 ![MongoDB connection script](#)
 

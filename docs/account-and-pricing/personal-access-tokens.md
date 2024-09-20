@@ -75,13 +75,13 @@ The usage of access tokens majorly simplifies API requests authentication, as it
 
 For example, you can [stop an environment](https://docs.dewacloud.com/api/#!/api/environment.Control-method-StopEnv) by entering the following URL into a browser:
 
-_https://app.${platformDomain}/1.0/environment/control/rest/stopenv?envName=${envName}&session=${token}_
+`https://app.${platformDomain}/1.0/environment/control/rest/stopenv?envName=${envName}&session=${token}`
 
 Here:
 
-  * _**${platformDomain}**_ \- platform URL (domain name)
-  * _**${envName}**_ \- name of the target environment (e.g. _my-project_)
-  * _**${token}**_ \- value of the token (ensure it has a permission for the called operation)
+  * `${platformDomain}` \- platform URL (domain name)
+  * `${envName}` \- name of the target environment (e.g. _my-project_)
+  * `${token}` \- value of the token (ensure it has a permission for the called operation)
 
 ![stop environment api request with token](#)
 

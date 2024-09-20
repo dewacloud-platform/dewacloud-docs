@@ -5,8 +5,6 @@ title: Java Connection
 ---
 # How to Connect PostgreSQL with Java Application
 
-[Gleb Antonov](<https://www.virtuozzo.com/company/blog/author/gleb-antonov/> "Posts by Gleb Antonov") | 24 September 2021 | [Databases](<https://www.virtuozzo.com/company/blog/category/databases/>), [DevOps PaaS](<https://www.virtuozzo.com/company/blog/category/devops-paas/>)
-
 PostgreSQL adalah database SQL open source yang kuat dengan struktur objek-relasional dan berbagai fitur kuat untuk memastikan kinerja dan keandalan yang sangat baik. Dalam tutorial ini, kami akan menunjukkan cara menghubungkan database [PostgreSQL](<https://www.postgresql.org/>) dengan aplikasi Java yang di-host di Jelastic PaaS.
 
 1\. Masuk ke dashboard Jelastic, [buat](<https://docs.dewacloud.com/docs/setting-up-environment/>) **Environment Baru** dengan server aplikasi **_Java_** dan **_database PostgreSQL._**
@@ -34,9 +32,9 @@ driver=org.postgresql.Driver
 
 Di sini:
 
-  * **_{host}_** \- tautan ke node DB Anda tanpa bagian protokol
-  * **_{db_name}_** \- nama database (postgres dalam kasus kami)
-  * **_{user}_** dan {password} - kredensial pengguna admin
+  *`{host}` \- tautan ke node DB Anda tanpa bagian protokol
+  *`{db_name}` \- nama database (postgres dalam kasus kami)
+  *`{user}` dan `{password}` - kredensial pengguna admin
 
 **Catatan:** Biasanya, untuk produksi, disarankan untuk mendefinisikan pengguna terbatas baru melalui **_phpPgAdmin_** untuk aplikasi Anda dengan akses hanya ke database yang didedikasikan.
 Namun, untuk contoh ini, kami akan mengambil pengguna default (yaitu _webadmin_ dengan akses administratif penuh ke server) dan database (_postgres_).
@@ -128,7 +126,7 @@ Untuk Tomcat 10:
 
 ![deploy java application](#)
 
-**Catatan:** Aplikasi contoh kami sudah berisi _jdbc-connector_ untuk akses database PostgreSQL. Namun, untuk proyek lain, Anda mungkin perlu mengunggahnya secara manual ke folder **webapps/{app_context}/WEB-INF/lib** pada server aplikasi Anda (jangan lupa untuk memulai ulang server setelah untuk menerapkan perubahan).
+**Catatan:** Aplikasi contoh kami sudah berisi _jdbc-connector_ untuk akses database PostgreSQL. Namun, untuk proyek lain, Anda mungkin perlu mengunggahnya secara manual ke folder **webapps/\{app_context\}/WEB-INF/lib** pada server aplikasi Anda (jangan lupa untuk memulai ulang server setelah untuk menerapkan perubahan).
 
 7\. Setelah sukses deploy, klik **Open in Browser** di sebelah server aplikasi Anda.
 
@@ -145,13 +143,3 @@ Permintaan Anda akan diproses sebentar dan menampilkan pesan hasil.
 9\. Mari kita akses database kita melalui **phpPgAdmin** untuk memastikan bahwa tabel baru telah dibuat (kredensial akses diberikan melalui email yang dijelaskan pada langkah kedua panduan ini).
 
 ![create postgresql table](#)
-
-Seperti yang Anda lihat, tabel baru (diberi nama sesuai dengan tanggal dan waktu pembuatan) telah berhasil ditambahkan oleh aplikasi Java kami. Koneksi berhasil dibuat! Cobalah di salah satu [penyedia layanan Jelastic yang tersedia secara global](<https://jelastic.cloud/>).
-
-## Artikel Terkait
-
-### [PostgreSQL Auto-Clustering with Asynchronous Master-Slave Replication](<https://www.virtuozzo.com/company/blog/postgresql-auto-clustering-master-slave-replication/>)
-
-### [Establish Secure SSL Connection to PostgreSQL Database Server](<https://www.virtuozzo.com/company/blog/establish-secure-ssl-connection-to-postgresql-database-server/>)
-
-### [How to Install Hasura GraphQL Engine for PostgreSQL-Based Applications](<https://www.virtuozzo.com/company/blog/hasura-graphql-postgresql/>)

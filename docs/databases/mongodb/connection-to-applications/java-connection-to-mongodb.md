@@ -76,10 +76,10 @@ password={password}
 
 di mana:
 
-  * _**{db_access_url}**_ \- tautan ke panel admin database (temukan di dalam email terkait atau klik **Open in browser** di sebelah node _MongoDB_ Anda dan salin dari bilah alamat) tanpa bagian _https://_
-  * _**{db_name}**_ \- nama database yang dibuat (_mongodb-connect_ dalam kasus kami)
-  * _**{user_name}**_ \- nama pengguna DB yang Anda tetapkan ke database ini (_dbuser_ dalam kasus kami)
-  * _**{password}**_ \- kata sandi pengguna yang bersangkutan
+  * `{db_access_url}` \- tautan ke panel admin database (temukan di dalam email terkait atau klik **Open in browser** di sebelah node _MongoDB_ Anda dan salin dari bilah alamat) tanpa bagian _https://_
+  * `{db_name}` \- nama database yang dibuat (_mongodb-connect_ dalam kasus kami)
+  * `{user_name}` \- nama pengguna DB yang Anda tetapkan ke database ini (_dbuser_ dalam kasus kami)
+  * `{password}` \- kata sandi pengguna yang bersangkutan
 
 Jangan lupa untuk **Save** perubahan.
 
@@ -152,7 +152,7 @@ Untuk pengujian, Anda dapat mencoba proyek [mongoclient.war](<mongoclient.zip>) 
 ![upload application](#)
 
 :::note
-Untuk menghubungkan proyek Anda sendiri ke database MongoDB Anda, Anda perlu mengunggah perpustakaan _mongo-java-driver.jar_ yang sesuai ke folder _webapps/{app_context}/WEB-INF/lib_ dari server aplikasi Anda dengan aplikasi terdistribusi.
+Untuk menghubungkan proyek Anda sendiri ke database MongoDB Anda, Anda perlu mengunggah perpustakaan _mongo-java-driver.jar_ yang sesuai ke folder _webapps/\{app_context\}/WEB-INF/lib_ dari server aplikasi Anda dengan aplikasi terdistribusi.
 :::
 
 3\. Sebagai hasilnya, Anda akan mendapatkan environment yang mirip dengan yang ada di bawah ini:
