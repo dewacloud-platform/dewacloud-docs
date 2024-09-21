@@ -6,7 +6,7 @@ title: Custom Containers Deployment
 
 # Custom Containers Deployment{#custom-containers-deployment}
 
-Platform ini dapat secara otomatis membuat _**custom containers**_ berdasarkan image Docker standar yang menggunakan [OS dan arsitektur yang didukung](<https://docs.dewacloud.com/docs/container-image-requirements/>) dan disimpan di Docker Hub atau registry publik/pribadi lainnya. Container tersebut mendapatkan semua manfaat dari platform (_automatic vertical_ dan _horizontal scaling_, _logs_, _statistics_ dan _alerts monitoring_, embedded _configuration file manager_, dll.) sambil menjaga perangkat lunak asli dari image tetap utuh. Perlu diingat bahwa operabilitas aplikasi itu sendiri tidak dapat dijamin karena dikelola oleh pengelola image pihak ketiga yang bersangkutan dan bukan oleh platform.
+Platform ini dapat secara otomatis membuat _**custom containers**_ berdasarkan image Docker standar yang menggunakan [OS dan arsitektur yang didukung](<https://docs.dewacloud.com/docs/container-image-requirements/>) dan disimpan di Docker Hub atau registry publik/pribadi lainnya. Container tersebut mendapatkan semua manfaat dari platform (_automatic vertical_ dan _horizontal scaling_, _logs_, _statistics_ dan _alerts monitoring_, embedded _configuration file manager_, dll.) sambil menjaga software asli dari image tetap utuh. Perlu diingat bahwa operabilitas aplikasi itu sendiri tidak dapat dijamin karena dikelola oleh pengelola image pihak ketiga yang bersangkutan dan bukan oleh platform.
 
 ![PaaS custom container images](#)
 
@@ -62,7 +62,7 @@ Klik tombol **Create** di bagian bawah wizard untuk memulai pembuatan lingkungan
 Anda dapat **Open in Browser** setiap container dengan tombol yang sesuai di sebelahnya atau seluruh lingkungan melalui domain yang ditugaskan (ditunjukkan di bawah nama lingkungan). Dalam kasus yang terakhir, template server aplikasi atau balancer layer akan dibuka.
 
 :::note
-Tidak semua custom containers mempunyai antarmuka web yang berfungsi secara otomatis. Oleh karena itu, Anda dapat mendapatkan error 502 application down saat mengakses node tersebut melalui browser. Namun, itu tidak berarti image ini salah atau rusak. Jika Anda ingin memastikan layanan yang diperlukan berfungsi, periksa proses yang berjalan di dalam container menggunakan koneksi SSH. Jika suatu aplikasi di-deploy ke container tanpa public IP dan tidak mendengarkan ke port 80 di backend-nya, Anda akan ditunjukkan halaman error khusus 502 - Service is down saat mencoba membukanya. Dalam hal seperti itu, Anda perlu memastikan container Anda memiliki layanan HTTP berjalan dan diatur untuk menangani permintaan yang masuk melalui port yang disebutkan di atas.
+Tidak semua custom containers mempunyai web interface yang berfungsi secara otomatis. Oleh karena itu, Anda dapat mendapatkan error 502 application down saat mengakses node tersebut melalui browser. Namun, itu tidak berarti image ini salah atau rusak. Jika Anda ingin memastikan layanan yang diperlukan berfungsi, periksa proses yang berjalan di dalam container menggunakan koneksi SSH. Jika suatu aplikasi di-deploy ke container tanpa public IP dan tidak mendengarkan ke port 80 di backend-nya, Anda akan ditunjukkan halaman error khusus 502 - Service is down saat mencoba membukanya. Dalam hal seperti itu, Anda perlu memastikan container Anda memiliki layanan HTTP berjalan dan diatur untuk menangani permintaan yang masuk melalui port yang disebutkan di atas.
 :::
 
 Pada contoh kita, Anda dapat melihat contoh aplikasi Docker setelah membuka image di browser.

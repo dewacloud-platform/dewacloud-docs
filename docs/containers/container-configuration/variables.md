@@ -21,7 +21,7 @@ Jangan lupa untuk **Save** variabel Anda.
 2\. Selain menambahkan, Anda juga bisa **Edit** dan **Remove** catatan yang sudah ada (kecuali beberapa yang default) dengan bantuan tombol bernama sama.
 
 :::tip 
-Berikut beberapa tips untuk mempercepat proses konfigurasi: klik ganda pada variabel akan segera mengalihkan Anda ke pengeditan; jika Anda perlu menghapus beberapa catatan, Anda dapat memilihnya menggunakan tombol Shift atau Ctrl.
+Berikut beberapa tips untuk mempercepat proses konfigurasi: double klik pada variabel akan segera mengalihkan Anda ke pengeditan; jika Anda perlu menghapus beberapa catatan, Anda dapat memilihnya menggunakan tombol Shift atau Ctrl.
 :::
 
 ![edit remove variable layer settings](#)
