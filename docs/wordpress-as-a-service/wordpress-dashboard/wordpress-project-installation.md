@@ -6,7 +6,7 @@ title: WordPress Project Installation
 
 # Instalasi Proyek WordPress
 
-Virtuozzo Application Platform untuk WordPress menyediakan prosedur instalasi cepat dan otomatis untuk pembuatan proyek baru. Fungsionalitas produksi/staging bawaan membantu mengimplementasikan berbagai integrasi DevOps. Mari kita lihat proses ini secara detail:
+Dewacloud Application Platform untuk WordPress menyediakan prosedur instalasi cepat dan otomatis untuk pembuatan proyek baru. Fungsionalitas produksi/staging bawaan membantu mengimplementasikan berbagai integrasi DevOps. Mari kita lihat proses ini secara detail:
 
 - [Installing Project](https://docs.dewacloud.com/#installing-project)
 - [Staging Project](https://docs.dewacloud.com/#staging-project)

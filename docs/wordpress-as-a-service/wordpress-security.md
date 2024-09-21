@@ -10,7 +10,7 @@ Keamanan situs web adalah salah satu pilar utama dari hosting WordPress yang suk
 
 ### Keamanan Hosting Cloud{#cloud-hosting-security}
 
-Sebagai penyedia hosting cloud yang andal dengan pengalaman bertahun-tahun dan reputasi yang solid, Virtuozzo Application Platform untuk WordPress menangani banyak implementasi keamanan. Hosting cloud menyediakan solusi yang sangat baik terhadap pelanggaran data di situs web Anda yang disebut _data segmentation_. Bagaimana cara kerjanya? Misalkan salah satu server diretas. Data segmentation memberikan fleksibilitas hosting cloud untuk memisahkan infiltrasi ini dari bagian lain situs web Anda sebelum apa pun terpengaruh.
+Sebagai penyedia hosting cloud yang andal dengan pengalaman bertahun-tahun dan reputasi yang solid, Dewacloud Application Platform untuk WordPress menangani banyak implementasi keamanan. Hosting cloud menyediakan solusi yang sangat baik terhadap pelanggaran data di situs web Anda yang disebut _data segmentation_. Bagaimana cara kerjanya? Misalkan salah satu server diretas. Data segmentation memberikan fleksibilitas hosting cloud untuk memisahkan infiltrasi ini dari bagian lain situs web Anda sebelum apa pun terpengaruh.
 
 Sebagai perpanjangan dari keamanan situs Anda, hosting cloud membantu melindungi terhadap kehilangan informasi dengan fitur _data replication_ yang kuat. Ini memanfaatkan jaringan server yang saling terhubung yang membuat data situs web Anda tersedia untuk dikloning dan disimpan dalam sebanyak mungkin server sesuai kebutuhan.
 
