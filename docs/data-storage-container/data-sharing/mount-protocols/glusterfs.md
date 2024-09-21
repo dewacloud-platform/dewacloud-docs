@@ -6,7 +6,7 @@ title: GlusterFS
 
 # GlusterFS
 
-**[GlusterFS](<https://docs.gluster.org/en/latest/>)** adalah protokol sistem file jaringan untuk penyimpanan cloud terdistribusi. Fitur khas dari GlusterFS adalah keandalan, failover, dan skalabilitas. Ini berfungsi berdasarkan antarmuka perangkat lunak _FUSE_ yang gratis dan dengan demikian tidak memerlukan server tambahan untuk metadata (berbeda dengan sistem file terdistribusi lainnya, mis. _[Lustre](<https://www.lustre.org/>)_ dan _[Ceph](<https://ceph.io/>)_).
+**[GlusterFS](<https://docs.gluster.org/en/latest/>)** adalah protokol sistem file jaringan untuk penyimpanan cloud terdistribusi. Fitur khas dari GlusterFS adalah keandalan, failover, dan skalabilitas. Ini berfungsi berdasarkan software interface _FUSE_ yang gratis dan dengan demikian tidak memerlukan server tambahan untuk metadata (berbeda dengan sistem file terdistribusi lainnya, mis. _[Lustre](<https://www.lustre.org/>)_ dan _[Ceph](<https://ceph.io/>)_).
 
 Dibandingkan dengan protokol **[NFS](<https://docs.dewacloud.com/docs/nfs/>)** yang didukung di platform, GlusterFS terkenal karena keandalannya yang lebih maju. Protokol ini beroperasi dengan beberapa server dan direkomendasikan untuk kasus yang memerlukan concurrency tinggi, kinerja tinggi operasi tulis, dan pemulihan failover jika diperlukan. Anda dapat mempelajari lebih lanjut tentang [implementasi arsitektur](<https://docs.gluster.org/en/latest/Quick-Start-Guide/Architecture/>) dari solusi ini dari dokumentasi resmi.
 

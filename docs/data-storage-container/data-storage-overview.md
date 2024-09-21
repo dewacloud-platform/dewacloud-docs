@@ -6,7 +6,7 @@ title: Data Storage Overview
 
 # Data Storage Container Overview
 
-**Data Storage Container** adalah solusi yang umum digunakan untuk penyimpanan data sederhana dan kontrol jarak jauh. Dalam konteks platform, ini memungkinkan berbagai environment beroperasi dengan data dalam satu penyimpanan semudah jika disimpan secara lokal: misalnya berbagi file media, config umum, atau hanya menyimpan backup, log, dll.
+**Data Storage Container** adalah solusi yang umum digunakan untuk penyimpanan data sederhana dan remote kontrol. Dalam konteks platform, ini memungkinkan berbagai environment beroperasi dengan data dalam satu penyimpanan semudah jika disimpan secara lokal: misalnya berbagi file media, config umum, atau hanya menyimpan backup, log, dll.
 
 ![Data Storage Container logo](#)
 
@@ -18,7 +18,7 @@ Dengan menggunakan data storage container, Anda dapat menerapkan organisasi yang
 
 Integrasi data storage container pada platform didasarkan pada protokol network file system (**NFS**), yang digunakan untuk komunikasi client-server. Sebenarnya, seluruh prosedur dilakukan dalam dua langkah: pada langkah pertama, data diekspor (dibagikan) dari storage container ke beberapa instance lainnya, dan pada langkah kedua - direktori yang sesuai di-mount pada client container.
 
-Dan untuk memastikan pengalaman terbaik saat memanfaatkan fitur ini, disediakan stack [Shared Storage Container](<https://docs.dewacloud.com/docs/shared-storage-container/>) yang berdedikasi. Ini memiliki sejumlah manfaat untuk penyimpanan data dibandingkan dengan jenis container lainnya, seperti perangkat lunak yang tergantung sudah terpasang sebelumnya dan jumlah ruang disk yang dialokasikan diperbesar. Selain itu, setiap node di platform dapat diperlakukan sebagai server data storage, termasuk container Docker kustom, di mana integrasi seperti ini diimplementasikan berdasarkan fungsionalitas [volumes](<https://docs.dewacloud.com/docs/container-volumes/>).
+Dan untuk memastikan pengalaman terbaik saat memanfaatkan fitur ini, disediakan stack [Shared Storage Container](<https://docs.dewacloud.com/docs/shared-storage-container/>) yang berdedikasi. Ini memiliki sejumlah manfaat untuk penyimpanan data dibandingkan dengan jenis container lainnya, seperti software yang sudah terpasang sebelumnya dan jumlah ruang disk yang dialokasikan diperbesar. Selain itu, setiap node di platform dapat diperlakukan sebagai server data storage, termasuk container Docker kustom, di mana integrasi seperti ini diimplementasikan berdasarkan fungsionalitas [volumes](<https://docs.dewacloud.com/docs/container-volumes/>).
 
 Dengan Data Storage Container Anda mendapatkan berbagai peluang untuk memperbaiki struktur filesystem proyek Anda, membuatnya lebih andal dan dapat dikonfigurasi. Untuk mengetahui lebih lanjut, beralih ke dokumen yang terhubung di bawah ini, di mana kami mempertimbangkan secara detail jenis penyimpanan apa yang tersedia di platform dan untuk jenis data apa yang paling cocok:
 

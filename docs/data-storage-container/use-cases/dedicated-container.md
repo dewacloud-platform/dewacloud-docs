@@ -8,7 +8,7 @@ title: Dedicated Container
 
 Untuk aplikasi yang lebih kompleks dan padat, sebaiknya memusatkan data bersama Anda dalam satu container untuk mendapatkan pengelolaan ekspor yang lebih sederhana dan fleksibel (termasuk kontrol izin akses - misalnya, baca-saja untuk satu jenis node dan baca-tulis untuk yang lainnya).
 
-Di dalam platform, [Shared Storage Container](<https://docs.dewacloud.com/docs/shared-storage-container/>) direkomendasikan untuk digunakan dalam berbagi file di beberapa lapisan atau bahkan lingkungan dalam satu akun. Ini dioptimalkan secara khusus untuk penyimpanan data (yaitu berfokus pada kinerja dan menyediakan jumlah ruang disk yang diperbesar).
+Di dalam platform, [Shared Storage Container](<https://docs.dewacloud.com/docs/shared-storage-container/>) direkomendasikan untuk digunakan dalam berbagi file di beberapa lapisan atau bahkan environment dalam satu akun. Ini dioptimalkan secara khusus untuk penyimpanan data (yaitu berfokus pada kinerja dan menyediakan jumlah ruang disk yang diperbesar).
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/use-case/dedicated-container/01-dedicated-container-storage.png" alt="dedicated container storage" width="25%"/>
 
