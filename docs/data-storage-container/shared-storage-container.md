@@ -19,7 +19,7 @@ title: Shared Storage Container
   
   * _**[Auto-Clustering](<https://docs.dewacloud.com/docs/auto-clustering/>)**_ opsi mengkonfigurasi secara otomatis cluster yang andal, memastikan keamanan data. Jika salah satu atau beberapa node gagal, klien _AutoFS_ secara otomatis beralih ke instance yang berfungsi pada upaya operasi baca/tulis berikutnya.
   * _**Ruang Disk Diperbesar**_ dibandingkan dengan node umum lainnya, disediakan untuk Shared Storage Container, memungkinkan bekerja dengan volume data yang lebih besar. Nilai tertentu tergantung pada pengaturan penyedia layanan Anda dan dapat bervariasi berdasarkan jenis akun.
-  * _**Kinerja yang Dioptimalkan**_ karena semua perangkat lunak yang diperlukan telah dipasang sebelumnya (mis. _NFS & RPC_ untuk NFSv4, _[GlusterFS](<https://www.gluster.org/>)_ untuk auto-clustering) dan fitur default platform (skala vertikal dan horizontal elastis, model penetapan harga bayar-sesuai-penggunaan yang efisien, UI yang nyaman dengan dukungan ekspor file dan titik mount, dll.)
+  * _**Kinerja yang Dioptimalkan**_ karena semua software yang diperlukan telah dipasang sebelumnya (mis. _NFS & RPC_ untuk NFSv4, _[GlusterFS](<https://www.gluster.org/>)_ untuk auto-clustering) dan fitur default platform (skala vertikal dan horizontal elastis, model penetapan harga bayar-sesuai-penggunaan yang efisien, UI yang nyaman dengan dukungan ekspor file dan titik mount, dll.)
 
 ![shared storage container illustration](#)
 
@@ -81,7 +81,7 @@ Beberapa contoh umum penggunaan penyimpanan dijelaskan dalam dokumentasi [Dedica
 
 Segera setelah pembuatan, Anda dapat langsung melanjutkan ke konfigurasi container. Di bawah ini, kami akan menunjukkan beberapa tindakan dasar yang mungkin berguna bagi Anda untuk memulai:
 
-1\. Untuk operasi yang paling umum dengan penyimpanan Anda, pengelola file [configuration file manager](<https://docs.dewacloud.com/docs/configuration-file-manager/>) yang terpasang dapat digunakan. Untuk manajemen yang lebih kompleks, Anda mungkin lebih suka bekerja dengan beberapa alat pihak ketiga (gunakan detail koneksi dari tab **SFTP / SSH Gate** yang dilingkari pada gambar di bawah).
+1\. Untuk operasi yang paling umum dengan penyimpanan Anda, pengelola file [configuration file manager](<https://docs.dewacloud.com/docs/configuration-file-manager/>) yang terpasang dapat digunakan. Untuk manajemen yang lebih kompleks, Anda mungkin lebih suka bekerja dengan beberapa third party tool (gunakan detail koneksi dari tab **SFTP / SSH Gate** yang dilingkari pada gambar di bawah).
 
 ![storage file manager](#)
 

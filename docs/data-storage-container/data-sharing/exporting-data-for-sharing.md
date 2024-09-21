@@ -8,7 +8,7 @@ title: Exporting Data for Sharing
 
 ![data export icon](#)
 
-Platform ini menyediakan dukungan yang diperluas untuk [berbagi data](<https://docs.dewacloud.com/docs/data-storage-container/>) antara instance di dalam akun yang sama. Panel UI khusus tersedia di dashboard untuk menyederhanakan ekspor yang diperlukan dari server (dijelaskan dalam panduan ini) dan operasi [mount pada klien](<https://docs.dewacloud.com/docs/mount-points/>). Anda hanya perlu melakukan salah satu dari tindakan ini, dan platform akan otomatis menerapkan konfigurasi terkait pada instance kedua yang sesuai.
+Platform ini menyediakan dukungan yang diperluas untuk [berbagi data](<https://docs.dewacloud.com/docs/data-storage-container/>) antara instance di dalam akun yang sama. Panel UI khusus tersedia di dashboard untuk menyederhanakan ekspor yang diperlukan dari server (dijelaskan dalam panduan ini) dan operasi [mount pada klien](<https://docs.dewacloud.com/docs/mount-points/>). Anda hanya perlu melakukan salah satu dari opsi ini, dan platform akan otomatis menerapkan konfigurasi terkait pada instance kedua yang sesuai.
 
 Jadi, mari kita tinjau bagaimana Anda dapat [berbagi direktori](<https://docs.dewacloud.com/docs/#directory-export>) pada container Anda dan bagaimana mengelola semua [ekspor container](<https://docs.dewacloud.com/docs/#managing-exports>).
 
