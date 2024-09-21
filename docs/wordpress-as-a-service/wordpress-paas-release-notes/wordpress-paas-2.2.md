@@ -4,13 +4,13 @@ slug: /wordpress-paas-2.2
 title: WordPress PaaS 2.2
 ---
 
-# Virtuozzo Application Platform untuk WordPress 2.2
+# Dewacloud Application Platform untuk WordPress 2.2
 
 _Dokumen ini bersifat sementara dan dapat berubah._
 
 Dalam dokumen ini, Anda akan menemukan semua fitur baru, peningkatan, dan perubahan yang terlihat yang termasuk dalam rilis **Virtuozzo Application Platform for WordPress 2.2**.
 
-Ruang lingkup perubahan umum sama seperti untuk rilis _[Virtuozzo Application Platform (DevOps PaaS) 8.4](https://docs.dewacloud.com/docs/release-notes-84/)_. Di bawah ini, kami akan menyoroti semua peningkatan spesifik ke WordPress PaaS.
+Ruang lingkup perubahan umum sama seperti untuk rilis _[Dewacloud Application Platform (DevOps PaaS) 8.4](https://docs.dewacloud.com/docs/release-notes-84/)_. Di bawah ini, kami akan menyoroti semua peningkatan spesifik ke WordPress PaaS.
 
 ## Refill Balance dari Dashboard{#refill-balance-from-dashboard}
 
@@ -34,7 +34,7 @@ Ditambahkan opsi untuk mengedit dan menghapus catatan Git repository yang sudah 
 
 ## Konfirmasi Tindakan Invasif{#invasive-actions-confimation}
 
-Dikonfigurasi jendela konfirmasi untuk tindakan yang dapat memengaruhi akun pengguna atau proyek [Pelajari lebih lanjut](https://docs.dewacloud.com/docs/#invasive-actions-confimation)
+Dikonfigurasi window untuk tindakan yang dapat memengaruhi akun pengguna atau proyek [Pelajari lebih lanjut](https://docs.dewacloud.com/docs/#invasive-actions-confimation)
 
 ## Data Penggunaan Paket Layanan{#service-plan-usage-data}
 
@@ -89,7 +89,7 @@ Saat bekerja dengan platform, beberapa fitur dapat sepenuhnya atau sebagian diba
 
 ## Restart untuk Cluster Nodes{#restart-for-cluster-nodes}
 
-Virtuozzo Application Platform untuk WordPress menyediakan dukungan untuk solusi klaster yang terdiri dari beberapa node di berbagai grup node (server aplikasi, load balancers, databases, dll.). Penggunaan beberapa node per grup menyediakan redundansi dan memastikan ketersediaan tinggi. Dalam rilis platform 2.2 saat ini, kemungkinan untuk merestart node atau grup terpisah diimplementasikan untuk solusi klaster. Setelah mengklik tombol **Restart** untuk proyek, daftar drop-down dengan semua grup akan ditampilkan. Arahkan kursor ke opsi tertentu untuk memilih node spesifik atau semua node dalam grup.
+Dewacloud Application Platform untuk WordPress menyediakan dukungan untuk solusi klaster yang terdiri dari beberapa node di berbagai grup node (server aplikasi, load balancers, databases, dll.). Penggunaan beberapa node per grup menyediakan redundansi dan memastikan ketersediaan tinggi. Dalam rilis platform 2.2 saat ini, kemungkinan untuk merestart node atau grup terpisah diimplementasikan untuk solusi klaster. Setelah mengklik tombol **Restart** untuk proyek, daftar drop-down dengan semua grup akan ditampilkan. Arahkan kursor ke opsi tertentu untuk memilih node spesifik atau semua node dalam grup.
 
 ![restart cluster nodes](#)
 
