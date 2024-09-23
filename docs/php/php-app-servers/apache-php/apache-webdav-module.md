@@ -21,7 +21,7 @@ WebDAV menjadi alat penting di server berbasis Apache. Ini ditemukan untuk menye
 </Directory>
 ```
 
-![enable WebDAV module](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-webdav-module/01-enable-webdav-module.png" alt="enable WebDAV module" width="100%"/>
 
 3\. Simpan perubahan dan restart **Apache**.
 
@@ -45,7 +45,7 @@ AuthUserFile /var/www/webroot/ROOT/.htpasswd
 Require valid-user
 ```
 
-![Apache security configuration](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-webdav-module/02-apache-security-configuration.png" alt="Apache security configuration" width="100%"/>
 
 6\. Simpan perubahan dan restart **Apache**.
 

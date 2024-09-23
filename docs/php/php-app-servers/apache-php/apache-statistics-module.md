@@ -3,56 +3,76 @@ sidebar_position: 6
 slug: /apache-statistics-module
 title: Apache Statistics Module
 ---
-# Apache WebDav Module
+# Apache Statistics Module
 
-Saat mengatur situs web, Anda mungkin menghadapi kebutuhan untuk membangun beberapa metode pengelolaan dan memperbarui informasi di situs tersebut. Ada banyak solusi - menggunakan salinan lokal, menggunakan kombinasi alat HTTP dan FTP untuk mengunduh yang asli dan mengunggah perubahan, dll. Tapi juga sebagai solusi mudah, Anda dapat menggunakan **Web-based Distributed Authoring and Versioning (WebDAV)** yang tersedia di platform.
+**Modul statistik** (atau **status**) memberikan antarmuka untuk melihat statistik server Anda.
 
-WebDAV menjadi alat penting di server berbasis Apache. Ini ditemukan untuk menyederhanakan cara Anda memperbarui situs web.
+### Enabling statistics module{#enabling-statistics-module}
 
-## Enabling WebDAV Module for Apache Server{#enabling-webdav-module-for-apache-server}
+Di platform, **modul statistik** dinonaktifkan secara default. Anda dapat mengaktifkan modul ini dengan mengikuti instruksi berikut:
 
-1\. Klik tombol **Config** untuk server di environment Anda.
+  * Klik tombol **Config** untuk server Apache Anda.
+  * _**status_module**_ yang diperlukan di-load secara default, jadi navigasikan ke folder **/etc/httpd/conf** dan buka file _**httpd.conf**_. Tambahkan kode berikut:
 
-2\. Modul _**mod_dav**_ dan _**mod_dav_fs**_ yang diperlukan dimuat secara default, jadi Anda hanya perlu menambahkan kode berikut ke konfigurasi _VirtualHost_ dalam file **/etc/httpd/conf/_httpd.conf_**:
+```nginx
+ExtendedStatus On
+<Location /statistics/>
+  SetHandler server-status
+  ####### Security configuration ####################
+  ####### Basic auth config should follow here ######
+  ###################################################
+</Location>
+```
+
+![apache statistics module 1](https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-statistics-module/1.png)
+
+**Note:** Anda dapat menggunakan konteks lain untuk lokasi statistik Anda (dalam kasus kami menggunakan _/statistics/_).
+
+  * Simpan perubahan dan restart **Apache**.
+  * Klik **Open in browser**. Tambahkan nama lokasi ke tautan.  
+```
+http://{env_name}.{hoster_domain}/{location_name}/
+```
+
+Di jendela yang terbuka statistik server akan ditampilkan.
+
+### Setting up security configuration{#setting-up-security-configuration}
+
+  * Buat hash dari password Anda. Untuk itu Anda dapat menggunakan alat **htpasswd** atau layanan online (misalnya, `http://www.htpasswdgenerator.net/`).
+  * Buat file teks sederhana dengan hash yang telah dibuat sebelumnya.
+  * Klik tombol **Config** untuk server Apache Anda.
+  * Upload file yang dibuat ke folder **/var/www/webroot/ROOT**.
+  * Di dalam folder **/etc/httpd/conf** buka file _**httpd.conf**_.
+
+Gantikan:
 
 ```
-<Directory />
-  DAV on
-</Directory>
+####### Security configuration ####################
+####### Basic auth config should follow here ######
+###################################################
 ```
 
-![enable WebDAV module](#)
-
-3\. Simpan perubahan dan restart **Apache**.
-
-## Setting Up Security Configuration{#setting-up-security-configuration}
-
-1\. Hasilkan hash dari kata sandi Anda. Untuk itu Anda dapat menggunakan alat **htpasswd** apa pun atau layanan online (misalnya, [http://www.htpasswdgenerator.net/](<http://www.htpasswdgenerator.net>)).
-
-2\. Buat file teks sederhana dengan hash yang dihasilkan sebelumnya.
-
-3\. Klik tombol **Config** untuk server **Apache** Anda.
-
-4\. Unggah file yang dibuat ke folder **/var/www/webroot/ROOT**.
-
-5\. Dalam folder **/etc/httpd/conf** buka file _**httpd.conf**_. Modifikasi konfigurasi direktori dengan menambahkan string berikut seperti yang ditunjukkan pada gambar di bawah ini:
+Dengan menambahkan kode berikut:
 
 ```
-AuthName "Restricted area"
+AuthName "Statistics area"
 AuthType Basic
 AuthBasicProvider file
 AuthUserFile /var/www/webroot/ROOT/.htpasswd
 Require valid-user
 ```
 
-![Apache security configuration](#)
+![apache statistics module 2](https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-statistics-module/2.png)
 
-6\. Simpan perubahan dan restart **Apache**.
+  * Simpan perubahan dan restart **Apache**.
+  * Klik **Open in browser**. Tambahkan konteks lokasi ke tautan.  
+```
+http://{env_name}.{hoster_domain}/{location_name}/
+```
 
-Akhirnya, Anda dapat pergi ke klien **WebDAV** apa pun. Nyatakan di sana host (juga kredensial Anda jika Anda mengatur konfigurasi keamanan) dan hubungkan ke server. Sebagai hasilnya, Anda akan melihat file Anda dan akan dapat mengeditnya, memperbarui, menambahkan beberapa file baru, dll.
+Di jendela yang terbuka Anda akan diminta untuk masuk dengan kredensial Anda. Gunakan kredensial yang Anda nyatakan saat membuat hash untuk melihat statistik server.
 
-## Baca Juga{#whats-next}
+## Baca Juga
 
   * [Add Apache Modules](<https://docs.dewacloud.com/docs/add-apache-modules/>)
-  * [Apache Security Configurations](<https://docs.dewacloud.com/docs/apache-security-configurations/>)
-  * [Apache Statistics Module](<https://docs.dewacloud.com/docs/apache-statistics-module/>)
+  * [Apache WebDav Module](<https://docs.dewacloud.com/docs/apache-webdav-module/>)

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 7
-slug: /php.ini-security-settings
+slug: /php-security-settings
 title: PHP.INI Security Settings
 ---
 # PHP.INI Security Settings
@@ -13,7 +13,7 @@ File konfigurasi PHP utama, bernama **php.ini**, berisi sejumlah pengaturan defa
 
 Tekan tombol **Config** untuk server Apache atau NGINX Anda. Di tab yang muncul, navigasikan ke direktori **etc** dan buka file **php.ini**.
 
-![php ini config](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-security-settings/php.ini-config.png" alt="php ini config" width="50%"/>
 
 Ikuti instruksi berikut untuk menerapkan konfigurasi yang diperlukan:
 
@@ -22,7 +22,9 @@ Ikuti instruksi berikut untuk menerapkan konfigurasi yang diperlukan:
 _disable_functions = phpinfo, system, mail, exec_  
 Keamanan tambahan dapat diperoleh dengan menonaktifkan fungsi-fungsi berikut:  
 _disable_functions = exec,passthru,shell_exec,system,proc_open,popen,curl_exec,curl_multi_exec,parse_ini_file,show_source_  
+
 ![insecure php functions](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-security-settings/insecure-php-functions.png" alt="insecure php functions" width="100%"/>
 
 2\. Batasi jumlah **_sumber daya yang diizinkan_**, jika dapat diterima untuk aplikasi Anda:
 

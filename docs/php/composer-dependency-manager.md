@@ -1,11 +1,11 @@
 ---
 sidebar_position: 8
-slug: /composer-dependency-manager
+slug: /php-composer
 title: Composer Dependency Manager
 ---
 # PHP Composer for Smart Dependency Management of Your Cloud Applications
 
-![PHP Composer logo](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/composer-dependency-manager/01-php-composer-logo.png" alt="PHP Composer logo" width="20%"/>
 
 **[Composer](<https://getcomposer.org/>)** adalah salah satu alat manajemen dependencies paling populer di PHP yang terinspirasi oleh npm dari node dan bundler dari ruby. Ini akan mengelola semua pustaka dan paket yang diperlukan untuk aplikasi Anda secara cerdas. Berjalan pada basis per-proyek, **Composer** menentukan versi mana dari paket yang bergantung pada proyek Anda dan menginstalnya di direktori kerja. Selain itu, alat ini menyediakan fitur [autoload](<https://getcomposer.org/doc/04-schema.md#autoload>) untuk menjaga agar paket Anda tetap up-to-date.
 
@@ -22,7 +22,7 @@ Anda secara otomatis diberikan versi terbaru dari Composer selama pembuatan node
 
 1\. Terhubung ke node yang sesuai melalui SSH. Misalnya, menggunakan [Web SSH](<https://docs.dewacloud.com/docs/web-ssh-client/>) bawaan.
 
-![Apache Web SSH access](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/composer-dependency-manager/02-apache-web-ssh-access.png" alt="Apache Web SSH access" width="100%"/>
 
 2\. Unduh penginstal Composer dengan perintah berikut:
 
@@ -30,7 +30,7 @@ Anda secara otomatis diberikan versi terbaru dari Composer selama pembuatan node
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 ```
 
-![SSH download Composer installer](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/composer-dependency-manager/03-ssh-download-composer-installer.png" alt="SSH download Composer installer" width="100%"/>
 
 3\. Instal Composer ke direktori saat ini.
 
@@ -38,10 +38,10 @@ php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 php composer-setup.php --install-dir=./ --filename=composer
 ```
 
-![SSH install PHP Composer](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/composer-dependency-manager/04-ssh-install-php-composer.png" alt="SSH install PHP Composer" width="100%"/>
 
 :::tip 
-Jika diperlukan, Anda dapat berpindah ke direktori yang diperlukan sebelum operasi atau menyesuaikan jalur melalui parameter install-dir. Namun, Anda tidak dapat menginstal ke direktori /usr/local/bin/ dengan instance Composer awal.
+Jika diperlukan, Anda dapat berpindah ke direktori yang diperlukan sebelum operasi atau menyesuaikan jalur melalui parameter install-dir. Namun, Anda tidak dapat menginstal ke direktori **/usr/local/bin/** dengan instance Composer awal.
 :::
 
 4\. Mari jalankan _versi lokal_ dari Composer ini (yaitu menggunakan jalur relatif atau absolut) untuk memastikan semuanya bekerja seperti yang diharapkan. Misalnya:
@@ -50,11 +50,15 @@ Jika diperlukan, Anda dapat berpindah ke direktori yang diperlukan sebelum opera
 ./composer about
 ```
 
-![SSH PHP Composer about](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/composer-dependency-manager/05-ssh-php-composer-about.png" alt="SSH PHP Composer about" width="100%"/>
 
 :::tip 
 Jika dependency manager berfungsi dengan baik, kami menyarankan untuk menghapus penginstal (karena tidak diperlukan lagi).  
-1php -r "unlink('composer-setup.php');"
+```
+php -r "unlink('composer-setup.php');"
+```
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/composer-dependency-manager/06-ssh-remove-composer-installer.png" alt="SSH Remove Composer Installer" width="100%"/>
+
 :::
 
 Itu saja! Versi terbaru Composer berhasil diinstal dan siap digunakan.

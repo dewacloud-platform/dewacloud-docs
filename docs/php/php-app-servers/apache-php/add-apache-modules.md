@@ -15,11 +15,11 @@ Untuk memenuhi semua persyaratan aplikasi Anda, Anda mungkin perlu menambahkan b
 
 3\. Dalam wizard yang terbuka, navigasi ke tab **PHP**, pilih server aplikasi **Apache** dan tentukan jumlah sumber daya yang dibutuhkan aplikasi Anda. Setelah itu, masukkan nama untuk environment Anda (misalnya, _apachemodules_) dan klik tombol **Create**.
 
-![create php environment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/add-apache-modules/01-create-php-environment.png" alt="create php environment" width="100%"/>
 
 4\. Dalam beberapa detik, environment Anda akan muncul di dashboard platform.
 
-![environment created](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/add-apache-modules/02-environment-created.png" alt="environment created" width="100%"/>
 
 ## Build your Apache module{#build-your-apache-module}
 
@@ -41,11 +41,11 @@ apxs -i -a -c mod_pony.c /usr/lib64/apr-1/build/libtool --silent --mode=compile 
 
 1\. Navigasi ke environment Anda dan klik **Config** untuk server Apache Anda.
 
-![environment node config](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/add-apache-modules/03-environment-node-config.png" alt="environment node config" width="100%"/>
 
 2\. Unggah file _**mod_pony.so**_ ke folder **/usr/lib64/php/modules**.
 
-![upload module](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/add-apache-modules/04-upload-module.png" alt="upload module" width="100%"/>
 
 3\. Pergi ke folder **/etc/httpd/conf** dan edit file _**httpd.conf**_ dengan menambahkan string LoadModule dalam format berikut:
 
@@ -55,7 +55,7 @@ Contoh: `LoadModule pony_module /usr/lib64/php/modules/mod_pony.so`
 
 **Simpan** perubahan.
 
-![httpd load module](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/add-apache-modules/05-httpd-load-module.png" alt="httpd load module" width="100%"/>
 
 4\. Ubah pengaturan yang diperlukan untuk modul Apache Anda.
 
@@ -71,7 +71,7 @@ SetHandler pony
 
 **Simpan** perubahan.
 
-![apache module settings](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/add-apache-modules/06-apache-module-settings.png" alt="apache module settings" width="100%"/>
 
 5\. Setelah semua perubahan konfigurasi **Restart node** dari server Apache Anda untuk mengaktifkan modul Apache.
 
@@ -79,13 +79,13 @@ SetHandler pony
 
 1\. Untuk memeriksa apakah modul Apache **mod_pony** berfungsi, klik **Open in browser** untuk environment Anda.
 
-![run application](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/add-apache-modules/07-run-application.png" alt="run application" width="100%"/>
 
 2\. Tambahkan **/pony** ke dalam tautan dan segarkan. Sebagai hasilnya Anda memiliki pony Anda sendiri.
 
-![apache pony module](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/add-apache-modules/08-apache-pony-module.png" alt="apache pony module" width="70%"/>
 
-![apache pony module 2](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/add-apache-modules/09-apache-pony-module-2.png" alt="apache pony module 2" width="50%"/>
 
 Itu saja yang diperlukan! Hanya beberapa langkah sederhana dan Anda dapat menikmati menggunakan modul kustom Anda sendiri untuk server Apache.
 
