@@ -29,7 +29,7 @@ Di mana _**\{utility_address\}**_ adalah tautan ke sumber unduhan Java yang dipe
 Parameter _AuthParam_ yang sesuai harus ditentukan dalam URL, yang menunjukkan bahwa Anda telah menerima perjanjian lisensi Oracle dan dapat mengunduh perangkat lunak dengan bebas.
 :::
 
-![install java vps ssh](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/use-cases/run-java-console-application/java-console-app-1.png" alt="install java vps ssh" width="100%"/>
 
 2. Selanjutnya, jalankan perintah di bawah ini untuk mengekstrak paket _Java**rpm**_ yang sebelumnya diunduh.
 
@@ -39,7 +39,7 @@ rpm -ivh {java_rpm_package}
 
 Di mana _**\{java_rpm_package\}**_ adalah paket _Java_ yang diunduh dengan parameter _AuthParam_ ditentukan.
 
-![vps execute java rpm](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/use-cases/run-java-console-application/java-console-app-2.png" alt="vps execute java rpm" width="100%"/>
 
 3. Dan sekarang mari kita periksa, apakah semuanya sudah diatur dengan benar dengan mengecek versi Java yang terinstal.
 
@@ -47,7 +47,7 @@ Di mana _**\{java_rpm_package\}**_ adalah paket _Java_ yang diunduh dengan param
 java -version
 ```
 
-![java version vps](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/use-cases/run-java-console-application/java-console-app-3.png" alt="java version vps" width="100%"/>
 
 Bagus! Java berhasil diinstal, jadi mari kita lanjutkan ke pengunggahan aplikasi.
 
@@ -102,13 +102,13 @@ Setelah aplikasi Anda siap, Anda perlu mengemasnya ke dalam arsip _**.jar**_ dan
    - **User name** - login (mis. _root_)
    - **Password** - password yang diterima
 
-![winscp connect to vps](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/use-cases/run-java-console-application/java-console-app-4.png" alt="winscp connect to vps" width="100%"/>
 
 Klik tombol **Login** untuk memulai pengaturan koneksi.
 
 2. Setelah terhubung ke node VPS Anda, navigasikan ke direktori _**home**_ dan buat konteks _**standalone_java**_ baru di dalamnya. Kemudian ambil file _**.jar**_ yang diperlukan dengan aplikasi Anda dan letakkan ke dalam folder yang baru dibuat.
 
-![upload java app to vps](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/use-cases/run-java-console-application/java-console-app-5.png" alt="upload java app to vps" width="100%"/>
 
 Dalam dialog pengaturan transfer yang muncul, klik **Copy** untuk memulai pengunggahan. Setelah selesai, Anda akan melihat file tersebut di direktori pada remote VPS.
 
@@ -123,7 +123,7 @@ cd /home/standalone_java/
 ls
 ```
 
-![java standalone application directory](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/use-cases/run-java-console-application/java-console-app-6.png" alt="java standalone application directory" width="100%"/>
 
 2. Untuk menjalankan aplikasi yang diunggah, jalankan perintah berikut dari dalam direktori _**standalone_java**_.
 
@@ -131,7 +131,7 @@ ls
 java -jar vdssocket.jar
 ```
 
-![vps run java application](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/use-cases/run-java-console-application/java-console-app-7.png" alt="vps run java application" width="100%"/>
 
 Selesai! Sekarang, seperti yang bisa Anda lihat, port yang ditentukan sedang didengarkan.
 
@@ -150,15 +150,15 @@ di mana
 - _**public_IP_address**_ adalah IP eksternal yang terpasang
 - _**port_number**_ adalah port yang aplikasi Anda dengarkan
 
-![vps telnet test](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/use-cases/run-java-console-application/java-console-app-8.png" alt="vps telnet test" width="80%"/>
 
 2. Jika semuanya berfungsi dengan baik, Anda akan ditampilkan sebuah pesan dengan data tentang **Request time** dan **Remote address**.
 
-![telnet request time remote address](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/use-cases/run-java-console-application/java-console-app-9.png" alt="telnet request time remote address" width="100%"/>
 
 3. Sekarang, setelah kembali ke alat SSH Anda, Anda akan melihat pemberitahuan tentang klien baru yang terhubung ke server Anda dan **Remote Address**-nya.
 
-![vps new client connection](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/use-cases/run-java-console-application/java-console-app-10.png" alt="vps new client connection" width="100%"/>
 
 Itu saja. Aplikasi konsol Java Anda telah diatur dan berfungsi dengan baik!
 
