@@ -6,17 +6,19 @@ title: Process Managers
 
 # NodeJS Process Managers
 
-![NodeJS process managers](#)
+Node.js process manager adalah tool yang menyediakan kemampuan untuk mengontrol application life cycle, memantau service yang berjalan, dan memfasilitasi system admin task umum untuk menjaga operabilitas project Anda.
 
-Node.js process manager adalah alat yang menyediakan kemampuan untuk mengontrol siklus hidup aplikasi, memantau layanan yang berjalan, dan memfasilitasi tugas admin sistem umum untuk menjaga operabilitas proyek Anda.
+Dewacloud menyediakan tiga process manager pre-configured, yang dapat dipilih dengan cara berikut:
 
-Platform ini menyediakan tiga process manager yang telah dikonfigurasi sebelumnya, yang dapat dipilih dengan cara berikut:
+- Dengan memilih tag yang sesuai selama [pembuatan](https://docs.dewacloud.com/setting-up-environment/) environment atau [redeploy](https://docs.dewacloud.com/container-redeploy/) container
 
-- dengan memilih tag yang sesuai selama [pembuatan](https://docs.dewacloud.com/setting-up-environment/) environment atau [redeploy](https://docs.dewacloud.com/container-redeploy/) container ![select process manager wizard](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/nodejs/process-manager/nodejs-process-manager-1.png" alt="select process manager wizard" width="40%"/>
 
-- dengan mengedit lingkungan Docker _**PROCESS_MANAGER**_ [variable](https://docs.dewacloud.com/container-variables/) dalam container yang sudah dibuat dengan nilai _forever_, _npm_, atau _pm2_ (restart diperlukan untuk menerapkan opsi baru) ![select process manager variable](#)
+- Dengan mengedit [variable](https://docs.dewacloud.com/container-variables/) _**PROCESS_MANAGER**_ dalam container yang sudah dibuat dengan value _forever_, _npm_, atau _pm2_ (restart diperlukan untuk menerapkan opsi baru)
 
-Berikut ini, kami akan mempertimbangkan masing-masing manager yang tersedia untuk membantu Anda memilih salah satu:
+<img src="https://assets.dewacloud.com/dewacloud-docs/nodejs/process-manager/nodejs-process-manager-2.png" alt="select process manager variable" width="90%"/>
+
+Mari kita lihat masing-masing manager yang tersedia untuk membantu Anda memilih salah satu:
 
 - [Process Manager (npm)](https://docs.dewacloud.com/#process-manager-npm)
 - [PM2](https://docs.dewacloud.com/#pm2)
@@ -24,43 +26,43 @@ Berikut ini, kami akan mempertimbangkan masing-masing manager yang tersedia untu
 
 ## Process Manager (npm){#process-manager-npm}
 
-Bersama dengan [manajemen paket](https://docs.dewacloud.com/docs/nodejs-package-managers/#node-package-manager-npm), NPM menyediakan kemampuan untuk memulai aplikasi. “_npm start_” (yang merupakan alias “_npm run start_”) dilakukan jika **NPM** dipilih sebagai nilai untuk variabel _**PROCESS_MANAGER**_ pada container NodeJS. Akibatnya, skrip yang didefinisikan dalam “_start_” dari _**package.json**_ diluncurkan.
+Bersama dengan [package manager](https://docs.dewacloud.com/docs/nodejs-package-managers/#node-package-manager-npm), NPM menyediakan kemampuan untuk start aplikasi. “_npm start_” (yang merupakan alias “_npm run start_”) dijalankan jika **NPM** dipilih sebagai value pada variable _**PROCESS_MANAGER**_ pada container NodeJS. Hasilnya, script yang didefinisikan dalam “_start_” dari _**package.json**_ dapat dilaunch.
 
 Lihat [dokumentasi resminya](https://docs.npmjs.com/cli/v8/commands/npm-run-script) untuk informasi tambahan.
 
 ## PM2{#pm2}
 
-[PM2](https://pm2.keymetrics.io/) menyediakan beragam fitur manajemen aplikasi, termasuk pemantauan proses NodeJS yang diluncurkan. Anda bisa mengenali [daftar perintah](https://www.npmjs.com/package/pm2#commands-overview) untuk _pm2_, yang dapat dieksekusi langsung melalui SSH.
+[PM2](https://pm2.keymetrics.io/) menyediakan beragam fitur manajemen aplikasi, termasuk pemantauan proses NodeJS yang dilaunch. Anda bisa mengenali [list command](https://www.npmjs.com/package/pm2#commands-overview) untuk _pm2_, yang dapat dieksekusi langsung melalui SSH.
 
-Misalnya, setelah pembuatan server Node.js, Anda dapat mencantumkan proses yang berjalan dengan perintah berikut:
+Misalnya, setelah pembuatan server Node.js, Anda dapat menampilkan list process yang berjalan dengan command berikut:
 
 ```
 pm2 list
 ```
 
-![PM2 list running processes](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/nodejs/process-manager/nodejs-process-manager-3.png" alt="PM2 list running processes" width="100%"/>
 
-Seperti yang Anda lihat, ini menunjukkan aplikasi _draw-game_ default sedang berjalan.
+Seperti yang bisa dilihat, ini menunjukkan aplikasi _draw-game_ default sedang berjalan.
 
-Selanjutnya, Anda dapat menghapus aplikasi ini dengan perintah _**pm2 delete**_ dan [mendeploy](https://docs.dewacloud.com/deployment-guide/) proyek Anda sendiri (misalnya, aplikasi Hello World default):
+Selanjutnya, Anda dapat menghapus aplikasi ini dengan command _**pm2 delete**_.
 
-![PM2 delete process](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/nodejs/process-manager/nodejs-process-manager-4.png" alt="PM2 delete process" width="100%"/>
 
-Juga, PM2 memberi pengguna kemampuan untuk membuat file konfigurasi di mana semua opsi run tercantum, yang berguna untuk deployment aplikasi berbasis microservice, karena beberapa aplikasi dapat dideskripsikan dalam satu file. [Referensi file konfigurasi](https://pm2.keymetrics.io/docs/usage/application-declaration/) yang sesuai dapat ditemukan dengan mengikuti tautan yang disediakan (misalnya, file _**ecosystem.config.js**_ default digunakan untuk meluncurkan file aplikasi _server.js_ sebagai aplikasi _“draw game”_).
+PM2 juga memberi pengguna kemampuan untuk membuat file konfigurasi di mana semua opsi run ditampilkan dalam sebuah list, yang berguna untuk deployment aplikasi berbasis microservice, karena beberapa aplikasi dapat dideskripsikan dalam satu file. [Referensi file konfigurasi](https://pm2.keymetrics.io/docs/usage/application-declaration/) yang sesuai dapat ditemukan dengan mengikuti link yang disediakan (misalnya, file _**ecosystem.config.js**_ default digunakan untuk launching file aplikasi _server.js_ sebagai aplikasi _“draw game”_).
 
 ## Forever{#forever}
 
-Process manager [forever](https://www.npmjs.com/package/forever) adalah alat CLI sederhana, yang memungkinkan membuat proses NodeJS Anda berjalan terus menerus. Ini secara permanen menjaga child process (seperti proyek Anda pada server web Node.js) dan secara otomatis memulai ulang saat terjadi kegagalan.
+Process manager [forever](https://www.npmjs.com/package/forever) adalah tool CLI sederhana, yang dapat membuat proses NodeJS Anda berjalan terus menerus. Ini secara permanen menjaga child process (seperti project Anda pada server web Node.js) dan secara otomatis melakukan restart saat terjadi kegagalan.
 
-Jalankan perintah berikut untuk mendapatkan informasi utama tentang penggunaan manager _forever_, tindakan, penggunaan, dll.:
+Jalankan command berikut untuk mendapatkan informasi utama tentang penggunaan manager _forever_, action, usage, dll.:
 
 ```
 forever --help
 ```
 
-![forever process manager help](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/nodejs/process-manager/nodejs-process-manager-5.png" alt="forever process manager help" width="100%"/>
 
-Juga, dengan menggunakan _forever_ Anda dapat menentukan opsi aplikasi dalam [file JSON](https://www.npmjs.com/package/forever#json-configuration-files). Misalnya, untuk game Draw default (tersedia setelah penginstalan server Node.js), file _**/home/jelastic/ROOT/forever.json**_ ini terlihat seperti:
+Dengan menggunakan _forever_ Anda juga dapat menentukan opsi aplikasi dalam [file JSON](https://www.npmjs.com/package/forever#json-configuration-files). Misalnya, untuk game Draw default (secara default tersedia setelah penginstalan server Node.js), file _**/home/jelastic/ROOT/forever.json**_ akan seperti ini:
 
 ```json
 {
@@ -75,10 +77,10 @@ Juga, dengan menggunakan _forever_ Anda dapat menentukan opsi aplikasi dalam [fi
 di mana:
 
 - **uid** - menetapkan nama yang unik untuk aplikasi Anda
-- **append** - memilih apakah log harus ditambahkan (_true_) atau ditimpa (_false_)
+- **append** - memilih apakah log harus ditambahkan (_true_) atau di-overwrite (_false_)
 - **watch** - memungkinkan mengaktifkan atau menonaktifkan restart otomatis dari child process saat terjadi perubahan kode aplikasi yang sesuai; setel ke “_false_”, jika Anda ingin menghindari restart tak terduga setelah deployment dari VCS (termasuk [auto-deploy](https://docs.dewacloud.com/git-svn-auto-deploy/))
 - **script** - menentukan nama file _**.js**_ yang dapat dieksekusi
-- **sourceDir** - menyediakan path absolut ke skrip yang ditentukan
+- **sourceDir** - menyediakan absolute path ke script yang ditentukan
 
 ## Baca Juga{#whats-next}
 
