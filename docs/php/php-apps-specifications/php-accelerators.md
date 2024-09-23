@@ -33,7 +33,8 @@ extension=xcache.so
 extension=ZendGuardLoader.so
 ```
 
-![PHP accelerators](#)
+
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-apps-specifications/php-accelerators/01-php-accelerators.png" alt="PHP accelerators" width="80%"/>
 
 4\. Di sini Anda juga dapat melakukan semua pengaturan yang diperlukan untuk modul Anda.
 

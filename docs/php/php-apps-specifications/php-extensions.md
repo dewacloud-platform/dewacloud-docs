@@ -200,27 +200,29 @@ Di bawah ini, Anda dapat menemukan cara:
 
 Agar ekstensi dinamis tersedia untuk modul PHP yang digunakan (yaitu mesin), ekstensi tersebut harus diaktifkan dalam file konfigurasi yang sesuai.
 
-**Catatan:** Ekstensi bawaan __tidak boleh__ dimuat secara manual, karena mereka selalu berjalan di semua server PHP di platform secara default.
+:::warning
+Ekstensi bawaan __tidak boleh__ dimuat secara manual, karena mereka selalu berjalan di semua server PHP di platform secara default.
+:::
 
 Di bawah ini, Anda dapat mengetahui bagaimana hal ini dapat dilakukan:
 
 1\. Klik tombol **Config** untuk server aplikasi Anda.
 
-![php extensions config](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-apps-specifications/php-extensions/config.png" alt="php extensions config" width="100%"/>
 
 2\. Di dalam tab konfigurasi yang terbuka, pindahkan ke file **etc > _php.ini_** dan gulir ke bawah ke bagian _**Extensions provided by PaaS**_. Di sini, setiap ekstensi dinamis memiliki subbagian sendiri, di mana ekstensi dapat diaktifkan dan dikonfigurasi.
 
-![php extensions phpini](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-apps-specifications/php-extensions/phpini.png" alt="php extensions phpini" width="100%"/>
 
 3\. Sekarang, temukan bagian yang diperlukan (mereka terdaftar dalam urutan alfabet) dan hapus komentar pada direktif _**extension=\{module_name\}.so**_ di dalam (yaitu hapus titik koma di awal baris yang sesuai) untuk mengaktifkannya:
 
-![php extensions soapso](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-apps-specifications/php-extensions/soapso.png" alt="php extensions soapso" width="100%"/>
 
 Juga, di sini Anda dapat menyesuaikan ekstensi dengan menggunakan parameter konfigurasi yang tertera (atau menentukan parameter yang Anda butuhkan sendiri).
 
 4\. Setelah semua perubahan yang diperlukan dibuat, jangan lupa untuk **Save** dan **Restart** node untuk menerapkan konfigurasi baru.
 
-![php extensions restart](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-apps-specifications/php-extensions/restart.png" alt="php extensions restart" width="100%"/>
 
 ## Configure Extension{#configure-extension}
 
@@ -244,11 +246,11 @@ Selain semua modul yang tersedia di platform dengan bawaan, Anda juga memiliki k
 
 2\. Navigasikan ke dashboard platform dan klik tombol **Config** untuk server aplikasi PHP Anda.
 
-![php extensions config](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-apps-specifications/php-extensions/config.png" alt="php extensions config" width="100%"/>
 
 3\. Sekarang, menggunakan pengelola yang terbuka, unggah ekstensi kustom Anda ke folder **modules**.
 
-![php extensions upload](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-apps-specifications/php-extensions/upload.png" alt="php extensions upload" width="60%"/>
 
 4\. Pindahkan ke file **etc > _php.ini_**, temukan bagian _**Dynamic Extensions**_ dan tambahkan direktif perintah berikut:
 
@@ -256,7 +258,7 @@ Selain semua modul yang tersedia di platform dengan bawaan, Anda juga memiliki k
 extension={module_name}.so
 ```
 
-![php extensions custom module](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-apps-specifications/php-extensions/custom-module.png" alt="php extensions custom module" width="100%"/>
 
 :::tip 
 Anda dapat menentukan semua pengaturan yang diperlukan untuk ekstensi Anda di bagian yang sama, jika diperlukan.
@@ -264,7 +266,7 @@ Anda dapat menentukan semua pengaturan yang diperlukan untuk ekstensi Anda di ba
 
 5\. **Simpan** perubahan dan **Restart** node.
 
-![php extensions restart](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-apps-specifications/php-extensions/restart.png" alt="php extensions restart" width="100%"/>
 
 Itu saja! Sekarang ekstensi kustom Anda diaktifkan.
 
