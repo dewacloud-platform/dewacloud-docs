@@ -20,7 +20,7 @@ dav_methods PUT DELETE MKCOL COPY MOVE;
 dav_ext_methods PROPFIND OPTIONS;
 ```
 
-![nginx webdav module 1](#)
+![nginx webdav module 1](https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/nginx-php/nginx-webdav-module/1.png)
 
 3\. Simpan perubahan dan restart **NGINX**.
 
@@ -43,7 +43,7 @@ auth_basic "Restricted area";
 auth_basic_user_file /var/www/webroot/ROOT/.htpasswd;
 ```
 
-![nginx webdav module 2](#)
+![nginx webdav module 2](https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/nginx-php/nginx-webdav-module/2.png)
 
 6\. Simpan perubahan dan restart **NGINX**.
 
