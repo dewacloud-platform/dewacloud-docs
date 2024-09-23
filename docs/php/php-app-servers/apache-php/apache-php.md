@@ -9,27 +9,28 @@ Platform ini mengadaptasi [Apache HTTP Server](<https://httpd.apache.org/>) ("_h
 
 :::note 
 Template ini menggunakan modernsystemdinitialization daemon. Daftar semua modul yang dimuat di server dapat dilihat dengan perintah apachectl -M atau pada halaman phpinfo default.
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-php/01-phpinfo-loaded-modules.png" alt="phpinfo loaded modules" width="100%"/>
 :::
 
 Untuk mendapatkan server _Apache PHP_ Anda, ikuti langkah-langkah di bawah ini:
 
 1\. Masuk ke akun PaaS Anda dan klik **New Environment** di bagian atas.
 
-![new environment button](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-php/02-new-environment-button.png" alt="new environment button" width="70%"/>
 
 2\. Dalam _topology wizard_ yang terbuka, beralihlah ke tab **PHP** dan pilih _**Apache**_ sebagai server aplikasi Anda. Atur konfigurasi lain sesuai kebutuhan Anda (misalnya [cloudlets limit](<https://docs.dewacloud.com/docs/automatic-vertical-scaling/>), [public IPs](<https://docs.dewacloud.com/docs/public-ip/>), [region](<https://docs.dewacloud.com/docs/environment-regions/>), dll.).
 
-![Apache PHP topology wizard](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-php/03-apache-php-topology-wizard.png" alt="Apache PHP topology wizard" width="100%"/>
 
 Ketik nama environment Anda dan klik **Create**.
 
 3\. Setelah environment dibuat, Anda dapat mengklik tombol **Open in Browser** di samping server aplikasi _Apache_:
 
-![Apache PHP open in browser](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-php/04-apache-php-open-in-browser.png" alt="Apache PHP open in browser" width="100%"/>
 
 4\. Pada halaman default yang terbuka, Anda akan melihat data _**phpinfo**_ server Anda.
 
-![Apache phpinfo start page](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-php/05-apache-phpinfo-start-page.png" alt="Apache phpinfo start page" width="100%"/>
 
 Sekarang, Anda dapat [mendeploy](<https://docs.dewacloud.com/docs/deployment-guide/>) aplikasi PHP Anda ke dalam environment.
 
@@ -45,22 +46,24 @@ Sebagai contoh, kami akan menunjukkan bagaimana Anda dapat mengubah ukuran file 
 
 1\. Klik tombol **Config** untuk server Apache Anda untuk mengakses [configuration file manager](<https://docs.dewacloud.com/docs/configuration-file-manager/>):
 
-![Apache PHP config button](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-php/06-apache-php-config-button.png" alt="Apache PHP config button" width="100%"/>
 
 2\. Buka file _**/etc/php.ini**_ (tersedia melalui pintasan _Favorites_) dan temukan parameter berikut:
 
   * _**upload_max_filesize**_ \- ukuran maksimum file yang dapat diunggah ke server (_100MB_ secara default)
   * _**post_max_size**_ \- ukuran maksimum data POST yang diterima PHP (_100MB_ secara default)
 
-![Apache adjust php.ini file](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-php/07-apache-adjust-phpini-file.png" alt="Apache adjust php.ini file" width="80%"/>
 
-**Catatan:** Terlepas dari pengaturan ini, ukuran file maksimum yang dapat diunggah melalui pengelola file platform dari mesin lokal adalah _150MB_ (dapat bervariasi berdasarkan pengaturan penyedia hosting). Untuk mengoperasikan file yang lebih besar, gunakan opsi **URL** atau lampirkan [public IP](<https://docs.dewacloud.com/docs/public-ip/>) dan gunakan pengelola Anda sendiri (misalnya, [FTP add-on](<https://docs.dewacloud.com/docs/ftp-ftps-support/>)).
+:::warning
+Terlepas dari pengaturan ini, ukuran file maksimum yang dapat diunggah melalui pengelola file platform dari mesin lokal adalah _150MB_ (dapat bervariasi berdasarkan pengaturan penyedia hosting). Untuk mengoperasikan file yang lebih besar, gunakan opsi **URL** atau lampirkan [public IP](<https://docs.dewacloud.com/docs/public-ip/>) dan gunakan pengelola Anda sendiri (misalnya, [FTP add-on](<https://docs.dewacloud.com/docs/ftp-ftps-support/>)).
 
-![file upload via URL](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-php/08-file-upload-via-url.png" alt="file upload via URL" width="70%"/>
+:::
 
 3\. Jangan lupa untuk **Save** perubahan dan **Restart Nodes** dari server aplikasi Anda untuk menerapkan pengaturan baru.
 
-![Apache PHP restart nodes](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-php/09-apache-php-restart-nodes.png" alt="Apache PHP restart nodes" width="100%"/>
 
 Untuk informasi lebih lanjut tentang konfigurasi server PHP, lihat panduan yang sesuai:
 

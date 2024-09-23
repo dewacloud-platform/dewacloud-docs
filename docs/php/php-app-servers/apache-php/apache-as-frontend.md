@@ -23,11 +23,11 @@ Mari kita anggap bahwa Anda memiliki setidaknya dua aplikasi Java yang di-hosted
 
   * **https://env-tomcat.jelastic.com/app1/**
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/01-first-tomcat-application.png" alt="first Tomcat application" width="60%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/01-first-tomcat-application.png" alt="first Tomcat application" width="70%"/>
 
   * **https://second-tomcat.jelastic.com/app2/**
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/02-second-tomcat-application.png" alt="second Tomcat application" width="60%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/02-second-tomcat-application.png" alt="second Tomcat application" width="70%"/>
 
 Dengan modul **mod_rewrite** Apache, Anda dapat membuat kedua aplikasi Anda tersedia pada satu port menggunakan jalur berbeda. Misalnya:
 
@@ -38,7 +38,7 @@ Konfigurasi ini akan memberikan kemampuan kepada Anda untuk mengelola, me-restar
 
 1\. Pada awalnya, Anda harus memiliki setidaknya tiga environment yang dibuat: satu environment Apache frontend dan dua atau lebih environment Tomcat backend dengan aplikasi Java Anda yang di-hosted.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/03-tomcat-behind-apache-topology.png" alt="Tomcat behind Apache topology" width="90%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/03-tomcat-behind-apache-topology.png" alt="Tomcat behind Apache topology" width="100%"/>
 
 2\. Buka pengelola konfigurasi Apache (klik **Config** di sebelahnya).
 
@@ -73,8 +73,12 @@ Jangan lupa untuk **Save** perubahan yang Anda buat dan **Restart** server Apach
 
 Dalam kasus kami, tambahkan:
 
-  * /application1/ <img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/05-rewriterule-first-application.png" alt="RewriteRule first application" width="70%"/>
-  * /application2/ <img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/06-rewriterule-second-application.png" alt="RewriteRule second application" width="70%"/>
+  * /application1/ 
+  
+  <img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/05-rewriterule-first-application.png" alt="RewriteRule first application" width="70%"/>
+  * /application2/ 
+  
+  <img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/06-rewriterule-second-application.png" alt="RewriteRule second application" width="70%"/>
 
 Seperti yang Anda lihat di atas, masing-masing aplikasi dibuka dengan satu port dan dalam jalur yang berbeda.
 
@@ -95,7 +99,7 @@ Seperti yang Anda lihat dalam skema di atas, Tomcat akan melayani aplikasi itu s
 2\. Tekan tombol **Config** di sebelah server aplikasi Apache Anda dan navigasikan ke folder **var/www/webroot/ROOT**. Buat folder khusus untuk konten statis Anda (diberi nama, misalnya, _static_) dan unggah file yang diperlukan di sana.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/09-create-static-content-folder.png" alt="create static content folder" width="100%"/>
-1010
+
 3\. Kemudian buka file **/etc/httpd/conf/_httpd.conf_**.
 
 Lakukan konfigurasi yang diperlukan dalam blok _< VirtualHost >_ seperti yang dijelaskan di bawah ini:
@@ -124,13 +128,13 @@ Semua permintaan lainnya akan diproksi ke server Tomcat dengan aplikasi Anda yan
 
 5\. Tekan **Open in Browser** di sebelah environment Apache untuk memeriksa hasilnya. Jika semuanya dilakukan dengan benar, Anda akan melihat bahwa aplikasi Anda diproksi dari Tomcat.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/11-proxied-tomcat-application.png" alt="proxied Tomcat application" width="70%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/11-proxied-tomcat-application.png" alt="proxied Tomcat application" width="60%"/>
 
 6\. Folder konten statis Anda juga tersedia - cukup tentukan jalurnya di URL.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/12-static-content-folder.png" alt="static content folder" width="70%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/12-static-content-folder.png" alt="static content folder" width="60%"/>
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/13-static-content-example-image.png" alt="static content image" width="70%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/13-static-content-example-image.png" alt="static content image" width="60%"/>
 
 Dengan demikian, baik aplikasi Tomcat dan file statis di Apache dapat diakses dalam satu port.
 
@@ -138,7 +142,7 @@ Dengan demikian, baik aplikasi Tomcat dan file statis di Apache dapat diakses da
 
 Anda dapat menambahkan beberapa instance Tomcat untuk membuat environment Anda menangani lebih banyak beban dan mendapatkan beberapa kemampuan failover. Dalam hal ini, server Apache frontend akan berfungsi sebagai pembagi beban antara semua server Tomcat.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/14-apache-load-balancing-scheme.png" alt="Apache load balancing scheme" width="70%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/14-apache-load-balancing-scheme.png" alt="Apache load balancing scheme" width="60%"/>
 
 Dengan langkah-langkah berikut, Anda dapat mengonfigurasi server Apache Anda untuk penyeimbangan beban dalam aplikasi Java Anda dengan **mod_rewrite module**.
 
