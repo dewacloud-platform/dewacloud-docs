@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-slug: /python-connection-to-mongodb
+slug: /connection-to-mongodb-python
 title: Python Connection to MongoDB
 ---
 # Python Application Connection to MongoDB
