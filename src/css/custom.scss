@@ -5,7 +5,13 @@
  */
 
 /* You can override the default Infima variables here. */
+
+@use "components/docs";
+@use "components/search";
+
 :root {
+  --ifm-background-color: #fafbfc;
+
   --ifm-color-primary: #34afe4;
   --ifm-color-primary-dark: #667aaf;
   --ifm-color-primary-darker: #465b9b;
@@ -15,6 +21,7 @@
   --ifm-color-primary-lightest: #e5f7ff;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --border-color: #e1e4e8;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -27,40 +34,15 @@
   --ifm-color-primary-lighter: #c5d8eb;
   --ifm-color-primary-lightest: #e5f7ff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --border-color: #393a3b;
 }
 
-/* Custom Formatting */
-article img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 1rem;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-/* if image in p tag */
-p > img {
-  display: inline;
-  margin: 0;
-  padding: 0;
-}
-
-li > img {
-  display: inline;
-  margin: 0;
-  padding: 0;
-}
-
-.video-responsive {
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height: 0;
-}
-
-.video-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
+[class*="announcementBar_"] {
+  --docusaurus-announcement-bar-height: 3.5rem;
 }

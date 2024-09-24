@@ -32,6 +32,9 @@ const config: Config = {
     locales: ["id"],
   },
 
+  // Plugins
+  plugins: ["docusaurus-plugin-sass"],
+
   presets: [
     [
       "classic",
@@ -63,7 +66,7 @@ const config: Config = {
           routeBasePath: "/release-notes",
         },
         theme: {
-          customCss: "./src/css/custom.css",
+          customCss: "./src/css/custom.scss",
         },
       } satisfies Preset.Options,
     ],
@@ -73,6 +76,10 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
+    announcementBar: {
+      content: "👷 Dewacloud Documentation Site is currently in development 🚧",
+      isCloseable: false,
+    },
     image: "img/dewacloud-social-card.jpg",
     navbar: {
       logo: {
@@ -82,12 +89,16 @@ const config: Config = {
       },
       items: [
         {
+          type: "search",
+          position: "left",
+        },
+        {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
-          position: "left",
+          position: "right",
           label: "Docs",
         },
-        { to: "/release-notes", label: "Release Notes", position: "left" },
+        { to: "/release-notes", label: "Release Notes", position: "right" },
         {
           href: githubRepo,
           label: "GitHub",

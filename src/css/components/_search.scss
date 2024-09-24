@@ -1,0 +1,96 @@
+:root:root {
+  --docsearch-searchbox-background: var(--ifm-background-color);
+  --docsearch-searchbox-height: 2.25rem;
+
+  --docsearch-key-gradient: none;
+  --docsearch-key-shadow: none;
+}
+
+html[data-theme="light"] {
+  --docsearch-searchbox-shadow: inset 0 0 0 1px var(--ifm-color-primary);
+
+  .DocSearch-Button {
+    &:hover {
+      --docsearch-searchbox-shadow: inset 0 0 0 1px var(--ifm-color-primary);
+    }
+  }
+}
+
+html[data-theme="dark"] {
+  --docsearch-searchbox-shadow: inset 0 0 0 1px var(--ifm-color-primary-dark);
+
+  .DocSearch-Button {
+    &:hover {
+      --docsearch-searchbox-shadow: inset 0 0 0 1px
+        var(--ifm-color-primary-dark);
+    }
+  }
+}
+
+// overrides
+#__docusaurus {
+  [class^="navbarSearchContainer_"] {
+    flex-grow: 1;
+    max-width: 25rem;
+  }
+
+  //   Tablet
+  @media (max-width: 996px) {
+    [class^="navbarSearchContainer_"] {
+      width: 100%;
+      max-width: 15rem;
+    }
+  }
+
+  //   Mobile
+  @media (max-width: 520px) {
+    [class^="navbarSearchContainer_"] {
+      width: fit-content;
+      .DocSearch-Button {
+        border: none;
+        .DocSearch-Button-Keys {
+          //   display: none;
+          .DocSearch-Button-Key {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .DocSearch-Button {
+    width: 100%;
+    border-radius: 12px;
+    // box-shadow: var(--docsearch-searchbox-shadow);
+    border: 1px solid var(--border-color);
+
+    .DocSearch-Button-Keys {
+      min-width: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 0.125rem;
+      border-style: none;
+      gap: 0.25rem;
+
+      .DocSearch-Button-Key {
+        position: static;
+        margin-inline-end: 0;
+        padding-block-end: 0;
+
+        width: auto;
+
+        border-radius: 0;
+
+        font-weight: 400;
+
+        // Targets the `CMD/CTRL` symbol
+        &:first-child {
+          font-size: 1.4em;
+          margin-inline-end: 0.0625rem;
+        }
+      }
+    }
+  }
+}
