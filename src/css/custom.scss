@@ -8,17 +8,27 @@
 
 @use "components/docs";
 @use "components/search";
+@use "components/landing";
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 :root {
   --ifm-background-color: #fafbfc;
 
-  --ifm-color-primary: #34afe4;
-  --ifm-color-primary-dark: #667aaf;
-  --ifm-color-primary-darker: #465b9b;
-  --ifm-color-primary-darkest: #263c87;
-  --ifm-color-primary-light: #a5b9d7;
-  --ifm-color-primary-lighter: #c5d8eb;
-  --ifm-color-primary-lightest: #e5f7ff;
+  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, Inter, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI emoji";
+
+  --ifm-font-family-monospace: "SFMono-Regular", "Roboto Mono", Consolas,
+    "Liberation Mono", Menlo, Courier, monospace;
+
+  --ifm-color-primary: #4db3ff;
+  --ifm-color-primary-dark: #2ca5ff;
+  --ifm-color-primary-darker: #1b9eff;
+  --ifm-color-primary-darkest: #0085e8;
+  --ifm-color-primary-light: #6ec1ff;
+  --ifm-color-primary-lighter: #7fc8ff;
+  --ifm-color-primary-lightest: #b1deff;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --border-color: #e1e4e8;
@@ -26,13 +36,13 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
-  --ifm-color-primary: #34afe4;
-  --ifm-color-primary-dark: #667aaf;
-  --ifm-color-primary-darker: #465b9b;
-  --ifm-color-primary-darkest: #263c87;
-  --ifm-color-primary-light: #a5b9d7;
-  --ifm-color-primary-lighter: #c5d8eb;
-  --ifm-color-primary-lightest: #e5f7ff;
+  --ifm-color-primary: #4db3ff;
+  --ifm-color-primary-dark: #2ca5ff;
+  --ifm-color-primary-darker: #1b9eff;
+  --ifm-color-primary-darkest: #0085e8;
+  --ifm-color-primary-light: #6ec1ff;
+  --ifm-color-primary-lighter: #7fc8ff;
+  --ifm-color-primary-lightest: #b1deff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --border-color: #393a3b;
 }
@@ -44,5 +54,10 @@
 }
 
 [class*="announcementBar_"] {
-  --docusaurus-announcement-bar-height: 3.5rem;
+  --docusaurus-announcement-bar-height: 2rem;
+}
+
+article {
+  font-family: -apple-system, BlinkMacSystemFont, Inter, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI emoji";
 }
