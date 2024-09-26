@@ -24,13 +24,13 @@
   --ifm-font-family-monospace: "SFMono-Regular", "Roboto Mono", Consolas,
     "Liberation Mono", Menlo, Courier, monospace;
 
-  --ifm-color-primary: #4db3ff;
-  --ifm-color-primary-dark: #2ca5ff;
-  --ifm-color-primary-darker: #1b9eff;
-  --ifm-color-primary-darkest: #0085e8;
-  --ifm-color-primary-light: #6ec1ff;
-  --ifm-color-primary-lighter: #7fc8ff;
-  --ifm-color-primary-lightest: #b1deff;
+  --ifm-color-primary: #038dc8;
+  --ifm-color-primary-dark: #037fb4;
+  --ifm-color-primary-darker: #0378aa;
+  --ifm-color-primary-darkest: #02638c;
+  --ifm-color-primary-light: #039bdc;
+  --ifm-color-primary-lighter: #03a2e6;
+  --ifm-color-primary-lightest: #0db4fb;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --border-color: #e1e4e8;
@@ -38,13 +38,13 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
-  --ifm-color-primary: #4db3ff;
-  --ifm-color-primary-dark: #2ca5ff;
-  --ifm-color-primary-darker: #1b9eff;
-  --ifm-color-primary-darkest: #0085e8;
-  --ifm-color-primary-light: #6ec1ff;
-  --ifm-color-primary-lighter: #7fc8ff;
-  --ifm-color-primary-lightest: #b1deff;
+  --ifm-color-primary: #038dc8;
+  --ifm-color-primary-dark: #037fb4;
+  --ifm-color-primary-darker: #0378aa;
+  --ifm-color-primary-darkest: #02638c;
+  --ifm-color-primary-light: #039bdc;
+  --ifm-color-primary-lighter: #03a2e6;
+  --ifm-color-primary-lightest: #0db4fb;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --border-color: #393a3b;
 }
@@ -57,10 +57,13 @@
 
 [class*="announcementBar_"] {
   --docusaurus-announcement-bar-height: 2rem;
-  background: radial-gradient(
-    circle,
-    rgba(63, 94, 251, 1) 0%,
-    rgba(42, 33, 193, 1) 100%
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(7, 15, 107, 1) 25%,
+    rgba(7, 7, 97, 1) 46%,
+    rgba(5, 22, 90, 1) 72%,
+    rgba(14, 0, 48, 1) 100%
   );
 
   [class*="announcementBarContent_"] {

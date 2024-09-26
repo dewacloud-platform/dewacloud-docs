@@ -9,13 +9,18 @@
       h1 {
         font-family: "Quicksand", sans-serif;
         font-weight: 700;
+
+        em {
+          font-style: normal;
+          color: var(--ifm-color-primary);
+        }
       }
 
       .feature-container {
         border: solid 1px var(--ifm-color-gray-200);
         border-radius: 1rem;
         background: var(--ifm-background-color);
-        // box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+        cursor: pointer;
       }
 
       #language-features {
@@ -69,6 +74,44 @@
                 font-weight: 400;
                 text-decoration: underline;
                 color: var(--ifm-color-gray-500);
+              }
+            }
+
+            .language-feature__button {
+              svg {
+                display: none;
+              }
+            }
+
+            // Mobile
+            @media (max-width: 520px) {
+              flex-direction: row;
+              align-items: center;
+              gap: 2rem;
+
+              .language-feature__title {
+                p {
+                  font-size: 1.25rem;
+                  font-weight: 700;
+                  margin: 0;
+                }
+              }
+
+              .language-feature__icon {
+                width: 2rem;
+              }
+
+              .language-feature__link {
+                a {
+                  display: none;
+                }
+              }
+
+              .language-feature__button {
+                margin-left: auto;
+                svg {
+                  display: block;
+                }
               }
             }
           }

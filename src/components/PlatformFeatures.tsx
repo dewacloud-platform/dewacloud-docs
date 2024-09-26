@@ -159,7 +159,12 @@ const deploymentToolsFeatureList: PlatformFeatureItem[] = [
 
 function PlatformFeature({ title, description, link }: PlatformFeatureItem) {
   return (
-    <div className="platform-feature feature-container">
+    <div
+      className="platform-feature feature-container"
+      onClick={() => {
+        window.location.assign(link);
+      }}
+    >
       <div className="platform-feature__title">
         <p>{title}</p>
       </div>
@@ -177,7 +182,9 @@ export default function PlatformFeatures(): JSX.Element {
   return (
     <>
       <section id="environment-features">
-        <h1>Pelajari Cara Setup & Management Environment</h1>
+        <h1>
+          Pelajari Cara Setup & Management <em>Environment</em>
+        </h1>
         <div className="platform-features">
           {environmentFeatureList.map((props, idx) => (
             <PlatformFeature key={idx} {...props} />
@@ -186,7 +193,9 @@ export default function PlatformFeatures(): JSX.Element {
       </section>
 
       <section id="development-tools-features">
-        <h1>Pelajari Tentang Deployment Tools</h1>
+        <h1>
+          Pelajari Tentang <em>Deployment Tools</em>
+        </h1>
         <div className="platform-features">
           {developmentToolsFeatureList.map((props, idx) => (
             <PlatformFeature key={idx} {...props} />
@@ -195,7 +204,9 @@ export default function PlatformFeatures(): JSX.Element {
       </section>
 
       <section id="deployment-tools-features">
-        <h1>Pelajari Tentang Deployment Tools</h1>
+        <h1>
+          Pelajari Tentang <em>Deployment Tools</em>
+        </h1>
         <div className="platform-features">
           {deploymentToolsFeatureList.map((props, idx) => (
             <PlatformFeature key={idx} {...props} />

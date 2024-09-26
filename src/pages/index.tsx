@@ -1,18 +1,17 @@
-import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
-import styles from "./index.module.css";
 import LanguageFeatures from "../components/LanguageFeatures";
 import PlatformFeatures from "../components/PlatformFeatures";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
+    // <header className={clsx("hero hero--primary", styles.heroBanner)}>
+    <header className="hero hero--primary">
       <div className="container">
-        <div className={styles.buttons}>
+        <div className="">
           <Link className="button button--secondary" to="/docs">
             Panduan untuk Developer
           </Link>
@@ -27,7 +26,7 @@ function HomepageHeader() {
           para developer bisa lebih fokus pada pengembangan aplikasi. Segera
           pelajari segala fitur canggih Dewacloud di bawah ini!
         </p>
-        <div className={styles.buttons}>
+        <div className="">
           <Link id="get-started-button" className="button " to="/docs">
             Get Started️
           </Link>

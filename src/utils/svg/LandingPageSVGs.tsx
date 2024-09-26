@@ -6,7 +6,7 @@ export const JavaLogoSVG = (props: React.SVGProps<SVGSVGElement>) => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clip-path="url(#clip0_20_1887)">
+    <g clipPath="url(#clip0_20_1887)">
       <path
         d="M19.1688 61.8435C19.1688 61.8435 16.1172 63.6182 21.3406 64.2187C27.6686 64.9406 30.9028 64.837 37.8763 63.5172C37.8763 63.5172 39.7097 64.6668 42.2702 65.6625C26.6374 72.3625 6.89007 65.2744 19.1688 61.8435Z"
         fill="#5382A1"
@@ -72,9 +72,9 @@ export const NodeJsLogoSVG = (props: React.SVGProps<SVGSVGElement>) => (
         gradientTransform="rotate(116.114 53.1 202.97) scale(86.48)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".3" stop-color="#3E863D" />
-        <stop offset=".5" stop-color="#55934F" />
-        <stop offset=".8" stop-color="#5AAD45" />
+        <stop offset=".3" stopColor="#3E863D" />
+        <stop offset=".5" stopColor="#55934F" />
+        <stop offset=".8" stopColor="#5AAD45" />
       </linearGradient>
       <clipPath id="c">
         <path d="M195.398 307.086c.403.523.907.976 1.5 1.316l36.14 20.875 6.02 3.46c.9.52 1.926.74 2.934.665.336-.027.672-.09 1-.183l44.434-81.36c-.34-.37-.738-.68-1.184-.94l-27.586-15.93-14.582-8.39c-.414-.24-.863-.41-1.32-.53zm0 0" />
@@ -86,9 +86,9 @@ export const NodeJsLogoSVG = (props: React.SVGProps<SVGSVGElement>) => (
         gradientTransform="rotate(-36.46 550.846 -214.337) scale(132.798)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".57" stop-color="#3E863D" />
-        <stop offset=".72" stop-color="#619857" />
-        <stop offset="1" stop-color="#76AC64" />
+        <stop offset=".57" stopColor="#3E863D" />
+        <stop offset=".72" stopColor="#619857" />
+        <stop offset="1" stopColor="#76AC64" />
       </linearGradient>
       <clipPath id="e">
         <path d="M241.066 225.953c-.707.07-1.398.29-2.035.652l-42.01 24.247 45.3 82.51c.63-.09 1.25-.3 1.81-.624l42.13-24.336c1.3-.754 2.19-2.03 2.46-3.476l-46.18-78.89c-.34-.067-.68-.102-1.03-.102-.14 0-.28.007-.42.02" />
@@ -100,11 +100,11 @@ export const NodeJsLogoSVG = (props: React.SVGProps<SVGSVGElement>) => (
         gradientTransform="translate(192.862 279.652) scale(97.417)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".16" stop-color="#6BBF47" />
-        <stop offset=".38" stop-color="#79B461" />
-        <stop offset=".47" stop-color="#75AC64" />
-        <stop offset=".7" stop-color="#659E5A" />
-        <stop offset=".9" stop-color="#3E863D" />
+        <stop offset=".16" stopColor="#6BBF47" />
+        <stop offset=".38" stopColor="#79B461" />
+        <stop offset=".47" stopColor="#75AC64" />
+        <stop offset=".7" stopColor="#659E5A" />
+        <stop offset=".9" stopColor="#3E863D" />
       </linearGradient>
     </defs>
     <path
@@ -117,27 +117,27 @@ export const NodeJsLogoSVG = (props: React.SVGProps<SVGSVGElement>) => (
     />
     <path
       fill="#333"
-      fill-rule="evenodd"
+      fillRule="evenodd"
       d="M94.936 90.55c0-1.84-.97-3.53-2.558-4.445l-42.356-24.37c-.715-.42-1.516-.64-2.328-.67h-.438c-.812.03-1.613.25-2.34.67L2.562 86.105C.984 87.025 0 88.715 0 90.555l.093 65.64c0 .91.47 1.76 1.27 2.21.78.48 1.76.48 2.54 0l25.18-14.42c1.59-.946 2.56-2.618 2.56-4.44V108.88c0-1.83.97-3.52 2.555-4.43l10.72-6.174c.796-.46 1.67-.688 2.56-.688.876 0 1.77.226 2.544.687l10.715 6.172c1.586.91 2.56 2.6 2.56 4.43v30.663c0 1.82.983 3.5 2.565 4.44l25.164 14.41c.79.47 1.773.47 2.56 0 .776-.45 1.268-1.3 1.268-2.21zm199.868 34.176c0 .457-.243.88-.64 1.106l-14.548 8.386c-.395.227-.883.227-1.277 0l-14.55-8.386c-.4-.227-.64-.65-.64-1.106V107.93c0-.458.24-.88.63-1.11l14.54-8.4c.4-.23.89-.23 1.29 0l14.55 8.4c.4.23.64.652.64 1.11zM298.734.324c-.794-.442-1.76-.43-2.544.027-.78.46-1.262 1.3-1.262 2.21v65c0 .64-.34 1.23-.894 1.55-.55.32-1.235.32-1.79 0L281.634 63c-1.58-.914-3.526-.914-5.112 0l-42.37 24.453c-1.583.91-2.56 2.6-2.56 4.42v48.92c0 1.83.977 3.51 2.56 4.43l42.37 24.47c1.582.91 3.53.91 5.117 0l42.37-24.48c1.58-.92 2.56-2.6 2.56-4.43V18.863c0-1.856-1.01-3.563-2.63-4.47zm141.093 107.164c1.574-.914 2.543-2.602 2.543-4.422V91.21c0-1.824-.97-3.507-2.547-4.425l-42.1-24.44c-1.59-.92-3.54-.92-5.13 0l-42.36 24.45c-1.59.92-2.56 2.6-2.56 4.43v48.9c0 1.84.99 3.54 2.58 4.45l42.09 23.99c1.55.89 3.45.9 5.02.03l25.46-14.15c.8-.45 1.31-1.3 1.31-2.22 0-.92-.49-1.78-1.29-2.23l-42.62-24.46c-.8-.45-1.29-1.3-1.29-2.21v-15.34c0-.916.48-1.76 1.28-2.216l13.26-7.65c.79-.46 1.76-.46 2.55 0l13.27 7.65c.79.45 1.28 1.3 1.28 2.21v12.06c0 .91.49 1.76 1.28 2.22.79.45 1.77.45 2.56-.01zm0 0"
     />
     <path
       fill="#689f63"
-      fill-rule="evenodd"
+      fillRule="evenodd"
       d="M394.538 105.2c.3-.177.676-.177.98 0l8.13 4.69c.304.176.49.5.49.85v9.39c0 .35-.186.674-.49.85l-8.13 4.69c-.304.177-.68.177-.98 0l-8.125-4.69c-.31-.176-.5-.5-.5-.85v-9.39c0-.35.18-.674.49-.85zm0 0"
     />
-    <g clip-path="url(#a)" transform="translate(-78.306 -164.016)">
+    <g clipPath="url(#a)" transform="translate(-78.306 -164.016)">
       <path
         fill="url(#b)"
         d="M331.363 246.793l-118.715-58.19-60.87 124.174L270.49 370.97zm0 0"
       />
     </g>
-    <g clip-path="url(#c)" transform="translate(-78.306 -164.016)">
+    <g clipPath="url(#c)" transform="translate(-78.306 -164.016)">
       <path
         fill="url(#d)"
         d="M144.07 264.004l83.825 113.453 110.86-81.906-83.83-113.45zm0 0"
       />
     </g>
-    <g clip-path="url(#e)" transform="translate(-78.306 -164.016)">
+    <g clipPath="url(#e)" transform="translate(-78.306 -164.016)">
       <path fill="url(#f)" d="M197.02 225.934v107.43h91.683v-107.43zm0 0" />
     </g>
   </svg>
@@ -198,8 +198,8 @@ export const PythonLogoSVG = (props: React.SVGProps<SVGSVGElement>) => (
         y2="31.2791"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#5A9FD4" />
-        <stop offset="1" stop-color="#306998" />
+        <stop stopColor="#5A9FD4" />
+        <stop offset="1" stopColor="#306998" />
       </linearGradient>
       <linearGradient
         id="paint1_linear_20_1937"
@@ -209,8 +209,8 @@ export const PythonLogoSVG = (props: React.SVGProps<SVGSVGElement>) => (
         y2="39.4906"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FFD43B" />
-        <stop offset="1" stop-color="#FFE873" />
+        <stop stopColor="#FFD43B" />
+        <stop offset="1" stopColor="#FFE873" />
       </linearGradient>
     </defs>
   </svg>
@@ -224,112 +224,112 @@ export const RubyLogoSVG = (props: React.SVGProps<SVGSVGElement>) => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clip-path="url(#clip0_20_1958)">
+    <g clipPath="url(#clip0_20_1958)">
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M49.584 42.2422L13.0439 63.9999L60.3564 60.7804L64.0004 12.9404L49.584 42.2422Z"
         fill="url(#paint0_linear_20_1958)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M60.4332 60.7479L56.3667 32.6025L45.29 47.2696L60.4332 60.7479Z"
         fill="url(#paint1_linear_20_1958)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M60.4888 60.748L30.6969 58.4028L13.2021 63.9389L60.4888 60.748Z"
         fill="url(#paint2_linear_20_1958)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M13.2433 63.945L20.6857 39.4956L4.30859 43.0072L13.2433 63.945Z"
         fill="url(#paint3_linear_20_1958)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M45.2875 47.3505L38.4394 20.4523L18.8418 38.8736L45.2875 47.3505Z"
         fill="url(#paint4_linear_20_1958)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M62.4465 20.8311L43.9213 5.65869L38.7627 22.3827L62.4465 20.8311Z"
         fill="url(#paint5_linear_20_1958)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M53.783 0.249437L42.8875 6.28729L36.0137 0.168457L53.783 0.249437Z"
         fill="url(#paint6_linear_20_1958)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M0 51.2085L4.56428 42.8611L0.872155 32.9167L0 51.2085Z"
         fill="url(#paint7_linear_20_1958)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M0.626953 32.6025L4.34169 43.1687L20.483 39.5373L38.9113 22.3631L44.1119 5.79816L35.923 0L22.0009 5.22482C17.6146 9.31592 9.103 17.4107 8.79613 17.5629C8.4925 17.7184 3.17558 27.7955 0.626953 32.6025Z"
         fill="white"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M13.6702 13.6208C23.1766 4.16887 35.432 -1.4155 40.1352 3.34288C44.8355 8.10126 39.8509 19.6652 30.3445 29.1139C20.838 38.5626 8.73441 44.4547 4.03447 39.6964C-0.66871 34.9412 4.16367 23.0696 13.6702 13.6208Z"
         fill="url(#paint8_linear_20_1958)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M13.2441 63.9354L20.6284 39.4082L45.1521 47.3086C36.2852 55.6463 26.4234 62.6948 13.2441 63.9354Z"
         fill="url(#paint9_linear_20_1958)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M38.9434 22.3148L45.239 47.3214C52.6459 39.5117 59.2936 31.1157 62.5494 20.7308L38.9434 22.3148Z"
         fill="url(#paint10_linear_20_1958)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M62.4848 20.857C65.0044 13.2319 65.5858 2.29318 53.7048 0.262207L43.9561 5.66194L62.4848 20.857Z"
         fill="url(#paint11_linear_20_1958)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M0 51.0983C0.348862 63.6829 9.40312 63.8705 13.26 63.9809L4.35108 43.1169L0 51.0983Z"
         fill="#9E1209"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M38.9785 22.3537C44.6701 25.8618 56.1409 32.907 56.3735 33.0366C56.7349 33.2406 61.3189 25.2852 62.359 20.7892L38.9785 22.3537Z"
         fill="url(#paint12_radial_20_1958)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M20.6182 39.4082L30.4897 58.5065C36.3266 55.3321 40.8974 51.4645 45.0837 47.3216L20.6182 39.4082Z"
         fill="url(#paint13_radial_20_1958)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M4.31274 43.1428L2.91406 59.8441C5.55314 63.4591 9.18389 63.7733 12.9923 63.4915C10.2369 56.6146 4.73267 42.8643 4.31274 43.1428Z"
         fill="url(#paint14_linear_20_1958)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M43.8984 5.70419L63.509 8.46399C62.4624 4.01657 59.2484 1.14665 53.7699 0.24939L43.8984 5.70419Z"
         fill="url(#paint15_linear_20_1958)"
       />
@@ -343,10 +343,10 @@ export const RubyLogoSVG = (props: React.SVGProps<SVGSVGElement>) => (
         y2="45.9488"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FB7655" />
-        <stop offset="0.41" stop-color="#E42B1E" />
-        <stop offset="0.99" stop-color="#990000" />
-        <stop offset="1" stop-color="#990000" />
+        <stop stopColor="#FB7655" />
+        <stop offset="0.41" stopColor="#E42B1E" />
+        <stop offset="0.99" stopColor="#990000" />
+        <stop offset="1" stopColor="#990000" />
       </linearGradient>
       <linearGradient
         id="paint1_linear_20_1958"
@@ -356,9 +356,9 @@ export const RubyLogoSVG = (props: React.SVGProps<SVGSVGElement>) => (
         y2="38.076"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#871101" />
-        <stop offset="0.99" stop-color="#911209" />
-        <stop offset="1" stop-color="#911209" />
+        <stop stopColor="#871101" />
+        <stop offset="0.99" stopColor="#911209" />
+        <stop offset="1" stopColor="#911209" />
       </linearGradient>
       <linearGradient
         id="paint2_linear_20_1958"
@@ -368,9 +368,9 @@ export const RubyLogoSVG = (props: React.SVGProps<SVGSVGElement>) => (
         y2="58.8811"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#871101" />
-        <stop offset="0.99" stop-color="#911209" />
-        <stop offset="1" stop-color="#911209" />
+        <stop stopColor="#871101" />
+        <stop offset="0.99" stopColor="#911209" />
+        <stop offset="1" stopColor="#911209" />
       </linearGradient>
       <linearGradient
         id="paint3_linear_20_1958"
@@ -380,11 +380,11 @@ export const RubyLogoSVG = (props: React.SVGProps<SVGSVGElement>) => (
         y2="58.8415"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="0.23" stop-color="#E57252" />
-        <stop offset="0.46" stop-color="#DE3B20" />
-        <stop offset="0.99" stop-color="#A60003" />
-        <stop offset="1" stop-color="#A60003" />
+        <stop stopColor="white" />
+        <stop offset="0.23" stopColor="#E57252" />
+        <stop offset="0.46" stopColor="#DE3B20" />
+        <stop offset="0.99" stopColor="#A60003" />
+        <stop offset="1" stopColor="#A60003" />
       </linearGradient>
       <linearGradient
         id="paint4_linear_20_1958"
@@ -394,11 +394,11 @@ export const RubyLogoSVG = (props: React.SVGProps<SVGSVGElement>) => (
         y2="42.7901"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="0.23" stop-color="#E4714E" />
-        <stop offset="0.56" stop-color="#BE1A0D" />
-        <stop offset="0.99" stop-color="#A80D00" />
-        <stop offset="1" stop-color="#A80D00" />
+        <stop stopColor="white" />
+        <stop offset="0.23" stopColor="#E4714E" />
+        <stop offset="0.56" stopColor="#BE1A0D" />
+        <stop offset="0.99" stopColor="#A80D00" />
+        <stop offset="1" stopColor="#A80D00" />
       </linearGradient>
       <linearGradient
         id="paint5_linear_20_1958"
@@ -408,11 +408,11 @@ export const RubyLogoSVG = (props: React.SVGProps<SVGSVGElement>) => (
         y2="21.121"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="0.18" stop-color="#E46342" />
-        <stop offset="0.4" stop-color="#C82410" />
-        <stop offset="0.99" stop-color="#A80D00" />
-        <stop offset="1" stop-color="#A80D00" />
+        <stop stopColor="white" />
+        <stop offset="0.18" stopColor="#E46342" />
+        <stop offset="0.4" stopColor="#C82410" />
+        <stop offset="0.99" stopColor="#A80D00" />
+        <stop offset="1" stopColor="#A80D00" />
       </linearGradient>
       <linearGradient
         id="paint6_linear_20_1958"
@@ -422,10 +422,10 @@ export const RubyLogoSVG = (props: React.SVGProps<SVGSVGElement>) => (
         y2="-2.66152"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="0.54" stop-color="#C81F11" />
-        <stop offset="0.99" stop-color="#BF0905" />
-        <stop offset="1" stop-color="#BF0905" />
+        <stop stopColor="white" />
+        <stop offset="0.54" stopColor="#C81F11" />
+        <stop offset="0.99" stopColor="#BF0905" />
+        <stop offset="1" stopColor="#BF0905" />
       </linearGradient>
       <linearGradient
         id="paint7_linear_20_1958"
@@ -435,10 +435,10 @@ export const RubyLogoSVG = (props: React.SVGProps<SVGSVGElement>) => (
         y2="47.3768"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="0.31" stop-color="#DE4024" />
-        <stop offset="0.99" stop-color="#BF190B" />
-        <stop offset="1" stop-color="#BF190B" />
+        <stop stopColor="white" />
+        <stop offset="0.31" stopColor="#DE4024" />
+        <stop offset="0.99" stopColor="#BF190B" />
+        <stop offset="1" stopColor="#BF190B" />
       </linearGradient>
       <linearGradient
         id="paint8_linear_20_1958"
@@ -448,15 +448,15 @@ export const RubyLogoSVG = (props: React.SVGProps<SVGSVGElement>) => (
         y2="-0.771716"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#BD0012" />
-        <stop offset="0.07" stop-color="white" />
-        <stop offset="0.17" stop-color="white" />
-        <stop offset="0.27" stop-color="#C82F1C" />
-        <stop offset="0.33" stop-color="#820C01" />
-        <stop offset="0.46" stop-color="#A31601" />
-        <stop offset="0.72" stop-color="#B31301" />
-        <stop offset="0.99" stop-color="#E82609" />
-        <stop offset="1" stop-color="#E82609" />
+        <stop stopColor="#BD0012" />
+        <stop offset="0.07" stopColor="white" />
+        <stop offset="0.17" stopColor="white" />
+        <stop offset="0.27" stopColor="#C82F1C" />
+        <stop offset="0.33" stopColor="#820C01" />
+        <stop offset="0.46" stopColor="#A31601" />
+        <stop offset="0.72" stopColor="#B31301" />
+        <stop offset="0.99" stopColor="#E82609" />
+        <stop offset="1" stopColor="#E82609" />
       </linearGradient>
       <linearGradient
         id="paint9_linear_20_1958"
@@ -466,10 +466,10 @@ export const RubyLogoSVG = (props: React.SVGProps<SVGSVGElement>) => (
         y2="51.7224"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#8C0C01" />
-        <stop offset="0.54" stop-color="#990C00" />
-        <stop offset="0.99" stop-color="#A80D0E" />
-        <stop offset="1" stop-color="#A80D0E" />
+        <stop stopColor="#8C0C01" />
+        <stop offset="0.54" stopColor="#990C00" />
+        <stop offset="0.99" stopColor="#A80D0E" />
+        <stop offset="1" stopColor="#A80D0E" />
       </linearGradient>
       <linearGradient
         id="paint10_linear_20_1958"
@@ -479,9 +479,9 @@ export const RubyLogoSVG = (props: React.SVGProps<SVGSVGElement>) => (
         y2="25.524"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#7E110B" />
-        <stop offset="0.99" stop-color="#9E0C00" />
-        <stop offset="1" stop-color="#9E0C00" />
+        <stop stopColor="#7E110B" />
+        <stop offset="0.99" stopColor="#9E0C00" />
+        <stop offset="1" stopColor="#9E0C00" />
       </linearGradient>
       <linearGradient
         id="paint11_linear_20_1958"
@@ -491,9 +491,9 @@ export const RubyLogoSVG = (props: React.SVGProps<SVGSVGElement>) => (
         y2="8.45756"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#79130D" />
-        <stop offset="0.99" stop-color="#9E120B" />
-        <stop offset="1" stop-color="#9E120B" />
+        <stop stopColor="#79130D" />
+        <stop offset="0.99" stopColor="#9E120B" />
+        <stop offset="1" stopColor="#9E120B" />
       </linearGradient>
       <radialGradient
         id="paint12_radial_20_1958"
@@ -503,9 +503,9 @@ export const RubyLogoSVG = (props: React.SVGProps<SVGSVGElement>) => (
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(46.4605 25.7154) scale(16.2665 16.3118)"
       >
-        <stop stop-color="#A80D00" />
-        <stop offset="0.99" stop-color="#7E0E08" />
-        <stop offset="1" stop-color="#7E0E08" />
+        <stop stopColor="#A80D00" />
+        <stop offset="0.99" stopColor="#7E0E08" />
+        <stop offset="1" stopColor="#7E0E08" />
       </radialGradient>
       <radialGradient
         id="paint13_radial_20_1958"
@@ -515,9 +515,9 @@ export const RubyLogoSVG = (props: React.SVGProps<SVGSVGElement>) => (
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(23.9331 47.2117) scale(21.6242 21.6844)"
       >
-        <stop stop-color="#A30C00" />
-        <stop offset="0.99" stop-color="#800E08" />
-        <stop offset="1" stop-color="#800E08" />
+        <stop stopColor="#A30C00" />
+        <stop offset="0.99" stopColor="#800E08" />
+        <stop offset="1" stopColor="#800E08" />
       </radialGradient>
       <linearGradient
         id="paint14_linear_20_1958"
@@ -527,10 +527,10 @@ export const RubyLogoSVG = (props: React.SVGProps<SVGSVGElement>) => (
         y2="45.5972"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#8B2114" />
-        <stop offset="0.43" stop-color="#9E100A" />
-        <stop offset="0.99" stop-color="#B3100C" />
-        <stop offset="1" stop-color="#B3100C" />
+        <stop stopColor="#8B2114" />
+        <stop offset="0.43" stopColor="#9E100A" />
+        <stop offset="0.99" stopColor="#B3100C" />
+        <stop offset="1" stopColor="#B3100C" />
       </linearGradient>
       <linearGradient
         id="paint15_linear_20_1958"
@@ -540,10 +540,10 @@ export const RubyLogoSVG = (props: React.SVGProps<SVGSVGElement>) => (
         y2="8.49613"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#B31000" />
-        <stop offset="0.44" stop-color="#910F08" />
-        <stop offset="0.99" stop-color="#791C12" />
-        <stop offset="1" stop-color="#791C12" />
+        <stop stopColor="#B31000" />
+        <stop offset="0.44" stopColor="#910F08" />
+        <stop offset="0.99" stopColor="#791C12" />
+        <stop offset="1" stopColor="#791C12" />
       </linearGradient>
       <clipPath id="clip0_20_1958">
         <rect width="64" height="64" fill="white" />
@@ -560,7 +560,7 @@ export const NETLogoSVG = (props: React.SVGProps<SVGSVGElement>) => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clip-path="url(#clip0_20_1982)">
+    <g clipPath="url(#clip0_20_1982)">
       <path d="M64 0H0V64H64V0Z" fill="#512BD4" />
       <path
         d="M11.4064 40.8889C10.9539 40.8889 10.5693 40.7381 10.2525 40.4365C9.93573 40.1272 9.77734 39.7599 9.77734 39.3346C9.77734 38.9015 9.93573 38.5304 10.2525 38.2211C10.5693 37.9117 10.9539 37.7571 11.4064 37.7571C11.8665 37.7571 12.2549 37.9117 12.5717 38.2211C12.896 38.5304 13.0582 38.9015 13.0582 39.3346C13.0582 39.7599 12.896 40.1272 12.5717 40.4365C12.2549 40.7381 11.8665 40.8889 11.4064 40.8889Z"
@@ -595,28 +595,28 @@ export const GolangLogoSVG = (props: React.SVGProps<SVGSVGElement>) => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clip-path="url(#clip0_20_1945)">
+    <g clipPath="url(#clip0_20_1945)">
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M6.24804 10.2529C6.09375 10.2529 6.05518 10.1757 6.13232 10.06L6.94236 9.01855C7.0195 8.90283 7.21237 8.82568 7.36666 8.82568H21.1372C21.2915 8.82568 21.3301 8.9414 21.2529 9.05712L20.5972 10.06C20.5201 10.1757 20.3272 10.2915 20.2115 10.2915L6.24804 10.2529Z"
         fill="#50B7E0"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M0.423823 13.8015C0.269531 13.8015 0.230958 13.7243 0.308104 13.6086L1.11814 12.5671C1.19528 12.4514 1.38815 12.3743 1.54244 12.3743H19.1317C19.286 12.3743 19.3632 12.49 19.3246 12.6057L19.016 13.5315C18.9774 13.6857 18.8232 13.7629 18.6689 13.7629L0.423823 13.8015Z"
         fill="#50B7E0"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M9.75878 17.3503C9.60449 17.3503 9.56592 17.2346 9.64307 17.1189L10.1831 16.1545C10.2602 16.0388 10.4145 15.9231 10.5688 15.9231H18.2834C18.4377 15.9231 18.5149 16.0388 18.5149 16.1931L18.4377 17.1189C18.4377 17.2732 18.2834 17.3889 18.1677 17.3889L9.75878 17.3503Z"
         fill="#50B7E0"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M49.7976 9.55839C47.3675 10.1756 45.7088 10.6384 43.3173 11.2556C42.7387 11.4099 42.7001 11.4485 42.1987 10.8699C41.6201 10.2141 41.1958 9.78983 40.3857 9.4041C37.9556 8.20834 35.6027 8.5555 33.404 9.9827C30.7811 11.6799 29.431 14.1872 29.4696 17.3116C29.5081 20.3974 31.6297 22.9432 34.6769 23.3675C37.2999 23.7147 39.4986 22.7889 41.2343 20.8217C41.5815 20.3974 41.8901 19.9345 42.2758 19.3945C40.8872 19.3945 39.1514 19.3945 34.8312 19.3945C34.0212 19.3945 33.8283 18.8931 34.0983 18.2373C34.5998 17.0416 35.5255 15.0358 36.0656 14.0329C36.1813 13.8014 36.4513 13.4157 37.0299 13.4157H51.0705C50.9933 14.4572 50.9933 15.4986 50.839 16.5401C50.4147 19.3174 49.3733 21.8632 47.676 24.1004C44.8988 27.7649 41.2729 30.0407 36.6827 30.6578C32.9026 31.1593 29.3924 30.4264 26.3066 28.112C23.4522 25.9519 21.8321 23.0975 21.4078 19.5488C20.9064 15.3443 22.1407 11.5642 24.6865 8.24691C27.4252 4.65962 31.0511 2.38381 35.487 1.57378C39.1128 0.918038 42.5844 1.34234 45.7088 3.46386C47.7532 4.81391 49.219 6.66542 50.1833 8.90265C50.4147 9.24981 50.2604 9.44268 49.7976 9.55839Z"
         fill="#50B7E0"
       />

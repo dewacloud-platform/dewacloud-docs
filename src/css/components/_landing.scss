@@ -20,10 +20,12 @@
 
     .hero {
       position: relative;
+      text-align: center;
       background: linear-gradient(180deg, #185fa3 0%, #144f88 100%);
       z-index: 1;
       height: 100vh;
       border-radius: 40px 40px 0px 0px;
+      overflow: hidden;
 
       .container {
         display: flex;
