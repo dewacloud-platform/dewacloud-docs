@@ -66,7 +66,7 @@ const developmentToolsFeatureList: PlatformFeatureItem[] = [
     title: "SSH",
     description:
       "SSH di Dewacloud memungkinkan Anda untuk mengakses dan mengelola instance aplikasi dengan aman melalui koneksi terenkripsi.",
-    link: "/docs/ssh",
+    link: "/docs/ssh-overview",
   },
   {
     title: "API & CLI",
