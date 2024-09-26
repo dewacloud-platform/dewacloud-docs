@@ -9,6 +9,7 @@
 @use "components/docs";
 @use "components/search";
 @use "components/landing";
+@use "components/features";
 
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
@@ -55,6 +56,18 @@
 
 [class*="announcementBar_"] {
   --docusaurus-announcement-bar-height: 2rem;
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(42, 33, 193, 1) 100%
+  );
+
+  [class*="announcementBarContent_"] {
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #fff;
+  }
 }
 
 article {

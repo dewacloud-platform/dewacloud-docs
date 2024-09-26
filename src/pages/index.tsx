@@ -2,9 +2,10 @@ import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 import styles from "./index.module.css";
+import LanguageFeatures from "../components/LanguageFeatures";
+import PlatformFeatures from "../components/PlatformFeatures";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -43,10 +44,13 @@ export default function Home(): JSX.Element {
       title={`${siteConfig.title} Platform Documentation`}
       description="Belajaran tentang Dewacloud Platform yang membantu developer dalam membangun aplikasi Java, PHP, Node.Js, Ruby, Python, Golang, dan lain-lainnya."
     >
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
+      <div className="landing-page-wrapper">
+        <HomepageHeader />
+        <main>
+          <LanguageFeatures />
+          <PlatformFeatures />
+        </main>
+      </div>
     </Layout>
   );
 }
