@@ -10,7 +10,7 @@
       }
 
       @media (max-width: 520px) {
-        padding: 0 2rem;
+        padding: 0 1rem;
       }
     }
 
@@ -20,7 +20,14 @@
 
     .hero {
       position: relative;
+      max-width: var(--ifm-container-width);
+
+      margin: 2.5rem auto;
+      padding: 8rem 0;
+      align-items: start;
+
       text-align: center;
+
       background: linear-gradient(180deg, #185fa3 0%, #144f88 100%);
       z-index: 1;
       height: 100vh;
@@ -33,7 +40,7 @@
         justify-content: center;
         align-items: center;
         padding: 0 5rem;
-        gap: 1.5rem;
+        gap: 2.5rem;
 
         .hero__title {
           font-family: "Quicksand", sans-serif;
@@ -47,6 +54,7 @@
 
         .button {
           font-size: medium;
+          padding: 0.25rem 1rem;
         }
 
         #get-started-button {
@@ -61,7 +69,12 @@
 
       //  Tablet
       @media (max-width: 996px) {
-        padding: 0 2rem;
+        padding: 4rem 2rem;
+        border-radius: 22.77px 22.77px 0 0;
+
+        .DocSearch-Button-Placeholder {
+          display: block;
+        }
 
         .container {
           padding: 0 2rem;
@@ -77,24 +90,38 @@
 
       //  Mobile
       @media (max-width: 520px) {
-        padding: 0 1rem;
+        padding: 2rem 0;
+        border-radius: 11.29px 11.29px 0 0;
+        height: min-content;
+        margin-top: 1rem;
 
         .container {
-          padding: 0 2rem;
+          padding: 0 1rem;
           text-align: left;
           justify-content: start;
           align-items: start;
+          gap: 1rem;
         }
 
-        .buttons_src-pages-index-module {
-          display: flex;
-          flex-direction: column;
-          align-items: start;
+        .hero__cta {
           width: 100%;
+
+          .button {
+            width: min-content;
+            font-size: 1rem;
+          }
 
           #get-started-button {
             width: 100%;
           }
+        }
+
+        .hero__subtitle {
+          font-size: 1rem;
+        }
+
+        .hero__title {
+          font-size: 1.75rem;
         }
       }
     }
@@ -103,8 +130,8 @@
       content: "";
       position: absolute;
       overflow: visible;
-      top: -5rem;
-      left: -30rem;
+      top: -15%;
+      left: -20%;
       width: 100%;
       height: 100%;
       background-image: url("@site/static/img/dewacloud-logo-flat-hero.svg");
@@ -113,6 +140,18 @@
       background-size: contain;
       opacity: 0.1; /* Adjust the image opacity */
       z-index: -1; /* Ensure the image stays behind the content */
+
+      @media screen and (max-width: 700px) {
+        top: -25%;
+        left: -20%;
+      }
+
+      @media screen and (max-width: 520px) {
+        // width: 80%;
+        // height: 80%;
+        top: -20%;
+        left: -20%;
+      }
     }
   }
 }

@@ -11,7 +11,7 @@ function HomepageHeader() {
     // <header className={clsx("hero hero--primary", styles.heroBanner)}>
     <header className="hero hero--primary">
       <div className="container">
-        <div className="">
+        <div className="hero__cta">
           <Link className="button button--secondary" to="/docs">
             Panduan untuk Developer
           </Link>
@@ -26,7 +26,7 @@ function HomepageHeader() {
           para developer bisa lebih fokus pada pengembangan aplikasi. Segera
           pelajari segala fitur canggih Dewacloud di bawah ini!
         </p>
-        <div className="">
+        <div className="hero__cta">
           <Link id="get-started-button" className="button " to="/docs">
             Get Started️
           </Link>

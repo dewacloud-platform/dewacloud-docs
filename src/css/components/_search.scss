@@ -1,5 +1,5 @@
 :root:root {
-  --docsearch-searchbox-background: var(--ifm-background-color);
+  --docsearch-searchbox-background: var(--ifm-background-surface-color);
   --docsearch-searchbox-height: 2.25rem;
 
   --docsearch-key-gradient: none;
@@ -32,6 +32,7 @@ html[data-theme="dark"] {
   [class^="navbarSearchContainer_"] {
     flex-grow: 1;
     max-width: 25rem;
+    padding: 0;
   }
 
   //   Tablet
@@ -42,8 +43,18 @@ html[data-theme="dark"] {
     }
   }
 
+  @media (max-width: 768px) {
+    .DocSearch-Button-Placeholder {
+      display: block;
+    }
+  }
+
   //   Mobile
   @media (max-width: 520px) {
+    .DocSearch-Button-Placeholder {
+      display: none;
+    }
+
     [class^="navbarSearchContainer_"] {
       width: fit-content;
       .DocSearch-Button {

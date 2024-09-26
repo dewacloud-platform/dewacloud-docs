@@ -1,10 +1,29 @@
 #__docusaurus {
   .landing-page-wrapper {
+    margin: 0;
+    padding: 0;
     main {
       display: flex;
       flex-direction: column;
       gap: 6.25rem;
       padding: 6.25rem 0;
+
+      max-width: var(--ifm-container-width);
+      margin: 0 auto;
+
+      @media screen and (max-width: 996px) {
+        gap: 3.125rem;
+        padding: 3.125rem 0;
+      }
+
+      @media screen and (max-width: 520px) {
+        gap: 1.875rem;
+        padding: 1.875rem 0;
+
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
 
       h1 {
         font-family: "Quicksand", sans-serif;
@@ -32,6 +51,12 @@
 
           @media (max-width: 996px) {
             grid-template-columns: repeat(2, 1fr);
+            .language-feature__title {
+              p {
+                font-size: 1.25rem;
+                font-weight: 700;
+              }
+            }
           }
 
           @media (max-width: 520px) {
