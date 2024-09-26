@@ -1,3 +1,7 @@
+html[data-theme="light"] {
+  --ifm-hero-text-color: var(--ifm-color-gray-200);
+}
+
 #__docusaurus {
   .main-wrapper {
     .landing-page-wrapper {
