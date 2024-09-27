@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /general-information
+slug: /vps
 title: General Information
 ---
 

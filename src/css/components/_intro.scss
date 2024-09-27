@@ -1,0 +1,51 @@
+#__docusaurus {
+  article {
+    .logolinks {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 1rem;
+
+      @media screen and (max-width: 966px) {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      @media screen and (max-width: 480px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 1.5rem;
+
+        font-family: "Quicksand", sans-serif;
+        text-decoration: none;
+        color: var(--ifm-font-color-base);
+
+        outline: solid 1px var(--ifm-color-gray-500);
+        border-radius: 1rem;
+
+        // hover
+        &:hover {
+          background-color: var(--ifm-color-gray-100);
+        }
+
+        div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          width: 100%;
+
+          img {
+            padding: 0;
+            max-height: 75%;
+            max-width: 4rem;
+          }
+        }
+      }
+    }
+  }
+}
