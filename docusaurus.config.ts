@@ -32,6 +32,9 @@ const config: Config = {
     locales: ["id"],
   },
 
+  // Plugins
+  plugins: ["docusaurus-plugin-sass"],
+
   presets: [
     [
       "classic",
@@ -63,7 +66,7 @@ const config: Config = {
           routeBasePath: "/release-notes",
         },
         theme: {
-          customCss: "./src/css/custom.css",
+          customCss: "./src/css/custom.scss",
         },
       } satisfies Preset.Options,
     ],
@@ -73,6 +76,10 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
+    announcementBar: {
+      content: "👷 Site is currently in development 🚧",
+      isCloseable: false,
+    },
     image: "img/dewacloud-social-card.jpg",
     navbar: {
       logo: {
@@ -82,12 +89,16 @@ const config: Config = {
       },
       items: [
         {
+          type: "search",
+          position: "left",
+        },
+        {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
-          position: "left",
+          position: "right",
           label: "Docs",
         },
-        { to: "/release-notes", label: "Release Notes", position: "left" },
+        { to: "/release-notes", label: "Release Notes", position: "right" },
         {
           href: githubRepo,
           label: "GitHub",
@@ -98,6 +109,18 @@ const config: Config = {
     footer: {
       style: "dark",
       links: [
+        {
+          items: [
+            {
+              html: ` <a href="https://dewacloud.com" aria-label="Dewacloud Platform">
+                  <img src="https://assets.dewacloud.com/dewacloud-docs/static/dewacloud-horizontal-logo-monochrome-version-tagline-dark-bg.png" alt="Dewacloud Logo" width="200px"/>
+                </a>`,
+            },
+            {
+              html: `<p>Dewacloud is a secure, fast and cost-efficient cloud platform for business.</p>`,
+            },
+          ],
+        },
         {
           title: "Docs",
           items: [
@@ -110,13 +133,13 @@ const config: Config = {
         {
           title: "Community",
           items: [
-            // {
-            //   label: "Stack Overflow",
-            //   href: "https://stackoverflow.com/questions/tagged/docusaurus",
-            // },
             {
               label: "Instagram",
               href: "https://www.instagram.com/dewacloudofficial/",
+            },
+            {
+              label: "Facebook",
+              href: "https://www.facebook.com/dewacloudofficial/",
             },
             {
               label: "Twitter",
@@ -138,7 +161,12 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Dewacloud`,
+      // copyright: `Copyright © ${new Date().getFullYear()} Dewacloud`,
+      copyright: `
+      <p>Powered by Dewaweb</p>
+      <p>Copyright © ${new Date().getFullYear()} Dewacloud</p>
+      
+      `,
     },
     prism: {
       theme: prismThemes.github,
