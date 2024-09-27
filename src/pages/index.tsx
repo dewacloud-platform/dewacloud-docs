@@ -30,7 +30,11 @@ function HomepageHeader() {
           </p>
         </div>
         <div className="hero__cta">
-          <Link id="get-started-button" className="button " to="/docs">
+          <Link
+            id="get-started-button"
+            className="button "
+            to="/docs/getting-started"
+          >
             Get Started️
           </Link>
         </div>
