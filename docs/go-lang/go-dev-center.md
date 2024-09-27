@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /go-dev-center
+slug: /go-center
 title: Go Dev Center
 ---
 # Golang Hosting

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /php-dev-center
+slug: /php-center
 title: PHP Dev Center
 ---
 # PHP Developer's Center

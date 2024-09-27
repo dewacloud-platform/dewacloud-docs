@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /python-dev-center
+slug: /python-center
 title: Python Dev Center
 ---
 # Python Cloud Hosting

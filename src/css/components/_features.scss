@@ -1,3 +1,13 @@
+html[data-theme="dark"] {
+  .language-feature__icon {
+    svg {
+      path {
+        fill: var(--ifm-color-gray-200);
+      }
+    }
+  }
+}
+
 #__docusaurus {
   .landing-page-wrapper {
     margin: 0;
@@ -39,6 +49,9 @@
         border: solid 1px var(--ifm-color-gray-200);
         border-radius: 1rem;
         background: var(--ifm-background-color);
+        text-decoration: none;
+        color: var(--ifm-font-color-base);
+
         cursor: pointer;
       }
 
@@ -98,7 +111,7 @@
                 font-size: 1rem;
                 font-weight: 400;
                 text-decoration: underline;
-                color: var(--ifm-color-gray-500);
+                color: #999999;
               }
             }
 
@@ -174,7 +187,11 @@
 
           .platform-feature__description {
             font-size: 1rem;
-            color: var(--ifm-color-gray-600);
+            color: #444444;
+
+            html[data-theme="dark"] & {
+              color: var(--ifm-color-gray-200);
+            }
           }
 
           .platform-feature__link {
@@ -182,7 +199,7 @@
               font-size: 1rem;
               font-weight: 400;
               text-decoration: underline;
-              color: var(--ifm-color-gray-500);
+              color: #999999;
             }
           }
         }

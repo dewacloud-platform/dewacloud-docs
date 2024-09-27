@@ -1,9 +1,3 @@
-type LanguageFeatureItem = {
-  title: string;
-  imageUrl: string;
-  link: string;
-};
-
 type PlatformFeatureItem = {
   title: string;
   description: string;
@@ -159,12 +153,7 @@ const deploymentToolsFeatureList: PlatformFeatureItem[] = [
 
 function PlatformFeature({ title, description, link }: PlatformFeatureItem) {
   return (
-    <div
-      className="platform-feature feature-container"
-      onClick={() => {
-        window.location.assign(link);
-      }}
-    >
+    <a className="platform-feature feature-container" href={link}>
       <div className="platform-feature__title">
         <p>{title}</p>
       </div>
@@ -174,7 +163,7 @@ function PlatformFeature({ title, description, link }: PlatformFeatureItem) {
       <div className="platform-feature__link">
         <a href={link}>Learn more</a>
       </div>
-    </div>
+    </a>
   );
 }
 

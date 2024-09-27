@@ -16,16 +16,19 @@ function HomepageHeader() {
             Panduan untuk Developer
           </Link>
         </div>
-        <Heading as="h1" className="hero__title">
-          Dokumentasi & Tutorial Platform Dewacloud
-        </Heading>
-        <p className="hero__subtitle">
-          Platform Dewacloud memberikan kemudahan untuk developer dalam
-          melakukan penentuan resource server, infrastruktur server, arsitektur
-          server, management server hingga integrasi development tools, sehingga
-          para developer bisa lebih fokus pada pengembangan aplikasi. Segera
-          pelajari segala fitur canggih Dewacloud di bawah ini!
-        </p>
+        <div className="hero__title">
+          <Heading as="h1" className="hero__title">
+            Dokumentasi & Tutorial Platform Dewacloud
+          </Heading>
+          <p className="hero__subtitle">
+            Platform Dewacloud memberikan kemudahan untuk developer dalam
+            melakukan penentuan resource server, infrastruktur server,
+            arsitektur server, management server hingga integrasi development
+            tools, sehingga para developer bisa lebih fokus pada pengembangan
+            aplikasi. Segera pelajari segala fitur canggih Dewacloud di bawah
+            ini!
+          </p>
+        </div>
         <div className="hero__cta">
           <Link id="get-started-button" className="button " to="/docs">
             Get Started️

@@ -9,6 +9,7 @@ import {
 } from "../utils/svg/LandingPageSVGs";
 
 import ArrowRight from "../utils/svg/ArrowRight";
+import DotnetLogo from "../utils/svg/DotnetLogo";
 
 type LanguageFeatureItem = {
   title: string;
@@ -19,49 +20,44 @@ type LanguageFeatureItem = {
 const LanguageFeatureList: LanguageFeatureItem[] = [
   {
     title: "Java",
-    link: "/docs/java-overview",
+    link: "/docs/java-center",
     Svg: JavaLogoSVG,
   },
   {
     title: "PHP",
-    link: "/docs/php-overview",
+    link: "/docs/php-center",
     Svg: PHPLogoSVG,
   },
   {
     title: "Node.Js",
-    link: "/docs/nodejs-overview",
+    link: "/docs/nodejs-center",
     Svg: NodeJsLogoSVG,
   },
   {
     title: "Ruby",
-    link: "/docs/ruby-overview",
+    link: "/docs/ruby-center",
     Svg: RubyLogoSVG,
   },
   {
     title: "Python",
-    link: "/docs/python-overview",
+    link: "/docs/python-center",
     Svg: PythonLogoSVG,
   },
   {
     title: "Golang",
-    link: "/docs/golang-overview",
+    link: "/docs/go-center",
     Svg: GolangLogoSVG,
   },
   {
     title: ".NET",
-    link: "/docs/dotnet-overview",
-    Svg: NETLogoSVG,
+    link: "/docs/net-core",
+    Svg: DotnetLogo,
   },
 ];
 
 function LanguageFeature({ title, Svg, link }: LanguageFeatureItem) {
   return (
-    <div
-      className="language-feature feature-container"
-      onClick={() => {
-        window.location.assign(link);
-      }}
-    >
+    <a className="language-feature feature-container" href={link}>
       <div className="language-feature__icon">
         <Svg className="featureSvg" role="img" />
       </div>
@@ -75,11 +71,11 @@ function LanguageFeature({ title, Svg, link }: LanguageFeatureItem) {
       <div className="language-feature__button">
         <ArrowRight />
       </div>
-    </div>
+    </a>
   );
 }
 
-export default function LanguageFeatures(): JSX.Element {
+export default function LLanguageFeatures(): JSX.Element {
   return (
     <section id="language-features">
       <h1>

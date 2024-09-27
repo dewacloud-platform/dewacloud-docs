@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /java-dev-center
+slug: /java-center
 title: Java Dev Center
 ---
 
