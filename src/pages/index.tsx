@@ -32,6 +32,9 @@ function HomepageHeader() {
           </Link>
         </div>
       </div>
+      <div className="hero__image">
+        <img src="/img/hero-image.png" alt="Developer Activity" />
+      </div>
     </header>
   );
 }

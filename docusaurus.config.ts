@@ -77,7 +77,7 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     announcementBar: {
-      content: "👷 Dewacloud Documentation Site is currently in development 🚧",
+      content: "👷 Site is currently in development 🚧",
       isCloseable: false,
     },
     image: "img/dewacloud-social-card.jpg",
