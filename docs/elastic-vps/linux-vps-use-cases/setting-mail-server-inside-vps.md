@@ -17,12 +17,14 @@ Dalam panduan saat ini, kita akan memanfaatkan mail server [Postfix](http://www.
 
 1. Jalankan penginstal Postfix dengan perintah _yum_ berikut:
 
-![install postfix on vps](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/use-cases/setting-mail-server-vps/setting-mail-server-vps-1.png" alt="install postfix on vps" width="100%"/>
 
 2. Selama proses instalasi, Anda perlu mengonfirmasi (yaitu, tekan dan kirimkan respons ' _**y**_') poin-poin berikut:
 
-- ukuran total unduhan ![postfix total download size](#)
-- mengimpor kunci GPG ![postfix importing GPG key](#)
+- ukuran total unduhan
+<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/use-cases/setting-mail-server-vps/setting-mail-server-vps-2.png" alt="postfix total download size" width="100%"/>
+- mengimpor kunci GPG
+<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/use-cases/setting-mail-server-vps/setting-mail-server-vps-3.png" alt="postfix importing GPG key" width="100%"/>
 
 3. Ketika instalasi selesai, Anda dapat menguji operabilitas mail server dengan perintah berikut:
 
@@ -34,7 +36,7 @@ Di sini, _**\{your_email\}**_ adalah alamat email yang akan dikirimi email uji.
 
 4. Sekarang, periksa kotak masuk email yang ditentukan untuk memastikan email telah dikirim.
 
-![postfix test email](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/use-cases/setting-mail-server-vps/setting-mail-server-vps-4.png" alt="postfix test email" width="70%"/>
 
 Hebat! Email server telah diinstal dan kita dapat melanjutkan untuk menerapkan konfigurasi yang sesuai.
 
