@@ -20,11 +20,11 @@ Anda dapat memilih yang diperlukan selama [pembuatan environment](<https://docs.
 
 1. Klik tombol **New Environment** di bagian atas dashboard.
 
-   ![create new environment button](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/ruby%20version/01-create-new-environment-button.png" alt="create new environment button" width="90%"/>
 
 2. Dalam wizard topologi yang terbuka, beralih ke tab _**Ruby**_ dan pilih server aplikasi yang diinginkan (_Apache_ atau _NGINX_). Selanjutnya, pilih versi engine dengan daftar drop-down yang tepat di bagian tengah frame.
 
-   ![topology wizard choose Ruby version](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/ruby%20version/02-topology-wizard-choose-ruby-version.png" alt="topology wizard choose Ruby version" width="100%"/>
 
 Atur konfigurasi lain yang diinginkan (misalnya batas cloudlets, [public IP](<https://docs.dewacloud.com/docs/public-ip/>), [region](<https://docs.dewacloud.com/docs/environment-regions/>), dll.) dan klik **Create**.
 
@@ -36,11 +36,11 @@ Untuk environment yang sudah ada, Anda dapat mengubah versi Ruby dengan [redeplo
 
    - melalui wizard topologi (gunakan tombol **Change Environment Topology** di samping environment yang sesuai) dengan mengklik versi stack/tag di bagian dialog tengah.
 
-     ![topology wizard change Ruby version](#)
+     <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/ruby%20version/03-topology-wizard-change-ruby-version.png" alt="topology wizard change Ruby version" width="50%"/>
 
    - dengan tombol **Redeploy container(s)** yang tepat di sebelah node/layer yang diperlukan.
 
-     ![redeploy containers button](#)
+     <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/ruby%20version/04-redeploy-containers-button.png" alt="redeploy containers button" width="100%"/>
 
 2. Di jendela yang terbuka, sesuaikan pengaturan berikut:
 
@@ -48,11 +48,11 @@ Untuk environment yang sudah ada, Anda dapat mengubah versi Ruby dengan [redeplo
    - _**Keep volumes data**_ \- menyimpan data dalam [volumes](<https://docs.dewacloud.com/docs/container-volumes/>).
    - _**Simultaneous**_ atau _**Sequential deployment with delay**_ (hanya untuk [scaled servers](<https://docs.dewacloud.com/docs/horizontal-scaling/>)) - menentukan apakah semua container dalam satu layer harus di-redeploy sekaligus atau satu per satu, untuk menghindari downtime.
 
-   ![Ruby container redeploy dialog](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/ruby%20version/05-ruby-container-redeploy-dialog.png" alt="Ruby container redeploy dialog" width="60%"/>
 
 3. Klik **Redeploy** dan konfirmasi melalui pop-up yang muncul.
 
-   ![redeploy confirmation pop-up](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/ruby%20version/06-redeploy-confirmation-pop-up.png" alt="redeploy confirmation pop-up" width="60%"/>
 
 Dalam satu menit, versi Ruby dari node Anda akan diperbarui.
 
