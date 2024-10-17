@@ -6,7 +6,7 @@ title: External NFS Server Configuration
 
 # External NFS Server Configuration
 
-![external storage server icon](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/External%20NFS%20Server%20Configuration/01-external-storage-server-icon.png" alt="external storage server icon" width="30%"/>
 
 Platform ini memungkinkan [berbagi data](<https://docs.dewacloud.com/docs/data-storage-container/>) antara server (tempat file terletak secara fisik) dan klien (mendapatkan akses ke data jarak jauh seolah-olah disimpan secara lokal). Konfigurasi yang diperlukan untuk mengatur share bervariasi berdasarkan kondisi berikut:
 
@@ -18,7 +18,7 @@ Di bawah ini, kami akan mempertimbangkan konfigurasi yang diperlukan untuk menge
 
 1\. Pertama-tama, untuk berbagi data melalui Internet, diperlukan menambahkan alamat [public IP](<https://docs.dewacloud.com/docs/public-ip/>) ke server Anda:
 
-![shared storage with public IP](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/External%20NFS%20Server%20Configuration/02-shared-storage-with-public-ip.png" alt="shared storage with public IP" width="100%"/>
 
 2\. Selanjutnya, Anda perlu mendeklarasikan daftar direktori yang ingin Anda bagi dalam file _**etc/exports**_ yang sesuai. Di platform, ini dapat dengan mudah diakses dengan tombol **Configuration** di bagian _**[Exports](<https://docs.dewacloud.com/docs/storage-exports/>)**_ dari _Configuration File Manager_ bawaan.
 
@@ -28,7 +28,7 @@ Di sini, format berikut harus digunakan:
 {directory} {server}([option],[option],..)
 ```
 
-![exports configuration file](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/External%20NFS%20Server%20Configuration/03-exports-configuration-file.png" alt="exports configuration file" width="100%"/>
 
 dimana:
 
@@ -59,11 +59,11 @@ Juga, opsi tambahan _**fsid**_ harus wajib ditambahkan ke string konfigurasi eks
 cat /proc/sys/kernel/random/uuid
 ```
 
-![generate random fsid](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/External%20NFS%20Server%20Configuration/05-generate-random-fsid.png" alt="generate random fsid" width="100%"/>
 
 Akibatnya, string ekspor akan mirip dengan yang berikut ini:
 
-![export configs for GlusterFS storage](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/External%20NFS%20Server%20Configuration/06-export-configs-for-glusterfs-storage.png" alt="export configs for GlusterFS storage" width="100%"/>
 
 Jangan lupa untuk **Simpan** perubahan yang telah Anda buat.
 
@@ -73,17 +73,18 @@ Jangan lupa untuk **Simpan** perubahan yang telah Anda buat.
 exportfs -ra
 ```
 
-![apply new export settings](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/External%20NFS%20Server%20Configuration/07-apply-new-export-settings.png" alt="apply new export settings" width="100%"/>
 
 5\. Selanjutnya, Anda perlu membuka port server NFS (_111_ , _2049_ , dan _20048_) untuk alamat IP klien NFS (yang digunakan dalam langkah kedua). Arahkan ke bagian **Settings >[Firewall](<https://docs.dewacloud.com/docs/custom-firewall/>)** environment penyimpanan untuk menambahkan aturan yang diperlukan melalui UI yang intuitif:
 
-![configure firewall rules via UI](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/External%20NFS%20Server%20Configuration/08-configure-firewall-rules-via-ui.png" alt="configure firewall rules via UI" width="100%"/>
 
 :::tip 
 Ini dapat dilakukan melalui konsol juga:
 ```
 iptables -I INPUT -p tcp -m multiport --dports 111,2049,20048 -s {NFS_client} -j ACCEPT  
 iptables -I INPUT -p udp -m multiport --dports 111,2049,20048 -s {NFS_client} -j ACCEPT
+```
 :::
 
 6\. Ketika memberikan hak RW, pastikan bahwa pengguna yang sama memiliki izin akses yang setara ke folder yang dibagi baik pada klien NFS maupun server. Misalnya, [stack](<https://docs.dewacloud.com/docs/software-stacks-versions/>) yang berbeda dapat menggunakan pengguna yang berbeda secara default (mis. _root_ dan _jelastic_).
@@ -100,7 +101,7 @@ Di sini:
   * _**\{gid\}**_ \- nama grup atau pengenal, yang ditampilkan dalam file _**/etc/group**_ dari node Anda
   * _**\{path\}**_ \- jalur ke direktori yang ingin Anda ubah izinnya
 
-![change folder access rights](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/External%20NFS%20Server%20Configuration/10-change-folder-access-rights.png" alt="change folder access rights" width="100%"/>
 
 Itu saja! Server penyimpanan data Anda siap, sehingga Anda dapat kembali ke instance klien dan mulai [mount](<https://docs.dewacloud.com/docs/mount-points/>).
 

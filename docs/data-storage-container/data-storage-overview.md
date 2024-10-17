@@ -8,7 +8,7 @@ title: Data Storage Overview
 
 **Data Storage Container** adalah solusi yang umum digunakan untuk penyimpanan data sederhana dan remote kontrol. Dalam konteks platform, ini memungkinkan berbagai environment beroperasi dengan data dalam satu penyimpanan semudah jika disimpan secara lokal: misalnya berbagi file media, config umum, atau hanya menyimpan backup, log, dll.
 
-![Data Storage Container logo](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/data%20storage%20overview/01-data-storage-container-logo.png" alt="Data Storage Container logo" width="20%"/>
 
 Dengan menggunakan data storage container, Anda dapat menerapkan organisasi yang cerdas untuk topologi proyek Anda dan mencapai sejumlah manfaat, seperti:
 
