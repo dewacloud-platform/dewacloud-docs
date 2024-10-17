@@ -19,18 +19,18 @@ Untuk mendapatkan **TCP balancing** di environment Anda, ikuti instruksi berikut
 
 1\. Buat environment dengan dua atau lebih server aplikasi (misalnya, **Tomcat**). Dalam hal ini, **NGINX** akan ditambahkan secara otomatis. Perhatikan bahwa Anda perlu mengaktifkan **Public IP** untuk node **NGINX** Anda.
 
-![environment wizard](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/tcp%20load%20balancing/01-environment-wizard.png" alt="environment wizard" width="100%"/>
 
 2\. Klik **Config** untuk NGINX di environment Anda.
 
-![NGINX config](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/tcp%20load%20balancing/02-nginx-config.png" alt="NGINX config" width="100%"/>
 
 3\. Di tab yang terbuka, navigasikan ke **tcpmaps > mappings.xml** dan tentukan port _**frontend**_ dan _**backend**_. **Simpan** perubahan.
 
 _**Frontend**_ adalah port di mana pengguna akan terhubung.  
 _**Backend**_ adalah port di mana permintaan akan diteruskan oleh balancer.
 
-![NGINX TCP mapping](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/tcp%20load%20balancing/03-nginx-tcp-mapping.png" alt="NGINX TCP mapping" width="100%"/>
 
 4\. **Restart** node NGINX.
 

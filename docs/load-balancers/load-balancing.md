@@ -7,7 +7,7 @@ title: Load Balancing
 
 Load balancing adalah proses navigasi lalu lintas dan distribusi beban kerja di beberapa komponen, yang dilakukan oleh jenis node khusus yang disebut **load balancers**. Di platform, node semacam itu ditambahkan secara otomatis saat [application server scaling](<https://docs.dewacloud.com/docs/horizontal-scaling/>) untuk mendistribusikan permintaan di antara backend. Selain itu, jika diperlukan, Anda dapat menambahkan dan men-scale instance load balancer secara manual dalam environment topology.
 
-![environment load balancer layer](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/load%20balancing/01-environment-load-balancer-layer.png" alt="environment load balancer layer" width="70%"/>
 
 :::warning
 Platform menyediakan load balancing pada lapisan aplikasi (dokumen ini) dan lapisan infrastruktur (dijelaskan dalam dokumen Shared Load Balancer). Yang pertama menangani permintaan di dalam environment dan yang kedua - dari luar platform ke environment (kecuali koneksi langsung melalui public IP).

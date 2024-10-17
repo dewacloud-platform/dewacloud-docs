@@ -19,7 +19,7 @@ NGINX balancer ditambahkan secara otomatis jika Anda memilih beberapa app server
 
 Untuk melakukan konfigurasi yang diperlukan pada NGINX balancer, file _**nginx.conf**_, yang terletak di folder **conf**, digunakan.
 
-![NGINX balancer configuration file](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/caching%20in%20nginx%20balancer/01-create-environment.png" alt="NGINX balancer configuration file" width="40%"/>
 
 [Back to the list](<https://docs.dewacloud.com/docs/#back>)
 
@@ -27,7 +27,7 @@ Untuk melakukan konfigurasi yang diperlukan pada NGINX balancer, file _**nginx.c
 
 Dengan akses ke konfigurasi NGINX, Anda tidak hanya dapat mengedit file yang ada tetapi juga mengunggah file konfigurasi Anda sendiri dengan pengaturan kustom ke folder **conf.d**.
 
-![NGINX balancer custom conf.d settings](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/caching%20in%20nginx%20balancer/02-environment-wizard.png" alt="NGINX balancer custom conf.d settings" width="100%"/>
 
 [Back to the list](<https://docs.dewacloud.com/docs/#back>)
 
@@ -39,7 +39,7 @@ Anda dapat menemukan lebih banyak informasi di dokumen [NGINX Load Balancing](<h
 
 Untuk mengatur [caching di NGINX](<https://docs.dewacloud.com/docs/nginx-caching/>) klik tautan dan ikuti instruksinya.
 
-![NGINX balancer TCP mappings](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/caching%20in%20nginx%20balancer/03-nginx-balancer-config.png" alt="NGINX balancer TCP mappings" width="70%"/>
 
 [Back to the list](<https://docs.dewacloud.com/docs/#back>)
 
