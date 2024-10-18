@@ -16,7 +16,7 @@ Dengan hosting Kubernetes Cluster di platform, Anda bisa mendapatkan manfaat ber
   * _**Flexible Automation**_ \- otomatisasi proses DevOps dengan open API dan Cloud Scripting
   * _**Cost Efficiency**_ \- bayar hanya untuk sumber daya yang dikonsumsi, mendapatkan manfaat dari kepadatan dan skalabilitas container
 
-![kubernetes cluster topology scheme](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/kubernetes%20cluster/cluster%20versions/01-kubernetes-cluster-topology-scheme.png" alt="kubernetes cluster topology scheme" width="45%"/>
 
 :::tip
 Lebih banyak detail dan deskripsi mendalam dengan contoh kasus penggunaan disediakan di artikel Kubernetes Cluster yang sesuai di blog kami.
