@@ -7,7 +7,7 @@ title: Custom Storage
 
 Saat ini, satu-satunya opsi otomatis untuk penyimpanan backend adalah [volume provisioner](<https://docs.dewacloud.com/docs/kubernetes-volume-provisioner>) berbasis penyimpanan NFS. Opsi ini dapat dipilih melalui paket installation wizard. Kami merekomendasikan untuk tetap menggunakan opsi ini saat bekerja dengan Kubernetes Cluster.  
 
-![kubernetes cluster add nfs storage](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/persistent%20data/Custom%20Storage/01-kubernetes-cluster-add-nfs-storage%20(1).png" alt="kubernetes cluster add nfs storage" width="100%"/>
 
 :::tip
 Pilihan tambahan untuk penyimpanan berbasis Gluster akan diimplementasikan dalam versi paket mendatang.

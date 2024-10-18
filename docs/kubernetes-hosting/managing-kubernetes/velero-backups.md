@@ -18,21 +18,21 @@ Anda dapat dengan mudah mengintegrasikan Velero backup dengan cluster Kubernetes
 
 Dalam panduan kami, kami akan melanjutkan dengan opsi terakhir sehingga Anda dapat memiliki seluruh pengaturan di bawah platform yang sama. Anda dapat menginstal _**[MinIO Cluster](<https://www.virtuozzo.com/company/blog/s3-minio-cloud-storage-cluster-in-containers/>)**_ di platform dalam beberapa klik menggunakan Marketplace (ikuti langkah-langkah dalam panduan yang terhubung).
 
-![MinIO cluster installation](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/managing%20kubernetes/Velero%20Backups/01-minio-cluster-installation.png" alt="MinIO cluster installation" width="80%"/>
 
 Setelah instalasi, Anda akan melihat kredensial instalasi MinIO Anda (juga dikirim melalui email). Anda akan memerlukan data ini nanti:
 
-![MinIO cluster installed](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/managing%20kubernetes/Velero%20Backups/02-minio-cluster-installed.png" alt="MinIO cluster installed" width="50%"/>
 
 Menunggu server pertama untuk memformat disk.
 
 2\. Sambungkan ke panel admin cluster MinIO Anda dan buat bucket baru (misalnya, _velero_) di cluster penyimpanan.
 
-![MinIO create bucket](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/managing%20kubernetes/Velero%20Backups/03-minio-create-bucket.png" alt="MinIO create bucket" width="70%"/>
 
 3\. Temukan _**vmware-tanzu/velero**_ [rilis](<https://github.com/vmware-tanzu/velero/releases>) terbaru (_v1.8.1_ dalam kasus kami), klik tautan di bagian _Download_ dan salin URL ke arsip _**linux amd64**_.
 
-![Velero versions](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/managing%20kubernetes/Velero%20Backups/04-velero-versions.png" alt="Velero versions" width="70%"/>
 
 :::tip
 Dalam contoh kami, kami akan mengunggah _velero binary_ langsung ke server Cluster Kubernetes. Namun, Anda dapat menyimpannya di mana saja (misalnya, secara lokal) dengan akses API ke cluster.
@@ -46,7 +46,7 @@ wget https://github.com/vmware-tanzu/velero/releases/download/v1.8.1/velero-v1.8
 tar -zxvf velero-v1.8.1-linux-amd64.tar.gz -C /usr/local/sbin --strip-components=1 velero-v1.8.1-linux-amd64/velero
 ```
 
-![download Velero](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/managing%20kubernetes/Velero%20Backups/05-download-velero.png" alt="download Velero" width="100%"/>
 
 :::warning
 Jika mengunggah melalui pengelola file, Anda perlu menyesuaikan izin file:1chmod 755 /usr/local/sbin/velero
@@ -60,7 +60,7 @@ aws_access_key_id = {accessKey}
 aws_secret_access_key = {secretKey}
 ```
 
-![Velero credentials](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/managing%20kubernetes/Velero%20Backups/06-velero-credentials.png" alt="Velero credentials" width="100%"/>
 
 6\. Sesuaikan perintah di bawah ini dengan memberikan nilai yang benar dan jalankan untuk mendeply Velero. Placeholder berikut perlu disesuaikan:
 
@@ -72,7 +72,7 @@ aws_secret_access_key = {secretKey}
 velero install --provider aws --plugins velero/velero-plugin-for-aws:v1.4.1 --bucket {bucket} --secret-file ./credentials-velero --use-volume-snapshots=true --backup-location-config region=default,s3ForcePathStyle="true",s3Url={s3Url} --image {image} --snapshot-location-config region="default" --use-restic
 ```
 
-![Velero install](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/managing%20kubernetes/Velero%20Backups/07-velero-install.png" alt="Velero install" width="100%"/>
 
 Kami menggunakan emulasi AWS untuk bekerja dengan S3 dan add-on _**[restic](<https://restic.net/>)**_ karena kami memiliki penyimpanan NFS untuk mana kami tidak memiliki fungsionalitas snapshot asli.
 
@@ -83,7 +83,7 @@ wget https://docs.dewacloud.com/docs/kubernetes-velero-backups/test-instance.yam
 kubectl apply -f test-instance.yaml
 ```
 
-![Kubernetes install application](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/managing%20kubernetes/Velero%20Backups/08-kubernetes-install-application.png" alt="Kubernetes install application" width="100%"/>
 
 Anda dapat memeriksa aplikasi dengan perintah berikut:
 
@@ -91,7 +91,7 @@ Anda dapat memeriksa aplikasi dengan perintah berikut:
 kubectl get pods,pvc,pv -n test-nginx
 ```
 
-![Kubernetes check application](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/managing%20kubernetes/Velero%20Backups/09-kubernetes-check-application.png" alt="Kubernetes check application" width="100%"/>
 
 Jalankan perintah yang tercantum di bawah ini untuk menghasilkan beberapa data acak yang akan meniru penggunaan aplikasi.
 
@@ -102,7 +102,7 @@ ls -laSh /usr/share/nginx/html/
 exit
 ```
 
-![Kubernetes generate data](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/managing%20kubernetes/Velero%20Backups/10-kubernetes-generate-data.png" alt="Kubernetes generate data" width="100%"/>
 
 8\. Anda perlu memberi anotasi pada pod aplikasi Anda untuk memastikan data penyimpanan NFS disertakan dalam backup. Anda bisa mendapatkan nama penyimpanan yang diperlukan dari aplikasi yang telah dideploy (_mystorage_ dalam kasus kami).
 
@@ -114,7 +114,7 @@ Tanpa anotasi, definisi PV dan PVC disalin tetapi tidak pada datanya.
 kubectl -n test-nginx annotate pod/nginx-test backup.velero.io/backup-volumes=mystorage
 ```
 
-![Kubernetes annotate application](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/managing%20kubernetes/Velero%20Backups/11-kubernetes-anotate-application.png" alt="Kubernetes annotate application" width="100%"/>
 
 9\. Sekarang, mari buat backup aplikasi uji Anda:
 
@@ -122,11 +122,11 @@ kubectl -n test-nginx annotate pod/nginx-test backup.velero.io/backup-volumes=my
 velero backup create test-nginx-b4 --include-namespaces test-nginx --wait
 ```
 
-![Velero create backup](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/managing%20kubernetes/Velero%20Backups/12-velero-create-backup.png" alt="Velero create backup" width="100%"/>
 
 10\. Periksa penyimpanan _MinIO_ Anda. Data dari _Velero_ dan _restic_ harus ada.
 
-![MinIO backup data](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/managing%20kubernetes/Velero%20Backups/13-minio-backup-data.png" alt="MinIO backup data" width="80%"/>
 
 Juga, periksa bahwa backup yang dibuat ada dan baik-baik saja.
 
@@ -134,7 +134,7 @@ Juga, periksa bahwa backup yang dibuat ada dan baik-baik saja.
 velero get backups
 ```
 
-![Velero backup list](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/managing%20kubernetes/Velero%20Backups/14-velero-backup-list.png" alt="Velero backup list" width="100%"/>
 
 11\. Mari hapus aplikasi contoh untuk menguji proses pemulihan dengan benar.
 
@@ -142,11 +142,11 @@ velero get backups
 kubectl delete ns test-nginx
 ```
 
-![Kubernetes delete namespace](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/managing%20kubernetes/Velero%20Backups/15-kubernetes-delete-namespace.png" alt="Kubernetes delete namespace" width="100%"/>
 
 Bersihkan juga data Shared Storage (di direktori **/data**).
 
-![delete data in storage](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/managing%20kubernetes/Velero%20Backups/16-delete-data-in-storage.png" alt="delete data in storage" width="100%"/>
 
 12\. Setelah siap, pulihkan aplikasi Anda dari backup dengan perintah berikut:
 
@@ -154,7 +154,7 @@ Bersihkan juga data Shared Storage (di direktori **/data**).
 velero restore create --from-backup test-nginx-b4
 ```
 
-![velero restore from backup](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/managing%20kubernetes/Velero%20Backups/17-velero-restore-from-backup.png" alt="velero restore from backup" width="100%"/>
 
 Itu saja! Anda dapat memverifikasi bahwa semuanya, termasuk data yang disimpan, telah dipulihkan.
 

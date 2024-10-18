@@ -7,7 +7,7 @@ title: Cluster Installation
 
 Solusi **Kubernetes Cluster** tersedia untuk pemasangan otomatis melalui [platform Marketplace](<https://docs.dewacloud.com/docs/marketplace/>) di bawah kategori _Clusters_ (atau gunakan _Search_ untuk menemukannya). Perlu dicatat bahwa solusi cluster ini hanya tersedia untuk pelanggan _billing_.
 
-![marketplace Kubernetes cluster](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/kubernetes%20cluster/cluster%20installation/01-marketplace-kubernetes-cluster.png" alt="marketplace Kubernetes cluster" width="80%"/>
 
 Dalam frame pemasangan yang terbuka, sesuaikan opsi yang tersedia untuk mendapatkan cluster yang sesuai dengan kebutuhan Anda:
 
@@ -32,7 +32,7 @@ Dalam frame pemasangan yang terbuka, sesuaikan opsi yang tersedia untuk mendapat
   * **Display Name** \- tentukan [alias](<https://docs.dewacloud.com/docs/environment-aliases/>)
   * **Region** \- pilih [region](<https://docs.dewacloud.com/docs/environment-regions/>) (jika tersedia)
 
-![Kubernetes cluster installation frame](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/kubernetes%20cluster/cluster%20installation/02-kubernetes-cluster-installation-frame.png" alt="Kubernetes cluster installation frame" width="70%"/>
 
 Klik **Install** dan tunggu beberapa menit hingga platform secara otomatis mengonfigurasi cluster Kubernetes Anda.
 
