@@ -8,8 +8,6 @@ title: Building Custom Container
 
 Dengan platform ini, proses menyiapkan Docker image Anda sendiri dapat sangat disederhanakan dengan membangunnya di atas image yang sudah ada (yaitu - di atas template dasar platform **CentOS 7**). Ini memungkinkan untuk melewati semua langkah yang sudah diselesaikan dalam template "induk" tersebut, dan hanya menambahkan penyesuaian yang diperlukan. Kami akan mempertimbangkan prosedur ini pada contoh menyiapkan image [WildFly](<https://www.wildfly.org/>) custom - server aplikasi Java yang fleksibel dan ringan, yang merupakan penerus langsung dari JBoss yang populer.
 
-![building WildFly image](#)
-
 Cara paling umum untuk membangun Docker images adalah dengan menyusun _**Dockerfile**_ \- manifest khusus, yang memungkinkan mencapai otomatisasi tambahan melalui pencatatan perintah yang diinginkan ke dalam file teks sederhana, yang akan dibaca dan dijalankan oleh Docker daemon. Dengan cara ini, template baru akan dibuat secara otomatis berdasarkan instruksi yang terdapat di dalamnya (sedangkan jika tidak, Anda harus memanggil setiap operasi yang diperlukan secara manual, satu per satu).
 
 Di bawah ini, kami akan mempertimbangkan semua spesifik dari image custom yang berjalan di platform kami, dan, sebagai hasilnya, Anda akan mendapatkan versi dockerized siap-pakai dari server WildFly langsung di dalam platform.
@@ -184,7 +182,7 @@ Jadi, pilih tombol **New Environment** di bagian atas dashboard, pindah ke tab _
 
 1\. Di sini, Anda dapat menggunakan tab _Search_ (untuk menambahkan image dari repositori Docker Hub) atau beralih ke bagian _Custom_, di mana Anda dapat mengoperasikan images dari jenis apa pun (termasuk yang privat) dan menyimpan template Anda agar mudah diakses.
 
-![add new custom image](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/building-custom-container/building-custom-container-1.png" alt="add new custom image" width="100%"/>
 
 Kami akan mempertimbangkan yang terakhir, jadi, setelah di dalam, pilih layer environment yang diperlukan di sebelah kiri (_App. Servers_ dalam kasus kami) dan klik tombol **Add New Image**.
 
@@ -194,19 +192,19 @@ _**\{registry_hostname\}**_ (bisa diabaikan untuk Hub Registry resmi) /_**\{acco
 
 Juga, jika menggunakan repositori privat, kredensial **Username** dan **Password** yang sesuai harus ditentukan.
 
-![custom image repository](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/building-custom-container/building-custom-container-2.png" alt="custom image repository" width="70%"/>
 
 Kami menggunakan repositori Docker Hub publik, yang terletak di dalam Registry Hub pusat, jadi hanya nama singkat dari repositori yang diperlukan. Klik **Add** saat siap.
 
 3\. Setelah itu, image Anda akan muncul dalam daftar. Dari sini, image ini dapat ditambahkan ke topologi hanya dengan sekali klik. Selain itu, template ini akan diingat dan akan tetap terdaftar di sini sehingga dapat dengan mudah ditemukan selama pemilihan container selanjutnya (hingga Anda menghapusnya dari daftar _Custom_ secara manual).
 
-![create custom WildFly image](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/building-custom-container/building-custom-container-3.png" alt="create custom WildFly image" width="100%"/>
 
 Tetapkan sisa [configurations](<https://docs.dewacloud.com/docs/custom-containers-deployment/>) yang diperlukan sendiri (detail tentang opsi yang tersedia dapat dibaca dalam panduan yang ditautkan) dan selesaikan pembentukan environment.
 
 4\. Begitu environment Anda dengan image yang sesuai muncul di dashboard, itu dapat diakses menggunakan tombol **Open in Browser** yang sesuai:
 
-![WildFly open in browser](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/building-custom-container/building-custom-container-4.png" alt="WildFly open in browser" width="80%"/>
 
 :::note
 Dalam kasus Anda belum menempatkan template Anda ke layer environment _App. Servers_ atau _Balancing_, Anda harus menggunakan tombol dengan nama yang sama di sebelah container tertentu untuk membukanya.
@@ -214,7 +212,7 @@ Dalam kasus Anda belum menempatkan template Anda ke layer environment _App. Serv
 
 Akibatnya, Anda akan melihat halaman mulai WildFly default, yang berarti semuanya telah dikonfigurasi dengan benar dan container baru Anda sepenuhnya operasional.
 
-![custom WildFly home page](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/building-custom-container/building-custom-container-5.png" alt="custom WildFly home page" width="100%"/>
 
 Sama seperti yang dijelaskan di atas, Anda dapat membuat image yang sudah dikonfigurasi sebelumnya lainnya sesuai dengan tujuan Anda dan, selanjutnya, dengan mudah menjalankannya dalam platform!
 

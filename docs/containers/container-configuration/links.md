@@ -15,7 +15,7 @@ Setelah koneksi tersebut ditetapkan, sebuah container akan dapat bekerja dengan 
   * **Node** \- pilih layer yang diperlukan dari environment saat ini menggunakan daftar drop-down
   * **Alias** \- ketik alias koneksi (_LB_ dalam kasus kami). Selanjutnya, ini akan digunakan sebagai prefix untuk variabel yang diimpor ke container(s) saat ini dari layer yang dipilih di kolom sebelumnya
 
-![add linking layer settings](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/configuration/links/links-1.png" alt="add linking layer settings" width="100%"/>
 
 :::tip 
 Saat menghubungkan containers, platform juga menambahkan catatan DNS yang sesuai (dengan nama identik dengan alias yang digunakan) ke DB platform. Dengan cara ini, Anda dapat merujuk ke container tertentu dari dalam dua layer environment ini tidak hanya melalui alamat IP atau NodeID-nya, tetapi juga menentukan alias yang ditugaskan dengan counter, yaitu \{alias_name\}_N. Misalnya, setelah menghubungkan dengan DB alias, Anda dapat melakukan ping containers tertentu pada layer yang sesuai sebagai “db_1”, “db_2”, dll. saat bekerja dengan network internal platform melalui SSH Gateway. Di sini, jika menggunakan alias layer umum (yaitu tanpa counter, “db” dalam kasus kami), sistem akan menggunakan algoritma Round-Robin untuk memilih container mana pun dalam grup node yang ditentukan.
@@ -29,7 +29,7 @@ semua koneksi yang dinyatakan akan berlaku hanya setelah memilih tombol Apply un
 
 3\. Anda selalu dapat **Edit** atau **Remove** link yang tidak diperlukan dengan tombol yang sesuai di panel atas frame _Docker layer settings_.
 
-![edit remove layer settings](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/configuration/links/links-2.png" alt="edit remove layer settings" width="100%"/>
 
 Ketika pembaruan diterapkan, Anda dapat memeriksa hasilnya dengan beralih ke bagian _[Variables](<https://docs.dewacloud.com/docs/container-variables/>)_ (di mana parameter yang baru diimpor akan terdaftar).
 
