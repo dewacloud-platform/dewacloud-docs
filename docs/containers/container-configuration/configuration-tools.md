@@ -6,7 +6,7 @@ title: Configuration Tools
 
 # Container Configuration{#container-configuration}
 
-Platform ini menyediakan kemungkinan untuk mengelola semua aspek utama dari siklus hidup containers secara langsung melalui sebuah [dashboard](<https://docs.dewacloud.com/docs/dashboard-guide/>). Ini mendukung sejumlah berbagai alat, yang dimaksudkan untuk membantu Anda mengonfigurasi environments Anda:
+Platform ini menyediakan kemampuan untuk mengelola semua aspek utama dari siklus hidup containers secara langsung melalui [dashboard](<https://docs.dewacloud.com/docs/dashboard-guide/>). Ini mendukung sejumlah berbagai alat, yang dimaksudkan untuk membantu Anda mengonfigurasi environments Anda:
 
   * [settings wizard](<https://docs.dewacloud.com/docs/#container-layer-settings-wizard>)
   * [embedded file manager](<https://docs.dewacloud.com/docs/#configuration-file-manager>)
@@ -21,7 +21,7 @@ Jadi, untuk memulai, Anda perlu mengakses bingkai yang disebutkan di atas. Ada d
 
   * _via topology wizard_ \- klik tombol **New Environment** dan [tambahkan container yang diperlukan](<https://docs.dewacloud.com/docs/setting-up-environment/>) atau tekan tombol **Change Environment Topology** untuk environment yang sudah dibuat.
   
-    ![topology wizard layer configuration](#)
+    <img src="https://assets.dewacloud.com/dewacloud-docs/container/configuration/configuration-tools/configuration-tool-1.png" alt="topology wizard layer configuration" width="100%"/>
   
     Kemudian pilih container yang perlu disetel dan pilih bagian _**Configuration**_ yang sesuai di bagian bawah (dilingkari di gambar di atas).
 
@@ -31,11 +31,11 @@ Dengan platform ini, setiap container dapat dikonfigurasi sebelumnya bahkan sebe
 
   * _langsung dari dashboard_ \- arahkan ke layer environment Anda, klik ikon gear dan pilih salah satu opsi akses cepat dari daftar yang diperluas
   
-    ![dashboard layer settings](#)
+    <img src="https://assets.dewacloud.com/dewacloud-docs/container/configuration/configuration-tools/configuration-tool-2.png" alt="dashboard layer settings" width="100%"/>
 
 Setelah itu, jendela **Docker layer settings** akan muncul:
 
-![layer settings window](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/configuration/configuration-tools/configuration-tool-3.png" alt="layer settings window" width="100%"/>
 
 Seperti yang Anda lihat, ini berisi 5 bagian terpisah dengan opsi pengaturan berikut (ikutilah panduan yang sesuai di bawah untuk bagian yang Anda minati):
 
@@ -49,7 +49,7 @@ Seperti yang Anda lihat, ini berisi 5 bagian terpisah dengan opsi pengaturan ber
 
 **[configuration file manager](<https://docs.dewacloud.com/docs/configuration-file-manager/>)** yang terintegrasi dirancang untuk mengelola file di dalam container Anda (termasuk yang tersedia dan/atau diekspor melalui fungsi [Shared Storage Container](<https://docs.dewacloud.com/docs/data-storage-container/>)). Tab yang sesuai dapat dibuka dengan mengklik tombol **Config** di sebelah node yang diperlukan (atau seluruh layer):
 
-![configuration file manager](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/configuration/configuration-tools/configuration-tool-4.png" alt="configuration file manager" width="100%"/>
 
 Ini mencakup 4 bagian utama:
 
@@ -68,7 +68,7 @@ Dengan cara ini, file manager memungkinkan Anda mengambil kendali penuh atas sis
 
 Bagian lain dari platform dashboard, yang dapat membantu Anda mengelola proyek Anda, adalah **Logs**. Di sini, data tentang semua aspek siklus hidup containers Anda dikumpulkan, yang bisa berguna saat memecahkan masalah atau debugging aplikasi atau layanan Anda.
 
-![node log manager](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/configuration/configuration-tools/configuration-tool-5.png" alt="node log manager" width="100%"/>
 
 :::note 
 Daftar file log dan direktori yang ditampilkan tergantung pada software stack tertentu dan dapat bervariasi.

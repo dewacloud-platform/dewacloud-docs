@@ -10,8 +10,6 @@ Integrasi [Containers](<https://docs.dewacloud.com/docs/container-types/>) ke da
 
 Tutorial berikut membahas prinsip-prinsip utama bekerja dengan aplikasi berbasis Docker, yang mungkin menjadi titik minat bagi pengembang pemula dan menengah.
 
-![container internal and external connection](#)
-
 Di bawah ini kita akan mendapatkan wawasan yang sangat rinci tentang cara menghubungkan ke container di platform, mempertimbangkan peluang internal dan eksternal, dan mengamati di mana menemukan informasi container dasar yang diperlukan untuk pembentukan koneksi tersebut.
 
 Jadi, mari kita lihat cara untuk:
@@ -27,7 +25,7 @@ Setiap container di platform secara otomatis mendapatkan nama domain internal ya
 
 Untuk itu, Anda hanya perlu memilih layer yang diperlukan dan menentukan alias untuk denominasi koneksi (sementara semua variabel yang sesuai akan mendapatkan prefix yang sesuai dengannya):
 
-![container linking](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/connect-to-custom-container/connect-1.png" alt="container linking" width="100%"/>
 
 Jangan lupa untuk **Save** dan **Apply** perubahan yang telah Anda buat.
 
@@ -37,12 +35,15 @@ Setelah itu, Anda dapat merujuk ke bagian [Variables](<https://docs.dewacloud.co
 
 Informasi yang sesuai dapat diperoleh dengan dua cara:
 
-  * melalui notifikasi email yang Anda terima setelah pembuatan environment. Nama domain internal yang sesuai dan alamat IP terdaftar dalam bagian dengan data admin container: ![custom container email notification](#) Di sini, nama domain container ditampilkan di string _Access URL_ dan alamat IP internalnya - dalam baris _IP_ di bawah.
+  * melalui notifikasi email yang Anda terima setelah pembuatan environment. Nama domain internal yang sesuai dan alamat IP terdaftar dalam bagian dengan data admin container: !
+  <img src="https://assets.dewacloud.com/dewacloud-docs/container/connect-to-custom-container/connect-2.png" alt="custom container email notification" width="80%"/> Di sini, nama domain container ditampilkan di string _Access URL_ dan alamat IP internalnya - dalam baris _IP_ di bawah.
 
   * di dalam dashboard platform, data yang sama dapat ditemukan dengan cara berikut:
 
-    * klik tombol **Open in Browser** di sebelah container yang Anda minati untuk membuka antarmuka node yang diperlukan di tab browser baru, sehingga Anda dapat dengan mudah menyalin domainnya dari bilah alamat. ![container domain name](#) Atau, cukup klik kanan pada string domain di bawah nama environment (dilingkari di atas) dan salin link yang diberikan.
-    * alamat IP internal node dapat dilihat melalui memperluas daftar **Additionally** untuk container yang diperlukan, seperti yang ditunjukkan pada gambar di bawah. ![container internal IP](#)
+    * klik tombol **Open in Browser** di sebelah container yang Anda minati untuk membuka antarmuka node yang diperlukan di tab browser baru, sehingga Anda dapat dengan mudah menyalin domainnya dari bilah alamat.
+    <img src="https://assets.dewacloud.com/dewacloud-docs/container/connect-to-custom-container/connect-3.png" alt="container domain name" width="100%"/> Atau, cukup klik kanan pada string domain di bawah nama environment (dilingkari di atas) dan salin link yang diberikan.
+    * alamat IP internal node dapat dilihat melalui memperluas daftar **Additionally** untuk container yang diperlukan, seperti yang ditunjukkan pada gambar di bawah. 
+    <img src="https://assets.dewacloud.com/dewacloud-docs/container/connect-to-custom-container/connect-4.png" alt="container internal IP" width="100%"/>
 
 Dengan cara ini, informasi yang diperoleh dapat digunakan untuk membangun koneksi internal ke containers Anda di platform.
 
@@ -52,7 +53,7 @@ Untuk mengakses container Anda dari luar platform (misalnya, dari Internet), And
 
 1\. Jika layanan atau aplikasi Anda, yang dijalankan dalam container, mendengarkan port _80_, maka itu akan otomatis diekspos ke jaringan eksternal (melalui nama domain yang ditugaskan) melalui [Shared Load Balancer](<https://docs.dewacloud.com/docs/shared-load-balancer/>) platform.
 
-![custom container](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/connect-to-custom-container/connect-5.png" alt="custom container" width="100%"/>
 
 Dalam kasus seperti itu, Anda hanya perlu mengklik **Open in Browser** untuk node terkait untuk meluncurkannya (opsi ini berfungsi untuk koneksi HTTP).
 
@@ -62,13 +63,13 @@ Jika container Anda tidak memiliki IP eksternal yang dilampirkan, platform melak
 
 2\. Untuk implementasi yang lebih kompleks, platform menyediakan fungsionalitas [endpoints](<https://docs.dewacloud.com/docs/endpoints/>) khusus (tersedia di bagian dengan nama yang sama dalam **Settings** environment mana pun):
 
-![container endpoints](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/connect-to-custom-container/connect-6.png" alt="container endpoints" width="100%"/>
 
 Ini memungkinkan untuk membagikan port privat yang diperlukan pada container Anda melalui port publik acak yang dipilih di Shared Load Balancer platform, sehingga dapat diakses melalui **Access URL** yang disediakan.
 
 3\. Dan opsi terakhir, yang memberikan kebebasan maksimal (memungkinkan, misalnya, untuk mengamankan koneksi Anda dengan [Custom SSL](<https://docs.dewacloud.com/docs/custom-ssl/>), menghilangkan batasan pada jumlah koneksi yang bersamaan, dll.) adalah melampirkan alamat [public IP](<https://docs.dewacloud.com/docs/public-ip/>) ke container Anda.
 
-![container public IP](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/connect-to-custom-container/connect-7.png" alt="container public IP" width="100%"/>
 
 Dengan cara ini, aplikasi Anda dapat dikonfigurasi untuk mendengarkan port yang Anda butuhkan dan, dengan cara seperti itu, menjadi dapat diakses melalui jaringan eksternal.
 

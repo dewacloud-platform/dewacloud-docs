@@ -8,7 +8,7 @@ title: Ports
 
 Tab **Ports** memberikan informasi umum tentang pengelolaan port container di platform.
 
-![ports layer settings](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/configuration/ports/ports-1.png" alt="ports layer settings" width="100%"/>
 
 Port berikut ini dibuka secara default:
 
@@ -42,7 +42,7 @@ Port tambahan dapat dibuka menggunakan:
   * _**[endpoints](<https://docs.dewacloud.com/docs/endpoints/>)**_ \- memetakan port internal container ke port eksternal acak melalui platform [Shared LB](<https://docs.dewacloud.com/docs/shared-load-balancer/>)
   * _**[Public IP](<https://docs.dewacloud.com/docs/public-ip/>)**_ \- memberikan akses langsung ke semua port dari container Anda
 
-![containers access ports scheme](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/configuration/ports/ports-2.png" alt="containers access ports scheme" width="60%"/>
 
 Bergantung pada cara yang dipilih, cukup ikat layanan Anda (pendengar aplikasi) ke alamat internal atau eksternal yang diterima.
 
