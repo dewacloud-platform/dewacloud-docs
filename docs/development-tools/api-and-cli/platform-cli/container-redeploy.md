@@ -9,7 +9,7 @@ Dalam panduan ini, kami akan menunjukkan cara [redeploy](https://docs.dewacloud.
 
 1\. Pertama, temukan nama environment dan ID node/layer dari container yang harus di-redeploy. Anda dapat melihat info yang diperlukan melalui dashboard atau menggunakan metode _**GetEnvs**_ dan _**GetEnvInfo**_ untuk mendapatkan data langsung dari terminal (untuk semua atau environment tertentu masing-masing).
 
-![cli get environment names and info](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/container-redeploy/container-redeploy-1.png" alt="cli get environment names and info" width="90%"/>
 
 Di sini, Anda dapat mendapatkan semua info tentang environment - _layer names_, _node IDs_, _Docker images_, _tags_, dll.
 
@@ -19,7 +19,7 @@ Di sini, Anda dapat mendapatkan semua info tentang environment - _layer names_, 
 ~/jelastic/environment/control/getcontainernodetags --envName {envName} --nodeId {nodeId}
 ```
 
-![cli view available tags for node](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/container-redeploy/container-redeploy-2.png" alt="cli view available tags for node" width="90%"/>
 
 Dalam kasus kami, daftar tag untuk image _jelastic/redis_ ditampilkan.
 
@@ -43,7 +43,7 @@ Anda perlu menyatakan parameter \{nodeGroup\} atau \{nodeId\} untuk menentukan t
   * `{useExistingVolumes}` \- atur ke _true_ untuk menjaga data di volume yang di-mount dalam container yang diperbarui (_opsional_)
   * `{login}` dan `{password}` \- kredensial untuk mengakses image dari registry privat (_opsional_)
 
-![cli redeploy containers](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/container-redeploy/container-redeploy-3.png" alt="cli redeploy containers" width="90%"/>
 
 Proses ini dapat memakan waktu beberapa menit dan harus merespons dengan _“result”: 0_ (artinya operasi berhasil). Respons mencakup versi sebelum dan sesudah redeploy, serta durasi pembaruan masing-masing container.
 

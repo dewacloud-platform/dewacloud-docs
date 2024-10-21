@@ -19,21 +19,21 @@ Satu-satunya pengecualian adalah **GlassFish**, karena memerlukan beberapa konfi
 
 2\. Klik **New environment** di bagian kiri atas dashboard.
 
-![WebSockets Java new env](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support-for-java/websockets-java-1.png" alt="WebSockets Java new env" width="50%"/>
 
 3\. Dalam jendela topologi environment yang muncul, beralihlah ke tab **Java** dan pilih **GlassFish** sebagai server aplikasi Anda. Kemudian setel batas sumber daya untuk itu dengan bantuan slider cloudlet di bagian _Vertical scaling_ wizard, ketik nama environment Anda (misalnya, _java-websockets_) dan klik **Create**.
 
-![WebSockets Java env wiz](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support-for-java/websockets-java-2.png" alt="WebSockets Java env wiz" width="100%"/>
 
 4\. Dalam beberapa menit environment Anda dengan server GlassFish akan dibuat dan muncul di dashboard.
 
-![WebSockets Java env created](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support-for-java/websockets-java-3.png" alt="WebSockets Java env created" width="100%"/>
 
 5\. Sekarang, Anda dapat mem-deploy aplikasi Anda, yang memerlukan dukungan protokol WebSockets, ke environment Anda. Ini dapat dilakukan melalui [arsip lokal/URL](<https://docs.dewacloud.com/docs/deployment-guide/>), atau, jika Anda lebih suka menggunakan repositori VCS jarak jauh, cukup tambahkan node **Maven** ke topologi environment Anda dan ikuti [panduan ini](<https://docs.dewacloud.com/docs/java-vcs-deployment/>).
 
 Sebagai hasilnya, aplikasi yang Anda deploy akan terdaftar di kolom panel yang sesuai:
 
-![WebSockets Java deployed](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support-for-java/websockets-java-4.png" alt="WebSockets Java deployed" width="100%"/>
 
 ## Enable GlassFish WebSockets Support{#enable-glassfish-websockets-support}
 
@@ -41,21 +41,21 @@ Langkah berikutnya yang perlu Anda lakukan adalah mengaktifkan dukungan WebSocke
 
 1\. Navigasikan ke panel admin GlassFish, yang dapat diakses melalui dashboard (dengan mengklik tombol **Additionally** untuk server ini di environment Anda dan memilih opsi **Admin panel > Login** dalam daftar yang muncul) atau tautan langsung (yang dikirimkan platform kepada Anda melalui email setelah pembuatan environment).
 
-![WebSockets Java admin panel](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support-for-java/websockets-java-5.png" alt="WebSockets Java admin panel" width="100%"/>
 
 2\. Di tab browser yang baru dibuka, tentukan kredensial yang telah Anda terima dalam email yang sesuai dan lanjutkan dengan tombol **Login**.
 
-![WebSockets Java login](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support-for-java/websockets-java-6.png" alt="WebSockets Java login" width="100%"/>
 
 3\. Setelah masuk, navigasikan ke bagian **Configurations > gfcluster-config > Network Config > Protocols > http-listener-1** di dalam menu sebelah kiri. Kemudian beralih ke tab **HTTP** dan centang kotak untuk opsi _Websockets Support_ di bagian bawah halaman.
 
 Jangan lupa untuk **Save** pengaturan baru!
 
-![WebSockets Java webs supp](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support-for-java/websockets-java-7.png" alt="WebSockets Java webs supp" width="100%"/>
 
 4\. Kembali ke panel dashboard Anda dan **Restart** GlassFish untuk menerapkan perubahan.
 
-![WebSockets Java restart](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support-for-java/websockets-java-8.png" alt="WebSockets Java restart" width="100%"/>
 
 Karena semua konfigurasi telah selesai sekarang, Anda dapat **Open** aplikasi Anda **in Browser** dan memastikan bahwa itu berfungsi dengan baik. Nikmati!
 

@@ -56,11 +56,11 @@ Mari kita lihat langkah demi langkah proses menambahkan FTP ke environment Anda:
 
 2\. Klik **Create environment** untuk mengatur environment baru.
 
-![create environment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ftp-ftps-support/ftp-support-1.png" alt="create environment" width="40%"/>
 
 3\. Dalam wizard yang terbuka, pilih **application server** (misalnya, _Tomcat_) atau **database** (misalnya, _MySQL_) dan aktifkan **Public IP**.
 
-![environment wizard](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ftp-ftps-support/ftp-support-2.png" alt="environment wizard" width="100%"/>
 
 Tunggu beberapa detik hingga environment Anda dibuat.
 
@@ -68,15 +68,15 @@ Tunggu beberapa detik hingga environment Anda dibuat.
 
 1\. Klik tombol **Add-ons** untuk server aplikasi (atau database) Anda.
 
-![Tomcat add-ons](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ftp-ftps-support/ftp-support-3.png" alt="Tomcat add-ons" width="100%"/>
 
 2\. Dalam tab yang terbuka, Anda akan melihat daftar semua aplikasi yang tersedia untuk ditambahkan ke environment Anda. Temukan FTP dan klik **Install**.
 
-![FTP add-on](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ftp-ftps-support/ftp-support-4.png" alt="FTP add-on" width="60%"/>
 
 3\. Konfirmasi instalasi dengan mengklik tombol **Install** di jendela yang terbuka.
 
-![install FTP add-on](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ftp-ftps-support/ftp-support-5.png" alt="install FTP add-on" width="80%"/>
 
 4\. Setelah menambahkan FTP ke environment, Anda akan menerima email dengan kredensial untuk mengakses (tautan FTP, Login, Kata Sandi, IP, dll.).
 
@@ -88,7 +88,7 @@ Tunggu beberapa detik hingga environment Anda dibuat.
 
 2\. Masukkan _Host_, _Username_, dan _Password_ Anda menggunakan kredensial FTP yang Anda terima di email setelah instalasi. Lakukan koneksi.
 
-![FileZilla FTP connect](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ftp-ftps-support/ftp-support-6.png" alt="FileZilla FTP connect" width="100%"/>
 
 3\. Sekarang Anda dapat melihat daftar folder **config** di klien FTP Anda.
 
@@ -112,21 +112,21 @@ Tunggu beberapa detik hingga environment Anda dibuat.
 
 2\. Masukkan _Host, Username_, dan _Password_ Anda menggunakan kredensial FTP yang Anda terima melalui email setelah instalasi FTP. Lakukan koneksi dengan mengklik **Quickconnect**.
 
-![FileZilla FTP connected](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ftp-ftps-support/ftp-support-7.png" alt="FileZilla FTP connected" width="100%"/>
 
 3\. Anda dapat mengunggah atau mengunduh file dengan mengklik dua kali pada file tersebut. Untuk mentransfer direktori dan/atau beberapa file, pilih mereka, klik kanan pada pilihan, dan kemudian klik **Upload/Download** di menu popup.
 
-![FTP upload file](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ftp-ftps-support/ftp-support-8.png" alt="FTP upload file" width="100%"/>
 
 4\. Anda dapat dengan mudah menyeret file dari satu direktori dan menjatuhkannya pada direktori lain untuk ditransfer.
 
 5\. Tambahkan file Anda ke antrian jika Anda ingin mentransfernya nanti.
 
-![FTP add file to queue](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ftp-ftps-support/ftp-support-9.png" alt="FTP add file to queue" width="100%"/>
 
 6\. Satu fitur berguna lainnya adalah perbandingan direktori. Untuk segera melihat perbedaan antara file di mesin lokal dan server, pilih **View > Directory Comparison**, pilih apakah membandingkan ukuran file atau waktu modifikasi, dan klik **Enable**.
 
-![FTP directory comparison](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ftp-ftps-support/ftp-support-10.png" alt="FTP directory comparison" width="100%"/>
 
 ## Download Log Files{#download-log-files}
 
@@ -136,7 +136,7 @@ Tunggu beberapa detik hingga environment Anda dibuat.
 
 3\. Sekarang Anda dapat dengan mudah mengekspor log Anda: navigasikan ke folder **logs**, pilih file log yang Anda butuhkan, unduh seperti yang ditunjukkan pada tangkapan layar di bawah ini, dan buka di editor yang nyaman untuk ditinjau.
 
-![FTP download logs](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ftp-ftps-support/ftp-support-11.png" alt="FTP download logs" width="100%"/>
 
 ## Synchronize Files{#synchronize-files}
 
@@ -144,23 +144,23 @@ Tunggu beberapa detik hingga environment Anda dibuat.
 
 2\. Dalam jendela yang terbuka, pilih tab **FTP**, isi kolom yang diperlukan (_Host, Username, Password_) dan klik tombol **Go**.
 
-![GoodSync FTP connect](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ftp-ftps-support/ftp-support-12.png" alt="GoodSync FTP connect" width="100%"/>
 
 3\. Kemudian pilih folder yang diperlukan di server Anda dan klik **OK**.
 
-![GoodSync choose FTP folder](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ftp-ftps-support/ftp-support-13.png" alt="GoodSync choose FTP folder" width="100%"/>
 
 4\. Setelah itu, klik tombol **Browse** di sisi kanan, dan pilih folder lokal yang ingin Anda cadangkan atau sinkronkan data Anda ke.
 
-![GoodSync choose local folder](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ftp-ftps-support/ftp-support-14.png" alt="GoodSync choose local folder" width="100%"/>
 
 5\. Kemudian dalam jendela utama klik tombol **Analyze**. Anda akan ditampilkan semua perbedaan dalam folder yang dipilih.
 
-![GoodSynch analyze differences](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ftp-ftps-support/ftp-support-15.png" alt="GoodSynch analyze differences" width="100%"/>
 
 6\. Klik tombol **Sync** untuk melakukan sinkronisasi.
 
-![goodsynch FTP synchronization](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ftp-ftps-support/ftp-support-16.png" alt="goodsynch FTP synchronization" width="100%"/>
 
 ## Edit Configuration Files{#edit-configuration-files}
 
@@ -168,7 +168,7 @@ Tunggu beberapa detik hingga environment Anda dibuat.
 
 2\. Hubungkan ke server Anda (atau database) melalui FTP (jika Anda menggunakan Sublime, klik **File- >FTP/SFTP->Browse server**) dan Anda dapat mulai mengedit file.
 
-![Sublime file configuration](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ftp-ftps-support/ftp-support-17.png" alt="Sublime file configuration" width="100%"/>
 
 ## Deploy Application via FTP{#deploy-application-via-ftp}
 
@@ -184,13 +184,13 @@ Mari kita pertimbangkan contoh singkat tentang cara me-deploy **Railo** ke envir
 
 3\. Salin file aplikasi Anda ke folder **ROOT** (atau buat konteks lain untuk aplikasi Anda dan salin file Anda di dalamnya).
 
-![deploy application via FTP](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ftp-ftps-support/ftp-support-18.png" alt="deploy application via FTP" width="100%"/>
 
 4\. Sekarang Anda dapat kembali ke dashboard platform dan memastikan semuanya baik-baik saja. Untuk itu, klik tombol **Open in Browser** untuk environment Anda.
 
-![open in browser](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ftp-ftps-support/ftp-support-19.png" alt="open in browser" width="100%"/>
 
-![Railo application](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ftp-ftps-support/ftp-support-20.png" alt="Railo application" width="80%"/>
 
 ## Switching FTPS{#switching-ftps}
 
@@ -206,11 +206,11 @@ Mari kita pertimbangkan contoh singkat tentang cara me-deploy **Railo** ke envir
 
 3\. Klik **Connect**.
 
-![FileZilla FTPS connection](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ftp-ftps-support/ftp-support-21.png" alt="FileZilla FTPS connection" width="60%"/>
 
 4\. Masukkan password.
 
-![password for FTPS connection](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ftp-ftps-support/ftp-support-22.png" alt="password for FTPS connection" width="60%"/>
 
 5\. Sekarang Anda terhubung melalui FTPS.
 
@@ -220,7 +220,7 @@ Mari kita pertimbangkan contoh singkat tentang cara me-deploy **Railo** ke envir
 
 2\. Temukan FTP dalam daftar aplikasi dan klik tombol **Reset Password**.
 
-![FTP add-on reset password](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ftp-ftps-support/ftp-support-23.png" alt="FTP add-on reset password" width="60%"/>
 
 3\. Anda akan dikirim email dengan password FTP baru.
 
@@ -234,7 +234,7 @@ Password FTP Anda dapat diubah melalui SSH dengan mengikuti langkah-langkah beri
 
 2\. [Akses](<https://docs.dewacloud.com/docs/ssh-access/>) container yang diperlukan dengan FTP-addon yang diinstal melalui SSH.
 
-![SSH access to container](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ftp-ftps-support/ftp-support-24.png" alt="SSH access to container" width="100%"/>
 
 3\. Jalankan perintah berikut di dalam container:
 
@@ -248,7 +248,7 @@ sudo /usr/bin/passwd jelastic-ftp
 Setelah memasukkan password baru Anda, Anda dapat melihat beberapa pesan peringatan, misalnya.BAD PASSWORD: it is based on a dictionary wordatauBAD PASSWORD: is too simple.Ini hanya rekomendasi untuk meningkatkan keandalan password Anda, abaikan jika menurut Anda password kustom Anda sudah cukup aman. Password akan diubah bagaimanapun. 
 :::
 
-![change FTP password](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ftp-ftps-support/ftp-support-25.png" alt="change FTP password" width="100%"/>
 
 Sekarang Anda dapat menggunakan password baru untuk mengakses environment Anda melalui protokol FTP.
 
@@ -258,7 +258,7 @@ Sekarang Anda dapat menggunakan password baru untuk mengakses environment Anda m
 
 2\. Temukan FTP dalam daftar aplikasi dan klik **Uninstall**.
 
-![uninstall FTP add-on](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ftp-ftps-support/ftp-support-26.png" alt="uninstall FTP add-on" width="60%"/>
 
 :::warning 
 Jika Anda menginstal FTP di environment dengan satu server aplikasi (misalnya, Tomcat), penskalaan horizontal dari environment ini akan menggandakan server ini bersama dengan FTP. Dengan cara ini FTP akan diinstal di kedua instance dengan kredensial yang sama. Namun, ini tidak berlaku untuk server GlassFish. Jika FTP telah diinstal di environment dengan satu GlassFish, itu tidak akan digandakan ke server GlassFish yang baru ditambahkan. Jadi untuk memiliki FTP yang diinstal pada kedua instance, pertama-tama Anda perlu menonaktifkan FTP dan kemudian menginstalnya kembali satu kali lagi. Dengan cara ini akan diaktifkan di kedua server. 
