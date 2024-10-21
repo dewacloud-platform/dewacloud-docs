@@ -26,7 +26,7 @@ Pada contoh di atas, tempat penampungan yang disorot harus diganti dengan data b
 Informasi lebih rinci tentang parameter yang tersedia dapat ditemukan dalam deskripsi metode API yang sesuai dan di CreateEnvironment API overview.
 :::
 
-![CLI create environment method](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/environment-creation/environment-creation-1.png" alt="CLI create environment method" width="100%"/>
 
 Perhatikan bahwa pada gambar di atas, CLI merespons dengan properti _result_ yang sama dengan _0_ \- ini berarti bahwa operasi yang dilakukan telah berhasil dan tanpa kesalahan (ini berlaku untuk semua perintah yang Anda jalankan).
 
@@ -60,7 +60,7 @@ Sekarang, semua yang Anda butuhkan untuk membuat environment adalah menggunakan 
 
 Selain itu, Anda dapat mendefinisikan ulang atau menambahkan beberapa pengaturan (yaitu _shortdomain_, _region_, dan _displayName_) ke bagian env file konfigurasi Anda, dengan menyatakannya dalam tanda kurung persegi dalam parameter metode ini. Sebagai contoh, dengan string _shortdomain_ opsional (seperti dalam gambar di bawah), Anda dapat menggantikan pengaturan dengan nama yang sama dari JSON, sehingga environment akan dibuat dengan topologi yang sama tetapi dengan nama yang berbeda.
 
-![CLI create environment using json](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/environment-creation/environment-creation-2.png" alt="CLI create environment using json" width="100%"/>
 
 2\. Pembuatan [Docker-based environment](https://docs.dewacloud.com/docs/dockers-management) hampir mirip dengan metode yang dijelaskan di atas, tetapi mencakup beberapa parameter spesifik. Jadi, untuk mendapatkan Docker container menggunakan platform CLI, Anda perlu menjalankan baris berikut:
 
@@ -80,7 +80,7 @@ Dengan ini:
 Daftar lengkap parameter Docker khusus dapat ditemukan dalam dokumen yang sesuai.
 :::
 
-![CLI create Docker-based environment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/environment-creation/environment-creation-3.png" alt="CLI create Docker-based environment" width="100%"/>
 
 Dalam waktu singkat, Docker-based environment Anda akan dibuat, siap untuk bekerja.
 

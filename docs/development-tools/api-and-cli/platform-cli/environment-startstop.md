@@ -13,7 +13,7 @@ Di antara operasi paling umum untuk manajemen environment yang disediakan oleh C
 ~/jelastic/environment/control/stopenv --envName {env_name}
 ```
 
-![CLI stop environment method](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/environment-start-stop/environment-start-stop-1.png" alt="CLI stop environment method" width="100%"/>
 
 Seperti yang dapat Anda lihat, CLI merespon dengan properti “result” sama dengan _0_, yang berarti operasi telah berhasil dilakukan dan tanpa kesalahan.
 
@@ -23,7 +23,7 @@ Seperti yang dapat Anda lihat, CLI merespon dengan properti “result” sama de
 ~/jelastic/environment/control/startenv --envName {env_name}
 ```
 
-![CLI start environment method](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/environment-start-stop/environment-start-stop-1.png" alt="CLI start environment method" width="100%"/>
 
 Ya, manajemen environment sesederhana itu!
 

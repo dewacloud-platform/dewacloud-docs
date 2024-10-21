@@ -9,7 +9,7 @@ Platform Marketplace adalah perpustakaan dari aplikasi yang paling populer dan p
 
 Anda dapat mengakses **Marketplace** melalui tombol yang sesuai di sudut kiri atas dashboard.
 
-![packaged solutions marketplace](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/cloud-scripting-and-jps/marketplace/marketplace-1.png" alt="packaged solutions marketplace" width="100%"/>
 
 Dalam bagian yang terbuka, Anda dapat menemukan daftar solusi yang dikategorikan untuk menginstal **Applications** baru dari awal dan konfigurasi **Add-Ons** untuk memperbarui environment yang sudah ada. Saat ini, platform mengelola dan memelihara paket JPS berikut, menyediakan instalasi satu klik di semua platform:
 
@@ -130,51 +130,44 @@ Tim PaaS sering mengimplementasikan solusi baru untuk memperluas daftar ini. May
 Untuk contoh solusi lebih lanjut, lihat Koleksi JPS di GitHub, di mana Anda dapat menemukan banyak paket untuk digunakan dengan platform:Enterprise WordPress Cluster untuk Auto Scaling, High Performance dan High AvailabilityScalable MySQL Cluster dengan ProxySQL Load Balancer dan OrchestratorFree Let’s Encrypt SSL Certificates Integration for the Most Popular Software StacksHighly Available dan Auto-Scalable Magento ClusterCyclos - a Payment Platform for Large Businesses and OrganisationsCron-Based Scheduler untuk Hibernasi Lingkungan OtomatisMinio Cluster - S3 Compatible Object StorageAuto-Scalable Docker Engine dan Docker Swarm ClusterSimple Automated CI/CD Pipeline untuk Proyek GitHub dan GitLabJava Memory Agent untuk Pengoptimalan Penggunaan RAM ContainerImpor file manifest yang sesuai melalui dashboard untuk segera mendapatkan solusi Anda. Selain itu, Anda dapat menjelajahi kode sumber dari setiap paket, menduplikat repositori untuk diri Anda sendiri dan menyesuaikannya hingga kebutuhan Anda sebelum instalasi. 
 :::
 
-## Subscription Products{#subscription-products}
-
-_Keberadaan fitur ini bergantung pada pengaturan penyedia hosting tertentu._
-
-Bagian **Subscription Plans** dari Marketplace mencantumkan semua produk yang ditawarkan berbasis langganan (yaitu dengan harga tetap). Anda dapat mempelajarinya lebih lanjut dalam panduan [Produk Berbasis Langganan](<https://docs.dewacloud.com/docs/subscription-products/>).
-
-![install subscription product](#)
-
 ## Installing Solution from Marketplace{#installing-solution-from-marketplace}
 
 Di bawah ini, kami akan memberikan contoh instalasi solusi yang dikemas.
 
 1\. Untuk menemukan aplikasi tertentu, gunakan kotak **Search** khusus di sudut kiri atas bagian _**Marketplace**_. Ketik frasa, dan itu akan dicari dalam nama dan deskripsi solusi (baik untuk aplikasi maupun add-on).
 
-![search within marketplace](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/cloud-scripting-and-jps/marketplace/marketplace-2.png" alt="search within marketplace" width="40%"/>
 
 2\. Kami akan menggunakan **WordPress Standalone Kit** sebagai contoh. Pilih dari hasil pencarian yang diusulkan untuk segera membuka bingkai instalasi. Atau, Anda dapat menemukan solusi yang diperlukan secara manual dalam daftar yang dikategorikan (bagian _Content Management_ dalam kasus kami), arahkan kursor ke atas untuk membuka detail tambahan, dan klik **Install**.
 
-![install solution from marketplace](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/cloud-scripting-and-jps/marketplace/marketplace-3.png" alt="install solution from marketplace" width="100%"/>
 
 3\. Berdasarkan paket tertentu, Anda mungkin perlu memberikan beberapa data tambahan untuk menyesuaikan solusi hingga sesuai kebutuhan Anda. Sebagai contoh, itu bisa menjadi jumlah node yang diinginkan atau ketersediaan opsi spesifik.
 
 Untuk ikhtisar yang mendetail tentang keunikan [WordPress Standalone Hosting](<https://www.virtuozzo.com/company/blog/wordpress-hosting-standalone-container/>), lihat artikel yang ditautkan di blog kami. Secara umum, pengaturan dasar (yaitu diwajibkan oleh aplikasi mana pun) adalah nama environment, [alias](<https://docs.dewacloud.com/docs/environment-aliases/>), dan, jika tersedia, [region](<https://docs.dewacloud.com/docs/environment-regions/>).
 
-![solution installation frame](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/cloud-scripting-and-jps/marketplace/marketplace-4.png" alt="solution installation frame" width="70%"/>
 
 Klik **Install** untuk melanjutkan.
 
 4\. Proses instalasi mungkin memerlukan waktu beberapa menit, tergantung pada solusi yang dipilih.
 
-![solution automatic installation](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/cloud-scripting-and-jps/marketplace/marketplace-5.png" alt="solution automatic installation" width="50%"/>
 
 :::tip 
 Anda dapat melacak proses instalasi paket JPS dengan detail melalui console Cloud Scripting. Saat masuk ke akun dashboard Anda, tambahkan sufiks /console ke URL: https://app.{platformDomain}/console 
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/cloud-scripting-and-jps/marketplace/marketplace-6.png" alt="platform console" width="100%"/>
 :::
 
 5\. Setelah semua konfigurasi yang diperlukan, Anda akan melihat bingkai keberhasilan. Dalam kasus kami, itu juga menyediakan data administrasi yang sesuai (yang juga dikirim melalui email notifikasi yang sesuai).
 
-![marketplace installation success](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/cloud-scripting-and-jps/marketplace/marketplace-7.png" alt="marketplace installation success" width="60%"/>
 
 Klik tombol **Open in Browser**.
 
 6\. Aplikasi siap pakai Anda akan dibuka di tab browser baru.
 
-![WordPress automatically installed](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/cloud-scripting-and-jps/marketplace/marketplace-8.png" alt="WordPress automatically installed" width="100%"/>
 
 Itu saja! Sekarang, Anda dapat menikmati menggunakan aplikasi Anda.
 

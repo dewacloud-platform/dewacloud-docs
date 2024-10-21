@@ -7,7 +7,7 @@ title: API Overview
 
 [Platform API](<https://docs.dewacloud.com/docs/api-overview/>) memungkinkan pengembang untuk mengotomatisasi serangkaian tindakan yang diperlukan untuk siklus hidup aplikasi dan memperluas fungsionalitas platform kami dengan menggabungkan layanan lain. Menggunakan API kami, Anda dapat secara programatik membuat environment, melakukan deployment aplikasi, dan melakukan tugas lain yang sebelumnya hanya dapat dilakukan melalui dashboard platform, tetapi tidak terbatas pada itu.
 
-![platform API](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/api-overview/api-overview-1.png" alt="platform API" width="70%"/>
 
 Platform API mengikuti prinsip REST. **REST API** menentukan serangkaian fungsi yang dapat diminta oleh pengembang, yang kemudian menerima respons. Interaksi dilakukan melalui protokol HTTPS. Keuntungan dari metode ini adalah perluasan luas dari protokol HTTPS. Itu sebabnya REST API dapat digunakan dengan hampir semua bahasa pemrograman.
 
@@ -19,7 +19,7 @@ _**https://[\{hoster-api-host\}](<https://docs.dewacloud.com/docs/paas-hosting-p
 
 Jenis URL yang harus digunakan, dinyatakan dalam deskripsi setiap metode (field REST).
 
-![api overview rest link](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/api-overview/api-overview-2.png" alt="api overview rest link" width="100%"/>
 
 Data dari permintaan dapat dikirim sebagai query string (setelah tanda “?”) saat menggunakan metode GET, atau di badan permintaan POST. Ingat, bahwa dalam kasus permintaan GET, parameter harus [percent encoded](<http://en.wikipedia.org/wiki/Url_encoding>) (URL encoding).
 
@@ -51,7 +51,7 @@ Nilai teks dari parameter harus disediakan dalam kode UTF-8. Urutan parameter da
 
 Respons permintaan dikodekan dalam UTF-8. Respons untuk semua fungsi API diberikan dalam format [JSON](<http://en.wikipedia.org/wiki/JSON>). Contoh hasilnya dijelaskan dalam dokumentasi metode.
 
-![signin API method](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/api-overview/api-overview-3.png" alt="signin API method" width="100%"/>
 
 ## Platform API in Action{#platform-api-in-action}
 

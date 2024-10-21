@@ -29,7 +29,7 @@ Di sini, daftar parameter dapat dibagi menjadi kelompok berikut:
 Jika Anda perlu terhubung ke repositori pribadi, parameter autentikasi tambahan [–login\{login\}] [–password\{password\}] [–keyId\{keyId\}] harus ditambahkan ke perintah utama. Di sini, Anda perlu menyatakan opsi \{login\} secara wajib (untuk menentukan login akun VCS Anda) dan menyertakan salah satu dari pengaturan berikut tergantung pada jenis akses yang diinginkan (password atau SSH key): \{password\} - kata sandi akun VCS yang bersangkutan \{keyId\} - nama kunci SSH privat yang telah Anda tentukan saat menambahkannya ke dashboard; ini memungkinkan untuk membangun koneksi aman ke repositori dengan kunci SSH publik yang dipasangkan terpasang.
 :::
 
-![CLI create VCS project](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/vcs-project-deployment/vcs-project-deployment-1.png" alt="CLI create VCS project" width="100%"/>
 
 Setelah melakukan eksekusi, Anda akan ditampilkan informasi singkat tentang proyek yang dibuat dalam respons yang diterima.
 
@@ -45,7 +45,7 @@ Perintah yang dijelaskan di atas sesuai dengan fungsi kerangka tambah proyek di 
 
 Atur nilai parameter yang sama seperti pada langkah sebelumnya.
 
-![CLI update VCS project](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/vcs-project-deployment/vcs-project-deployment-2.png" alt="CLI update VCS project" width="100%"/>
 
 Selanjutnya, perintah ini juga dapat digunakan untuk redeployment manual aplikasi Anda berdasarkan sumber VCS yang diperbarui.
 
@@ -62,7 +62,7 @@ Sebagian besar parameter sudah familiar bagi Anda, kecuali yang berikut yang tel
 
 Nilai opsi lainnya dapat berubah berdasarkan kebutuhan Anda.
 
-![CLI edit VCS project](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/vcs-project-deployment/vcs-project-deployment-3.png" alt="CLI edit VCS project" width="100%"/>
 
 :::note
 Perintah ini hanya memperbarui pengaturan proyek yang bersangkutan, sementara untuk penerapannya, metode pembaruan harus dipanggil (kami sudah mempertimbangkannya di langkah kedua).
