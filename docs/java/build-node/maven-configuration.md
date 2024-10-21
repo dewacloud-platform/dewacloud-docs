@@ -30,7 +30,7 @@ Folder | Path
 
 Folder **PROJECTS** digunakan untuk menyimpan file dari proyek yang telah dibongkar yang ditambahkan ke, dibangun dan diterapkan melalui node Maven.
 
-![Maven configs PROJECTS folder](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/maven-build-nodes/maven-configuration/maven-configuration-1.png" alt="Maven configs PROJECTS folder" width="100%"/>
 
 ### conf{#conf}
 
@@ -40,13 +40,13 @@ Direktori **conf** berisi file berikut:
   * _**[toolchains.xml](<https://maven.apache.org/guides/mini/guide-using-toolchains.html>)**_ \- memungkinkan untuk menetapkan JDK mana (atau alat lain) yang harus digunakan oleh plugin embedded selama pembangunan proyek
   * _**[variables.conf](<https://docs.dewacloud.com/docs/java-application-server-config#s>)**_ \- digunakan untuk menetapkan variabel kustom Anda, untuk mengkonfigurasi pengaturan memori, dll
 
-![Maven configs conf folder](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/maven-build-nodes/maven-configuration/maven-configuration-2.png" alt="Maven configs conf folder" width="100%"/>
 
 ### hooks{#hooks}
 
 Folder **hooks** menyimpan skrip kustom (disebut [hooks](<https://docs.dewacloud.com/docs/deployment-hooks/>)), yang harus dieksekusi sebelum atau setelah operasi pembentukan/deploy aplikasi.
 
-![Maven configs hooks folder](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/maven-build-nodes/maven-configuration/maven-configuration-3.png" alt="Maven configs hooks folder" width="100%"/>
 
 ### keys{#keys}
 
@@ -54,19 +54,19 @@ Direktori **keys** digunakan sebagai lokasi untuk mengunggah private keys yang d
 
 Cukup buat key Anda, simpan sebagai file sederhana dan unggah ke folder **keys**. Sekarang, Anda dapat menggunakannya untuk kasus yang berbeda (misalnya untuk autentikasi antar node) dengan hanya menyatakan path yang sesuai _**/var/lib/jelastic/keys/\{key\}**_.
 
-![Maven configs keys folder](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/maven-build-nodes/maven-configuration/maven-configuration-4.png" alt="Maven configs keys folder" width="100%"/>
 
 ### latest{#latest}
 
 Folder **latest** berisi semua perpustakaan JDK, alat, binari, dll. Di sini, Anda dapat mengedit file yang sudah tersedia atau mengunggah tambahan jika diperlukan.
 
-![Maven configs latest folder](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/maven-build-nodes/maven-configuration/maven-configuration-5.png" alt="Maven configs latest folder" width="100%"/>
 
 ### vcs{#vcs}
 
 Dalam direktori **vcs**, Anda dapat menemukan daftar file _**\{project_name\}.properties**_ yang berisi semua informasi tentang proyek Anda. Namun, file konfigurasi ini tidak dapat diedit, tetapi dapat dilihat untuk memeriksa parameter untuk proyek tertentu.
 
-![Maven configs vcs folder](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/maven-build-nodes/maven-configuration/maven-configuration-6.png" alt="Maven configs vcs folder" width="100%"/>
 
 ## Maven-Specific Variables{#maven-specific-variables}
 
@@ -74,11 +74,11 @@ Selain konfigurasi file-file, node build Maven dapat dikelola dengan menyediakan
 
 1\. Klik tombol **Additionally** di samping node Maven Anda dan navigasikan ke bagian **Variables**.
 
-![environment variables button](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/maven-build-nodes/maven-configuration/maven-configuration-7.png" alt="environment variables button" width="100%"/>
 
 2\. Dalam jendela yang terbuka, Anda akan melihat daftar variabel default untuk stack, yang dapat disesuaikan sesuai dengan kebutuhan Anda.
 
-![Maven build node environment variables](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/maven-build-nodes/maven-configuration/maven-configuration-1.png" alt="Maven build node environment variables" width="100%"/>
 
 Di bawah ini, variabel khusus Maven terdaftar:
 

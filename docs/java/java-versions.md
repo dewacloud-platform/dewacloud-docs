@@ -25,13 +25,13 @@ Juga, untuk environment yang sudah ada, versi engine yang digunakan dapat dengan
 
 1\. Masuk ke dashboard PaaS dan klik tombol **New Environment**.
 
-![new Java environment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-versions/java-versions-1.png" alt="new Java environment" width="100%"/>
 
 Di dalam wizard yang terbuka, beralih ke tab _**Java**_, pilih server aplikasi dan versi engine yang diinginkan (seperti yang ditunjukkan pada gambar di atas).
 
 2\. Untuk mengubah versi Java dalam environment yang sudah ada, [redeploy](<https://docs.dewacloud.com/docs/container-redeploy/>) container yang sesuai:
 
-![redeploy Java version](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-versions/java-versions-2.png" alt="redeploy Java version" width="80%"/>
 
 Cukup pilih _Tag_ yang diperlukan (versi stack dan distribusi JDK) dan klik **Redeploy**.
 

@@ -10,7 +10,7 @@ Untuk melakukan konfigurasi yang diperlukan, tekan tombol **Config** di sebelah 
 
 1\. Buka menu drop-down di bagian atas tab konfigurasi. Termasuk daftar semua app server di environment Anda.
 
-![java application server config list of app servers](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-server-configuration/java-app-server-configuration-1.png" alt="java application server config list of app servers" width="80%"/>
 
 2\. Pilih yang Anda butuhkan dan lakukan konfigurasi.
 
@@ -19,7 +19,7 @@ Untuk melakukan konfigurasi yang diperlukan, tekan tombol **Config** di sebelah 
   * hanya untuk server yang dipilih - klik tombol **Save only for current instance** dari menu drop-down
   * untuk semua server - klik **Save**
 
-![java application server config save for current](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-server-configuration/java-app-server-configuration-2.png" alt="java application server config save for current" width="80%"/>
 
 :::warning
 Jika Anda membuat/mengganti nama file atau folder di Configuration manager, ini hanya akan diterapkan pada daftar node yang dipilih. Anda tidak bisa menyimpan perubahan ini untuk semua app server yang tersedia di environment. Jika Anda juga ingin membuat/mengganti nama file atau folder di server lainnya, Anda harus melakukannya secara manual.
@@ -73,7 +73,7 @@ Dengan menggunakan file config berikut, Anda dapat melakukan tindakan yang terte
 File ini hanya tersedia untuk aplikasi server Tomcat dan TomEE. Untuk mengonfigurasi server GlassFish, gunakan Panel Admin.
 :::
 
-![java application server config 9](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-server-configuration/java-app-server-configuration-3.png" alt="java application server config 9" width="80%"/>
 
 [Kembali ke daftar](<https://docs.dewacloud.com/docs/#back>)
 
@@ -83,7 +83,7 @@ Jika Anda perlu menggunakan file/folder khusus untuk mengonfigurasi aplikasi And
 
 Sebagai hasil, Anda dapat membuat konfigurasi dengan menentukan path ke file yang diunduh/dibuat dalam file _**variables.conf**_ (folder _server_).
 
-![java application server config home](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-server-configuration/java-app-server-configuration-4.png" alt="java application server config home" width="80%"/>
 
 :::note
 Meskipun direktori server, yang merujuk ke folder ini, dapat dinamaitempuntuk beberapa server, tidak pernah dibersihkan secara otomatis oleh sistem platform.
@@ -95,7 +95,7 @@ Meskipun direktori server, yang merujuk ke folder ini, dapat dinamaitempuntuk be
 
 Folder **webapps** (untuk Tomcat/TomEE) dan **work** (untuk Jetty) digunakan untuk menyimpan aplikasi yang tidak dibungkus yang dideploy ke environment.
 
-![java application server config 1](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-server-configuration/java-app-server-configuration-5.png" alt="java application server config 1" width="80%"/>
 
 [Kembali ke daftar](<https://docs.dewacloud.com/docs/#back>)
 
@@ -103,7 +103,7 @@ Folder **webapps** (untuk Tomcat/TomEE) dan **work** (untuk Jetty) digunakan unt
 
 Folder **JAVA_HOME** berisi file konfigurasi java dan librari. Di sini, Anda dapat mengedit pengaturan java dan mengunggah librari java tambahan.
 
-![java application server config java home](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-server-configuration/java-app-server-configuration-6.png" alt="java application server config java home" width="80%"/>
 
 [Kembali ke daftar](<https://docs.dewacloud.com/docs/#back>)
 
@@ -111,7 +111,7 @@ Folder **JAVA_HOME** berisi file konfigurasi java dan librari. Di sini, Anda dap
 
 Folder **lib** digunakan untuk menyimpan librari **jar** default dan mengunggah librari **jar** kustom.
 
-![java application server config lib](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-server-configuration/java-app-server-configuration-7.png" alt="java application server config lib" width="80%"/>
 
 [Kembali ke daftar](<https://docs.dewacloud.com/docs/#back>)
 
@@ -121,7 +121,7 @@ App server menyertakan folder **cron** dengan file konfigurasi, di mana cronjobs
 
 Informasi detail tentang konfigurasi Cronjob dapat ditemukan dalam dokumen [Setting Up a Cronjob](<https://docs.dewacloud.com/docs/cron-job/>).
 
-![java application server config 4](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-server-configuration/java-app-server-configuration-8.png" alt="java application server config 4" width="80%"/>
 
 [Kembali ke daftar](<https://docs.dewacloud.com/docs/#back>)
 
@@ -133,7 +133,7 @@ Ini dapat digunakan untuk berbagai kasus dengan hanya menyatakan path ke kunci A
 
     /var/lib/jelastic/keys/\{key_file_name\}
 
-![java application server config java key](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-server-configuration/java-app-server-configuration-9.png" alt="java application server config java key" width="80%"/>
 
 [Kembali ke daftar](<https://docs.dewacloud.com/docs/#back>)
 
@@ -141,7 +141,7 @@ Ini dapat digunakan untuk berbagai kasus dengan hanya menyatakan path ke kunci A
 
 Folder **contexts** berisi file konfigurasi XML untuk setiap konteks yang dideploy. Semua file ini dapat diedit.
 
-![java application server config context](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-server-configuration/java-app-server-configuration-10.png" alt="java application server config context" width="80%"/>
 
 [Kembali ke daftar](<https://docs.dewacloud.com/docs/#back>)
 
@@ -149,7 +149,7 @@ Folder **contexts** berisi file konfigurasi XML untuk setiap konteks yang didepl
 
 Folder **server_lib** adalah direktori konfigurasi GlassFish dengan semua librari server yang tersedia.
 
-![java application server config serverlib](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-server-configuration/java-app-server-configuration-11.png" alt="java application server config serverlib" width="80%"/>
 
 [Kembali ke daftar](<https://docs.dewacloud.com/docs/#app_server>)
 
@@ -157,7 +157,7 @@ Folder **server_lib** adalah direktori konfigurasi GlassFish dengan semua librar
 
 Folder **apps** TomEE digunakan untuk menyimpan aplikasi EE yang tidak dibungkus yang dideploy ke environment.
 
-![java application server config apps](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-server-configuration/java-app-server-configuration-12.png" alt="java application server config apps" width="80%"/>
 
 [Kembali ke daftar](<https://docs.dewacloud.com/docs/#back>)
 

@@ -27,20 +27,20 @@ Ikuti langkah-langkah sederhana berikut untuk membuat lingkungan baru dengan ser
 1\. Masuk ke dashboard platform dan klik tombol **New Environment** di
 pojok kiri atas.
 
-![new environment button](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/java-engine-server/java-engine-server-1.png" alt="new environment button" width="60%"/>
 
 2\. Dalam wizard topologi yang terbuka, beralih ke tab _**Java**_, pilih
 server **Java Engine** dan versi JDK yang diperlukan (dilingkari pada gambar
 di bawah ini).
 
-![Java Engine in topology wizard](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/java-engine-server/java-engine-server-2.png" alt="Java Engine in topology wizard" width="100%"/>
 
 Sesuaikan parameter lainnya sesuai kebutuhan Anda, misalnya batas sumber daya,
 ruang disk, IP eksternal, [region](<https://docs.dewacloud.com/docs/environment-regions/>) (jika tersedia), dll. Klik **Create** untuk melanjutkan.
 
 3\. Lingkungan Anda seharusnya siap dalam satu menit.
 
-![Java Engine environment created](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/java-engine-server/java-engine-server-3.png" alt="Java Engine environment created" width="100%"/>
 
 Sekarang, Anda dapat mulai mengelola lingkungan Anda:
 

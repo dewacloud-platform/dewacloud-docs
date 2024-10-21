@@ -13,7 +13,7 @@ untuk melewatkan semua langkah, yang sudah diselesaikan dalam template "induk" t
 dalam contoh mempersiapkan image [WildFly](<https://www.wildfly.org/>) kustom
 - server aplikasi Java yang fleksibel dan ringan, yang merupakan penerus langsung dari JBoss yang populer.
 
-![membangun image WildFly](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/building-wildfly-docker-image/wildlfy-docker-image-1.png" alt="membangun image WildFly" width="100%"/>
 
 Cara yang paling umum untuk membuat image Docker adalah dengan menyusun _**Dockerfile**_
 \- manifest khusus, yang memungkinkan otomatisasi tambahan melalui
@@ -215,7 +215,7 @@ _Select Image_.
 image dari jenis apa pun (yaitu, termasuk yang pribadi) dan menyimpan template Anda
 agar mudah diakses.
 
-![tambahkan image kustom baru](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/building-wildfly-docker-image/wildlfy-docker-image-2.png" alt="tambahkan image kustom baru" width="100%"/>
 
 Kita akan mempertimbangkan yang terakhir, jadi, begitu di dalam, pilih lapisan environment yang diperlukan di sebelah kiri (_App. Servers_ dalam kasus kita) dan klik tombol **Add New Image**.
 
@@ -227,7 +227,7 @@ Registry resmi)/_**\{account\}**_ /_**\{image_name\}**_
 Juga, dalam hal penggunaan repository pribadi, kredensial **Username** dan
 **Password** yang sesuai harus ditentukan.
 
-![referensi image kustom](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/building-wildfly-docker-image/wildlfy-docker-image-3.png" alt="referensi image kustom" width="100%"/>
 
 Kami menggunakan repository publik Docker Hub, yang terletak dalam
 Registry Hub pusat, jadi hanya nama repository singkat yang diperlukan. Klik **Add** saat siap.
@@ -238,7 +238,7 @@ diingat dan tetap tercantum di sini sehingga dapat dengan mudah ditemukan selama
 pemilihan container berikutnya (sampai Anda menghapusnya dari daftar _Custom_
 secara manual).
 
-![buat image WildFly kustom](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/building-wildfly-docker-image/wildlfy-docker-image-4.png" alt="buat image WildFly kustom" width="100%"/>
 
 Tetapkan sisa
 [konfigurasi](<https://docs.dewacloud.com/docs/custom-containers-deployment/>) yang diperlukan sendiri (detail opsi yang tersedia dapat dibaca di panduan terkait) dan selesaikan pembuatan environment-nya.
@@ -246,7 +246,7 @@ Tetapkan sisa
 4\. Setelah environment Anda dengan image yang sesuai muncul di dashboard,
 itu dapat diakses menggunakan tombol **Open in Browser** yang sesuai:
 
-![WildFly buka di browser](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/building-wildfly-docker-image/wildlfy-docker-image-5.png" alt="WildFly buka di browser" width="100%"/>
 
 :::note
 Dalam hal Anda belum menempatkan template Anda ke layer lingkungan
@@ -255,8 +255,7 @@ di sebelah container tertentu untuk membukanya.
 :::
 
 Sebagai hasilnya, Anda akan melihat halaman start default WildFly, yang menunjukkan bahwa segala sesuatunya dikonfigurasi dengan benar dan container baru Anda sepenuhnya beroperasi.
-
-![halaman rumah WildFly kustom](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/building-wildfly-docker-image/wildlfy-docker-image-6.png" alt="halaman rumah WildFly kustom" width="100%"/>
 
 Demikian pula dengan yang dijelaskan di atas, Anda dapat membuat image lain yang sudah dikonfigurasi sebelumnya sesuai dengan tujuan Anda dan, akhirnya, menjalankannya dengan mudah di dalam platform!
 

@@ -20,7 +20,7 @@ Anda dapat menambahkan proyek Java langsung ke node build Maven.
 
 1\. Pilih tombol **Add project** di sebelah lapisan _Maven_, node atau garis _Projects_ di bawahnya:
 
-![Maven add project](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/maven-build-nodes/java-vcs-deployment-with-maven/maven-vcs-deployment-1.png" alt="Maven add project" width="100%"/>
 
 2\. Dalam kotak dialog yang terbuka, Anda perlu mengisi kolom yang diperlukan:
 
@@ -35,13 +35,14 @@ Anda dapat menambahkan proyek Java langsung ke node build Maven.
   * **Check and auto-deploy updates** \- mengaktifkan pemeriksaan berkala untuk perubahan kode di repository Anda (dengan frekuensi yang dapat dikonfigurasi); jika ada, diinisiasi [automatic deployment](<https://docs.dewacloud.com/docs/git-svn-auto-deploy/>)
   * **Auto-resolve conflicts** \- mencegah terjadinya konflik merge dengan memperbarui file yang bertentangan ke versi repository (yaitu, perubahan yang dibuat secara lokal dibuang)
 
-![Maven configure project](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/maven-build-nodes/java-vcs-deployment-with-maven/maven-vcs-deployment-2.png" alt="Maven configure project" width="60%"/>
 
 :::tip
 Jika memulai deployment dari Java application server, Anda mungkin perlu mengatur beberapa opsi tambahan:
 
 - Build: memungkinkan untuk memilih node build Maven yang ada atau menambahkannya ke environment target.
 - Deploy Strategy (untuk deployment ke server yang di-_scale_): memungkinkan memilih antara varian Simultaneous deployment yang relatif lebih cepat, yang menyebabkan downtime singkat, dan opsi Sequential deployment with delay untuk melakukan deployment pada server satu per satu dengan penundaan yang ditetapkan antara operasi, yang memastikan uptime aplikasi.
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/maven-build-nodes/java-vcs-deployment-with-maven/maven-vcs-deployment-3.png" alt="deploy strategy" width="60%"/>
 :::
 
 Akhirnya, pilih **Add** atau **Add + Build** (**Add + Deploy**) di bagian bawah frame. Opsi pertama hanya akan menyimpan data yang disediakan sebagai template proyek (yaitu, tanpa melakukan tindakan nyata apa pun), memungkinkan untuk melakukan operasi _build_ dan _deploy_ dengan mudah di masa mendatang.
@@ -52,6 +53,7 @@ Akhirnya, pilih **Add** atau **Add + Build** (**Add + Deploy**) di bagian bawah 
 
 :::tip
 Proyek yang dibuat dengan opsi ini dapat secara otomatis diunggah ke Deployment Manager sebagai arsip dengan mencentang kotak Upload builds to Deployment Manager.
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/maven-build-nodes/java-vcs-deployment-with-maven/maven-vcs-deployment-4.png" alt="deployment manager" width="60%"/>
 :::
 
   * **Build and Deploy** \- memeriksa perubahan dan mendistribusikan proyek ke environment target (memungkinkan untuk memilih antara opsi _Simultaneous deployment_ dan _Sequential deployment with delay_, jika mendistribusikan ke [scaled server](<https://docs.dewacloud.com/docs/horizontal-scaling/>))
@@ -64,7 +66,7 @@ Proyek yang dibuat dengan opsi ini dapat secara otomatis diunggah ke Deployment 
 
   * **Delete** \- menghapus proyek ini dari Maven
 
-![Maven manage projects](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/maven-build-nodes/java-vcs-deployment-with-maven/maven-vcs-deployment-5.png" alt="Maven manage projects" width="100%"/>
 
 Ini adalah opsi GUI yang tersedia untuk manajemen node build Maven, untuk penyesuaian tambahan berkenalan dengan panduan [Maven Configuration](<https://docs.dewacloud.com/docs/maven-configuration/>).
 

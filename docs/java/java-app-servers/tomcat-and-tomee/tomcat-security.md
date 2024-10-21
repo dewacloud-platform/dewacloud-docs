@@ -25,7 +25,7 @@ Untuk mengatur autentikasi di depan aplikasi web Anda yang dideploy ke server To
 <user username="test" password="test" roles="admin">
 ```
 
-![tomcat users](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-security/tomcat-security-1.png" alt="tomcat users" width="100%"/>
 
 Simpan perubahan yang dilakukan.
 
@@ -47,13 +47,13 @@ Simpan perubahan yang dilakukan.
 </login-config> 
 ```
 
-![web xml tomcat](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-security/tomcat-security-2.png" alt="web xml tomcat" width="100%"/>
 
 4\. Jangan lupa untuk **Save** perubahan dan **Restart** server aplikasi Tomcat Anda.
 
 Jika Anda telah melakukan semuanya dengan benar, seorang pengguna akan bertemu dengan jendela autentikasi saat mencoba mengakses aplikasi.
 
-![tomcat authentication](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-security/tomcat-security-3.png" alt="tomcat authentication" width="70%"/>
 
 ## Deny Client IP Addresses{#deny-client-ip-addresses}
 
@@ -72,7 +72,7 @@ Jika Anda ingin menolak akses ke aplikasi web Anda untuk alamat IP klien tertent
 </Context> 
 ```
 
-![context xml](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-security/tomcat-security-4.png" alt="context xml" width="100%"/>
 
 :::note 
 Dalam kasus Anda telah melampirkan Public IP ke environment Anda, Anda dapat mengabaikan string ini: 
@@ -85,7 +85,7 @@ Dalam kasus Anda telah melampirkan Public IP ke environment Anda, Anda dapat men
 
 Setelah konfigurasi diatur, pengguna dengan alamat IP yang ditolak akan mendapatkan kesalahan HTTP Status 403 saat mencoba mengakses aplikasi Anda.
 
-![access denied](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-security/tomcat-security-5.png" alt="access denied" width="70%"/>
 
 ## Baca Juga{#whats-next}
 
