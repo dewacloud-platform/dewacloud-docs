@@ -6,7 +6,6 @@ title: Java Garbage Collector
 
 # Tipe dan Pengaturan Pengumpulan Sampah Java di Jelastic PaaS
 
-![java gc](#)
 
 Performa dan harga adalah dua pertimbangan besar dalam hosting aplikasi yang selalu diperhatikan. Dan, sering kali, kita bertanya pada diri sendiri bagaimana cara mengurangi pengeluaran tanpa mempengaruhi performa aplikasi Anda pada saat yang sama. Dalam artikel ini, kami ingin membahas manajemen memori otomatis untuk aplikasi Java yang dihosting dengan Jelastic menggunakan garbage collection.
 
@@ -20,7 +19,7 @@ Objek yang dibuat menggunakan sebagian memori yang tetap dialokasikan hingga ada
 
 Kami telah [mengujicoba berbagai jenis Garbage Collectors (GC)](<https://www.virtuozzo.com/company/blog/tuning-garbage-collector-java-memory-usage-optimization/>) dan mendefinisikan yang paling cocok untuk aplikasi Java yang dihosting di cloud kami, dengan mempertimbangkan skala vertikal otomatis yang disediakan oleh Jelastic. Sebagai hasil dari penyelidikan kami, kami menyesuaikan pengaturan default Garbage Collectors di Jelastic untuk meningkatkan manfaat bagi pengguna kami.
 
-![java-garbage-collector-types](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-garbage-collector/java-garbage-collector-1.png" alt="java-garbage-collector-types" width="80%"/>
 
 Jelastic mendukung GC berikut:
 
@@ -65,7 +64,7 @@ Custom multiplier untuk menyesuaikan G1PeriodicGCSystemLoadThreshold value
   * **G1PERIODIC_GC_SYS_LOAD_THRESHOLD=\{CPU_cores_number\}*GC_SYS_LOAD_THRESHOLD_RATE**_  
 Mengaktifkan garbage collection, jika load rata-rata satu menit sistem di bawah nilai yang ditetapkan. Kondisi ini diabaikan jika diatur sebagai nol.
 
-![java garbage collection variables for scaling](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-garbage-collector/java-garbage-collector-2.png" alt="java garbage collection variables for scaling" width="100%"/>
 
 Anda dapat memeriksa pengaturan saat ini dari proses Java Anda dengan menjalankan **_ps -ax | grep java_**._ Anda akan melihat sesuatu seperti ini: _
 
@@ -93,7 +92,7 @@ Jika Anda percaya bahwa penyesuaian pengaturan default dapat meningkatkan perfor
 
 Anda dapat mengatur parameter GC kustom berdasarkan kebutuhan aplikasi Anda melalui [Environment Variables](<https://docs.jelastic.com/environment-variables/>) (harap jangan mencampurnya dengan opsi Java).
 
-![java garbage collection variables](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-garbage-collector/java-garbage-collector-3.png" alt="java garbage collection variables" width="100%"/>
 
   * **_JAVA_OPTIONS and JAVA_TOOL_OPTIONS** \- silakan [baca lebih lanjut tentang opsi-opsi ini](<https://stackoverflow.com/questions/28327620/difference-between-java-options-java-tool-options-and-java-opts>).  
 Java options dapat digunakan untuk mengubah jenis GC default, misalnya:
@@ -130,27 +129,27 @@ Jetty |  /opt/jetty/etc/variables.conf  or  /opt/shared/conf/etc/variables.conf
   
 1\. Buka file **Conf** untuk mengkonfigurasi server Java Anda.
 
-![java garbage collection configurations](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-garbage-collector/java-garbage-collector-4.png" alt="java garbage collection configurations" width="80%"/>
 
 2\. Untuk Tomcat, navigasikan ke file **opt** >**tomcat** >**conf** >**variables.conf**.
 
-![java garbage collection configurations](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-garbage-collector/java-garbage-collector-5.png" alt="java garbage collection configurations" width="60%"/>
 
 3\. Dalam file **variables.conf** yang terbuka Anda dapat menimpa pengaturan default garbage collector atau bahkan menambahkan GC lain untuk menggantikan yang default _(G1)_**._** Jadi jika Anda ingin menggunakan _ShenandoahGC_ sebagai gantinya, cukup tambahkan ke _variables.conf_ seperti yang tertera dalam contoh berikut:
 
 **_-XX:+UseShenandoahGC_**
 
-![java garbage collection change GC](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-garbage-collector/java-garbage-collector-6.png" alt="java garbage collection change GC" width="100%"/>
 
 4\. Setelah ini, hanya garbage collector yang ditentukan yang akan digunakan saat memulai server Java Anda tanpa memperhitungkan jumlah sumber daya yang dialokasikan.
 
 5\. Selain itu, Anda dapat mengontrol bagaimana JVM menangani memori heapnya dengan opsi JAVA lain yang tertera di file ini.
 
-![java garbage collection heap memory](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-garbage-collector/java-garbage-collector-7.png" alt="java garbage collection heap memory" width="100%"/>
 
 Akibat dari opsi yang dikonfigurasi dengan benar, GC dapat diamati dalam tindakan melalui tab [Statistics](<https://docs.jelastic.com/view-app-statistics/>).
 
-![java garbage collection statistics](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-garbage-collector/java-garbage-collector-8.png" alt="java garbage collection statistics" width="100%"/>
 
 Itulah itu! Nikmati efisiensi sumber daya saat menjalankan aplikasi Java Anda di cloud. Coba sendiri dengan [Jelastic Multi-Cloud PaaS](<https://jelastic.cloud/>).
 

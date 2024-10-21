@@ -22,13 +22,13 @@ Mari kita periksa cara untuk mendistribusikan Java Bean ke hosting PaaS dan meng
 
 2\. Klik tombol **Create environment** untuk membuka wizard topologi environment. Pilih **GlassFish** sebagai application server Anda dan atur batasan cloudlet sesuai dengan kebutuhan konsumsi sumber daya aplikasi Java enterprise Anda. Aktifkan **Public IP** untuk GlassFish, ketik nama untuk environment Anda dan klik **Create**. 
 
-![remote access to ejb glassfish create environment with glassfish](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-apps-specifications/remote-access-to-ejb-on-glassfish/remote-access-ejb-1.png" alt="remote access to ejb glassfish create environment with glassfish" width="100%"/>
 
 Tunggu sekitar satu menit untuk environment Anda dibuat.
 
 3\. Untuk melihat **Public IP** server GF Anda tekan tombol tambahan di sebelahnya. 
 
-![glassfish public ip](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-apps-specifications/remote-access-to-ejb-on-glassfish/remote-access-ejb-2.png" alt="glassfish public ip" width="100%"/>
 
 ### B. Create the application{#b-create-the-application}
 
@@ -115,17 +115,17 @@ Sebagai contoh berkas **.ear** Anda dapat menggunakan [paket ini](<https://downl
 
 ### C. Deploy the application{#c-deploy-the-application}
 
-1\. Arahkan ke platform dashboard, buka **Deployment manager** dan unggah **.ear** yang telah dibuat di dalamnya. Semoga tutorial ini membantu Anda untuk memahami dasar-dasar penggunaan antarmuka remote. Nikmati!
+1\. Arahkan ke platform dashboard, buka **Deployment manager** dan unggah **.ear** yang telah dibuat di dalamnya.
 
-![upload archive](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-apps-specifications/remote-access-to-ejb-on-glassfish/remote-access-ejb-3.png" alt="upload archive" width="70%"/>
 
 2\. Sebarkan paket yang diunggah ke environment GlassFish, yang dibuat dalam langkah A dari instruksi ini.
 
-![deploy archive](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-apps-specifications/remote-access-to-ejb-on-glassfish/remote-access-ejb-4.png" alt="deploy archive" width="70%"/>
 
 3\. Akhirnya, jalankan aplikasi Anda (tekan tombol **Open in browser** di sebelah environment-nya) dan periksa hasilnya. 
 
-![upload archive](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-apps-specifications/remote-access-to-ejb-on-glassfish/remote-access-ejb-5.png" alt="upload archive" width="100%"/>
 
 Semoga tutorial ini membantu Anda memahami penggunaan dasar antarmuka remote. Nikmati!
 

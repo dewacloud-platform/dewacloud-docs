@@ -6,7 +6,7 @@ title: WildFly Server
 
 # WildFly Application Server
 
-![WildFly logo](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-server/wildfly-server-1.png" alt="WildFly logo" width="20%"/>
 
 **[WildFly](<https://wildfly.org/>)** adalah runtime aplikasi modern yang fleksibel, ringan, dan dikelola, yang ditulis dalam Java dan mengimplementasikan standar dan teknologi terbaru dari spesifikasi Java Platform Enterprise Edition (Java EE). WildFly sepenuhnya gratis dan open source, tersedia untuk dijalankan di berbagai platform. Di antara fitur utama dari server aplikasi ini adalah:
 
@@ -25,7 +25,7 @@ Template ini menggunakan daemon inisialisasi modern systemd.
 
 1\. Masuk ke akun PaaS Anda dan klik tombol **New Environment** di sudut kiri atas dashboard.
 
-![new environment button](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-server/wildfly-server-2.png" alt="new environment button" width="60%"/>
 
 2\. Dalam wizard topologi lingkungan yang terbuka, navigasikan ke tab **Java** dan pilih **WildFly** (versi _**10-16**_ didukung) dari daftar server aplikasi yang tersedia. Kemudian, tentukan batas sumber daya yang dialokasikan menggunakan penggeser cloudlet, pilih [region](<https://docs.dewacloud.com/docs/environment-regions/>) (jika tersedia beberapa) dan edit nama lingkungan Anda.
 
@@ -33,17 +33,17 @@ Template ini menggunakan daemon inisialisasi modern systemd.
 WildFly tidak kompatibel dengan Java 6 dan 7; oleh karena itu versi ini tidak tersedia karena persyaratan sumber daya WildFly yang minimal, sangat disarankan untuk mengalokasikan lebih dari 1 cloudlet untuk node ini. Jika tidak, Anda dapat mengalami kinerja server yang rendah dan bahkan kegagalan server. WildFly dapat diluncurkan dalam mode Standalone menggunakan file konfigurasi yang didefinisikan dalam variabel lingkungan STANDALONE_MODE_CONFIG. Platform menyediakan dukungan dari pengaturan WildFly servers Auto-Clustering dalam mode Managed Domain melalui switcher yang sesuai di wizard topologi.
 :::
 
-![WildFly server topology wizard](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-server/wildfly-server-3.png" alt="WildFly server topology wizard" width="100%"/>
 
 Klik tombol **Create** ketika sudah siap.
 
 3\. Tunggu beberapa menit hingga lingkungan Anda dibuat dan klik tombol **Open in Browser** di sebelahnya.
 
-![WildFly open in browser](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-server/wildfly-server-4.png" alt="WildFly open in browser" width="100%"/>
 
 4\. Halaman standar WildFly menyuguhkan beberapa tautan berguna untuk membantu Anda memulai.
 
-![WildFly home page](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-server/wildfly-server-5.png" alt="WildFly home page" width="100%"/>
 
 Untuk mengakses _**WildFly Administration Console**_ , klik tautan yang sesuai (lingkaran dalam gambar di atas) atau dapatkan URL dari email (diterima setelah pembuatan server) bersama dengan kredensial akses lainnya.
 
@@ -53,7 +53,7 @@ Selain itu, Anda dapat membuat [koneksi SSH](<https://docs.dewacloud.com/docs/ss
 
 Server aplikasi WildFly dijalankan dalam mode “_standalone_” secara default sehingga setiap instance adalah proses independen berdasarkan file konfigurasi yang didefinisikan melalui [variabel lingkungan](<https://docs.dewacloud.com/docs/environment-variables/>) _**STANDALONE_MODE_CONFIG**_.
 
-![WildFly standalone config variable](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-server/wildfly-server-6.png" alt="WildFly standalone config variable" width="100%"/>
 
 Ada empat profil bersertifikat untuk mode standalone:
 

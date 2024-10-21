@@ -16,7 +16,7 @@ Hingga saat ini, ada sangat sedikit contoh (misalnya untuk [GlassFish](<https://
 
 Namun, mode managed domain masih hebat! Sebagian besar aplikasi besar dan penting misi seperti perbankan dan penagihan tetap berjalan pada Jakarta EE di VM. Clustering [Jakarta EE](<https://jakartablogs.ee/>) terintegrasi memberikan fungsionalitas yang diminati orang, termasuk ketersediaan tinggi dan deployment otomatis di antara server aplikasi Java yang terdistribusi terlepas dari infrastruktur yang mendasarinya, dan, tentu saja, Panel Admin untuk mengelola kluster Anda menggunakan UI yang bagus. 
 
-![wildfly admin panel ui](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-managed-domain/wildfly-managed-domain-1.png" alt="wildfly admin panel ui" width="100%"/>
 
 Untuk lebih memahami manfaat dari teknologi clustering yang terintegrasi secara native, silakan merujuk ke artikel bagus “[Under the Hood of J2EE Clustering](<https://www.theserverside.com/news/1364410/Under-the-Hood-of-J2EE-Clustering>)”. Menggabungkan fungsionalitas kaya ini dengan container yang siap digunakan memberikan manfaat besar dengan menghemat waktu dan upaya tim, dan memungkinkan iterasi cepat karena sebagian besar pengembang tidak berurusan dengan container atau VM jika pengaturan lingkungan sepenuhnya otomatis.
 
@@ -33,11 +33,11 @@ Kita dapat dengan mudah menjalankan satu layanan besar atau beberapa layanan kec
 
 Mari kita lihat topologi kluster WildFly dalam mode managed domain, yang ditampilkan dalam dokumentasi resmi. Ilustrasi di bawah ini memberikan gambaran tentang kompleksitas arsitektur managed domain. Skema ini dianggap sebagai topologi klasik Jakarta EE di VM, atau yang disebut sebagai "naga legacy" yang harus dijinakkan dan didekomposisi dengan benar ke dalam container.
 
-![complex managed domain topology](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-managed-domain/wildfly-managed-domain-2.png" alt="complex managed domain topology" width="100%"/>
 
 Kami menyesuaikan ilustrasi ini untuk tampilan topologi yang sedikit lebih baik, serta untuk menunjukkan proses Java “tersembunyi” tambahan di dalam setiap VM atau host bare metal. Ini akan membantu kita selama dekomposisi selanjutnya.
 
-![java processes inside VM](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-managed-domain/wildfly-managed-domain-3.png" alt="java processes inside VM" width="100%"/>
 
 - **Worker Server** adalah proses JVM tempat aplikasi Jakarta EE perusahaan di-deploy dan menangani permintaan.
 - **Host Controller** adalah proses JVM yang bertanggung jawab untuk mengonfigurasikan Worker Server dan sinkronisasi antara Server dan Domain Controller.
@@ -66,7 +66,7 @@ Selain itu, container sistem memberikan isolasi sumber daya dan keamanan yang le
 
 Kami siap memulai perjalanan dekonstruksi kami. Aturan pertama adalah dalam semangat microservices - selalu lebih baik menempatkan hanya satu Worker Server untuk satu container. Selain itu, kami membuat hanya satu kelompok server per domain untuk semua container di dalam kluster. Penyesuaian sederhana semacam itu akan memberikan fleksibilitas yang luar biasa dan diinginkan untuk menskalakan setiap Worker Server secara vertikal, meningkatkan [efisiensi penggunaan sumber daya](<https://docs.dewacloud.com/company/blog/stop-overpaying-for-java-cloud-hosting-resources/?utm_source=blog-wildfly-managed-domain>), dan menskalakan kelompok container tersebut secara horizontal dengan menambahkan instans baru sesuai kebutuhan.
 
-![resource usage efficiency](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-managed-domain/wildfly-managed-domain-4.png" alt="resource usage efficiency" width="100%"/>
 
 Perlu diingat bahwa setiap container untuk menangani permintaan yang masuk menjalankan 3 proses Java: Worker Server (WS), Host Controller (HC) dan Process Controller (PC). Dan container admin yang mengelola kluster menjalankan 2 proses Java: Domain Controller (DC) dan Process Controller (PC).
 
@@ -83,30 +83,30 @@ Di bawah ini, Anda akan melihat bagaimana WildFly standalone diubah menjadi klus
 Dengan Jelastic, topologi yang diperlukan dapat dibangun menggunakan wizard yang nyaman:
 
 1\. Buat lingkungan baru  
-![create new wildfly environment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-managed-domain/wildfly-managed-domain-5.png" alt="create new wildfly environment" width="60%"/>
 
   - Pilih versi WildFly yang sesuai
   - Atur batas penskalaan vertikal
   - Ubah nama lingkungan jika diperlukan (misalnya, **wildfly**)
 
-![standalone wildfly via wizard](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-managed-domain/wildfly-managed-domain-6.png" alt="standalone wildfly via wizard" width="100%"/>
 
 Anda akan menerima konfirmasi email tentang pembuatan lingkungan dengan kredensial untuk Panel Admin.  
-![add wildfly node](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-managed-domain/wildfly-managed-domain-7.png" alt="add wildfly node" width="100%"/>
 
 2\. Sekarang, Anda siap untuk melakukan deployment aplikasi ke server standalone yang baru disiapkan.
 
 Di Deployment manager, klik tombol **Deploy to…**.  
-![deploy the application](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-managed-domain/wildfly-managed-domain-8.png" alt="deploy the application" width="100%"/>
 
 Tentukan **Context** sesuai kebutuhan atau biarkan default ROOT.  
-![deploy java application](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-managed-domain/wildfly-managed-domain-9.png" alt="deploy java application" width="60%"/>
 
 Pastikan bahwa aplikasi Anda berjalan, dengan menekan **Open in browser** di dekat lingkungan yang dibuat.  
-![create wildfly environment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-managed-domain/wildfly-managed-domain-10.png" alt="create wildfly environment" width="100%"/>
 
 Jika Anda masuk ke container Anda melalui [Web SSH client](<https://docs.dewacloud.com/web-ssh-client/?utm_source=blog-wildfly-managed-domain>) bawaannya, Anda akan melihat hanya satu proses **Standalone** yang berjalan.  
-![web ssh client](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-managed-domain/wildfly-managed-domain-11.png" alt="web ssh client" width="100%"/>
 
 ## Mendapatkan WildFly Terkelompok dengan Mode Managed Domain{#get-clustered-wildfly-with-managed-domain-mode}
 
@@ -115,15 +115,15 @@ Clustering WildFly dengan mode domain dikonfigurasikan secara otomatis melalui f
 - **Secara Manual**
 
 Tambahkan server baru melalui wizard saat membuat lingkungan atau dengan [mengubah topologinya](<https://docs.dewacloud.com/dashboard-guide/?utm_source=blog-wildfly-managed-domain>).  
-![change wildfly environment topology](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-managed-domain/wildfly-managed-domain-12.png" alt="change wildfly environment topology" width="100%"/>
 
 Cukup merujuk ke lapisan server aplikasi dalam panel lingkungan sebelah kiri, aktifkan mode Auto-Clustering dan tambahkan **(+)** node dalam frame [Horizontal Scaling](<https://docs.dewacloud.com/horizontal-scaling/?utm_source=blog-wildfly-managed-domain>).  
-![wildfly horizontal scaling](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-managed-domain/wildfly-managed-domain-13.png" alt="wildfly horizontal scaling" width="100%"/>
 
 - **Secara Otomatis**
 
 Jumlah server dapat diubah secara otomatis dengan mengatur [triggers penskalaan](<https://docs.dewacloud.com/automatic-horizontal-scaling/?utm_source=blog-wildfly-managed-domain>) berdasarkan konsumsi sumber daya dalam **Settings > Auto Horizontal Scaling**.  
-![wildfly horizontal scaling](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-managed-domain/wildfly-managed-domain-14.png" alt="wildfly horizontal scaling" width="100%"/>
 
 **Catatan**:
 
@@ -136,43 +136,43 @@ Setelah penskalaan selesai (manual atau otomatis), semua instans WildFly akan be
 Setelah penskalaan ini, aplikasi yang sebelumnya di-deploy juga secara otomatis di-deploy ulang ke seluruh instans WildFly di kluster. Selain itu, konfigurasi kolam koneksi database dan penyesuaian konfigurasi lainnya, yang sebelumnya dibuat melalui konsol admin WildFly, direplikasi di seluruh lapisan server aplikasi.
 
 Anda dapat memeriksa bagaimana topologi WildFly berubah dari mode standalone menjadi kluster managed domain:  
-![wildfly environment running](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-managed-domain/wildfly-managed-domain-15.png" alt="wildfly environment running" width="100%"/>
 
 Node Pekerja menjalankan 3 proses alih-alih satu seperti dalam mode standalone:
 
 - Server:worker
 - Process Controller
 - Host Controller  
-  ![web ssh wildfly node](#)
+  <img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-managed-domain/wildfly-managed-domain-16.png" alt="web ssh wildfly node" width="100%"/>
 
 Dan node Domain Controller memiliki dua proses yang berjalan:
 
 - Process Controller
 - Host Controller  
-  ![Domain Controller node](#)
+  <img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-managed-domain/wildfly-managed-domain-17.png" alt="Domain Controller node" width="100%"/>
 
 Selain itu, perubahan topologi disinkronkan dan ditampilkan dalam Panel Admin WildFly.  
-![wildfly admin panel](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-managed-domain/wildfly-managed-domain-18.png" alt="wildfly admin panel" width="100%"/>
 
 Dengan cara ini, Anda mendapatkan kluster WildFly siap pakai yang dapat diskalakan keluar dan masuk, membuat hosting aplikasi Anda sangat fleksibel dan hemat biaya.
 
 ## Ketersediaan Aplikasi di antara Pekerja{#application-availability-among-workers}
 
 Aplikasi yang di-deploy ke server standalone di-deploy ulang ke semua instans server selama transformasi ke kluster. Untuk memeriksa ini, Anda dapat mengeklik **Open in browser** di setiap Pekerja.  
-![application availability among workers](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-managed-domain/wildfly-managed-domain-19.png" alt="application availability among workers" width="100%"/>
 
 Selain itu, Anda dapat memastikan bahwa kluster menyediakan ketersediaan tinggi. Untuk ini, tekan tombol **Restart node** untuk satu atau bahkan dua node dan coba akses aplikasi Anda melalui **Open in browser** untuk seluruh kluster.  
-![restart wildfly nodes](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-managed-domain/wildfly-managed-domain-20.png" alt="restart wildfly nodes" width="100%"/>
 
 Aplikasi akan kembali berjalan tanpa interupsi.
 
 ## Mengkloning Kluster dalam Mode Domain{#cloning-cluster-in-domain-mode}
 
 Saat merilis versi aplikasi baru atau hanya menerapkan beberapa penyesuaian penting, adalah praktik yang baik untuk memeriksa bagaimana perubahan baru yang diterapkan dapat mempengaruhi kerja layanan. Jelastic PaaS memungkinkan Anda menyelesaikan pengujian semacam itu 'secara langsung' (yaitu tanpa downtime layanan dan secara implisit untuk pelanggan Anda) dengan opsi **Clone Environment**.  
-![clone wildfly environment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-managed-domain/wildfly-managed-domain-21.png" alt="clone wildfly environment" width="100%"/>
 
 Lingkungan yang dikloning adalah salinan kluster siap pakai dengan semua modifikasi yang diperlukan sudah diterapkan. Node Domain Controller yang baru disiapkan beroperasi dengan Pekerja yang dikloning yang sesuai, yang sudah terdaftar dalam panel adminnya. Dan aplikasi dari lingkungan asli di-deploy ke yang dikloning. Oleh karena itu, satu-satunya hal yang tersisa adalah memeriksa ulang kode aplikasi dan konfigurasi server khusus Anda untuk IP/domain yang dikodekan dan memperbaikinya sesuai (jika ada masalah).  
-![running wildfly environment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-managed-domain/wildfly-managed-domain-22.png" alt="running wildfly environment" width="100%"/>
 
 Dengan cara ini, Anda dapat menerapkan perubahan yang dimaksudkan pada salinan lingkungan Anda tanpa mempengaruhi produksi yang sebenarnya. Untuk meningkatkan ketersediaan tinggi sistem, Jelastic menggunakan **beberapa Load-Balancer yang disinkronkan**, ditempatkan di node yang berbeda, untuk menangani permintaan secara bersamaan. Semuanya bekerja dengan penyimpanan data tunggal, yang membuatnya sepenuhnya dapat dipertukarkan jika terjadi masalah pada salah satu instans.
 

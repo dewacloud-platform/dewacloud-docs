@@ -22,11 +22,11 @@ Secara umum, setiap “solusi berkluster” dapat didefinisikan sebagai kumpulan
 
 Mulai dari versi Jelastic 5.5.3, fitur **Auto-Clustering** baru diperkenalkan yang memungkinkan untuk mengaktifkan klasterisasi instans GlassFish dan Payara langsung dalam wizard topologi:
 
-![auto clustering in cloud](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/payara/payara-1.png" alt="auto clustering in cloud" width="100%"/>
 
 Pilih server aplikasi _GlassFish_ atau _Payara_ pada tab **Java** di wizard. Kemudian, di bagian tengah, temukan dan aktifkan pengalih **_Auto-Clustering_** yang sesuai. Konfigurasikan pengaturan lain sesuai kebutuhan Anda termasuk [skala horizontal](<https://docs.jelastic.com/horizontal-scaling/>) untuk mendapatkan solusi yang andal sejak awal.
 
-![auto clustering in cloud](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/payara/payara-2.png" alt="auto clustering in cloud" width="40%"/>
 
 **Tip:** Fitur **_Auto-Clustering_** juga tersedia untuk beberapa template perangkat lunak lainnya (misalnya, [_MySQL_](<https://docs.dewacloud.com/company/blog/mysql-mariadb-database-auto-clustering-cloud-hosting/>), [_MariaDB_](<https://docs.dewacloud.com/company/blog/mysql-mariadb-database-auto-clustering-cloud-hosting/>), [PostgreSQL](<https://docs.dewacloud.com/company/blog/postgresql-auto-clustering-master-slave-replication/>), [Tomcat/TomEE](<https://docs.dewacloud.com/company/blog/tomcat-tomee-clustering-automation/>), [WildFly](<https://docs.dewacloud.com/company/blog/wildfly-managed-domain-automatic-clustering-scaling/>), [Shared Storage](<https://docs.jelastic.com/shared-storage-container/>), [MongoDB](<https://docs.dewacloud.com/company/blog/mongodb-auto-clustering/>), dan [_Couchbase_](<https://docs.jelastic.com/auto-clustering/#couchbase>)).
 
@@ -39,7 +39,7 @@ Untuk produksi, klasterisasi adalah pilihan yang hampir wajib untuk memastikan k
   - server administrasi ditautkan ke semua pekerja dalam lapisan server aplikasi dengan hostname alias _DAS_, yang dapat digunakan oleh pekerja untuk interaksi lebih lanjut
   - untuk memungkinkan konektivitas dan kontrol node yang tepat, sistem secara otomatis menghasilkan pasangan kunci SSH untuk node DAS dan meletakkannya dalam sebuah [volume](<https://docs.jelastic.com/container-volumes/>), yang dipasang di semua instans kluster lainnya
 
-![auto clustering topology](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/payara/payara-3.png" alt="auto clustering topology" width="100%"/>
 
 ## Implementasi Replikasi Sesi{#session-replication-implementation}
 
@@ -51,11 +51,11 @@ Bersama dengan mekanisme sticky sessions yang secara otomatis dikonfigurasi pada
 
 Di dalam kluster GlassFish, replikasi sesi didukung oleh Layanan Manajemen Kelompok ([**GMS**](<https://docs.oracle.com/cd/E19879-01/821-0182/gjfnl/index.html>)) – sebuah komponen bawaan server aplikasi yang memastikan perlindungan failover, replikasi dalam memori, dan layanan transaksi serta timer untuk instans kluster.
 
-![glassfish session replication](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/payara/payara-4.png" alt="glassfish session replication" width="100%"/>
 
 GMS menggunakan [**TCP** tanpa multicast](<https://docs.oracle.com/cd/E26576_01/doc.312/e24934/clusters.htm#GSHAG485>) untuk mendeteksi instans kluster. Ketika node baru bergabung dengan kluster GlassFish, sistem mendeteksi ulang semua pekerja yang sedang berjalan dan node DAS - mekanisme [penemuan otomatis](<https://docs.oracle.com/cd/E26576_01/doc.312/e24934/clusters.htm#CHDIGFCG>) tersebut diterapkan melalui properti **GMS_DISCOVERY_URI_LIST** yang diatur ke nilai **_generate_**.
 
-![glassfish cluster properties](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/payara/payara-5.png" alt="glassfish cluster properties" width="100%"/>
 
 ### Replikasi Sesi Payara dengan Hazelcast{#payara-session-replication-with-hazelcast}
 
@@ -65,11 +65,11 @@ Untuk memungkinkan replikasi sesi, Anda harus terlebih dahulu mengaktifkan keter
 
 Dalam Payara Server 4, Anda harus mengaktifkan Hazelcast dan secara manual mengkonfigurasi keterjangkauan. Ini semua disetel secara default di Payara 5 saat ini. Jika sudah mengubah konfigurasi apa pun, pastikan layanan keterjangkauan diaktifkan dan jenis penyimpanannya adalah "hazelcast" pada halaman aksesibilitas kontainer web.
 
-![payara cluster hazelcast](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/payara/payara-6.png" alt="payara cluster hazelcast" width="100%"/>
 
 Untuk mengelola pengaturan Hazelcast, akseslah Konsol Administrasi dan kunjungi halaman konfigurasi [Domain Data Grid](<https://docs.payara.fish/enterprise/docs/documentation/payara-server/hazelcast/configuration.html>). Fitur Domain Data Grid Payara didasarkan pada pustaka Hazelcast. Ini menyediakan fungsi yang dibutuhkan untuk deployment group (fungsi clustering), fungsi caching, objek cluster CDI tunggal dan pemantauan penyimpanan data di Payara.
 
-![payara hazelcast configuration](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/payara/payara-7.png" alt="payara hazelcast configuration" width="100%"/>
 
 ## Menerapkan Aplikasi Contoh untuk Uji HA{#deploy-example-application-for-ha-testing}
 
@@ -77,31 +77,31 @@ Sekarang, mari kita periksa ketersediaan tinggi dari kluster yang tersusun otoma
 
 1\. Klik **Open in browser** di samping lingkungan Anda untuk mengakses halaman awal server aplikasi.
 
-![glassfish cluster application](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/payara/payara-8.png" alt="glassfish cluster application" width="100%"/>
 
 Di halaman yang terbuka, pilih referensi **go to the Administration Console** dan masuk dengan kredensial yang diberikan kepada Anda melalui email saat pembuatan lingkungan.
 
 2\. Beralih ke bagian **Applications** dan unggah aplikasi [clusterjsp.ear](<https://raw.githubusercontent.com/jelastic-jps/glassfish/master/glassfish-cluster/test-app/clusterjsp.ear>) ke lokasi **Packaged File to Be Uploaded to the Server**.
 
-![glassfish cluster deploy](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/payara/payara-9.png" alt="glassfish cluster deploy" width="100%"/>
 
 3\. Periksa untuk memastikan **Availability** diaktifkan dan atur **_cluster1_** sebagai target aplikasi, lalu klik **OK** untuk melanjutkan.
 
-![glassfish payara targets](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/payara/payara-10.png" alt="glassfish payara targets" width="100%"/>
 
 4\. Sekarang, buka lingkungan di browser dan tambahkan **_/clusterjsp_** ke URL.
 
-![glassfish payara ha](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/payara/payara-11.png" alt="glassfish payara ha" width="100%"/>
 
 Beri Nama dan Nilai khusus untuk atribut sesi Anda sendiri dan klik **Add Session Data**.
 
 5\. Kembali ke panel admin dan navigasi ke tab **Clusters > cluster1 > Instances**. Di sini, pilih dan **Stop** instans yang sesi Anda sedang berjalan (namanya di lingkaran pada gambar di atas).
 
-![glassfish cluster test](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/payara/payara-12.png" alt="glassfish cluster test" width="100%"/>
 
 6\. Kembali ke aplikasi kami dan **Reload Page** dengan tombol yang sesuai.
 
-![glassfish cluster success](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/payara/payara-13.png" alt="glassfish cluster success" width="100%"/>
 
 Seperti yang Anda lihat, meskipun sesi diurus oleh instans lain, atribut khusus kami masih ditampilkan.
 
@@ -110,23 +110,23 @@ Seperti yang Anda lihat, meskipun sesi diurus oleh instans lain, atribut khusus 
 - _Web Container Availability_
 - _EJB Container Availability_
 
-![glassfish replication settings](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/payara/payara-14.png" alt="glassfish replication settings" width="100%"/>
 
 ## Kloning Kluster untuk Pengujian A/B{#cloning-cluster-for-ab-testing}
 
 Saat merilis versi aplikasi baru atau sekadar menerapkan beberapa penyesuaian penting, merupakan praktik yang baik untuk memeriksa bagaimana perubahan yang baru diterapkan dapat memengaruhi kerja layanan dan ketertarikan pengguna Anda. Jelastic PaaS memungkinkan Anda melakukan pengujian seperti itu ‘secara cepat’ (yaitu tanpa waktu henti layanan dan secara tidak langsung untuk pelanggan Anda) dengan opsi **Clone Environment**.
 
-![glassfish cluster cloning](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/payara/payara-15.png" alt="glassfish cluster cloning" width="100%"/>
 
 Hasilnya, salinan kluster siap pakai akan dibuat, dengan semua modifikasi yang diperlukan sudah diterapkan. Lebih tepatnya, ini berarti bahwa node DAS yang dikloning beroperasi dengan pekerja yang dikloning yang sudah terdaftar dalam panel adminnya, dan semua aplikasi dari lingkungan asli di-deploy juga ke lingkungan yang dikloning tersebut. Oleh karena itu, satu-satunya yang tersisa bagi Anda adalah memeriksa ulang kode aplikasi & konfigurasi server khusus untuk IP/domain yang dikodekan secara keras dan memperbaikinya sesuai, jika ada.
 
-![glassfish clusters](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/payara/payara-16.png" alt="glassfish clusters" width="100%"/>
 
 Dengan cara ini, Anda dapat menerapkan perubahan yang dimaksudkan ke salinan lingkungan Anda tanpa mempengaruhi lingkungan produksi yang sebenarnya.
 
 Selanjutnya, Anda juga dapat mengevaluasi produktivitas dan efektivitas versi aplikasi yang dimodifikasi dibandingkan dengan yang saat ini asli, yaitu melakukan apa yang disebut _A/B Testing_. Di Jelastic PaaS, ini dapat diimplementasikan dengan add-on [Traffic Distributor](<https://docs.jelastic.com/traffic-distributor/>) tambahan.
 
-![glassfish traffic distributor](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/payara/payara-17.png" alt="glassfish traffic distributor" width="40%"/>
 
 Diletakkan di depan sepasang lingkungan dengan mode _Sticky Sessions_ yang dipilih, ini menyediakan routing cerdas dari permintaan yang masuk sesuai dengan bobot backend yang dinyatakan. Untuk detail lebih lanjut tentang konfigurasi TD yang tepat dalam kasus ini, lihat panduan [A/B Testing](<https://docs.jelastic.com/ab-testing/>).
 
