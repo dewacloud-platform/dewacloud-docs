@@ -15,9 +15,9 @@ Tiga alasan utama mengapa platform menyediakan server berbasis peran individu ad
 
 ## Isolated Containers Live Migration{#isolated-containers-live-migration}
 
-Dalam beberapa kasus, ketika aplikasi Anda mulai meminta lebih banyak _**sumber daya**_ , server fisik yang menjalankan node Anda mungkin tidak dapat menyediakan sumber daya yang dibutuhkan. Dalam kasus ini, platform dapat melakukan _**live migration**_ dari node ke host lain dalam waktu 30 detik.
+Dalam beberapa kasus, ketika aplikasi Anda mulai meminta lebih banyak _**sumber daya**_, server fisik yang menjalankan node Anda mungkin tidak dapat menyediakan sumber daya yang dibutuhkan. Dalam kasus ini, platform dapat melakukan _**live migration**_ dari node ke host lain dalam waktu 30 detik.
 
-![containers live migration to another server](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/isolated-containers/containers-live-migration-to-another-server.png" alt="containers live migration to another server" width="100%"/>
 
 Selama migrasi tersebut, aplikasi terus berjalan dengan [vertical scaling](https://docs.dewacloud.com/docs/automatic-vertical-scaling/). Ketika sebuah aplikasi skalanya membesar dalam sebuah server, aplikasi lainnya dapat dimigrasikan ke server lain untuk memberikan ruang. Live migration memungkinkan platform untuk menyediakan semua sumber daya yang dibutuhkan untuk aplikasi tanpa me-restart containers dan menyebabkan downtime aplikasi. Selain itu, ini dapat digunakan selama maintenance atau downtime yang direncanakan lainnya untuk melakukan evakuasi otomatis dari containers dari server fisik.
 
@@ -27,7 +27,7 @@ Juga, Anda dapat menambahkan _**lebih banyak instance**_ ke environment Anda men
 
 Platform menyediakan **availability tertinggi** dengan mendistribusikan containers dari satu environment secara merata pada server fisik yang berbeda (hardware nodes). Ini dilakukan dengan bantuan kelompok anti-affinity yang dikonfigurasi untuk menentukan bahwa container tertentu tidak boleh berjalan pada server fisik yang sama.
 
-![containers high-availability](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/isolated-containers/containers-high-availability.png" alt="containers high-availability" width="100%"/>
 
 Sebagai hasilnya, platform menghilangkan risiko downtime aplikasi jika salah satu server fisik memiliki masalah dengan kinerja.
 

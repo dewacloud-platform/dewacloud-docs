@@ -37,7 +37,7 @@ PaaS adalah cluster terisolasi dengan sekelompok server dan sumber daya lain yan
 
 PaaS Cluster mencakup _Hardware Nodes_ di mana [container virtual terisolasi](http://en.wikipedia.org/wiki/Software_container) yang disediakan untuk environment berada dan _Cluster Orchestrator (Infrastructure Node_) untuk pemrosesan komponen internal.
 
-![PaaS cluster](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/architecture-overview/paas-cluster-overview/01-paas-cluster.png" alt="PaaS cluster" width="100%"/>
 
 Ikuti link berikut untuk mendapatkan informasi lebih mendetail tentang setiap komponen cluster:
 

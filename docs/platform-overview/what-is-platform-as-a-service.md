@@ -44,3 +44,5 @@ Pertimbangkan poin penting ini saat memilih PaaS:
 - Waspadai vendor dan data lock-in karena desain yang eksklusif yang mungkin membatasi portabilitas aplikasi, membuat migrasi cloud atau interoperabilitas multi-cloud menjadi tantangan.
 
 Di dunia cloud saat ini, batas produk spesifik bergabung dengan integrasi yang tersedia. Jelastic Multi-Cloud PaaS menawarkan [kebebasan pilihan](https://www.virtuozzo.com/company/blog/turnkey-multi-cloud-paas-freedom) dalam layanan cloud, alat DevOps, dan container. [Coba sekarang](https://jelastic.com/) untuk secara signifikan meningkatkan produktivitas pengembangan dan pengiriman aplikasi.
+
+<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/what-is-platform-as-a-service/what-is-paas-768x432.png" alt="What is PaaS" width="100%"/>

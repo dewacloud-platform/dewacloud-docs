@@ -7,9 +7,9 @@ title: System Containers
 
 **System container** (juga dikenal sebagai _operating system container_) adalah tipe container tertua. Ini adalah solusi yang berfokus pada sistem operasi (OS) yang berperilaku seperti sistem mandiri, yang tidak memerlukan perangkat lunak khusus atau custom image seperti Docker. System containers sangat mirip dengan virtual machines (VMs) tetapi dengan overhead yang sangat rendah dan manajemen yang mudah.
 
-System container menjalankan sistem init yang lengkap (_systemd_ , _SysVinit_ , _Upstart_ , _OpenRC_ , dll.), yang memungkinkan penciptaan beberapa proses (misalnya _OpenSSH_ , _crond_ , atau _syslogd_) dalam satu container di bawah OS yang sama. System containers paling cocok untuk aplikasi monolitik tradisional atau legacy, karena mereka memungkinkan penggunaan kembali arsitektur, alat, dan konfigurasi yang diterapkan untuk VMs.
+System container menjalankan sistem init yang lengkap (_systemd_, _SysVinit_, _Upstart_, _OpenRC_, dll.), yang memungkinkan penciptaan beberapa proses (misalnya _OpenSSH_, _crond_, atau _syslogd_) dalam satu container di bawah OS yang sama. System containers paling cocok untuk aplikasi monolitik tradisional atau legacy, karena mereka memungkinkan penggunaan kembali arsitektur, alat, dan konfigurasi yang diterapkan untuk VMs.
 
-![services in application and system containers](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/system-containers/services-in-application-and-system-containers.png" alt="services in application and system containers" width="100%"/>
 
 Spesifikasi dari system containers memberikan beberapa keuntungan dan kekhususan:
 
@@ -17,7 +17,7 @@ Spesifikasi dari system containers memberikan beberapa keuntungan dan kekhususan
 * System containers hidup berdampingan secara harmonis dengan ekosistem Java dan tidak memerlukan penyesuaian khusus agar proses Java sadar bahwa mereka berjalan di dalam containers.
 * System containers mendukung solusi yang ada untuk menerapkan hot redeployment tanpa perlu me-restart container atau runtime Java. Juga, mereka menyederhanakan dan mempercepat [clustering dari Java EE / Jakarta EE application servers](https://www.virtuozzo.com/company/blog/glassfish-payara-auto-clustering-cloud-hosting/).
 
-Ada beberapa implementasi yang berbeda dari system containers: _BSD jails_ , _Linux vServer_ , _Solaris Zones_ , _OpenVZ/Virtuozzo_ , _LXC/LXD_. Dalam kasus platform, solusi _[Virtuozzo](https://docs.dewacloud.com/docs/application-platform/)_ digunakan, yang membantu menjalankan ribuan system containers pada host node yang sama dan mempermudah pengelolaan mereka seperti sekumpulan proses.
+Ada beberapa implementasi yang berbeda dari system containers: _BSD jails_, _Linux vServer_, _Solaris Zones_, _OpenVZ/Virtuozzo_, _LXC/LXD_. Dalam kasus platform, solusi _[Virtuozzo](https://docs.dewacloud.com/docs/application-platform/)_ digunakan, yang membantu menjalankan ribuan system containers pada host node yang sama dan mempermudah pengelolaan mereka seperti sekumpulan proses.
 
 ## Baca Juga{#whats-next}
 

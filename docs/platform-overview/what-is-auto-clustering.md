@@ -24,15 +24,15 @@ Selain opsi Auto-Clustering dalam topology wizard, sejumlah solusi clusterisasi 
 
 1. Pilih salah satu stack yang terdaftar dalam topology wizard. **Auto-Clustering** switcher yang sesuai akan tersedia di bagian tengah frame.
 
-![stack auto-clustering in topology wizard](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/what-is-auto-clustering/02-stack-auto-clustering-in-topology-wizard.png" alt="stack auto-clustering in topology wizard" width="100%"/>
 
 2. Anda dapat mengarahkan kursor ke ikon **hint** untuk informasi tambahan tentang implementasi auto-clustering stack tertentu ini. Dalam deskripsi, Anda dapat menemukan tautan **Learn More** ke dokumentasi dengan gambaran yang lebih luas.
 
-![auto-cluster description](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/what-is-auto-clustering/03-auto-cluster-description.png" alt="auto-cluster description" width="100%"/>
 
 3. Juga, setelah mengaktifkan Auto-Clustering, beberapa konfigurasi tambahan dapat muncul untuk kustomisasi lebih lanjut dari cluster. Sebagai contoh, **MariaDB auto-cluster** memungkinkan untuk memilih _Scheme_ replikasi dan menambahkan _ProxySQL_ load balancer khusus untuk cluster database ini:
 
-![auto-cluster additional configs](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/what-is-auto-clustering/04-auto-cluster-additional-configs.png" alt="auto-cluster additional configs" width="100%"/>
 
 ## Materi Tambahan Auto-Clustering{#additional-materials-on-auto-clustering}
 
@@ -45,7 +45,7 @@ Platform menyediakan dokumentasi ekstensif, beberapa blog post, dan halaman GitH
 * [Out-of-Box GlassFish & Payara Clustering: Running Java EE Highly-Available Applications in the Cloud](https://www.virtuozzo.com/company/blog/glassfish-payara-auto-clustering-cloud-hosting/) \- menunjukkan cara mengatur cluster yang sangat tersedia dengan GlassFish dan Payara Micro untuk menjalankan Java EE applications
 * [Jenkins Cluster Hosting for Continuous Integration and Delivery (CI/CD)](https://www.virtuozzo.com/company/blog/jenkins-cluster-hosting-continuous-integration-delivery/) \- otomatisasi continuous integration dan delivery dari Java applications Anda menggunakan pre-configured master-slave Jenkins cluster
 * [WildFly Managed Domain in Containers: Automatic Micro Clustering and Scaling](https://www.virtuozzo.com/company/blog/wildfly-managed-domain-in-containers-auto-micro-clustering-and-scaling/) \- menjelaskan cara memperluas WildFly dari standalone server ke cluster dalam managed domain mode untuk menjalankan cloud-native microservices
-* [Shared Storage Container Auto-Clustering](https://docs.dewacloud.com/docs/shared-storage-container/) \- mengkonfigurasi cluster penyimpanan yang andal dengan dukungan _AutoFS_ , _NFSv4_ , dan _GlusterFS_
+* [Shared Storage Container Auto-Clustering](https://docs.dewacloud.com/docs/shared-storage-container/) \- mengkonfigurasi cluster penyimpanan yang andal dengan dukungan _AutoFS_, _NFSv4_, dan _GlusterFS_
 * [Solutions Collection on GitHub](https://github.com/jelastic-jps) \- menyimpan solusi otomasi platform, termasuk Auto-Clustering (misalnya, [db-clustering](https://github.com/jelastic-jps/db-clustering), [wildfly](https://github.com/jelastic-jps/wildfly), [glassfish](https://github.com/jelastic-jps/glassfish), dan repositori lainnya)
 
 ## Baca Juga{#whats-next}
