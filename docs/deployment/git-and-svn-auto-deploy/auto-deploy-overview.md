@@ -21,13 +21,13 @@ Cukup perbarui kode Anda, lakukan commit, dan semua perubahan dalam proyek VCS A
 
 2. Setelah environment Anda dibuat, klik tombol **Add project** di sebelah node yang sesuai (mis. _Maven_ untuk Java atau server aplikasi Anda untuk bahasa lain).
 
-   ![git svn auto deploy 2dashb](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/deployment/git_&_svn_auto-deploy/auto-deploy-overview/2dashb.png" alt="git svn auto deploy 2dashb" width="100%"/>
 
 3. Dalam jendela yang terbuka, beralih ke tab dengan jenis VCS yang digunakan dan isi kolom yang diperlukan: masukkan **URL** ke repositori yang diperlukan, tentukan detail autentikasi, dan tunjukkan nama untuk **Context** tempat aplikasi Anda harus ditempatkan.
 
    Juga, dalam kasus penggunaan node build Maven, Anda perlu menentukan **Name** untuk proyek Anda dan **Environment** yang akan dideploy.
 
-   ![git svn auto deploy 3add](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/deployment/git_&_svn_auto-deploy/auto-deploy-overview/3add.png" alt="git svn auto deploy 3add" width="100%"/>
 
    :::tip
    Jika Anda memerlukan informasi lebih rinci tentang opsi-opsi ini, rujuk pada panduan Deployment terkait dan Maven untuk Deploy via Git/SVN untuk spesifikasi engine Java.
@@ -39,7 +39,7 @@ Sekarang, karena semua informasi penting untuk deployment telah dicantumkan, And
 
 1. Centang garis _**Check and auto-deploy updates**_ untuk mengaktifkannya dan mendapatkan bagian yang sesuai diperluas.
 
-   ![git svn auto deploy 3.5autodeploy](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/deployment/git_&_svn_auto-deploy/auto-deploy-overview/3.5autodeploy.png" alt="git svn auto deploy 3.5autodeploy" width="100%"/>
 
    Opsi **Check every (min)** akan ditampilkan, yang digunakan untuk menentukan frekuensi pengecekan repositori untuk commit baru, yang didorong sejak verifikasi terakhir.
 
@@ -61,7 +61,7 @@ Sekarang, karena semua informasi penting untuk deployment telah dicantumkan, And
 
 Untuk memantau proses auto-deployment dan hasilnya, Anda dapat melihat file log yang sesuai (bernama _**vcs_update**_) untuk server aplikasi atau node Maven yang bersangkutan.
 
-![git svn auto deploy 4log](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/deployment/git_&_svn_auto-deploy/auto-deploy-overview/4log.png" alt="git svn auto deploy 4log" width="100%"/>
 
 :::note
 Anda juga dapat mengkonfigurasi ulang pengaturan aplikasi yang dideploy via Git/SVN Anda dengan cara menavigasi ke environment Anda dan memilih tombol Edit di samping proyek yang sesuai. Anda akan melihat bingkai terbuka, mirip dengan yang digunakan untuk penambahan proyek, tempat Anda dapat mengubah status untuk opsi mana saja yang dijelaskan di atas (cukup klik _Apply_ untuk mengonfirmasi pengaturan baru).
