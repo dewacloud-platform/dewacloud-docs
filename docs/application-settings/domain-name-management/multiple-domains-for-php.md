@@ -33,9 +33,9 @@ Dalam kasus ini, kami memasukkan entri di file hosts kami untuk pengujian lokal,
 
 6\. Sekarang Anda dapat mengunggah paket **zip** dengan aplikasi Anda ke Deployment Manager dan melakukan deploy ke lingkungan yang telah Anda buat sebelumnya.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-php/04-upload-first-application.png" alt="upload first application" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-php/04-upload-first-application.png" alt="upload first application" width="60%"/>
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-php/05-upload-second-application.png" alt="upload second application" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-php/05-upload-second-application.png" alt="upload second application" width="60%"/>
 
 7\. Setelah aplikasi Anda berhasil dideploy, Anda perlu menentukan konfigurasi virtual host Anda.
 

@@ -85,7 +85,7 @@ Saat menyimpan perubahan yang dibuat di file konfigurasi mana pun, pop-up konfir
 
 5. Untuk membuat perubahan pada node lain dalam lapisan yang sama, Anda dapat menggunakan daftar drop-down yang secara otomatis diambil di bagian kiri atas pengelola.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/configuration-file-manager/8.png" alt="switch between nodes in file manager" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/configuration-file-manager/8.png" alt="switch between nodes in file manager" width="50%"/>
 
 :::note
 File yang sudah dibuka akan secara otomatis dimuat ulang untuk node yang sesuai saat beralih.
