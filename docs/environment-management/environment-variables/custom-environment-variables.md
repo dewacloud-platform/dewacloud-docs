@@ -17,13 +17,13 @@ Dalam panduan ini, kami akan menjelaskan cara-cara paling umum untuk menambahkan
 
 1. Arahkan kursor ke grup node di dashboard, buka daftar **Additionally**, dan pilih opsi _**Variables**_.
 
-![environment variables dashboard](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-variables/custom-environment-variables/01-environment-variables-dashboard.png" alt="environment variables dashboard" width="100%"/>
 
 2. Dalam jendela yang terbuka, Anda dapat menyesuaikan daftar variabel lingkungan sesuai kebutuhan (menggunakan tombol di panel alat).
 
 **Catatan:** Implementasi platform untuk kontainer Docker memungkinkan penggunaan variabel lingkungan yang ada untuk mendefinisikan variabel lainnya. Misalnya, nilai _**MY$HOME**_ akan otomatis diubah menjadi ****MY\**** (atau yang serupa berdasarkan nilai variabel _HOME_).
 
-![manage environment variables ui](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-variables/custom-environment-variables/02-manage-environment-variables-via-ui.png" alt="manage environment variables ui" width="100%"/>
 
 Jangan lupa untuk menekan tombol **Apply** setelah Anda melakukan perubahan.
 
@@ -38,7 +38,7 @@ Untuk membantu Anda dalam pemeliharaan file-file ini, platform secara otomatis m
 
 1. Buat koneksi [SSH](<https://docs.dewacloud.com/docs/ssh-access/>) ke kontainer Anda. Sebagai contoh, kami akan menggunakan klien **Web SSH** yang disematkan:
 
-![web ssh button](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-variables/custom-environment-variables/03-web-ssh-button.png" alt="web ssh button" width="100%"/>
 
 2. Buat atau sesuaikan file _**.bashrc**_ di direktori home dengan menambahkan variabel kustom Anda dalam format berikut:
 
@@ -51,7 +51,7 @@ di mana:
 - `{var_name}` adalah nama variabel yang ingin Anda tentukan
 - `{var_value}` adalah nilai dari variabel tersebut
 
-![export custom variables via shell](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-variables/custom-environment-variables/04-export-custom-variables-ssh.png" alt="export custom variables via shell" width="100%"/>
 
 3. Sekarang, setiap instance bash baru akan disertai dengan variabel kustom Anda. Untuk menerapkan pengaturan baru pada sesi saat ini, segarkan sumbernya dengan perintah berikut. Setelah itu, verifikasi ketersediaan variabel baru:
 
@@ -60,7 +60,7 @@ source ~/.bashrc
 echo $ {var_name}
 ```
 
-![verify custom variable availability ssh](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-variables/custom-environment-variables/05-verify-custom-variables-availability-ssh.png" alt="verify custom variable availability ssh" width="100%"/>
 
 Seperti yang Anda lihat, perubahan berhasil diterapkan.
 
@@ -70,7 +70,7 @@ Proses sederhana berikut berlaku sama untuk semua server aplikasi Java yang dike
 
 1. Klik tombol **Config** untuk server aplikasi Anda untuk mengakses [manajer file kontainer](<https://docs.dewacloud.com/docs/configuration-file-manager>).  
 
-![configuration file manager button](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-variables/custom-environment-variables/06-configuration-file-manager-button.png" alt="configuration file manager button" width="100%"/>
 
 2. Di tab yang terbuka, navigasikan ke file _**variables.conf**_ dalam salah satu lokasi berikut:
 
@@ -85,7 +85,7 @@ Proses sederhana berikut berlaku sama untuk semua server aplikasi Java yang dike
 _**-Dvar1=value1 -Dvar2=value2**_  
 _**-Dmy.var3=/my/value**_
 
-![custom environment variables java](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-variables/custom-environment-variables/07-custom-environment-variables-java.png" alt="custom environment variables java" width="100%"/>
 
 :::tip
 Sebagai alternatif, beberapa server aplikasi (misalnya GlassFish, Payara, WildFly) dilengkapi dengan panel admin yang juga memungkinkan untuk menambahkan opsi JVM dan variabel kustom.
@@ -94,7 +94,7 @@ Sebagai alternatif, beberapa server aplikasi (misalnya GlassFish, Payara, WildFl
 Jangan lupa untuk **Save** konfigurasi yang telah Anda buat.
 
 4. **Restart node** server aplikasi Anda untuk menerapkan perubahan.
-![restart nodes button](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-variables/custom-environment-variables/09-restart-nodes-button.png" alt="restart nodes button" width="100%"/>
 
 5. Variabel baru dapat dipanggil melalui kode Java Anda dengan menggunakan metode _System.getProperty(“your_variable”)_ untuk menetapkan nilai yang ditentukan ke argumen yang dibutuhkan. Contohnya:
 

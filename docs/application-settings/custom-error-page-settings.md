@@ -5,46 +5,46 @@ title: Custom Error Page Settings
 ---
 # Custom Error Page Settings via NGINX Balancer
 
-When an error occurs within an environment (such as attempting to access a non-existing page), a default error page is displayed. You can customize this error page using the NGINX load balancer to provide more specific instructions or contact information for end-users. Here's how to set up a custom error page via the NGINX balancer:
+Saat terjadi kesalahan dalam suatu environment (seperti mencoba mengakses halaman yang tidak ada), halaman kesalahan default akan ditampilkan. Anda dapat menyesuaikan halaman kesalahan ini menggunakan NGINX load balancer untuk memberikan instruksi yang lebih spesifik atau informasi kontak untuk pengguna akhir. Berikut adalah cara mengatur halaman kesalahan kustom melalui NGINX balancer:
 
-### 1. Access NGINX Load Balancer Configuration
+### 1. Akses Konfigurasi NGINX Load Balancer
 
-Log in to your platform dashboard, locate the NGINX load balancer in your environment, and click the **Config** button.
+Masuk ke dashboard platform Anda, temukan NGINX load balancer di environment Anda, dan klik tombol **Config**.
 
-![NGINX balancer config button](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/custom-error-page-settings/02-nginx-balancer-config-button.png" alt="NGINX balancer config button" width="100%"/>
 
-### 2. Upload Custom Error Page
+### 2. Unggah Halaman Kesalahan Kustom
 
-In the configuration manager, navigate to the **/etc/nginx/conf.d** folder and either create or upload your custom error page.
+Dalam pengelola konfigurasi, navigasikan ke folder **/etc/nginx/conf.d** dan buat atau unggah halaman kesalahan kustom Anda.
 
-![create custom error page](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/custom-error-page-settings/03-create-custom-error-page.png" alt="create custom error page" width="100%"/>
 
-### 3. Example Custom Error Page
+### 3. Contoh Halaman Kesalahan Kustom
 
-For this guide, we are using the following _**error.html**_ file as an example:
+Untuk panduan ini, kami menggunakan file _**error.html**_ berikut sebagai contoh:
 
-![example custom page](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/custom-error-page-settings/04-example-error-page.png" alt="example custom page" width="100%"/>
 
-### 4. Edit NGINX Configuration
+### 4. Edit Konfigurasi NGINX
 
-Navigate to the **/etc/nginx** directory and open the _**nginx-jelastic.conf**_ file. Copy its contents and paste them into the _**nginx.conf**_ file, replacing the _include /etc/nginx/nginx-jelastic.conf;_ line.
+Navigasikan ke direktori **/etc/nginx** dan buka file _**nginx-jelastic.conf**_. Salin isinya dan tempelkan ke dalam file _**nginx.conf**_, menggantikan baris _include /etc/nginx/nginx-jelastic.conf;_.
 
-![edit nginx.conf file](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/custom-error-page-settings/05-edit-nginx-conf-file.png" alt="edit nginx.conf file" width="100%"/>
 
-### 5. Update Error Page Settings
+### 5. Perbarui Pengaturan Halaman Kesalahan
 
-Find the _**server**_ section of the pasted configurations and replace the default _error_page_ settings with the following:
+Temukan bagian _**server**_ dari konfigurasi yang ditempel dan ganti pengaturan _error_page_ default dengan yang berikut:
 
 ```bash
 error_page 403 404 500 502 503 504 /error.html;
 proxy_intercept_errors on;
 ```
 
-![error page configurations](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/custom-error-page-settings/06-error-page-configurations.png" alt="error page configurations" width="100%"/>
 
-### 6. Modify Location Section
+### 6. Modifikasi Bagian Lokasi
 
-Scroll down to the **location** sections and adjust the error page parameters:
+Gulir ke bawah ke bagian **location** dan sesuaikan parameter halaman kesalahan:
 
 ```bash
 location /error.html {
@@ -72,13 +72,13 @@ location @recycle {
 }
 ```
 
-![error page location settings](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/custom-error-page-settings/07-error-page-location-settings.png" alt="error page location settings" width="100%"/>
 
-### 7. Additional Settings for SSL (Optional)
+### 7. Pengaturan Tambahan untuk SSL (Opsional)
 
-If you are using [SSL](https://www.virtuozzo.com/application-platform-docs/secure-sockets-layer/) for secure connections, additional settings are required.
+Jika Anda menggunakan [SSL](https://docs.dewacloud.com/docs/secure-sockets-layer/) untuk koneksi yang aman, pengaturan tambahan diperlukan.
 
-In the **/etc/nginx/conf.d/ssl.conf** file, add the following:
+Dalam file **/etc/nginx/conf.d/ssl.conf**, tambahkan yang berikut:
 
 ```bash
 proxy_intercept_errors on;
@@ -87,11 +87,11 @@ location /error.html {
 }
 ```
 
-![configure ssl.conf file](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/custom-error-page-settings/08-configure-ssl-conf-file.png" alt="configure ssl.conf file" width="100%"/>
 
-### 8. Adjust SSL Upstreams File
+### 8. Sesuaikan File SSL Upstreams
 
-In the **/etc/nginx/conf.d/ssl.upstreams.inc** file, modify the following condition:
+Dalam file **/etc/nginx/conf.d/ssl.upstreams.inc**, modifikasi kondisi berikut:
 
 ```bash
 if ($cookie_SRVGROUP ~ group|common) {
@@ -101,25 +101,25 @@ if ($cookie_SRVGROUP ~ group|common) {
 }
 ```
 
-![adjust SSL upstreams file](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/custom-error-page-settings/09-adjust-ssl-upstreams-file.png" alt="adjust SSL upstreams file" width="100%"/>
 
-### 9. Restart NGINX Server
+### 9. Mulai Ulang Server NGINX
 
-To apply the changes, **Restart** the NGINX server.
+Untuk menerapkan perubahan, **Restart** server NGINX.
 
-![restart NGINX balancer nodes](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/custom-error-page-settings/10-restart-nginx-balancer-nodes.png" alt="restart NGINX balancer nodes" width="100%"/>
 
-### 10. Test Custom Error Page
+### 10. Uji Halaman Kesalahan Kustom
 
-Now, try accessing any non-existing page within your domain to see the custom error page in action.
+Sekarang, coba akses halaman yang tidak ada dalam domain Anda untuk melihat halaman kesalahan kustom beraksi.
 
-![custom error page](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/custom-error-page-settings/11-custom-error-page.png" alt="custom error page" width="100%"/>
 
 :::warning
-If the environment or server with the custom error pages is not reachable, the platform-wide default error page will be displayed. These platform-wide error notifications cannot be modified.
+Jika environment atau server dengan halaman kesalahan kustom tidak dapat dijangkau, halaman kesalahan default di seluruh platform akan ditampilkan. Notifikasi kesalahan di seluruh platform ini tidak dapat dimodifikasi.
 :::
 
-## What’s Next?
+## Baca Juga
 
 - [Configuration File Manager](https://docs.dewacloud.com/docs/configuration-file-manager/)
 - [Application Lifecycle Management](https://docs.dewacloud.com/docs/how-to-manage-application-lifecycle/)

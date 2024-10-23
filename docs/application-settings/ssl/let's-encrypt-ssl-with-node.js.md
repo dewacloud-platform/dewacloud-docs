@@ -3,65 +3,67 @@ sidebar_position: 6
 slug: /let's-encrypt-ssl-with-node.js
 title: Let's Encrypt SSL with Node.js
 ---
-# Free Let’s Encrypt SSL Certificates: Out-of-Box Integration with the Most Popular Software Stacks
 
-Ensuring security for hosted applications is critical, and one of the primary methods for securing data exchange is by encrypting traffic through the HTTPS protocol. **Let’s Encrypt** offers a free and automated solution for obtaining trusted SSL certificates, simplifying the process and enabling users to secure applications quickly.
+# Sertifikat SSL Gratis dari Let’s Encrypt: Integrasi Langsung dengan Stack Perangkat Lunak Terpopuler
 
-## Key Advantages of Let’s Encrypt SSL
-- **Free and Open**: Let’s Encrypt provides SSL certificates without charge, reducing costs associated with SSL implementation.
-- **Automatic Renewal**: Certificates are valid for 90 days and renew automatically, ensuring continuous encryption.
-- **Wide Integration**: Jelastic developers have integrated Let’s Encrypt with several popular load balancers and application server stacks for easy out-of-box installation.
+Memastikan keamanan untuk aplikasi yang dihosting adalah penting, dan salah satu metode utama untuk mengamankan pertukaran data adalah dengan mengenkripsi lalu lintas melalui protokol HTTPS. **Let’s Encrypt** menawarkan solusi gratis dan otomatis untuk mendapatkan sertifikat SSL terpercaya, menyederhanakan proses dan memungkinkan pengguna untuk mengamankan aplikasi dengan cepat.
 
-Supported stacks include:
-- **Load Balancers**: NGINX, Apache LB, HAProxy, Varnish
-- **Java Servers**: Tomcat, TomEE, GlassFish, Payara, Jetty
-- **PHP Servers**: Apache PHP, NGINX PHP
-- **Ruby Servers**: Apache Ruby, NGINX Ruby
+## Keunggulan Utama Let’s Encrypt SSL
+- **Gratis dan Terbuka**: Let’s Encrypt menyediakan sertifikat SSL tanpa biaya, mengurangi biaya yang terkait dengan implementasi SSL.
+- **Pembaharuan Otomatis**: Sertifikat berlaku selama 90 hari dan diperbarui secara otomatis, memastikan enkripsi berkelanjutan.
+- **Integrasi Luas**: Pengembang Jelastic telah mengintegrasikan Let’s Encrypt dengan beberapa load balancer dan stack server aplikasi populer untuk instalasi yang mudah.
 
-If Let’s Encrypt SSL is required for other stacks, simply add a load balancer in front of your application servers to support SSL termination.
+Stack yang didukung termasuk:
+- **Load Balancer**: NGINX, Apache LB, HAProxy, Varnish
+- **Server Java**: Tomcat, TomEE, GlassFish, Payara, Jetty
+- **Server PHP**: Apache PHP, NGINX PHP
+- **Server Ruby**: Apache Ruby, NGINX Ruby
 
-## How It Works
-When installing the Let’s Encrypt add-on, the platform:
-1. Downloads and configures the Let’s Encrypt client (certificate management agent, or CMA).
-2. Requests SSL certificates from Let’s Encrypt Certificate Authority (CA).
-3. Applies the issued certificates to the software stack and adds a cron job to handle renewals automatically.
+Jika Let’s Encrypt SSL diperlukan untuk stack lain, cukup tambahkan load balancer di depan server aplikasi Anda untuk mendukung terminasi SSL.
 
-**Domain Control Validation**:
-Let’s Encrypt CA checks the environment’s entry point at port 80 to validate domain ownership. Once validated, SSL certificates are issued, propagated across the environment, and applied to all necessary nodes.
+## Cara Kerjanya
+Ketika memasang add-on Let’s Encrypt, platform:
+1. Mengunduh dan mengkonfigurasi klien Let’s Encrypt (agen manajemen sertifikat, atau CMA).
+2. Meminta sertifikat SSL dari Let’s Encrypt Certificate Authority (CA).
+3. Menerapkan sertifikat yang dikeluarkan ke stack perangkat lunak dan menambahkan cron job untuk menangani pembaharuan secara otomatis.
+
+**Validasi Kontrol Domain**:
+Let’s Encrypt CA memeriksa titik masuk environment pada port 80 untuk memvalidasi kepemilikan domain. Setelah divalidasi, sertifikat SSL diterbitkan, didistribusikan ke seluruh environment, dan diterapkan ke semua node yang diperlukan.
 
 ![Let’s Encrypt Add-on Flow](#)
 
-## Let’s Encrypt SSL Add-On Installation
+## Instalasi Add-On Let’s Encrypt SSL
 
-To install the SSL add-on, follow these steps:
-1. **Login** to the Jelastic dashboard and go to **Marketplace**.
-2. In the **Add-ons** section, locate the _Let’s Encrypt Free SSL_ package and click **Install**.
+Untuk memasang add-on SSL, ikuti langkah-langkah berikut:
+1. **Login** ke dashboard Jelastic dan pergi ke **Marketplace**.
+2. Pada bagian **Add-ons**, temukan paket _Let’s Encrypt Free SSL_ dan klik **Install**.
 
-### During Installation:
-- **External Domain(s)**: You can leave this field blank to create a dummy SSL certificate for the internal environment URL or specify linked external domain(s) to generate trusted SSL certificates.
-- **Environment Name**: Choose the environment to install the SSL certificate.
-- **Nodes**: Select the appropriate entry point layer (usually auto-detected).
+### Selama Instalasi:
+- **Domain Eksternal**: Anda dapat mengosongkan bidang ini untuk membuat sertifikat SSL dummy untuk URL environment internal atau menentukan domain eksternal yang terhubung untuk menghasilkan sertifikat SSL terpercaya.
+- **Nama Environment**: Pilih environment untuk menginstal sertifikat SSL.
+- **Node**: Pilih lapisan titik masuk yang sesuai (biasanya terdeteksi otomatis).
 
-Once configured, click **Install** to initiate the process. The add-on may automatically attach a **Public IP** to the environment, as this is required for Let’s Encrypt to work.
+Setelah dikonfigurasi, klik **Install** untuk memulai proses. Add-on mungkin secara otomatis memasang **IP Publik** ke environment, karena ini diperlukan agar Let’s Encrypt berfungsi.
 
 ![SSL Certificate from Let’s Encrypt](#)
 
-After installation, you can access the environment via HTTPS, ensuring a secure and trusted connection.
+Setelah instalasi, Anda dapat mengakses environment melalui HTTPS, memastikan koneksi yang aman dan terpercaya.
 
-## Managing Let’s Encrypt Certificates
+## Mengelola Sertifikat Let’s Encrypt
 
-### Automatic Updates:
-By default, certificates are automatically renewed 30 days before expiration. This process is handled via a daily cron job. You will receive an email notification before renewal.
+### Pembaharuan Otomatis:
+Secara default, sertifikat diperbarui secara otomatis 30 hari sebelum kedaluwarsa. Proses ini ditangani melalui cron job harian. Anda akan menerima pemberitahuan email sebelum pembaharuan.
 
-### Manual Updates:
-You can manually update certificates by going to the **Add-ons** tab in the dashboard and selecting **Update Now**.
+### Pembaharuan Manual:
+Anda dapat memperbarui sertifikat secara manual dengan masuk ke tab **Add-ons** di dasbor dan memilih **Update Now**.
 
-### Reconfiguration:
-To modify the certificates, click the **Configure** button in the Let’s Encrypt panel and adjust domain settings. Reconfiguration may trigger the generation of new certificates.
+### Rekonfigurasi:
+Untuk memodifikasi sertifikat, klik tombol **Configure** di panel Let’s Encrypt dan sesuaikan pengaturan domain. Rekonfigurasi dapat memicu pembuatan sertifikat baru.
 
-## API-Based Installation and Management
+## Instalasi dan Manajemen Berbasis API
 
-Let’s Encrypt certificates can also be managed via Jelastic’s API. For example, to install the add-on, use the **install** method:
+Sertifikat Let’s Encrypt juga dapat dikelola melalui API Jelastic. Misalnya, untuk menginstal add-on, gunakan metode **install**:
 
 ```bash
 curl -X POST 'https://<hoster-api-host>/1.0/marketplace/jps/rest/install' -d session=<session> -d jps=letsencrypt-ssl-addon -d envName=<env_name> -d nodeGroup=<node_group> --data-urlencode settings='{"customDomains":"example.com"}'
+```

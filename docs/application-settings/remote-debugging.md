@@ -5,37 +5,37 @@ title: Remote Debugging
 ---
 # Remote Debugging
 
-Remote debugging allows you to connect your IDE with an application running on the platform using Public IPs. Here's a step-by-step guide on setting up remote debugging for your Java application:
+Remote debugging memungkinkan Anda menghubungkan IDE Anda dengan aplikasi yang berjalan di platform menggunakan IP Publik. Berikut panduan langkah demi langkah untuk mengatur remote debugging untuk aplikasi Java Anda:
 
-## How Does Remote Debugging Work?
+## Bagaimana Remote Debugging Bekerja?
 
-Java's remote debugging is based on a listener binding mechanism:
-- The application to be debugged attaches a socket and listens for debugging instructions.
-- The debugger connects to the socket and sends instructions.
+Debugging jarak jauh Java didasarkan pada mekanisme listener binding:
+- Aplikasi yang akan di-debug menghubungkan soket dan mendengarkan instruksi debugging.
+- Debugger terhubung ke soket dan mengirimkan instruksi.
 
-## Steps to Set Up Remote Debugging
+## Langkah-langkah untuk Mengatur Remote Debugging
 
-### 1. Create Environment
+### 1. Buat Environment
 
-1. Log into the platform dashboard.
-2. Click **Create environment**.
-3. Choose instances (e.g., **Tomcat**), set cloudlet limits, and enable **external IP**. Name the environment and click **Create**.
+1. Masuk ke dashboard platform.
+2. Klik **Create environment**.
+3. Pilih instansi (misal, **Tomcat**), atur batas cloudlet, dan aktifkan **external IP**. Beri nama environment dan klik **Create**.
 
-![create environment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/remote-debugging/01-create-environment.png" alt="create environment" width="100%"/>
 
-4. After the environment is created, click the **Additionally** button for the instance to see the **Public IP**.
+4. Setelah environment dibuat, klik tombol **Additionally** untuk instansi tersebut untuk melihat **Public IP**.
 
-![public IP](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/remote-debugging/03-public-ip.png" alt="public IP" width="100%"/>
 
-### 2. Deploy an Application
+### 2. Deploy Aplikasi
 
-1. Upload your Java package to the **Deployment Manager**.
+1. Unggah paket Java Anda ke **Deployment Manager**.
 
-![upload archive](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/remote-debugging/04-upload-archive.png" alt="upload archive" width="100%"/>
 
-2. Deploy the application to the newly created environment.
+2. Deploy aplikasi ke environment yang baru dibuat.
 
-For example, let's deploy a simple Java application:
+Sebagai contoh, mari kita deploy aplikasi Java sederhana:
 
 ```java
 package com;
@@ -53,74 +53,74 @@ public class RemoteDebugger {
 }
 ```
 
-### 3. Configure Debugging in Your IDE
+### 3. Konfigurasi Debugging di IDE Anda
 
-1. Open the application in your IDE (e.g., **NetBeans**) and create a new debugger (**Debug main project > Attach Debugger**).
+1. Buka aplikasi di IDE Anda (misal, **NetBeans**) dan buat debugger baru (**Debug main project > Attach Debugger**).
 
-![NetBeans attach debugger](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/remote-debugging/06-netbeans-attach-debugger.png" alt="NetBeans attach debugger" width="100%"/>
 
-2. Select the type of connector, insert your **Public IP** address, and specify the port you want to listen to (e.g., port 5000).
+2. Pilih jenis konektor, masukkan alamat **Public IP** Anda, dan tentukan port yang ingin Anda dengarkan (misal, port 5000).
 
-![NetBeans debugger connection](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/remote-debugging/07-netbeans-debugger-connection.png" alt="NetBeans debugger connection" width="100%"/>
 
-### 4. Configure Debugging on Tomcat
+### 4. Konfigurasi Debugging pada Tomcat
 
-1. In the platform dashboard, click **Config** for **Tomcat**.
+1. Di dashboard platform, klik **Config** untuk **Tomcat**.
 
-![Tomcat config](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/remote-debugging/08-tomcat-config.png" alt="Tomcat config" width="100%"/>
 
-2. Navigate to the `variables.conf` file and add the following arguments:
+2. Navigasikan ke file `variables.conf` dan tambahkan argumen berikut:
 
 ```bash
 -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5000
 ```
 
-This configuration tells JVM to:
-- **-Xdebug**: Run the application in debug mode.
-- **-Xrunjdwp**: Provide debug parameters (port 5000 in this case).
+Konfigurasi ini memberitahu JVM untuk:
+- **-Xdebug**: Menjalankan aplikasi dalam mode debug.
+- **-Xrunjdwp**: Memberikan parameter debug (port 5000 dalam hal ini).
 
-![configure Tomcat variables](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/remote-debugging/09-configure-tomcat-variables.png" alt="configure Tomcat variables" width="100%"/>
 
-:::note Ensure the port number is the same in both `variables.conf` and your IDE debugger configuration. :::
+:::note Pastikan nomor port sama pada `variables.conf` dan konfigurasi debugger IDE Anda. :::
 
-3. Save the changes and **Restart** Tomcat.
+3. Simpan perubahan dan **Restart** Tomcat.
 
-### 5. Start Debugging
+### 5. Mulai Debugging
 
-1. Set a breakpoint in your code (e.g., before the third variable initialization).
+1. Tetapkan breakpoint pada kode Anda (misal, sebelum inisialisasi variabel ketiga).
 
-![NetBeans code break point](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/remote-debugging/10-netbeans-code-break-point.png" alt="NetBeans code break point" width="100%"/>
 
-2. Start the debugger from your IDE and verify the application behavior.
+2. Mulai debugger dari IDE Anda dan verifikasi perilaku aplikasi.
 
-Check **Tomcat logs** to see the results:
+Periksa **Tomcat logs** untuk melihat hasilnya:
 
-![Tomcat logs before break point](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/remote-debugging/11-tomcat-logs-before-break-point.png" alt="Tomcat logs before break point" width="100%"/>
 
-After hitting the breakpoint, the variables up to the breakpoint will be initialized.
+Setelah mencapai breakpoint, variabel hingga breakpoint akan diinisialisasi.
 
-### 6. Modify the Breakpoint
+### 6. Modifikasi Breakpoint
 
-You can adjust the breakpoint further down the code to initialize all variables.
+Anda dapat menyesuaikan breakpoint lebih jauh ke dalam kode untuk menginisialisasi semua variabel.
 
-![NetBeans break point next line](#)
-![Tomcat logs after break point](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/remote-debugging/12-netbeans-break-point-next-line.png" alt="NetBeans break point next line" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/remote-debugging/13-tomcat-logs-after-break-point.png" alt="Tomcat logs after break point" width="100%"/>
 
-### Remote Debugging for Jetty and GlassFish
+### Remote Debugging untuk Jetty dan GlassFish
 
 #### Jetty
-The instructions are the same for Jetty.
+Instruksi sama untuk Jetty.
 
 #### GlassFish
-For **GlassFish**:
-1. Log into the **GlassFish Admin Console** using credentials sent to your email.
-2. Navigate to **gfcluster-config > JVM Settings > General tab > Debug options**.
-3. Add **-Xdebug** and **-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5000** to the **JVM options**.
-4. Save the changes and restart GlassFish.
+Untuk **GlassFish**:
+1. Masuk ke **GlassFish Admin Console** menggunakan kredensial yang dikirim ke email Anda.
+2. Navigasikan ke **gfcluster-config > JVM Settings > General tab > Debug options**.
+3. Tambahkan **-Xdebug** dan **-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5000** ke **JVM options**.
+4. Simpan perubahan dan restart GlassFish.
 
-![GlassFish JVM settings](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/remote-debugging/16-glassfish-jvm-settings.png" alt="GlassFish JVM settings" width="100%"/>
 
-## What’s Next?
+## Baca Juga
 
 - [WebSockets](https://docs.dewacloud.com/docs/websockets/)
 - [Email via External SMTP](https://docs.dewacloud.com/docs/email-via-external-smtp/)

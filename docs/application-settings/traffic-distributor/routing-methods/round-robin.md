@@ -3,29 +3,30 @@ sidebar_position: 1
 slug: /round-robin
 title: Round Robin
 ---
-# Round Robin Routing for Traffic Distributor
 
-**Round Robin** is the simplest and most widely used routing method for **Traffic Distributor**. It distributes incoming requests to backends in rotation based on predefined server weights, providing high availability and balanced load distribution for your applications.
+# Round Robin Routing untuk Traffic Distributor
 
-### Key Features:
-- **Equal Distribution**: Requests are distributed evenly across backends based on server weights.
-- **Load Balancing**: Each backend is utilized according to its assigned weight, ensuring optimal resource usage.
+**Round Robin** adalah metode routing yang paling sederhana dan paling sering digunakan untuk **Traffic Distributor**. Metode ini mendistribusikan permintaan yang masuk ke backend secara bergilir berdasarkan bobot server yang telah ditentukan sebelumnya, menyediakan ketersediaan tinggi dan distribusi beban yang seimbang untuk aplikasi Anda.
 
-### How It Works:
-Requests are routed in a cyclical fashion to each backend based on the set weight, resulting in balanced traffic distribution. 
+### Fitur Utama:
+- **Distribusi Merata**: Permintaan didistribusikan secara merata di antara backend berdasarkan bobot server.
+- **Load Balancing**: Setiap backend digunakan sesuai dengan bobot yang ditugaskan, memastikan penggunaan sumber daya yang optimal.
 
-Examples:
-- **Equal Weights (50% / 50%)**: Each server alternates between processing requests, resulting in balanced traffic distribution.
-- **Weighted Distribution (70% / 30%)**: For every 10 requests, 7 are sent to the first server and 3 to the second, allowing for flexible load management.
-- **Single Backend (100%)**: All requests are directed to one server. This can be useful for scenarios such as **Blue-Green Deployment** or hardware migration with zero downtime.
+### Cara Kerjanya:
+Permintaan diarahkan secara siklis ke setiap backend berdasarkan bobot yang ditetapkan, menghasilkan distribusi lalu lintas yang seimbang. 
 
-![Traffic Distributor round robin routing](#)
+Contoh:
+- **Bobot Sama (50% / 50%)**: Setiap server bergantian memproses permintaan, menghasilkan distribusi lalu lintas yang seimbang.
+- **Distribusi Berbobot (70% / 30%)**: Dari setiap 10 permintaan, 7 dikirim ke server pertama dan 3 ke server kedua, memungkinkan manajemen beban yang fleksibel.
+- **Single Backend (100%)**: Semua permintaan diarahkan ke satu server. Ini bisa berguna untuk skenario seperti **Blue-Green Deployment** atau migrasi hardware tanpa downtime.
 
-### Use Case Considerations:
-- This method is ideal when backends have **identical content**, as requests are processed by both servers.
-- If content differs between environments, consider other routing methods like **Sticky Sessions** or **Failover**.
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/routing-methods/round-robin/1.png" alt="Traffic Distributor round robin routing" width="100%"/>
 
-## What’s Next?
+### Pertimbangan Kasus Penggunaan:
+- Metode ini ideal ketika backend memiliki **konten identik**, karena permintaan diproses oleh kedua server.
+- Jika konten berbeda antara environment, pertimbangkan metode routing lain seperti **Sticky Sessions** atau **Failover**.
+
+## Baca Juga
 - [Traffic Distributor Overview](<https://docs.dewacloud.com/docs/traffic-distributor/>)
 - [Sticky Sessions](<https://docs.dewacloud.com/docs/sticky-sessions-traffic-routing/>)
 - [Failover](<https://docs.dewacloud.com/docs/failover-traffic-routing/>)
