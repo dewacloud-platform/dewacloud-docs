@@ -22,7 +22,7 @@ Stack yang tercantum di atas memiliki beberapa keunikan dalam mendukung implemen
 
 Jika Anda ingin menonaktifkan _Smart Auto-Configuration_, tambahkan (atau edit jika sudah ada) variabel ini dengan nilai _false_ melalui dashboard.
 
-![PaaS autoconfig variable](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/smart-auto-configuration/auto-configuration-overview/01-paas-autoconfig-variable.png" alt="PaaS autoconfig variable" width="100%"/>
 
 Jangan lupa untuk **Restart Node(s)** untuk menerapkan perubahan.
 
@@ -43,7 +43,7 @@ Anda dapat menyesuaikan [environment variables](https://docs.dewacloud.com/docs/
   * _**OOM_ADJUSTMENT**_ \- mendefinisikan nilai dalam %, MB, GB (_10%_ secara default) bahwa parameter _innodb_buffer_pool_size_ saat ini harus dikurangi setelah setiap restart yang disebabkan oleh OOM
   * _**MAX_OOM_REDUCE_CYCLES**_ \- mengonfigurasi jumlah siklus maksimum untuk pengurangan _innodb_buffer_pool_size_ (_5_ kali secara default)
 
-![OOM recovery variables](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/smart-auto-configuration/auto-configuration-overview/02-oom-recovery-variables.png" alt="OOM recovery variables" width="100%"/>
 
 Tingkatkan batas cloudlets untuk container untuk mereset penyesuaian yang disebabkan oleh pemulihan OOM.
 

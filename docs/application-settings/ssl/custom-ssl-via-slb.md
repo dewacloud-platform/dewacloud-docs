@@ -3,60 +3,58 @@ sidebar_position: 4
 slug: /custom-ssl-via-slb
 title: Custom SSL via SLB
 ---
+
 # Custom SSL via Shared Load Balancer (SLB)
 
-The platform supports multiple methods for configuring SSL certificates, depending on the environment setup and domain configurations:
+Platform ini mendukung beberapa metode untuk mengonfigurasi sertifikat SSL, tergantung pada pengaturan environment dan konfigurasi domain:
 
-- **Public IP Environments**: Utilize _[Let’s Encrypt SSL](<https://docs.dewacloud.com/docs/lets-encrypt-ssl>)_ and _[Custom SSL](<https://docs.dewacloud.com/docs/custom-ssl>)_ to secure custom domains.
-- **Environments without Public IP**: Use _[Built-In SSL](<https://docs.dewacloud.com/docs/built-in-ssl>)_ for the base domain.
-- **Custom SSL via SLB**: Allows custom SSL certificates for environments without public IP through Shared Load Balancer (SLB).
+- **Environment dengan IP Publik**: Gunakan _[Let’s Encrypt SSL](https://docs.dewacloud.com/docs/lets-encrypt-ssl)_ dan _[Custom SSL](https://docs.dewacloud.com/docs/custom-ssl)_ untuk mengamankan domain kustom.
+- **Environment tanpa IP Publik**: Gunakan _[Built-In SSL](https://docs.dewacloud.com/docs/built-in-ssl)_ untuk domain dasar.
+- **Custom SSL via SLB**: Memungkinkan sertifikat SSL kustom untuk environment tanpa IP publik melalui Shared Load Balancer (SLB).
 
-This guide explains how to configure **Custom SSL via SLB**, primarily aimed at environments deployed on **Azure** or **Google Cloud** where public IPs are not available. SLB ensures the distribution of traffic between nodes and provides SSL via **Server Name Indication (SNI)**, an extension to the TLS protocol.
+Panduan ini menjelaskan cara mengonfigurasi **Custom SSL via SLB**, yang terutama ditujukan untuk environment yang diterapkan di **Azure** atau **Google Cloud** di mana IP publik tidak tersedia. SLB memastikan distribusi lalu lintas antara node dan menyediakan SSL melalui **Server Name Indication (SNI)**, sebuah ekstensi untuk protokol TLS.
 
-## Steps to Configure Custom SSL via SLB
+## Langkah untuk Mengonfigurasi Custom SSL via SLB
 
-### Overview
+### Gambaran Umum
 
-**Custom SSL via SLB** allows you to configure custom SSL certificates for environments without a public IP address. The certificate is uploaded to the platform, and SSL is enabled on the Shared Load Balancers, which distribute the traffic.
+**Custom SSL via SLB** memungkinkan Anda mengonfigurasi sertifikat SSL kustom untuk environment tanpa alamat IP publik. Sertifikat diunggah ke platform, dan SSL diaktifkan pada Shared Load Balancers, yang mendistribusikan lalu lintas.
 
-### SNI Support
+### Dukungan SNI
 
-**Server Name Indication (SNI)** allows the server to present the correct SSL certificate based on the requested domain name, ensuring proper SSL handling when multiple domains are hosted on a single SLB.
+**Server Name Indication (SNI)** memungkinkan server untuk menampilkan sertifikat SSL yang benar berdasarkan nama domain yang diminta, memastikan penanganan SSL yang tepat ketika beberapa domain di-host pada satu SLB.
 
-### API Configuration
+### Konfigurasi API
 
-All configurations for Custom SSL via SLB are performed through API calls. Here are the key API methods available:
+Semua konfigurasi untuk Custom SSL via SLB dilakukan melalui panggilan API. Berikut adalah metode API utama yang tersedia:
 
-- **[GetSSLCerts](<https://docs.jelastic.com/api/#!/api/environment.Binder-method-GetSSLCerts>)**: Lists all SSL certificates for the current user.
-- **[AddSSLCert](<https://docs.jelastic.com/api/#!/api/environment.Binder-method-AddSSLCert>)**: Uploads the private key, domain certificate, and optional intermediate certificates.
-- **[EditSSLCert](<https://docs.jelastic.com/api/#!/api/environment.Binder-method-EditSSLCert>)**: Updates an existing certificate.
-- **[RemoveSSLCerts](<https://docs.jelastic.com/api/#!/api/environment.Binder-method-RemoveSSLCerts>)**: Removes a specified SSL certificate.
-- **[BindSSLCert](<https://docs.jelastic.com/api/#!/api/environment.Binder-method-BindSSLCert>)**: Binds a custom SSL certificate to the environment or SLB for custom domains.
-- **[UnbindSSLCert](<https://docs.jelastic.com/api/#!/api/environment.Binder-method-UnbindSSLCert>)**: Unbinds an SSL certificate from an environment or specific domains on SLB.
-- **[BindExtDomains](<https://docs.jelastic.com/api/#!/api/environment.Binder-method-BindExtDomains>)**: Binds custom domains to the environment and applies the SSL certificate.
-- **[GetExtDomains](<https://docs.jelastic.com/api/#!/api/environment.Binder-method-GetExtDomains>)**: Lists custom domains attached to the environment.
+- **[GetSSLCerts](https://docs.jelastic.com/api/#!/api/environment.Binder-method-GetSSLCerts)**: Menampilkan semua sertifikat SSL untuk pengguna saat ini.
+- **[AddSSLCert](https://docs.jelastic.com/api/#!/api/environment.Binder-method-AddSSLCert)**: Mengunggah kunci privat, sertifikat domain, dan sertifikat antara opsional.
+- **[EditSSLCert](https://docs.jelastic.com/api/#!/api/environment.Binder-method-EditSSLCert)**: Memperbarui sertifikat yang sudah ada.
+- **[RemoveSSLCerts](https://docs.jelastic.com/api/#!/api/environment.Binder-method-RemoveSSLCerts)**: Menghapus sertifikat SSL yang ditentukan.
+- **[BindSSLCert](https://docs.jelastic.com/api/#!/api/environment.Binder-method-BindSSLCert)**: Mengikat sertifikat SSL kustom ke environment atau SLB untuk domain kustom.
+- **[UnbindSSLCert](https://docs.jelastic.com/api/#!/api/environment.Binder-method-UnbindSSLCert)**: Membatalkan pengikatan sertifikat SSL dari environment atau domain spesifik pada SLB.
+- **[BindExtDomains](https://docs.jelastic.com/api/#!/api/environment.Binder-method-BindExtDomains)**: Mengikat domain kustom ke environment dan menerapkan sertifikat SSL.
+- **[GetExtDomains](https://docs.jelastic.com/api/#!/api/environment.Binder-method-GetExtDomains)**: Menampilkan domain kustom yang terhubung ke environment.
 
-### Quotas
+### Kuota
 
-The maximum number of custom SSL certificates via SLB is limited per account based on the `slb.customssl.maxcount` quota (typically 50 for billing users and 5 for trial users). This is to prevent overuse of the feature.
+Jumlah maksimum sertifikat SSL kustom via SLB terbatas per akun berdasarkan kuota `slb.customssl.maxcount` (biasanya 50 untuk pengguna berbayar dan 5 untuk pengguna percobaan). Ini untuk mencegah penggunaan berlebihan fitur.
 
-### Example Workflow
+### Contoh Alur Kerja
 
-1. **Upload Certificates**:
-   Use the **[AddSSLCert](<https://docs.jelastic.com/api/#!/api/environment.Binder-method-AddSSLCert>)** method to upload your private key, domain certificate, and intermediate certificate (if applicable) to the platform.
+1. **Unggah Sertifikat**: Gunakan metode **[AddSSLCert](https://docs.jelastic.com/api/#!/api/environment.Binder-method-AddSSLCert)** untuk mengunggah kunci privat, sertifikat domain, dan sertifikat antara (jika ada) ke platform.
 
-2. **Bind SSL Certificate**:
-   To bind the SSL certificate to your environment and domains, use the **[BindSSLCert](<https://docs.jelastic.com/api/#!/api/environment.Binder-method-BindSSLCert>)** method. Ensure the SLB is specified as the entry point.
+2. **Mengikat Sertifikat SSL**: Untuk mengikat sertifikat SSL ke environment dan domain Anda, gunakan metode **[BindSSLCert](https://docs.jelastic.com/api/#!/api/environment.Binder-method-BindSSLCert)**. Pastikan SLB ditentukan sebagai titik masuk.
 
-3. **Unbind SSL Certificate**:
-   If needed, the **[UnbindSSLCert](<https://docs.jelastic.com/api/#!/api/environment.Binder-method-UnbindSSLCert>)** method allows you to unbind the SSL certificate from specific custom domains.
+3. **Membatalkan Pengikatan Sertifikat SSL**: Jika diperlukan, metode **[UnbindSSLCert](https://docs.jelastic.com/api/#!/api/environment.Binder-method-UnbindSSLCert)** memungkinkan Anda untuk membatalkan pengikatan sertifikat SSL dari domain kustom tertentu.
 
-## Next Steps
+## Baca Juga
 
-Explore other SSL solutions and related features:
+Jelajahi solusi SSL lain dan fitur terkait:
 
-- [Secure Sockets Layer (SSL)](<https://docs.dewacloud.com/docs/secure-sockets-layer>)
-- [Built-In SSL](<https://docs.dewacloud.com/docs/built-in-ssl>)
-- [Custom SSL](<https://docs.dewacloud.com/docs/custom-ssl>)
-- [Let’s Encrypt SSL](<https://docs.dewacloud.com/docs/lets-encrypt-ssl>)
-- [Shared Load Balancer](<https://docs.dewacloud.com/docs/shared-load-balancer>)
+- [Secure Sockets Layer (SSL)](https://docs.dewacloud.com/docs/secure-sockets-layer)
+- [Built-In SSL](https://docs.dewacloud.com/docs/built-in-ssl)
+- [Custom SSL](https://docs.dewacloud.com/docs/custom-ssl)
+- [Let’s Encrypt SSL](https://docs.dewacloud.com/docs/lets-encrypt-ssl)
+- [Shared Load Balancer](https://docs.dewacloud.com/docs/shared-load-balancer)

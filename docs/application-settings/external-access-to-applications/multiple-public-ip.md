@@ -3,102 +3,104 @@ sidebar_position: 3
 slug: /multiple-public-ip
 title: Multiple Public IP
 ---
+
 # Multiple Public IP Addresses for a Single Container
 
-![multiple public IP](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/multiple-public-ip/01-multiple-public-ip.png" alt="multiple public IP" width="100%"/>
 
-The platform supports assigning multiple [public IP](<https://docs.dewacloud.com/docs/public-ip/>) addresses (both IPv4 and IPv6) to a single container. These IPs can either be of one version (IPv4 or IPv6) or both simultaneously.
+Platform mendukung penugasan beberapa [IP publik](https://docs.dewacloud.com/docs/public-ip/) (baik IPv4 dan IPv6) ke satu container. IP ini dapat berupa satu versi (IPv4 atau IPv6) atau keduanya secara bersamaan.
 
-For example, when hosting multiple websites on a single node, the multi-IP option allows handling them as separate production-ready services by applying dedicated [custom domain names](<https://docs.dewacloud.com/docs/custom-domains/>) and [SSL certificates](<https://www.virtuozzo.com/application-platform-docs/secure-sockets-layer/>) for each site. This feature can also be beneficial for managing network appliances (e.g., load balancers) with multiple IP addresses for each network.
-
-:::note
-Both Public IPv4 and IPv6 are paid options, charged separately on an hourly basis. The exact cost and allowed number of IPs per node/environment can be found in the **Quotas & Pricing > Account Limits** section of the dashboard.
-:::
-
-You can assign multiple IP addresses via the platform dashboard by adjusting the **Public IPv4** and **Public IPv6** spinners when creating or modifying an environment's topology.
-
-![wizard add multiple IP](#)
-
-Here, you can select or enter the required number of addresses for both types. If the limit is reached, contact your [hosting provider](<https://www.virtuozzo.com/application-platform-partners/>) to increase the available IP address count.
-
-## Managing Multiple Public IP Addresses
-
-On the main dashboard, the IP addresses assigned to each node in an environment are displayed in the following order:
-
-- **Private IP**: Internal IP address automatically assigned to the container (listed under the Node ID).
-- **Public IPv4**: External IPv4 address or an expandable list of assigned addresses.
-- **Public IPv6**: External IPv6 address or an expandable list of assigned addresses.
-
-![dashboard managing multiple IP](#)
-
-Each IP address has a **Copy to clipboard** option and a **Detach** option. You can also manage the total number of assigned IPs through the **Attach/Detach IP(s)** button next to the list title.
-
-![change number of public IPs](#)
-
-The **Node Settings** box displays the number of currently attached addresses. The **Apply** button remains dimmed until changes are made.
+Sebagai contoh, ketika hosting beberapa situs web pada satu node, opsi multi-IP memungkinkan penanganan mereka sebagai layanan siap-produksi terpisah dengan menerapkan [nama domain kustom](https://docs.dewacloud.com/docs/custom-domains/) dan [sertifikat SSL](https://www.virtuozzo.com/application-platform-docs/secure-sockets-layer/) khusus untuk setiap situs. Fitur ini juga dapat bermanfaat untuk mengelola perangkat jaringan (mis., load balancers) dengan beberapa alamat IP untuk setiap jaringan.
 
 :::note
-The **primary IP** (first attached Public IP of each type) is used for both incoming and outgoing traffic. It cannot be deleted unless no other addresses of the same type remain on the node. Other IPs can only handle incoming traffic.
+Baik Public IPv4 dan IPv6 adalah opsi berbayar, dikenai biaya secara terpisah berdasarkan jam penggunaan. Biaya pasti dan jumlah IP yang diizinkan per node/lingkungan dapat ditemukan di bagian **Quotas & Pricing > Account Limits** pada dashboard.
 :::
 
-You can also see all IP addresses assigned to a container within the environment's topology details when connected via [SSH Gate](<https://docs.dewacloud.com/docs/ssh-access/>).
+Anda dapat menetapkan beberapa alamat IP melalui dashboard platform dengan menyesuaikan spinner **Public IPv4** dan **Public IPv6** saat membuat atau memodifikasi topologi lingkungan.
 
-![multiple public IP in SSH](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/multiple-public-ip/02-wizard-add-multiple-ip.png" alt="wizard add multiple IP" width="100%"/>
 
-The container's external addresses are shown under the **WAN IP** column, while the **LAN IP** column lists the internal address.
+Di sini, Anda dapat memilih atau memasukkan jumlah alamat yang dibutuhkan untuk kedua jenis. Jika batas tercapai, hubungi [penyedia hosting](https://www.virtuozzo.com/application-platform-partners/) Anda untuk meningkatkan jumlah alamat IP yang tersedia.
+
+## Mengelola Alamat IP Publik Multiple{#managing-multiple-public-ip-addresses}
+
+Pada dashboard utama, alamat IP yang diberikan ke setiap node dalam lingkungan ditampilkan dalam urutan berikut:
+
+- **Private IP**: Alamat IP internal yang secara otomatis ditetapkan ke container (tercantum di bawah ID Node).
+- **Public IPv4**: Alamat IPv4 eksternal atau daftar alamat yang diperluas.
+- **Public IPv6**: Alamat IPv6 eksternal atau daftar alamat yang diperluas.
+
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/multiple-public-ip/03-dashboard-managing-multiple-ip.png" alt="dashboard managing multiple IP" width="100%"/>
+
+Setiap alamat IP memiliki opsi **Copy to clipboard** dan **Detach**. Anda juga dapat mengelola jumlah total IP yang diberikan melalui tombol **Attach/Detach IP(s)** di sebelah judul daftar.
+
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/multiple-public-ip/04-change-number-of-public-ip.png" alt="change number of public IPs" width="100%"/>
+
+Kotak **Node Settings** menampilkan jumlah alamat yang saat ini ditetapkan. Tombol **Apply** tetap redup sampai perubahan dilakukan.
 
 :::note
-If the type of the newly attached IP is not explicitly indicated (e.g., within a **Cloud Scripting** solution or an application/add-on package from the platform **Marketplace**), IPv4 is used by default.
+**IP utama** (IP Publik pertama dari setiap jenis) digunakan untuk lalu lintas masuk dan keluar. Itu tidak dapat dihapus kecuali tidak ada lagi alamat lain dari jenis yang sama di node tersebut. IP lainnya hanya dapat menangani lalu lintas masuk.
 :::
 
-## API Reference on Multiple Public IPs
+Anda juga dapat melihat semua alamat IP yang diberikan ke container dalam detail topologi lingkungan saat terhubung melalui [SSH Gate](https://docs.dewacloud.com/docs/ssh-access/).
 
-### 1. Attaching or Detaching Public IP via API
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/multiple-public-ip/05-multiple-public-ip-in-ssh.png" alt="multiple public IP in SSH" width="100%"/>
 
-You can use the **SetExtIpCount** method to attach or detach a Public IP address via the platform API.
+Alamat eksternal container ditampilkan di bawah kolom **WAN IP**, sedangkan kolom **LAN IP** mencantumkan alamat internal.
+
+:::note
+Jika jenis IP yang baru ditambahkan tidak secara eksplisit disebutkan (mis., dalam solusi **Cloud Scripting** atau paket aplikasi/add-on dari **Marketplace** platform), IPv4 digunakan secara default.
+:::
+
+## API Reference on Multiple Public IPs{#api-reference-on-multiple-public-ips}
+
+### 1. Menyambung atau Memutuskan IP Publik melalui API{#attaching-or-detaching-public-ip-via-api}
+
+Anda dapat menggunakan metode **SetExtIpCount** untuk menyambung atau memutuskan alamat IP Publik melalui API platform.
 
 ```bash
 https://[hoster-api-host]/1.0/environment/control/rest/setextipcount?envname=[string]&session=[string]&type=[string]&count=[int]&nodegroup=[string]&nodeid=[int]
 ```
 
 #### Parameters:
-- **envname**: The name of the environment.
-- **session**: Current user session ID.
-- **type**: IP version (`ipv4` or `ipv6`).
-- **count**: Number of IPs to add or remove.
-- **nodegroup**: The destination node group (e.g., `bl`, `cp`, `sqldb`, `nosqldb`, `storage`, `vps`, or `build`).
-- **nodeid**: ID of the destination node.
+- **envname**: Nama lingkungan.
+- **session**: ID sesi pengguna saat ini.
+- **type**: Versi IP (`ipv4` atau `ipv6`).
+- **count**: Jumlah IP yang akan ditambah atau dikurangi.
+- **nodegroup**: Kelompok node tujuan (mis., `bl`, `cp`, `sqldb`, `nosqldb`, `storage`, `vps`, atau `build`).
+- **nodeid**: ID dari node tujuan.
 
-To increase or reduce the number of IPs (IPv4 or IPv6), adjust the **count** parameter.
+Untuk meningkatkan atau mengurangi jumlah IP (IPv4 atau IPv6), sesuaikan parameter **count**.
 
 :::note
-The **AttachExtIp** and **DetachExtIp** methods (previously used to add/remove Public IPs) are deprecated but remain available for backward compatibility.
+Metode **AttachExtIp** dan **DetachExtIp** (sebelumnya digunakan untuk menambah/menghapus IP Publik) dinyatakan usang tetapi tetap tersedia untuk kompatibilitas mundur.
 :::
 
-### 2. Swapping Public IP Addresses via API
+### 2. Menukar Alamat IP Publik melalui API{#swapping-public-ip-addresses-via-api}
 
-The **SwapExtIps** method allows you to swap Public IP addresses between two nodes within the same or different environments.
+Metode **SwapExtIps** memungkinkan Anda untuk menukar alamat IP Publik antara dua node dalam lingkungan yang sama atau berbeda.
 
 ```bash
 https://[hoster-api-host]/1.0/environment/control/rest/swapextips?envname=[string]&session=[string]&sourcenodeid=[int]&destnodeid=[int]&sourceip=[string]&destip=[string]
 ```
 
 #### Parameters:
-- **envname**: Name of the environment.
-- **session**: Current user session ID.
-- **sourcenodeid**: ID of the node to move the IP from.
-- **destnodeid**: ID of the destination node (can belong to another environment).
-- **sourceip**: Source Public IP to swap.
-- **destip**: Destination Public IP to swap.
+- **envname**: Nama lingkungan.
+- **session**: ID sesi pengguna saat ini.
+- **sourcenodeid**: ID node tempat IP akan dipindahkan.
+- **destnodeid**: ID dari node tujuan (bisa milik lingkungan lain).
+- **sourceip**: IP Publik sumber yang akan ditukar.
+- **destip**: IP Publik tujuan yang akan ditukar.
 
-To swap all Public IPs between nodes, omit the **sourceip** and **destip** parameters.
+Untuk menukar semua IP Publik antar node, abaikan parameter **sourceip** dan **destip**.
 
 :::note
-The **SwapExtIps** method currently works only with IPv4 addresses.
+Metode **SwapExtIps** saat ini hanya bekerja dengan alamat IPv4.
 :::
 
-## What’s Next?
-- [Public IP](<https://docs.dewacloud.com/docs/public-ip/>)
-- [Shared Load Balancer](<https://docs.dewacloud.com/docs/shared-load-balancer/>)
-- [HTTP Load Balancing](<https://docs.dewacloud.com/docs/load-balancing/>)
-- [TCP Load Balancing](<https://docs.dewacloud.com/docs/tcp-load-balancing/>)
+## Baca Juga
+
+- [Public IP](https://docs.dewacloud.com/docs/public-ip/)
+- [Shared Load Balancer](https://docs.dewacloud.com/docs/shared-load-balancer/)
+- [HTTP Load Balancing](https://docs.dewacloud.com/docs/load-balancing/)
+- [TCP Load Balancing](https://docs.dewacloud.com/docs/tcp-load-balancing/)

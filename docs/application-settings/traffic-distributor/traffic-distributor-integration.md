@@ -3,67 +3,74 @@ sidebar_position: 4
 slug: /traffic-distributor-integration
 title: Traffic Distributor Integration
 ---
-# Integrating Traffic Distributor with a Running Application
 
-Integrating **Traffic Distributor (TD)** into an already running application is a powerful way to distribute traffic across multiple environments, providing enhanced availability, failover protection, and more. The following guide explains how to achieve this integration without downtime, ensuring a smooth transition for your users.
+# Integrasi Traffic Distributor dengan Aplikasi yang Sedang Berjalan
 
-:::note Traffic Distributor enables several useful features, such as invisible application updates with **blue-green deployment**, A/B testing, and advanced failover protection. :::
+Mengintegrasikan **Traffic Distributor (TD)** ke dalam aplikasi yang sudah berjalan adalah cara kuat untuk mendistribusikan lalu lintas di berbagai environment, menyediakan ketersediaan yang ditingkatkan, perlindungan failover, dan lebih banyak lagi. Panduan berikut menjelaskan cara mencapai integrasi ini tanpa downtime, memastikan transisi yang mulus untuk pengguna Anda.
 
-## Steps for Integration
+:::note
+Traffic Distributor memungkinkan beberapa fitur berguna, seperti pembaruan aplikasi tak terlihat dengan **blue-green deployment**, A/B testing, dan perlindungan failover lanjutan.
+:::
 
-### 1. Add Application Copy to Traffic Routing
+## Langkah-Langkah untuk Integrasi
 
-1. First, ensure you have a running application in one environment. For this example, we’ll call it `primary-env`.
+### 1. Tambahkan Salinan Aplikasi ke Routing Lalu Lintas
+
+1. Pertama, pastikan Anda memiliki aplikasi yang berjalan dalam satu environment. Untuk contoh ini, kita akan menyebutnya `primary-env`.
    
-   ![primary environment](#)
+   ![primary environment](https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distributor-integration/01-primary-environment.png)
 
-2. Create a second environment to serve as a backup or an alternative version of the application. You can do this by cloning the `primary-env` environment, which will ensure the second environment (`second-env`) contains the same data and settings.
+2. Buat environment kedua untuk dijadikan cadangan atau versi alternatif dari aplikasi. Anda dapat melakukannya dengan menggandakan environment `primary-env`, yang akan memastikan environment kedua (`second-env`) memiliki data dan pengaturan yang sama.
    
-   ![environment clone](#)
+   ![environment clone](https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distributor-integration/02-environment-clone.png)
 
-   :::tip Ensure to adjust any "hardcoded" data, such as IP addresses or direct links, in the cloned environment if necessary. :::
+   :::tip
+   Pastikan untuk menyesuaikan data "hardcoded", seperti alamat IP atau tautan langsung, dalam environment yang digandakan jika perlu.
+   :::
 
-3. Next, [install Traffic Distributor](<https://docs.dewacloud.com/docs/traffic-distributor-installation/>) and specify both environments (`primary-env` and `second-env`) as backends.
+3. Selanjutnya, [instal Traffic Distributor](<https://docs.dewacloud.com/docs/traffic-distributor-installation/>) dan tentukan kedua environment (`primary-env` dan `second-env`) sebagai backend.
    
-   ![Traffic Distributor installation](#)
+   ![Traffic Distributor installation](https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distributor-integration/03-traffic-distributor-installation.png)
 
-   :::tip If multiple environment regions are available, consider hosting the second environment in a different region for better failover protection in case of hardware failures. :::
+   :::tip
+   Jika tersedia banyak region environment, pertimbangkan menghosting environment kedua di region yang berbeda untuk perlindungan failover yang lebih baik jika terjadi kegagalan perangkat keras.
+   :::
 
-4. After installation, Traffic Distributor will be ready to manage traffic between your environments. However, you need to route the incoming traffic to the Traffic Distributor, rather than directly to `primary-env`.
+4. Setelah instalasi, Traffic Distributor akan siap untuk mengelola lalu lintas antara environment Anda. Namun, Anda perlu merutekan lalu lintas yang masuk ke Traffic Distributor, bukan langsung ke `primary-env`.
 
-### 2. Configure App Entrypoint via Traffic Distributor
+### 2. Konfigurasikan Entrypoint Aplikasi via Traffic Distributor
 
-If your application uses a [custom domain](<https://docs.dewacloud.com/docs/custom-domains/>), you will need to move this entry point to the Traffic Distributor environment.
+Jika aplikasi Anda menggunakan [domain kustom](<https://docs.dewacloud.com/docs/custom-domains/>), Anda perlu memindahkan titik masuk ini ke environment Traffic Distributor.
 
-#### Swap Domains (for CNAME or ANAME)
+#### Tukar Domain (untuk CNAME atau ANAME)
 
-1. Open the **Settings** of your current environment (`primary-env`), where the custom domain is already bound.
+1. Buka **Settings** dari environment Anda saat ini (`primary-env`), di mana domain kustom sudah terkait.
    
-   ![primary environment settings](#)
+   ![primary environment settings](https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distributor-integration/05-primary-environment-settings.png)
 
-2. In the **Custom Domains** section, choose **Swap Domains** and select the Traffic Distributor environment from the drop-down menu.
+2. Di bagian **Custom Domains**, pilih **Swap Domains** dan pilih environment Traffic Distributor dari menu drop-down.
 
-   ![swap domains with Traffic Distributor](#)
+   ![swap domains with Traffic Distributor](https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distributor-integration/06-swap-domains-with-traffic-distributor.png)
 
-3. Click **Swap** and confirm the changes. Your custom domain will now point to the Traffic Distributor environment, which will handle traffic between the two backends.
+3. Klik **Swap** dan konfirmasikan perubahan. Domain kustom Anda sekarang akan mengarah ke environment Traffic Distributor, yang akan menangani lalu lintas antara kedua backend.
 
-#### Swap Public IPs (for A Records)
+#### Tukar IP Publik (untuk A Records)
 
-If your custom domain is associated with an **A Record**, you will need to swap the public IP address between the environments.
+Jika domain kustom Anda terkait dengan **A Record**, Anda perlu menukar alamat IP publik antara environment.
 
-1. Ensure that the Traffic Distributor environment has a [Public IP](<https://docs.dewacloud.com/docs/public-ip/>) attached. Copy the new IP address from the dashboard.
+1. Pastikan environment Traffic Distributor memiliki [Public IP](<https://docs.dewacloud.com/docs/public-ip/>) yang terlampir. Salin alamat IP baru dari dashboard.
    
-   ![Traffic Distributor public IP](#)
+   ![Traffic Distributor public IP](https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distributor-integration/07-traffic-distributor-public-ip.png)
 
-2. Access your DNS manager and update the **A Record** to point to the new IP address of the Traffic Distributor environment.
+2. Akses pengelola DNS Anda dan perbarui **A Record** untuk mengarah ke alamat IP baru dari environment Traffic Distributor.
 
-3. Wait for the DNS record cache to expire for the changes to take effect. The **TTL** (Time To Live) setting in your DNS manager will show how long the current IP address remains in the cache.
+3. Tunggu sampai cache catatan DNS kadaluarsa agar perubahan bisa berlaku. Pengaturan **TTL** (Time To Live) dalam pengelola DNS Anda akan menunjukkan berapa lama alamat IP saat ini tetap dalam cache.
 
-4. After confirming the entry point is updated, you can detach the public IP from the `primary-env` environment if it's no longer needed, saving on costs.
+4. Setelah memastikan titik masuk telah diperbarui, Anda dapat melepaskan IP publik dari environment `primary-env` jika tidak lagi diperlukan untuk menghemat biaya.
 
-Now, all incoming traffic for your custom domain will be routed through the Traffic Distributor, which will distribute requests between your environments according to the traffic ratio you have set.
+Sekarang, semua lalu lintas yang masuk untuk domain kustom Anda akan dirutekan melalui Traffic Distributor, yang akan mendistribusikan permintaan antara environment Anda sesuai dengan rasio lalu lintas yang telah Anda tetapkan.
 
-## What’s Next?
+## Baca Juga
 
 - [Traffic Distributor Overview](<https://docs.dewacloud.com/docs/traffic-distributor/>)
 - [Traffic Distributor Installation](<https://docs.dewacloud.com/docs/traffic-distributor-installation/>)
