@@ -7,94 +7,94 @@ title: Personal Access Tokens
 
 ![personal access tokens logo](#)
 
-**Personal Access Tokens** are an alternative approach to authenticate API requests in the platform, which, in comparison to the default session-based method, provides greater versatility and reliability.
+**Personal Access Tokens** adalah pendekatan alternatif untuk mengautentikasi permintaan API di platform, yang bila dibandingkan dengan metode berbasis sesi default, menawarkan fleksibilitas dan keandalan yang lebih besar.
 
-Among advantages of tokens, the following ones can be highlighted:
+Di antara keuntungan token, yang berikut dapat disorot:
 
-  * multiple tokens can be generated at once to support different tasks
-  * simplified authentication with tokens (no need to perform additional request(s) to get a session) ensures smaller code-base and quicker response when using automation scripts
-  * your credentials (login and password) are not exposed within scripts
-  * tokens can authenticate just a specified part of the account functionality, so you can share them with co-workers and third-party assistants without creating a security breach
-  * tokens can be supplemented with the expiration date or manually revoked at any time
+  * beberapa token dapat dihasilkan sekaligus untuk mendukung tugas yang berbeda
+  * autentikasi yang disederhanakan dengan token (tidak perlu melakukan permintaan tambahan untuk mendapatkan sesi) memastikan basis kode yang lebih kecil dan respons yang lebih cepat saat menggunakan skrip otomasi
+  * kredensial Anda (login dan kata sandi) tidak terekspos dalam skrip
+  * token dapat mengautentikasi hanya bagian tertentu dari fungsionalitas akun, sehingga Anda dapat membagikannya dengan rekan kerja dan asisten pihak ketiga tanpa menciptakan pelanggaran keamanan
+  * token dapat dilengkapi dengan tanggal kedaluwarsa atau dicabut secara manual kapan saja
 
-The platform provides a fully functional visual interface for tokens management directly in the dashboard (starting with the 5.5 version), which makes it the preferable way to authenticate any API integration (especially on accounts with the [two-factor authentication](https://docs.dewacloud.com/docs/two-factor-authentication) enabled):
+Platform menyediakan antarmuka visual yang sepenuhnya fungsional untuk pengelolaan token langsung di dashboard (mulai dari versi 5.5), yang menjadikannya cara yang lebih disukai untuk mengautentikasi integrasi API apa pun (terutama pada akun dengan [autentikasi dua faktor](https://docs.dewacloud.com/docs/two-factor-authentication) diaktifkan):
 
-  * [Managing Access Tokens](https://docs.dewacloud.com/docs/#manage)
-  * [Using Access Tokens](https://docs.dewacloud.com/docs/#use)
+  * [Manage Access Tokens](https://docs.dewacloud.com/docs/#manage)
+  * [Use Access Tokens](https://docs.dewacloud.com/docs/#use)
 
-## Managing Access Tokens{#managing-access-tokens}
+## Mengelola Access Tokens{#managing-access-tokens}
 
-Below, we’ll overview the process of personal access tokens management using the dashboard UI:
+Berikut, kita akan memeriksa proses pengelolaan personal access tokens menggunakan antarmuka dashboard:
 
-1\. Go to the **Settings** section by clicking on the same-named button at the top-right corner of the dashboard.
+1\. Buka bagian **Settings** dengan mengklik tombol dengan nama yang sama di sudut kanan atas dashboard.
 
 ![user account settings](#)
 
-2\. In the opened frame, select the **Access Tokens** tab to view the list of all tokens on the account. The tools panel above the list provides access to the following buttons:
+2\. Dalam bingkai yang terbuka, pilih tab **Access Tokens** untuk melihat daftar semua token di akun. Panel alat di atas daftar menyediakan akses ke tombol berikut:
 
-  * **Generate** \- creates a new token by providing the description, expiration date and selecting the required API methods (either from predefined sets or manually)
-  * **Edit** \- adjusts the existing token or regenerates it (i.e. sets a new name, while maintaining all other parameters)
-  * **Copy** \- creates a new token using parameters of the existing one as a basis
-  * **Remove** \- deletes selected token
-  * **Refresh** \- displays the most recent changes to the list
+  * **Generate** \- membuat token baru dengan memberikan deskripsi, tanggal kedaluwarsa, dan memilih metode API yang diperlukan (baik dari set yang sudah ditentukan atau secara manual)
+  * **Edit** \- menyesuaikan token yang ada atau meregenerasinya (mis., menetapkan nama baru, sementara mempertahankan semua parameter lainnya)
+  * **Copy** \- membuat token baru menggunakan parameter dari yang ada sebagai dasar
+  * **Remove** \- menghapus token yang dipilih
+  * **Refresh** \- menampilkan perubahan terbaru pada daftar
 
 ![access tokens settings](#)
 
-3\. While creating a new or adjusting the existing token, the following frame is displayed, allowing to adjust:
+3\. Saat membuat yang baru atau menyesuaikan token yang ada, bingkai berikut ditampilkan, memungkinkan untuk menyesuaikan:
 
-  * _**Description**_ \- custom description provided for token
-  * _**Expires At**_ \- the date in the _dd-mm-yyyy_ format this token is valid till (can be regenerated after expiration)
-  * _**API**_ \- the name of the API requests set: predefined (_Extended Access_ , _IDE Plugins_ , _Marketplace_ , _Maven Plugin_) or _Custom_ (with manually selected methods)
-  * use the _Search_ field, the _Only Checked_ filter and links to the API _Docs_ (displayed upon hovering over the particular method) to configure required permissions for token
+  * _**Description**_ \- deskripsi kustom yang disediakan untuk token
+  * _**Expires At**_ \- tanggal dalam format _dd-mm-yyyy_ hingga saat token ini berlaku (dapat diregenerasi setelah kedaluwarsa)
+  * _**API**_ \- nama set permintaan API: yang sudah ditentukan (_Extended Access_ , _IDE Plugins_ , _Marketplace_ , _Maven Plugin_) atau _Custom_ (dengan metode yang dipilih secara manual)
+  * gunakan bidang _Search_, filter _Only Checked_ dan tautan ke API _Docs_ (ditampilkan saat melayang di atas metode tertentu) untuk mengatur izin yang diperlukan untuk token
 
 ![generate access token](#)
 
-4\. All the token changes on account require an obligatory confirmation with the password before being applied.
+4\. Semua perubahan token pada akun memerlukan konfirmasi wajib dengan kata sandi sebelum diterapkan.
 
 ![password confirmation](#)
 
-5\. Next, you’ll see the access token value. Ensure you’ve saved it (use the **Download** /**Copy** buttons), as it won’t be displayed anywhere ever again.
+5\. Selanjutnya, Anda akan melihat nilai access token. Pastikan Anda menyimpannya (gunakan tombol **Download**/**Copy**), karena itu tidak akan ditampilkan di mana pun lagi.
 
 ![save access token](#)
 
 :::tip
-If you forget or lost your token value, it is possible to generate a new one by accessing the Edit Access Token frame and clicking the appropriate link at the bottom. Herewith, the old value becomes invalid, so any existing automation with this token should be updated.
+Jika Anda lupa atau kehilangan nilai token Anda, Anda dapat membuat yang baru dengan mengakses bingkai Edit Access Token dan mengklik tautan yang sesuai di bagian bawah. Dalam hal ini, nilai lama menjadi tidak valid, jadi semua otomasi yang ada dengan token ini harus diperbarui.
 :::
 
-6\. You can **Remove** no longer required tokens (use **Shift** and **Ctrl** to select multiple ones) with the same-named button at the tools panel.
+6\. Anda dapat **Remove** token yang tidak lagi diperlukan (gunakan **Shift** dan **Ctrl** untuk memilih beberapa) dengan tombol dengan nama yang sama di panel alat.
 
 ![remove access token](#)
 
-Confirm in a pop-up and provide the password to proceed. Now, you know how to manage personal access tokens on the account and can use them in your API requests.
+Konfirmasikan dalam pop-up dan berikan kata sandi untuk melanjutkan. Sekarang, Anda tahu cara mengelola personal access token di akun dan dapat menggunakannya dalam permintaan API Anda.
 
-## Using Access Tokens{#using-access-tokens}
+## Menggunakan Access Tokens{#using-access-tokens}
 
-The usage of access tokens majorly simplifies API requests authentication, as it allows skipping session generation step and ensures greater reliability compared to the short-term validity of sessions.
+Penggunaan access tokens terutama menyederhanakan autentikasi permintaan API, karena memungkinkan melewati langkah generasi sesi dan memastikan keandalan yang lebih besar dibandingkan validitas jangka pendek sesi.
 
-1\. Just execute the required API method, specifying your _**token**_ within the _**session**_ parameter.
+1\. Cukup jalankan metode API yang diperlukan, dengan menentukan _**token**_ Anda dalam parameter _**session**_.
 
-For example, you can [stop an environment](https://docs.dewacloud.com/api/#!/api/environment.Control-method-StopEnv) by entering the following URL into a browser:
+Sebagai contoh, Anda dapat [menghentikan lingkungan](https://docs.dewacloud.com/api/#!/api/environment.Control-method-StopEnv) dengan memasukkan URL berikut ke browser:
 
 `https://app.${platformDomain}/1.0/environment/control/rest/stopenv?envName=${envName}&session=${token}`
 
-Here:
+Di sini:
 
-  * `${platformDomain}` \- platform URL (domain name)
-  * `${envName}` \- name of the target environment (e.g. _my-project_)
-  * `${token}` \- value of the token (ensure it has a permission for the called operation)
+  * `${platformDomain}` \- URL platform (nama domain)
+  * `${envName}` \- nama lingkungan target (mis. _my-project_)
+  * `${token}` \- nilai token (pastikan memiliki izin untuk operasi yang dipanggil)
 
 ![stop environment api request with token](#)
 
-For the successful operation, you should get a _“result”:0_ in response (any non-zero value stands for error).
+Untuk operasi yang berhasil, Anda harus mendapatkan “_result_:0” sebagai respons (nilai non-zero menunjukkan kesalahan).
 
-2\. Now, if you return to the dashboard, you’ll see the appropriate environment stopped.
+2\. Sekarang, jika Anda kembali ke dashboard, Anda akan melihat lingkungan yang sesuai telah dihentikan.
 
 ![stopped environment](#)
 
-That’s it! API management with tokens is that simple!
+Itu saja! Manajemen API dengan token se-sederhana itu!
 
 ## Baca Juga{#whats-next}
 
-  * [API Overview](https://docs.dewacloud.com/docs/api-overview/)
-  * [CLI Overview](https://docs.dewacloud.com/docs/cli/)
-  * [Two-Factor Authentication](https://docs.dewacloud.com/docs/two-factor-authentication/)
+  * [Ikhtisar API](https://docs.dewacloud.com/docs/api-overview/)
+  * [Ikhtisar CLI](https://docs.dewacloud.com/docs/cli/)
+  * [Autentikasi Dua Faktor](https://docs.dewacloud.com/docs/two-factor-authentication/)

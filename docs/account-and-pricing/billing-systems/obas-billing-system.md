@@ -1,150 +1,151 @@
 ---
 sidebar_position: 3
 slug: /obas-billing-system
-title: OBAS Billing System
+title: Sistem Penagihan OBAS
 ---
-# Billing via OBAS
 
-This step-by-step instruction shows you how to convert and refill your account if your hosting provider uses **OBAS (Odin Business Automation Standard)** system.
+# Penagihan melalui OBAS
 
-At the moment, the OBAS system is used by **[Layershift](https://www.virtuozzo.com/application-platform-partners/layershift/)**, **[Cloudplatform](https://www.virtuozzo.com/application-platform-partners/cloudplatform/)**, **[Elastx](https://www.virtuozzo.com/application-platform-partners/elastx/)**, **[DOCKTERA](https://www.virtuozzo.com/application-platform-partners/docktera/)**, and **[Axarnet](https://www.virtuozzo.com/application-platform-partners/axarnet/)**.
+Instruksi langkah demi langkah ini menunjukkan kepada Anda cara mengonversi dan mengisi ulang akun Anda jika penyedia hosting Anda menggunakan sistem **OBAS (Odin Business Automation Standard)**.
 
-* [Conversion](#conversion)
-* [Refilling](#refilling)
+Saat ini, sistem OBAS digunakan oleh **[Layershift](https://docs.dewacloud.com/docs/partners/layershift/)**, **[Cloudplatform](https://docs.dewacloud.com/docs/partners/cloudplatform/)**, **[Elastx](https://docs.dewacloud.com/docs/partners/elastx/)**, **[DOCKTERA](https://docs.dewacloud.com/docs/partners/docktera/)**, dan **[Axarnet](https://docs.dewacloud.com/docs/partners/axarnet/)**.
 
-## Conversion{#conversion}
+* [Konversi](#conversion)
+* [Pengisian Ulang](#refilling)
 
-1\. At the dashboard, click the **Upgrade trial account** button in the drop-down menu.
+## Konversi{#conversion}
+
+1\. Di dashboard, klik tombol **Upgrade trial account** di menu drop-down.
 
 ![upgrade trial account button](#)
 
-2\. Fill out the required fields in the opened window and confirm your agreement with _Terms of service_. Click **Next**.
+2\. Isikan kolom yang diperlukan di jendela yang terbuka dan konfirmasi persetujuan Anda dengan _Terms of service_. Klik **Next**.
 
 ![OBAS trial to paid conversion](#)
 
-3\. Select the payment method (_Credit/Debit card_ or _Paypal_) and set the sum using the slider. Click **Next**, then confirm your choice.
+3\. Pilih metode pembayaran (_Kartu kredit/debit_ atau _Paypal_) dan tentukan jumlahnya menggunakan slider. Klik **Next**, lalu konfirmasikan pilihan Anda.
 
-:::note Some hosters offer additional payment methods beyond the default ones. If needed, you'll be prompted to contact the hoster for other payment options. :::
+:::note Beberapa hoster menawarkan metode pembayaran tambahan selain yang default. Jika diperlukan, Anda akan diminta untuk menghubungi hoster untuk opsi pembayaran lainnya. :::
 
 ![OBAS first refill](#)
 
-### Card Payment Method{#card-payment-method}
+### Metode Pembayaran Kartu{#card-payment-method}
 
-Enter your card details and click **Proceed**.
+Masukkan detail kartu Anda dan klik **Proceed**.
 
 ![enter card details](#)
 
-After that, a **Purchase Authentication** window will open. Enter your password for full authentication.
+Setelah itu, jendela **Purchase Authentication** akan terbuka. Masukkan kata sandi Anda untuk otentikasi penuh.
 
-### PayPal Payment Method{#paypal-payment-method}
+### Metode Pembayaran PayPal{#paypal-payment-method}
 
-* **With PayPal account:**
+* **Dengan akun PayPal:**
 
-Click **Log In** and provide your PayPal email and password to make the purchase.
+Klik **Log In** dan masukkan email dan kata sandi PayPal Anda untuk melakukan pembelian.
 
 ![log in OBAS account](#)
 
 ![OBAS account credentials](#)
 
-After conversion, you’ll receive emails with details about your account conversion and refilling. This information will also appear in a dashboard message.
+Setelah konversi, Anda akan menerima email dengan detail konversi akun dan pengisian ulang Anda. Informasi ini juga akan muncul sebagai pesan di dashboard.
 
-`tip If you want to enable auto-refill, check the box for “I’d like to use PayPal for future payments to {hoster’s name}” as shown below.`
+`tip Jika Anda ingin mengaktifkan pengisian ulang otomatis, centang kotak "I’d like to use PayPal for future payments to {hoster’s name}" seperti yang ditunjukkan di bawah ini.`
 
-* **Without PayPal account:**
+* **Tanpa akun PayPal:**
 
-You can use PayPal even if you don’t have an account. Click the **Buy as a guest** button, enter your billing information, and proceed.
+Anda dapat menggunakan PayPal meskipun Anda tidak memiliki akun. Klik tombol **Buy as a guest**, masukkan informasi penagihan Anda, dan lanjutkan.
 
 ![PayPal refill as guest](#)
 
-Enter your debit/credit card details after filling out all required fields and pressing **Continue**.
+Masukkan detail kartu debit/kredit Anda setelah mengisi semua kolom yang diperlukan dan menekan **Continue**.
 
 ![PayPal card details](#)
 
-You’ll receive emails with details about your account conversion and refilling, which will also appear as a dashboard message.
+Anda akan menerima email dengan detail tentang konversi akun dan pengisian ulang Anda, yang juga akan muncul sebagai pesan di dashboard.
 
-:::note This payment method does not support auto-refill. :::
+:::note Metode pembayaran ini tidak mendukung pengisian ulang otomatis. :::
 
-## Refilling{#refilling}
+## Pengisian Ulang{#refilling}
 
-You can order recharge cards (One-Time Fee service plans) through both the OBAS online store and the platform dashboard.
+Anda dapat memesan kartu isi ulang (rencana layanan One-Time Fee) melalui toko online OBAS maupun dashboard platform.
 
-### Through Platform Dashboard{#through-platform-dashboard}
+### Melalui Dashboard Platform{#through-platform-dashboard}
 
-1\. To replenish your account, click **Balance > Refill balance**. Set the sum using the slider and click **Submit Payment**.
+1\. Untuk mengisi ulang akun Anda, klik **Balance > Refill balance**. Tentukan jumlahnya menggunakan slider dan klik **Submit Payment**.
 
 ![refill balance](#)
 
-2\. _If using_ **card** _as the payment method:_
+2\. _Jika menggunakan_ **kartu** _sebagai metode pembayaran:_
 
-Enter your card details and click **Proceed**. Then enter your authentication password.
+Masukkan detail kartu Anda dan klik **Proceed**. Kemudian masukkan kata sandi otentikasi Anda.
 
 ![refill with card](#)
 
-:::tip If you’ve refilled your account with this card before, your details will be saved for future refills. :::
+:::tip Jika Anda telah mengisi ulang akun Anda dengan kartu ini sebelumnya, detail Anda akan disimpan untuk pengisian ulang di masa mendatang. :::
 
-3\. _If using_ **PayPal** _as the payment method:_
+3\. _Jika menggunakan_ **PayPal** _sebagai metode pembayaran:_
 
-Log into your PayPal account and complete the purchase.
+Masuk ke akun PayPal Anda dan selesaikan pembelian.
 
 ![refill with PayPal](#)
 
-After refilling, you’ll receive emails detailing the account status. This information will also appear in a dashboard message.
+Setelah pengisian ulang, Anda akan menerima email yang merinci status akun. Informasi ini juga akan muncul sebagai pesan di dashboard.
 
-4\. You can set up auto-refill according to your preferences. Click **Configure auto-refill** in the drop-down menu.
+4\. Anda dapat mengatur pengisian ulang otomatis sesuai dengan preferensi Anda. Klik **Configure auto-refill** dalam menu drop-down.
 
 ![configure auto-refill button](#)
 
-In the opened tab, specify the amount and select the frequency:
+Di tab yang terbuka, tentukan jumlah dan pilih frekuensinya:
 
-* _Weekly_ (every Monday)
-* _Monthly_ (1st of each month)
-* When _balance less than_ the stated sum
+* _Mingguan_ (setiap Senin)
+* _Bulanan_ (tanggal 1 setiap bulan)
+* Ketika _saldo kurang dari_ jumlah yang dinyatakan
 
-Confirm your choice.
+Konfirmasi pilihan Anda.
 
 ![OBAS auto-refill](#)
 
-To disable auto-refill, click the provided link.
+Untuk menonaktifkan pengisian ulang otomatis, klik tautan yang disediakan.
 
 ![OBAS disable auto-refill](#)
 
-5\. Using the **Payment methods** button, you can select your default payment method for refills.
+5\. Menggunakan tombol **Payment methods**, Anda dapat memilih metode pembayaran default Anda untuk pengisian ulang.
 
-6\. Click **View invoices** to open the Odin Business Automation Control Panel for your billing history, including invoices, orders, and payments.
+6\. Klik **View invoices** untuk membuka Odin Business Automation Control Panel untuk riwayat penagihan Anda, termasuk faktur, pesanan, dan pembayaran.
 
-7\. Click **Billing history** to review data on resource consumption from your balance.
+7\. Klik **Billing history** untuk meninjau data tentang konsumsi sumber daya dari saldo Anda.
 
-### Through OBAS Store{#through-obas-store}
+### Melalui Toko OBAS{#through-obas-store}
 
-**Prerequisite:** Your account must be converted to billing.
+**Prasyarat:** Akun Anda harus dikonversi ke penagihan.
 
-A list of _PaaS One-Time Fee_ service plans is displayed on the OBAS Online Store's main page. Select and buy the one that suits your needs.
+Daftar rencana layanan _PaaS One-Time Fee_ ditampilkan di halaman utama Toko Online OBAS. Pilih dan beli yang sesuai dengan kebutuhan Anda.
 
 ![PaaS service plans in OBAS](#)
 
-1\. Choose the required **One-time fee item** and follow the wizard’s steps.
+1\. Pilih **item tarif sekali bayar** yang diperlukan dan ikuti langkah-langkah dari wizard.
 
-2\. Specify whether you are a new or existing OBAS customer:
+2\. Tentukan apakah Anda adalah pelanggan OBAS baru atau yang sudah ada:
 
-* **Existing Customer:** Enter your email and password, then click **Sign In**.  
+* **Pelanggan yang ada:** Masukkan email dan kata sandi Anda, lalu klik **Sign In**.  
   ![OBAS existing customer](#)
 
-* **New Customer:** If you don’t have an OBAS account, follow the trial-to-paid conversion steps in the **Conversion** section.
+* **Pelanggan baru:** Jika Anda tidak memiliki akun OBAS, ikuti langkah-langkah konversi dari percobaan ke berbayar pada bagian **Konversi**.
 
-3\. Your order has been prepared. Review the order details and click **Place Order** to proceed to payment.
+3\. Pesanan Anda telah disiapkan. Tinjau detail pesanan dan klik **Place Order** untuk melanjutkan ke pembayaran.
 
 ![OBAS review and place order](#)
 
-4\. Select a payment method.
+4\. Pilih metode pembayaran.
 
 ![OBAS payment method](#)
 
-5\. Enter card details and click **Proceed** to complete the payment.
+5\. Masukkan detail kartu dan klik **Proceed** untuk menyelesaikan pembayaran.
 
 ![OBAS card details](#)
 
-## What’s Next{#whats-next}
+## Baca Juga{#whats-next}
 
-* [Billing System Overview](https://docs.dewacloud.com/docs/billing-system/)
-* [Upgrade & Refill Account](https://docs.dewacloud.com/docs/upgrade-refill-account/)
-* [Pricing Model Overview](https://docs.dewacloud.com/docs/pricing-model/)
+* [Gambaran Umum Sistem Penagihan](https://docs.dewacloud.com/docs/billing-system/)
+* [Upgrade & Isi Ulang Akun](https://docs.dewacloud.com/docs/upgrade-refill-account/)
+* [Gambaran Umum Model Harga](https://docs.dewacloud.com/docs/pricing-model/)

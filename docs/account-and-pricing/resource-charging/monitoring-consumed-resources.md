@@ -1,99 +1,100 @@
 ---
 sidebar_position: 3
 slug: /monitoring-consumed-resources
-title: Monitoring Consumed Resources
+title: Pemantauan Sumber Daya yang Dikonsumsi
 ---
-# Monitoring Consumed Resources
 
-Keeping an eye on the resources your application consumes allows you to plan your budget and control the expenditure of funds. Below, we will describe how it is implemented in the platform:
+# Pemantauan Sumber Daya yang Dikonsumsi
 
-  * [Estimated Environment Cost](https://docs.dewacloud.com/docs/#estimated-environment-cost)
-  * [Current Resource Usage](https://docs.dewacloud.com/docs/#current-resource-usage)
-  * [Statistic of Consumption](https://docs.dewacloud.com/docs/#statistics-of-consumption)
-  * [Billing History](https://docs.dewacloud.com/docs/#billing-history)
+Memantau sumber daya yang dikonsumsi oleh aplikasi Anda memungkinkan Anda untuk merencanakan anggaran dan mengendalikan pengeluaran dana. Di bawah ini, kami akan menjelaskan bagaimana hal ini diimplementasikan di platform:
 
-## Estimated Environment Cost{#estimated-environment-cost}
+* [Perkiraan Biaya Environment](https://docs.dewacloud.com/docs/#estimated-environment-cost)
+* [Penggunaan Sumber Daya Saat Ini](https://docs.dewacloud.com/docs/#current-resource-usage)
+* [Statistik Konsumsi](https://docs.dewacloud.com/docs/#statistics-of-consumption)
+* [Riwayat Penagihan](https://docs.dewacloud.com/docs/#billing-history)
 
-While creating or changing the environment, you operate with a [dedicated wizard](https://docs.dewacloud.com/docs/setting-up-environment/), which is divided into three main sections. The left part allows to set up the required topology. The second (central) one is to choose the number of nodes, allocate resources (**Reserved Cloudlets** and **Scaling Limit**), and enable additional options (**Disk Limit** , **Public IP** , etc.). Within the right panel, you can check the **Estimated Cost** of your environment in the “minimum-maximum" format, showing the price per hour, day, or month.
+## Perkiraan Biaya Environment{#estimated-environment-cost}
 
-:::note You can learn more about how the platform pricing works in the linked document. :::
+Saat membuat atau mengubah environment, Anda bekerja dengan [wizard khusus](https://docs.dewacloud.com/docs/setting-up-environment/), yang dibagi menjadi tiga bagian utama. Bagian kiri memungkinkan Anda mengatur topologi yang diperlukan. Yang kedua (tengah) adalah untuk memilih jumlah node, mengalokasikan sumber daya (**Reserved Cloudlets** dan **Scaling Limit**), dan mengaktifkan opsi tambahan (**Disk Limit**, **Public IP**, dll.). Pada panel kanan, Anda dapat memeriksa **Perkiraan Biaya** environment Anda dalam format "minimum-maksimum", menunjukkan harga per jam, hari, atau bulan.
 
-Hover over the **Price** widget in the wizard to get detailed information about the cost of the used resources and options within your environment.
+:::note Anda dapat mempelajari lebih lanjut tentang bagaimana cara kerja harga platform dalam dokumen terkait. :::
+
+Arahkan kursor ke widget **Price** di wizard untuk mendapatkan informasi terperinci tentang biaya sumber daya dan opsi yang digunakan di environment Anda.
 
 ![information about the cost of the used resources](#)
 
-Here, you can see three columns:
+Di sini, Anda dapat melihat tiga kolom:
 
-  * **Containers** \- list of all nodes in the environment
-  * **From** \- a reserved number of allocated resources (i.e., environment minimal price)
-  * **To** \- a resource limit (i.e., maximal price)
+* **Containers** \- daftar semua node dalam environment
+* **Dari** \- jumlah sumber daya yang dialokasikan yang dipesan (yaitu, harga minimal environment)
+* **Hingga** \- batasan sumber daya (yaitu, harga maksimal)
 
-The displayed containers are grouped by layers to simplify perception and the total cost is shown at the bottom of the frame, providing additional information on the received **Discount** and **Saved** money.
+Container yang ditampilkan dikelompokkan berdasarkan lapisan untuk mempermudah pemahaman, dan total biaya ditampilkan di bagian bawah frame, memberikan informasi tambahan tentang **Diskon** dan uang yang **Disimpan** yang diterima.
 
-## Current Resource Usage{#current-resource-usage}
+## Penggunaan Sumber Daya Saat Ini{#current-resource-usage}
 
-In your dashboard, you can see a list of all your environments. The right-hand column displays current resource **Usage**. You can see the amount of disk storage and cloudlets currently being used by the whole environment or, if you expand the environment context using the arrow icon at the left, you can see the individual resource usage by each server within the environment.
+Di dashboard Anda, Anda dapat melihat daftar semua environment Anda. Kolom sebelah kanan menampilkan **Usage** sumber daya saat ini. Anda dapat melihat jumlah penyimpanan disk dan cloudlets yang sedang digunakan oleh seluruh environment atau, jika Anda memperluas konteks environment menggunakan ikon panah di kiri, Anda dapat melihat penggunaan sumber daya individu oleh masing-masing server dalam environment.
 
-1\. The first metric in the **Usage** column is the number of cloudlets currently being used (first cloudlet number) out of the cloudlet _Scaling Limit_ (second cloudlet number) you have configured.
+1\. Metrik pertama dalam kolom **Usage** adalah jumlah cloudlets yang saat ini digunakan (nomor cloudlet pertama) dari batas _Scaling Limit_ cloudlet (nomor cloudlet kedua) yang telah Anda konfigurasikan.
 
 ![environment cloudlet usage](#)
 
-The cloudlet icon changes color from green to yellow and red when you are near or at the configured _Scaling Limit_.
+Ikon cloudlet berubah warna dari hijau ke kuning dan merah ketika Anda mendekati atau mencapai _Scaling Limit_ yang dikonfigurasi.
 
-2\. The second metric in the **Usage** column is the percentage of currently consumed **disk space** out of the assigned disk limit.
+2\. Metrik kedua dalam kolom **Usage** adalah persentase **ruang disk** yang saat ini digunakan dari batas disk yang ditetapkan.
 
 ![environment disk space usage](#)
 
-## Statistics of Consumption{#statistics-of-consumption}
+## Statistik Konsumsi{#statistics-of-consumption}
 
-You can also see the amount of consumed Disk, RAM (Memory), CPU, and Network Bandwidth according to each container by clicking on the [Statistics](https://docs.dewacloud.com/docs/view-app-statistics/) button of the desired node.
+Anda juga dapat melihat jumlah Disk, RAM (Memori), CPU, dan Bandwidth Jaringan yang dikonsumsi sesuai dengan masing-masing container dengan mengklik tombol [Statistics](https://docs.dewacloud.com/docs/view-app-statistics/) pada node yang diinginkan.
 
 ![application statistics](#)
 
-Based on the statistics received, you can change the limits of the automatic [vertical](https://docs.dewacloud.com/docs/automatic-vertical-scaling/) and [horizontal](https://docs.dewacloud.com/docs/automatic-horizontal-scaling/) scaling for your environment. For example, you can choose the number of reserved cloudlets in accordance with the load on the graphs.
+Berdasarkan statistik yang diterima, Anda dapat mengubah batasan skala [vertikal](https://docs.dewacloud.com/docs/automatic-vertical-scaling/) dan [horizontal](https://docs.dewacloud.com/docs/automatic-horizontal-scaling/) otomatis untuk environment Anda. Misalnya, Anda dapat memilih jumlah cloudlet yang dipesan sesuai dengan beban pada grafik.
 
-## Billing History{#billing-history}
+## Riwayat Penagihan{#billing-history}
 
-An important tool for budget analysis is billing history tracking, which you can find in the corresponding section of the platform dashboard. If needed, the report can be downloaded to your local machine.
+Alat penting untuk analisis anggaran adalah pelacakan riwayat penagihan, yang dapat Anda temukan di bagian yang sesuai dari dashboard platform. Jika diperlukan, laporan dapat diunduh ke perangkat lokal Anda.
 
-1\. Use the **Billing History** ![billing icon](#) button next to your specific environment or navigate to the account’s **Balance > Billing History** option in the upper menu to review the charges for consumed resources.
+1\. Gunakan tombol **Billing History** ![billing icon](#) di sebelah lingkungan spesifik Anda atau arahkan ke opsi **Balance > Billing History** akun di menu atas untuk meninjau biaya sumber daya yang dikonsumsi.
 
-2\. In the left panel, you can adjust search parameters to customize your billing history report:
+2\. Di panel kiri, Anda dapat menyesuaikan parameter pencarian untuk mempersonalisasi laporan riwayat penagihan Anda:
 
-  * specify **Start/End** dates to set the report’s range
-  * choose **Interval** (period) for grouping data in the report
-  * enable **UTC time** to switch from local time to UTC in the report
-  * toggle **Group by node** switcher to group instances within the same layer (billing history is shown separately for each node by default)
+* tentukan tanggal **Mulai/Akhir** untuk menetapkan rentang laporan
+* pilih **Interval** (periode) untuk pengelompokan data dalam laporan
+* aktifkan **waktu UTC** untuk beralih dari waktu lokal ke UTC dalam laporan
+* nyalakan switcher **Group by node** untuk mengelompokkan instance dalam lapisan yang sama (riwayat penagihan ditampilkan secara terpisah untuk setiap node secara default)
 
 ![billing history search parameters](#)
 
-Click **Refresh** to apply changes.
+Klik **Refresh** untuk menerapkan perubahan.
 
-3\. Within intervals, the displayed data is grouped by environments, expand it to see the list of nodes and their resource usage. All the nodes are sorted in alphabetical order and additional paid options (if any) are shown below, e.g. [Public IP](https://docs.dewacloud.com/docs/public-ip/) or [SSL](https://docs.dewacloud.com/docs/custom-ssl/).
+3\. Dalam interval waktu, data yang ditampilkan dikelompokkan berdasarkan environment, perluas untuk melihat daftar node dan penggunaan sumber daya mereka. Semua node diurutkan secara alfabetis dan opsi berbayar tambahan (jika ada) ditampilkan di bawah, misalnya [Public IP](https://docs.dewacloud.com/docs/public-ip/) atau [SSL](https://docs.dewacloud.com/docs/custom-ssl/).
 
 ![billing history data](#)
 
-You can see the following information regarding every environment node:
+Anda dapat melihat informasi berikut mengenai setiap node environment:
 
-  * _Reserved Cloudlets_
-  * _Dynamic Cloudlets_
-  * _Paid Storage_
-  * _Paid Traffic_
-  * _Cost_
+* _Cloudlet yang Dipesan_
+* _Cloudlet Dinamis_
+* _Penyimpanan Berbayar_
+* _Lalu Lintas Berbayar_
+* _Biaya_
 
-:::warning Some hosting providers can offer some free resources (cloudlets, disk space, IP addresses, SSL certificates), in which case, only resources used over that amount will be charged. :::
+:::warning Beberapa penyedia hosting dapat menawarkan beberapa sumber daya gratis (cloudlet, ruang disk, alamat IP, sertifikat SSL), dalam hal ini, hanya sumber daya yang digunakan melebihi jumlah tersebut yang akan dikenakan biaya. :::
 
-The total charges (overall cost) between the selected dates are calculated for you at the very bottom of the list.
+Total biaya (biaya keseluruhan) antara tanggal yang dipilih dihitung untuk Anda di bagian paling bawah daftar.
 
-4\. In order to analyze your costs with local tools, you can download your billing history as a _**.csv**_ file with the appropriate **Download CSV** button at the bottom.
+4\. Untuk menganalisis biaya Anda dengan alat lokal, Anda dapat mengunduh riwayat penagihan Anda sebagai file _**.csv**_ dengan tombol **Download CSV** yang sesuai di bagian bawah.
 
 ![download CSV](#)
 
-As you can see, the platform provides complete information about the cost of services and the use of resources, which helps you easily plan your budget.
+Seperti yang Anda lihat, platform menyediakan informasi lengkap tentang biaya layanan dan penggunaan sumber daya, yang membantu Anda merencanakan anggaran dengan mudah.
 
 ## Baca Juga{#whats-next}
 
-  * [Charged Resources](https://docs.dewacloud.com/docs/chargeable-resources/)
-  * [Load Alerts](https://docs.dewacloud.com/docs/load-alerts/)
-  * [Automatic Discounts](https://docs.dewacloud.com/docs/automatic-discounts/)
-  * [Billing System Overview](https://docs.dewacloud.com/docs/billing-system/)
+* [Sumber Daya yang Dikenakan Biaya](https://docs.dewacloud.com/docs/chargeable-resources/)
+* [Peringatan Beban](https://docs.dewacloud.com/docs/load-alerts/)
+* [Diskon Otomatis](https://docs.dewacloud.com/docs/automatic-discounts/)
+* [Gambaran Umum Sistem Penagihan](https://docs.dewacloud.com/docs/billing-system/)

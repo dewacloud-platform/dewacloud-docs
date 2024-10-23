@@ -1,11 +1,11 @@
 ---
 sidebar_position: 15
 slug: /hosters-pricing
-title: Hosters Pricing
+title: Harga Hosters
 ---
-# Hosters Pricing Pages
+# Halaman Harga Hosters
 
-Hoster | Country | Pricing Page  
+Hoster | Negara | Halaman Harga  
 ---|---|---  
 _**Aruba**_ | ![provider country: Italy](<https://www.arubacloud.com/jelastic-cloud-paas/jelastic-cloud.aspx>) 
 _**Axarnet**_ | ![provider country: Spain](<https://www.axarnet.es/jelastic>)
@@ -67,9 +67,9 @@ _**VirtualCloud**_ | ![provider country: Brazil](<https://www.virtualcloud.com.b
 _**WafaiCloud**_ | ![provider country: Saudi Arabia](<https://wafaicloud.com/>)
 _**Zeus Cloud**_ | ![provider country: the United Kingdom](<https://www.zeuscloud.co.uk/enterprise-cloud/paas-pricing-calculator>)
 
-## What’s next?
+## Baca Juga{#whats-next}
 
-* [Hosters List & Info](https://docs.dewacloud.com/docs/paas-hosting-providers/)
-* [Upgrade/Refill Account](https://docs.dewacloud.com/docs/upgrade-refill-account/)
-* [Billing Systems Overview](https://docs.dewacloud.com/docs/billing-system/)
-* [Pricing Model](https://docs.dewacloud.com/docs/pricing-model/)
+* [Daftar Hosters & Info](https://docs.dewacloud.com/docs/paas-hosting-providers/)
+* [Tingkatkan/Isi Ulang Akun](https://docs.dewacloud.com/docs/upgrade-refill-account/)
+* [Ikhtisar Sistem Penagihan](https://docs.dewacloud.com/docs/billing-system/)
+* [Model Harga](https://docs.dewacloud.com/docs/pricing-model/)

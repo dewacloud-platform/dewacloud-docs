@@ -1,70 +1,72 @@
 ---
 sidebar_position: 12
 slug: /pricing-model
-title: Pricing Model Overview
+title: Ikhtisar Model Harga
 ---
-# Platform Usage-Based Pricing (Pay-per-Use)
+# Harga Penggunaan Platform (Pay-per-Use)
 
-The platform provides a versatile pricing model, that can be adjusted to meet the requirements of the most demanding customers due to the number of awesome features:
+Platform ini menyediakan model harga yang serbaguna, yang dapat disesuaikan untuk memenuhi persyaratan pelanggan yang paling menuntut berkat sejumlah fitur unggulannya:
 
-  * The resources are provisioned with granular units - [cloudlets](https://docs.dewacloud.com/docs/cloudlet/) (128MiB of RAM and 400MHz of CPU). This allows to allocate exactly the needed amount of resources.
-  * Fully _automatic [vertical](https://docs.dewacloud.com/docs/automatic-vertical-scaling/) and [horizontal](https://docs.dewacloud.com/docs/automatic-horizontal-scaling/)_ scaling assure that you’ll be provided only with the required capacities without overpaying for unused resources.
-  * The system of _[automatic discounts](https://docs.dewacloud.com/docs/automatic-discounts/)_ makes the platform usage even more beneficial when the volume of ordered resources grows.
+  * Sumber daya disediakan dengan unit granular - [cloudlet](https://docs.dewacloud.com/docs/cloudlet/) (128MiB RAM dan 400MHz CPU). Ini memungkinkan untuk mengalokasikan jumlah sumber daya yang dibutuhkan secara tepat.
+  * _[Penskalaan vertikal](https://docs.dewacloud.com/docs/automatic-vertical-scaling/) dan [horizontal otomatis](https://docs.dewacloud.com/docs/automatic-horizontal-scaling/)_ memastikan bahwa Anda hanya akan disediakan dengan kapasitas yang dibutuhkan tanpa membayar lebih untuk sumber daya yang tidak terpakai.
+  * Sistem _[diskon otomatis](https://docs.dewacloud.com/docs/automatic-discounts/)_ membuat penggunaan platform menjadi lebih menguntungkan ketika volume pesanan sumber daya bertambah.
 
-In contrast to the majority of other vendors, all of these features allow providing a truly user-oriented _**Pay-per-Use**_ charging approach:
+Bertentangan dengan mayoritas vendor lainnya, semua fitur ini memungkinkan penyediaan pendekatan pembebanan _**Pay-per-Use**_ yang benar-benar terfokus pada pengguna:
 
 ![Pay-per-Use vs Pay-per-Limit](#)
 
-The video below will help you to catch the key points of the platform pricing system flexibility and the problems it helps to solve:
+Video di bawah ini akan membantu Anda memahami poin-poin penting dari fleksibilitas sistem biaya platform dan masalah yang dapat dipecahkannya:
 
-## How It Works{#how-it-works}
+## Cara Kerjanya{#how-it-works}
 
-With automatic scaling you don’t need to guess or predict the incoming load. The platform will automatically adjust the amount of allocated to environment resources (within the stated scaling diapason) according to its current requirements.
+Dengan penskalaan otomatis Anda tidak perlu menebak atau memprediksi beban yang akan datang. Platform akan secara otomatis menyesuaikan jumlah sumber daya yang dialokasikan ke lingkungan (dalam batas penskalaan yang dinyatakan) sesuai dengan persyaratan saat ini.
 
-The _**Scaling Limit**_ sets a maximum number of cloudlets that can be allocated for each server, so you can use it to define a maximum possible budget for your project. Subsequently, cloudlets will be automatically added to your servers based on application resource consumption. These are called _**Dynamic Cloudlets**_ because they’re dynamically added (as your resource usage increases) and removed (as your resource usage decreases). So, you pay based on the actual hourly usage.
+_Limit Penskalaan_ mengatur jumlah maksimum cloudlet yang dapat dialokasikan untuk setiap server, sehingga Anda dapat menggunakannya untuk menentukan anggaran maksimum yang mungkin untuk proyek Anda. Selanjutnya, cloudlet akan secara otomatis ditambahkan ke server Anda berdasarkan konsumsi sumber daya aplikasi. Ini disebut _**Dynamic Cloudlets**_ karena mereka secara dinamis ditambahkan (sebagai peningkatan penggunaan sumber daya Anda) dan dihapus (sebagai penurunan penggunaan sumber daya Anda). Jadi, Anda membayar berdasarkan penggunaan per jam yang sebenarnya.
 
-Since most applications need a certain amount of resources just to be loaded and ready to run, you’ll always consume a particular number of cloudlets regardless the load level. Therefore, you can allocate them beforehand with _**Reserved Cloudlets**_ and benefit on [automatic discounts](https://docs.dewacloud.com/docs/automatic-discounts/).
+Karena sebagian besar aplikasi memerlukan sejumlah sumber daya hanya untuk dimuat dan siap dijalankan, Anda akan selalu mengkonsumsi sejumlah cloudlet tertentu terlepas dari tingkat beban. Oleh karena itu, Anda dapat mengalokasikannya sebelumnya dengan _**Reserved Cloudlets**_ dan mendapatkan keuntungan dari [diskon otomatis](https://docs.dewacloud.com/docs/automatic-discounts/).
 
 ![automatic discount per reserved cloudlets](#)
 
-These scaling ranges are configured individually for each server instance, so you can specify different limits for each container depending on your needs and preferences.
+Rentang penskalaan ini dikonfigurasi secara individual untuk setiap instans server, sehingga Anda dapat menentukan batas yang berbeda untuk setiap container sesuai kebutuhan dan preferensi Anda.
 
 ![save money with smart pricing](#)
 
-:::note When calculating your cloudlet consumption, we only consider the larger of RAM or CPU usage per hour (i.e. not both combined). Learn more with the [Charged Resources](https://docs.dewacloud.com/docs/resource-consumption/) document. Learn how to track your hosting spends via the platform dashboard with [this video](https://www.youtube.com/watch?v=yg_fVjCbyuw&list=PLkntuNwly7TcU_IAoiZhxxQuq9nUsQQ5r&index=7). :::
+:::note
+Ketika menghitung konsumsi cloudlet Anda, kami hanya mempertimbangkan penggunaan RAM atau CPU yang lebih besar per jam (yaitu tidak keduanya digabungkan). Pelajari lebih lanjut dengan dokumen [Sumber Daya yang Dikenakan Biaya](https://docs.dewacloud.com/docs/resource-consumption/). Pelajari cara melacak pengeluaran hosting Anda melalui dashboard platform dengan [video ini](https://www.youtube.com/watch?v=yg_fVjCbyuw&list=PLkntuNwly7TcU_IAoiZhxxQuq9nUsQQ5r&index=7).
+:::
 
-## Setting Up Usage-Based Pricing{#setting-up-usage-based-pricing}
+## Menyiapkan Harga Berbasis Penggunaan{#setting-up-usage-based-pricing}
 
-In order to apply such a usage-based pricing model to your environment, perform the following steps:
+Untuk menerapkan model harga berbasis penggunaan semacam itu ke lingkungan Anda, lakukan langkah-langkah berikut:
 
-1\. Set the **Scaling Limit** slider (the transparent one to the right)
-![dynamic cloudlets](#) to your desired maximum resource limit.
+1\. Atur slider **Scaling Limit** (yang transparan di sebelah kanan) ![dynamic cloudlets](#) ke batas sumber daya maksimum yang Anda inginkan.
 
 ![environment scaling limit](#)
 
-:::warning Setting Scaling Limit too low for highly-loaded applications may cause their instability. :::
+:::warning
+Mengatur Scaling Limit terlalu rendah untuk aplikasi yang sangat dibebani dapat menyebabkan ketidakstabilan. 
+:::
 
-Since usage is calculated hourly, your cloudlet (RAM & CPU) consumption can go up and down throughout the day depending on application needs - so you automatically pay a lower price when you’re using fewer resources (e.g. during low traffic periods), and only pay more when additional resources are really needed (e.g. during high traffic periods).
+Karena penggunaan dihitung setiap jam, konsumsi cloudlet (RAM & CPU) Anda dapat naik dan turun sepanjang hari tergantung pada kebutuhan aplikasi - jadi Anda secara otomatis membayar harga lebih rendah saat menggunakan lebih sedikit sumber daya (misalnya selama periode lalu lintas rendah), dan hanya membayar lebih saat sumber daya tambahan benar-benar diperlukan (misalnya selama periode lalu lintas tinggi).
 
-2\. Set the **Reserved Cloudlets** slider (the left white-colored one)
-![reserved cloudlets](#) to the desired value in order to commit the minimum amount of RAM & CPU that you expect to always need and get the discount for them. The exact discount size can vary by hosting provider and the overall number of _Reserved Cloudlets_ in your environment (i.e. their sum for all nodes).
+2\. Atur slider **Reserved Cloudlets** (yang di sebelah kiri berwarna putih) ![reserved cloudlets](#) ke nilai yang diinginkan untuk mengkomit jumlah minimum RAM & CPU yang Anda harapkan selalu dibutuhkan dan dapatkan diskon untuk mereka. Ukuran diskon yang tepat dapat bervariasi menurut penyedia hosting dan jumlah keseluruhan _Reserved Cloudlets_ di lingkungan Anda (yaitu jumlah mereka untuk semua node).
 
 ![environment reserved resources](#)
 
-### Example{#example}
+### Contoh{#example}
 
-In our example, the server has 4 **Reserved cloudlets** and a maximum limit of 24 **Dynamic Cloudlets**. With this configuration, the payment will be done as follows:
+Dalam contoh kami, server memiliki 4 **Reserved cloudlets** dan batas maksimum 24 **Dynamic Cloudlets**. Dengan konfigurasi ini, pembayaran akan dilakukan sebagai berikut:
 
-  * if you use 4 cloudlets or less, you pay for 4 cloudlets based on discounted Reserved cloudlets price
-  * if you use e.g. 16 cloudlets, you pay for 4 cloudlets based on Reserved price (as they are already allocated) and for 12 cloudlets based on Dynamic price
+  * jika Anda menggunakan 4 cloudlet atau kurang, Anda membayar untuk 4 cloudlet berdasarkan harga Reserved cloudlets yang didiskon
+  * jika Anda menggunakan misalnya 16 cloudlet, Anda membayar untuk 4 cloudlet berdasarkan harga Reserved (karena mereka sudah dialokasikan) dan untuk 12 cloudlet berdasarkan harga Dynamic
 
-Combining the _Reserved_ and _Dynamic_ cloudlets usage enables you to save your costs whilst remain prepared for the unexpected surges in application demands. Such an approach allows to handle all of the incoming requests during load peaks, and, at the same time, not to overpay for the unused resources.
+Menggabungkan penggunaan _Reserved_ dan _Dynamic_ cloudlets memungkinkan Anda untuk menghemat biaya sekaligus tetap siap menghadapi lonjakan permintaan aplikasi yang tidak terduga. Pendekatan semacam itu memungkinkan untuk menangani semua permintaan yang masuk selama puncak beban, sekaligus, tidak membayar lebih untuk sumber daya yang tidak digunakan.
 
 ## Baca Juga{#more-useful-links}
 
-  * [How much PaaS costs](https://www.youtube.com/watch?v=yg_fVjCbyuw&list=PLkntuNwly7TcU_IAoiZhxxQuq9nUsQQ5r&index=7) \- learn how to track your hosting spends
-  * [PaaS vs Amazon Pricing](https://www.virtuozzo.com/company/blog/fair-pricing-model-jelastic-vs-amazon/) \- get insights on dynamic pricing benefits
-  * [Charged Resources](https://docs.dewacloud.com/docs/resource-consumption/) \- learn what is charged at the platform
-  * [Monitor Consumed Resources](https://docs.dewacloud.com/docs/monitoring-consumed-resources/) \- check the current load and consumed resources history
-  * [Save Your Cloud Money](https://www.virtuozzo.com/company/blog/save-your-cloud-money/) \- see some tips on how to decrease the consumption
-  * [Cloud Union](https://www.virtuozzo.com/application-platform-partners/) \- compare the prices at different hosting provider’s platforms and choose the most suitable one
+  * [Berapa biaya PaaS](https://www.youtube.com/watch?v=yg_fVjCbyuw&list=PLkntuNwly7TcU_IAoiZhxxQuq9nUsQQ5r&index=7) - pelajari cara melacak pengeluaran hosting Anda
+  * [Harga PaaS vs Amazon](https://www.virtuozzo.com/company/blog/fair-pricing-model-jelastic-vs-amazon/) - dapatkan wawasan tentang manfaat harga dinamis
+  * [Sumber Daya yang Dikenakan Biaya](https://docs.dewacloud.com/docs/resource-consumption/) - pelajari apa yang dikenakan biaya di platform
+  * [Memantau Sumber Daya yang Digunakan](https://docs.dewacloud.com/docs/monitoring-consumed-resources/) - periksa beban saat ini dan sejarah sumber daya yang digunakan
+  * [Hemat Uang Cloud Anda](https://www.virtuozzo.com/company/blog/save-your-cloud-money/) - lihat beberapa tips tentang cara mengurangi konsumsi
+  * [Cloud Union](https://www.virtuozzo.com/application-platform-partners/) - bandingkan harga di platform penyedia hosting yang berbeda dan pilih yang paling sesuai
