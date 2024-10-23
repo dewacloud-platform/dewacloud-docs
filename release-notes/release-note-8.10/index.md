@@ -14,7 +14,7 @@ Dalam dokumen ini, Anda akan menemukan semua fitur baru, peningkatan, dan peruba
 
 ## Peningkatan Kinerja Riwayat Tagihan{#billing-history-performance-enhancement}
 
-Menambahkan database dengan data tagihan yang diagregasi untuk mempercepat permintaan riwayat tagihan yang paling sering [Pelajari lebih lanjut](<https://docs.dewacloud.com/docs/#billing-history-performance-enhancement>)
+Menambahkan database dengan data tagihan yang diagregasi untuk mempercepat permintaan riwayat tagihan yang paling sering [Pelajari lebih lanjut](<#billing-history-performance-enhancement>)
 
 :::
 
@@ -22,15 +22,15 @@ Menambahkan database dengan data tagihan yang diagregasi untuk mempercepat permi
 
 ## Pembatasan Restart Node saat Deployment Proyek{#restrict-node-restart-during-project-deploy}
 
-Mengunci tombol restart dan redeploy node di dashboard selama deployment atau pembaruan proyek [Pelajari lebih lanjut](<https://docs.dewacloud.com/docs/#restrict-node-restart-during-project-deploy>)
+Mengunci tombol restart dan redeploy node di dashboard selama deployment atau pembaruan proyek [Pelajari lebih lanjut](<#restrict-node-restart-during-project-deploy>)
 
 ## Perubahan API{#api-changes}
 
-Mencantumkan semua perubahan pada API platform publik dalam rilis saat ini [Pelajari lebih lanjut](<https://docs.dewacloud.com/docs/#api-changes>)
+Mencantumkan semua perubahan pada API platform publik dalam rilis saat ini [Pelajari lebih lanjut](<#api-changes>)
 
 ## Versi Tumpukan Perangkat Lunak{#software-stack-versions}
 
-Daftar terkini dari template OS yang didukung dan versi tumpukan perangkat lunak [Pelajari lebih lanjut](<https://docs.dewacloud.com/docs/#software-stack-versions>)
+Daftar terkini dari template OS yang didukung dan versi tumpukan perangkat lunak [Pelajari lebih lanjut](<#software-stack-versions>)
 
 :::
 
@@ -38,11 +38,11 @@ Daftar terkini dari template OS yang didukung dan versi tumpukan perangkat lunak
 
 ## Perbaikan yang Kompatibel dengan Versi Sebelumnya{#fixes-compatible-with-prior-versions}
 
-Perbaikan bug yang diimplementasikan dalam rilis saat ini dan diintegrasikan ke dalam versi platform sebelumnya melalui patch yang sesuai [Pelajari lebih lanjut](<https://docs.dewacloud.com/docs/#fixes-compatible-with-prior-versions>)
+Perbaikan bug yang diimplementasikan dalam rilis saat ini dan diintegrasikan ke dalam versi platform sebelumnya melalui patch yang sesuai [Pelajari lebih lanjut](<#fixes-compatible-with-prior-versions>)
 
 ## Perbaikan Bug{#bug-fixes}
 
-Daftar perbaikan yang diterapkan pada platform dimulai dari rilis saat ini [Pelajari lebih lanjut](<https://docs.dewacloud.com/docs/#bug-fixes>)
+Daftar perbaikan yang diterapkan pada platform dimulai dari rilis saat ini [Pelajari lebih lanjut](<#bug-fixes>)
 
 :::
 
@@ -66,9 +66,7 @@ Beberapa spesifik dari implementasinya:
 
 Untuk mencegah masalah selama deployment atau pembaruan proyek, opsi restart node dan redeploy secara otomatis terkunci di dashboard. Peningkatan ini memastikan bahwa proses deployment aplikasi selesai sebelum memungkinkan pengelolaan lebih lanjut, yang mengurangi risiko gangguan yang tidak disengaja.
 
-![pembatasan restart selama deploy](#)
-
-
+<img src="https://assets.dewacloud.com/dewacloud-docs/release-notes/release-notes-8.10/01-restrict-restart-during-deploy.png" alt="pembatasan restart selama deploy" width="100%"/>
 
 ## Perubahan API{#api-changes}
 

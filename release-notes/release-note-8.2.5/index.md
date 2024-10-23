@@ -14,7 +14,7 @@ Dalam dokumen ini, Anda akan menemukan semua fitur baru, peningkatan, dan peruba
 
 ## Versi Tumpukan Perangkat Lunak{#software-stack-versions}
 
-Daftar terkini dari template OS yang didukung dan versi tumpukan perangkat lunak [Pelajari lebih lanjut](<https://docs.dewacloud.com/docs/#software-stack-versions>)
+Daftar terkini dari template OS yang didukung dan versi tumpukan perangkat lunak [Pelajari lebih lanjut](<#software-stack-versions>)
 
 :::
 
@@ -22,7 +22,7 @@ Daftar terkini dari template OS yang didukung dan versi tumpukan perangkat lunak
 
 ## Perbaikan yang Kompatibel dengan Versi Sebelumnya{#fixes-compatible-with-prior-versions}
 
-Perbaikan bug yang diimplementasikan dalam rilis saat ini dan diintegrasikan ke dalam versi platform sebelumnya melalui patch yang sesuai [Pelajari lebih lanjut](<https://docs.dewacloud.com/docs/#fixes-compatible-with-prior-versions>)
+Perbaikan bug yang diimplementasikan dalam rilis saat ini dan diintegrasikan ke dalam versi platform sebelumnya melalui patch yang sesuai [Pelajari lebih lanjut](<#fixes-compatible-with-prior-versions>)
 
 :::
 

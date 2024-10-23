@@ -14,7 +14,7 @@ Dalam dokumen ini, Anda akan menemukan semua fitur baru, peningkatan, dan peruba
 
 ## Dukungan Tipe Kunci SSH{#ssh-key-types-support}
 
-Menambahkan dukungan untuk tipe kunci _ECDSA_ dan membatasi penambahan kunci _DSA_ [Pelajari lebih lanjut](<https://docs.dewacloud.com/docs/#ssh-key-types-support>)
+Menambahkan dukungan untuk tipe kunci _ECDSA_ dan membatasi penambahan kunci _DSA_ [Pelajari lebih lanjut](<#ssh-key-types-support>)
 
 :::
 
@@ -22,23 +22,23 @@ Menambahkan dukungan untuk tipe kunci _ECDSA_ dan membatasi penambahan kunci _DS
 
 ## Metadata Lingkungan yang Diperluas{#extended-environment-metadata}
 
-Menyediakan bidang metadata baru untuk informasi tambahan lingkungan [Pelajari lebih lanjut](<https://docs.dewacloud.com/docs/#extended-environment-metadata>)
+Menyediakan bidang metadata baru untuk informasi tambahan lingkungan [Pelajari lebih lanjut](<#extended-environment-metadata>)
 
 ## Data Kustom dalam Respon Scripting Cloud{#custom-data-in-cloud-scripting-response}
 
-Mengimplementasikan bidang tambahan untuk mengembalikan data kustom saat menjalankan perintah API melalui Scripting Cloud [Pelajari lebih lanjut](<https://docs.dewacloud.com/docs/#custom-data-in-cloud-scripting-response>)
+Mengimplementasikan bidang tambahan untuk mengembalikan data kustom saat menjalankan perintah API melalui Scripting Cloud [Pelajari lebih lanjut](<#custom-data-in-cloud-scripting-response>)
 
 ## Deskripsi Kesalahan Instalasi SSL{#ssl-installation-error-description}
 
-Memperpanjang deskripsi kesalahan untuk operasi kegagalan instalasi SSL [Pelajari lebih lanjut](<https://docs.dewacloud.com/docs/#ssl-installation-error-description>)
+Memperpanjang deskripsi kesalahan untuk operasi kegagalan instalasi SSL [Pelajari lebih lanjut](<#ssl-installation-error-description>)
 
 ## Perubahan API{#api-changes}
 
-Mencantumkan semua perubahan pada API platform publik dalam rilis saat ini [Pelajari lebih lanjut](<https://docs.dewacloud.com/docs/#api-changes>)
+Mencantumkan semua perubahan pada API platform publik dalam rilis saat ini [Pelajari lebih lanjut](<#api-changes>)
 
 ## Versi Tumpukan Perangkat Lunak{#software-stack-versions}
 
-Daftar terkini dari template OS yang didukung dan versi tumpukan perangkat lunak [Pelajari lebih lanjut](<https://docs.dewacloud.com/docs/#software-stack-versions>)
+Daftar terkini dari template OS yang didukung dan versi tumpukan perangkat lunak [Pelajari lebih lanjut](<#software-stack-versions>)
 
 :::
 
@@ -46,7 +46,7 @@ Daftar terkini dari template OS yang didukung dan versi tumpukan perangkat lunak
 
 ## Perbaikan yang Kompatibel dengan Versi Sebelumnya{#fixes-compatible-with-prior-versions}
 
-Perbaikan bug yang diimplementasikan dalam rilis saat ini dan diintegrasikan ke dalam versi platform sebelumnya melalui patch yang sesuai [Pelajari lebih lanjut](<https://docs.dewacloud.com/docs/#fixes-compatible-with-prior-versions>)
+Perbaikan bug yang diimplementasikan dalam rilis saat ini dan diintegrasikan ke dalam versi platform sebelumnya melalui patch yang sesuai [Pelajari lebih lanjut](<#fixes-compatible-with-prior-versions>)
 
 :::
 

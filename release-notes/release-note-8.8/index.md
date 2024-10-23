@@ -14,7 +14,7 @@ Dalam dokumen ini, Anda akan menemukan semua fitur baru, peningkatan, dan peruba
 
 ## Infrastruktur Berbasis AlmaLinux{#almalinux-based-infrastructure}
 
-Memperbarui komponen infrastruktur platform berdasarkan image OS dasar modern _AlmaLinux 9_ [Pelajari lebih lanjut](<https://docs.dewacloud.com/docs/#almalinux-based-infrastructure>)
+Memperbarui komponen infrastruktur platform berdasarkan image OS dasar modern _AlmaLinux 9_ [Pelajari lebih lanjut](<#almalinux-based-infrastructure>)
 
 :::
 
@@ -22,15 +22,15 @@ Memperbarui komponen infrastruktur platform berdasarkan image OS dasar modern _A
 
 ## Pengalih Waktu UTC/Lokal untuk Riwayat Penagihan{#utclocal-time-switch-for-billing-history}
 
-Menambahkan kemampuan untuk beralih antara UTC dan waktu lokal saat bekerja dengan tab _Riwayat Penagihan_ dan laporan CSV yang dapat diunduh [Pelajari lebih lanjut](<https://docs.dewacloud.com/docs/#utclocal-time-switch-for-billing-history>)
+Menambahkan kemampuan untuk beralih antara UTC dan waktu lokal saat bekerja dengan tab _Riwayat Penagihan_ dan laporan CSV yang dapat diunduh [Pelajari lebih lanjut](<#utclocal-time-switch-for-billing-history>)
 
 ## Perubahan API{#api-changes}
 
-Mencantumkan semua perubahan pada API platform publik dalam rilis saat ini [Pelajari lebih lanjut](<https://docs.dewacloud.com/docs/#api-changes>)
+Mencantumkan semua perubahan pada API platform publik dalam rilis saat ini [Pelajari lebih lanjut](<#api-changes>)
 
 ## Versi Tumpukan Perangkat Lunak{#software-stack-versions}
 
-Daftar terkini dari template OS yang didukung dan versi tumpukan perangkat lunak [Pelajari lebih lanjut](<https://docs.dewacloud.com/docs/#software-stack-versions>)
+Daftar terkini dari template OS yang didukung dan versi tumpukan perangkat lunak [Pelajari lebih lanjut](<#software-stack-versions>)
 
 :::
 
@@ -38,11 +38,11 @@ Daftar terkini dari template OS yang didukung dan versi tumpukan perangkat lunak
 
 ## Perbaikan yang Kompatibel dengan Versi Sebelumnya{#fixes-compatible-with-prior-versions}
 
-Perbaikan bug yang diimplementasikan dalam rilis saat ini dan diintegrasikan ke dalam versi platform sebelumnya melalui patch yang sesuai [Pelajari lebih lanjut](<https://docs.dewacloud.com/docs/#fixes-compatible-with-prior-versions>)
+Perbaikan bug yang diimplementasikan dalam rilis saat ini dan diintegrasikan ke dalam versi platform sebelumnya melalui patch yang sesuai [Pelajari lebih lanjut](<#fixes-compatible-with-prior-versions>)
 
 ## Perbaikan Bug{#bug-fixes}
 
-Daftar perbaikan yang diterapkan pada platform dimulai dari rilis saat ini [Pelajari lebih lanjut](<https://docs.dewacloud.com/docs/#bug-fixes>)
+Daftar perbaikan yang diterapkan pada platform dimulai dari rilis saat ini [Pelajari lebih lanjut](<#bug-fixes>)
 
 :::
 
@@ -52,7 +52,7 @@ Daftar perbaikan yang diterapkan pada platform dimulai dari rilis saat ini [Pela
 
 Karena masa akhir dukungan (EOL) gambar _CentOS 7_ yang akan datang pada 30 Juni 2024, Dewacloud Application Platform beralih ke gambar OS dasar _**AlmaLinux 9**_ untuk semua [software stacks](<https://docs.dewacloud.com/docs/release-notes-83/#almalinux-9-base-os-image>) yang disertifikasi. Selama upgrade PaaS 8.8 saat ini, semua komponen infrastruktur akan secara otomatis dimigrasikan ke OS dasar baru. Transisi ini memastikan dukungan untuk semua fungsi modern, standar keamanan terkini, dan kompatibilitas dengan semua solusi perangkat lunak terbaru. Selain itu, fungsi _iptables_ akan digantikan dengan alternatif netfilter _**[nftables](<https://netfilter.org/projects/nftables/>)**_ yang lebih sederhana dan efisien dengan penanganan IPv4/IPv6 yang terintegrasi.
 
-[Kembali ke atas](<https://docs.dewacloud.com/docs/#back>)
+
 
 ## Pengalih Waktu UTC/Lokal untuk Riwayat Penagihan{#utclocal-time-switch-for-billing-history}
 
@@ -60,21 +60,21 @@ Dalam rilis platform 8.8 saat ini, kemampuan untuk beralih antara _UTC_ dan _wak
 
 Tombol pengalih baru “_**UTC time**_” ditambahkan ke tab _Riwayat Penagihan_ (baik untuk seluruh akun maupun per lingkungan spesifik). Pilih waktu tampilan yang diinginkan dan klik **Refresh** untuk menerapkan. Status pengalihan juga akan mempengaruhi laporan CSV yang dapat diunduh.
 
-![riwayat penagihan UTC](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/release-notes/release-notes-8.8/01-utc-billing-history.png" alt="riwayat penagihan UTC" width="100%"/>
 
 [Info lebih lanjut](<https://docs.dewacloud.com/docs/monitoring-consumed-resources/#billing-history>)
 
-[Kembali ke atas](<https://docs.dewacloud.com/docs/#back>)
+
 
 ## Perubahan API{#api-changes}
 
 Dewacloud Application Platform menyediakan file sumber dengan semua metode API yang didukung dalam standar **[OpenAPI Specification](<https://swagger.io/resources/open-api/>)**. Paket ini telah ditinjau secara menyeluruh dalam rilis 8.8 saat ini dan diperbarui dengan banyak perbaikan, pengoptimalan, dan perbaikan. Seperti biasa, paket baru dapat diunduh dalam format YAML dan JSON dengan mengklik tautan yang sesuai di sudut kanan atas situs [Dewacloud Application Platform API](<https://docs.dewacloud.com/docs/application-platform-api-docs/>) :
 
-![download OpenAPI](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/release-notes/release-notes-8.8/02-download-openapi.png" alt="download OpenAPI" width="100%"/>
 
 [Info lebih lanjut](<https://docs.dewacloud.com/docs/application-platform-api-docs/>)
 
-[Kembali ke atas](<https://docs.dewacloud.com/docs/#back>)
+
 
 ## Perbaikan yang Kompatibel dengan Versi Sebelumnya{#fixes-compatible-with-prior-versions}
 
@@ -100,7 +100,7 @@ JE-69974 | 8.3 | Pengguna root untuk database _MariaDB_ hanya memiliki izin loca
 JE-71501 | 8.3 | _mysql uid:gid_ harus dipulihkan setelah redeployment kontainer _LLSMP_  
 JE-71939 | 8.3 | Jaringan rusak pada kontainer _LLSMP/LiteSpeed_ mandiri setelah mencopot pemasangan add-on _NewRelic_  
   
-[Kembali ke atas](<https://docs.dewacloud.com/docs/#back>)
+
 
 ## Versi Tumpukan Perangkat Lunak{#software-stack-versions}
 
@@ -110,7 +110,7 @@ Daftar paling akurat dan terkini dari [versi tumpukan perangkat lunak](<https://
 
 [Info lebih lanjut](<https://docs.dewacloud.com/docs/software-stacks-versions/>)
 
-[Kembali ke atas](<https://docs.dewacloud.com/docs/#back>)
+
 
 ## Perbaikan Bug{#bug-fixes}
 
@@ -128,4 +128,3 @@ JE-71694 | 8.6 | Kesalahan terjadi saat membuat titik mount dengan _Ubuntu_ seba
 JE-72009 | 8.3 | _OpenSSH_ terdampak oleh kerentanAN _CVE-2024-6387_  
 JE-72025 | - | _AlmaLinux_ harus menjadi opsi VPS default dalam wizard topologi  
   
-[Kembali ke atas](<https://docs.dewacloud.com/docs/#back>)

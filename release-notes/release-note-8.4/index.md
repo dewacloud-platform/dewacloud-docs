@@ -14,15 +14,15 @@ Dalam dokumen ini, Anda akan menemukan semua fitur baru, peningkatan, dan peruba
 
 ## Dukungan Ubuntu 23{#ubuntu-23-support}
 
-Mengimplementasikan template OS dasar untuk mendukung gambar berdasarkan versi _Ubuntu 23.04_ [Pelajari lebih lanjut](<https://docs.dewacloud.com/docs/#ubuntu-23-support>)
+Mengimplementasikan template OS dasar untuk mendukung gambar berdasarkan versi _Ubuntu 23.04_ [Pelajari lebih lanjut](<#ubuntu-23-support>)
 
 ## Dukungan Debian 12{#debian-12-support}
 
-Mengimplementasikan template OS dasar untuk mendukung gambar berdasarkan versi _Debian 12_ [Pelajari lebih lanjut](<https://docs.dewacloud.com/docs/#debian-12-support>)
+Mengimplementasikan template OS dasar untuk mendukung gambar berdasarkan versi _Debian 12_ [Pelajari lebih lanjut](<#debian-12-support>)
 
 ## Mengecualikan Node dari DNS selama Tindakan Berurutan{#excluding-nodes-from-dns-during-sequential-actions}
 
-Menambahkan opsi untuk mengecualikan node dari DNS saat mengelola lapisan dengan node yang diskalakan [Pelajari lebih lanjut](<https://docs.dewacloud.com/docs/#excluding-nodes-from-dns-during-sequential-actions>)
+Menambahkan opsi untuk mengecualikan node dari DNS saat mengelola lapisan dengan node yang diskalakan [Pelajari lebih lanjut](<#excluding-nodes-from-dns-during-sequential-actions>)
 
 :::
 
@@ -30,23 +30,23 @@ Menambahkan opsi untuk mengecualikan node dari DNS saat mengelola lapisan dengan
 
 ## Pembatasan ICMP Firewall{#firewall-icmp-restriction}
 
-Mengonfigurasi aturan firewall untuk memblokir permintaan _ICMP Timestamp_ yang dapat berbahaya [Pelajari lebih lanjut](<https://docs.dewacloud.com/docs/#firewall-icmp-restriction>)
+Mengonfigurasi aturan firewall untuk memblokir permintaan _ICMP Timestamp_ yang dapat berbahaya [Pelajari lebih lanjut](<#firewall-icmp-restriction>)
 
 ## Skrip Terkait Lingkungan{#environment-associated-scripts}
 
-Mengimplementasikan fungsionalitas untuk membuat asosiasi yang persisten antara lingkungan dan add-on yang diterapkan [Pelajari lebih lanjut](<https://docs.dewacloud.com/docs/#environment-associated-scripts>)
+Mengimplementasikan fungsionalitas untuk membuat asosiasi yang persisten antara lingkungan dan add-on yang diterapkan [Pelajari lebih lanjut](<#environment-associated-scripts>)
 
 ## Peningkatan Akun yang Dinonaktifkan{#deactivated-account-improvements}
 
-Memberikan kemampuan bagi pengguna yang dinonaktifkan untuk menghapus lingkungan mereka [Pelajari lebih lanjut](<https://docs.dewacloud.com/docs/#deactivated-account-improvements>)
+Memberikan kemampuan bagi pengguna yang dinonaktifkan untuk menghapus lingkungan mereka [Pelajari lebih lanjut](<#deactivated-account-improvements>)
 
 ## Perubahan API{#api-changes}
 
-Mencantumkan semua perubahan pada API platform publik dalam rilis saat ini [Pelajari lebih lanjut](<https://docs.dewacloud.com/docs/#api-changes>)
+Mencantumkan semua perubahan pada API platform publik dalam rilis saat ini [Pelajari lebih lanjut](<#api-changes>)
 
 ## Versi Tumpukan Perangkat Lunak{#software-stack-versions}
 
-Daftar terkini dari template OS yang didukung dan versi tumpukan perangkat lunak [Pelajari lebih lanjut](<https://docs.dewacloud.com/docs/#software-stack-versions>)
+Daftar terkini dari template OS yang didukung dan versi tumpukan perangkat lunak [Pelajari lebih lanjut](<#software-stack-versions>)
 
 :::
 
@@ -54,11 +54,11 @@ Daftar terkini dari template OS yang didukung dan versi tumpukan perangkat lunak
 
 ## Perbaikan yang Kompatibel dengan Versi Sebelumnya{#fixes-compatible-with-prior-versions}
 
-Perbaikan bug yang diimplementasikan dalam rilis saat ini dan diintegrasikan ke dalam versi platform sebelumnya melalui patch yang sesuai [Pelajari lebih lanjut](<https://docs.dewacloud.com/docs/#fixes-compatible-with-prior-versions>)
+Perbaikan bug yang diimplementasikan dalam rilis saat ini dan diintegrasikan ke dalam versi platform sebelumnya melalui patch yang sesuai [Pelajari lebih lanjut](<#fixes-compatible-with-prior-versions>)
 
 ## Perbaikan Bug{#bug-fixes}
 
-Daftar perbaikan yang diterapkan pada platform dimulai dari rilis saat ini [Pelajari lebih lanjut](<https://docs.dewacloud.com/docs/#bug-fixes>)
+Daftar perbaikan yang diterapkan pada platform dimulai dari rilis saat ini [Pelajari lebih lanjut](<#bug-fixes>)
 
 :::
 
@@ -80,7 +80,7 @@ Selain itu, templat _Ubuntu 22.10_ dihentikan karena berakhirnya masa dukungan r
 
 Platform ini mengimplementasikan dukungan untuk templat OS **Debian 12** “bookworm” pada semua instalasi PaaS (tersedia untuk semua platform dimulai dengan rilis 8.4). Ini adalah versi LTS terbaru (Dukungan Jangka Panjang) dengan periode dukungan yang diperkirakan setidaknya lima tahun. Rilis baru ini berfokus pada kinerja, stabilitas, dan kemudahan penggunaan. Ini memberikan pembaruan besar dari paket default, membuat arsip paket terpisah untuk firmware non-gratis, memperluas dukungan arsitektur dan kernel, dan memperkenalkan banyak perbaikan, pengoptimalan, dan perbaikan keamanan lainnya. Untuk informasi lebih rinci, lihat catatan resmi [rilis Debian 12](<https://www.debian.org/releases/bookworm/releasenotes>).
 
-![Debian 12 VPS](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/release-notes/release-notes-8.4/01-debian-12-vps.png" alt="Debian 12 VPS" width="100%"/>
 
 Selain itu, **Debian 12** ditambahkan sebagai tumpukan [Elastic VPS](<https://docs.dewacloud.com/docs/vps-debian/>) bawaan di dashboard platform.
 
@@ -102,7 +102,7 @@ Dewacloud Application Platform menyediakan fungsionalitas [horizontal scaling](<
 
 Namun, bahkan dengan opsi _sequential_ yang diaktifkan, beberapa koneksi dapat hilang dalam kasus lalu lintas yang tinggi. Untuk memastikan ketersediaan aplikasi untuk semua permintaan masuk, sub-opsi tambahan untuk “_Temporarily remove node(s) from DNS_” diimplementasikan. Jika diaktifkan, node akan dikecualikan dari tabel DNS (internal dan eksternal) selama operasi mengganggu.
 
-![remove from DNS](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/release-notes/release-notes-8.4/02-remove-from-dns.png" alt="remove from DNS" width="60%"/>
 
 Opsi baru ini tersedia selama operasi berikut:
 

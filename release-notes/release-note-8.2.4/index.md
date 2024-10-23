@@ -14,7 +14,7 @@ Dalam dokumen ini, Anda akan menemukan semua fitur baru, peningkatan, dan peruba
 
 ## Dukungan OS AlmaLinux 8{#almalinux-8-os-support}
 
-Menambahkan dukungan untuk template OS _AlmaLinux 8_ [Pelajari lebih lanjut](<https://docs.dewacloud.com/docs/#almalinux-8-os-support>)
+Menambahkan dukungan untuk template OS _AlmaLinux 8_ [Pelajari lebih lanjut](<#almalinux-8-os-support>)
 
 :::
 
@@ -22,7 +22,7 @@ Menambahkan dukungan untuk template OS _AlmaLinux 8_ [Pelajari lebih lanjut](<ht
 
 ## Versi Tumpukan Perangkat Lunak{#software-stack-versions}
 
-Daftar terkini dari template OS yang didukung dan versi tumpukan perangkat lunak [Pelajari lebih lanjut](<https://docs.dewacloud.com/docs/#software-stack-versions>)
+Daftar terkini dari template OS yang didukung dan versi tumpukan perangkat lunak [Pelajari lebih lanjut](<#software-stack-versions>)
 
 :::
 
