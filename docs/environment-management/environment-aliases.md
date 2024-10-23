@@ -32,7 +32,7 @@ Misalnya, beberapa kuota yang diperiksa selama pemindahan: _cloudlets per contai
 
 Juga, jika terjadi kesalahan, Anda akan melihat pemberitahuan yang sesuai langsung di dashboard:
 
-![environment transfer error](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-aliases/01-environment-aliases-instaces-list.png" alt="environment transfer error" width="100%"/>
 
 **Catatan:** Fitur pemindahan environment saat ini tidak tersedia antar akun di instalasi PaaS yang berbeda, termasuk interaksi platform utama - sub-platform (reseller).
 
@@ -48,17 +48,17 @@ Mari kita lihat proses pemindahan environment.
 
 1\. Klik tombol **Settings** di sebelah environment yang diperlukan.
 
-![environment settings button](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-aliases/02-set-alias.png" alt="environment settings button" width="100%"/>
 
 2\. Di tab yang terbuka, navigasikan ke bagian _**Change Owner**_ dan masukkan alamat email pengguna target (pemilik baru potensial).
 
-![send environment change owner request](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-aliases/03-environment-label.png" alt="send environment change owner request" width="100%"/>
 
 Klik tombol **Send Request** untuk melanjutkan.
 
 3\. Jika akun target ada dan memenuhi semua persyaratan, Anda akan melihat pemberitahuan bahwa permintaan telah dikirim.
 
-![transfer request sent](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-aliases/04-environment-aliases-dashboard.png" alt="transfer request sent" width="100%"/>
 
 :::tip Anda dapat Membatalkan Permintaan dengan tombol bernama sama kapan saja (kecuali sudah dikonfirmasi). :::
 
@@ -66,7 +66,7 @@ Klik tombol **Send Request** untuk melanjutkan.
 
 :::note Saat menunggu konfirmasi, environment ditandai dengan ikon khusus di dashboard pemilik awal. :::
 
-![environment transfer confirmation email](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-aliases/05-environment-aliases-ssh.png" alt="environment transfer confirmation email" width="100%"/>
 
 5\. Ketika pengguna target mengonfirmasi permintaan pemindahan (mengklik tautan dari email), environment akan dihapus dari dashboard pengguna awal dan muncul untuk pemilik baru. Email pemberitahuan tentang pemindahan berhasil akan dikirim ke pemilik awal.
 
