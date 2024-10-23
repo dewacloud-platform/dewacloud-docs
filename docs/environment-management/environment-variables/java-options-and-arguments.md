@@ -22,13 +22,13 @@ Tergantung pada server aplikasi tertentu yang Anda gunakan, lokasi tepatnya mung
   * **Payara** \- _/opt/payara/glassfish/domains/domain1/config/variables.conf_
   * **WildFly** \- _/opt/wildfly/conf/variables.conf_
 
-![file variables.conf untuk opsi Java](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-variables/java-option-and-arguments/01-variables-conf-file.png" alt="file variables.conf untuk opsi Java" width="100%"/>
 
 Jika diperlukan, Anda dapat [mengubah ulang opsi memori utama](<https://docs.dewacloud.com/docs/#redefining-main-java-parameters>) melalui variabel container.
 
 2\. Jangan lupa untuk **Restart node** agar perubahan diterapkan.
 
-![tombol restart nodes](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-variables/java-option-and-arguments/02-restart-nodes-button.png" alt="tombol restart nodes" width="100%"/>
 
 Selesai! Sekarang aplikasi Anda berjalan dengan opsi Java kustom Anda.
 
@@ -38,7 +38,7 @@ Sebagian besar parameter memori esensial (_-Xms_, _-Xmn_, _-Xmx_, _-Xminf_, _-Xm
 
 Sebagai contoh, Anda dapat **Menambahkan** opsi _**-Xmx**_ (yaitu ukuran maksimum untuk memori heap Java):
 
-![menambahkan variabel optimisasi memori Java](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-variables/java-option-and-arguments/03-memory-optimization-variables.png" alt="menambahkan variabel optimisasi memori Java" width="100%"/>
 
 :::tip Platform mendukung dua variabel tambahan yang memungkinkan pengaturan parameter RAM utama sebagai persentase dari total memori yang tersedia:
 - XMS_DEF_PERCENT - ukuran awal (%) dari pool alokasi memori
@@ -52,7 +52,7 @@ Saat bekerja dengan template **Spring Boot** dan **Java Engine**, Anda dapat men
   * _**JAVA_OPTS**_ \- untuk menyesuaikan opsi Java untuk aplikasi Anda (mirip dengan file _**variables.conf**_)
   * _**JAVA_ARGS**_ \- untuk memberikan beberapa argumen kustom ke fungsi utama aplikasi Anda
 
-![variabel Spring Boot untuk opsi argumen Java](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-variables/java-option-and-arguments/04-spring-boot-java-options-arguments.png" alt="variabel Spring Boot untuk opsi argumen Java" width="100%"/>
 
 Jangan lupa untuk merestart server aplikasi Anda agar perubahan diterapkan.
 
