@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-slug: /php-sessions-in-memcached
+slug: /memcached-php-sessions
 title: PHP Sessions in Memcached
 ---
 
@@ -14,15 +14,11 @@ High availability untuk aplikasi PHP Anda dapat dicapai dengan mengimplementasik
 
 3. Dalam menu **Environment topology**, pilih dua atau lebih server yang ingin Anda gunakan (misalnya, dua instance **Apache**) dan node **Memcached**. Ketik nama environment dan klik **Create**.
 
-<p>
 <img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-php-1.png" alt="Memcached environment" width="100%"/>
-</p>
 
 Node Memcached digunakan sebagai mesin caching terdistribusi dalam environment dengan beberapa node. Dalam kasus ini, memcached menyediakan sesi web yang bersifat sticky yang berjalan di beberapa server aplikasi. Jika satu server gagal, sesi-sesi tersebut disimpan sebagai backup pada node Memcached. Server lain dapat mengambil sesi dari Memcached dan mulai serving sesinya.
 
-<p>
-<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-php-2.png" alt="memcached PHP cluster" width="100%"/>
-</p>
+<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-php-2.png" alt="memcached PHP cluster" width="60%"/>
 
 ## Cara Kerjanya{#how-it-works}
 
@@ -46,9 +42,9 @@ Pada saat yang sama, load balancer NGINX mendistribusikan lalu lintas ke seluruh
    extension=memcached.so
    ```
 
-<p>
+
 <img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-php-3.png" alt="memcached enabling" width="100%"/>
-</p>
+
 
 4. Buat perubahan pada line berikut:
 
@@ -57,9 +53,9 @@ Pada saat yang sama, load balancer NGINX mendistribusikan lalu lintas ke seluruh
    session.save_path = "< server >:11211"
    ```
 
-<p>
+
 <img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-php-4.png" alt="session save path" width="100%"/>
-</p>
+
 
 :::note
 **server** menyatakan IP atau URL yang dapat dilihat pada node memcached di environment Anda.

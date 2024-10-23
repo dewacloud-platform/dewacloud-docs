@@ -13,7 +13,7 @@ Terkadang, mungkin diperlukan untuk memindahkan aplikasi Anda ke [environment re
 ~/jelastic/environment/control/getregions | sed -rne '/(uniqueName|isEnabled|displayName)/{/Name/,/isEnabled/p}'
 ```
 
-![CLI get regions info](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/environment-migration/environment-migration-1.png" alt="CLI get regions info" width="100%"/>
 
 Anda akan melihat daftar environment region yang tersedia untuk akun Anda (yaitu di mana _“isEnabled”_ bernyatakan _true_), dengan nama mereka di dashboard (_displayName_) dan identifier unik (_uniqueName_). Di sini, parameter terakhir adalah yang perlu Anda ingat.
 
@@ -32,7 +32,7 @@ Di sini:
   * `{env_name}` \- nama dari environment yang ingin Anda pindahkan
   * `{region_id}` \- identifier unik dari target environment region dari langkah sebelumnya
 
-![CLI check migration possibility](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/environment-migration/environment-migration-2.png" alt="CLI check migration possibility" width="100%"/>
 
 3\. Sekarang Anda memiliki semua data yang diperlukan untuk memanggil prosedur migrasi:
 
@@ -42,7 +42,7 @@ Di sini:
 
 Satu-satunya parameter baru di sini adalah _isOnline_, yang dapat diatur sebagai _**{true/false}**_ untuk menggunakan mode migrasi [live](https://docs.dewacloud.com/docs/environment-regions-migration/#live-migration) atau [offline](https://docs.dewacloud.com/docs/environment-regions-migration/#offline-migration) sesuai.
 
-![CLI migrate environment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/environment-migration/environment-migration-3.png" alt="CLI migrate environment" width="100%"/>
 
 Sebentar lagi (waktu migrasi yang tepat dapat bervariasi tergantung pada konten environment Anda) operasi akan selesai dan aplikasi Anda akan berhasil dipindahkan.
 

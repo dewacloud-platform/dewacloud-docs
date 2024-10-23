@@ -82,7 +82,7 @@ Sebaliknya, port yang diperoleh harus diekspos dari sisi platform. Navigasikan k
   * _**Private Port**_ \- sediakan _nodePort_ dari langkah sebelumnya
   * _**Protocol**_ \- pilih opsi _TCP_
 
-![endpoint to expose kubernetes service](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/application%20deployment/Exposing%20Services/01-endpoint-to-expose-kubernetes-service.png" alt="endpoint to expose kubernetes service" width="90%"/>
 
 Klik **Add** untuk konfirmasi. Mungkin diperlukan beberapa menit agar platform mengekspos port dan mengalihkan permintaan ke layanan _NodePort_.
 

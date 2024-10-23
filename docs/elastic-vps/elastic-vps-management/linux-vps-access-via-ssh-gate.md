@@ -8,27 +8,27 @@ title: Linux VPS Access via SSH Gate
 
 Untuk mengelola software yang diperlukan di dalam container Elastic VPS Anda, Anda perlu terhubung ke dalamnya melalui SSH Gate. Koneksi dapat dilakukan melalui [SSH Gate](https://www.virtuozzo.com/application-platform-docs/ssh-overview) khusus, yang menyediakan satu titik akses untuk mengkonfigurasi semua environment dan server dalam akun Anda secara remote.
 
-:::note
-Untuk manajemen Windows VPS, gunakan dukungan remote desktop protocol (RDP).
-:::
 
-Proses [akses SSH](https://www.virtuozzo.com/application-platform-docs/ssh-access) ke node Elastic VPS sama seperti untuk container lainnya di platform, tetapi menyediakan full root access.
+Proses [akses SSH](https://www.virtuozzo.com/application-platform-docs/ssh-access) ke node Elastic VPS sama seperti untuk container lainnya di Dewacloud, tetapi menyediakan full root access.
 
 - _**[Web SSH](https://docs.dewacloud.com/web-ssh-client)**_
 
-Koneksi satu klik ke container VPS Anda dari dashboard platform tanpa memerlukan konfigurasi apa pun. ![elastic vps web ssh access](#)
+Koneksi hanya dengan satu klik ke container VPS Anda dari dashboard Dewacloud tanpa memerlukan konfigurasi apa pun. 
+
+<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/vps-ssh-1.png" alt="elastic vps web ssh access" width="100%"/>
+
 
 - _**[SSH Gate](https://docs.dewacloud.com/ssh-gate-access)**_
 
-Koneksi SSH ke VPS dari console di local machine Anda. Akses berdasarkan SSH key pair khusus Anda.
+Koneksi SSH ke VPS dari console di local machine Anda. Akses berdasarkan SSH Key Pair custom Anda.
 
 :::note
-Jika Anda belum melakukan koneksi melalui SSH Gate sebelumnya, Anda perlu melakukan langkah-langkah berikut terlebih dahulu: menghasilkan pasangan kunci SSH dan menambahkan kunci SSH publik Anda ke dashboard.
+Jika Anda belum melakukan koneksi melalui SSH Gate sebelumnya, Anda perlu melakukan langkah-langkah berikut terlebih dahulu: generate SSH Key Pair dan menambahkan public SSH key Anda ke dashboard.
 :::
 
-![elastic vps access via ssh gate](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/vps-ssh-2.png" alt="elastic vps access via ssh gate" width="100%"/>
 
-Jika Anda lebih suka mengoperasikan container VPS Anda dengan bantuan external SSH, pertimbangkan untuk membuat [akses melalui alamat Public IP](https://docs.dewacloud.com/vps-public-ip). Terlepas dari pendekatan yang dipilih, fungsionalitas dan kemampuan manajemen yang disediakan adalah sama.
+Jika Anda lebih suka mengoperasikan container VPS Anda dengan tool SSH eksternal, Anda bisa menggunakan [akses melalui Public IP address](https://docs.dewacloud.com/vps-public-ip). Terlepas dari metode yang digunakan, fungsionalitas dan kemampuan manajemen yang disediakan adalah sama.
 
 ## Baca Juga{#whats-next}
 

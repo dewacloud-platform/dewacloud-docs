@@ -19,29 +19,29 @@ Jadi, mari kita lihat bagaimana menggunakan solusi hebat ini untuk aplikasi Java
 
 2\. Saat di dashboard platform, klik tombol **Create environment**:
 
-![remote access via webdav create environment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/remote-access-via-webdav/remote-access-via-webdav-1.png" alt="remote access via webdav create environment" width="40%"/>
 
 3\. Dalam dialog **Environment Topology**, pilih server aplikasi Anda (misalnya, **Tomcat 7 atau 6**). Kemudian ketik nama environment Anda, misalnya, _webdavtest_.
 
-![remote access via webdav webdav1](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/remote-access-via-webdav/remote-access-via-webdav-2.png" alt="remote access via webdav webdav1" width="100%"/>
 
 Hanya butuh satu menit untuk environment Anda dibuat.
 
-![remote access via webdav webdav2](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/remote-access-via-webdav/remote-access-via-webdav-3.png" alt="remote access via webdav webdav2" width="100%"/>
 
 ## Upload Java Package{#upload-java-package}
 
 1\. Unggah paket Java WAR Anda ke **Deployment manager**.
 
-![remote access via webdav webdav3](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/remote-access-via-webdav/remote-access-via-webdav-4.png" alt="remote access via webdav webdav3" width="60%"/>
 
 2\. Setelah paket berada di platform, deploy ke environment yang Anda buat sebelumnya.
 
-![remote access via webdav webdav4](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/remote-access-via-webdav/remote-access-via-webdav-5.png" alt="remote access via webdav webdav4" width="60%"/>
 
 Buka aplikasi Anda di browser untuk memastikan semuanya baik-baik saja.
 
-![remote access via webdav webdav5](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/remote-access-via-webdav/remote-access-via-webdav-6.png" alt="remote access via webdav webdav5" width="100%"/>
 
 ## Configure Tomcat{#configure-tomcat}
 
@@ -49,7 +49,7 @@ Tomcat mengimplementasikan spesifikasi WebDAV menggunakan WebDAV Servlet, yang d
 
 1\. Klik tombol **config** untuk Tomcat.
 
-![remote access via webdav webdav7](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/remote-access-via-webdav/remote-access-via-webdav-7.png" alt="remote access via webdav webdav6" width="100%"/>
 
 2\. Tomcat hadir dengan servlet WebDAV Level 2. Untuk mengaktifkan koneksi Tomcat WebDAV Anda, tambahkan yang berikut ke **web.xml** (direktori server):
 
@@ -78,7 +78,7 @@ Tomcat mengimplementasikan spesifikasi WebDAV menggunakan WebDAV Servlet, yang d
 </servlet-mapping>   
 ```    
 
-![remote access via webdav webdav8](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/remote-access-via-webdav/remote-access-via-webdav-8.png" alt="remote access via webdav webdav7" width="100%"/>
 
 3\. Pastikan bahwa hanya pengguna yang berwenang yang dapat mengakses WebDAV ke konteks Anda. Navigasikan ke **tomcat-users.xml**, buat pengguna baru dan tetapkan peran baru, misalnya:
 
@@ -88,7 +88,7 @@ Tomcat mengimplementasikan spesifikasi WebDAV menggunakan WebDAV Servlet, yang d
 </tomcat-users>   
 ```    
 
-![remote access via webdav webdav9](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/remote-access-via-webdav/remote-access-via-webdav-9.png" alt="remote access via webdav webdav8" width="100%"/>
 
 4\. Tentukan peran yang baru saja Anda buat di bagian **auth-constraint** dari **web.xml**:
 
@@ -98,26 +98,26 @@ Tomcat mengimplementasikan spesifikasi WebDAV menggunakan WebDAV Servlet, yang d
 </auth-constraint>   
 ```    
 
-![remote access via webdav webdav10](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/remote-access-via-webdav/remote-access-via-webdav-10.png" alt="remote access via webdav webdav9" width="100%"/>
 
 5\. Simpan perubahan dan restart **Tomcat**.
 
-![remote access via webdav webdav11](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/remote-access-via-webdav/remote-access-via-webdav-11.png" alt="remote access via webdav webdav10" width="100%"/>
 
 ## Connect to Server{#connect-to-server}
 
 1\. Buat koneksi baru menggunakan klien desktop apa pun untuk WebDav (kami akan menggunakan BitKinex sebagai contohnya).
 
-![remote access via webdav webdav12](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/remote-access-via-webdav/remote-access-via-webdav-12.png" alt="remote access via webdav webdav11" width="60%"/>
 
 2\. Masukkan URL server Anda
 (_http://\{your_env_name\}.[\{hoster_domain\}](<https://docs.dewacloud.com/docs/paas-hosting-providers>)/\{context\}/webdav_), tentukan login dan password untuk pengguna Tomcat Anda (dalam kasus kami kredensialnya adalah _test/tomcat_).
 
-![remote access via webdav webdav13](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/remote-access-via-webdav/remote-access-via-webdav-13.png" alt="remote access via webdav webdav12" width="60%"/>
 
 3\. Seperti yang Anda lihat, kami telah berhasil terhubung ke server kami.
 
-![remote access via webdav webdav14](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/remote-access-via-webdav/remote-access-via-webdav-14.png" alt="remote access via webdav webdav13" width="60%"/>
 
 Sebagai hasilnya, Anda akan melihat file-file Anda dan akan dapat mengeditnya, memperbarui, menambahkan beberapa file baru, dll.
 

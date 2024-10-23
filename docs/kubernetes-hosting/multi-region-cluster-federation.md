@@ -4,7 +4,7 @@ slug: /kubernetes-multi-region-cluster-federation
 title: Multi-Region Cluster Federation
 ---
 # Cluster Federation Kubernetes Multi-Region di Dewacloud
-![Kubernetes Cluster Federation](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Multi-Region%20Cluster%20Federation/image1-3-300x300.png" alt="Kubernetes Cluster Federation" width="30%"/>
 
 Jika Anda memiliki beberapa cluster Kubernetes (K8s) di berbagai region dan perlu menjalankan aplikasi yang sama di semua cluster tersebut, disarankan untuk menggunakan yang disebut Federation Cluster Kubernetes atau [KubeFed](<https://github.com/kubernetes-sigs/kubefed/blob/master/README.md>).
 
@@ -18,7 +18,7 @@ Dalam artikel ini kami akan menunjukkan cara menyiapkan Jelastic Kubernetes Serv
 
 Misalkan dalam satu Jelastic PaaS kita memiliki lima cluster di berbagai region dan kami ingin mendeploy aplikasi ke salah satu cluster ini. Salah satunya adalah Host Cluster yang bertindak sebagai Federasi [Control Plane](<https://kubernetes.io/docs/reference/glossary/?all=true#term-control-plane>), yang mempropagasikan dan mendorong konfigurasi ke Anggota Clusters.
 
-![Multi-Region Kubernetes Cluster Federation scheme](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Multi-Region%20Cluster%20Federation/image4-1-768x927.png" alt="join Kubernetes Cluster Federation" width="50%"/>
 
 Oleh karena itu, kita perlu memutuskan muatan mana yang ingin kita distribusikan, dan cluster anggota mana yang harus menanganinya.
 
@@ -29,7 +29,7 @@ Masuk ke akun Anda dan buat dua [cluster Kubernetes](<https://docs.dewacloud.com
   * Federation Host Cluster: **_fedhost.vip.jelastic.cloud_**
   * Federation Member Cluster: **_member1.demo.jelastic.com_**
 
-![Kubernetes Cluster Federation environments](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Multi-Region%20Cluster%20Federation/image6-2.png" alt="access Kubernetes federation members" width="80%"/>
 
 ## Akses Jarak Jauh ke Cluster
 
@@ -49,8 +49,7 @@ Instal [versi terbaru](<https://github.com/kubernetes-sigs/kubefed/branches/acti
 ```bash
 fedhost~$ helm install kubefed kubefed-charts/kubefed --version 0.7.0 --namespace kube-federation-system --create-namespace
 ```
-
-![Kubernetes Cluster remote access](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Multi-Region%20Cluster%20Federation/image8-2-1024x141.png" alt="Kubernetes Cluster Federation remote access testing" width="100%"/>
 
 2\. Unduh versi terbaru [kubefedctl](<https://github.com/kubernetes-sigs/kubefed/releases>) alat baris perintah juga dan salin ke direktori _/usr/local/bin_:
 
@@ -107,7 +106,7 @@ Terapkan file konfigurasi:
 member1~$ kubectl apply -f member1.yaml
 ```
 
-![](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Multi-Region%20Cluster%20Federation/image47-617.png" alt="access Kubernetes federation members" width="100%"/>
 
 4\. Untuk mendapatkan akses ke semua anggota Anda harus membuat konteks untuk masing-masingnya. Setiap konteks berisi nama cluster K8s, titik akhir cluster, nama pengguna dengan kredensial, dan namespace.
 
@@ -127,8 +126,7 @@ Dapatkan isinya dan salin ke papan klip:
 ```bash
 member1~$ kubectl describe secret member1-token-zkctp
 ```
-
-![access Kubernetes federation members](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Multi-Region%20Cluster%20Federation/image11-2-768x429.png" alt="Multi-Region Kubernetes Cluster Federation scheme" width="70%"/>
 
 5\. Buat pengguna **kubefed-member1** dan sediakan token untuk itu dari papan klip:
 
@@ -154,7 +152,7 @@ fedhost~$ kubectl config set-cluster kubefed-remote-member1 --server='https://k8
 fedhost~$ kubectl config set-cluster kubefed-remote-member1 --server='https://member1.demo.jelastic.com/api/'
 ```
 
-![](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Multi-Region%20Cluster%20Federation/image5-2.png" alt="access Kubernetes federation members" width="60%"/>
 
 7\. Ambil sertifikat dan salin isinya ke papan klip.
 
@@ -198,7 +196,7 @@ fedhost~$ kubectl --context member1 get nodes
 fedhost~$ kubectl --context fedhost get nodes
 ```
 
-![Kubernetes Cluster Federation remote access testing](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Multi-Region%20Cluster%20Federation/image3-2-768x210.png" alt="Kubernetes Cluster Federation environments" width="70%"/>
 
 ## Bergabung dengan Federation
 
@@ -218,7 +216,7 @@ fedhost~$ kubefedctl join member1 --v=2 --host-cluster-context fedhost --kubefed
 
 Jika semuanya berjalan lancar tanpa kesalahan, Anda akan memiliki keluaran serupa:
 
-![join Kubernetes Cluster Federation](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Multi-Region%20Cluster%20Federation/image7-1.png" alt="Kubernetes Cluster Federation status" width="100%"/>
 
 Untuk memastikan bahwa join berfungsi, Anda bisa memeriksa status Federation dengan perintah:
 
@@ -226,4 +224,4 @@ Untuk memastikan bahwa join berfungsi, Anda bisa memeriksa status Federation den
 fedhost~$ kubectl -n kube-federation-system get kubefedclusters
 ```
 
-![Kubernetes Cluster Federation status](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Multi-Region%20Cluster%20Federation/image2-3-768x109.png" alt="Kubernetes Cluster remote access" width="70%"/>

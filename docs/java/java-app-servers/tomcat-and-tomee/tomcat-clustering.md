@@ -10,7 +10,7 @@ Platform ini menyediakan pengiriman multicast dan pengalihan permintaan ke setia
 
 Instruksi ini menunjukkan teknologi clustering yang digunakan di platform dengan contoh server aplikasi Tomcat.
 
-![Tomcat cluster](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-cluster/tomcat-cluster-1.png" alt="Tomcat cluster" width="70%"/>
 
 Skema yang diberikan menampilkan **Tomcat cluster** dengan dua server dan satu load balancer. Semua permintaan ditangani dan didistribusikan oleh balancer di antara node yang berbeda berdasarkan ketersediaan dan beban server.
 
@@ -22,11 +22,11 @@ Jika salah satu server mengalami kegagalan, pengguna dari node tersebut akan sec
 
 2\. Klik **New** **Environment**.
 
-![new environment button](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-cluster/tomcat-cluster-2.png" alt="new environment button" width="50%"/>
 
 3\. Pilih **Tomcat** sebagai server aplikasi yang ingin Anda gunakan, tentukan batas cloudlet dan nyalakan **High-availability** seperti yang ditunjukkan pada gambar di bawah ini. Tentukan nama lingkungan dan klik **Create**.
 
-![Tomcat cluster in topology wizard](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-cluster/tomcat-cluster-3.png" alt="Tomcat cluster in topology wizard" width="100%"/>
 
 :::note 
 Horizontal scaling dan mode High Availability adalah dua fungsionalitas berbeda di platform. Dengan yang pertama, Anda memiliki beberapa server dan beban didistribusikan secara merata di antara jumlah instance yang dipilih dengan load balancer. Mode High Availability mengatur replikasi antara pasangan atau beberapa pasangan server menggunakan keanggotaan multicast.

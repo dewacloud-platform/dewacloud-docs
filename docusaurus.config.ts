@@ -2,6 +2,8 @@ import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
+const githubRepo = "https://github.com/jon-mun/dewacloud-docs";
+
 const config: Config = {
   title: "Dewacloud",
   tagline:
@@ -30,6 +32,9 @@ const config: Config = {
     locales: ["id"],
   },
 
+  // Plugins
+  plugins: ["docusaurus-plugin-sass"],
+
   presets: [
     [
       "classic",
@@ -40,9 +45,12 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           // editUrl:
           //   "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: `${githubRepo}/edit/main/`,
         },
         blog: {
           path: "./release-notes",
+          blogSidebarCount: "ALL",
+          sortPosts: "descending",
           tags: false,
           showReadingTime: false,
           feedOptions: {
@@ -60,7 +68,7 @@ const config: Config = {
           routeBasePath: "/release-notes",
         },
         theme: {
-          customCss: "./src/css/custom.css",
+          customCss: "./src/css/custom.scss",
         },
       } satisfies Preset.Options,
     ],
@@ -70,7 +78,11 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
+    announcementBar: {
+      content: "👷 Site is currently in development 🚧",
+      isCloseable: false,
+    },
+    image: "img/dewacloud-social-card.jpg",
     navbar: {
       logo: {
         alt: "Dewacloud Logo",
@@ -79,14 +91,18 @@ const config: Config = {
       },
       items: [
         {
+          type: "search",
+          position: "left",
+        },
+        {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
-          position: "left",
+          position: "right",
           label: "Docs",
         },
-        { to: "/release-notes", label: "Release Notes", position: "left" },
+        { to: "/release-notes", label: "Release Notes", position: "right" },
         {
-          href: "https://github.com/jon-mun/dewacloud-docs",
+          href: githubRepo,
           label: "GitHub",
           position: "right",
         },
@@ -95,6 +111,18 @@ const config: Config = {
     footer: {
       style: "dark",
       links: [
+        {
+          items: [
+            {
+              html: ` <a href="https://dewacloud.com" aria-label="Dewacloud Platform">
+                  <img src="https://assets.dewacloud.com/dewacloud-docs/static/dewacloud-horizontal-logo-monochrome-version-tagline-dark-bg.png" alt="Dewacloud Logo" width="200px"/>
+                </a>`,
+            },
+            {
+              html: `<p>Dewacloud is a secure, fast and cost-efficient cloud platform for business.</p>`,
+            },
+          ],
+        },
         {
           title: "Docs",
           items: [
@@ -108,16 +136,16 @@ const config: Config = {
           title: "Community",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              label: "Instagram",
+              href: "https://www.instagram.com/dewacloudofficial/",
             },
             {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
+              label: "Facebook",
+              href: "https://www.facebook.com/dewacloudofficial/",
             },
             {
               label: "Twitter",
-              href: "https://twitter.com/docusaurus",
+              href: "https://x.com/dewacloud",
             },
           ],
         },
@@ -130,12 +158,17 @@ const config: Config = {
             },
             {
               label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              href: githubRepo,
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Dewacloud`,
+      // copyright: `Copyright © ${new Date().getFullYear()} Dewacloud`,
+      copyright: `
+      <p>Powered by Dewaweb</p>
+      <p>Copyright © ${new Date().getFullYear()} Dewacloud</p>
+      
+      `,
     },
     prism: {
       theme: prismThemes.github,

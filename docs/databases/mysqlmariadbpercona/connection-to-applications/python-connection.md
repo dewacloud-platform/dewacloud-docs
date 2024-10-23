@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-slug: /python-connection
+slug: /connection-to-mysql-python
 title: Python Connection
 ---
 # Python Application Connection to MySQL/MariaDB/Percona

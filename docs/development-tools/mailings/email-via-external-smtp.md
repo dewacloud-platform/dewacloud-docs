@@ -20,23 +20,23 @@ PHPMailer adalah kelas pengiriman email penuh fitur klasik untuk PHP, kompatibel
 
 3\. Pilih server aplikasi **Apache** dan tentukan batas cloudlet untuk itu. Kemudian aktifkan fitur **Public IP** untuk node Apache, ketik nama untuk environment baru Anda (misalnya, _phpmailer_) dan klik **Create**.
 
-![create PHP environment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/mailings/email-via-external-smtp/email-via-external-smtp-1.png" alt="create PHP environment" width="100%"/>
 
 4\. Unduh **[script PHPMailer](<https://download.jelastic.com/public.php?service=files&t=1c0e6f02fd2da054818b86182fc5747d&download&path=//phpmailer.test.tar.gz>)** (di sini kami menyediakan versi khusus kami yang mengecualikan semua pengaturan tambahan dan ditargetkan hanya pada SMTP).
 
 5\. Arahkan ke **Deployment manager** dan **Upload** paket yang diunduh ke dashboard platform.
 
-![deployment manager](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/mailings/email-via-external-smtp/email-via-external-smtp-2.png" alt="deployment manager" width="60%"/>
 
-![upload phpmailer archive](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/mailings/email-via-external-smtp/email-via-external-smtp-3.png" alt="upload phpmailer archive" width="60%"/>
 
 6\. Setelah pengunggahan selesai, deploy **paket PHPMailer** ke lingkungan yang telah Anda buat sebelumnya.
 
-![deploy PHPMailer](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/mailings/email-via-external-smtp/email-via-external-smtp-4.png" alt="deploy PHPMailer" width="60%"/>
 
 7\. Lalu klik tombol **Config** di samping server aplikasi Anda dan buka file `webroot > {context_name} > config.php`.
 
-![PHPMailer configuration](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/mailings/email-via-external-smtp/email-via-external-smtp-5.png" alt="PHPMailer configuration" width="70%"/>
 
 8\. Tentukan semua data yang diperlukan di sana untuk mengonfigurasi pengiriman email melalui localhost atau melalui beberapa akun email tertentu:
 
@@ -52,15 +52,15 @@ Untuk menggunakan konfigurasi ini, Anda harus menyatakan nilai parameter berikut
   * **addreply**: tentukan email yang akan digunakan untuk mengirim balasan ke pengiriman Anda. Perlu dicatat bahwa ini adalah parameter wajib untuk menyatakan nilainya.
   * **replyto**: tentukan email yang sama seperti untuk parameter addreply
 
-![email via localhost configs](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/mailings/email-via-external-smtp/email-via-external-smtp-6.png" alt="email via localhost configs" width="80%"/>
 
 **Save** perubahan yang dibuat. Setelah itu, Anda dapat mengklik tombol **Open in Browser** di sebelah lingkungan Anda dan Anda akan melihat formulir untuk pengiriman email.
 
-![PHPMailer send email form](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/mailings/email-via-external-smtp/email-via-external-smtp-7.png" alt="PHPMailer send email form" width="60%"/>
 
 Masukkan info pengujian di kolom dan klik **Submit**. Dalam beberapa menit email ini akan muncul di kotak masuk Anda.
 
-![test email from localhost](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/mailings/email-via-external-smtp/email-via-external-smtp-8.png" alt="test email from localhost" width="60%"/>
 
 :::note 
 Jika Anda tidak menerima email dalam beberapa menit, periksa folder spam.
@@ -78,15 +78,15 @@ Anda dapat menggunakan konfigurasi berikut sebagai contoh:
   * **password**: tentukan kata sandi untuk akun yang telah Anda tentukan di baris _username_
   * **addreply** dan **replyto**: tentukan email yang sama seperti di baris _username_ (yang akan Anda gunakan untuk pengiriman)
 
-![email via GMail configs](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/mailings/email-via-external-smtp/email-via-external-smtp-9.png" alt="email via GMail configs" width="80%"/>
 
 **Save** perubahan yang dibuat. Klik tombol **Open in Browser** di sebelah lingkungan Anda untuk melihat formulir untuk pengiriman email.
 
-![PHPMailer send email form](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/mailings/email-via-external-smtp/email-via-external-smtp-10.png" alt="PHPMailer send email form" width="60%"/>
 
 Masukkan info pengujian di kolom dan klik **Submit**. Dalam beberapa saat email ini akan muncul di kotak masuk Anda.
 
-![test email from GMail](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/mailings/email-via-external-smtp/email-via-external-smtp-11.png" alt="test email from GMail" width="60%"/>
 
 ## Menggunakan Custom Form untuk Pengiriman Email{#using-custom-form-for-email-sending}
 
@@ -94,11 +94,11 @@ Anda dapat menyiapkan kode formulir khusus Anda sendiri dan mengaturnya untuk di
 
 1\. Tekan tombol **Config** di sebelah server **Apache**.
 
-![Apache config button](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/mailings/email-via-external-smtp/email-via-external-smtp-12.png" alt="Apache config button" width="60%"/>
 
 2\. Arahkan ke folder **webroot/ROOT** (atau konteks lain) dan buat file baru di sana, misalnya, _mailtest.php_.
 
-![create mailtest page](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/mailings/email-via-external-smtp/email-via-external-smtp-13.png" alt="create mailtest page" width="60%"/>
 
 3\. Tempelkan kode dari formulir khusus Anda ke file yang dibuat dan **Save** perubahan yang dibuat.
 
@@ -108,17 +108,17 @@ Anda dapat menggunakan contoh kami:
 <form method=POST ation=#> From <input type=text name=from><br /> To <input type=text name=to><br /> Subject <input type=text name=subj><br /> Type your message <input type=text name=text><br /> <input type=submit name=sub value=Send> </form> <?php if ($_POST['sub']){ system ("echo {$_POST['text']} | mail -s {$_POST['subj']} -r {$_POST['from']} {$_POST['to']}");} ?>  
 ```    
 
-![mailtest page PHP code](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/mailings/email-via-external-smtp/email-via-external-smtp-14.png" alt="mailtest page PHP code" width="100%"/>
 
 4\. Kemudian **Open in Browser** lingkungan Anda dan tambahkan nama file Anda ke akhir URL. Anda akan melihat formulir berikut:
 
-![custom email sending form](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/mailings/email-via-external-smtp/email-via-external-smtp-15.png" alt="custom email sending form" width="60%"/>
 
 5\. Untuk mengirim email, Anda dapat menggunakan localhost dan akun email asli (cukup ketik “localhost” atau email yang diperlukan di kolom _From_). Setelah mengisi semua kolom, klik **Send**.
 
 Sebagai hasilnya, penerima akan mendapatkan email tersebut.
 
-![test email from custom form](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/mailings/email-via-external-smtp/email-via-external-smtp-16.png" alt="test email from custom form" width="60%"/>
 
 :::note 
 Email dapat masuk ke dalam folder spam.

@@ -9,7 +9,7 @@ Kubernetes secara native mendukung deployment dari file JSON dan YAML. Namun, di
 
 Deployment dari YAML mirip dengan chart [Helm](<https://docs.dewacloud.com/docs/kubernetes-helm-integration>) - file _**.yaml**_ atau _**.yml**_ menyediakan definisi objek atau daftar objek. Dengan demikian, ini dapat langsung diterapkan di _Kubernetes Dashboard_ atau dengan alat baris perintah _kubectl_ tanpa instalasi perangkat lunak tambahan.
 
-![kubernetes dashboard deploy application with yaml](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/application%20deployment/YAML%20Deployments/01-kubernetes-dashboard-deploy-application-with-yaml.png" alt="kubernetes dashboard deploy application with yaml" width="80%"/>
 
 Saat bekerja dengan _kubectl_, gunakan perintah _**[apply](<https://kubernetes.io/docs/reference/kubectl/cheatsheet/#apply>)**_ dengan path yang benar ke file YAML deployment Anda:
 

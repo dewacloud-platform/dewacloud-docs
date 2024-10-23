@@ -1,0 +1,38 @@
+#__docusaurus {
+  .navbar {
+    .navbar__inner {
+      .navbar__items:first-child {
+        display: flex;
+        gap: 3rem;
+        .navbar__brand {
+          margin: 0;
+        }
+      }
+
+      .navbar__items--right {
+        display: flex;
+        gap: 1.5rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 960px) {
+    .navbar {
+      .navbar__inner {
+        .navbar__items:first-child {
+          gap: 1.5rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 520px) {
+    .navbar {
+      .navbar__inner {
+        .navbar__items:first-child {
+          gap: 1rem;
+        }
+      }
+    }
+  }
+}

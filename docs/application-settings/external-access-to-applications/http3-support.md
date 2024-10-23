@@ -1,6 +1,6 @@
 ---
 sidebar_position: 6
-slug: /http3-support
+slug: /http3
 title: HTTP/3 Support
 ---
 # HTTP/3 (QUIC) Support

@@ -1,12 +1,11 @@
 ---
 sidebar_position: 1
-slug: /java-dev-center
+slug: /java-center
 title: Java Dev Center
 ---
 
 # Java Developer’s Center
 
-![Java center illustration](#)
 
 Platform ini saat ini mendukung multibahasa, awalnya diciptakan sebagai Java Cloud murni dan masih mempertahankan fokus utama pada bahasa pemrograman ini. Kematangan teknologi platform ini diakui oleh komunitas Java dengan [Duke’s Choice Award](<https://www.virtuozzo.com/company/blog/duke-choice-award-2018-winner/>) sudah dua kali (pada 2012 dan 2018). Panduan ini mengenalkan Anda pada fitur-fitur khas hosting Java dalam platform dan memungkinkan Anda memulai dengan daftar fungsi yang luas.
 
@@ -66,7 +65,7 @@ Baca dokumentasi di bawah untuk informasi tambahan tentang spesifikasi server Ja
 
 Untuk meng-host aplikasi Java, Anda perlu membuat environment yang sesuai. Cukup buka [_topology wizard_](<https://docs.dewacloud.com/docs/setting-up-environment/>) di dashboard PaaS Anda, navigasikan ke tab bahasa **Java**, pilih server aplikasi Java yang diinginkan, database, dan stack lainnya. Jika diperlukan, sesuaikan pengaturan (seperti cloudlets, ruang disk, wilayah, dll.) dan klik **Create**.
 
-![Java environment creation](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-dev-center/java-dev-center-1.png" alt="Java environment creation" width="100%"/>
 
 Semua server yang ditambahkan mewakili [container terisolasi sepenuhnya](<https://docs.dewacloud.com/docs/isolated-containers/>), yang terletak pada host yang berbeda untuk lebih banyak ketersediaan, sementara isolasi menghilangkan risiko interferensi satu sama lain. Anda dapat melampirkan alamat [public IP](<https://docs.dewacloud.com/docs/public-ip/>) ke salah satu server ini untuk diakses langsung. Jika tidak (mis. jika menggunakan pengaturan default), permintaan masuk yang dikirimkan kepada aplikasi Anda akan diproksikan oleh [Shared Load Balancer](<https://docs.dewacloud.com/docs/shared-load-balancer/>).
 
@@ -79,7 +78,7 @@ Metode deployment berikut didukung:
   * melalui _**archive**_ aplikasi \- _.war_ , _.zip_ , _.jar_ , dan _.ear_ archives
   * dari _repository_ _GIT/SVN_ jarak jauh, menggunakan node build _Maven_
 
-![Java application deployment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-dev-center/java-dev-center-2.png" alt="Java application deployment" width="70%"/>
 
 Anda dapat membaca dokumen yang sesuai untuk mempelajari lebih lanjut tentang deployment aplikasi Java:
 
@@ -99,7 +98,7 @@ Anda dapat mengikat nama [custom domain](<https://docs.dewacloud.com/docs/custom
 
 Juga, dengan bantuan fitur [swapping domains](<https://docs.dewacloud.com/docs/swap-domains/>) atau metode _**SwapExtIps**_ [API](<https://docs.jelastic.com/api/#!/api/environment.Binder-method-SwapExtIps>)/[CLI](<https://docs.dewacloud.com/docs/cli-ip-swap/>), Anda dapat meng-upgrade dan memodifikasi aplikasi Anda tanpa downtime (yaitu pengguna Anda tidak akan melihat adanya gangguan).
 
-![Java domains management](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-dev-center/java-dev-center-3.png" alt="Java domains management" width="100%"/>
 
 :::tip 
 Platform ini memungkinkan penggunaan multiple domain dalam satu environment untuk meningkatkan kegunaannya, efisiensi, dan skalabilitas, sementara secara bersamaan menghemat biaya Anda dengan menghindari kebutuhan untuk mengatur instance terpisah untuk aplikasi yang berbeda. Lihat contoh yang sesuai di bawah:M ulitiple Domains dengan Public IPMultiple Domains untuk TomcatMultiple Domains untuk GlassFish
@@ -109,17 +108,17 @@ Platform ini memungkinkan penggunaan multiple domain dalam satu environment untu
 
 Platform ini secara dinamis menyediakan sejumlah cloudlet (sebagai sumber daya RAM dan CPU), yang dibutuhkan oleh aplikasi Anda untuk menangani beban saat ini. Cukup tentukan batas maksimum, dan semuanya akan dilakukan oleh platform secara otomatis - tidak diperlukan intervensi manual. Fitur ini disebut _**[automatic vertical scaling](<https://docs.dewacloud.com/docs/automatic-vertical-scaling/>)**_ dan memastikan bahwa Anda tidak pernah membayar lebih untuk kapasitas yang tidak digunakan tanpa mengalami kekurangan sumber daya.
 
-![automatic vertical scaling](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-dev-center/java-dev-center-4.png" alt="automatic vertical scaling" width="100%"/>
 
 Untuk mengatur atau mengubah batas penskalaan vertikal, cukup gunakan slider yang sesuai dalam topology wizard:
 
-![configure Java vertical scaling](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-dev-center/java-dev-center-5.png" alt="configure Java vertical scaling" width="70%"/>
 
 ## Horizontal Scaling: Manual and Automatic{#horizontal-scaling-manual-and-automatic}
 
 Jika aplikasi Anda menjadi sangat populer dan satu node tidak cukup, jangan ragu untuk meng-skala secara [horizontal](<https://docs.dewacloud.com/docs/horizontal-scaling/>). Untuk memastikan keandalan dan ketersediaan tinggi, semua node yang baru ditambahkan dibuat pada node perangkat keras yang berbeda.
 
-![Java horizontal scaling](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-dev-center/java-dev-center-6.png" alt="Java horizontal scaling" width="70%"/>
 
 Klik tombol **+/-** dalam bagian _Horizontal Scaling_ pada topology wizard untuk mengatur jumlah node yang diperlukan (load balancer akan ditambahkan secara otomatis).
 
@@ -140,7 +139,7 @@ Ada lima tipe sumber daya yang berbeda, yang dipantau oleh pemicu:
   * Disk I/O
   * Disk IOPS
 
-![Java auto horizontal scaling](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-dev-center/java-dev-center-7.png" alt="Java auto horizontal scaling" width="100%"/>
 
 Pemicu mulai memantau konsumsi sumber daya segera setelah penambahan, dan ketika tingkat penggunaan melebihi batas yang dinyatakan, pemicu diaktifkan. Kemudian, jika beban berlanjut untuk periode yang ditentukan, itu akan dieksekusi, menyesuaikan jumlah node.
 
@@ -150,14 +149,14 @@ Fitur clustering server aplikasi tersemat menyediakan replikasi sesi antar pasan
 
 Platform ini menyediakan replikasi sesi otomatis antara server _Tomcat_ dan _TomEE_ dengan bantuan multicast untuk mendapatkan ketersediaan tinggi aplikasi web dalam cluster Java. Fitur **[High-Availability](<https://docs.dewacloud.com/docs/session-replication/>)** ini dapat diaktifkan di wizard selama pembuatan environment atau penyesuaian topologi.
 
-![Java clusterization](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-dev-center/java-dev-center-8.png" alt="Java clusterization" width="100%"/>
 
 Solusi **[Auto-Clustering](<https://docs.dewacloud.com/docs/auto-clustering/>)** modern yang lebih baru disediakan untuk stack _GlassFish_ , _Payara_ , dan _WildFly_:
 
   * [Out-of-Box GlassFish & Payara Clustering](<https://www.virtuozzo.com/company/blog/glassfish-payara-auto-clustering-cloud-hosting/>)
   * [WildFly Automatic Micro Clustering and Scaling](<https://www.virtuozzo.com/company/blog/wildfly-managed-domain-in-containers-auto-micro-clustering-and-scaling/>)
 
-![Java auto-clustering](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-dev-center/java-dev-center-9.png" alt="Java auto-clustering" width="100%"/>
 
 ## Database Connection to Java Application{#database-connection-to-java-application}
 

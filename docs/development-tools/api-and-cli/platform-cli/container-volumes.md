@@ -28,7 +28,7 @@ Parameter ini juga dapat digunakan dalam manifest JPS Anda.
 ... "docker":{... "volumes": ["{local_volume}", "{local_volume}", ...]}
 ```
 
-![CLI volumes parameter](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/container-volumes/container-volumes-1.png" alt="CLI volumes parameter" width="100%"/>
 
 Di sini, `{local_volume}` adalah placeholder untuk path volume lokal Anda yang harus ditempatkan di dalam container. Anda dapat menentukan beberapa volume sekaligus menggunakan pemisah koma.
 
@@ -40,7 +40,7 @@ Misalnya, dalam gambar di atas, kami membuat environment dengan image _jelastic/
 ... "docker":{... "volumeMounts" : {"{local_path}" : {"sourcePath" : "{remote_path}", "sourceNodeId" : "{node_ID}", "readOnly" : {true/false}}, ...}}
 ```
 
-![CLI volumeMounts parameter](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/container-volumes/container-volumes-2.png" alt="CLI volumeMounts parameter" width="100%"/>
 
 Data yang disorot harus diubah ke nilai yang sesuai:
 * `{local_path}` \- path ke folder di dalam nodes dari layer environment tertentu di mana konten yang dipasang harus ditempatkan
@@ -61,7 +61,7 @@ Sebagai contoh, menggunakan perintah pada gambar di atas, kami telah memasang da
 ... "docker":{... "volumesFrom":[{"sourceNodeId" : "{node_ID}", "readOnly" : {true/false}, "volumes" : ["{local_volume}", "{local_volume}", ...]}]}
 ```
 
-![CLI volumesFrom parameter](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/container-volumes/container-volumes-3.png" alt="CLI volumesFrom parameter" width="100%"/>
 
 Di sini:
 * `{node_ID}` \- identifier unik dari node tempat data harus dipasang 
@@ -90,7 +90,7 @@ di mana:
 * `{node_ID}` \- identifier unik dari node dalam environment yang dipilih, container volume baru harus ditambahkan
 * `{path}` \- path dalam sistem file lokal Anda ke direktori volume Anda
 
-![CLI AddContainerVolume command](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/container-volumes/container-volumes-4.png" alt="CLI AddContainerVolume command" width="100%"/>
 
 2\. Proses penghapusan ini benar-benar mirip dengan proses penambahan yang baru saja dijelaskan dan menggunakan parameter yang sama:
 
@@ -98,7 +98,7 @@ di mana:
 ~/jelastic/environment/control/removecontainervolume --envName {env_name} --nodeId {node_ID} --path {path}
 ```
 
-![CLI RemoveContainerVolume command](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/container-volumes/container-volumes-5.png" alt="CLI RemoveContainerVolume command" width="100%"/>
 
 3\. Jika Anda perlu menambahkan volume tidak ke node tunggal, tetapi ke seluruh layer environment sekaligus, metode _**AddContainerVolumeByGroup**_ akan lebih cocok:
 
@@ -108,7 +108,7 @@ di mana:
 
 Di sini, parameter `{node_group}` memungkinkan untuk mendefinisikan layer dalam environment saat ini (misalnya _cp_, _bl_, _storage_, dll.), nodes yang harus dimodifikasi dengan volume baru.
 
-![CLI AddContainerVolumeByGroup command](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/container-volumes/container-volumes-6.png" alt="CLI AddContainerVolumeByGroup command" width="100%"/>
 
 4\. Tentu saja, Anda juga dapat menghapus volume untuk seluruh layer dalam satu perintah:
 
@@ -116,7 +116,7 @@ Di sini, parameter `{node_group}` memungkinkan untuk mendefinisikan layer dalam 
 ~/jelastic/environment/control/removecontainervolumebygroup --envName {env_name} --nodeGroup {node_group} --path {path}
 ```
 
-![CLI RemoveContainerVolumeByGroup command](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/container-volumes/container-volumes-7.png" alt="CLI RemoveContainerVolumeByGroup command" width="100%"/>
 
 Dengan cara seperti itu, menggunakan metode CLI ini, Anda dapat dengan mudah mengendalikan volume container Anda dan mengelolanya dalam hitungan menit. Dan jika Anda memerlukan penambahan beberapa [Mount Points](https://docs.dewacloud.com/docs/cli-mount-points/) bersama dengan volume, gunakan panduan yang terhubung untuk instruksi terperinci.
 

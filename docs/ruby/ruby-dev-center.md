@@ -1,11 +1,11 @@
 ---
 sidebar_position: 1
-slug: /ruby-dev-center
+slug: /ruby-center
 title: Ruby Dev Center
 ---
 # Ruby PaaS Hosting
 
-![Ruby cloud hosting](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/ruby/ruby%20dev%20center/01-ruby-cloud-hosting.png" alt="Ruby cloud hosting" width="20%"/>
 
 **Ruby** adalah bahasa pemrograman open source yang populer dengan sintaksis yang kuat dan praktis, namun alami dan mudah dibaca/tulis. Ruby menggabungkan praktik terbaik dari berbagai solusi untuk menyediakan bahasa berorientasi objek yang unik, yang bertujuan untuk kesederhanaan dan menyediakan fitur seperti fitur berorientasi objek dasar & khusus; operator overloading; penanganan pengecualian; iterators dan closures; garbage collection, dan banyak lagi.
 
@@ -34,7 +34,7 @@ Beralih ke tab bahasa _Ruby_, pilih server aplikasi dan versi engine yang dibutu
 Both Apache Ruby and NGINX Ruby templates utilize a modern systemd initialization daemon.
 :::
 
-![Ruby topology wizard](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/ruby/ruby%20dev%20center/02-ruby-topology-wizard.png" alt="Ruby topology wizard" width="100%"/>
 
 :::note
 All instances are completely isolated and fully independent containers. Additionally, scaled out nodes are automatically distributed across the physical servers (or VMs), ensuring high availability.
@@ -70,7 +70,7 @@ Platform ini mengotomatisasi proses deployment untuk server aplikasi _Apache Rub
 - aplikasi _**archive**_ yang diunggah dari mesin lokal atau melalui URL eksternal.
 - repository _**VCS**_ (mis. GitHub) jarak jauh.
 
-![ruby application deployment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/ruby/ruby%20dev%20center/03-ruby-application-deployment.png" alt="ruby application deployment" width="50%"/>
 
 Saat mendepoykan aplikasi Ruby, hanya satu konteks (_ROOT_) yang dapat digunakan. Namun, Anda dapat memilih dari tiga _Deployment Types_ (mis. [RAILS_ENV](<https://guides.rubyonrails.org/configuring.html#rails-environment-settings>)) untuk itu:
 
@@ -80,7 +80,7 @@ Saat mendepoykan aplikasi Ruby, hanya satu konteks (_ROOT_) yang dapat digunakan
 
 Jika diperlukan, Anda dapat beralih antara jenis deployment Ruby melalui daftar drop-down yang sesuai di sebelah aplikasi Anda (lihat gambar di bawah).
 
-![Ruby deployment types](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/ruby/ruby%20dev%20center/04-ruby-deployment-types.png" alt="Ruby deployment types" width="80%"/>
 
 Baca dokumen terkait untuk mengetahui lebih lanjut tentang deployment aplikasi Ruby:
 
@@ -112,17 +112,17 @@ Anda dapat menyediakan [custom domain](<https://docs.dewacloud.com/docs/custom-d
 
 Untuk mengalihkan lalu lintas dari satu environment ke environment lainnya (mis. untuk mengarahkan pelanggan ke versi aplikasi baru tanpa downtime), harus digunakan fitur [swap domains](<https://docs.dewacloud.com/docs/swap-domains/>). Ini juga tersedia sebagai metode _**SwapExtIps**_ [API](<https://docs.jelastic.com/api/#!/api/environment.Binder-method-SwapExtIps>)/[CLI](<https://docs.dewacloud.com/docs/cli-ip-swap/>).
 
-![Ruby domain management](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/ruby/ruby%20dev%20center/05-ruby-domain-management.png" alt="Ruby domain management" width="100%"/>
 
 ## Automatic Vertical Scaling{#automatic-vertical-scaling}
 
 Salah satu fitur utama dari platform ini adalah penyediaan dinamis jumlah sumber daya (RAM dan CPU) yang tepat yang dibutuhkan oleh node Anda sesuai dengan beban saat ini tanpa intervensi manual. Cukup setel batas [cloudlets](<https://docs.dewacloud.com/docs/cloudlet/>) yang diperlukan (_128 MiB_ RAM dan _400 MHz_ CPU masing-masing) untuk server aplikasi Ruby Anda dan semua akan ditangani oleh platform secara otomatis.
 
-![Ruby automatic vertical scaling](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/ruby/ruby%20dev%20center/06-ruby-automatic-vertical-scaling.png" alt="Ruby automatic vertical scaling" width="70%"/>
 
 Sebagai hasilnya, Anda secara otomatis mendapatkan keuntungan dari pendekatan pengisian _**[Pay-per-Use](<https://docs.dewacloud.com/docs/pricing-model/>)**_ yang benar-benar berorientasi pada pengguna dan tidak perlu menebak atau memprediksi beban yang masuk. Ini memastikan bahwa Anda [tidak pernah membayar lebih untuk sumber daya yang tidak digunakan](<https://www.virtuozzo.com/company/blog/deceptive-cloud-efficiency-do-you-really-pay-as-you-use/>) dan menghemat waktu Anda karena platform menghilangkan kebutuhan untuk menangani penyesuaian terkait beban atau melakukan perubahan arsitektur secara manual.
 
-![Ruby pay-per-use pricing](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/ruby/ruby%20dev%20center/07-ruby-pay-per-use-pricing.png" alt="Ruby pay-per-use pricing" width="100%"/>
 
 Rujuk ke dokumentasi [automatic vertical scaling](<https://docs.dewacloud.com/docs/automatic-vertical-scaling/>) untuk informasi lebih lanjut.
 
@@ -133,7 +133,7 @@ Rujuk ke dokumentasi [automatic vertical scaling](<https://docs.dewacloud.com/do
 - _**Stateless**_ \- secara bersamaan membuat semua node baru dari templat gambar dasar.
 - _**Stateful**_ \- secara berurutan menyalin sistem file dari container master ke node baru.
 
-![Ruby horizontal scaling](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/ruby/ruby%20dev%20center/08-ruby-horizontal-scaling.png" alt="Ruby horizontal scaling" width="60%"/>
 
 :::note
 Untuk distribusi permintaan yang tepat, sebuah instance load balancer secara otomatis ditambahkan ketika server Ruby di scaling.
@@ -147,7 +147,7 @@ Anda dapat mengkonfigurasi [automatic horizontal scaling](<https://docs.dewaclou
 
 Prosesnya sederhana, akses **Settings > Monitoring > Auto Horizontal Scaling** di environment, pilih lapisan yang diperlukan dan sumber daya yang akan dipantau (_CPU_, _RAM_, _Network_, _Disk I/O_, _Disk IOPS_). Atur kondisi dan spesifikasi scaling yang tepat melalui formulir antarmuka pengguna yang intuitif.
 
-![Ruby automatic horizontal scaling](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/ruby/ruby%20dev%20center/09-ruby-automatic-horizontal-scaling.png" alt="Ruby automatic horizontal scaling" width="100%"/>
 
 Selain itu, hosting di PaaS memungkinkan penggunaan alat dan fitur bawaan lainnya, misalnya:
 

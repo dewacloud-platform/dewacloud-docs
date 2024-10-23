@@ -18,24 +18,28 @@ Untuk mendapatkan server GlassFish di platform, cukup:
 
 2\. Beralih ke tab **Java** dan pilih **GlassFish** dalam bagian server aplikasi seperti yang ditunjukkan pada gambar di bawah ini:
 
-![use java](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/glassfish/glassfish-server/glassfish-server-1.png" alt="use java" width="100%"/>
 
 3\. Setelah environment dibuat, Anda dapat mengklik tombol **Open in browser** di sebelah server GlassFish yang dibentuk (perluas environment di panel _Environments_ di bagian atas layar):
 
-![glassfish 02serv run](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/glassfish/glassfish-server/glassfish-server-2.png" alt="glassfish 02serv run" width="100%"/>
 
 4\. Sekarang Anda dapat mengunggah paket aplikasi Java WAR dan [mendeploy](<https://docs.dewacloud.com/docs/upload-deploy-application>) nya ke environment.
 
 5\. Panel administrasi Glassfish dapat diakses langsung dari dashboard platform:
 
-![glassfish 03dash](#) Halaman Admin akan tersedia di tab baru.
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/glassfish/glassfish-server/glassfish-server-3.png" alt="glassfish 03dash" width="100%"/>
+ Halaman Admin akan tersedia di tab baru.
 
 :::note 
-Platform ini menggunakan gfcluster sebagai kluster, jadi jika Anda ingin memodifikasi sesuatu, silakan terapkan perubahan ke gfcluster. Jika Anda memiliki Public IP yang terpasang pada node server aplikasi, port panel admin GlassFish default (4848) dapat diubah dalam file /opt/glassfish3/glassfish/domains/domain1/config/domain.xml (sebagai shortcut server di Favorites) dengan menambahkan string berikut:
+Platform ini menggunakan gfcluster sebagai kluster, jadi jika Anda ingin memodifikasi sesuatu, silakan terapkan perubahan ke gfcluster. 
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/glassfish/glassfish-server/glassfish-server-4.png" alt="gfcluster" width="100%"/>
+Jika Anda memiliki Public IP yang terpasang pada node server aplikasi, port panel admin GlassFish default (4848) dapat diubah dalam file /opt/glassfish3/glassfish/domains/domain1/config/domain.xml (sebagai shortcut server di Favorites) dengan menambahkan string berikut:
 
 ```xml
 <http-listener id="admin-listener" port="4848" address="0.0.0.0" default-virtual-server="__asadmin" server-name=""/>
 ```
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/glassfish/glassfish-server/glassfish-server-5.png" alt="glassfish public ip" width="100%"/>
 
 Glassfish Derby Internaldatabase dimatikan secara default untuk mengurangi konsumsi sumber daya.
 :::

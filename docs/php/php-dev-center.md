@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /php-dev-center
+slug: /php-center
 title: PHP Dev Center
 ---
 # PHP Developer's Center
@@ -9,7 +9,7 @@ PHP dianggap sebagai salah satu bahasa pemrograman server-side yang paling mudah
 
 Mari kita ambil perjalanan ke cloud hosting PHP dalam platform, keistimewaan, poin kemenangan, dan kemungkinan kaya yang disediakan untuk menjalankan aplikasi secara efisien.
 
-![PHP cloud hosting](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-dev-center/01-php-cloud-hosting.png" alt="PHP cloud hosting" width="70%"/>
 
 Gunakan tabel konten di bawah ini untuk menemukan informasi yang dibutuhkan dalam panduan lebih cepat:
 
@@ -38,7 +38,7 @@ Daftar terbaru rilis yang tersedia pada platform disediakan melalui dokumen [Sof
 
 Anda dapat memilih versi mesin yang Anda butuhkan saat pembuatan environment dan dengan mudah beralih di antaranya setelahnya melalui [platform UI](<https://docs.dewacloud.com/docs/php-versions/>) yang intuitif.
 
-![PHP environment creation](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-dev-center/02-php-environment-creation.png" alt="PHP environment creation" width="100%"/>
 
 ## PHP Application Servers{#php-application-servers}
 
@@ -49,7 +49,7 @@ Dua server aplikasi PHP disediakan secara default dan didukung oleh platform (mi
 
 Untuk melihat secara rinci bagaimana server ini dapat dikonfigurasi dan menemukan daftar file konfigurasi yang dapat diedit untuk masing-masing, lihat dokumen [PHP App Server Configuration](<https://docs.dewacloud.com/docs/php-application-server-config/>).
 
-![PHP file manager](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-dev-center/03-php-file-manager.png" alt="PHP file manager" width="100%"/>
 
 ## PHP Application Deployment{#php-application-deployment}
 
@@ -57,7 +57,7 @@ Untuk melihat secara rinci bagaimana server ini dapat dikonfigurasi dan menemuka
 
 Selain itu, Anda dapat mengkonfigurasi [automatic periodic re-deployment](<https://docs.dewacloud.com/docs/git-svn-auto-deploy/>) dari repository (ini dilakukan hanya jika terdapat perubahan kode baru).
 
-![PHP application deployment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-dev-center/04-php-application-deployment.png" alt="PHP application deployment" width="50%"/>
 
 Semua node PHP yang bersertifikat platform disediakan dengan pengelola dependensi **[Composer](<https://docs.dewacloud.com/docs/php-composer/>)** yang sudah diinstal sebelumnya untuk dengan cepat menginstal semua paket yang dibutuhkan untuk proyek yang dideploy dan menjaganya tetap up-to-date.
 
@@ -67,7 +67,7 @@ Untuk keperluan produksi, Anda dapat mengikat nama domain eksternal ke aplikasi 
 
 Dengan bantuan fitur [swapping domains](<https://docs.dewacloud.com/docs/swap-domains/>), pengguna akhir aplikasi Anda tidak akan mengalami downtime apa pun ketika Anda, misalnya, mendeply versi aplikasi baru. Anda dapat menempatkan versi aplikasi baru Anda dalam environment uji dan kemudian menukar URL dengan environment produksi hanya dalam beberapa klik.
 
-![PHP domains management](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-dev-center/05-php-domains-management.png" alt="PHP domains management" width="100%"/>
 
 Menggunakan [multiple domains](<https://docs.dewacloud.com/docs/multiple-domains-php/>) pada server PHP tunggal meningkatkan kegunaan, efisiensi, dan skalabilitas aplikasi, secara bersamaan menghemat biaya untuk kebutuhan mendirikan instance terpisah.
 
@@ -77,7 +77,7 @@ Automatic vertical scaling dimungkinkan oleh kemampuan platform untuk secara din
 
 Untuk mengatur konsumsi sumber daya otomatis oleh server PHP Anda, buka wizard topologi environment dan tentukan batas atas scaling dari [cloudlets](<https://docs.dewacloud.com/docs/cloudlet/>) (setiap cloudlet setara dengan 128 MiB dan 400 MHz) dengan slider yang terletak di atas:
 
-![PHP vertical scaling](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-dev-center/06-php-vertical-scaling.png" alt="PHP vertical scaling" width="70%"/>
 
 Aplikasi Anda akan bekerja dalam batas-batas ini mengurangi konsumsi sumber daya ketika beban turun atau meningkatkannya ketika beban naik. Dengan demikian, Anda hanya membayar untuk sumber daya yang benar-benar dikonsumsi. Untuk informasi lebih lanjut, silakan merujuk ke dokumentasi tentang [automatic vertical scaling](<https://docs.dewacloud.com/docs/automatic-vertical-scaling/>).
 
@@ -85,7 +85,7 @@ Aplikasi Anda akan bekerja dalam batas-batas ini mengurangi konsumsi sumber daya
 
 Untuk menambahkan server PHP tambahan secara manual, cukup klik **Change Environment Topology**. Kemudian tekan tombol “+” dalam wizard dan tambahkan jumlah instance yang diperlukan.
 
-![PHP horizontal scaling](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-dev-center/07-php-horizontal-scaling.png" alt="PHP horizontal scaling" width="70%"/>
 
 Jumlah maksimum server tipe yang sama dalam satu lapisan environment bergantung pada pengaturan penyedia hosting tertentu (biasanya, batas ini adalah 16 node dan dapat disesuaikan dengan mengirimkan permintaan ke dukungan).
 
@@ -101,7 +101,7 @@ Untuk mengkonfigurasi pemicu untuk automatic horizontal scaling, buka bagian **S
 
 Dengan cara ini, Anda dapat mengkonfigurasi pemicu untuk stack dan sumber daya (CPU, RAM, Network, Disk) tertentu dalam environment Anda secara terpisah. Cukup tentukan kondisi scaling dan terapkan perubahan.
 
-![PHP auto horizontal scaling](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-dev-center/08-php-auto-horizontal-scaling.png" alt="PHP auto horizontal scaling" width="100%"/>
 
 Silakan, temukan lebih banyak detail tentang [automatic horizontal scaling](<https://docs.dewacloud.com/docs/automatic-horizontal-scaling/>) dalam dokumen yang sesuai.
 
@@ -113,7 +113,7 @@ Sementara melakukan scaling server PHP dengan aplikasi yang dideploy, Anda menda
 
 Selain itu, platform ini memiliki [WordPress Cluster](<https://github.com/jelastic-jps/wordpress-cluster>) dan [Magento Cluster](<https://github.com/jelastic-jps/magento-cluster>) yang tersedia untuk instalasi satu klik untuk memastikan operabilitas layanan Anda. Selain itu, Anda dapat mengemas aplikasi PHP apa pun dengan cara ini untuk mengotomatisasi instalasi yang dikelompokkan.
 
-![PHP clustering scheme](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-dev-center/09-php-clustering-scheme.png" alt="PHP clustering scheme" width="80%"/>
 
 ## Database Connection to PHP Application{#database-connection-to-php-application}
 
@@ -150,7 +150,7 @@ Panduan konfigurasi tambahan tersedia untuk server aplikasi tertentu:
 
 Cara lain untuk memastikan perlindungan aplikasi adalah dengan menggunakan [container firewall feature](<https://docs.dewacloud.com/docs/custom-firewall/>). Ini memungkinkan Anda mengontrol ketersediaan nodes baik dari dalam maupun luar platform.
 
-![PHP container firewall](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-dev-center/10-php-container-firewall.png" alt="PHP container firewall" width="100%"/>
 
 Jelajahi kemungkinan tanpa batas dari PHP dengan platform ini.
 

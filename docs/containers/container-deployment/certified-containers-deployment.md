@@ -10,11 +10,11 @@ Platform menyediakan [software stacks](<https://docs.dewacloud.com/docs/software
 
 1\. Deployment dari certified containers dilakukan melalui [topology wizard](<https://docs.dewacloud.com/docs/setting-up-environment/>), yang dapat dibuka dengan mengklik tombol **New Environment**.
 
-![PaaS main buttons](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/container-deployment/certified-containers-deployment/certified-containers-deployment-1.png" alt="PaaS main buttons" width="80%"/>
 
 2\. Dalam jendela yang terbuka, beralih ke tab dengan bahasa pemrograman yang diinginkan (_Java_, _PHP_, _Ruby_, _.NET_, _Node.js_, atau _Python_).
 
-![certified containers programming languages](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/container-deployment/certified-containers-deployment/certified-containers-deployment-2.png" alt="certified containers programming languages" width="80%"/>
 
 3\. Certified containers ditambahkan melalui bagian topologi di bagian kiri wizard. Di sini, stacks dikelompokkan berdasarkan tujuan mereka:
 
@@ -27,7 +27,7 @@ Platform menyediakan [software stacks](<https://docs.dewacloud.com/docs/software
   * **[Build Node](<https://docs.dewacloud.com/docs/java-vcs-deployment/>)** \- alat otomatisasi build untuk proyek Java
   * **Extra** (custom layers) - beberapa layanan tambahan atau salah satu dari stacks yang disebutkan di atas
 
-![certified containers in topology wizard](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/container-deployment/certified-containers-deployment/certified-containers-deployment-3.png" alt="certified containers in topology wizard" width="40%"/>
 
 Gunakan bagian ini sebagai konstruktor yang membantu Anda memvisualisasikan dan menyesuaikan topologi Anda dengan mudah.
 
@@ -37,7 +37,7 @@ Urutan blok yang ditampilkan di atas adalah urutan default. Namun, Anda dapat me
 
 4\. Platform menawarkan beberapa opsi certified containers untuk setiap peran dalam topologi environment Anda. Cukup klik bagian yang diperlukan untuk memperluas daftar solusi yang paling populer. Misalnya, certified load balancers diwakili melalui opsi berikut:
 
-![certified stack versions](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/container-deployment/certified-containers-deployment/certified-containers-deployment-4.png" alt="certified stack versions" width="40%"/>
 
 Jika Anda tidak dapat menemukan stack yang diperlukan, Anda dapat memeriksa kategori lain (misalnya application servers, databases) menggunakan opsi **More** atau cukup ketik nama untuk **Search** di antara semua template certified platform.
 
@@ -47,7 +47,7 @@ Jika perangkat lunak yang diperlukan tidak tersedia sebagai template certified, 
 
 5\. Anda dapat [mengkonfigurasi](<https://docs.dewacloud.com/docs/setting-up-environment/#configuring-nodes-resources-and-specifics>) node yang ditambahkan (_vertical_ dan _horizontal scaling_, _disk limit_, _public IPs_, dll.) melalui bagian tengah dari wizard. Certified containers dapat memiliki opsi tambahan, misalnya [Auto-Clustering](<https://docs.dewacloud.com/docs/auto-clustering/>).
 
-![environment with certified containers](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/container-deployment/certified-containers-deployment/certified-containers-deployment-5.png" alt="environment with certified containers" width="100%"/>
 
 Itu saja! Klik **Create** dan tunggu beberapa menit hingga environment dengan certified containers dapat dideploy.
 

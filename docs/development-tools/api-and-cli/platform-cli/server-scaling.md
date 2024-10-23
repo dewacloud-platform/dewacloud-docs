@@ -11,7 +11,7 @@ Ketika environment sudah dibuat, dalam beberapa kasus mungkin diperlukan untuk m
 ~/jelastic/environment/control/changetopology --envName {env_name} --env '{"engine" : "{engine_type}"}' --nodes ['{"nodeType" : "{node_type}","count" : {nodes_amount}, "fixedCloudlets" : {cloudlets_amount}, "flexibleCloudlets" : {cloudlets_amount}}, {"nodeType" : "{node_type}", "count" : {nodes_amount}, "fixedCloudlets" : {cloudlets_amount}, "flexibleCloudlets" :  {cloudlets_amount}}']
 ```
 
-![platform CLI change topology](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/server-scaling/server-scaling-1.png" alt="platform CLI change topology" width="100%"/>
 
 Seluruh [set parameter yang mungkin](https://docs.dewacloud.com/docs/create-env-api) adalah sama seperti untuk metode [createenvironment](https://docs.dewacloud.com/docs/cli-create-environment), kecuali `-–envName {env_name}` \- di sini digunakan untuk menunjuk ke environment yang sudah ada, yang harus disesuaikan.
 

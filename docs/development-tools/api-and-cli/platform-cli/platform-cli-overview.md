@@ -7,7 +7,7 @@ title: Platform CLI Overview
 
 Platform command-line interface (**CLI**) dirancang untuk menyederhanakan interaksi dengan akun Cloud Platform Anda, memungkinkan Anda untuk menjalankan perintah yang diperlukan melalui terminal mesin lokal Anda. Ini dapat menangani sebagian besar operasi yang tersedia dari jarak jauh, melengkapi tumpukan kemampuan luas yang disediakan melalui [dashboard](https://docs.dewacloud.com/docs/dashboard-guide/) dan [platform API](https://www.virtuozzo.com/application-platform-api-docs/).
 
-![platform CLI logo](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/platform-cli-overview/platform-cli-overview-1.png" alt="platform CLI logo" width="70%"/>
 
 Manfaat utama di sini adalah alat otomasi canggih dan relatif sederhana yang disediakan CLI untuk pengembang. Perintah teks sederhana dapat dengan mudah dikelompokkan ke dalam skrip dan, dengan cara seperti itu, membentuk mekanisme yang kuat untuk mencapai berbagai tujuan: dari otomatisasi tugas yang paling umum dan sering, hingga memantau aplikasi dan mengelola proses DevOps yang kompleks.
 
@@ -35,7 +35,7 @@ Dasar dari platform CLI diwakili oleh arsip _.jar_ yang dapat dieksekusi dan beb
 
 1\. Untuk memulai, autentikasi harus dilakukan. Autentikasi ini dipanggil secara otomatis saat penggunaan perintah CLI pertama, misalnya:
 
-![CLI authentication](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/platform-cli-overview/platform-cli-overview-2.png" alt="CLI authentication" width="100%"/>
 
 Cukup ikuti kuesioner yang muncul, tentukan nilai yang diminta:
 
@@ -50,6 +50,7 @@ Autentikasi juga dapat dimulai secara manual. Misalnya, jika Anda perlu beralih 
 ```
 ~/jelastic/users/authentication/signin --login {email} --password {password} --platformUrl {platformUrl}
 ```
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/platform-cli-overview/platform-cli-overview-3.png" alt="CLI environment login" width="100%"/>
 Di sini, nilai yang ada di dalam kurung harus diganti dengan parameter akun yang sesuai (dijelaskan di atas). Properti “result”: 0 dalam respons yang diterima (dilingkari pada gambar di atas) berarti bahwa operasi telah berhasil dilakukan dan tanpa kesalahan. Perilaku semacam itu berlaku untuk semua perintah yang Anda jalankan.
 :::
 
@@ -63,7 +64,7 @@ Secara default, perintah CLI dianggap berhasil dijalankan meskipun metode API ya
 ~/jelastic/help
 ```
 
-![CLI help](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/platform-cli-overview/platform-cli-overview-4.png" alt="CLI help" width="100%"/>
 
 Di sini, Anda dapat melihat daftar hierarkis jenis perintah (metode) yang tersedia. Setiap metode memiliki folder dengan nama yang sama dengan beberapa skrip (i.e. fungsi yang tersedia) di dalamnya.
 
@@ -73,13 +74,13 @@ Di sini, Anda dapat melihat daftar hierarkis jenis perintah (metode) yang tersed
 ls ~/jelastic/environment/control
 ```
 
-![CLI environment control list](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/platform-cli-overview/platform-cli-overview-5.png" alt="CLI environment control list" width="100%"/>
 
 Setiap fungsi yang disajikan dapat dengan mudah dipanggil menggunakan jalur lengkapnya.
 
 5\. Untuk informasi lebih lanjut tentang operasi tertentu, jalankan tanpa parameter untuk melihat daftar lengkap persyaratan yang terlewat.
 
-![CLI command help](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/platform-cli-overview/platform-cli-overview-6.png" alt="CLI command help" width="100%"/>
 
 Anda juga dapat memeriksa [API documentation](https://www.virtuozzo.com/application-platform-api-docs/) kami untuk mendapatkan informasi tambahan.
 

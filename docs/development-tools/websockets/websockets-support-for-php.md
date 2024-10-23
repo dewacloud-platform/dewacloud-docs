@@ -21,19 +21,19 @@ Dengan platform ini, Anda dapat membuat environment yang diperlukan dalam bebera
 
 1\. Klik tombol **New environment** di pojok kiri atas dashboard.
 
-![new environment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support-for-php/websockets-php-1.png" alt="new environment" width="50%"/>
 
 2\. Dalam jendela **Environment Wizard** yang muncul, beralihlah ke tab bahasa pemrograman yang diperlukan dan pilih server aplikasi yang diinginkan (kami akan menggunakan **Apache** untuk melayani aplikasi PHP kami). Kemudian atur jumlah sumber daya yang dialokasikan untuk itu dengan slider cloudlet, ketik nama untuk environment Anda (_apache-websockets_ dalam kasus kami) dan klik **Create**.
 
-![environment wizard](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support-for-php/websockets-php-2.png" alt="environment wizard" width="100%"/>
 
 3\. Dalam beberapa menit, environment baru Anda akan muncul di dashboard.
 
-![environment for WebSockets created](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support-for-php/websockets-php-3.png" alt="environment for WebSockets created" width="100%"/>
 
 4\. Unggah dan deploy aplikasi Anda menggunakan platform Deployment Manager atau melalui repositori GIT/SVN jarak jauh (instruksi yang diperlukan, sesuai dengan mesin yang dipilih, dapat ditemukan dalam [Panduan Deployment](<https://docs.dewacloud.com/docs/deployment-guide/>)).
 
-![WebSockets application deployed](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support-for-php/websockets-php-4.png" alt="WebSockets application deployed" width="100%"/>
 
 Akibatnya, proyek yang Anda deploy akan tercantum dalam bagian yang sesuai di panel environment.
 
@@ -45,7 +45,7 @@ Jadi saatnya untuk mengkonfigurasi server aplikasi Anda.
 
 1\. Klik tombol **Config** di sebelah node server app Anda:
 
-![Apache config](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support-for-php/websockets-php-5.png" alt="[Apache config" width="100%"/>
 
 2\. Di tab **Configuration Manager** yang terbuka, lakukan langkah-langkah dalam salah satu bagian instruksi berikut, sesuai dengan server yang dipilih:
 
@@ -64,7 +64,7 @@ Sekarang ganti kedua parameter _****_ menjadi nomor port, yang didengarkan oleh 
 
 Pastikan tampilannya sama dengan gambar di bawah ini.
 
-![Apache httpd conf](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support-for-php/websockets-php-6.png" alt="Apache httpd conf" width="100%"/>
 
 **Save** perubahan yang dibuat menggunakan tombol dengan nama yang sama di atas editor.
 
@@ -87,7 +87,7 @@ location /ws {
 
 Kemudian ganti nilai _**< PORT>**_ dengan nomor port yang sesuai (yaitu, yang didengarkan oleh aplikasi WebSockets Anda) dan **Save** perubahan yang dilakukan.
 
-![NGINX WebSockets configs](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support-for-php/websockets-php-7.png" alt="NGINX WebSockets configs" width="100%"/>
 
 3\. Itu semua untuk konfigurasi server yang harus Anda lakukan, sehingga satu-satunya hal yang tersisa adalah mengkonfigurasi aplikasi yang Anda deploy. Untuk itu, akses file konfigurasi aplikasi Anda, yang bertanggung jawab atas pengaturan WebSockets, dan sesuaikan jalur _**ws**_ yang termuat sesuai format berikut:
 
@@ -102,19 +102,19 @@ di mana
 
 Seharusnya terlihat mirip dengan gambar di bawah ini:
 
-![application WebSockets path](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support-for-php/websockets-php-8.png" alt="application WebSockets path" width="100%"/>
 
 4\. **Save** perubahan dan **Restart** server aplikasi Anda dengan tombol yang sesuai.
 
-![Apache restart](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support-for-php/websockets-php-9.png" alt="Apache restart" width="100%"/>
 
 5\. Bagus, sekarang selesai! Klik **Open in Browser** untuk menjalankan aplikasi Anda dalam tab browser baru.
 
-![open in browser](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support-for-php/websockets-php-10.png" alt="open in browser" width="100%"/>
 
 6\. Seperti yang Anda lihat, aplikasi chat contoh kami bekerja dengan sangat baik.
 
-![WebSockets chat application](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support-for-php/websockets-php-11.png" alt="WebSockets chat application" width="100%"/>
 
 Bahkan menjalankan aplikasi chat sederhana seperti itu, Anda masih akan merasakan manfaat dari transfer pesan yang sangat cepat, tersedia berkat penggunaan protokol WebSockets. Nikmati!
 

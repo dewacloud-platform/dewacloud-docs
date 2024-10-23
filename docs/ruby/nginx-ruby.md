@@ -17,17 +17,17 @@ Template ini menggunakan sistem daemon inisialisasi modern systemd.
 
 1. Klik tombol **New Environment** di sudut kiri atas dashboard.
 
-   ![new environment button](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/NGINX%20Ruby/01-new-environment-button.png" alt="new environment button" width="90%"/>
 
 2. Beralih ke tab Ruby pada wizard topologi yang terbuka secara otomatis dan pilih **NGINX Ruby** sebagai server aplikasi Anda. Jika perlu, tambahkan stack lain yang diperlukan untuk environment Anda.
 
-   ![add NGINX Ruby application server](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/NGINX%20Ruby/add-nginx-ruby-application-server.png" alt="add NGINX Ruby application server" width="100%"/>
 
 Selanjutnya, Anda dapat mengkonfigurasi [versi Ruby engine](<https://docs.dewacloud.com/docs/ruby-versions/>) dan parameter lain dari stack yang ditambahkan menggunakan bagian tengah dari wizard (misalnya, setel [batas scaling](<https://docs.dewacloud.com/docs/automatic-vertical-scaling/>), [jumlah node](<https://docs.dewacloud.com/docs/horizontal-scaling/>), lampirkan [public IP](<https://docs.dewacloud.com/docs/public-ip/>), dll.). Ketika siap, berikan nama environment yang diinginkan dan klik **Create**.
 
 3. Dalam satu menit, environment Anda akan muncul di dashboard.
 
-   ![environment with NGINX Ruby](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/NGINX%20Ruby/environment-with-nginx-ruby.png" alt="environment with NGINX Ruby" width="100%"/>
 
 Sekarang, Anda dapat melanjutkan untuk deployment aplikasi Anda ke server NGINX Ruby.
 

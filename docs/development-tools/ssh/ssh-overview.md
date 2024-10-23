@@ -16,17 +16,17 @@ Prosedur autentikasi di SSH Gate dibagi menjadi dua bagian independen:
 
 Kedua bagian dari prosedur autentikasi didasarkan pada protokol SSH standar, menggunakan pasangan kunci publik/pribadi.
 
-![SSH Gate authentication](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ssh/ssh-overview/ssh-overview-1.png" alt="SSH Gate authentication" width="30%"/>
 
 Dengan SSH Gate, Anda dapat dengan mudah mengakses:
 
   * **seluruh akun** di mana Anda dapat menavigasi melintasi environment dan container Anda menggunakan menu interaktif tanpa autentikasi tambahan
 
-![SSH Gate to account](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ssh/ssh-overview/ssh-overview-2.png" alt="SSH Gate to account" width="90%"/>
 
   * **container terpisah secara langsung** saat bekerja dengannya dari jarak jauh melalui alat tambahan (misalnya [Capistrano](<https://docs.dewacloud.com/docs/ssh-capistrano/>)) atau menggunakan protokol SFTP dan FISH
   
-![SSH Gate to container](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ssh/ssh-overview/ssh-overview-3.png" alt="SSH Gate to container" width="80%"/>
 
 Saat mengakses container melalui SSH, pengguna menerima semua izin yang diperlukan dan juga dapat mengelola layanan utama dengan perintah **sudo** dari jenis berikut (dan lainnya):
 

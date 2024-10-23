@@ -47,7 +47,7 @@ Untuk mengatur autentikasi untuk **aplikasi** Apache Anda atau hanya untuk memis
     Require valid-user
     ```
 
-    ![Apache authentication](#)
+    <img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-security-configurations/01-apache-authentication.png" alt="Apache authentication" width="100%"/>
 
   * **autentikasi untuk direktori terpisah** \- tambahkan string **Location** berikut yang menunjukkan jalur ke direktori yang diperlukan:
 
@@ -61,7 +61,7 @@ Untuk mengatur autentikasi untuk **aplikasi** Apache Anda atau hanya untuk memis
     </Location>
     ```
 
-    ![Apache directory authentication](#)
+    <img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-security-configurations/02-apache-directory-authentication.png" alt="Apache directory authentication" width="100%"/>
 
 6\. Simpan perubahan dan **Restart** server Apache.
 
@@ -71,7 +71,7 @@ Jika Anda menggunakan file httpd.conf untuk mengatur konfigurasi keamanan Anda, 
 
 Akibatnya, saat mengakses aplikasi atau direktori yang dilindungi, pengguna akan diminta untuk melakukan autentikasi.
 
-![authentication required](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-security-configurations/03-authentication-required.png" alt="authentication required" width="50%"/>
 
 ## Security Through Setting Up Criteria{#security-through-setting-up-criteria}
 
@@ -87,11 +87,11 @@ Arahkan ke folder **/etc/httpd/conf** dan buka file _**httpd.conf**_ (atau _**.h
 
 1\. Untuk menetapkan kriteria akses berdasarkan IP, cukup tambahkan direktif yang diperlukan ke bagian [_Directory](https://httpd.apache.org/docs/2.4/mod/core.html#directory)_.
 
-![Apache security by criteria](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-security-configurations/04-apache-security-by-criteria.png" alt="Apache security by criteria" width="100%"/>
 
 2\. Sebagai contoh yang lebih kompleks, Anda dapat mengkonfigurasi kebijakan akses dari beberapa kondisi (misalnya melalui direktif _RequireAll_) dan untuk folder server tertentu (cukup ubah bagian yang digarisbawahi dalam gambar di bawah).
 
-![Apache security using require directive](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-security-configurations/05-apache-security-with-require-directive.png" alt="Apache security using require directive" width="100%"/>
 
 3\. Jangan lupa untuk **Save** perubahan dan **Restart** server Apache Anda untuk menerapkan perubahan.
 
@@ -105,13 +105,13 @@ Menolak akses melalui IP hanya masuk akal jika Anda menggunakan fitur Public IP.
 
 Modul ini tersedia di platform secara default dan dapat dikonfigurasi melalui file _**/etc/httpd/conf.d/mod_security.conf**_.
 
-![modsecurity](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-security-configurations/06-modsecurity.png" alt="modsecurity" width="100%"/>
 
 Di sini Anda dapat mengedit konfigurasi default atau menambahkan konfigurasi kustom Anda sendiri.
 
-Misalnya, Anda dapat menambahkan beberapa **ModSecurity Rules** tambahan dengan mengunggahnya ke folder **/etc/httpd/modsecurity.d** (misalnya, _**modsecurity_crs_11_brute_force.conf**_).
+Misalnya, Anda dapat menambahkan beberapa **ModSecurity Rules** tambahan dengan mengunggahnya ke folder **/etc/httpd/modsecurity.d** (misalnya, ~**modsecurity_crs_11_brute_force.conf**~).
 
-![modsecurity rules](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-security-configurations/07-modsecurity-rules.png" alt="modsecurity rules" width="100%"/>
 
 Aturan yang diunggah ke folder **modsecurity.d** atau **activated_rules** akan otomatis diaktifkan tanpa pengaturan tambahan. Ini dikonfigurasi dengan parameter default berikut di file _**/etc/httpd/conf.d/mod_security.conf**_:
 

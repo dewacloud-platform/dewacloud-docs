@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /.net-core
+slug: /net-core
 title: .NET Core
 
 ---

@@ -6,7 +6,7 @@ title: WordPress Dashboard Overview
 
 # Ikhtisar Dashboard WordPress
 
-Virtuozzo Application Platform untuk WordPress menyediakan dashboard khusus yang dirancang dan dioptimalkan khusus untuk hosting WordPress. Ini memiliki integrasi mendalam dengan produk, menawarkan informasi diagnostik yang cukup dan opsi manajemen untuk melakukan semua operasi yang paling sering diperlukan tanpa membuat layar berantakan atau membebani pelanggan.
+Dewacloud Application Platform untuk WordPress menyediakan dashboard khusus yang dirancang dan dioptimalkan khusus untuk hosting WordPress. Ini memiliki integrasi mendalam dengan produk, menawarkan informasi diagnostik yang cukup dan opsi manajemen untuk melakukan semua operasi yang paling sering diperlukan tanpa membuat layar berantakan atau membebani pelanggan.
 
 Di bawah ini, kami akan memberikan ikhtisar tentang:
 
@@ -46,7 +46,7 @@ Pelajari lebih lanjut di panduan [WordPress Project Management](https://docs.dew
 
 ## Pengaturan Akun{#account-settings}
 
-Di sudut kanan atas dashboard, Anda dapat menemukan menu untuk mengelola akun Virtuozzo Application Platform untuk WordPress Anda.
+Di sudut kanan atas dashboard, Anda dapat menemukan menu untuk mengelola akun Dewacloud Application Platform untuk WordPress Anda.
 
 1. Menampilkan alamat email akun dan Total Balance di bagian atas. Anda dapat mengklik tombol plus di samping saldo Anda untuk mengisinya kembali.
 
@@ -168,7 +168,7 @@ Gunakan toggle **Dark Mode** untuk beralih antara tema terang dan gelap dashboar
 - Terms Of Use
 - Privacy Policy
 
-6. Opsi terakhir **Log Out** akan mengakhiri sesi Anda saat ini dengan Virtuozzo Application Platform for WordPress.
+6. Opsi terakhir **Log Out** akan mengakhiri sesi Anda saat ini dengan Dewacloud Application Platform for WordPress.
 
 Anda perlu login kembali untuk melanjutkan pekerjaan Anda dengan dashboard.
 

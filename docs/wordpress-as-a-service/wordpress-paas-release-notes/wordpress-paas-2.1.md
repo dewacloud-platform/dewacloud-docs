@@ -4,13 +4,13 @@ slug: /wordpress-paas-2.1
 title: WordPress PaaS 2.1
 ---
 
-# Virtuozzo Application Platform untuk WordPress 2.1
+# Dewacloud Application Platform untuk WordPress 2.1
 
 _Dokumen ini bersifat sementara dan dapat berubah._
 
-Dalam dokumen ini, Anda akan menemukan semua fitur baru, peningkatan, dan perubahan yang terlihat yang termasuk dalam rilis Virtuozzo Application Platform for WordPress 2.1.
+Dalam dokumen ini, Anda akan menemukan semua fitur baru, peningkatan, dan perubahan yang terlihat yang termasuk dalam rilis Dewacloud Application Platform for WordPress 2.1.
 
-Ruang lingkup perubahan umum sama seperti untuk rilis _[Virtuozzo Application Platform (DevOps PaaS) 8.3](https://docs.dewacloud.com/docs/release-notes-83/)_. Semua peningkatan yang spesifik untuk WordPress PaaS saja disorot dalam daftar di bawah ini.
+Ruang lingkup perubahan umum sama seperti untuk rilis _[Dewacloud Application Platform (DevOps PaaS) 8.3](https://docs.dewacloud.com/docs/release-notes-83/)_. Semua peningkatan yang spesifik untuk WordPress PaaS saja disorot dalam daftar di bawah ini.
 
 ## Peningkatan Langganan{#subscription-improvements}
 
@@ -82,7 +82,7 @@ Dalam rilis platform 2.1 saat ini, bagian **User Information** baru ditambahkan 
 
 ## Peningkatan UI{#ui-improvements}
 
-Dashboard Virtuozzo Application Platform for WordPress dirancang untuk memberikan pengalaman pengguna terbaik bagi pelanggan. Dalam peningkatan platform 2.1 saat ini, tautan langsung ke panel admin WordPress proyek ditambahkan langsung ke dashboard, memungkinkan akses cepat ke panel.
+Dashboard Dewacloud Application Platform for WordPress dirancang untuk memberikan pengalaman pengguna terbaik bagi pelanggan. Dalam peningkatan platform 2.1 saat ini, tautan langsung ke panel admin WordPress proyek ditambahkan langsung ke dashboard, memungkinkan akses cepat ke panel.
 
 ![WodPress admin panel link](#)
 
@@ -92,7 +92,7 @@ Selain itu, jika proyek memiliki panel admin lain (mis., untuk server _LiteSpeed
 
 ## Lokalisasi Dashboard{#dashboard-localization}
 
-Virtuozzo Application Platform for WordPress mengimplementasikan dukungan untuk lokalisasi dashboard kustom (sebagai tambahan dari yang _English_ default). Namun, daftar bahasa yang tepat untuk setiap platform tertentu bergantung pada pengaturan penyedia hosting yang sesuai. Daftar pilihan **Language** baru akan ditampilkan dalam menu pengaturan akun jika beberapa opsi tersedia.
+Dewacloud Application Platform for WordPress mengimplementasikan dukungan untuk lokalisasi dashboard kustom (sebagai tambahan dari yang _English_ default). Namun, daftar bahasa yang tepat untuk setiap platform tertentu bergantung pada pengaturan penyedia hosting yang sesuai. Daftar pilihan **Language** baru akan ditampilkan dalam menu pengaturan akun jika beberapa opsi tersedia.
 
 ![changing dashboard language](#)
 

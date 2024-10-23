@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /memcached-system
+slug: /memcached
 title: Memcached System
 ---
 

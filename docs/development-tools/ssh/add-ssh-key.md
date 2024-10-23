@@ -15,27 +15,27 @@ Untuk menambahkan kunci SSH publik, yang nantinya dapat digunakan untuk mendapat
 
 1\. Buka platform dashboard dan arahkan ke toolbar atas. 
 
-![ssh add key 5fe565698fc97a20f4c60d3918356107settings button](#) 
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ssh/add-ssh-key/add-ssh-key-1.png" alt="ssh add key 5fe565698fc97a20f4c60d3918356107settings button" width="70%"/>
 
 Klik tombol **Settings**.
 
 2\. Tab **Account setting** dengan opsi **SSH Keychain** yang sudah dipilih akan terbuka. 
 
-![ssh add key ssh keychain](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ssh/add-ssh-key/add-ssh-key-2.png" alt="ssh add key ssh keychain" width="60%"/>
 
 Dalam bagian ini Anda dapat menemukan beberapa informasi tentang penggunaan protokol SSH di platform dan kemungkinan yang disediakannya dengan beberapa tautan dokumentasi yang berguna.
 
 3\. Setelah Anda mengetahui detail di atas, beralihlah ke subopsi **Public** dan klik tombol **Add Public Key**. 
 
-![ssh add key public](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ssh/add-ssh-key/add-ssh-key-3.png" alt="ssh add key public" width="80%"/>
 
 4\. Tempel kunci publik yang sebelumnya dihasilkan ke bidang input **Key**. Bidang **Add Public Key** akan diisi secara otomatis jika kunci Anda sudah berisi nilai ini (atau Anda dapat menentukan kunci baru di sini). Klik **Add Key**. 
 
-![ssh add key add key](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ssh/add-ssh-key/add-ssh-key-4.png" alt="ssh add key add key" width="80%"/>
 
 5\. Hasilnya, kunci SSH yang ditambahkan akan muncul dalam daftar, dan Anda akan secara bersamaan menerima email dengan detailnya (seperti judul, fingerprint, dan string koneksi untuk klien SSH Anda). 
 
-![ssh add key public key list](#) 
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ssh/add-ssh-key/add-ssh-key-5.png" alt="ssh add key public key list" width="80%"/>
 
 Dengan cara ini, Anda dapat menambahkan beberapa kunci atau menghapus yang tidak diperlukan dengan menggunakan tombol silang merah.
 

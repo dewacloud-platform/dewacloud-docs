@@ -1,25 +1,25 @@
 ---
 sidebar_position: 1
-slug: /python-dev-center
+slug: /python-center
 title: Python Dev Center
 ---
 # Python Cloud Hosting
 
-![Python cloud hosting](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/python-dev-center/01-python-cloud-hosting.png" alt="Python cloud hosting" width="20%"/>
 
 Platform ini menyediakan integrasi _Apache_ application server yang dapat diskalakan untuk hosting aplikasi berbasis Python. Server ini sudah dioptimalkan dan siap untuk manajemen langsung, memungkinkan Anda untuk mulai pengembangan tanpa repot mengurus berbagai tugas orkestrasi, yaitu membuat proses hosting semaksimal mungkin nyaman bagi pengembang.
 
 Melalui artikel ini, Anda akan mengenal alat dan fitur utama yang tersedia di platform untuk memberikan tingkat hosting cloud Python yang diperlukan. Gunakan daftar isi di bawah ini untuk menemukan informasi yang dibutuhkan lebih cepat:
 
-  * [Python Environment Hosting](<https://docs.dewacloud.com/docs/#python-environment-hosting>)
-  * [Python Versioning](<https://docs.dewacloud.com/docs/#python-versioning>)
-  * [Python Application Deployment](<https://docs.dewacloud.com/docs/#python-application-deployment>)
-  * [Python Packages/Modules Management](<https://docs.dewacloud.com/docs/#python-packagesmodules-management>)
-  * [Domains Management](<https://docs.dewacloud.com/docs/#domains-management>)
-  * [Automatic Vertical Scaling](<https://docs.dewacloud.com/docs/#automatic-vertical-scaling>)
-  * [Manual Horizontal Scaling](<https://docs.dewacloud.com/docs/#manual-horizontal-scaling>)
-  * [Automatic Horizontal Scaling](<https://docs.dewacloud.com/docs/#automatic-horizontal-scaling>)
-  * [Database Connection to PHP Application](<https://docs.dewacloud.com/docs/#database-connection-to-php-application>)
+  * [Python Environment Hosting](<#python-environment-hosting>)
+  * [Python Versioning](<#python-versioning>)
+  * [Python Application Deployment](<#python-application-deployment>)
+  * [Python Packages/Modules Management](<#python-packagesmodules-management>)
+  * [Domains Management](<#domains-management>)
+  * [Automatic Vertical Scaling](<#automatic-vertical-scaling>)
+  * [Manual Horizontal Scaling](<#manual-horizontal-scaling>)
+  * [Automatic Horizontal Scaling](<#automatic-horizontal-scaling>)
+  * [Database Connection to PHP Application](<#database-connection-to-php-application>)
 
 ## Python Environment Hosting{#python-environment-hosting}
 
@@ -31,7 +31,7 @@ Beralih ke tab bahasa _**Python**_ dan pilih versi engine yang diinginkan. _Apac
 Template ini menggunakan _systemd_ daemon modern.
 :::
 
-![Python topology wizard](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/python-dev-center/02-python-topology-wizard.png" alt="Python topology wizard" width="100%"/>
 
 :::note
 Setiap instance adalah container yang terisolasi sepenuhnya. Instance dari lapisan yang sama secara otomatis didistribusikan ke host yang tersedia untuk memastikan ketersediaan tinggi.
@@ -49,7 +49,7 @@ Saat ini (pada saat penulisan), versi Python berikut didukung:
 
 Daftar terbaru dari versi yang tersedia di platform disediakan melalui dokumen [Software Stack Versions](<https://docs.dewacloud.com/docs/software-stacks-versions/#engines>) yang diperbarui secara teratur (mingguan).
 
-![Python versions](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/python-dev-center/03-python-versions.png" alt="Python versions" width="40%"/>
 
 Anda dapat memilih [versi Python](<https://docs.dewacloud.com/docs/python-versions/>) yang dibutuhkan langsung dari topology wizard saat membuat lingkungan baru, serta menyesuaikannya untuk lingkungan yang sudah ada menggunakan [container redeployment](<https://docs.dewacloud.com/docs/container-redeploy/>).
 
@@ -60,7 +60,7 @@ Deployment ke managed application servers (_Apache Python_) diotomatisasi oleh p
   * dari _VCS_ repository jarak jauh (mis. GitHub)
   * melalui _archive_ aplikasi yang diunggah dari URL eksternal atau dari mesin lokal
 
-![deploy Python application](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/python-dev-center/04-deploy-python-application.png" alt="deploy Python application" width="50%"/>
 
 Git flow menyediakan kemungkinan deploy secara berurutan atau simultan, serta [automatic redeployment](<https://docs.dewacloud.com/docs/git-svn-auto-deploy/>) dari repository jika ada perubahan kode baru.
 
@@ -88,7 +88,7 @@ virtualenv {appName}
 source {appName}/bin/activate
 ```
 
-![Python virtual environment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/python-dev-center/05-python-virtual-environment.png" alt="Python virtual environment" width="80%"/>
 
 2\. Pengelolaan paket perangkat lunak yang diperlukan biasanya disediakan oleh _**[pip](<https://pip.pypa.io/en/stable/>)**_ \- sistem manajemen paket Python populer untuk repository [PiPI](<https://pypi.org/>). Di bawah ini adalah beberapa perintah umum:
 
@@ -111,7 +111,7 @@ Jika diperlukan, nama domain default aplikasi Python Anda dapat diganti dengan [
 
 Selain itu, platform memungkinkan pengalihan lalu lintas antara dua lingkungan dengan cepat dan tanpa downtime (mis. untuk secara mulus mengarahkan pelanggan ke versi aplikasi yang lebih baru) menggunakan fungsionalitas [swap domains](<https://docs.dewacloud.com/docs/swap-domains/>) atau dengan bantuan _**SwapExtIps**_ [API](<https://docs.dewacloud.com/docs/cli-ip-swap/>).
 
-![Python custom domains management](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/python-dev-center/06-python-custom-domains-management.png" alt="Python custom domains management" width="100%"/>
 
 ## Automatic Vertical Scaling{#automatic-vertical-scaling}
 
@@ -119,7 +119,7 @@ Automatic vertical scaling yang diimplementasikan oleh platform menyediakan juml
 
 Cukup tetapkan batas [cloudlets](<https://docs.dewacloud.com/docs/cloudlet/>) atas (masing-masing setara dengan _128 MiB_ RAM dan _400 MHz_ CPU) untuk server aplikasi Python Anda. Segala sesuatu yang lain akan ditangani oleh platform secara otomatis.
 
-![Python automatic vertical scaling](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/python-dev-center/07-python-automatic-vertical-scaling.png" alt="Python automatic vertical scaling" width="80%"/>
 
 Lihat panduan [automatic vertical scaling](<https://docs.dewacloud.com/docs/automatic-vertical-scaling/>) untuk detail tambahan.
 
@@ -127,22 +127,20 @@ Lihat panduan [automatic vertical scaling](<https://docs.dewacloud.com/docs/auto
 
 Horizontal scaling pada server Python tidak berbeda dengan scaling instance lainnya di platform - cukup tentukan jumlah node yang diperlukan dengan tombol **+/-** di bagian tengah _topology wizard_. Jika diperlukan, pilih [scaling mode](<https://docs.dewacloud.com/docs/horizontal-scaling/#scaling-modes>) yang diinginkan:
 
-  * _**Stateless**_ \- membuat
-
- semua node baru secara bersamaan dari template image dasar
+  * _**Stateless**_ \- membuat semua node baru secara bersamaan dari template image dasar
   * _**Stateful**_ \- menyalin sistem file container master ke node baru secara berurutan
 
-![Python horizontal scaling](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/python-dev-center/08-python-horizontal-scaling.png" alt="Python horizontal scaling" width="40%"/>
 
 :::tip
-Untuk distribusi permintaan yang tepat, _load balancer_ akan otomatis ditambahkan ke lingkungan setelah _Python server_ scaling. Lihat dokumentasi _horizontal scaling_ untuk spesifikasi lebih lanjut.
+Untuk distribusi permintaan yang tepat, [_load balancer_](https://docs.dewacloud.com/docs/load-balancing) akan otomatis ditambahkan ke lingkungan setelah _Python server_ scaling. Lihat dokumentasi [_horizontal scaling_](https://docs.dewacloud.com/docs/horizontal-scaling/#horizontal-scaling-specifics) untuk spesifikasi lebih lanjut.
 :::
 
 ## Automatic Horizontal Scaling{#automatic-horizontal-scaling}
 
 Navigasikan ke **Settings > [Auto Horizontal Scaling](<https://docs.dewacloud.com/docs/automatic-horizontal-scaling/>)** untuk mengatur _custom triggers_, yang memungkinkan penambahan/pengurangan jumlah node secara otomatis sesuai dengan beban aplikasi. Pilih jenis sumber daya yang akan dimonitor (_CPU_ , _RAM_ , _Network_ , _Disk_) dan kondisi scaling yang tepat, tindakan lainnya akan diotomatisasi. Anda akan diberi tahu tentang perubahan melalui notifikasi email jika opsi ini diaktifkan.
 
-![Python automatic horizontal scaling](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/python-dev-center/09-python-automatic-horizontal-scaling.png" alt="Python automatic horizontal scaling" width="100%"/>
 
 ## Database Connection to Python Application{#database-connection-to-python-application}
 

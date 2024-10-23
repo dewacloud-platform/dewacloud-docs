@@ -9,7 +9,7 @@ Platform ini memungkinkan Anda untuk terhubung ke container mana saja secara lan
 
 Cukup klik tombol **Web SSH** di samping layer yang diperlukan atau node tertentu agar tab dengan terminal emulator terbuka: 
 
-![Web SSH direct connection](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ssh/ssh-access/web-ssh/web-ssh-1.png" alt="Web SSH direct connection" width="100%"/>
 
 Menggunakan opsi di panel alat di atas jendela editor, Anda dapat:
 

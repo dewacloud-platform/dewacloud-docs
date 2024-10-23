@@ -13,7 +13,9 @@ Platform ini menyediakan semua versi terbaru dari bahasa pemrograman Python dan 
   * _3.11.8_
   * _3.12.5_
 
+:::tip
 Daftar terbaru dari rilis yang tersedia di platform disediakan melalui dokumen [Software Stack Versions](<https://docs.dewacloud.com/docs/software-stacks-versions/#engines>) yang diperbarui secara teratur (mingguan).
+:::
 
 Versi ini dapat dipilih selama [pembuatan environment baru](<https://docs.dewacloud.com/docs/#create-python-environment>) dan disesuaikan untuk [instance Python yang sudah ada](<https://docs.dewacloud.com/docs/#change-python-version>).
 
@@ -21,11 +23,11 @@ Versi ini dapat dipilih selama [pembuatan environment baru](<https://docs.dewacl
 
 1\. Akses topology wizard dengan mengklik tombol **New Environment** di bagian atas dashboard.
 
-![create new environment button](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/python-versions/01-create-new-environment-button.png" alt="create new environment button" width="70%"/>
 
 2\. Navigasikan ke tab bahasa pemrograman _**Python**_, di mana **Apache Python** application server dipilih secara otomatis, dan pilih versi engine yang diinginkan.
 
-![topology wizard select Python version](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/python-versions/02-topology-wizard-select-python-version.png" alt="topology wizard select Python version" width="100%"/>
 
 Sesuaikan pengaturan lainnya (misalnya [batas cloudlets](<https://docs.dewacloud.com/docs/automatic-vertical-scaling/>), [public IPs](<https://docs.dewacloud.com/docs/public-ip/>), [region](<https://docs.dewacloud.com/docs/environment-regions/>), dll.), berikan nama environment dan klik **Create**.
 
@@ -36,10 +38,9 @@ Versi dari instance Python yang sudah ada dapat diubah dengan fitur [container r
 1\. Dialog yang sesuai dapat diakses dengan cara berikut:
 
   * dari bagian tengah topology wizard (dapat diakses dengan tombol **Change Environment Topology** di sebelah environment yang sesuai)  
-    ![topology wizard redeploy Python nodes](#)
-
+  <img src="https://assets.dewacloud.com/dewacloud-docs/python/python-versions/03-topology-wizard-redeploy-python-nodes.png" alt="topology wizard redeploy Python nodes" width="40%"/>
   * menggunakan tombol **Redeploy container(s)** di sebelah node atau layer yang diperlukan  
-    ![redeploy containers button](#)
+    <img src="https://assets.dewacloud.com/dewacloud-docs/python/python-versions/04-redeploy-containers-button.png" alt="redeploy containers button" width="100%"/>
 
 2\. Dalam frame yang terbuka, Anda dapat menyesuaikan pengaturan berikut:
 
@@ -47,13 +48,13 @@ Versi dari instance Python yang sudah ada dapat diubah dengan fitur [container r
   * **Keep volumes data** \- lindungi data di volumes dari penghapusan selama redeploy
   * **Simultaneous** atau **Sequential deployment with delay** (untuk [scaled servers](<https://docs.dewacloud.com/docs/horizontal-scaling/>) saja) - pilih apakah semua container dalam layer harus dideploy ulang sekaligus atau satu per satu
 
-![Python container redeployment frame](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/python-versions/05-container-redeployment-frame.png" alt="Python container redeployment frame" width="50%"/>
 
 Klik **Redeploy** untuk melanjutkan.
 
 3\. Konfirmasi tindakan melalui jendela pop-up yang muncul.
 
-![confirm Python container redeployment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/python-versions/06-confirm-python-container-redeployment.png" alt="confirm Python container redeployment" width="45%"/>
 
 Selesai! Dalam beberapa menit, versi engine Python dari container Anda akan diperbarui.
 
