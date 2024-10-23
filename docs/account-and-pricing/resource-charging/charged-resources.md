@@ -14,7 +14,7 @@ Konsumsi sumber daya untuk setiap environment dikenakan biaya kepada pemilik aku
 
 Anda dapat melacak penggunaan sumber daya (_CPU_, _RAM_, _Network_, _Disk_) secara real-time melalui [pemantauan statistik](https://docs.dewacloud.com/docs/view-app-statistics/) bawaan.
 
-![01-statistics-monitoring.png](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/resource-charging/charged-resources/01-statistics-monitoring.png" alt="01-statistics-monitoring.png" width="100%"/>
 
 :::note Sumber daya yang dikonsumsi oleh environment yang disediakan berdasarkan langganan dianggap gratis secara default. :::
 

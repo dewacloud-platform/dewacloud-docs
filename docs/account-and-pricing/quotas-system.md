@@ -11,7 +11,7 @@ Jika Anda masih memerlukan pembesaran kuota setelah konversi akun, silakan hubun
 
 Izin akun yang sebenarnya dapat dilihat melalui jendela **Quotas & Pricing > Account Limits** di dashboard platform.
 
-![quotas and pricing account limits](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/quotas-system/01-quotas-and-pricing-account-limits.png" alt="quotas and pricing account limits" width="100%"/>
 
 Kuota  
 ---  

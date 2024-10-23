@@ -10,7 +10,7 @@ Untuk membuat [kolaborasi](https://docs.dewacloud.com/docs/account-collaboration
 
 Klik tombol **Settings** di sudut kanan atas dashboard.
 
-![account settings button](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/accounts-collaboration/create-collaboration/01-account-settings-button%20(1).png" alt="account settings button" width="100%"/>
 
 Di dalam bagian **User Settings** yang terbuka, Anda memiliki dua sub-bagian kolaborasi berikut:
 
@@ -20,7 +20,7 @@ Di dalam bagian **User Settings** yang terbuka, Anda memiliki dua sub-bagian kol
   * **Policies** \- mencantumkan tindakan yang dapat ditambahkan ke peran
 * _**Shared with Me**_ \- opsi untuk anggota kolaborasi
 
-![collaboration menu](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/accounts-collaboration/create-collaboration/02-collaboration-menu.png" alt="collaboration menu" width="100%"/>
 
 Sekarang, ikuti instruksi di bawah ini untuk mengatur kolaborasi:
 
@@ -40,7 +40,7 @@ Berikan informasi berikut ini dalam dialog _**Add Role**_:
 * **Kebijakan** \- pilih tindakan yang diizinkan untuk peran; gunakan _pencarian_ untuk dengan cepat menemukan tindakan yang diperlukan dan _filter_ untuk melihat hanya yang dipilih
 * **Terima Notifikasi Peringatan Beban** \- aktifkan agar anggota kolaborasi dengan peran ini dapat menerima notifikasi peringatan beban tentang item yang dibagikan
 
-![add collaboration role](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/accounts-collaboration/create-collaboration/03-add-collaboration-role.png" alt="add collaboration role" width="100%"/>
 
 Anda dapat mempelajari lebih lanjut tentang **[Peran & Kebijakan](https://docs.dewacloud.com/docs/collaboration-roles-policies/)** pada panduan khusus.
 
@@ -52,7 +52,7 @@ Isi kolom dalam dialog _**Invite Member**_ yang terbuka:
 * **Nama Tampilan** \- berikan nama khusus untuk pengguna yang diundang (opsional)
 * **Item Dibagikan** \- pilih item dan kategori terpisah (environment dan grup) yang ingin Anda bagikan kepada anggota
 
-![invite collaboration member](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/accounts-collaboration/create-collaboration/04-invite-collaboration-member.png" alt="invite collaboration member" width="100%"/>
 
 :::note
 Anda dapat menetapkan beberapa peran untuk sebuah komponen - gunakan Ctrl untuk memilih beberapa opsi dan Alt untuk mengganti semua peran yang dipilih  
@@ -66,7 +66,7 @@ jika Anda perlu membagikan satu environment, itu dapat dilakukan dari konfiguras
 
 3\. Anggota yang diundang akan muncul dalam daftar dalam status _**menunggu penerimaan**_.
 
-![collaboration pending acceptance](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/accounts-collaboration/create-collaboration/05-collaboration-pending-acceptance.png" alt="collaboration pending acceptance" width="100%"/>
 
 Sekarang, Anda menunggu anggota untuk [menerima undangan](https://docs.dewacloud.com/docs/#accept-collaboration-invite). Setiap perubahan pada undangan akan ditampilkan di tab **Members**. Juga, Anda akan mendapatkan notifikasi email yang sesuai tentang keputusan pengguna.
 
@@ -80,7 +80,7 @@ Sekarang, Anda menunggu anggota untuk [menerima undangan](https://docs.dewacloud
 * **Suspend / Activate** \- untuk menghentikan / melanjutkan berbagi secara sementara
 * **Remove** \- untuk menghentikan berbagi dan menghapus informasi tentang komponen dan izin yang dibagikan
 
-![manage collaboration member](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/accounts-collaboration/create-collaboration/06-manage-collaboration-member.png" alt="manage collaboration member" width="100%"/>
 
 :::tip
 Untuk kenyamanan, kolaborasi yang dihentikan (termasuk kasus anggota yang pergi sendiri) tidak dihapus sepenuhnya. Rekaman yang tersisa memungkinkan Anda untuk mengaktifkan kembali kolaborasi jika perlu.
@@ -92,7 +92,7 @@ Tunggu akun utama untuk [mengirim undangan kolaborasi](https://docs.dewacloud.co
 
 1\. Periksa kotak masuk email Anda untuk undangan. Itu harus terlihat seperti berikut:
 
-![collaboration invite email](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/accounts-collaboration/create-collaboration/08-collaboration-invite-email.png" alt="collaboration invite email" width="100%"/>
 
 Jika tertarik, klik tombol **View Invitation**.
 
@@ -102,19 +102,19 @@ Jika tidak terdaftar di platform, akun untuk alamat email saat ini akan dibuat s
 
 2\. Setelah mengonfirmasi melalui email, Anda akan diarahkan ke dashboard platform. Di sini, Anda akan melihat jendela dialog yang menyediakan opsi untuk menerima atau menolak undangan.
 
-![join collaboration dialog](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/accounts-collaboration/create-collaboration/09-join-collaboration-dialog.png" alt="join collaboration dialog" width="100%"/>
 
 Anda dapat menutup dialog atau membatalkan operasi untuk memprosesnya nanti di bagian **Settings > Shared with Me** akun.
 
-![accept collaboration invite](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/accounts-collaboration/create-collaboration/10-accept-collaboration-invite.png" alt="accept collaboration invite" width="100%"/>
 
 3\. Setelah diterima, dashboard anggota akan mendapatkan dan menampilkan item yang baru dibagikan.
 
-![added to collaboration notification](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/accounts-collaboration/create-collaboration/11-added-to-collaboration-notification%20(1).png" alt="added to collaboration notification" width="100%"/>
 
 Selesai! Semua item yang dibagikan sekarang tersedia bagi anggota kolaborasi (dengan izin yang ditentukan).
 
-![shared environment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/accounts-collaboration/create-collaboration/12-shared-environment.png" alt="shared environment" width="100%"/>
 
 Lihat panduan **[Pengalaman Pengguna Kolaborasi](https://docs.dewacloud.com/docs/collaboration-user-experience/)** untuk memeriksa detail dari bekerja dalam kolaborasi.
 

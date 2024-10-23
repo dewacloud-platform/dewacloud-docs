@@ -13,7 +13,7 @@ Platform ini menyediakan model harga yang serbaguna, yang dapat disesuaikan untu
 
 Bertentangan dengan mayoritas vendor lainnya, semua fitur ini memungkinkan penyediaan pendekatan pembebanan _**Pay-per-Use**_ yang benar-benar terfokus pada pengguna:
 
-![Pay-per-Use vs Pay-per-Limit](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/pricing-model-overview/01-pay-per-use-pricing.png" alt="Pay-per-Use vs Pay-per-Limit" width="100%"/>
 
 Video di bawah ini akan membantu Anda memahami poin-poin penting dari fleksibilitas sistem biaya platform dan masalah yang dapat dipecahkannya:
 
@@ -25,11 +25,11 @@ _Limit Penskalaan_ mengatur jumlah maksimum cloudlet yang dapat dialokasikan unt
 
 Karena sebagian besar aplikasi memerlukan sejumlah sumber daya hanya untuk dimuat dan siap dijalankan, Anda akan selalu mengkonsumsi sejumlah cloudlet tertentu terlepas dari tingkat beban. Oleh karena itu, Anda dapat mengalokasikannya sebelumnya dengan _**Reserved Cloudlets**_ dan mendapatkan keuntungan dari [diskon otomatis](https://docs.dewacloud.com/docs/automatic-discounts/).
 
-![automatic discount per reserved cloudlets](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/pricing-model-overview/2.png" alt="automatic discount per reserved cloudlets" width="100%"/>
 
 Rentang penskalaan ini dikonfigurasi secara individual untuk setiap instans server, sehingga Anda dapat menentukan batas yang berbeda untuk setiap container sesuai kebutuhan dan preferensi Anda.
 
-![save money with smart pricing](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/pricing-model-overview/3.png" alt="save money with smart pricing" width="100%"/>
 
 :::note
 Ketika menghitung konsumsi cloudlet Anda, kami hanya mempertimbangkan penggunaan RAM atau CPU yang lebih besar per jam (yaitu tidak keduanya digabungkan). Pelajari lebih lanjut dengan dokumen [Sumber Daya yang Dikenakan Biaya](https://docs.dewacloud.com/docs/resource-consumption/). Pelajari cara melacak pengeluaran hosting Anda melalui dashboard platform dengan [video ini](https://www.youtube.com/watch?v=yg_fVjCbyuw&list=PLkntuNwly7TcU_IAoiZhxxQuq9nUsQQ5r&index=7).
@@ -39,9 +39,9 @@ Ketika menghitung konsumsi cloudlet Anda, kami hanya mempertimbangkan penggunaan
 
 Untuk menerapkan model harga berbasis penggunaan semacam itu ke lingkungan Anda, lakukan langkah-langkah berikut:
 
-1\. Atur slider **Scaling Limit** (yang transparan di sebelah kanan) ![dynamic cloudlets](#) ke batas sumber daya maksimum yang Anda inginkan.
+1\. Atur slider **Scaling Limit** (yang transparan di sebelah kanan) <img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/pricing-model-overview/4.png" alt="dynamic cloudlets" width="20"/> ke batas sumber daya maksimum yang Anda inginkan.
 
-![environment scaling limit](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/pricing-model-overview/5.png" alt="environment scaling limit" width="100%"/>
 
 :::warning
 Mengatur Scaling Limit terlalu rendah untuk aplikasi yang sangat dibebani dapat menyebabkan ketidakstabilan. 
@@ -49,9 +49,9 @@ Mengatur Scaling Limit terlalu rendah untuk aplikasi yang sangat dibebani dapat 
 
 Karena penggunaan dihitung setiap jam, konsumsi cloudlet (RAM & CPU) Anda dapat naik dan turun sepanjang hari tergantung pada kebutuhan aplikasi - jadi Anda secara otomatis membayar harga lebih rendah saat menggunakan lebih sedikit sumber daya (misalnya selama periode lalu lintas rendah), dan hanya membayar lebih saat sumber daya tambahan benar-benar diperlukan (misalnya selama periode lalu lintas tinggi).
 
-2\. Atur slider **Reserved Cloudlets** (yang di sebelah kiri berwarna putih) ![reserved cloudlets](#) ke nilai yang diinginkan untuk mengkomit jumlah minimum RAM & CPU yang Anda harapkan selalu dibutuhkan dan dapatkan diskon untuk mereka. Ukuran diskon yang tepat dapat bervariasi menurut penyedia hosting dan jumlah keseluruhan _Reserved Cloudlets_ di lingkungan Anda (yaitu jumlah mereka untuk semua node).
+2\. Atur slider **Reserved Cloudlets** (yang di sebelah kiri berwarna putih) <img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/pricing-model-overview/6.png" alt="reserved cloudlets" width="20"/> ke nilai yang diinginkan untuk mengkomit jumlah minimum RAM & CPU yang Anda harapkan selalu dibutuhkan dan dapatkan diskon untuk mereka. Ukuran diskon yang tepat dapat bervariasi menurut penyedia hosting dan jumlah keseluruhan _Reserved Cloudlets_ di lingkungan Anda (yaitu jumlah mereka untuk semua node).
 
-![environment reserved resources](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/pricing-model-overview/7.png" alt="environment reserved resources" width="100%"/>
 
 ### Contoh{#example}
 

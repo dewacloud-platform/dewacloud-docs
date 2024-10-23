@@ -10,7 +10,7 @@ Setiap proyek besar adalah hasil dari upaya bersama beberapa orang. Namun, anggo
 
 Ide utamanya cukup sederhana - satu pengguna (_akun utama_) menjadi tuan rumah semua environment yang diperlukan dan dapat berbagi komponen yang diperlukan dengan izin yang diperlukan kepada orang lain (_anggota kolaborasi_). Manfaat paling menonjol dari proses ini adalah pemanfaatan sumber daya yang efisien dan fleksibilitas manajemen yang ekstrem. Tidak perlu membuat duplikat environment untuk anggota yang berbeda - kolaborasi platform memungkinkan berbagi instances yang diperlukan kepada sebanyak mungkin pengguna yang diperlukan. Kontrol penuh atas izin manajemen yang dibagikan membuat fitur ini cocok untuk sebagian besar kasus penggunaan yang ada.
 
-![account collaboration scheme](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/accounts-collaboration/collaboration-overview/01-account-collaboration-scheme.png" alt="account collaboration scheme" width="100%"/>
 
 **Akun utama** memiliki akses penuh ke semua environment yang di-hosting, terlepas dari apakah mereka dibagikan atau tidak (termasuk yang dibuat oleh anggota kolaborasi). Akun ini bertanggung jawab untuk mengelola kolaborasi dan anggotanya - mengundang pengguna, menyesuaikan komponen yang dibagikan, menentukan [peran dan izin](https://docs.dewacloud.com/docs/collaboration-roles-policies/), dll. Namun, perhatikan bahwa semua biaya untuk environment yang dibagikan (termasuk tindakan yang dilakukan oleh kolaborator) dikenakan pada akun ini.
 

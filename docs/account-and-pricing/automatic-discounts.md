@@ -1,88 +1,44 @@
 ---
-sidebar_position: 13
-slug: /automatic-discounts
-title: Diskon Otomatis
+sidebar_position: 2
+slug: /account-types
+title: Jenis Akun
 ---
-# Diskon Otomatis
 
-Platform dapat memberikan diskon otomatis untuk penggunaan sumber daya Anda tergantung pada jumlah yang Anda konsumsi (jadi penggunaan volume yang lebih tinggi secara otomatis lebih murah). Ketersediaan dan tingkat diskon bergantung pada penyedia hosting pilihan Anda dan sumber daya tertentu:
+# Jenis Akun
 
-  * [RAM/CPU (cloudlets)](https://docs.dewacloud.com/docs/#ramcpu)
-  * [ruang disk](https://docs.dewacloud.com/docs/#disk-space)
-  * [lalu lintas](https://docs.dewacloud.com/docs/#traffic)
-  * [opsi (Public IP, SSL)](https://docs.dewacloud.com/docs/#options)
-  * [perangkat lunak](https://docs.dewacloud.com/docs/#software)
+Secara default, akun yang dibuat di platform dianggap sebagai **akun percobaan**. Akun-akun yang dibuat sebelum rilis komersial juga menjadi percobaan.
 
-## RAM/CPU{#ramcpu}
+Platform memberlakukan berbagai batasan pada pengguna percobaan. Setelah Anda mengubah akun Anda menjadi **akun penagihan**, batasannya akan dikurangi dan akun tersebut menjadi berbayar.
 
-Platform mengukur RAM dan CPU dalam cloudlet. Satu cloudlet setara dengan 128 MiB RAM dan 400MHz CPU.
+Menurut jenis akun Anda, Anda memiliki set hak tertentu dan [kuota](https://docs.dewacloud.com/docs/quotas-system). Jika Anda memiliki akun percobaan dan memerlukan lebih banyak kemungkinan, Anda bisa mengonversi akun Anda menjadi berbayar tanpa menunggu hingga akhir periode percobaan.
 
-Konsumsi cloudlet dipertimbangkan di setiap lingkungan individu (menggabungkan semua server dalam satu lingkungan, bukan per server dalam lingkungan tersebut). Ini memudahkan untuk mencapai tingkat diskon yang lebih tinggi dan membuat penghematan yang sangat besar!
+## Percobaan{#trial}
 
-Platform menawarkan dua jenis cloudlet: Reserved dan Dynamic.
+Saat Anda membuat akun, Anda mendapatkan periode percobaan. Selama periode ini, Anda akan dibatasi oleh salah satu dari item berikut:
 
-**Cloudlet tersimpan** ‘dikonsumsi’ hanya dengan mengonfigurasinya dalam lingkungan Anda (karena Anda membayar cloudlet tersimpan terlepas dari penggunaan sumber daya aktual Anda). Jadi Anda dapat melihat diskon diterapkan saat Anda mengonfigurasi lingkungan menggunakan wizard topologi. Total semua cloudlet tersimpan yang dikonfigurasi dalam lingkungan Anda menentukan tingkat diskon yang diterapkan.
+* uang (bonus)
+* waktu
 
-Konsumsi **cloudlet dinamis** dihitung berdasarkan penggunaan Anda setiap jam individu. Total semua cloudlet dinamis yang dikonsumsi oleh lingkungan Anda selama satu jam menentukan tingkat diskon Anda untuk jam tersebut.
+Jika Anda dibatasi oleh **uang**, Anda mendapatkan sejumlah bonus gratis, yang dapat Anda gunakan saat menggunakan layanan kami.
 
-Jika Anda menggunakan kedua jenis cloudlet di lingkungan Anda, Anda mungkin memiliki tingkat diskon berbeda untuk setiap jenis.
+Jika Anda dibatasi oleh **waktu**, Anda mendapatkan periode tertentu di mana Anda dapat menggunakan layanan kami secara gratis.
 
-![automatic discount scheme](#)
+Sebelum akhir periode percobaan Anda, Anda akan melihat pesan bahwa Anda perlu mengonversi akun Anda. Ketika periode percobaan selesai, semua lingkungan Anda akan ditangguhkan. Setelah itu, Anda masih memiliki waktu untuk mengubah akun Anda menjadi berbayar. Jika tidak melakukannya, akun Anda akan dihancurkan.
 
-Anda dapat melihat tingkat diskon yang tepat dan harga yang sesuai di dalam dashboard platform Anda.
+Untuk membatalkan percobaan dan menghapus akun Anda, silakan hubungi Dukungan Hosters.
 
-Navigasikan ke item menu **Balance > Quotas & Pricing**.
+## Penagihan{#billing}
 
-![pricing RAM](#)
+Akun penagihan adalah akun berbayar penuh. Anda dapat beralih menjadi akun penagihan segera setelah periode percobaan Anda berakhir atau sejak waktu pendaftaran.
 
-## Ruang Disk{#disk-space}
+Akun penuh memberikan Anda lebih banyak kemungkinan. Pertama-tama, batasan dikurangi. Kedua, Anda akan mendapatkan kesempatan untuk didukung sepenuhnya oleh hoster Anda.
 
-Ruang disk dikenakan biaya per jam per GB ruang disk yang digunakan di lingkungan Anda.
-
-Penyedia hosting pilihan Anda mungkin menyertakan beberapa ruang disk secara gratis, atau mungkin memberikan tingkat diskon tergantung pada jumlah konsumsi disk.
-
-Anda dapat melihat tingkat diskon yang tepat, harga yang sesuai, dan jumlah gratis yang disertakan di dalam dashboard platform Anda. Navigasikan ke item menu **Balance > Quotas & Pricing**.
-
-![pricing disk](#)
-
-## Lalu Lintas{#traffic}
-
-Penggunaan lalu lintas dikenakan biaya per jam per GB lalu lintas **eksternal** yang digunakan oleh lingkungan Anda.
-
-Penyedia hosting pilihan Anda mungkin menyertakan beberapa penggunaan lalu lintas gratis, atau mungkin memberikan tingkat diskon tergantung pada jumlah konsumsi lalu lintas.
-
-Karena jumlah lalu lintas dapat sangat berfluktuasi, tingkat diskon untuk lalu lintas ditetapkan berdasarkan jumlah total lalu lintas (eksternal) yang digunakan di bulan _sebelumnya_.
-
-**Lalu lintas internal** (lalu lintas antara server dalam lingkungan Anda, atau antara beberapa lingkungan di penyedia hosting yang sama) **benar-benar gratis**!
-
-Anda dapat melihat tingkat diskon yang tepat, harga yang sesuai, dan jumlah gratis yang disertakan di dalam dashboard platform Anda. Navigasikan ke item menu **Balance > Quotas & Pricing**.
-
-![pricing traffic](#)
-
-## Opsi{#options}
-
-_**Built-In SSL**_ membangun koneksi aman antara klien Anda dan lingkungan. Biaya diambil per jam.
-
-Anda dapat melihat harga (jika ada - bisa tersedia secara gratis) yang ditetapkan oleh penyedia hosting pilihan Anda di dalam dashboard platform Anda. Navigasikan ke item menu **Balance > Quotas & Pricing**.
-
-Alamat IP _**eksternal**_ menyediakan akses langsung dari luar kluster. Biaya diambil per jam.
-
-Anda dapat melihat harga yang ditetapkan oleh penyedia hosting pilihan Anda di dalam dashboard platform Anda. Navigasikan ke item menu **Balance > Quotas & Pricing**.
-
-![pricing options](#)
-
-## Perangkat Lunak{#software}
-
-Sebagian besar set perangkat lunak standar gratis sehingga Anda hanya membayar untuk sumber daya yang dikonsumsi. Namun, beberapa perangkat lunak tambahan mungkin memerlukan biaya lisensi tambahan. Biaya diambil per jam.
-
-Biaya penggunaan set perangkat lunak tergantung pada tarif penyedia layanan hosting Anda. Navigasikan ke item menu **Balance > Quotas & Pricing**.
-
-![pricing software](#)
+Harga dan kuota akun penagihan Anda bergantung pada penyedia hosting Anda. Informasi tentang batasan akun Anda dapat ditemukan di dashboard Anda di **Quotas & Pricing**. Untuk berkenalan dengan sistem harga platform, lihat [FAQ Harga](https://jelastic.com/pricing).
 
 ## Baca Juga{#whats-next}
 
-  * [Sumber Daya yang Dikenakan Biaya](https://docs.dewacloud.com/docs/resource-consumption/)
-  * [Model Harga](https://docs.dewacloud.com/docs/pricing-model/)
-  * [Ikhtisar Sistem Penagihan](https://docs.dewacloud.com/docs/billing-system/)
-  * [Harga Hosters](https://docs.dewacloud.com/docs/pricing-pages/)
-  * [PaaS vs Harga Amazon](https://www.virtuozzo.com/company/blog/fair-pricing-model-jelastic-vs-amazon/)
+* [Status Akun](https://docs.dewacloud.com/docs/account-statuses/)
+* [Upgrade Akun](https://docs.dewacloud.com/docs/upgrade-refill-account/)
+* [Gambaran Umum Model Harga](https://docs.dewacloud.com/docs/pricing-model/)
+* [Sistem Penagihan](https://docs.dewacloud.com/docs/billing-system/)
+* [Harga Hosters](https://docs.dewacloud.com/docs/pricing-pages/)
