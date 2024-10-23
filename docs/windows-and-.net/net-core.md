@@ -41,7 +41,7 @@ Platform ini menyediakan beberapa opsi untuk secara otomatis [mendeploy proyek](
 
 1. Buka tab _**Git/SVN**_ dari **[Deployment Manager](https://docs.dewacloud.com/deployment-manager/#git--svn-projects)** untuk menambahkan repository baru.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/windows-&-.net/.net-core/03-deployment-manager-add-repository.png" alt="deployment manager add repository" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/windows-&-.net/.net-core/03-deployment-manager-add-repository.png" alt="deployment manager add repository" width="50%"/>
 
 :::tip
 Jika Anda tertarik untuk membuat aplikasi .NET Anda sendiri, ikuti dokumentasi resmi.
@@ -56,7 +56,7 @@ ASPNETCORE_URLS - mengkonfigurasi layanan untuk bekerja dengan URL yang ditentuk
 RUN_OPTION - menyediakan opsi dotnet run tambahan untuk proyek Anda
 :::
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/windows-&-.net/.net-core/05-add-dotnet-core-application.png" alt="add .NET Core application" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/windows-&-.net/.net-core/05-add-dotnet-core-application.png" alt="add .NET Core application" width="50%"/>
 
 Klik **Add** untuk menyimpan proyek di dalam Deployment Manager Anda.
 
@@ -66,7 +66,7 @@ Klik **Add** untuk menyimpan proyek di dalam Deployment Manager Anda.
 
 4. Dalam bingkai yang terbuka, Anda perlu memilih aplikasi yang akan dideploy, branch, dan environment target.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/windows-&-.net/.net-core/07-deploy-dotnet-core-application.png" alt="deploy .NET Core application" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/windows-&-.net/.net-core/07-deploy-dotnet-core-application.png" alt="deploy .NET Core application" width="50%"/>
 
 :::note
 Mirip dengan bahasa pemrograman Python, Node.js, dan Go, .NET Core memiliki satu konteks (yaitu hanya satu aplikasi yang dapat dideploy pada satu waktu).
