@@ -3,57 +3,42 @@ sidebar_position: 1
 slug: /blue-green-deploy
 title: Blue-Green Deploy
 ---
-# Blue-Green Deployment with TD
 
-With the help of [Traffic Distributor](<https://www.virtuozzo.com/application-platform-docs/traffic-distributor>), you are able to perform so-called
-“invisible” updates using the blue-green deployment method, which will not
-cause any downtime for your application. This possibility it’s truly essential
-in the current reality of rapid development and fast growing concurrency, as
-you need to constantly update your project for it to remain demanded, conquer
-new users and, generally, not to fall behind your competitors. And if these
-frequent maintenances will interrupt normal application work and its
-availability, it will negatively affect your service appeal.
+# Blue-Green Deployment dengan TD
 
-So let’s reveal how to get rid of such problems and apply blue-green updates
-to your project by means of the proposed traffic routing solution.
+Dengan bantuan [Traffic Distributor](<https://docs.dewacloud.com/docs/traffic-distributor>), Anda dapat melakukan pembaruan "tak terlihat" menggunakan metode blue-green deployment, yang tidak akan menyebabkan downtime untuk aplikasi Anda. Kemampuan ini sangat penting dalam realitas saat ini yang membutuhkan pengembangan yang cepat dan peningkatan konvergensi yang cepat, karena Anda perlu terus-menerus memperbarui proyek Anda agar tetap diminati, menaklukkan pengguna baru, dan umumnya, tidak kalah dari pesaing Anda. Dan jika pemeliharaan yang sering ini mengganggu pekerjaan aplikasi normal dan ketersediaannya, hal ini akan berdampak negatif pada daya tarik layanan Anda.
 
-1\. Let’s assume we have two environments (with the _Blue_ and _Green_
-[aliases](<https://docs.dewacloud.com/docs/environment-aliases>) set for each of them for better differentiation) and Traffic
-Distributor within a separate environment, intended to route traffic between them: ![blue-green deploy environments structure](#)
+Jadi mari kita ungkap bagaimana menghilangkan masalah tersebut dan menerapkan pembaruan blue-green pada proyek Anda dengan solusi routing lalu lintas yang diusulkan.
 
-2\. In order to update application on backends to the latest version without
-the whole project downtime, it should be done in turn. So, at first, let’s
-prevent the traffic from being directed to one of our environments (e.g.
-_Blue_) by [re-configuring the Traffic
-Distributor](<https://docs.dewacloud.com/docs/traffic-distributor-installation#reconfigure>) add-on. ![route traffic to the Green environment only](#) For that, move the **Traffic ratio** slider to the _0 …
-100_ position, in such a way ensuring that the first backend won’t be
-accessed.  
-Click **Apply** to proceed.
+1\. Misalkan kita memiliki dua environment (dengan _Blue_ dan _Green_ [alias](<https://docs.dewacloud.com/docs/environment-aliases>) yang diatur untuk masing-masing sebagai pembeda) dan Traffic Distributor dalam environment terpisah, dirancang untuk merute lalu lintas di antara mereka:
 
-3\. Now, when all the incoming traffic is only processed by the second
-(_Green_) environment, you can apply any changes to the _Blue_ one without any
-haste, e.g. deploy and test a new application version: ![update Blue
-environment, while Green processes requests](#)
+![blue-green deploy environments structure](https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/use-cases/blue-green-deploy/1.png)
 
-4\. Now, as you need to update project on the second host, just repeat the
-_2nd - 3rd_ steps above and switch environment roles (i.e. set the **Traffic
-ratio** slider to the opposite position of _100 … 0_). This will allow the
-_Blue_ project copy to process all requests and _Green_ \- to go on
-maintanance. ![update Green environment, while Blue processes requests](#)
+2\. Untuk memperbarui aplikasi pada backend ke versi terbaru tanpa downtime proyek keseluruhan, ini harus dilakukan secara bergantian. Jadi, pertama-tama, mari kita mencegah lalu lintas diarahkan ke salah satu environment kita (misalnya _Blue_) dengan [mengkonfigurasi ulang add-on Traffic Distributor](<https://docs.dewacloud.com/docs/traffic-distributor-installation#reconfigure>).
 
-5\. Lastly, open the Distributor configuration frame once again and return the
-preferable servers' weights to restore the original operability, e.g.:
+![route traffic to the Green environment only](https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/use-cases/blue-green-deploy/02.png)
 
-![re-configure Traffic Distributor](#)
+Untuk itu, geser slider **Traffic ratio** ke posisi _0 … 100_, dengan cara ini memastikan bahwa backend pertama tidak akan diakses.  
+Klik **Apply** untuk melanjutkan.
 
-That’s it! As a result, your application was updated on both backends, whilst
-your customers have continued to use the service without any interruption
-during all these operations.
+3\. Sekarang, ketika semua lalu lintas yang masuk hanya diproses oleh environment kedua (_Green_), Anda dapat menerapkan perubahan apa pun pada yang _Blue_ tanpa terburu-buru, misalnya, meng-deploy dan menguji versi aplikasi baru:
 
-## What’s next?[![](#)](<https://www.virtuozzo.com/application-platform-docs/blue-green-deploy/#whats-next>)
+![update Blue environment, while Green processes requests](https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/use-cases/blue-green-deploy/3.png)
 
-  * [Traffic Distributor Overview](<https://docs.dewacloud.com/docs/traffic-distributor/>)
-  * [Traffic Distributor Installation](<https://docs.dewacloud.com/docs/traffic-distributor-installation/>)
-  * [Traffic Distributor Injection](<https://docs.dewacloud.com/docs/traffic-distributor-injection/>)
-  * [Failover Protection](<https://docs.dewacloud.com/docs/failover-protection/>)
-  * [A/B Testing](<https://docs.dewacloud.com/docs/ab-testing/>)
+4\. Sekarang, karena Anda perlu memperbarui proyek pada host kedua, cukup ulangi langkah _2 - 3_ di atas dan tukar peran environment (misalnya, atur slider **Traffic ratio** ke posisi berlawanan dari _100 … 0_). Ini akan memungkinkan salinan proyek _Blue_ untuk memproses semua permintaan dan _Green_ untuk melakukan pemeliharaan.
+
+![update Green environment, while Blue processes requests](https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/use-cases/blue-green-deploy/4.png)
+
+5\. Terakhir, buka kerangka konfigurasi Distributor sekali lagi dan kembalikan bobot server yang diinginkan untuk mengembalikan operabilitas asli, misalnya:
+
+![re-configure Traffic Distributor](https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/use-cases/blue-green-deploy/05.png)
+
+Itu dia! Sebagai hasilnya, aplikasi Anda diperbarui pada kedua backend, sementara pelanggan Anda tetap dapat menggunakan layanan tanpa gangguan selama semua operasi ini.
+
+## Baca Juga{#whats-next}
+
+* [Traffic Distributor Overview](<https://docs.dewacloud.com/docs/traffic-distributor/>)
+* [Traffic Distributor Installation](<https://docs.dewacloud.com/docs/traffic-distributor-installation/>)
+* [Traffic Distributor Injection](<https://docs.dewacloud.com/docs/traffic-distributor-injection/>)
+* [Failover Protection](<https://docs.dewacloud.com/docs/failover-protection/>)
+* [A/B Testing](<https://docs.dewacloud.com/docs/ab-testing/>)
