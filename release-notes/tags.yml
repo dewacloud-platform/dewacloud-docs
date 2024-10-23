@@ -1,9 +1,0 @@
-major:
-  label: Major
-  permalink: /major
-  description: Major changes
-
-minor:
-  label: Minor
-  permalink: /minor
-  description: Minor changes 
