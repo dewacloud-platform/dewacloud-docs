@@ -11,11 +11,11 @@ Platform ini mendukung berbagai cara deployment aplikasi secara otomatis, sehing
 - _**VCS**_ \- memungkinkan untuk [mendeploy dari repositori VCS](https://docs.dewacloud.com/docs/#git--svn-deployment-configurations) Anda (misalnya, _Git_, _SVN_, _Bitbucket_)
 - _**Hub Registry**_ \- membuat container khusus dengan aplikasi Anda berdasarkan image Docker yang disimpan di registry _[publik](https://docs.dewacloud.com/docs/docker-container-deploy/)_ atau _[pribadi](https://docs.dewacloud.com/docs/docker-container-deploy/)_
 
-![deployment options](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/deployment/deployment_guide/01-deployment-options.png" alt="deployment options" width="100%"/>
 
 Untuk informasi lebih lanjut tentang dua opsi terakhir, gunakan tautan yang sesuai, sementara dalam panduan ini kami akan menjelaskan deployment via archive dan repositori VCS. Mereka dapat dipanggil baik dari **[Deployment Manager](https://docs.dewacloud.com/docs/deployment-manager/)** atau dengan mengarahkan kursor ke catatan _**Deployments**_, yang disediakan untuk semua server aplikasi, dan mengklik salah satu tombol yang sesuai.
 
-![application server deployments](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/deployment/deployment_guide/02-application-server-deployments.png" alt="application server deployments" width="100%"/>
 
 Dua ikon pertama (_Local file_ dan _URL_) sesuai dengan deployment via archive dan yang terakhir (_Git / SVN_) - untuk deployment dari repositori VCS. Pilih opsi yang sesuai dan klik untuk melanjutkan dengan konfigurasi deployment Anda.
 
@@ -36,7 +36,7 @@ Di bawah ini, kami telah memberikan deskripsi rinci untuk semua opsi yang mungki
 - **Deploy Strategy** (untuk deployments di [server yang di-scale](https://docs.dewacloud.com/docs/horizontal-scaling/)) - memungkinkan untuk memilih antara varian _Simultaneous deployment_ yang lebih cepat secara relatif, yang menyebabkan downtime singkat, dan opsi _Sequential deployment with delay_ untuk melakukan deployment pada server satu per satu dengan penundaan yang ditentukan di antara operasi, yang memastikan uptime aplikasi
 - **Enable zero-downtime deployment** (hanya untuk server PHP) - menyesuaikan (jika opsi dicentang) aliran deployment untuk [menghindari downtime aplikasi](https://docs.dewacloud.com/docs/php-zero-downtime-deploy/)
 
-![archive deployment configurations](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/deployment/deployment_guide/03-archive-deployment-configurations.png" alt="archive deployment configurations" width="100%"/>
 
 Klik **Deploy** untuk memulai proses itu sendiri.
 
@@ -57,7 +57,7 @@ Di bawah ini, kami telah memberikan deskripsi rinci untuk semua opsi yang mungki
 - **Auto-resolve conflicts** \- mencegah terjadinya konflik merge dengan memperbarui file yang bertentangan ke versi repositori (yaitu perubahan yang dibuat secara lokal dibuang)
 - **Enable zero-downtime deployment** (hanya untuk server PHP) - menyesuaikan aliran deployment untuk [menghindari downtime aplikasi](https://docs.dewacloud.com/docs/php-zero-downtime-deploy/)
 
-![vcs deployment configurations](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/deployment/deployment_guide/04-vcs-deployment-configurations.png" alt="vcs deployment configurations" width="100%"/>
 
 Klik **Deploy** untuk memulai proses.
 
@@ -67,11 +67,11 @@ Dalam beberapa menit, aplikasi Anda akan berhasil dideploy. Sekarang, Anda dapat
 
 Jika diperlukan, Anda dapat menyesuaikan proyek VCS yang sudah dideploy dengan mengklik tombol **Edit** untuk deployment yang sesuai.
 
-![edit VCS project](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/deployment/deployment_guide/05-edit-vcs-project.png" alt="edit VCS project" width="100%"/>
 
 Dalam frame yang terbuka, Anda dapat mengedit parameter yang sama seperti yang dijelaskan di atas untuk frame deployment. Misalnya, dimungkinkan untuk beralih cabang, menambahkan hooks, mengaktifkan auto-deploy pembaruan, dll.
 
-![edit project dialog](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/deployment/deployment_guide/06-edit-project-dialog.png" alt="edit project dialog" width="100%"/>
 
 :::note
 Jika kredensial akses ke repositori proyek berubah, Anda perlu menyediakan yang baru di platform untuk terus bekerja dengan proyek ini. Pertama, edit autentikasi untuk repositori di Deployment Manager. Kemudian, Anda perlu mengedit semua proyek yang sudah ada dari repositori ini. Platform akan secara otomatis bertanya apakah Anda ingin memperbarui kredensial. Klik _Yes_ untuk menerapkan kredensial baru ke proyek.
