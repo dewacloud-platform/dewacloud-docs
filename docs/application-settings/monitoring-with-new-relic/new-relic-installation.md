@@ -21,12 +21,12 @@ Sebelum melanjutkan dengan pemasangan New Relic, pastikan bahwa:
 1. **Buka Marketplace**:
    - Masuk ke dashboard platform Anda dan klik **Marketplace** di bagian atas halaman.
 
-   ![PaaS main buttons](https://assets.dewacloud.com/dewacloud-docs/application_settings/monitoring-with-new-relic/new-relic-installation/02-paas-main-buttons.png)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/monitoring-with-new-relic/new-relic-installation/02-paas-main-buttons.png" alt="PaaS main buttons" width="60%"/>
 
 2. **Pilih New Relic APM**:
    - Di bagian **Add-ons**, cari _New Relic APM_ dan klik **Install**.
 
-   ![New Relic add-on package](https://assets.dewacloud.com/dewacloud-docs/application_settings/monitoring-with-new-relic/new-relic-installation/03-new-relic-add-on-package.png)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/monitoring-with-new-relic/new-relic-installation/03-new-relic-add-on-package.png" alt="New Relic add-on package" width="80%"/>
 
 3. **Konfigurasi New Relic**:
    - Dalam formulir pemasangan, isi kolom-kolom berikut:
@@ -35,7 +35,7 @@ Sebelum melanjutkan dengan pemasangan New Relic, pastikan bahwa:
      - **Environment name**: Pilih lingkungan tempat New Relic akan dipasang.
      - **Nodes**: Pilih node server aplikasi spesifik untuk pemantauan.
 
-   ![New Relic add-on installation](https://assets.dewacloud.com/dewacloud-docs/application_settings/monitoring-with-new-relic/new-relic-installation/04-new-relic-add-on-installation.png)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/monitoring-with-new-relic/new-relic-installation/04-new-relic-add-on-installation.png" alt="New Relic add-on installation" width="60%"/>
 
    :::tip
    Jika Anda melewati memasukkan License Key, pemasangan akan tetap dilanjutkan, tetapi New Relic tidak akan melaporkan data ke akun anda hingga kunci ditambahkan secara manual kemudian melalui **Configuration Manager**.

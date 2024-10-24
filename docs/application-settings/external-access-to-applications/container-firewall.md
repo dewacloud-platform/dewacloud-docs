@@ -8,7 +8,7 @@ title: Container Firewall
 
 Fitur **Container Firewall** dari platform menyediakan cara untuk mengontrol ketersediaan node Anda baik di dalam maupun di luar PaaS. Ini mengevaluasi berbagai parameter (seperti sumber permintaan masuk, protokol, dan port node target) untuk secara fleksibel mengelola akses ke container Anda dengan mengonfigurasi aturan koneksi yang diperlukan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/container-firewall/01-firewall-and-isolation-illustration.png" alt="firewall and isolation illustration" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/container-firewall/01-firewall-and-isolation-illustration.png" alt="firewall and isolation illustration" width="80%"/>
 
 :::tip
 Untuk membatasi akses antar lingkungan dalam satu akun, pertimbangkan menggunakan fitur **Network Isolation**.
@@ -63,7 +63,7 @@ Untuk menentukan port kustom yang dibuka melalui container firewall selama pembu
 
 Anda dapat mengelola aturan firewall yang ada dan menambah yang baru menggunakan tombol **Add**, **Edit**, **Remove**, **Disable**, **Enable**, dan **Refresh**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/container-firewall/04-firewall-rules-management-buttons.png" alt="firewall rules management buttons" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/container-firewall/04-firewall-rules-management-buttons.png" alt="firewall rules management buttons" width="80%"/>
 
 Parameter untuk aturan firewall baru meliputi:
 
@@ -96,7 +96,7 @@ Berikut adalah cara memblokir akses ke container dari alamat IP tertentu:
 
 3. Klik **Add** untuk menyimpan dan menerapkan aturan. IP yang diblokir akan menerima halaman 403 Forbidden ketika mencoba terhubung.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/container-firewall/08-prohibited-connection.png" alt="prohibited connection" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/container-firewall/08-prohibited-connection.png" alt="prohibited connection" width="60%"/>
 
 ### Batasi Akses melalui SSH{#restrict-access-via-ssh}
 

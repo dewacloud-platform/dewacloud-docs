@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 slug: /new-relic-update
-title: Pemutakhiran New Relic
+title: Update New Relic
 ---
 
 # Cara Memperbarui Add-on Pemantauan New Relic yang Terpasang
@@ -17,17 +17,17 @@ Untuk memastikan aplikasi Anda memanfaatkan fitur terbaru dari pemantauan **[New
    - Temukan add-on New Relic dan klik ikon roda gigi di pojok atas.
    - Dari daftar drop-down, pilih opsi **Update Agent**.
 
-   ![new relic update](https://assets.dewacloud.com/dewacloud-docs/application_settings/monitoring-with-new-relic/new-relic-update/01.png)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/monitoring-with-new-relic/new-relic-update/01.png" alt="new relic update" width="100%"/>
 
 3. **Konfirmasi Pembaruan**:
    - Kotak dialog akan muncul meminta konfirmasi. Klik **Yes** untuk melanjutkan pengecekan pembaruan.
 
-   ![check new relic updates](https://assets.dewacloud.com/dewacloud-docs/application_settings/monitoring-with-new-relic/new-relic-update/02.png)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/monitoring-with-new-relic/new-relic-update/02.png" alt="check new relic updates" width="50%"/>
 
 4. **Unduh dan Pasang**:
    - Platform akan secara otomatis mengunduh dan memasang file yang diperlukan jika pembaruan tersedia.
 
-   ![new relic update](https://assets.dewacloud.com/dewacloud-docs/application_settings/monitoring-with-new-relic/new-relic-update/03.png)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/monitoring-with-new-relic/new-relic-update/03.png" alt="new relic update" width="100%"/>
 
 5. **Restart Application Server**:
    - Setelah pembaruan selesai, pemberitahuan akan meminta Anda untuk me-restart server aplikasi agar perubahan diterapkan. Restart node Anda dengan mengklik tombol **Restart** di sebelah server aplikasi Anda.

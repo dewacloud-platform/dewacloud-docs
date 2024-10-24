@@ -14,7 +14,7 @@ title: Sticky Sessions
 
 Unlike IP-based sticky sessions, which may cause imbalance due to users behind proxies, this platform's **cookie-based** approach ensures fair and even distribution of users, as each browser is treated as a unique entity.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/routing-methods/sticky-sessions/1%20(1).png" alt="Traffic Distributor sticky sessions routing" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/routing-methods/sticky-sessions/1%20(1).png" alt="Traffic Distributor sticky sessions routing" max-width="30%"/>
 
 ### Use Cases:
 - **A/B Testing**: You can set weights (e.g., 50% / 50%) to distribute unique users evenly between two versions of your application, enabling effective testing.

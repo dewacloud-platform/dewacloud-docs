@@ -11,25 +11,25 @@ Saat terjadi kesalahan dalam suatu environment (seperti mencoba mengakses halama
 
 Masuk ke dashboard platform Anda, temukan NGINX load balancer di environment Anda, dan klik tombol **Config**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/custom-error-page-settings/02-nginx-balancer-config-button.png" alt="NGINX balancer config button" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/custom-error-page-settings/02-nginx-balancer-config-button.png" alt="NGINX balancer config button" max-width="100%"/>
 
 ### 2. Unggah Halaman Kesalahan Kustom
 
 Dalam pengelola konfigurasi, navigasikan ke folder **/etc/nginx/conf.d** dan buat atau unggah halaman kesalahan kustom Anda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/custom-error-page-settings/03-create-custom-error-page.png" alt="create custom error page" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/custom-error-page-settings/03-create-custom-error-page.png" alt="create custom error page" max-width="100%"/>
 
 ### 3. Contoh Halaman Kesalahan Kustom
 
 Untuk panduan ini, kami menggunakan file _**error.html**_ berikut sebagai contoh:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/custom-error-page-settings/04-example-error-page.png" alt="example custom page" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/custom-error-page-settings/04-example-error-page.png" alt="example custom page" max-width="100%"/>
 
 ### 4. Edit Konfigurasi NGINX
 
 Navigasikan ke direktori **/etc/nginx** dan buka file _**nginx-jelastic.conf**_. Salin isinya dan tempelkan ke dalam file _**nginx.conf**_, menggantikan baris _include /etc/nginx/nginx-jelastic.conf;_.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/custom-error-page-settings/05-edit-nginx-conf-file.png" alt="edit nginx.conf file" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/custom-error-page-settings/05-edit-nginx-conf-file.png" alt="edit nginx.conf file" max-width="100%"/>
 
 ### 5. Perbarui Pengaturan Halaman Kesalahan
 
@@ -40,7 +40,7 @@ error_page 403 404 500 502 503 504 /error.html;
 proxy_intercept_errors on;
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/custom-error-page-settings/06-error-page-configurations.png" alt="error page configurations" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/custom-error-page-settings/06-error-page-configurations.png" alt="error page configurations" max-width="100%"/>
 
 ### 6. Modifikasi Bagian Lokasi
 
@@ -72,7 +72,7 @@ location @recycle {
 }
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/custom-error-page-settings/07-error-page-location-settings.png" alt="error page location settings" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/custom-error-page-settings/07-error-page-location-settings.png" alt="error page location settings" max-width="100%"/>
 
 ### 7. Pengaturan Tambahan untuk SSL (Opsional)
 
@@ -87,7 +87,7 @@ location /error.html {
 }
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/custom-error-page-settings/08-configure-ssl-conf-file.png" alt="configure ssl.conf file" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/custom-error-page-settings/08-configure-ssl-conf-file.png" alt="configure ssl.conf file" max-width="100%"/>
 
 ### 8. Sesuaikan File SSL Upstreams
 
@@ -101,19 +101,19 @@ if ($cookie_SRVGROUP ~ group|common) {
 }
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/custom-error-page-settings/09-adjust-ssl-upstreams-file.png" alt="adjust SSL upstreams file" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/custom-error-page-settings/09-adjust-ssl-upstreams-file.png" alt="adjust SSL upstreams file" max-width="100%"/>
 
 ### 9. Mulai Ulang Server NGINX
 
 Untuk menerapkan perubahan, **Restart** server NGINX.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/custom-error-page-settings/10-restart-nginx-balancer-nodes.png" alt="restart NGINX balancer nodes" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/custom-error-page-settings/10-restart-nginx-balancer-nodes.png" alt="restart NGINX balancer nodes" max-width="100%"/>
 
 ### 10. Uji Halaman Kesalahan Kustom
 
 Sekarang, coba akses halaman yang tidak ada dalam domain Anda untuk melihat halaman kesalahan kustom beraksi.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/custom-error-page-settings/11-custom-error-page.png" alt="custom error page" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/custom-error-page-settings/11-custom-error-page.png" alt="custom error page" max-width="100%"/>
 
 :::warning
 Jika environment atau server dengan halaman kesalahan kustom tidak dapat dijangkau, halaman kesalahan default di seluruh platform akan ditampilkan. Notifikasi kesalahan di seluruh platform ini tidak dapat dimodifikasi.

@@ -7,7 +7,7 @@ title: Automatic Horizontal Scaling
 
 Selain [automatic vertical scaling](https://docs.dewacloud.com/docs/automatic-vertical-scaling), platform ini juga dapat secara otomatis menskalakan node secara horizontal, mengubah jumlah container di dalam sebuah [layer](https://docs.dewacloud.com/docs/paas-components-definition/#layer) ([nodeGroup](https://docs.cloudscripting.com/creating-manifest/selecting-containers/#all-containers-by-group)) berdasarkan beban yang masuk. Di sini, semua instance dalam layer yang sama didistribusikan secara merata di seluruh set perangkat keras (host) yang tersedia menggunakan aturan anti-affinity. Yakni, ketika container baru dibuat, itu ditempatkan di host dengan jumlah instance dari layer yang sama paling sedikit dan nilai beban terendah, yang memastikan [reliabilitas dan ketersediaan tinggi](https://docs.dewacloud.com/docs/isolated-containers) dari proyek yang dihosting.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/automatic-horizontal-scaling/01-containers-anti-affinity.png" alt="containers anti affinity" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/automatic-horizontal-scaling/01-containers-anti-affinity.png" alt="containers anti affinity" width="50%"/>
 
 Automatic horizontal scaling diimplementasikan dengan bantuan tunable triggers, yang merupakan kondisi kustom untuk penambahan node (scale out) dan penghapusan node (scale in) berdasarkan beban. Setiap menit, platform menganalisis konsumsi sumber daya rata-rata (untuk jumlah menit yang ditentukan dalam trigger) untuk memutuskan apakah penyesuaian jumlah node diperlukan.
 
@@ -45,11 +45,14 @@ Klik **Add** untuk melanjutkan.
 Node awal (master) dapat digunakan sebagai **storage server** untuk berbagi data dalam seluruh layer, termasuk node yang ditambahkan melalui automatic horizontal scaling. Batas _CPU_ dan _Memory_ dihitung berdasarkan jumlah _cloudlets_ yang dialokasikan (unit sumber daya khusus platform, yang mewakili 400 MHz CPU dan 128 MiB RAM secara bersamaan).
 :::
 
-4\. Grafik di sebelah kanan menunjukkan statistik konsumsi sumber daya yang dipilih. Anda dapat memilih periode yang diperlukan untuk data yang ditampilkan (hingga satu minggu) menggunakan daftar drop-down yang sesuai. Jika diperlukan, Anda dapat mengaktifkan/nonaktifkan fungsi _Auto Refresh_ statistik. <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/automatic-horizontal-scaling/05-scaling-trigger-graphs.png" alt="scaling trigger graphs" width="100%"/>
+4\. Grafik di sebelah kanan menunjukkan statistik konsumsi sumber daya yang dipilih. Anda dapat memilih periode yang diperlukan untuk data yang ditampilkan (hingga satu minggu) menggunakan daftar drop-down yang sesuai. Jika diperlukan, Anda dapat mengaktifkan/nonaktifkan fungsi _Auto Refresh_ statistik. 
+
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/automatic-horizontal-scaling/05-scaling-trigger-graphs.png" alt="scaling trigger graphs" width="40%"/>
 
 Anda juga dapat mengarahkan kursor ke grafik untuk melihat jumlah sumber daya yang digunakan pada saat tertentu. Gunakan informasi ini untuk mengatur kondisi yang tepat untuk trigger Anda.
 
-5\. Setiap trigger memiliki kondisi **Add** dan **Remove Nodes**, yang dapat diaktifkan dengan kotak centang yang sesuai di depan judul. <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/automatic-horizontal-scaling/06-scaling-trigger-conditions.png" alt="scaling trigger conditions" width="100%"/>
+5\. Setiap trigger memiliki kondisi **Add** dan **Remove Nodes**, yang dapat diaktifkan dengan kotak centang yang sesuai di depan judul. 
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/automatic-horizontal-scaling/06-scaling-trigger-conditions.png" alt="scaling trigger conditions" width="60%"/>
 
 Keduanya dikonfigurasi dengan cara yang sama:
 
@@ -65,7 +68,8 @@ Nilai yang diperlukan dapat dinyatakan melalui slider yang sesuai pada grafik. N
 
 Saat mengonfigurasi trigger, kami merekomendasikan untuk mempertimbangkan [scaling mode](https://docs.dewacloud.com/docs/horizontal-scaling#scaling-mode) dari layer. Misalnya, Anda harus menetapkan persentase beban yang lebih rendah dalam trigger **Add Nodes** untuk mode _stateful_, karena cloning konten membutuhkan waktu (terutama untuk container dengan banyak data) dan Anda dapat mencapai batas sumber daya sebelum node baru dibuat.
 
-6\. Anda akan menerima notifikasi email secara otomatis tentang aktivitas trigger automatic horizontal scaling yang dikonfigurasi; namun, jika diperlukan, Anda dapat menonaktifkannya dengan **Send Email Notifications** switcher yang sesuai. <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/automatic-horizontal-scaling/07-scaling-notifications-switcher.png" alt="scaling notifications switcher" width="100%"/>
+6\. Anda akan menerima notifikasi email secara otomatis tentang aktivitas trigger automatic horizontal scaling yang dikonfigurasi; namun, jika diperlukan, Anda dapat menonaktifkannya dengan **Send Email Notifications** switcher yang sesuai. 
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/automatic-horizontal-scaling/07-scaling-notifications-switcher.png" alt="scaling notifications switcher" width="50%"/>
 
 7\. Di bagian bawah formulir, Anda memiliki tombol berikut:
 
@@ -73,7 +77,7 @@ Saat mengonfigurasi trigger, kami merekomendasikan untuk mempertimbangkan [scali
   * **Close** \- keluar dari dialog tanpa perubahan
   * **Apply (Add)** \- mengonfirmasi perubahan untuk trigger
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/automatic-horizontal-scaling/08-scaling-trigger-buttons.png" alt="scaling trigger buttons" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/automatic-horizontal-scaling/08-scaling-trigger-buttons.png" alt="scaling trigger buttons" width="50%"/>
 
 Pilih opsi yang diperlukan untuk menyelesaikan pembuatan (penyesuaian) trigger.
 
@@ -90,7 +94,8 @@ Dalam contoh di bawah ini, kami akan menerapkan beban tinggi selama 5 menit (lih
 
 Sekarang, mari kita lihat perilaku automatic horizontal scaling:
 
-1\. Navigasikan ke bagian **Settings > Monitoring > Events History** dan pilih opsi _**Horizontal Scaling**_ dalam daftar drop-down _Type_. <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/automatic-horizontal-scaling/10-scaling-triggers-event-history.png" alt="scaling triggers event history" width="100%"/>
+1\. Navigasikan ke bagian **Settings > Monitoring > Events History** dan pilih opsi _**Horizontal Scaling**_ dalam daftar drop-down _Type_. 
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/automatic-horizontal-scaling/10-scaling-triggers-event-history.png" alt="scaling triggers event history" width="70%"/>
 
 Selain itu, Anda dapat menyesuaikan periode untuk menampilkan aktivitas trigger melalui kolom **From** dan **To** yang sesuai.
 

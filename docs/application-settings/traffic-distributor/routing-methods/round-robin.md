@@ -20,7 +20,7 @@ Contoh:
 - **Distribusi Berbobot (70% / 30%)**: Dari setiap 10 permintaan, 7 dikirim ke server pertama dan 3 ke server kedua, memungkinkan manajemen beban yang fleksibel.
 - **Single Backend (100%)**: Semua permintaan diarahkan ke satu server. Ini bisa berguna untuk skenario seperti **Blue-Green Deployment** atau migrasi hardware tanpa downtime.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/routing-methods/round-robin/1.png" alt="Traffic Distributor round robin routing" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/routing-methods/round-robin/1.png" alt="Traffic Distributor round robin routing" width="30%"/>
 
 ### Pertimbangan Kasus Penggunaan:
 - Metode ini ideal ketika backend memiliki **konten identik**, karena permintaan diproses oleh kedua server.

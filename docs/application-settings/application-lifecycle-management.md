@@ -7,7 +7,7 @@ title: Application Lifecycle Management
 
 Manajemen siklus hidup aplikasi yang efektif memastikan bahwa proyek Anda bekerja sesuai yang diinginkan dan memenuhi kebutuhan pengguna sepanjang tahap pengembangan, pengujian, dan produksi. Meskipun proyek Anda tidak terlalu besar, menggunakan environment pengembangan dan pengujian yang terpisah dapat membantu mencegah gangguan bagi pengguna. Di bawah ini adalah panduan langkah demi langkah untuk mengelola siklus hidup aplikasi pada platform.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/application-lifecycle-management/01-application-lifecycle.png" alt="application lifecycle" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/application-lifecycle-management/01-application-lifecycle.png" alt="application lifecycle" max-width="100%"/>
 
 ## Langkah-langkah untuk Mengelola Siklus Hidup Aplikasi
 
@@ -17,7 +17,7 @@ Manajemen siklus hidup aplikasi yang efektif memastikan bahwa proyek Anda bekerj
 2. Klik **Create environment**.
 3. Pilih server aplikasi (misalnya, **GlassFish**), atur batas cloudlets, dan beri nama environment Anda (misalnya, `prodenv`). Klik **Create**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/application-lifecycle-management/03-create-environment.png" alt="create environment" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/application-lifecycle-management/03-create-environment.png" alt="create environment" max-width="100%"/>
 
 Setelah environment dibuat, itu akan siap untuk aplikasi produksi Anda.
 
@@ -25,7 +25,7 @@ Setelah environment dibuat, itu akan siap untuk aplikasi produksi Anda.
 
 1. Buat environment lain dengan memilih **Maven** sebagai alat build. Atur batas cloudlets dan beri nama environment (misalnya, `buildenv`).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/application-lifecycle-management/06-build-environment-wizard.png" alt="build environment wizard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/application-lifecycle-management/06-build-environment-wizard.png" alt="build environment wizard" max-width="100%"/>
 
 Dalam beberapa menit, environment akan siap untuk membangun proyek Anda.
 
@@ -37,14 +37,14 @@ Dalam beberapa menit, environment akan siap untuk membangun proyek Anda.
 
 3. Klik **Build and Deploy** untuk proyek tersebut.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/application-lifecycle-management/10-build-and-deploy.png" alt="build and deploy" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/application-lifecycle-management/10-build-and-deploy.png" alt="build and deploy" max-width="100%"/>
 
 ### 4. Buat Lingkungan Database
 
 1. Buat environment baru dan pilih jenis database (misalnya, **MySQL**).
 2. Setelah environment dibuat, buka **MySQL** di browser dan gunakan kredensial yang dikirim via email untuk membuat database.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/application-lifecycle-management/11-database-environment-wizard.png" alt="database environment wizard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/application-lifecycle-management/11-database-environment-wizard.png" alt="database environment wizard" max-width="100%"/>
 
 ### 5. Konfigurasi Koneksi Database
 
@@ -58,7 +58,7 @@ Dalam beberapa menit, environment akan siap untuk membangun proyek Anda.
    driver=com.mysql.jdbc.Driver
    ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/application-lifecycle-management/15-database-connection-configs.png" alt="database connection configs" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/application-lifecycle-management/15-database-connection-configs.png" alt="database connection configs" max-width="100%"/>
 
 3. Unggah **MySQL connector** ke direktori `lib` dari **GlassFish** dan restart servernya.
 
@@ -67,7 +67,7 @@ Dalam beberapa menit, environment akan siap untuk membangun proyek Anda.
 1. Klon environment produksi Anda untuk membuat salinan yang sama persis untuk pengujian (berikan nama `testenv`).
 2. Buka environment pengujian di browser untuk memverifikasi.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/application-lifecycle-management/20-clone-environment.png" alt="clone environment" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/application-lifecycle-management/20-clone-environment.png" alt="clone environment" max-width="100%"/>
 
 ### 7. Tingkatkan Aplikasi
 
@@ -75,7 +75,7 @@ Dalam beberapa menit, environment akan siap untuk membangun proyek Anda.
 2. Klik **Build and Deploy** untuk proyek baru. Proyek baru akan diterapkan ke konteks yang ditentukan.
 3. Hubungkan domain kustom (misalnya, `test.com`) ke environment pengujian Anda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/application-lifecycle-management/25-bind-test-domain.png" alt="bind test domain" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/application-lifecycle-management/25-bind-test-domain.png" alt="bind test domain" max-width="100%"/>
 
 4. Buka aplikasi baru di browser untuk melihat pembaruan.
 
@@ -85,7 +85,7 @@ Setelah pengujian, Anda dapat menukar domain antara environment pengujian dan pr
 
 1. Di pengaturan environment, pilih **Swap** untuk menukar domain antara lingkungan produksi dan pengujian Anda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/application-lifecycle-management/27-swap-domains.png" alt="swap domains" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/application-lifecycle-management/27-swap-domains.png" alt="swap domains" max-width="100%"/>
 
 Setelah ditukar, domain produksi Anda (misalnya, `production.com`) akan mencerminkan aplikasi yang diperbarui.
 

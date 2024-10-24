@@ -37,7 +37,7 @@ Dengan menggunakan QUIC alih-alih TCP sebagai dasarnya, HTTP/3 dapat memanfaatka
   * _faster connection setup_ \- protokol menangani fitur keamanan sendiri, mengurangi jumlah perjalanan bolak-balik untuk membangun koneksi (terutama terlihat pada jaringan dengan latensi tinggi, misalnya untuk pengguna mobile)
   * _connection migration_ \- penggunaan ID koneksi alih-alih IP tujuan memungkinkan memastikan pengiriman paket bahkan dalam kasus pergantian jaringan (misalnya, unduhan melalui HTTP/3 akan berlanjut saat koneksi wifi berubah ke jaringan mobile)
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/http3-support/01-http2-vs-http3.gif" alt="HTTP2 vs HTTP3" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/http3-support/01-http2-vs-http3.gif" alt="HTTP2 vs HTTP3" width="70%"/>
 
 Secara umum, HTTP/3 bertujuan untuk menyediakan koneksi yang lebih cepat dan lebih andal, yang akan sangat terasa oleh mereka dengan jaringan latensi tinggi. Jadi, dari sudut pandang performa, pengguna mobile akan merasakan sebagian besar manfaat, tetapi ini adalah peningkatan yang dapat diapresiasi semua orang.
 
