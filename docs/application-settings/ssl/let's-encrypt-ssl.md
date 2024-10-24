@@ -30,7 +30,7 @@ Ketika memasang add-on Let’s Encrypt, platform:
 **Validasi Kontrol Domain**:
 Let’s Encrypt CA memeriksa titik masuk environment pada port 80 untuk memvalidasi kepemilikan domain. Setelah divalidasi, sertifikat SSL diterbitkan, didistribusikan ke seluruh environment, dan diterapkan ke semua node yang diperlukan.
 
-![Let’s Encrypt Add-on Flow](https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/lets-encrypt/2node-lb.png)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/lets-encrypt/2node-lb.png" alt="Let’s Encrypt Add-on Flow" width="100%"/>
 
 ## Instalasi Add-On Let’s Encrypt SSL
 
@@ -45,7 +45,7 @@ Untuk memasang add-on SSL, ikuti langkah-langkah berikut:
 
 Setelah dikonfigurasi, klik **Install** untuk memulai proses. Add-on mungkin secara otomatis memasang **IP Publik** ke environment, karena ini diperlukan agar Let’s Encrypt berfungsi.
 
-![SSL Certificate from Let’s Encrypt](https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/lets-encrypt/lets-encrypt-free-ssl-installation.png)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/lets-encrypt/lets-encrypt-free-ssl-installation.png" alt="SSL Certificate from Let’s Encrypt" width="100%"/>
 
 Setelah instalasi, Anda dapat mengakses environment melalui HTTPS, memastikan koneksi yang aman dan terpercaya.
 
@@ -54,7 +54,7 @@ Setelah instalasi, Anda dapat mengakses environment melalui HTTPS, memastikan ko
 ### Pembaharuan Otomatis:
 Secara default, sertifikat diperbarui secara otomatis 30 hari sebelum kedaluwarsa. Proses ini ditangani melalui cron job harian. Anda akan menerima pemberitahuan email sebelum pembaharuan.
 
-![updating Let’s Encrypt Free SSL](https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/lets-encrypt/updating-lets-encrypt-free-ssl.png)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/lets-encrypt/updating-lets-encrypt-free-ssl.png" alt="updating Let’s Encrypt Free SSL" width="100%"/>
 
 ### Pembaharuan Manual:
 Anda dapat memperbarui sertifikat secara manual dengan masuk ke tab **Add-ons** di dasbor dan memilih **Update Now**.
@@ -62,7 +62,7 @@ Anda dapat memperbarui sertifikat secara manual dengan masuk ke tab **Add-ons** 
 ### Rekonfigurasi:
 Untuk memodifikasi sertifikat, klik tombol **Configure** di panel Let’s Encrypt dan sesuaikan pengaturan domain. Rekonfigurasi dapat memicu pembuatan sertifikat baru.
 
-![apply SSL certificate configuration](https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/lets-encrypt/apply-ssl-sertificate-configuration.png)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/lets-encrypt/apply-ssl-sertificate-configuration.png" alt="apply SSL certificate configuration" width="100%"/>
 
 ## Instalasi dan Manajemen Berbasis API
 
@@ -78,4 +78,4 @@ Metode API tambahan tersedia untuk pembaharuan, rekonfigurasi, dan penghapusan s
 
 Dengan **Let’s Encrypt**, Anda dapat dengan cepat dan mudah mengamankan environment Anda secara gratis, dengan pembaharuan otomatis dan konfigurasi minimal. Integrasi ini dengan Jelastic PaaS memungkinkan Anda untuk memastikan aplikasi Anda aman tanpa kompleksitas atau biaya dari solusi SSL tradisional.
 
-Untuk informasi lebih lanjut, kunjungi [Penyedia Layanan Jelastic PaaS](https://jelastic.cloud/).
+Untuk informasi lebih lanjut, kunjungi [Penyedia Layanan Dewacloud PaaS](https://assets.dewacloud.com/).
