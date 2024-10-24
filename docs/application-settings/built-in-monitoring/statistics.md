@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /statistics
+slug: /statistics-monitoring
 title: Statistics
 ---
 # Statistics Monitoring

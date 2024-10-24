@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-slug: /memory-leak-processes
+slug: /oom-killer-leak-risk-processes
 title: Memory Leak Processes
 ---
 # OOM Killer Resolutions: Processes with High Risk of Memory Leak

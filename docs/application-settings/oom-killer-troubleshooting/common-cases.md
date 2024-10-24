@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /common-cases
+slug: /oom-killer-common-cases
 title: Common Cases
 ---
 # OOM Killer Resolutions: Common Cases

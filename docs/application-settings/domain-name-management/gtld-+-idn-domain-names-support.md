@@ -1,6 +1,6 @@
 ---
 sidebar_position: 7
-slug: /gtld-+-idn-domain-names-support
+slug: /tld-idn-domain
 title: gTLD + IDN Domain Names Support
 ---
 # Dukungan Nama Domain gTLD + IDN

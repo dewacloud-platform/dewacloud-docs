@@ -1,6 +1,6 @@
 ---
 sidebar_position: 14
-slug: /managing-timezone-settings
+slug: /timezone-management
 title: Managing Timezone Settings
 ---
 # Managing Timezone Data

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 13
-slug: /custom-error-page-settings
+slug: /custom-error-page
 title: Custom Error Page Settings
 ---
 # Custom Error Page Settings via NGINX Balancer

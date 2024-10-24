@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /auto-configuration-overview
+slug: /auto-configuration
 title: Auto-Configuration Overview
 ---
 # Smart Auto-Configuration of Containers

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 17
-slug: /application-lifecycle-management
+slug: /application-lifecycle
 title: Application Lifecycle Management
 ---
 # Mengelola Siklus Hidup Aplikasi

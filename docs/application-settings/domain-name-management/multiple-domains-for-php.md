@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-slug: /multiple-domains-for-php
+slug: /multiple-domains-php
 title: Multiple Domains for PHP
 ---
 # Running Multiple Domain Names on PHP Server

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /sticky-sessions
+slug: /sticky-sessions-traffic-routing
 title: Sticky Sessions
 ---
 # Sticky Sessions Routing for Traffic Distributor
