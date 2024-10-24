@@ -22,15 +22,15 @@ Untuk menentukan label untuk environment Anda, arahkan mouse ke kolom **Tags** d
 
   * **Add to Env Group** \- jika belum ada tag yang ditetapkan ke sebuah environment 
 
-    <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-groups/group-management/01%20(1).png" alt="add to env group" width="100%"/>
+    <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-groups/group-management/01%20(1).png" alt="add to env group" max-width="100%"/>
 
   * **Edit Env Groups** \- jika beberapa tag sudah dilampirkan 
 
-    <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-groups/group-management/02.png" alt="edit env group" width="100%"/>
+    <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-groups/group-management/02.png" alt="edit env group" max-width="100%"/>
 
 Dalam kotak dialog yang terbuka, Anda dapat menentukan grup untuk environment ini (dengan memilihnya melalui daftar yang diambil secara otomatis dari yang sudah ada), [buat](<https://docs.dewacloud.com/docs/environment-groups-creation>) dan tetapkan tag baru (cukup ketikkan nama yang diinginkan dan tekan **Enter**) atau lepaskan yang tidak diperlukan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-groups/group-management/03.png" alt="define group for environment" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-groups/group-management/03.png" alt="define group for environment" max-width="100%"/>
 
 Setelah mengklik **Apply**, semua tag yang ditentukan akan langsung ditampilkan dalam kolom **Tags** untuk environment yang sesuai.
 
@@ -46,21 +46,21 @@ Memanfaatkan subgrup memungkinkan untuk membagi grup environment tingkat atas me
 
 Di dalam kolom dashboard **Tags**, subgrup ditampilkan dalam tampilan jalur, di mana setiap item anak dipisahkan dengan garis miring “/” dari yang sebelumnya.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-groups/group-management/04.png" alt="add subgroups" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-groups/group-management/04.png" alt="add subgroups" max-width="100%"/>
 
 Sarang semacam itu dapat mencakup jumlah level yang tak terbatas dan dapat diatur dengan cara berikut:
 
   * langsung selama [pembuatan grup](<https://docs.dewacloud.com/docs/environment-groups-creation>) baru, baik melalui ketikkan jalur penuh grup di field _Name_ (menggunakan garis miring sebagai pemisah) atau memilih _Parent Group_ dalam daftar yang sesuai (sehingga grup baru ini akan dimasukkan ke induk yang dipilih) 
 
-    <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-groups/group-management/05.png" alt="add parent group" width="100%"/>
+    <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-groups/group-management/05.png" alt="add parent group" max-width="100%"/>
 
   * saat berada di dalam grup, dengan memperluas daftar tindakan untuk itu dan mengklik **Add Child** 
 
-    <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-groups/group-management/06.png" alt="add child group" width="100%"/>
+    <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-groups/group-management/06.png" alt="add child group" max-width="100%"/>
 
   * melalui frame manajemen _**Environment Groups**_ umum (dibuka dengan **Env Groups > Manage**), dengan memilih string dengan grup yang diperlukan dan mengklik opsi **Add > Add Child**
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-groups/group-management/07.png" alt="add env subgroup" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-groups/group-management/07.png" alt="add env subgroup" max-width="100%"/>
 
 Dalam dua kasus terakhir, frame _**Add Group**_ akan dibuka, dengan grup yang sesuai secara otomatis diatur sebagai induk.
 
@@ -70,15 +70,15 @@ Dimungkinkan untuk menyesuaikan setiap kelompok lingkungan di akun Anda agar ses
 
   * beralih ke grup yang dibutuhkan, perluas daftar tindakan untuk itu dan klik **Edit** 
 
-    <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-groups/group-management/08.png" alt="edit group" width="100%"/>
+    <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-groups/group-management/08.png" alt="edit group" max-width="100%"/>
 
   * pergi ke frame manajemen umum grup (dibuka dengan **Env Groups > Manage**), pilih string dengan grup yang sesuai dan pilih **Edit** di panel alat di atas 
 
-    <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-groups/group-management/09.png" alt="edit environment groups" width="100%"/>
+    <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-groups/group-management/09.png" alt="edit environment groups" max-width="100%"/>
 
 Melalui kedua opsi, kotak dialog **Edit Group** akan dibuka.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-groups/group-management/10.png" alt="edit group dialog box" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-groups/group-management/10.png" alt="edit group dialog box" max-width="100%"/>
 
 Di sini, Anda dapat menyesuaikan semua data yang telah Anda tentukan selama pembuatan grup ini, yaitu:
 
@@ -104,15 +104,15 @@ Untuk menghapus sebuah grup, lakukan salah satu operasi berikut:
 
   * navigasikan ke dalam grup yang tidak lagi dibutuhkan, perluas daftar tindakan untuk itu di dalam panel atas dan klik **Remove** 
 
-    <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-groups/group-management/11.png" alt="remove group" width="100%"/>
+    <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-groups/group-management/11.png" alt="remove group" max-width="100%"/>
 
   * atau, buka **Env Groups > Manage**, pilih grup yang tidak diperlukan dalam daftar yang ditampilkan dan klik tombol **Remove** 
 
-    <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-groups/group-management/12.png" alt="remove environment group" width="100%"/>
+    <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-groups/group-management/12.png" alt="remove environment group" max-width="100%"/>
 
 Untuk melanjutkan penghapusan grup, konfirmasikan tindakan ini dengan memilih **Yes** dalam frame yang muncul. 
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-groups/group-management/13.png" alt="delete group" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-groups/group-management/13.png" alt="delete group" max-width="100%"/>
 
 Dengan cara seperti ini, Anda dapat menerapkan semua konfigurasi grup environment yang penting dan meningkatkan pembagian mereka di dashboard Anda.
 
