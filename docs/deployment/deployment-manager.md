@@ -7,8 +7,8 @@ title: Deployment Manager
 
 **Deployment Manager** terletak di bagian bawah dashboard dan digunakan untuk menyimpan aplikasi agar mempermudah penerapan (deployment) ke dalam environment. Terdapat dua subseksi yang menyediakan dukungan untuk jenis deployment berikut:
 
-  * _**[Archive](<#archive>)**_ \- menyimpan paket aplikasi, yang dapat diunggah dari mesin lokal Anda atau dari tautan eksternal mana pun
-  * _**[Git / SVN](<#vcs>)**_ \- menyimpan tautan ke proyek Anda di dalam repositori Git / SVN jarak jauh dan kredensial akses yang sesuai (jika diperlukan)
+  * _**[Archive](#application-archives)**_ \- menyimpan paket aplikasi, yang dapat diunggah dari mesin lokal Anda atau dari tautan eksternal mana pun
+  * _**[Git / SVN](#git-svn-projects)**_ \- menyimpan tautan ke proyek Anda di dalam repositori Git / SVN jarak jauh dan kredensial akses yang sesuai (jika diperlukan)
 
 ## Application Archives{#application-archives}
 

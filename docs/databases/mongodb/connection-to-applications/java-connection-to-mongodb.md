@@ -147,7 +147,7 @@ public class MongoManager {
 
 2\. Setiap aplikasi dapat didistribusikan menggunakan [Deployment Manager](<https://docs.dewacloud.com/docs/deployment-guide/>) platform (dengan file lokal/URL sebagai sumber) atau [Maven](<https://docs.dewacloud.com/docs/java-vcs-deployment/>) (untuk distribusi dari GIT/SVN).
 
-Untuk pengujian, Anda dapat mencoba proyek [mongoclient.war](<mongoclient.zip>) yang siap pakai, yang sudah berisi driver konektor yang sesuai (atau unduh [sumbernya](<mongoclient.zip>) dan sesuaikan dengan cara yang Anda inginkan).
+Untuk pengujian, Anda dapat mencoba proyek [mongoclient.war](<https://www.virtuozzo.com/application-platform-docs/connection-to-mongodb-java/mongoclient.zip>) yang siap pakai, yang sudah berisi driver konektor yang sesuai (atau unduh [sumbernya](<https://www.virtuozzo.com/application-platform-docs/connection-to-mongodb-java/mongoclient.zip>) dan sesuaikan dengan cara yang Anda inginkan).
 
 ![upload application](#)
 

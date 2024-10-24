@@ -7,8 +7,8 @@ title: Deployment Guide
 
 Platform ini mendukung berbagai cara deployment aplikasi secara otomatis, sehingga memungkinkan Anda untuk memilih opsi yang paling sesuai dengan kebutuhan spesifik Anda:
 
-- _**Dashboard**_ \- sesuai dengan [deployment via archive](https://docs.dewacloud.com/docs/#archive-deployment-configurations) (disediakan baik sebagai _local file_ atau _URL_)
-- _**VCS**_ \- memungkinkan untuk [mendeploy dari repositori VCS](https://docs.dewacloud.com/docs/#git--svn-deployment-configurations) Anda (misalnya, _Git_, _SVN_, _Bitbucket_)
+- _**Dashboard**_ \- sesuai dengan [deployment via archive](#archive-deployment-configurations) (disediakan baik sebagai _local file_ atau _URL_)
+- _**VCS**_ \- memungkinkan untuk [mendeploy dari repositori VCS](#git--svn-deployment-configurations) Anda (misalnya, _Git_, _SVN_, _Bitbucket_)
 - _**Hub Registry**_ \- membuat container khusus dengan aplikasi Anda berdasarkan image Docker yang disimpan di registry _[publik](https://docs.dewacloud.com/docs/docker-container-deploy/)_ atau _[pribadi](https://docs.dewacloud.com/docs/docker-container-deploy/)_
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/deployment/deployment_guide/01-deployment-options.png" alt="deployment options" max-width="100%"/>

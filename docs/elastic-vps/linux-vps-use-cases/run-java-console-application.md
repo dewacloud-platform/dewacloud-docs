@@ -13,7 +13,7 @@ Dalam tutorial ini kami akan meninjau cara menginstal sampel aplikasi konsol Jav
 - [mengakses aplikasi via SSH](#access-via-ssh)
 - [memeriksa operasionalitas aplikasi](#operability)
 
-## Instal Java ke VPS{#install-java-to-vps}
+## Instal Java ke VPS{#install-java}
 
 Untuk menginstal Java ke container VPS Anda, lakukan langkah-langkah berikut, sambil terhubung melalui protokol SSH dengan menggunakan [SSH Gate](https://docs.dewacloud.com/vps-ssh-gate/) atau [public IP](https://docs.dewacloud.com/vps-public-ip/).
 
@@ -51,7 +51,7 @@ java -version
 
 Bagus! Java berhasil diinstal, jadi mari kita lanjutkan ke pengunggahan aplikasi.
 
-## Unggah Aplikasi ke VPS{#upload-application-to-vps}
+## Unggah Aplikasi ke VPS{#upload}
 
 Siapkan aplikasi Java Anda untuk diunggah ke container VPS. Anda dapat menggunakan contoh berikut, yang akan mendengarkan port yang ditentukan untuk koneksi:
 
@@ -112,7 +112,7 @@ Klik tombol **Login** untuk memulai pengaturan koneksi.
 
 Dalam dialog pengaturan transfer yang muncul, klik **Copy** untuk memulai pengunggahan. Setelah selesai, Anda akan melihat file tersebut di direktori pada remote VPS.
 
-## Akses Aplikasi via SSH{#aссess-application-via-ssh}
+## Akses Aplikasi via SSH{#access-via-ssh}
 
 Akses container VPS Anda melalui [protokol SSH](https://docs.dewacloud.com/ssh-access/) untuk menemukan aplikasi yang baru saja diunggah.
 
@@ -135,7 +135,7 @@ java -jar vdssocket.jar
 
 Selesai! Sekarang, seperti yang bisa Anda lihat, port yang ditentukan sedang didengarkan.
 
-## Memeriksa Operasionalitas Aplikasi{#check-application-operability}
+## Memeriksa Operasionalitas Aplikasi{#operability}
 
 Untuk memeriksa alur kerja aplikasi yang benar, kita akan terhubung ke container VPS melalui protokol [Telnet](https://en.wikipedia.org/wiki/Telnet). Untuk itu, [pasang](https://technet.microsoft.com/en-us/library/cc771275%28v=ws.10%29.aspx#bkmk_installcmd) klien Telnet dan jalankan.
 
