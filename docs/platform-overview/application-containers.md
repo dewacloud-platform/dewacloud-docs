@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-slug: /application-containers
+slug: /what-are-application-containers
 title: Application Containers
 ---
 # Apa Itu Application Containers
