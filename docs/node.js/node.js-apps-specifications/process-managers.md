@@ -20,9 +20,9 @@ Dewacloud menyediakan tiga process manager pre-configured, yang dapat dipilih de
 
 Mari kita lihat masing-masing manager yang tersedia untuk membantu Anda memilih salah satu:
 
-- [Process Manager (npm)](https://docs.dewacloud.com/#process-manager-npm)
-- [PM2](https://docs.dewacloud.com/#pm2)
-- [Forever](https://docs.dewacloud.com/#forever)
+- [Process Manager (npm)](#process-manager-npm)
+- [PM2](#pm2)
+- [Forever](#forever)
 
 ## Process Manager (npm){#process-manager-npm}
 

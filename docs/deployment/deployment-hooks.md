@@ -5,7 +5,8 @@ title: Deployment Hooks
 ---
 # Deployment Hooks
 
-![deployment hooks logo](#) **Hook** (atau [webhook](https://en.wikipedia.org/wiki/Webhook)) adalah prosedur penyisipan kode ke dalam beberapa operasi standar untuk menerapkan beberapa kustomisasi. Dalam batasan platform, fungsi ini memungkinkan Anda untuk mengeksekusi skrip kustom Anda sebelum dan/atau setelah operasi deployment aplikasi. Dalam hal ini, untuk node pembangunan [Maven](https://docs.dewacloud.com/docs/java-vcs-deployment/) dan server aplikasi Golang, _pre-_ dan _post-_ project build hooks dapat ditetapkan tambahan.
+<img src="https://assets.dewacloud.com/dewacloud-docs/deployment/deployment-hooks/01-deployment-hooks-logo.png" alt="deployment hooks logo" max-width="100%"/> 
+**Hook** (atau [webhook](https://en.wikipedia.org/wiki/Webhook)) adalah prosedur penyisipan kode ke dalam beberapa operasi standar untuk menerapkan beberapa kustomisasi. Dalam batasan platform, fungsi ini memungkinkan Anda untuk mengeksekusi skrip kustom Anda sebelum dan/atau setelah operasi deployment aplikasi. Dalam hal ini, untuk node pembangunan [Maven](https://docs.dewacloud.com/docs/java-vcs-deployment/) dan server aplikasi Golang, _pre-_ dan _post-_ project build hooks dapat ditetapkan tambahan.
 
 Berikut ini kita akan mengulas cara bekerja dengan hooks di platform ini dan akan me-review beberapa kasus penggunaan umum dengan instruksi langkah demi langkah dimana fungsi ini bisa sangat berguna:
 
@@ -16,29 +17,33 @@ Berikut ini kita akan mengulas cara bekerja dengan hooks di platform ini dan aka
 
 Menjadi bagian dari proses deployment, **Hooks** tersedia dalam bagian yang dapat diperluas dari form dashboard yang sesuai. Jadi, untuk mengelola hooks, akses dialog deployment aplikasi menggunakan salah satu opsi berikut:
 
-* _Deployment Manager_ ![deployment manager](#)
+* _Deployment Manager_ <img src="https://assets.dewacloud.com/dewacloud-docs/deployment/deployment-hooks/02-deployment-manager.png" alt="deployment manager" max-width="100%"/>
 
-* _Deployment_ tombol untuk server aplikasi ![deployment buttons](#)
+* _Deployment_ tombol untuk server aplikasi <img src="https://assets.dewacloud.com/dewacloud-docs/deployment/deployment-hooks/03-deployment-buttons.png" alt="deployment buttons" max-width="100%"/>
 
 1\. Dalam bingkai yang terbuka, pilih jenis sumber deployment yang diinginkan dan perluas bagian _**Hooks**_.
 
-![deployment hooks](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/deployment/deployment-hooks/04-deployment-hooks.png" alt="deployment hooks" max-width="100%"/>
 
 Di sini, klik tombol **Pre** atau **Post** untuk menyediakan kode Anda, yang akan dijalankan tepat sebelum/segera setelah deployment (sesuai dengan opsi yang dipilih).
 
 2\. Masukkan kode hook yang dibutuhkan dalam jendela editor yang terbuka. Di sini, Anda dapat menggunakan bahasa pemrograman yang Anda sukai - pastikan bahwa interpretator kode yang sesuai sudah terinstal di container target (baik diinstal sebelumnya oleh Anda sendiri atau termasuk dalam build stack default).
 
-![hook example](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/deployment/deployment-hooks/05-hook-example.png" alt="hook example" max-width="100%"/>
 
-:::tip Di dalam panel atas, Anda memiliki akses ke alat-alat berikut untuk membantu saat mengedit kode: Wrap lines- memisahkan teks agar dilanjutkan di baris bawah jika mencapai batas bingkai; Search- memungkinkan untuk dengan mudah menemukan informasi yang diperlukan; dilengkapi dengan opsi pencarian tambahan Match case dan Regex; Help- mengarahkan ke dokumen saat ini untuk mendapatkan detail penggunaan hooks yang tepat. :::
+:::tip
+ Di dalam panel atas, Anda memiliki akses ke alat-alat berikut untuk membantu saat mengedit kode: Wrap lines- memisahkan teks agar dilanjutkan di baris bawah jika mencapai batas bingkai; Search- memungkinkan untuk dengan mudah menemukan informasi yang diperlukan; dilengkapi dengan opsi pencarian tambahan Match case dan Regex; Help- mengarahkan ke dokumen saat ini untuk mendapatkan detail penggunaan hooks yang tepat. 
+:::
 
 Klik **Apply** ketika siap. Sekarang Anda dapat melakukan deployment aplikasi Anda.
 
 3\. Setelah deployment berhasil, Anda dapat mengklik tombol **Show Logs** dalam notifikasi dashboard yang muncul untuk melihat respons detail pada operasi yang dilakukan:
 
-![deploy success](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/deployment/deployment-hooks/07-deploy-success.png" alt="deploy success" max-width="100%"/>
 
-:::note Jika terjadi kesalahan selama eksekusi hook, Anda akan mendapatkan notifikasi yang sesuai, sementara proses deployment akan dibatalkan: Klik tombol Show Logs untuk mendapatkan detail tentang kesalahan yang terjadi dengan melihat log aksi deployment (yang sesuai dengan file hooks.log, yang bisa diakses melalui bagian Logs untuk server yang sesuai). :::
+:::note
+ Jika terjadi kesalahan selama eksekusi hook, Anda akan mendapatkan notifikasi yang sesuai, sementara proses deployment akan dibatalkan: Klik tombol Show Logs untuk mendapatkan detail tentang kesalahan yang terjadi dengan melihat log aksi deployment (yang sesuai dengan file hooks.log, yang bisa diakses melalui bagian Logs untuk server yang sesuai). 
+ :::
 
 ## Hooks Use Cases{#hooks-use-cases}
 
@@ -61,7 +66,7 @@ Di bawah ini, kami telah memberikan contoh sederhana pembuatan file log Anda sen
 
 1\. Inisiasi deployment proyek Anda menggunakan cara apa pun yang Anda sukai. Kami akan menggunakan arsip _**HelloWorld.zip**_ default dari deployment manager.
 
-![deploy HelloWorld](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/deployment/deployment-hooks/09-deploy-helloworld.png" alt="deploy HelloWorld" max-width="100%"/>
 
 2\. Perluas bagian _**Hooks**_, klik hook **Pre** dan masukkan kode berikut dalam editor yang terbuka:
 
@@ -72,7 +77,7 @@ if ! grep -q "$(pwd)/mylog" /etc/jelastic/redeploy.conf; then
 fi   
 ```
 
-![pre-deploy hook](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/deployment/deployment-hooks/10-pre-deploy-hook.png" alt="pre-deploy hook" max-width="100%"/>
 
 Ini akan menambahkan string ke dalam file _**mylog**_ (akan otomatis dibuat di direktori home, jika tidak ada), yang akan mengidentifikasi awal deployment dan menyediakan stempel waktu yang sesuai. Juga, kita memeriksa apakah file _**redeploy.conf**_ memasukkan file log kustom kita dan, jika tidak, tambahkan baris yang sesuai - dengan cara seperti ini, ia akan tetap ada setelah operasi [redeploy container](https://docs.dewacloud.com/docs/container-redeploy/).
 
@@ -82,15 +87,17 @@ Ini akan menambahkan string ke dalam file _**mylog**_ (akan otomatis dibuat di d
 echo "$(date) - deployment end" >> ~/mylog
 ```
 
-:::tip Jika diperlukan, Anda dapat menggunakan perintah exit, yang memungkinkan untuk menghentikan hook dan eksekusi operasi deployment/build yang sesuai di titik mana pun. Di sini, nilai 0 (yaitu, exit 0) digunakan untuk menunjukkan keberhasilan, sedangkan nilai lainnya mengasumsikan kesalahan (misalnya, exit 1). :::
+:::tip
+ Jika diperlukan, Anda dapat menggunakan perintah exit, yang memungkinkan untuk menghentikan hook dan eksekusi operasi deployment/build yang sesuai di titik mana pun. Di sini, nilai 0 (yaitu, exit 0) digunakan untuk menunjukkan keberhasilan, sedangkan nilai lainnya mengasumsikan kesalahan (misalnya, exit 1). 
+:::
 
-![post-deploy hook](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/deployment/deployment-hooks/11-post-deploy-hook.png" alt="post-deploy hook" max-width="100%"/>
 
 Di sini, kita hanya mencatat akhir dari deployment kita.
 
 4\. Terakhir, lakukan deployment aplikasi Anda dan periksa file **_mylog_** dan **_redeploy.conf_** untuk memverifikasi eksekusi hooks yang berhasil.
 
-![check hooks execution](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/deployment/deployment-hooks/12-check-hooks-execution.png" alt="check hooks execution" max-width="100%"/>
 
 Seperti yang Anda lihat, skrip kami telah bekerja sebagaimana mestinya, menyediakan waktu mulai/selesai deployment dan memastikan itu terlindungi selama operasi redeploy.
 

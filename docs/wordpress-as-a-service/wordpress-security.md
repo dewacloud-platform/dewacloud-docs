@@ -6,7 +6,7 @@ title: WordPress Security
 
 # Keamanan WordPress
 
-Keamanan situs web adalah salah satu pilar utama dari hosting WordPress yang sukses. Ketika berbicara tentang keamanan, ada dua bentuk utama - perlindungan terhadap peretas yang mencoba mencuri data Anda dan keamanan terhadap kehilangan informasi. Platform ini menangani kedua poin keamanan ini. Kehilangan data dijamin secara otomatis oleh [konfigurasi server hosting cloud](https://docs.dewacloud.com/#cloud-hosting-security), sementara perlindungan peretas memanfaatkan banyak [fitur server aplikasi](https://docs.dewacloud.com/docs/#litespeed-security-protection).
+Keamanan situs web adalah salah satu pilar utama dari hosting WordPress yang sukses. Ketika berbicara tentang keamanan, ada dua bentuk utama - perlindungan terhadap peretas yang mencoba mencuri data Anda dan keamanan terhadap kehilangan informasi. Platform ini menangani kedua poin keamanan ini. Kehilangan data dijamin secara otomatis oleh [konfigurasi server hosting cloud](#cloud-hosting-security), sementara perlindungan peretas memanfaatkan banyak [fitur server aplikasi](https://docs.dewacloud.com/docs/#litespeed-security-protection).
 
 ### Keamanan Hosting Cloud{#cloud-hosting-security}
 

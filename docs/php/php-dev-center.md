@@ -13,17 +13,17 @@ Mari kita ambil perjalanan ke cloud hosting PHP dalam platform, keistimewaan, po
 
 Gunakan tabel konten di bawah ini untuk menemukan informasi yang dibutuhkan dalam panduan lebih cepat:
 
-  * [PHP Versions](<https://docs.dewacloud.com/docs/#php-versions>)
-  * [PHP Application Servers](<https://docs.dewacloud.com/docs/#php-application-servers>)
-  * [PHP Application Deployment](<https://docs.dewacloud.com/docs/#php-application-deployment>)
-  * [Domains Management](<https://docs.dewacloud.com/docs/#domains-management>)
-  * [Automatic Vertical Scaling](<https://docs.dewacloud.com/docs/#automatic-vertical-scaling>)
-  * [Manual Horizontal Scaling](<https://docs.dewacloud.com/docs/#manual-horizontal-scaling>)
-  * [Automatic Horizontal Scaling](<https://docs.dewacloud.com/docs/#automatic-horizontal-scaling>)
-  * [PHP Clustering](<https://docs.dewacloud.com/docs/#php-clustering>)
-  * [Database Connection to PHP Application](<https://docs.dewacloud.com/docs/#database-connection-to-php-application>)
-  * [Modules and Accelerators](<https://docs.dewacloud.com/docs/#modules-and-accelerators>)
-  * [PHP Security](<https://docs.dewacloud.com/docs/#php-security>)
+  * [PHP Versions](<#php-versions>)
+  * [PHP Application Servers](<#php-application-servers>)
+  * [PHP Application Deployment](<#php-application-deployment>)
+  * [Domains Management](<#domains-management>)
+  * [Automatic Vertical Scaling](<#automatic-vertical-scaling>)
+  * [Manual Horizontal Scaling](<#manual-horizontal-scaling>)
+  * [Automatic Horizontal Scaling](<#automatic-horizontal-scaling>)
+  * [PHP Clustering](<#php-clustering>)
+  * [Database Connection to PHP Application](<#database-connection-to-php-application>)
+  * [Modules and Accelerators](<#modules-and-accelerators>)
+  * [PHP Security](<#php-security>)
 
 ## PHP Versions{#php-versions}
 
