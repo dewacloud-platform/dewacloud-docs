@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-slug: /volumes
+slug: /container-volumes
 title: Volumes
 ---
 

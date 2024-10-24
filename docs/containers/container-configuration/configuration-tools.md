@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /configuration-tools
+slug: /container-configuration-tools
 title: Configuration Tools
 ---
 
