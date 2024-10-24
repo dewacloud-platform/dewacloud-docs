@@ -18,19 +18,19 @@ Panduan ini berfokus pada pemasangan Traffic Distributor untuk environment baru.
 1. Masuk ke dashboard platform.
 2. Klik tombol **Marketplace** di bagian atas dashboard.
 
-![PaaS main buttons](https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distribution-installation/01-paas-main-buttons.png)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distribution-installation/01-paas-main-buttons.png" alt="PaaS main buttons" max-width="100%"/>
 
 ### Langkah 2: Temukan Paket Traffic Distributor
 1. Di dalam tab **Apps** dari Marketplace, navigasikan ke bagian **Dev & Admin Tools**, atau gunakan kolom **Search** untuk menemukan **Traffic Distributor**.
 2. Klik **Install** untuk melanjutkan.
 
-![Traffic Distributor in Marketplace](https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distribution-installation/02-traffic-distributor-in-marketplace.png)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distribution-installation/02-traffic-distributor-in-marketplace.png" alt="Traffic Distributor in Marketplace" max-width="100%"/>
 
 ### Langkah 3: Tinjau Overview Traffic Distributor
 1. Saat pertama kali Anda menginstal Traffic Distributor, Anda akan ditampilkan overview dari fitur-fiturnya.
 2. Klik **OK** untuk melanjutkan.
 
-![Traffic Distributor description and benefits](https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distribution-installation/03-traffic-distributor-description-and-benefits.png)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distribution-installation/03-traffic-distributor-description-and-benefits.png" alt="Traffic Distributor description and benefits" max-width="100%"/>
 
 :::tip
 Anda dapat memilih opsi **Don’t show this message again** untuk melewati jendela ini di masa mendatang.
@@ -50,13 +50,13 @@ Anda dapat memilih opsi **Don’t show this message again** untuk melewati jende
    
 2. Klik **Install** untuk menyelesaikan pengaturan.
 
-![Configure Traffic Distributor installation](https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distribution-installation/04-configure-traffic-distributor-installation.png)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distribution-installation/04-configure-traffic-distributor-installation.png" alt="Configure Traffic Distributor installation" max-width="100%"/>
 
 ### Langkah 5: Penyelesaian Instalasi
 1. Setelah beberapa menit, instalasi akan selesai.
 2. Jendela sukses akan muncul dengan tips tambahan tentang cara menggunakan Traffic Distributor, seperti **Blue-Green Deploy**, **A/B Testing**, dan **Failover Protection**.
 
-![Traffic Distributor installed](https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distribution-installation/06-traffic-distributor-installed.png)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distribution-installation/06-traffic-distributor-installed.png" alt="Traffic Distributor installed" max-width="100%"/>
 
 :::note
 Konfigurasi vertical scaling default (hingga 16 cloudlets) harus cukup untuk menangani sejumlah besar traffic.
@@ -69,7 +69,7 @@ Anda dapat menyesuaikan pengaturan Traffic Distributor Anda kapan saja setelah i
 ### Langkah 1: Akses Opsi Rekonfigurasi
 1. Arahkan mouse ke instance NGINX dalam environment Traffic Distributor Anda dan klik tombol **Add-Ons**.
 
-![Traffic Distributor add-on](https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distribution-installation/07-traffic-distributor-add-on.png)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distribution-installation/07-traffic-distributor-add-on.png" alt="Traffic Distributor add-on" max-width="100%"/>
 
 ### Langkah 2: Konfigurasi Pengaturan Add-On
 1. Klik **Configure** untuk mengakses opsi rekonfigurasi. Anda dapat mengubah pengaturan yang sama seperti selama instalasi:
@@ -82,13 +82,13 @@ Anda dapat menyesuaikan pengaturan Traffic Distributor Anda kapan saja setelah i
    
 2. Konfirmasikan perubahan dengan mengklik **Apply**.
 
-![Reconfigure Traffic Distributor](https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distribution-installation/09-reconfigure-traffic-distributor.png)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distribution-installation/09-reconfigure-traffic-distributor.png" alt="Reconfigure Traffic Distributor" max-width="100%"/>
 
 ### Langkah 3: Pantau Perubahan
 1. Setelah rekonfigurasi berhasil, Anda akan melihat notifikasi di kanan atas dashboard.
 2. Anda juga dapat melihat log dari tindakan dan perubahan Traffic Distributor.
 
-![Show Traffic Distributor logs](https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distribution-installation/10-show-traffic-distributor-log.png)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distribution-installation/10-show-traffic-distributor-log.png" alt="Show Traffic Distributor logs" max-width="100%"/>
 
 ## Baca Juga
 

@@ -43,7 +43,7 @@ Anda dapat menyesuaikan [environment variables](https://docs.dewacloud.com/docs/
   * _**OOM_ADJUSTMENT**_ \- mendefinisikan nilai dalam %, MB, GB (_10%_ secara default) bahwa parameter _innodb_buffer_pool_size_ saat ini harus dikurangi setelah setiap restart yang disebabkan oleh OOM
   * _**MAX_OOM_REDUCE_CYCLES**_ \- mengonfigurasi jumlah siklus maksimum untuk pengurangan _innodb_buffer_pool_size_ (_5_ kali secara default)
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/smart-auto-configuration/auto-configuration-overview/02-oom-recovery-variables.png" alt="OOM recovery variables" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/smart-auto-configuration/auto-configuration-overview/02-oom-recovery-variables.png" alt="OOM recovery variables" width="70%"/>
 
 Tingkatkan batas cloudlets untuk container untuk mereset penyesuaian yang disebabkan oleh pemulihan OOM.
 

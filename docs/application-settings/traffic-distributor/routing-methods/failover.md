@@ -8,7 +8,7 @@ title: Failover
 
 **Failover** adalah metode routing yang dirancang untuk memberikan ketersediaan tinggi dengan menjaga lingkungan cadangan yang sepenuhnya berfungsi sebagai cadangan. Metode ini memastikan bahwa semua permintaan masuk awalnya diarahkan ke server utama, sementara server sekunder (cadangan) tetap dalam mode siaga. Jika server utama menjadi tidak tersedia, server cadangan secara otomatis mengambil alih untuk menangani permintaan.
 
-![Traffic Distributor failover routing](https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/routing-methods/failover/1.png)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/routing-methods/failover/1.png" alt="Traffic Distributor failover routing" max-width="30%"/>
 
 ### Cara Kerja Failover Routing:
 - **Pengaturan Utama dan Cadangan**: Anda dapat mengkonfigurasi satu server sebagai utama dan satu lagi sebagai cadangan. Semua permintaan masuk ke server utama selama masih berfungsi.

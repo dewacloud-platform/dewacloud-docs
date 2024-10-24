@@ -19,13 +19,13 @@ Jadi untuk mengekspor salinan environment Anda, masuklah ke akun PaaS Anda dan i
 
 1\. Pilih tombol **Settings** untuk environment yang ingin Anda ekspor (dalam contoh ini bernama _my-application_).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-export-and-import/export-environment/1.png" alt="environment Settings button" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-export-and-import/export-environment/1.png" alt="environment Settings button" max-width="100%"/>
 
 **Note:** Environment harus memiliki status _Running_ untuk dapat diekspor.
 
 2\. Pada tab **Settings** yang terbuka, navigasikan ke bagian _**Export**_ dan klik tombol dengan nama yang sama.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-export-and-import/export-environment/2.png" alt="Export environment section" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-export-and-import/export-environment/2.png" alt="Export environment section" max-width="100%"/>
 
 3\. Dalam dialog **Environment Export** yang muncul, Anda dapat memilih data mana yang harus diekspor (centang semua opsi untuk mendapatkan salinan environment yang sepenuhnya identik):
 
@@ -35,7 +35,7 @@ Jadi untuk mengekspor salinan environment Anda, masuklah ke akun PaaS Anda dan i
 
 **Note:** Untuk memastikan keamanan aplikasi dan data Anda, sangat disarankan untuk tidak menghapus asli dari environment yang diekspor sampai salinannya berhasil diimpor ke platform lain.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-export-and-import/export-environment/3.png" alt="setup environment export" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-export-and-import/export-environment/3.png" alt="setup environment export" max-width="100%"/>
 
 Setelah data yang diperlukan untuk export didefinisikan, klik tombol **Export** untuk melanjutkan.
 
@@ -47,7 +47,7 @@ Tergantung pada jenis container yang dikandung environment Anda, Anda harus memp
 
 4\. Setelah ekspor berhasil selesai, string baru yang dapat diklik (dinamakan berdasarkan waktu/tanggal ekspor) akan muncul dalam daftar **Exported Environment Copies**. Pilih untuk mengunduh file _**.json**_ yang telah terkompilasi dengan data environment yang diekspor ke mesin lokal Anda, atau cukup klik kanan untuk menyalin URL langsung ke manifest ini (yang juga dapat digunakan selama import).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-export-and-import/export-environment/4.png" alt="exported environment copies list" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-export-and-import/export-environment/4.png" alt="exported environment copies list" max-width="100%"/>
 
 Selain itu, Anda akan menerima pemberitahuan email yang sesuai dengan tautan ke daftar environment yang Anda ekspor.
 

@@ -21,7 +21,7 @@ date
 
 Secara default, hasilnya akan menunjukkan zona waktu UTC.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/managing-timezone-settings/01-date-before-timezone-change.png" alt="date before timezone change" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/managing-timezone-settings/01-date-before-timezone-change.png" alt="date before timezone change" max-width="100%"/>
 
 ### 2. Instal Add-On
 
@@ -31,19 +31,19 @@ Arahkan ke repositori add-on _TimeZone Change_ di GitHub dan impor file _**manif
 https://github.com/jelastic-jps/time-zone-change/blob/master/manifest.jps
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/managing-timezone-settings/02-import-timezone-change-add-on.png" alt="import timezone change add-on" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/managing-timezone-settings/02-import-timezone-change-add-on.png" alt="import timezone change add-on" max-width="100%"/>
 
 ### 3. Atur TimeZone
 
 Pilih _Environment_ tujuan dan tentukan _TimeZone Name_ yang diinginkan (misalnya, _America/New_York_) dari [Daftar zona waktu](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/managing-timezone-settings/04-install-timezone-change-add-on.png" alt="install timezone change add-on" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/managing-timezone-settings/04-install-timezone-change-add-on.png" alt="install timezone change add-on" max-width="100%"/>
 
 ### 4. Verifikasi Perubahan TimeZone
 
 Setelah instalasi, jalankan kembali perintah `date` untuk memastikan zona waktu telah diperbarui.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/managing-timezone-settings/05-date-after-timezone-change.png" alt="date after timezone change" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/managing-timezone-settings/05-date-after-timezone-change.png" alt="date after timezone change" max-width="100%"/>
 
 ## Mengelola Aturan Zona Waktu untuk Java
 

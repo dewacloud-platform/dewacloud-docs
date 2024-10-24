@@ -25,7 +25,7 @@ Jika belum, [instal Traffic Distributor](<https://docs.dewacloud.com/docs/traffi
 1. **Metode Routing**: Pilih _Sticky Sessions_.
 2. **Rasio Lalu Lintas**: Atur rasio menjadi _50:50_ untuk mendistribusikan lalu lintas secara merata antara dua versi aplikasi.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/use-cases/ab-testing/01.png" alt="Traffic Distributor configurations for A/B testing" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/use-cases/ab-testing/01.png" alt="Traffic Distributor configurations for A/B testing" max-width="100%"/>
 
 :::warning
 **Jangan gunakan metode routing Round Robin** untuk A/B testing. Karena A/B testing membandingkan konten yang berbeda pada setiap backend, routing Round Robin dapat menyebabkan ketersediaan elemen yang tidak konsisten antara permintaan.

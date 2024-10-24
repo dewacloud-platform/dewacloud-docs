@@ -5,7 +5,7 @@ title: gTLD + IDN Domain Names Support
 ---
 # Dukungan Nama Domain gTLD + IDN
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/gTLD-+-idn-domain-names-support/slide-domain.png" alt="slide-domain" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/gTLD-+-idn-domain-names-support/slide-domain.png" alt="slide-domain" width="20%"/>
 
 Upaya telah dilakukan untuk membuat nama domain tersedia dalam banyak bahasa di luar yang berbasis skrip Latin. Sekarang, dengan teknologi **IDN (Internationalized Domain Name)**, hampir semua karakter Unicode (di luar karakter ASCII tradisional) dapat ditambahkan ke nama domain. Ini dicapai dengan mengonversi karakter-karakter ini menjadi format standar menggunakan [Punycode](https://en.wikipedia.org/wiki/Punycode).
 

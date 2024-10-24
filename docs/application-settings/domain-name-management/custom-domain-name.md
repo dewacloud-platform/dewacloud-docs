@@ -5,7 +5,7 @@ title: Custom Domain Name
 ---
 # Custom Domain Name
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/custom-domain-name/01-custom-domais.png" alt="custom domains" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/custom-domain-name/01-custom-domais.png" alt="custom domains" width="30%"/>
 
 Dengan platform ini, Anda memiliki kemungkinan untuk menetapkan alamat domain eksternal untuk situs Anda, menggantikan URL lingkungan default (misalnya, _\{env_name\}.[hoster_domain_name](https://docs.dewacloud.com/docs/paas-hosting-providers/)_). Domain kustom memungkinkan Anda untuk mempromosikan branding unik dan meningkatkan pengenalan aplikasi web Anda di Internet.
 
@@ -15,7 +15,7 @@ Sebelum memulai, mari kita pahami beberapa konsep dasar untuk pemahaman yang leb
   * **Root Domain** adalah kombinasi dari _second-_ dan _top-level domain names_ tanpa subdomain. Alamat seperti itu mewakili seluruh situs web, bukan halaman web tertentu. Setiap situs memiliki root domain unik, yang termasuk di semua halamannya dan subdomainnya.
   * **DNS** adalah sistem yang mengonversi nama domain teks menjadi alamat IP numerik, yang diperlukan untuk menemukan dan mengidentifikasi layanan web. Misalnya, ketika Anda mengetik _www.mydomain.com_ di bilah alamat browser, sistem akan mencari alamat IP aktual dari server yang meng-host halaman ini, misalnya _209.50.246.12_. Jika Anda mengetik _https://209.50.246.12/_, Anda akan tiba di situs yang sama.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/custom-domain-name/02-domain-name-components-scheme.png" alt="domain name components scheme" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/custom-domain-name/02-domain-name-components-scheme.png" alt="domain name components scheme" width="60%"/>
 
 :::tip
 Platform ini juga mendukung penuh gTLD + IDN Domain Names, sehingga Anda dapat menggunakan nama top-level domain yang terinternasionalisasi dan generik untuk domain eksternal Anda.

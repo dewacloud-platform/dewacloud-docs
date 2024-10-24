@@ -16,7 +16,9 @@ Fitur ini dapat bermanfaat dalam banyak kasus. Misalnya, jika Anda perlu:
   * memindahkan environment yang siap produksi ke akun perusahaan utama dari akun pengujian pribadi
   * memulihkan environment di akun lama yang telah dinonaktifkan tanpa reaktivasi
 
-:::tip Selain itu, penyedia layanan hosting dapat menawarkan layanan pembuatan aplikasi yang diperlukan untuk Anda. Setelah konfigurasi dan pengujian, environment yang siap produksi akan dipindahkan ke akun Anda. :::
+:::tip
+ Selain itu, penyedia layanan hosting dapat menawarkan layanan pembuatan aplikasi yang diperlukan untuk Anda. Setelah konfigurasi dan pengujian, environment yang siap produksi akan dipindahkan ke akun Anda. 
+:::
 
 ### Kondisi {#conditions}
 
@@ -32,7 +34,7 @@ Misalnya, beberapa kuota yang diperiksa selama pemindahan: _cloudlets per contai
 
 Juga, jika terjadi kesalahan, Anda akan melihat pemberitahuan yang sesuai langsung di dashboard:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-aliases/01-environment-aliases-instaces-list.png" alt="environment transfer error" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-aliases/01-environment-aliases-instaces-list.png" alt="environment transfer error" max-width="100%"/>
 
 **Catatan:** Fitur pemindahan environment saat ini tidak tersedia antar akun di instalasi PaaS yang berbeda, termasuk interaksi platform utama - sub-platform (reseller).
 
@@ -48,29 +50,35 @@ Mari kita lihat proses pemindahan environment.
 
 1\. Klik tombol **Settings** di sebelah environment yang diperlukan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-aliases/02-set-alias.png" alt="environment settings button" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-aliases/02-set-alias.png" alt="environment settings button" max-width="100%"/>
 
 2\. Di tab yang terbuka, navigasikan ke bagian _**Change Owner**_ dan masukkan alamat email pengguna target (pemilik baru potensial).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-aliases/03-environment-label.png" alt="send environment change owner request" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-aliases/03-environment-label.png" alt="send environment change owner request" max-width="100%"/>
 
 Klik tombol **Send Request** untuk melanjutkan.
 
 3\. Jika akun target ada dan memenuhi semua persyaratan, Anda akan melihat pemberitahuan bahwa permintaan telah dikirim.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-aliases/04-environment-aliases-dashboard.png" alt="transfer request sent" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-aliases/04-environment-aliases-dashboard.png" alt="transfer request sent" max-width="100%"/>
 
-:::tip Anda dapat Membatalkan Permintaan dengan tombol bernama sama kapan saja (kecuali sudah dikonfirmasi). :::
+:::tip
+ Anda dapat Membatalkan Permintaan dengan tombol bernama sama kapan saja (kecuali sudah dikonfirmasi). 
+:::
 
 4\. Pengguna yang ditentukan akan menerima permintaan untuk pemindahan environment dengan tautan konfirmasi melalui email.
 
-:::note Saat menunggu konfirmasi, environment ditandai dengan ikon khusus di dashboard pemilik awal. :::
+:::note
+ Saat menunggu konfirmasi, environment ditandai dengan ikon khusus di dashboard pemilik awal. 
+:::
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-aliases/05-environment-aliases-ssh.png" alt="environment transfer confirmation email" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-aliases/05-environment-aliases-ssh.png" alt="environment transfer confirmation email" max-width="100%"/>
 
 5\. Ketika pengguna target mengonfirmasi permintaan pemindahan (mengklik tautan dari email), environment akan dihapus dari dashboard pengguna awal dan muncul untuk pemilik baru. Email pemberitahuan tentang pemindahan berhasil akan dikirim ke pemilik awal.
 
-:::note Pada langkah ini, akun target divalidasi (untuk memiliki batasan yang cukup) untuk terakhir kalinya. Jika tidak memenuhi persyaratan, proses pemindahan akan dihentikan. Pesan kesalahan yang sesuai akan ditampilkan di dashboard pengguna target dan dikirim ke pemilik awal melalui email. :::
+:::note
+ Pada langkah ini, akun target divalidasi (untuk memiliki batasan yang cukup) untuk terakhir kalinya. Jika tidak memenuhi persyaratan, proses pemindahan akan dihentikan. Pesan kesalahan yang sesuai akan ditampilkan di dashboard pengguna target dan dikirim ke pemilik awal melalui email. 
+:::
 
 Begitu mudah! Dengan menggunakan fitur ini, Anda dapat dengan mudah memindahkan environment dari satu akun ke akun lain.
 

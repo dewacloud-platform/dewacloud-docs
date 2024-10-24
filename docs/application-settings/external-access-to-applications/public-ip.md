@@ -8,7 +8,7 @@ title: Public IP
 
 Platform menyediakan pengguna dengan [Shared Load Balancer](https://docs.dewacloud.com/docs/shared-load-balancer/) (SLB) sebagai titik masuk tunggal default untuk semua aplikasi yang di-host, yang terletak pada node perangkat keras. Namun, untuk lingkungan produksi, disarankan menerima dan memproses permintaan melalui **Alamat IP Publik** yang membentuk koneksi langsung antara Internet dan container tertentu. Dibandingkan dengan akses melalui SLB, pendekatan ini memastikan interaksi yang lebih aman dan efektif.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/public-ip/01-public-ip-vs-shared-lb.png" alt="public IP vs shared load balancer" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/public-ip/01-public-ip-vs-shared-lb.png" alt="public IP vs shared load balancer" width="80%"/>
 
 IP Publik dapat dilampirkan ke tumpukan perangkat lunak mana pun di lingkungan Anda (kecuali, node [Memcached](https://docs.dewacloud.com/docs/memcached/)), mewakili solusi yang lebih stabil dengan risiko lebih rendah terkena dampak aplikasi lain. Selain itu, ini membuka akses ke fitur seperti [FTP add-on](https://docs.dewacloud.com/docs/ftp-ftps-support/), [Custom SSL](https://docs.dewacloud.com/docs/custom-ssl/), [remote debugging](https://www.virtuozzo.com/application-platform-docs/remote-debugging/) dari IDE, [WebSockets](https://www.virtuozzo.com/application-platform-docs/websockets/), dll.
 

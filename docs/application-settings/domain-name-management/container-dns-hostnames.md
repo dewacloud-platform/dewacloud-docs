@@ -5,7 +5,7 @@ title: Container DNS Hostnames
 ---
 # Dukungan Nama Domain gTLD + IDN
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/container-dns-hostnames/01-container-dns-hostnames.png" alt="slide-domain" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/container-dns-hostnames/01-container-dns-hostnames.png" alt="slide-domain" width="20%"/>
 
 Upaya telah dilakukan untuk membuat nama domain tersedia dalam banyak bahasa di luar yang berbasis skrip Latin. Sekarang, dengan teknologi **IDN (Internationalized Domain Name)**, hampir semua karakter Unicode (di luar karakter ASCII tradisional) dapat ditambahkan ke nama domain. Ini dicapai dengan mengonversi karakter-karakter ini menjadi format standar menggunakan [Punycode](https://en.wikipedia.org/wiki/Punycode).
 
@@ -24,7 +24,7 @@ Mari kita jelajahi cara mengelola nama domain spesifik ini pada platform.
 
    Berikut beberapa contoh lainnya:  
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/container-dns-hostnames/03-layer-hostnames.png" alt="tld idn domain example" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/container-dns-hostnames/03-layer-hostnames.png" alt="tld idn domain example" width="20%"/>
 
    :::warning
    Nama environment Anda tidak boleh dimulai dengan "xn--", karena kombinasi ini dicadangkan untuk merepresentasikan IDN dalam ASCII.
@@ -42,13 +42,13 @@ Mari kita jelajahi cara mengelola nama domain spesifik ini pada platform.
 
 4. Anda juga dapat [mengatur alias](https://docs.dewacloud.com/docs/environment-aliases) untuk environment Anda atau nodenya menggunakan bahasa asli Anda untuk mempermudah pengelolaan environment Anda.  
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/container-dns-hostnames/01-container-dns-hostnames.png" alt="tld idn domain alias" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/container-dns-hostnames/01-container-dns-hostnames.png" alt="tld idn domain alias" width="20%"/>
 
 ## Custom IDN/gTLD Domain Name{#custom-idn-gtld-domain-name}
 
 Baik domain internasional maupun generic top-level dapat dengan mudah diikat ke environment Anda dengan cara yang sama seperti domain khusus biasa. Ikuti langkah-langkah yang dijelaskan dalam [dokumentasi](https://docs.dewacloud.com/docs/custom-domains) untuk mengikat satu atau beberapa domain ke aplikasi Anda.  
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/container-dns-hostnames/03-layer-hostnames.png" alt="tld idn domain domain binding" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/container-dns-hostnames/03-layer-hostnames.png" alt="tld idn domain domain binding" width="20%"/>
 
 Anda juga dapat menggunakan fitur [Swapping Domains](https://docs.dewacloud.com/docs/swap-domains) untuk bekerja dengan jenis domain ini.  
 

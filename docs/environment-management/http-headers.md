@@ -25,19 +25,19 @@ Daftar header HTTP yang didukung dapat bervariasi berdasarkan topologi dari envi
 
 Topologi | Skema | Header yang Didukung  
 ---|---|---  
-Single application server | <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/http-headers/01-slb-to-app-server.png" alt="SLB to app server" width="100%"/> | _host  
+Single application server | <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/http-headers/01-slb-to-app-server.png" alt="SLB to app server" max-width="100%"/> | _host  
 x-forwarded-proto  
 x-real-ip  
 x-forwarded-for  
 x-host_  
-Load balancer dengan application servers | <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/http-headers/02-slb-to-load-balancer.png" alt="SLB to load balancer" width="100%"/> | _host  
+Load balancer dengan application servers | <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/http-headers/02-slb-to-load-balancer.png" alt="SLB to load balancer" max-width="100%"/> | _host  
 x-real-ip  
 x-host  
 x-forwarded-for  
 x-uri  
 x-forwarded-proto_  
-Application server dengan public IP | <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/http-headers/03-public-ip-to-app-server.png" alt="public IP to app server" width="100%"/> | _host_  
-Load balancer dengan public IP dan application servers | <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/http-headers/04-public-ip-to-load-balancer.png" alt="public IP to load balancer" width="100%"/> | _host  
+Application server dengan public IP | <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/http-headers/03-public-ip-to-app-server.png" alt="public IP to app server" max-width="100%"/> | _host_  
+Load balancer dengan public IP dan application servers | <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/http-headers/04-public-ip-to-load-balancer.png" alt="public IP to load balancer" max-width="100%"/> | _host  
 x-real-ip  
 x-host  
 x-forwarded-for  
@@ -58,7 +58,7 @@ Anda dapat dengan mudah mengelola security headers dengan mengelola file konfigu
   * Pemrosesan headers untuk server _Node.js_, _Golang_, _.NET_, _JavaEngine_, dan _Springboot_ harus diimplementasikan secara manual dalam aplikasi pengguna.
   * Untuk stack _Tomcat_ dan _TomEE_, hanya header berikut yang diaktifkan secara default: _**X-Content-Type-Options**_, _**X-Frame-Options**_, _**X-XSS-Protection**_, dan _**Strict-Transport-Security**_ (untuk SSL). Header lain dapat diaktifkan secara manual, jika diperlukan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/http-headers/01-slb-to-app-server.png" alt="security headers configuration file" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/http-headers/01-slb-to-app-server.png" alt="security headers configuration file" max-width="100%"/>
 
 Jangan lupa untuk __restart__ server Anda untuk menerapkan perubahan apa pun yang dilakukan pada file konfigurasi.
 

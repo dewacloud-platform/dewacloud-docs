@@ -15,11 +15,11 @@ Berikut cara Anda dapat mengatur dan mengelola pekerjaan Cron di platform.
 1. **Masuk ke dalam Platform Dashboard**.
 2. Klik **Create environment**.
 
-![create environment button](https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/setting-up-cronjob/01-create-environment-button.png)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/setting-up-cronjob/01-create-environment-button.png" alt="create environment bueton" width="30%"/>
 
 3. Dalam jendela **Environment topology**, pilih server aplikasi dan database yang ingin Anda gunakan (misalnya, _Tomcat_ dan _MySQL_). Ketik nama environment dan klik **Create**.
 
-![environment wizard](https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/setting-up-cronjob/02-environment-wizard.png)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/setting-up-cronjob/02-environment-wizard.png" alt="environment wizard" width="100%"/>
 
 Environment Anda dengan node Tomcat dan MySQL akan dibuat dalam satu menit.
 
@@ -29,23 +29,23 @@ Environment Anda dengan node Tomcat dan MySQL akan dibuat dalam satu menit.
 
 1. Klik tombol **Config** untuk server aplikasi Anda (misalnya, Tomcat).
 
-![Tomcat config button](https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/setting-up-cronjob/03-tomcat-config-button.png)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/setting-up-cronjob/03-tomcat-config-button.png" alt="Tomcat config button" width="100%"/>
 
 2. Unggah skrip yang ingin Anda jalankan ke folder yang sesuai:
    - **home** (untuk server berbasis Java seperti Tomcat, TomEE, GlassFish, dll.)
    - Folder tempat aplikasi Anda disimpan (untuk server PHP).
 
-![upload to home folder](https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/setting-up-cronjob/04-upload-to-home-folder.png)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/setting-up-cronjob/04-upload-to-home-folder.png" alt="upload to home folder" width="50%"/>
 
 ### Database
 
 1. Klik tombol **Config** untuk database Anda (misalnya, MySQL, MariaDB).
 
-![MySQL config button](https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/setting-up-cronjob/05-mysql-config-button.png)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/setting-up-cronjob/05-mysql-config-button.png" alt="MySQL config button" width="60%"/>
 
 2. Unggah skrip ke folder **scripts**.
 
-![upload to scripts folder](https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/setting-up-cronjob/06-upload-to-scripts-folder.png)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/setting-up-cronjob/06-upload-to-scripts-folder.png" alt="upload to scripts folder" width="50%"/>
 
 :::warning  
 Pastikan skrip yang ingin Anda jalankan dapat dieksekusi. Jika tidak, gunakan interpreter bawaan seperti Bash, Python, Perl, dll., bergantung pada jenis skrip.
@@ -55,7 +55,7 @@ Pastikan skrip yang ingin Anda jalankan dapat dieksekusi. Jika tidak, gunakan in
 
 1. Di tab konfigurasi, navigasikan ke folder **cron** dan buka file `{nodeName}`.
 
-![cron scheduler file](https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/setting-up-cronjob/07-cron-scheduler-file.png)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/setting-up-cronjob/07-cron-scheduler-file.png" alt="cron scheduler file" width="100%"/>
 
 2. Tulis perintah dalam format **crontab** untuk menjadwalkan tugas Anda. Format untuk setiap cron job terdiri dari enam bidang yang dipisahkan oleh spasi:
 

@@ -14,7 +14,7 @@ Add-on **[BitNinja](https://github.com/jelastic-jps/bitninja)** tersedia untuk s
 1. **Buka Marketplace**: 
    - Akses dashboard platform, cari **BitNinja Service** di bagian **Add-Ons**, dan klik **Install**.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/bitninja-server-security-add-on/01-marketplace-bitninja-add-on.png" alt="marketplace BitNinja add-on" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/bitninja-server-security-add-on/01-marketplace-bitninja-add-on.png" alt="marketplace BitNinja add-on" max-width="100%"/>
 
    :::tip
    Anda juga dapat menginstal BitNinja langsung dari panel **Add-Ons** untuk lapisan environment tertentu.
@@ -32,7 +32,7 @@ Add-on **[BitNinja](https://github.com/jelastic-jps/bitninja)** tersedia untuk s
    Semua fitur tersedia untuk diaktifkan, namun modul yang terdaftar di atas diaktifkan secara default berdasarkan kasus penggunaan umum.
    :::
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/bitninja-server-security-add-on/03-bitninja-service-installation.png" alt="BitNinja service installation" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/bitninja-server-security-add-on/03-bitninja-service-installation.png" alt="BitNinja service installation" max-width="100%"/>
 
    :::warning
    BitNinja memerlukan lisensi untuk digunakan. Detail lisensi dijelaskan di bagian **License Pricing** di bawah.
@@ -41,7 +41,7 @@ Add-on **[BitNinja](https://github.com/jelastic-jps/bitninja)** tersedia untuk s
 3. **Aktifkan BitNinja**:
    - Setelah instalasi, Anda akan menerima email berjudul "BitNinja Account Activation". Ikuti tautan untuk mengatur kata sandi dan konfirmasi akun Anda.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/bitninja-server-security-add-on/04-bitninja-account-activation-email.png" alt="BitNinja account activation email" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/bitninja-server-security-add-on/04-bitninja-account-activation-email.png" alt="BitNinja account activation email" max-width="100%"/>
 
    :::warning
    Hanya satu akun BitNinja yang dapat dibuat per alamat email.
@@ -69,17 +69,17 @@ Anda dapat mengelola BitNinja melalui bagian **Add-Ons**:
 - **Restart Agent**: Memulai ulang agen BitNinja.
 - **Uninstall**: Menghapus BitNinja dari environment Anda.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/bitninja-server-security-add-on/05-bitninja-add-on-options.png" alt="BitNinja add-on options" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/bitninja-server-security-add-on/05-bitninja-add-on-options.png" alt="BitNinja add-on options" max-width="100%"/>
 
    Anda dapat masuk ke konsol BitNinja untuk memantau serangan dan acara keamanan secara real time.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/bitninja-server-security-add-on/06-bitninja-admin-panel-events.gif" alt="BitNinja admin panel events" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/bitninja-server-security-add-on/06-bitninja-admin-panel-events.gif" alt="BitNinja admin panel events" width="70%" max-width="100%"/>
 
 ## Dukungan Vendor
 
 Jika Anda mengalami masalah, Anda dapat menghubungi dukungan BitNinja melalui opsi **chat** cepat atau mengirimkan tiket melalui menu **Get Help**.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/bitninja-server-security-add-on/07-bitninja-support.png" alt="BitNinja support" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/bitninja-server-security-add-on/07-bitninja-support.png" alt="BitNinja support" width="70%" max-width="100%"/>
 
 ## Baca Juga
 

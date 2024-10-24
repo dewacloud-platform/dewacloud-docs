@@ -15,11 +15,11 @@ Dalam panduan ini, kita akan membahas cara mengatur penjadwal tugas Quartz di cl
 1. **Masuk ke dalam dashboard platform.**
 2. Klik **Create environment**.
 
-![create environment](https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/quartz-scheduling/01-create-environment.png)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/quartz-scheduling/01-create-environment.png" alt="create environment" width="40%"/>
 
 3. Dalam jendela **Environment topology**, pilih **Tomcat** sebagai server aplikasi Anda dan konfigurasikan batas cloudlet. Beri nama lingkungan Anda (misalnya, _quartz_) dan klik **Create**.
 
-![environment wizard](https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/quartz-scheduling/02-environment-wizard.png)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/quartz-scheduling/02-environment-wizard.png" alt="environment wizard" width="100%"/>
 
 Lingkungan Anda akan siap dalam satu menit.
 
@@ -133,15 +133,15 @@ public class QuartzServlet extends HttpServlet {
 
 1. **Pergi ke dashboard platform** dan unggah file **WAR** yang telah Anda buat.
 
-![upload Quartz archive](https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/quartz-scheduling/03-upload-quartz-archive.png)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/quartz-scheduling/03-upload-quartz-archive.png" alt="upload Quartz archive" width="40%"/>
 
 2. **Deploy aplikasi** ke environment yang Anda buat sebelumnya.
 
-![deploy Quartz application](https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/quartz-scheduling/04-deploy-quartz-application.png)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/quartz-scheduling/04-deploy-quartz-application.png" alt="deploy Quartz application" width="40%"/>
 
 3. **Buka aplikasi Anda di browser**. Arahkan ke servlet Quartz (misalnya, `http://{env_name}.{hoster_domain}/quartz` berdasarkan pemetaan servlet) dan periksa log untuk melihat output eksekusi pekerjaan.
 
-![Tomcat log](https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/quartz-scheduling/05-tomcat-log.png)
+    <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/quartz-scheduling/05-tomcat-log.png" alt="Tomcat log" width="100%"/>
 
 Penjadwalan Quartz sekarang akan menjalankan pekerjaan Anda setiap menit, sesuai konfigurasi.
 
