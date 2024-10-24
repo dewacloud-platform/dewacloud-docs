@@ -8,7 +8,7 @@ title: Endpoints
 
 Fitur **Endpoints** memungkinkan pemetaan port TCP/UDP melalui Shared Load Balancer, memfasilitasi kolaborasi yang lebih sederhana antara instance dan alat pihak ketiga. Fitur ini mempermudah sambungan langsung ke node tanpa memerlukan [IP Publik](https://docs.dewacloud.com/docs/public-ipv4), yang membantu dalam tugas seperti manajemen basis data jarak jauh, penerapan aplikasi langsung dari IDE, dan mengakses panel admin server.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/endpoints/1-logo.png" alt="endpoints logo" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/endpoints/1-logo.png" alt="endpoints logo" width="20%"/>
 
 ### Keuntungan Utama:
 - Kolaborasi instance yang lebih sederhana dengan alat pihak ketiga.

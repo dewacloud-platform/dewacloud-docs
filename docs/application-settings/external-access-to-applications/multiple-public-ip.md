@@ -6,8 +6,6 @@ title: Multiple Public IP
 
 # Multiple Public IP Addresses for a Single Container
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/multiple-public-ip/01-multiple-public-ip.png" alt="multiple public IP" width="100%"/>
-
 Platform mendukung penugasan beberapa [IP publik](https://docs.dewacloud.com/docs/public-ip/) (baik IPv4 dan IPv6) ke satu container. IP ini dapat berupa satu versi (IPv4 atau IPv6) atau keduanya secara bersamaan.
 
 Sebagai contoh, ketika hosting beberapa situs web pada satu node, opsi multi-IP memungkinkan penanganan mereka sebagai layanan siap-produksi terpisah dengan menerapkan [nama domain kustom](https://docs.dewacloud.com/docs/custom-domains/) dan [sertifikat SSL](https://www.virtuozzo.com/application-platform-docs/secure-sockets-layer/) khusus untuk setiap situs. Fitur ini juga dapat bermanfaat untuk mengelola perangkat jaringan (mis., load balancers) dengan beberapa alamat IP untuk setiap jaringan.
@@ -34,7 +32,7 @@ Pada dashboard utama, alamat IP yang diberikan ke setiap node dalam lingkungan d
 
 Setiap alamat IP memiliki opsi **Copy to clipboard** dan **Detach**. Anda juga dapat mengelola jumlah total IP yang diberikan melalui tombol **Attach/Detach IP(s)** di sebelah judul daftar.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/multiple-public-ip/04-change-number-of-public-ip.png" alt="change number of public IPs" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/multiple-public-ip/04-change-number-of-public-ip.png" alt="change number of public IPs" width="50%"/>
 
 Kotak **Node Settings** menampilkan jumlah alamat yang saat ini ditetapkan. Tombol **Apply** tetap redup sampai perubahan dilakukan.
 

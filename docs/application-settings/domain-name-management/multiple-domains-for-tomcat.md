@@ -35,11 +35,11 @@ Dalam contoh kami, kami akan menggunakan _**tomcatfirst.tk**_ untuk nama domain 
 
 Sebagai contoh, kami menggunakan _Hello World_ yang tersedia secara default di Deployment Manager.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-tomcat/06-application-deployment.png" alt="deploy application" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-tomcat/06-application-deployment.png" alt="deploy application" width="70%"/>
 
 Ketika formulir **Deploy** muncul, pilih lingkungan Anda dan tetapkan konteks (**tomcatfirst** dalam kasus kami). Lalu tekan tombol **Deploy**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-tomcat/07-deploy-dialog.png" alt="deploy dialog" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-tomcat/07-deploy-dialog.png" alt="deploy dialog" width="50%"/>
 
   * Unggah arsip aplikasi kedua. Kami akan menggunakan _Hello World_ yang dimodifikasi (kata-kata "You did it!" diwarnai merah) untuk melihat perbedaannya pada langkah akhir.
 
@@ -53,7 +53,7 @@ Setelah deployment selesai, Anda memiliki dua aplikasi yang dideploy di lingkung
 
 6\. Sekarang klik tombol **Config** untuk Tomcat dan navigasikan ke file _**server.xml**_ (di direktori **/opt/tomcat/conf**).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-tomcat/10-server-xml-config-file.png" alt="server.xml config file" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-tomcat/10-server-xml-config-file.png" alt="server.xml config file" width="70%"/>
 
 Tambahkan tag _**Host**_ untuk setiap domain yang ingin Anda ikat:
 
@@ -85,15 +85,13 @@ Dalam contoh kami, tambahkan kode berikut ke file _**server.xml**_:
 
 8\. Sekarang Anda dapat memeriksa hasilnya. Kedua aplikasi Anda akan tersedia melalui nama domain yang ditentukan yang berjalan pada satu server Tomcat.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-tomcat/13-first-application-custom-domain.png" alt="first application with custom domain" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-tomcat/13-first-application-custom-domain.png" alt="first application with custom domain" width="70%"/>
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-tomcat/14-second-application-custom-domain.png" alt="second application with custom domain" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-tomcat/14-second-application-custom-domain.png" alt="second application with custom domain" width="70%"/>
 
-```
 :::warning
-Jika Anda ingin melakukan redeploy aplikasi ke instance Tomcat dengan _server.xml_ yang sudah dikonfigurasi, Anda perlu mengomentari blok <Host> sebelum melakukan redeploy dan membukanya kembali setelahnya.
+Jika Anda ingin melakukan redeploy aplikasi ke instance Tomcat dengan _server.xml_ yang sudah dikonfigurasi, Anda perlu mengomentari blok `<Host>` sebelum melakukan redeploy dan membukanya kembali setelahnya.
 :::
-```
 
 ## Baca Juga{#whats-next}
 

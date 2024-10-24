@@ -8,7 +8,7 @@ title: Traffic Distributor Overview
 
 **Traffic Distributor** adalah solusi load balancing yang dirancang untuk mendistribusikan lalu lintas secara efisien di antara beberapa environment, meningkatkan skalabilitas dan keandalan proyek Anda. Solusi ini menawarkan metode routing lalu lintas canggih dan fitur seperti ketersediaan tinggi, Blue-Green deployment, A/B testing, dan perlindungan failover, yang menyederhanakan manajemen aplikasi skala besar.
 
-![Traffic Distributor Logo](https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distributor-overview/01-traffic-distributor-logo.png)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distributor-overview/01-traffic-distributor-logo.png" alt="Traffic Distributor Logo" max-width="30%"/>
 
 ## Fitur Utama:
 - **Ketersediaan Tinggi & Failover**: Memastikan ketersediaan berkelanjutan dengan mendistribusikan lalu lintas di antara beberapa host, meminimalkan downtime bahkan jika satu instance gagal.
@@ -27,21 +27,21 @@ Traffic Distributor mendukung tiga metode routing untuk memenuhi berbagai kasus 
 - **Kasus Penggunaan**: Ideal ketika konten identik disajikan oleh semua instance.
 - **Pengaturan**: Memerlukan instance aplikasi identik untuk distribusi lalu lintas yang seimbang.
 
-![Round Robin Routing](https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distributor-overview/03-traffic-distributor-round-robin-routing.png)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distributor-overview/03-traffic-distributor-round-robin-routing.png" alt="Round Robin Routing" max-width="30%"/>
 
 ### 2. Sticky Sessions
 - **Deskripsi**: Menugaskan pengguna ke backend tertentu berdasarkan informasi sesi, memastikan semua permintaan selama sesi ditangani oleh server yang sama.
 - **Kasus Penggunaan**: Berguna saat persistensi sesi diperlukan (misalnya, keranjang belanja).
 - **Pengaturan**: Mengkonfigurasi "stickiness" oleh sesi untuk merutekan pengguna secara konsisten ke server yang sama.
 
-![Sticky Sessions Routing](https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distributor-overview/04-traffic-distributor-sticky-sessions-routing.png)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distributor-overview/04-traffic-distributor-sticky-sessions-routing.png" alt="Sticky Sessions Routing" max-width="30%"/>
 
 ### 3. Failover
 - **Deskripsi**: Merutekan semua lalu lintas ke server utama tetapi secara otomatis beralih ke server cadangan jika server utama gagal.
 - **Kasus Penggunaan**: Kritis untuk mempertahankan uptime dalam aplikasi dengan ketersediaan tinggi.
 - **Pengaturan**: Memerlukan environment cadangan untuk memastikan failover yang mulus jika server utama mengalami kegagalan.
 
-![Failover Routing](https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distributor-overview/05-traffic-distributor-failover-routing.png)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distributor-overview/05-traffic-distributor-failover-routing.png" alt="Failover Routing" max-width="30%"/>
 
 ## Implementasi Traffic Distributor
 
@@ -49,7 +49,7 @@ Traffic Distributor diterapkan sebagai environment terpisah yang berisi node loa
 
 Traffic Distributor dapat menangani beberapa protokol, termasuk HTTP, HTTPS, dan WebSockets. Proses load balancing terjadi selama handshake HTTP, dan koneksi WebSocket tetap persisten setelahnya.
 
-![Traffic Distributor Environment](https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distributor-overview/06-traffic-distributor-environment.png)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distributor-overview/06-traffic-distributor-environment.png" alt="Traffic Distributor Environment" max-width="100%"/>
 
 ### Kasus Penggunaan:
 - **Distribusi Beban Merata**: Mendistribusikan permintaan di seluruh server untuk mengoptimalkan penggunaan sumber daya.

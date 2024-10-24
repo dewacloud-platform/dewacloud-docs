@@ -5,7 +5,7 @@ title: App Migration between Clouds
 ---
 # Ekspor/Impor Environment: Cara Migrasi Aplikasi Antar Cloud
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-export-and-import/app-migration-between-clouds/01-environment-export-import.png" alt="environment export / import" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-export-and-import/app-migration-between-clouds/01-environment-export-import.png" alt="environment export / import" max-width="100%"/>
 
 [PaaS & CaaS](<https://www.virtuozzo.com/company/blog/what-is-paas-platform-as-a-service-types-explained/>) dirancang untuk memberikan kebebasan nyata bagi pengembang: tanpa API eksklusif, tanpa perlu menyesuaikan kode aplikasi sebelum hosting, serta berbagai macam tumpukan dan fitur yang tersedia. Salah satu opsi utama yang membebaskan pengguna kami dari keterikatan adalah fitur **Ekspor / Impor Environment**.
 

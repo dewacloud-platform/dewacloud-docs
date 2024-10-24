@@ -9,7 +9,7 @@ Ketersediaan fitur ini bergantung pada pengaturan penyedia hosting tertentu.
 
 Fitur **Network Isolation** mengelola aturan akses default antara environments di dalam satu instalasi PaaS (yaitu konektivitas melalui jaringan internal).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-isolations/01-request-handling-with-firewall-and-isolation.png" alt="request handling with firewall and isolation" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-isolations/01-request-handling-with-firewall-and-isolation.png" alt="request handling with firewall and isolation" max-width="100%"/>
 
 Dengan cara ini, setiap koneksi internal antara node di platform perlu melewati pemeriksaan yang tepat sebelum diizinkan. Artinya, dipastikan bahwa environments yang meminta dan diminta termasuk dalam kelompok terisolasi yang sama.
 
@@ -23,14 +23,14 @@ Jika fitur **Network Isolation** diaktifkan pada platform, semua akun diisolasi 
 
 Selain itu, fitur ini memungkinkan pengembang untuk mengisolasi [groups of environments](<https://docs.dewacloud.com/docs/environment-groups/>) dalam akun tertentu. Cukup aktifkan switcher _**Network Isolation**_ di frame **Add/Edit Group**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-isolations/02-enable-isolation-for-environment-group.png" alt="enable isolation for environment group" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-isolations/02-enable-isolation-for-environment-group.png" alt="enable isolation for environment group" max-width="100%"/>
 
 Platform secara otomatis menyatukan alamat internal dari container ke dalam satu set IP khusus untuk setiap kelompok terisolasi. Ini memungkinkan pengendalian akses antara node (yaitu jika IP berada dalam satu set - interkoneksi diizinkan, dan jika tidak - ditolak). Platform secara otomatis mendeteksi semua perubahan terkait di bawah akun Anda (misalnya, penghapusan environment, [nodes scaling](<https://docs.dewacloud.com/docs/horizontal-scaling/>), dll.) untuk menjaga _IP sets_ tetap terbaru.
 
 Saat mengelola _Network Isolation_, Anda harus mempertimbangkan kekhasan berikut:
 
   * isolasi dapat diaktifkan hanya untuk kelompok tingkat atas (yaitu tidak untuk [subgroups](<https://docs.dewacloud.com/docs/environment-groups-management/#add-subgroups>))
-  * environment groups dengan isolasi yang diaktifkan diberikan ikon perisai khusus ( <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-isolations/03-isolated-group-icon.png" alt="isolated group icon" width="20px"/>) untuk pengenalan yang lebih baik
+  * environment groups dengan isolasi yang diaktifkan diberikan ikon perisai khusus ( <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-isolations/03-isolated-group-icon.png" alt="isolated group icon" max-width="20px"/>) untuk pengenalan yang lebih baik
   * [shared environments](<https://docs.dewacloud.com/docs/share-environment/>) tidak dapat dimasukkan ke dalam kelompok terisolasi oleh kolaborator
   * fitur ini tidak cocok untuk membatasi akses ke container Anda dari luar platform (misalnya melalui [public IP](<https://docs.dewacloud.com/docs/public-ip/>))
 

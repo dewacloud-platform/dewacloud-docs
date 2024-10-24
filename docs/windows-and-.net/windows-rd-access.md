@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-slug: /windows-rd-access
+slug: /win-rdp-access
 title: Windows RD Access
 ---
 

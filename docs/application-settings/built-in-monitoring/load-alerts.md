@@ -46,7 +46,7 @@ Untuk mengonfigurasi alert kustom, ikuti langkah-langkah ini:
      - **For at least**: Tentukan periode waktu di mana trigger harus tetap diaktifkan sebelum mengaktifkannya.
      - **Notification frequency**: Atur jeda waktu antara notifikasi berulang.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/load-alerts/4.png" alt="load alerts 4" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/load-alerts/4.png" alt="load alerts 4" width="70%"/>
 
    Setelah dikonfigurasi, klik **Add** untuk menyimpan alert.
 
@@ -58,7 +58,8 @@ Untuk mengonfigurasi alert kustom, ikuti langkah-langkah ini:
 6. **Email Notifications**:
    - Ketika penggunaan sumber daya melebihi ambang batas yang ditetapkan, Anda akan menerima notifikasi email dengan detail tentang beban, rekomendasi, dan tautan untuk menyesuaikan batasan scaling.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/load-alerts/6-load-alert-email-notification.png" alt="load alert email notification" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/load-alerts/6-load-alert-email-notification.png" alt="load alert email notification" width="60%"/>
+
 
 ## Viewing Trigger Execution History{#viewing-trigger-execution-history}
 
@@ -80,7 +81,7 @@ Untuk memeriksa riwayat eksekusi alert:
 4. **Alert Details**:
    - Klik alert untuk melihat detail tambahan, seperti penggunaan sumber daya pada saat diaktifkan dan tindakan yang diambil (misalnya, mengirim notifikasi).
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/load-alerts/9.png" alt="load alerts 9" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/load-alerts/9.png" alt="load alerts 9" width="40%"/>
 
 Ini memungkinkan Anda untuk memastikan bahwa aplikasi Anda dipantau dengan benar dan untuk mengambil tindakan sebelum batas sumber daya apa pun mempengaruhi kinerja.
 

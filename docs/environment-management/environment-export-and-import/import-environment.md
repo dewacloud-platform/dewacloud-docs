@@ -13,21 +13,21 @@ Mari kita tinjau cara bekerja dengan fungsionalitas impor platform secara mendet
 
 1\. Klik tombol **Import** di bagian atas dashboard.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-export-and-import/import-environment/01-paas-main-buttons.png" alt="PaaS main buttons" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-export-and-import/import-environment/01-paas-main-buttons.png" alt="PaaS main buttons" max-width="100%"/>
 
 2\. Dalam frame **Import** yang terbuka, Anda akan melihat tiga tab dengan opsi berbeda untuk menyediakan file yang diperlukan:
 
   * _**Local File**_ \- untuk memilih manifest yang disimpan secara lokal (melalui tombol **Browse**) 
 
-    <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-export-and-import/import-environment/02-import-via-local-file.png" alt="import via local file" width="100%"/>
+  <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-export-and-import/import-environment/02-import-via-local-file.png" alt="import via local file" max-width="100%"/>
 
   * _**URL**_ \- untuk mengetik atau menempelkan tautan langsung ke file yang diperlukan 
 
-    <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-export-and-import/import-environment/03-import-via-url.png" alt="import via URL" width="100%"/>
+  <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-export-and-import/import-environment/03-import-via-url.png" alt="import via URL" max-width="100%"/>
 
   * _**JPS**_ \- editor built-in untuk memasukkan dan mengedit kode atau menyusun solusi Anda sendiri dari awal (lihat bagian [JPS deployment and troubleshooting](<https://docs.dewacloud.com/docs/#jps-deployment--troubleshooting>) di bawah untuk informasi lebih lanjut)
 
-    <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-export-and-import/import-environment/04-import-via-jps.png" alt="import via JPS" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-export-and-import/import-environment/04-import-via-jps.png" alt="import via JPS" max-width="100%"/>
 
 :::tip 
 TautanTheExamples di samping tab ini mengarahkan ke JPS Collection di 
@@ -38,7 +38,7 @@ Untuk melanjutkan, klik tombol **Import** di sudut kanan bawah tab jenis impor y
 
 3\. Setelah itu, Anda akan melihat jendela konfirmasi instalasi dengan deskripsi paket yang sesuai. Untuk environment yang diekspor, ini menunjukkan detail tentang platform sumber dan tanggal ekspor.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-export-and-import/import-environment/05-confirm-environment-import.png" alt="confirm environment import" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-export-and-import/import-environment/05-confirm-environment-import.png" alt="confirm environment import" max-width="100%"/>
 
 Di dalam kolom di dalamnya, Anda perlu menentukan parameter berikut ini:
 
@@ -50,7 +50,7 @@ Klik **Import** jika sudah siap.
 
 4\. Tunggu hingga environment dibuat, dideploy, dan dikonfigurasi.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-export-and-import/import-environment/06-deploying-imported-environment.png" alt="deploying imported environment" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-export-and-import/import-environment/06-deploying-imported-environment.png" alt="deploying imported environment" max-width="100%"/>
 
 :::tip 
 Anda dapat meminimalkan jendela ini dan melanjutkan bekerja dengan dashboard tanpa mengganggu proses pengimporan, yang akan dilanjutkan di latar belakang.
@@ -60,7 +60,7 @@ Anda dapat meminimalkan jendela ini dan melanjutkan bekerja dengan dashboard tan
 
 Di sini, Anda dapat mengklik **Open in Browser** untuk segera memeriksa hasilnya atau **Close** jendela ini untuk mengkonfigurasi ulang environment dan aplikasi Anda sesuai dengan pengaturan platform baru (mis. karena nama host yang berubah, alamat IP, dll.).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-export-and-import/import-environment/07-environment-successfully-imported.png" alt="environment successfully imported" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-export-and-import/import-environment/07-environment-successfully-imported.png" alt="environment successfully imported" max-width="100%"/>
 
 Juga, periksa email Anda untuk informasi (seperti nama host, kredensial administrator baru untuk node, dll.) tentang environment yang Anda impor.
 
@@ -72,7 +72,7 @@ Opsi **Import > JPS** paling sering digunakan oleh pengembang yang membuat [pake
 
 1\. Setelah dimasukkan ke dalam editor ini, kode Anda akan secara otomatis diparse untuk kesalahan. Jika terdeteksi, mereka akan ditandai dengan ikon silang merah sebelum baris yang sesuai (arahkan ke atas untuk informasi tambahan tentang masalah tersebut). Selain itu, kode Anda disimpan dengan aman di penyimpanan lokal browser Anda, sehingga Anda dapat menutup seluruh frame _Import_ secara bebas (mis. untuk melakukan beberapa operasi lain di dashboard) dan kembali ke pemrograman nanti.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-export-and-import/import-environment/08-jps-editor-for-import.png" alt="JPS editor for import" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-export-and-import/import-environment/08-jps-editor-for-import.png" alt="JPS editor for import" max-width="100%"/>
 
 2\. Di bagian atas frame, Anda dapat menemukan beberapa alat untuk pengalaman kerja yang lebih nyaman:
 
@@ -83,11 +83,11 @@ Opsi **Import > JPS** paling sering digunakan oleh pengembang yang membuat [pake
     * _Regex_ \- menggunakan [regular expressions](<https://en.wikipedia.org/wiki/Regular_expression>) untuk spesifikasi kondisi pencarian
   * _**View Logs**_ \- membuka konsol untuk melacak eksekusi kode Anda
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-export-and-import/import-environment/09-jps-editor-tools-bar.png" alt="JPS editor tools bar" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-export-and-import/import-environment/09-jps-editor-tools-bar.png" alt="JPS editor tools bar" max-width="100%"/>
 
 3\. Log _Import_ memberikan informasi penting untuk pemecahan masalah. Jika Anda menghadapi masalah selama pembuatan paket JPS, lihat tab **Import > JPS > View Logs** ini dan cari kesalahan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-export-and-import/import-environment/10-import-logs.png" alt="import logs" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-export-and-import/import-environment/10-import-logs.png" alt="import logs" max-width="100%"/>
 
 :::tip 
 Pada platform sebelum rilis 5.9.7, Anda dapat mengakses konsol JPS ini di tab browser terpisah dengan menambahkan akhiran /console ke URL dashboard Anda (harus masuk untuk otorisasi).

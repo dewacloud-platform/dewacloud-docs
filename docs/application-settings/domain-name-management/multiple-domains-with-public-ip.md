@@ -23,7 +23,7 @@ _Untuk menggunakan nama domain untuk aplikasi Anda, Anda perlu mendaftarkannya a
 
 2\. Saat berada di platform dashboard, klik tombol **Create environment**:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-with-public-ip/01-create-environment.png" alt="create environment" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-with-public-ip/01-create-environment.png" alt="create environment" width="50%"/>
 
 3\. Dalam dialog **Environment Topology**, pilih server aplikasi Anda (misalnya, [Tomcat](https://docs.dewacloud.com/docs/tomcat/)), aktifkan **Public IPv4** untuk server Anda, dan ketik nama environment Anda, misalnya, _multibinding_.
 
@@ -72,11 +72,11 @@ Sebagai contoh:
 
 9\. Sekarang Anda dapat memeriksa hasilnya. Aplikasi Anda akan tersedia melalui nama domain yang ditentukan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-with-public-ip/08-first-domain.png" alt="first domain" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-with-public-ip/08-first-domain.png" alt="first domain" width="50%"/>
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-with-public-ip/09-second-domain.png" alt="second domain" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-with-public-ip/09-second-domain.png" alt="second domain" width="50%"/>
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-with-public-ip/10-third-domain.png" alt="third domain" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-with-public-ip/10-third-domain.png" alt="third domain" width="50%"/>
 
 :::note
 Jika Anda ingin redeploy aplikasi ke instance Tomcat dengan _server.xml_ yang sudah dikonfigurasi, Anda perlu mengomentari blok `<Host>` sebelum me-redeploy dan meng-uncomment setelahnya.

@@ -15,7 +15,7 @@ title: Failover Protection
 1. Buka panel **Config** untuk NGINX dengan mengklik tombol **Config**.
 2. Arahkan ke file `/etc/nginx/nginx-jelastic.conf` di direktori **Root**.
 
-   ![Traffic Distributor config files](https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/use-cases/failover-protection/01-traffic-distributor-config-files.png)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/use-cases/failover-protection/01-traffic-distributor-config-files.png" alt="Traffic Distributor config files" max-width="100%"/>
 
 3. Klik dua kali file tersebut untuk membukanya agar bisa diedit.
 
@@ -27,7 +27,7 @@ title: Failover Protection
     check interval={interval} fall={fail_count} rise={rise_count} [timeout={timeout}] [default_down={true/false}] [port={port}] [type={type}]
     ```
 
-   ![Traffic Distributor failover parameters](https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/use-cases/failover-protection/02-traffic-distributor-failover-parameters.png)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/use-cases/failover-protection/02-traffic-distributor-failover-parameters.png" alt="Traffic Distributor failover parameters" max-width="100%"/>
 
    - **\{interval\}**: Waktu antara permintaan check berturut-turut, dalam milidetik.
    - **\{fail_count\}**: Jumlah kegagalan pemeriksaan berturut-turut yang diperlukan untuk menandai server sebagai tidak tersedia.
@@ -50,7 +50,7 @@ title: Failover Protection
 1. Setelah Anda membuat perubahan pada konfigurasi, simpan file tersebut.
 2. Untuk menerapkan perubahan tanpa memulai ulang seluruh server NGINX (dan dengan demikian menghindari downtime), gunakan opsi **Reload configuration** di menu add-on Traffic Distributor.
 
-   ![Traffic Distributor reload configuration](https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/use-cases/failover-protection/03-traffic-distributor-reload-configuration.png)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/use-cases/failover-protection/03-traffic-distributor-reload-configuration.png" alt="Traffic Distributor reload configuration" max-width="100%"/>
 
 3. Konfirmasikan tindakan reload melalui jendela pop-up, dan pengaturan failover yang baru akan diterapkan dalam beberapa detik.
 

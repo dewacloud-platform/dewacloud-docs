@@ -36,7 +36,7 @@ Misalnya, beberapa quotas yang diperiksa selama transfer: _cloudlets per contain
 
 Juga, jika ada kesalahan, Anda akan melihat notifikasi terkait langsung di dashboard:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-transferring/01-environment-transfer-error.png" alt="environment transfer error" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-transferring/01-environment-transfer-error.png" alt="environment transfer error" max-width="100%"/>
 
 :::warning
 Fitur environment transferring saat ini tidak tersedia antara akun di instalasi PaaS yang berbeda, termasuk interaksi platform utama - sub-platform (reseller).
@@ -54,17 +54,17 @@ Mari kita lihat proses pemindahan environment.
 
 1\. Klik tombol **Settings** di sebelah environment yang diperlukan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-transferring/02-environment-settings-button.png" alt="environment settings button" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-transferring/02-environment-settings-button.png" alt="environment settings button" max-width="100%"/>
 
 2\. Pada tab yang terbuka, navigasikan ke bagian _**Change Owner**_ dan masukkan alamat email pengguna target (calon pemilik baru).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-transferring/03-send-environment-change-owner-request.png" alt="send environment change owner request" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-transferring/03-send-environment-change-owner-request.png" alt="send environment change owner request" max-width="100%"/>
 
 Klik tombol **Send Request** untuk melanjutkan.
 
 3\. Jika akun target ada dan memenuhi semua persyaratan, Anda akan melihat notifikasi bahwa permintaan telah dikirim.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-transferring/04-transfer-request-sent.png" alt="transfer request sent" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-transferring/04-transfer-request-sent.png" alt="transfer request sent" max-width="100%"/>
 
 :::tip
 Anda bisa membatalkan permintaan dengan tombol berlabel sama kapan pun (kecuali sudah dikonfirmasi).
@@ -76,7 +76,7 @@ Anda bisa membatalkan permintaan dengan tombol berlabel sama kapan pun (kecuali 
 Saat menunggu konfirmasi, environment ditandai dengan ikon khusus di dashboard pemilik awal.
 :::
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-transferring/07-environment-transfer-confirmation-email.png" alt="environment transfer confirmation email" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-transferring/07-environment-transfer-confirmation-email.png" alt="environment transfer confirmation email" max-width="100%"/>
 
 5\. Ketika pengguna target mengkonfirmasi permintaan transfer (mengklik tautan dari email), environment dihapus dari dashboard pengguna awal dan muncul untuk pemilik baru. Notifikasi email tentang transfer yang berhasil akan dikirimkan ke pemilik awal.
 
