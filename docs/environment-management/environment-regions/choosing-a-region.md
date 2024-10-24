@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /choosing-a-region
+slug: /choosing-region
 title: Choosing a Region
 ---
 # Environment Regions

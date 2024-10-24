@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /group-creation
+slug: /environment-group-creation
 title: Group Creation
 ---
 # How to Create Environment Group
