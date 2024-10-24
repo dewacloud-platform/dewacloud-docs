@@ -10,8 +10,8 @@ Dewacloud Application Platform untuk WordPress menyediakan dashboard khusus yang
 
 Di bawah ini, kami akan memberikan ikhtisar tentang:
 
-- [WordPress Dashboard](https://docs.dewacloud.com/#wordpress-dashboard)
-- [Pengaturan Akun](https://docs.dewacloud.com/#account-settings)
+- [WordPress Dashboard](#wordpress-dashboard)
+- [Pengaturan Akun](#account-settings)
 
 ## WordPress Dashboard{#wordpress-dashboard}
 

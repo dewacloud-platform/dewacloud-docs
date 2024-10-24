@@ -10,11 +10,11 @@ Semua proyek WordPress di platform disediakan dengan halaman khusus di mana Anda
 
 Berikut ini, kami telah mengelompokkan semua fungsionalitas yang tersedia untuk proyek di dashboard WordPress ke dalam kelompok berikut:
 
-- [Settings and Basic Actions](https://docs.dewacloud.com/#settings-and-basic-actions)
-- [General Data](https://docs.dewacloud.com/#general-data)
-- [WordPress Plugins](https://docs.dewacloud.com/#wordpress-plugins)
-- [Application Deployment](https://docs.dewacloud.com/#application-deployment)
-- [Environment Management](https://docs.dewacloud.com/#environment-management)
+- [Settings and Basic Actions](#settings-and-basic-actions)
+- [General Data](#general-data)
+- [WordPress Plugins](#wordpress-plugins)
+- [Application Deployment](#application-deployment)
+- [Environment Management](#environment-management)
 
 ## Settings and Basic Actions{#settings-and-basic-actions}
 
@@ -68,7 +68,7 @@ Bagian _**Overview**_ proyek menyediakan data yang paling sering dibutuhkan untu
 
 ![WordPress project domains](#)
 
-Anda dapat mengklik tombol **Edit Domain Name** untuk [menghubungkan custom external domain](https://docs.dewacloud.com/#settings-and-basic-actions).
+Anda dapat mengklik tombol **Edit Domain Name** untuk [menghubungkan custom external domain](#settings-and-basic-actions).
 
 ![project edit domain](#)
 
@@ -76,7 +76,7 @@ Anda dapat mengklik tombol **Edit Domain Name** untuk [menghubungkan custom exte
 
 ![project deployment menu](#)
 
-Pelajari lebih lanjut di bagian [Application Deployment](https://docs.dewacloud.com/#application-deployment).
+Pelajari lebih lanjut di bagian [Application Deployment](#application-deployment).
 
 3. Di bawahnya, platform menampilkan **WordPress version** yang terdeteksi secara otomatis dan menyediakan tautan ke panel admin WordPress.
 
@@ -208,7 +208,7 @@ Tab **Favorites** digunakan untuk akses cepat ke file konfigurasi utama dari nod
 
 ![managing project files](#)
 
-Untuk [lebih banyak opsi manajemen](https://docs.dewacloud.com/#general-data), hubungkan melalui SSH atau lakukan penyesuaian melalui database dan panel admin WordPress.
+Untuk [lebih banyak opsi manajemen](#general-data), hubungkan melalui SSH atau lakukan penyesuaian melalui database dan panel admin WordPress.
 
 ## Baca Juga{#whats-next}
 

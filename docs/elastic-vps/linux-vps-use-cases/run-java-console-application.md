@@ -8,10 +8,10 @@ title: Run Java Console Application
 
 Dalam tutorial ini kami akan meninjau cara menginstal sampel aplikasi konsol Java ke virtual private server [CentOS](https://www.virtuozzo.com/application-platform-docs/vps-centos/) Anda dan memeriksa operasionalitasnya. Untuk itu, Anda perlu menjalankan operasi berikut:
 
-- [menginstal Java](https://docs.dewacloud.com/#install-java)
-- [mengunggah aplikasi](https://docs.dewacloud.com/#upload)
-- [mengakses aplikasi via SSH](https://docs.dewacloud.com/#access-via-ssh)
-- [memeriksa operasionalitas aplikasi](https://docs.dewacloud.com/#operability)
+- [menginstal Java](#install-java)
+- [mengunggah aplikasi](#upload)
+- [mengakses aplikasi via SSH](#access-via-ssh)
+- [memeriksa operasionalitas aplikasi](#operability)
 
 ## Instal Java ke VPS{#install-java-to-vps}
 
