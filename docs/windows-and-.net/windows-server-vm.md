@@ -1,121 +1,90 @@
 ---
-sidebar_position: 3
-slug: /windows-rd-access
-title: Windows RD Access
+sidebar_position: 2
+slug: /windows-server-vm
+title: Windows Server VM
 ---
 
-# Akses Remote Desktop Windows
+# Windows Server VM
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/windows-&-.net/windows-server-vm/01-windows-vm-topology-wizard.png" alt="Windows RDP access" width="100%"/>
+Platform ini mengintegrasikan dukungan untuk virtual machines (VMs), yang memungkinkan menawarkan hosting Windows Server. Dalam panduan ini, kita akan menunjukkan cara membuat Windows VM server dan spesifikasi hosting VMs dibandingkan dengan container biasa yang digunakan di platform.
 
-Semua node berbasis Windows di platform menyediakan dukungan **Remote Desktop Protocol** yang memungkinkan Anda untuk terhubung ke desktop virtual mesin Windows Anda dan melakukan konfigurasi server yang diperlukan melalui itu.
+**Catatan:** Ketersediaan dan versi dari Windows VMs (misalnya, _Windows Server 2019_ atau _2022_) di platform tergantung pada pengaturan penyedia hosting layanan tertentu.
 
-Untuk memastikan kenyamanan maksimal saat menggunakan layanan hosting Windows, platform kami dilengkapi dengan alat RDP terintegrasi - **Guacamole**. Ini adalah gateway remote desktop yang tidak memerlukan klien, yang dijalankan dari dalam web-browser melalui HTML5 dan tidak memerlukan plugin atau software klien tambahan yang terpasang.
+## Membuat Windows VM{#creating-windows-vm}
 
-Selain skenario koneksi default ini, Anda juga dapat menggunakan klien remote desktop lokal pilihan Anda. Di bawah ini, kami akan menjelaskan kedua cara pembentukan koneksi remote desktop secara lebih rinci:
+1. Klik tombol **New Environment** di bagian atas dashboard untuk membuka topology wizard. Perluas bagian VPS untuk menemukan Windows server (label _VM_ membantu memisahkan opsi dari container).
 
-- [RDP Connection via Web Client](https://docs.dewacloud.com/#rdp-connection-via-web-client)
-- [RDP Connection via Local Client](https://docs.dewacloud.com/#rdp-connection-via-local-client)
+![Windows VM topology wizard](#)
 
-## RDP Connection via Web Client{#rdp-connection-via-web-client}
+2. Hanya sumber daya tetap yang tersedia untuk virtual machines, jadi ketika VM dipilih, bagian tengah wizard disesuaikan. Di sini, Anda dapat memilih dari beberapa rencana yang telah ditentukan menggunakan penggeser. Arahkan ke ikon harga untuk melihat semua tarif yang tersedia untuk VM.
 
-Alur kerja yang diperlukan untuk mengakses desktop server serupa untuk semua node Windows VM. Untuk akses instan setelah pembuatan node, Anda dapat menggunakan link Guacamole satu kali yang langsung dari email yang diterima. Jika tidak, operasi yang diperlukan harus dilakukan melalui dashboard.
+![Windows VM resource plans](#)
 
-Mari kita pertimbangkan pada contoh server Windows VM.
+Juga, perhatikan bahwa opsi _[horizontal scaling](https://docs.dewacloud.com/horizontal-scaling/)_ dan _IPv6_ tidak tersedia untuk virtual machines.
 
-1. Perluas daftar **Remote Desktop** yang dikhususkan di sebelah node berbasis Windows (atau layer) dan klik tombol **Open in Browser**.
+3. Jika VM ditambahkan ke topologi, garis tambahan _**VM Resources**_ muncul di bagian kanan wizard (tepat di bawah informasi cloudlets untuk container).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/windows-&-.net/windows-server-vm/02-windows-vm-resource-plans.png" alt="remote desktop menu in dashboard" width="100%"/>
+![VM resources and cost](#)
 
-Opsi lain yang tersedia diperlukan untuk koneksi melalui [klien RDP lokal](https://docs.dewacloud.com/#rdp-connection-via-local-client):
+Biaya dari _VM Resources_ selalu tetap terlepas dari konsumsi aktual dari VMs. Klik **Create** untuk melanjutkan pembuatan environment.
 
-- **Reset RDP Password** untuk mereset dan mengirim ulang kredensial Administrator
-- **Info**, yang menampilkan informasi singkat tentang menetapkan koneksi RDP secara manual
-- **RDP link** untuk menetapkan koneksi RDP melalui klien lokal Anda
+## Mengelola Windows VM{#managing-windows-vm}
 
-2. Koneksi remote desktop akan dibuat dalam tab baru pada browser.
+1. VMs disorot dengan label khusus _**VM**_ dan ikon khusus di kolom **Usage** (karena ikon berbentuk cloudlet tidak sesuai).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/windows-&-.net/windows-server-vm/03-vm-resources-and-cost.png" alt="remote desktop web client access" width="100%"/>
-
-Setelah koneksi dibuat, Anda akan melihat window **Server Manager** terbuka. Sekarang, Anda dapat mulai [mengelola server Anda](https://docs.dewacloud.com/win-vps-roles-features/).
-
-## RDP Connection via Local Client{#rdp-connection-via-local-client}
-
-Jika Anda memilih untuk bekerja dengan klien remote desktop lokal, Anda harus menggunakan kredensial dari notifikasi email yang dikirim kepada Anda selama pembuatan environment yang bersangkutan. Alat yang mungkin ingin Anda gunakan adalah: _Remote Desktop_ (untuk Windows), _KRDC_, _Remina_, atau _RDesktop_ (untuk Linux), _Microsoft Remote Desktop_ (untuk Mac OS X).
-
-Di bawah ini, kami akan menjelaskan contoh bekerja dengan klien RDP paling umum untuk sistem operasi Windows dan berbasis UNIX:
-
-- [Untuk Windows](https://docs.dewacloud.com/#for-windows)
-- [Untuk Linux/MacOS/FreeBSD](https://docs.dewacloud.com/#for-linuxmacosfreebsd)
-
-### Untuk Windows{#for-windows}
-
-1. Dapatkan aplikasi **[Microsoft Remote Desktop](https://www.microsoft.com/en-us/p/microsoft-remote-desktop/9wzdncrfj3ps#activetab=pivot:overviewtab)** dan luncurkan.
-
-2. Klik **Add > PC** di bagian atas window yang terbuka.
-
-<img src="https://assets.dewacloud.com/dewacloud-docs/windows-&-.net/windows-server-vm/04-vm-label-and-resources-icon.png" alt="Windows remote desktop application" width="100%"/>
-
-3. Berikan link koneksi RDP ([endpoint](https://docs.dewacloud.com/endpoints/)) ke dalam field **PC name**.
-
-**Catatan:** Jika [public IP](https://www.virtuozzo.com/application-platform-docs/public-ip/) terpasang ke node Windows VM, itu harus digunakan sebagai pengganti endpoint.
-
-<img src="https://assets.dewacloud.com/dewacloud-docs/windows-&-.net/windows-server-vm/05-vm-current-resource-consumption.png" alt="provide RDP connection link" width="100%"/>
+![VM label and resources icon](#)
 
 :::tip
-Anda dapat memperoleh link yang diperlukan dari email setelah selesai pembuatan atau melalui dashboard: pengaturan environment > endpoints > menu Remote Desktop untuk node.
+Anda dapat mengarahkan kursor ke kolom Usage untuk melihat ikhtisar komprehensif tentang konsumsi saat ini atau merujuk ke node Statistics untuk analisis mendetail.
 :::
 
-4. Klik tombol **+** di samping **User account** dan tentukan kredensial akun Anda (lihat email yang sesuai).
+2. Beberapa [ikon fungsi node](https://www.virtuozzo.com/application-platform-docs/dashboard-guide/#function-icons-for-each-instance) untuk VM sedikit berbeda dibandingkan dengan container. Opsi berikut tersedia:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/windows-&-.net/windows-server-vm/08-vm-statistics-monitoring.png" alt="provide Windows VM access credentials" width="100%"/>
+- **Add-Ons** - menginstal modul pluggable yang tersedia (misalnya, _Env Start/Stop Scheduler_)
+- **Restart Node(s)** - me-restart VM
+- **Statistics** - menunjukkan konsumsi sumber daya VM secara real-time dan historis
+- **Remote Desktop** - terhubung melalui RDP menggunakan web client dan mereset kata sandi RDP
+- **Additionally** - daftar opsi tambahan, seperti informasi node
 
-Klik **Save** dan atur pengaturan tambahan jika diperlukan.
+![VM function icons](#)
 
-Itu saja, koneksi Anda disimpan dalam bagian “**Saved Desktops**”. Klik untuk memulai sesi remote.
+**Catatan:** Opsi **[clone](https://www.virtuozzo.com/application-platform-docs/clone-environment/)** dan **[migration](https://www.virtuozzo.com/application-platform-docs/environment-regions-migration/)** secara otomatis dinonaktifkan untuk lingkungan dengan VMs.
 
-### Untuk Linux/MacOS/FreeBSD{#for-linuxmacosfreebsd}
+![VM clone disabled](#)
 
-Kami memilih utilitas _**rdesktop**_ sebagai contoh klien RD, tetapi Anda dapat menggunakan yang lain (misalnya, _**freerdp**_). Jika Anda belum memiliki alat ini diinstal pada komputer lokal Anda, dapatkan dengan menggunakan perintah yang sesuai sesuai dengan pengelola paket OS Anda (misalnya, _yum -y install rdesktop_ atau _sudo apt-get install rdesktop_).
+Mari kita tinjau opsi-opsi ini secara terperinci.
 
-**Catatan:** Untuk menetapkan koneksi remote melalui alat _**rdesktop**_, Anda perlu menonaktifkan _Network Level Authentication_ di konfigurasi **Remote Desktop** dari node Windows VM.
+3. **Statistics** dikumpulkan dengan cara yang sama seperti untuk container. Namun, CPU diukur dalam _%_ untuk VM (bukan _MHz_).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/windows-&-.net/windows-server-vm/09-vm-node-remote-desktop-options.png" alt="disable network level authentication" width="100%"/>
+![VM statistics monitoring](#)
 
-Jika Anda ingin mempertahankan pengaturan ini diaktifkan, Anda dapat menggunakan alat lain, seperti _**freerdp**_.
+4. Semua konfigurasi aktual dan manajemen aplikasi dilakukan melalui RDP. Gunakan menu **Remote Desktop** yang sesuai untuk:
 
-Kemudian buka terminal emulator Anda dan ikuti langkah berikut:
+- **Open in Browser** - terhubung ke Windows Server melalui RDP menggunakan Guacamole web client, yang memungkinkan mengelola server langsung di browser
+- **Reset RDP Password** - mereset dan mengirim ulang kata sandi pengguna Administrator Windows
+- **Info** - menampilkan instruksi singkat tentang koneksi remote desktop melalui klien RDP lokal
+- **RDP link** - menunjukkan tautan untuk koneksi melalui klien RDP lokal
 
-1. Cara termudah untuk terhubung ke remote desktop  adalah dengan menjalankan perintah berikut:
+![VM node remote desktop options](#)
 
-```
-rdesktop {access_url}
-```
+5. Selain web client bawaan, Anda dapat terhubung menggunakan aplikasi RDP lokal yang Anda pilih. Terhubung ke VM berdasarkan entry point-nya:
 
-di mana _**\{access_url\}**_ adalah URL koneksi untuk akses RDP (bisa dilihat di dashboard atau di dalam email yang diterima), ditentukan tanpa bagian yang mendefinisikan protokol.
+- Jika dibuat __tanpa external IP__, [endpoint](https://docs.dewacloud.com/endpoints/) dibuat secara otomatis dan dapat digunakan untuk koneksi RDP ![Windows VM endpoint for RDP](#)
+  
+- Jika __public IP terpasang__, Anda dapat menggunakannya secara langsung sebagai host VM
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/windows-&-.net/windows-server-vm/10-windows-vm-endpoint-for-rdp.png" alt="Unix RDP access" width="100%"/>
+![Windows VM remote desktop connection](#)
 
-**Catatan:** Sebuah environment dengan server yang dibutuhkan harus memiliki status _Running_; jika tidak, Anda akan menerima error _Unable to connect_.
+Gunakan kredensial administrator dari email untuk melakukan autentikasi dan mulai mengelola Windows Server Anda.
 
-2. Di window yang terbuka, Anda perlu masuk dengan kredensial dari email yang sama.
+6. _vCPU_ dan _Memory_ untuk VM ditagih sebagai satu tarif, sementara _Disk_, _Network_, dan _Options_ ditagih secara terpisah, sama seperti untuk container.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/windows-&-.net/windows-server-vm/11-windows-vm-remote-desktop-connection.png" alt="Unix RDP credentials" width="100%"/>
+![Windows VM billing history](#)
 
-:::note
-Cara lain adalah dengan menentukan login dan kata sandi Anda secara langsung di string koneksi:
-```
-rdesktop -u {username} -p {password} {access_url}
-```
-Dengan cara ini, Anda akan melewati layar login dan akan mengakses desktop segera.
-:::
-
-Setelah otentikasi selesai, Anda akan melihat desktop virtual remote dari node yang diperlukan terbuka.
-
-Sekarang, Anda dapat mulai mengonfigurasi server Anda menggunakan **Server Manager** bawaan.
+Itu semua yang Anda butuhkan untuk mengelola Windows VM di platform. Lihat [dokumentasi resmi Microsoft](https://docs.microsoft.com/en-us/windows-server/) untuk informasi tentang manajemen server itu sendiri.
 
 ## Baca Juga{#whats-next}
 
 - [.NET Core (Beta)](https://docs.dewacloud.com/net-core/)
-- [Windows VM](https://docs.dewacloud.com/win-vm/)
+- [Windows RD Access](https://docs.dewacloud.com/win-rdp-access/)
 - [Windows Roles & Features](https://docs.dewacloud.com/win-vps-roles-features/)
