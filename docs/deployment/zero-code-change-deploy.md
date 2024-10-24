@@ -9,11 +9,11 @@ Berbeda dengan mayoritas layanan hosting, platform ini tidak memaksa pengembang 
 
 Menghilangkan kebutuhan untuk merancang ulang aplikasi, [deployment](<https://docs.dewacloud.com/docs/deployment-guide>) dapat dengan mudah dilakukan menggunakan arsip (zip, tar.gz, war, jar, ear), FTPS/SFTP, GIT/SVN dengan pembaruan otomatis langsung dari panel dev atau melalui plugin terintegrasi untuk Maven, Eclipse, NetBeans, IntelliJ IDEA. Semua ini membuat entry point lebih mudah dan lebih mulus, mengurangi waktu go-to-market dan menghilangkan vendor lock-in.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/deployment/zero_code_change_deploy/18de87dfc80661420d9c28efa4a217551.svg" alt="zero code change deployment sources" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/deployment/zero_code_change_deploy/18de87dfc80661420d9c28efa4a217551.svg" alt="zero code change deployment sources" max-width="100%"/>
 
 Pendekatan zero code change, serta dukungan container aplikasi dan sistem, memungkinkan untuk menjalankan baik microservices cloud-native maupun aplikasi monolith legacy yang berbasis Java, PHP, Ruby, Node.js, Python, dan Docker.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/deployment/zero_code_change_deploy/18de87dfc80661420d9c28efa4a217552.svg" alt="zero code change containers vs VM" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/deployment/zero_code_change_deploy/18de87dfc80661420d9c28efa4a217552.svg" alt="zero code change containers vs VM" max-width="100%"/>
 
 Selain itu, deployment dan pengoperasian aplikasi di dalam container tidak akan dibatasi setelah migrasi dari VM, yang memungkinkan Anda untuk:
 
@@ -33,7 +33,7 @@ Juga, platform ini menjaga IP dan hostname yang sama untuk setiap container sete
 
 Untuk membuat hal di atas lebih jelas, mari kita pertimbangkan beberapa langkah sederhana yang diperlukan untuk deploy proyek di platform:
 
-1\. Buat environment melalui wizard topologi komprehensif dengan berbagai pilihan [software stacks](<https://docs.dewacloud.com/docs/software-stacks-versions>) yang sudah terkonfigurasi sebelumnya (misalnya, application server, database, load balancer, cache, dan build nodes). <img src="https://assets.dewacloud.com/dewacloud-docs/deployment/zero_code_change_deploy/3.png" alt="zero code change create environment" width="100%"/>
+1\. Buat environment melalui wizard topologi komprehensif dengan berbagai pilihan [software stacks](<https://docs.dewacloud.com/docs/software-stacks-versions>) yang sudah terkonfigurasi sebelumnya (misalnya, application server, database, load balancer, cache, dan build nodes). <img src="https://assets.dewacloud.com/dewacloud-docs/deployment/zero_code_change_deploy/3.png" alt="zero code change create environment" max-width="100%"/>
 
 2. Ketika environment yang sesuai sudah dibuat, Anda dapat [deploy aplikasi Anda](<https://docs.dewacloud.com/docs/deployment-guide>) dengan salah satu opsi deployment yang didukung:
      * sediakan arsip (_zip_ , _bzip2_ , _tar_ , _tar.gz_ , _tar.bz2_ , _war_ , _jar_ atau _ear_) dengan resource aplikasi yang sudah dipaketkan sebelumnya dengan mengunggahnya ke platform storage atau memberikan tautan ke lokasi penyimpanannya
