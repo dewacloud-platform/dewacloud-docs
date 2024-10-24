@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-slug: /git-push-deploy-add-on
+slug: /git-push-deploy
 title: Git-Push-Deploy Add-On
 ---
 # Git-Push-Deploy Add-On

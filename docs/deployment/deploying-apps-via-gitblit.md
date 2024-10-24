@@ -1,6 +1,6 @@
 ---
 sidebar_position: 7
-slug: /deploying-apps-via-gitblit
+slug: /gitblit
 title: Deploying Apps via Gitblit
 ---
 # Menyimpan dan Mendeploy Aplikasi melalui Gitblit

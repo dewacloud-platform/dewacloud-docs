@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /zero-code-change-deploy
+slug: /zero-code-change
 title: Zero Code Change Deploy
 ---
 # Zero Code Change Deploy dengan Tanpa Vendor Lock-In untuk Migrasi Lancar antar Platform Cloud

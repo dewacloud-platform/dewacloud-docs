@@ -1,6 +1,6 @@
 ---
 sidebar_position: 6
-slug: /ssh-access-to-git-repository
+slug: /git-ssh
 title: SSH Access to GIT Repository
 ---
 # SSH Access ke Repository GIT
