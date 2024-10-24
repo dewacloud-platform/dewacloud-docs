@@ -5,8 +5,6 @@ title: NGINX ModSecurity
 ---
 # Cara Mengaktifkan ModSecurity Web Application Firewall di dalam Server NGINX
 
-[Gleb Antonov](<https://www.virtuozzo.com/company/blog/author/gleb-antonov/> "Posts by Gleb Antonov") | 5 Februari 2020 | [Containers](<https://docs.dewacloud.com/docs/category/containers/>), [DevOps PaaS](<https://docs.dewacloud.com/docs/category/devops-paas/>), [Installer](<https://docs.dewacloud.com/docs/category/installer/>)
-
 [**ModSecurity**](<https://www.modsecurity.org/>) adalah modul _web application firewall (WAF)_ lintas platform dan open-source yang membantu mendeteksi serta mencegah berbagai serangan terhadap aplikasi web. Modul ini dapat memblokir serangan injeksi kode umum yang memastikan tingkat keamanan server yang lebih tinggi. Modul ini dilengkapi dengan serangkaian aturan untuk skrip situs lintas, injeksi SQL, agen pengguna yang buruk, pembajakan sesi, trojan, dan eksploitasi lainnya.
 
 Stack NGINX bersertifikat Jelastic (server aplikasi dan load balancer) sudah disediakan dengan modul _ModSecurity_ yang telah di-_pre-built_. Anda hanya perlu mengikuti beberapa langkah untuk mengaktifkan fungsi ini di container Anda:
@@ -52,28 +50,3 @@ Sekarang, aplikasi Anda dilindungi dengan ModSecurity.
 <img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/nginx%20modsecurity/modsecurity-nginx-waf-log.png" alt="modsecurity nginx waf log" width="100%"/>
 
 Seperti yang Anda lihat, ModSecurity telah aktif dan bekerja untuk menjaga keamanan aplikasi web Anda.
-
-Mulai uji coba gratis dan pastikan perlindungan tingkat tinggi saat menjalankan proyek Anda dengan [Jelastic Multi-Cloud PaaS](<https://jelastic.com/>).
-
-#### **Artikel Terkait**
-
-##### [Two-Factor Authentication for Extra Security in the Cloud](<https://docs.dewacloud.com/docs/two-factor-authentication/>)
-
-##### [Basic Security for Your Application with NGINX Balancer](<https://docs.dewacloud.com/docs/basic-security-application-nginx-balancer/>)
-
-##### [HTTP/3 Premium CDN Setup for Magento Cloud Hosting](<https://docs.dewacloud.com/docs/cdn-http3-premium-magento/>)
-
-[Subscribe](</newsletter-subscription/>) Search
-
-## Categories
-
-  * [IaaS](</company/blog/category/iaas/>)
-  * [DevOps PaaS](</company/blog/category/devops-paas/>)
-  * [WordPress](</company/blog/category/wordpress/>)
-  * [Kubernetes](</company/blog/category/kubernetes/>)
-  * [Storage](</company/blog/category/storage/>)
-  * [Multi-Cloud](</company/blog/category/multi-cloud/>)
-  * [Webinars](</company/blog/category/video/webinars/>)
-  * [Case Studies](</company/blog/category/case-studies/>)
-  * [Product Updates](</company/blog/category/product-updates/>)
-  * [News](</company/blog/category/news/>) 

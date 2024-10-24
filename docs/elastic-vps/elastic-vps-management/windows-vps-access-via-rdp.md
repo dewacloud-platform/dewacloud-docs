@@ -14,8 +14,8 @@ Untuk memastikan kenyamanan maksimal saat menggunakan layanan hosting Windows, p
 
 Selain skenario koneksi default ini, Anda juga dapat menggunakan klien desktop oftware lokal pilihan Anda. Di bawah ini, kami akan menjelaskan kedua cara pembentukan koneksi desktop jarak jauh secara lebih rinci:
 
-- [RDP Connection via Web Client](https://docs.dewacloud.com/#rdp-connection-via-web-client)
-- [RDP Connection via Local Client](https://docs.dewacloud.com/#rdp-connection-via-local-client)
+- [RDP Connection via Web Client](#rdp-connection-via-web-client)
+- [RDP Connection via Local Client](#rdp-connection-via-local-client)
 
 ## RDP Connection via Web Client{#rdp-connection-via-web-client}
 
@@ -27,7 +27,7 @@ Mari kita pertimbangkan pada contoh server Windows VM.
 
 ![remote desktop menu in dashboard](#)
 
-Opsi lain yang tersedia diperlukan untuk koneksi melalui [klien RDP lokal](https://docs.dewacloud.com/#rdp-connection-via-local-client):
+Opsi lain yang tersedia diperlukan untuk koneksi melalui [klien RDP lokal](#rdp-connection-via-local-client):
 
 - **Reset RDP Password** untuk mereset dan mengirim ulang kredensial Administrator
 - **Info**, yang menampilkan informasi singkat tentang menetapkan koneksi RDP secara manual
@@ -45,8 +45,8 @@ Jika Anda memilih untuk bekerja dengan klien remote desktop lokal, Anda harus me
 
 Di bawah ini, kami akan menjelaskan contoh bekerja dengan klien RDP paling umum untuk sistem operasi Windows dan berbasis UNIX:
 
-- [Untuk Windows](https://docs.dewacloud.com/#for-windows)
-- [Untuk Linux/MacOS/FreeBSD](https://docs.dewacloud.com/#for-linuxmacosfreebsd)
+- [Untuk Windows](#for-windows)
+- [Untuk Linux/MacOS/FreeBSD](#for-linuxmacosfreebsd)
 
 ### Untuk Windows{#for-windows}
 

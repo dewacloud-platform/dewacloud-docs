@@ -8,9 +8,9 @@ title: VPS Configuration
 
 Semua jenis virtual private server yang didukung di Dewacloud (yaitu, berdasarkan _CentOS_, _Ubuntu_, dan _Debian_) memiliki alur instalasi serupa dan opsi manajemen utama yang sama. Jadi, untuk mendapatkan Elastic VPS Anda di-host dan dikonfigurasi di Dewacloud, ikuti instruksi berikut tentang cara:
 
-- [membuat VPS](https://docs.dewacloud.com/#elastic-vps-installation)
-- [menaikkan skala server](https://docs.dewacloud.com/#elastic-vps-scaling)
-- [mengelola instance](https://docs.dewacloud.com/#elastic-vps-inbuilt-tools)
+- [membuat VPS](#elastic-vps-installation)
+- [menaikkan skala server](#elastic-vps-scaling)
+- [mengelola instance](#elastic-vps-inbuilt-tools)
 
 ## Instalasi Elastic VPS{#elastic-vps-installation}
 
@@ -28,7 +28,7 @@ Untuk mengatur VPS Anda di dalam platform, ikuti langkah-langkah berikut.
 <img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/vps-config-2.png" alt="elastic vps topology wizard" width="100%"/>
 </p>
 
-Tentukan batasan cloudlet untuk node ini, [tambahkan scaling limit](https://docs.dewacloud.com/#elastic-vps-scaling) jika diperlukan, pilih [region](https://docs.dewacloud.com/environment-regions/) yang diinginkan, ketik nama environment dan klik pada **Create**.
+Tentukan batasan cloudlet untuk node ini, [tambahkan scaling limit](#elastic-vps-scaling) jika diperlukan, pilih [region](https://docs.dewacloud.com/environment-regions/) yang diinginkan, ketik nama environment dan klik pada **Create**.
 
 3. Dalam beberapa saat, environment baru Anda dengan virtual server yang dipilih akan muncul di dashboard. Anda juga akan menerima notifikasi email dengan data administrasi (kredensial login/password dan URL akses).
 
