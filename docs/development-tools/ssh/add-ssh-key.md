@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-slug: /add-ssh-key
+slug: /ssh-add-key
 title: Add SSH Key
 ---
 # Add SSH Key

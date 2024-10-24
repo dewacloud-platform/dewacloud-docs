@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /platform-cli-overview
+slug: /cli
 title: Platform CLI Overview
 ---
 # Platform CLI Overview

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /generate-ssh-key
+slug: /ssh-generate-key
 title: Generate SSH Key
 ---
 # Generate SSH Key

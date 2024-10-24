@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /ssh-overview
+slug: /ssh-gate
 title: SSH Overview
 ---
 # SSH Gate Overview

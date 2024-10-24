@@ -1,6 +1,6 @@
 ---
 sidebar_position: 12
-slug: /installing-jps
+slug: /cli-install-jps
 title: Installing JPS
 ---
 # CLI Tutorial: Server Scaling

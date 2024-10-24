@@ -1,6 +1,6 @@
 ---
 sidebar_position: 10
-slug: /vcs-project-deployment
+slug: /cli-vcs-deploy
 title: VCS Project Deployment
 ---
 # CLI Tutorial: VCS Project Deployment

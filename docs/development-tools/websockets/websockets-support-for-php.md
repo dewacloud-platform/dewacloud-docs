@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-slug: /websockets-support-for-php
+slug: /websockets-php
 title: WebSockets Support for PHP
 ---
 # Dukungan WebSockets untuk Apache & NGINX

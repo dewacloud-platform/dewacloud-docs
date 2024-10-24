@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /ssh-access
+slug: /ssh-access-overview
 title: Overview
 ---
 # SSH Access

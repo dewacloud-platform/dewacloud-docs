@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-slug: /createenv-params
+slug: /create-env-params
 title: CreateEnv Params
 ---
 # Parameter untuk API CreateEnvironment
