@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /dependency-management
+slug: /ruby-dependency-management
 title: Dependency Management
 ---
 # Ruby Dependency Management

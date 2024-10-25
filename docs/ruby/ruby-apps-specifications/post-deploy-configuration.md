@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /post-deploy-configuration
+slug: /ruby-post-deploy-configuration
 title: Post Deploy Configuration
 ---
 # Ruby Post Deploy Configuration
