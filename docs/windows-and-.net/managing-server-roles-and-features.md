@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-slug: /managing-server-roles-and-features
+slug: /win-vps-roles-features
 title: Managing Server Roles & Features
 ---
 
