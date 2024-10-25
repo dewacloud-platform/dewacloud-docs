@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /package-managers
+slug: /nodejs-package-managers
 title: Package Managers
 ---
 
