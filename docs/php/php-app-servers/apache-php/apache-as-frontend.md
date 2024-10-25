@@ -1,6 +1,6 @@
 ---
 sidebar_position: 8
-slug: /apache-as-frontend
+slug: /tomcat-behind-apache
 title: Apache as Frontend
 ---
 # Apache as Frontend of Tomcat
