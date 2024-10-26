@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-slug: /ports
+slug: /container-ports
 title: Ports
 ---
 

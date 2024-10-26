@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-slug: /access-to-admin-panel
+slug: /admin-access
 title: Access to Admin Panel
 ---
 

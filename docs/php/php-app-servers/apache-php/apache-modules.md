@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-slug: /apache-modules
+slug: /apache-nginx-modules
 title: Apache Modules
 ---
 # Apache & NGINX Modules

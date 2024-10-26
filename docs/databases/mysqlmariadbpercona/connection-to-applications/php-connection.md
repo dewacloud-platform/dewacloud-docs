@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /php-connection
+slug: /connection-to-mysql-php
 title: PHP Connection
 ---
 # Connection to MySQL/MariaDB/Percona for PHP

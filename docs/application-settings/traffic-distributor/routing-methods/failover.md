@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-slug: /failover
+slug: /failover-traffic-routing
 title: Failover
 ---
 

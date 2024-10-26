@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-slug: /import-environment
+slug: /environment-import
 title: Import Environment
 ---
 # Environment Import

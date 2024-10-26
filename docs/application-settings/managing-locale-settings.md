@@ -1,6 +1,6 @@
 ---
 sidebar_position: 12
-slug: /managing-locale-settings
+slug: /locale-settings
 title: Managing Locale Settings
 ---
 # Managing Locale Settings

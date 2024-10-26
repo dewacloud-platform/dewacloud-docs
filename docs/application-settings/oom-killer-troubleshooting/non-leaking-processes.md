@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-slug: /non-leaking-processes
+slug: /oom-killer-non-leaking-processes
 title: Non-Leaking Processes
 ---
 # OOM Killer Resolutions: Non-Leaking Processes

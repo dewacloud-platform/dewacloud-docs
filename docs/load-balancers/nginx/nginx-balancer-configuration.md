@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-slug: /nginx-balancer-configuration
+slug: /nginx-balancer-config
 title: NGINX Balancer Configuration
 ---
 # NGINX Balancer Configuration

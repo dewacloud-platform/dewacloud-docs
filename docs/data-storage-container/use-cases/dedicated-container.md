@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-slug: /dedicated-container
+slug: /dedicated-storage
 title: Dedicated Container
 ---
 

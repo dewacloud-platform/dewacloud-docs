@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-slug: /lemp-and-llsmp
+slug: /lemp-llsmp
 title: LEMP & LLSMP
 ---
 # LEMP (LLSMP) Application Server

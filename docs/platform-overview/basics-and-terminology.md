@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /paas-components-definition
+slug: /concept-and-terminology
 title: Basics & Terminology
 ---
 # PaaS: Basic Concepts and Terminology{#paas-basic-concepts-and-terminology}

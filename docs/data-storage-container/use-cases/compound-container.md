@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-slug: /compound-container
+slug: /compound-container-storage
 title: Compound Container
 ---
 

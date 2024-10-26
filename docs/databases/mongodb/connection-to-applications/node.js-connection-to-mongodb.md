@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-slug: /node.js-connection-to-mongodb
+slug: /connection-to-mongodb-nodejs
 title: Node.js Connection to MongoDB
 ---
 # Node.js Application Connection to MongoDB

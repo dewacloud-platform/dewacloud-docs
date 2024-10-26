@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /charged-resources
+slug: /chargeable-resources
 title: Charged Resources
 ---
 # Charged Resources

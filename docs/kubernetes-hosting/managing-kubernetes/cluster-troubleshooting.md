@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-slug: /cluster-troubleshooting
+slug: /kubernetes-troubleshooting
 title: Cluster Troubleshooting
 ---
 # Kubernetes Cluster: Troubleshooting{#kubernetes-cluster-troubleshooting}

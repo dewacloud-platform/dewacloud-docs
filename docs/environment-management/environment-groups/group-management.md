@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-slug: /group-management
+slug: /environment-groups-management
 title: Group Management
 ---
 # Environment Groups Management: How to Assign, Edit & Remove

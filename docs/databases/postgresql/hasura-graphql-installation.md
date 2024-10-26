@@ -1,6 +1,6 @@
 ---
 sidebar_position: 8
-slug: /hasura-graphql-installation
+slug: /hasura
 title: Hasura GraphQL Installation
 ---
 # How to Install Hasura GraphQL Engine

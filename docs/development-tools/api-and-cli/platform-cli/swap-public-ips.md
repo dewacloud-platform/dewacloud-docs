@@ -1,6 +1,6 @@
 ---
 sidebar_position: 11
-slug: /swap-public-ips
+slug: /cli-ip-swap
 title: Swap Public IPs
 ---
 # CLI Tutorial: Public IPs (External Addresses) Swap

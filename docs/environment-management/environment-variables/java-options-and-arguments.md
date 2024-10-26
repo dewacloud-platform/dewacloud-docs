@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /java-options-and-arguments
+slug: /java-options-arguments
 title: Java Options and Arguments
 ---
 # Opsi dan Argumen Java

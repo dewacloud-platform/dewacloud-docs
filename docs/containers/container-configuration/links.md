@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-slug: /links
+slug: /container-links
 title: Links
 ---
 

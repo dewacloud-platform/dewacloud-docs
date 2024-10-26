@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /variables
+slug: /container-variables
 title: Variables
 ---
 

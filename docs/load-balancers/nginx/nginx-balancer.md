@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /nginx-balancer
+slug: /nginx-load-balancer
 title: NGINX Balancer
 ---
 # NGINX Load Balancer

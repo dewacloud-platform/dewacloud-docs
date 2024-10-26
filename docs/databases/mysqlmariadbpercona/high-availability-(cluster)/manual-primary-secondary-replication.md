@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /manual-primary-secondary-replication
+slug: /database-primary-secondary-replication
 title: Manual Primary-Secondary Replication
 ---
 # MySQL/MariaDB/Percona Database Primary-Secondary Replication

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /windows-server-vm
+slug: /win-vm
 title: Windows Server VM
 ---
 

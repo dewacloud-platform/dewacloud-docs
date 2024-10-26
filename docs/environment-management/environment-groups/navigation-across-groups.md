@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-slug: /navigation-across-groups
+slug: /environment-groups-navigation
 title: Navigation Across Groups
 ---
 # Navigation Across Environment Groups

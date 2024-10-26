@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /collaboration-overview
+slug: /account-collaboration
 title: Collaboration Overview
 ---
 # Account Collaboration

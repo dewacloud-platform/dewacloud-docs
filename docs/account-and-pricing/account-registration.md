@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /account-registration
+slug: /account
 title: Account Registration
 ---
 # Account Management

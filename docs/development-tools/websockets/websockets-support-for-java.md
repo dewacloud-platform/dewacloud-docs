@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /websockets-support-for-java
+slug: /websockets-java
 title: WebSockets Support for Java
 ---
 # Dukungan WebSockets untuk Java

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /environment-creation
+slug: /cli-create-environment
 title: Environment Creation
 ---
 # CLI Tutorial: Environment Creation

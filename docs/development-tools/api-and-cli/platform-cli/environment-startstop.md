@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-slug: /environment-startstop
+slug: /cli-environment-control
 title: Environment Start/Stop
 ---
 # CLI Tutorial: Environment Start/Stop

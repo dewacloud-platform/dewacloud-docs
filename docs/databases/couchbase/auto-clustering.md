@@ -5,7 +5,6 @@ title: Auto-Clustering
 ---
 # Cluster Couchbase Otomatis Scalable dalam Kontainer: Penyebaran Satu Klik ke Cloud
 
-
 ![couchbase auto scaling](#)
 
 Membangun dan menjalankan aplikasi kompleks yang mampu menangani data tidak terstruktur dan melayani banyak pengguna yang tersebar secara global adalah apa yang dibutuhkan perusahaan untuk menjadi gesit dan tangguh. Dalam menghadapi kebutuhan manajemen data yang muncul, banyak perusahaan lebih memilih teknologi penyimpanan data NoSQL sebagai solusi yang memberikan tingkat skala, kecepatan, dan variabilitas data yang substansial.
@@ -76,4 +75,4 @@ Di halaman awal yang terbuka, Anda akan melihat _Cluster Overview_ umum, yang te
 
 Untuk panduan terperinci tentang bekerja dengan Couchbase Web Console, lihat [dokumentasi resmi](<https://docs.couchbase.com/server/current/introduction/intro.html>).
 
-Sekarang, ketika cluster sudah berjalan, ia dapat melayani aplikasi Anda sebagai penyimpanan data yang sangat tersedia dan elastis - detail tentang cara mengatur interaksi yang tepat antara keduanya akan dipertimbangkan dalam salah satu artikel mendatang.
+Sekarang, ketika cluster sudah berjalan, ia dapat melayani aplikasi Anda sebagai penyimpanan data yang sangat tersedia dan elastis. 

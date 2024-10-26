@@ -1,6 +1,6 @@
 ---
 sidebar_position: 6
-slug: /run-configuration
+slug: /container-run-configuration
 title: Run Configuration
 ---
 

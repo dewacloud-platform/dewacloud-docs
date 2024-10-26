@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /export-environment
+slug: /environment-export
 title: Export Environment
 ---
 # Environment Export
