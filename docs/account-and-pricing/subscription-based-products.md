@@ -1,6 +1,6 @@
 ---
 sidebar_position: 7
-slug: /subscription-based-products
+slug: /subscription-products
 title: Subscription-Based Products
 ---
 # Subscription-Based Products
