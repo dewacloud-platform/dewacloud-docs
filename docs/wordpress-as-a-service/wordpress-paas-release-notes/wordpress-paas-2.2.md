@@ -18,7 +18,7 @@ Diimplementasikan kemungkinan untuk mengisi saldo akun dari dashboard [Pelajari 
 
 ## Bayar Faktur dari Dashboard{#pay-invoices-from-dashboard}
 
-Ditambahkan tombol untuk membayar faktur yang terbuka atau kadaluwarsa [Pelajari lebih lanjut](https://docs.dewacloud.com/#pay-invoices-from-dashboard)
+Ditambahkan tombol untuk membayar faktur yang terbuka atau kadaluwarsa [Pelajari lebih lanjut](#pay-invoices-from-dashboard)
 
 ## Restart untuk Cluster Nodes{#restart-for-cluster-nodes}
 
@@ -26,11 +26,11 @@ Diimplementasikan fungsionalitas untuk merestart node terpisah dan kelompok node
 
 ## Peningkatan Halaman Informasi Pengguna{#user-information-page-improvements}
 
-Diperbarui bagian informasi pengguna dan ditambahkan tabel batasan akun [Pelajari lebih lanjut](https://docs.dewacloud.com/#user-information-page-improvements)
+Diperbarui bagian informasi pengguna dan ditambahkan tabel batasan akun [Pelajari lebih lanjut](#user-information-page-improvements)
 
 ## Manajemen Git Repositories{#git-repositories-management}
 
-Ditambahkan opsi untuk mengedit dan menghapus catatan Git repository yang sudah ada [Pelajari lebih lanjut](https://docs.dewacloud.com/#git-repositories-management)
+Ditambahkan opsi untuk mengedit dan menghapus catatan Git repository yang sudah ada [Pelajari lebih lanjut](#git-repositories-management)
 
 ## Konfirmasi Tindakan Invasif{#invasive-actions-confimation}
 
@@ -56,7 +56,7 @@ Metode pembayaran dan informasi penagihan secara umum dikelola di sistem penagih
 
 [Informasi lebih lanjut](https://docs.dewacloud.com/wp-dashboard-overview/)
 
-[Kembali ke atas](https://docs.dewacloud.com/#back)
+
 
 ## Bayar Faktur dari Dashboard{#pay-invoices-from-dashboard}
 
@@ -68,7 +68,7 @@ Klik tombol bayar untuk melihat jendela konfirmasi yang akan menunjukkan semua d
 
 [Informasi lebih lanjut](https://docs.dewacloud.com/wp-dashboard-overview/#account-settings)
 
-[Kembali ke atas](https://docs.dewacloud.com/#back)
+
 
 ## Peningkatan Halaman Informasi Pengguna{#user-information-page-improvements}
 
@@ -85,7 +85,7 @@ Saat bekerja dengan platform, beberapa fitur dapat sepenuhnya atau sebagian diba
 
 [Informasi lebih lanjut](https://docs.dewacloud.com/wp-dashboard-overview/#account-settings)
 
-[Kembali ke atas](https://docs.dewacloud.com/#back)
+
 
 ## Restart untuk Cluster Nodes{#restart-for-cluster-nodes}
 
@@ -97,7 +97,7 @@ Selain itu, saat merestart seluruh kelompok dengan beberapa node, Anda akan mend
 
 ![restart nodes dialog](#)
 
-[Kembali ke atas](https://docs.dewacloud.com/#back)
+
 
 ## Manajemen Git Repositories{#git-repositories-management}
 
@@ -110,7 +110,7 @@ Platform WordPress PaaS memungkinkan Anda [mendeploy proyek WordPress kustom](ht
 
 [Informasi lebih lanjut](https://docs.dewacloud.com/wp-dashboard-overview/#account-settings)
 
-[Kembali ke atas](https://docs.dewacloud.com/#back)
+
 
 ## Konfirmasi Tindakan Invasif{#invasive-actions-confimation}
 
@@ -123,7 +123,7 @@ Dalam rilis platform 2.2 saat ini, dialog konfirmasi ditambahkan untuk semua tin
 
 ![09-action-confirmation.png](#)
 
-[Kembali ke atas](https://docs.dewacloud.com/#back)
+
 
 ## Data Penggunaan Paket Layanan{#service-plan-usage-data}
 
@@ -131,4 +131,3 @@ Untuk memberikan kejelasan yang lebih baik saat melacak jumlah paket layanan yan
 
 ![subscription usage data](#)
 
-[Kembali ke atas](https://docs.dewacloud.com/#back)

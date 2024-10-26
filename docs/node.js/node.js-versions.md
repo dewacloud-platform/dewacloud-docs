@@ -18,7 +18,7 @@ Platform ini memungkinkan untuk memilih sebelumnya rilis server aplikasi NodeJS 
 
 Daftar rilis terbaru yang tersedia di platform disediakan melalui dokumen [Software Stack Versions](https://docs.dewacloud.com/software-stacks-versions/#engines) yang diperbarui secara reguler (mingguan).
 
-Versi Node.js yang diperlukan dapat dipilih saat membuat [environment baru](https://docs.dewacloud.com/#create-nodejs-environment), serta diubah untuk [yang sudah ada](https://docs.dewacloud.com/#change-nodejs-version).
+Versi Node.js yang diperlukan dapat dipilih saat membuat [environment baru](#create-nodejs-environment), serta diubah untuk [yang sudah ada](#change-nodejs-version).
 
 ## Membuat Environment Node.js{#create-nodejs-environment}
 

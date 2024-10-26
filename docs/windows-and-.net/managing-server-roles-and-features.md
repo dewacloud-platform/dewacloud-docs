@@ -13,8 +13,8 @@ title: Managing Server Roles & Features
 
 Untuk mengkonfigurasi virtual private server Windows via RDP, Server Manager bawaan digunakan. Di bawah ini kami soroti beberapa fungsionalitas dasar yang disediakan:
 
-- [menetapkan peran server](https://docs.dewacloud.com/#set-windows-vm-roles)
-- [menambahkan fitur server](https://docs.dewacloud.com/#add-features-to-windows-server-roles)
+- [menetapkan peran server](#set-windows-vm-roles)
+- [menambahkan fitur server](#add-features-to-windows-server-roles)
 
 ## Menetapkan Peran Windows VM{#set-windows-vm-roles}
 

@@ -98,13 +98,3 @@ Untuk keluar dari dashboard, klik login Anda di sudut kanan atas dan pilih opsi 
 ![PaaS account sign out](#)
 
 Kami menyarankan Anda untuk keluar dari akun PaaS Anda setelah menyelesaikan sesi manajemen dan konfigurasi Anda.
-
-## Baca Juga{#whats-next}
-
-  * [Account Types](https://docs.dewacloud.com/docs/types-of-accounts/)
-  * [Account Statuses](https://docs.dewacloud.com/docs/account-statuses/)
-  * [Account Password Reset](https://docs.dewacloud.com/docs/account-password-reset/)
-  * [Two-Factor Authentication](https://docs.dewacloud.com/docs/two-factor-authentication/)
-  * [Personal Access Tokens](https://docs.dewacloud.com/docs/personal-access-tokens/)
-  * [Accounts Collaboration](https://docs.dewacloud.com/docs/account-collaboration/)
-  * [Dashboard Guide](https://docs.dewacloud.com/docs/dashboard-guide/)
