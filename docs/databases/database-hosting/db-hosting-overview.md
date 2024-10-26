@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /db-hosting
+slug: /database-hosting
 title: DB Hosting Overview
 ---
 # Database Hosting
