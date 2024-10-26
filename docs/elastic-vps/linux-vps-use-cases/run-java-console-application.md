@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /run-java-console-application
+slug: /vps-standalone-application
 title: Run Java Console Application
 ---
 
