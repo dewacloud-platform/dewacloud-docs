@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /java-connection-to-mongodb
+slug: /connection-to-mongodb-java
 title: Java Connection to MongoDB
 ---
 # Java Connection to MongoDB

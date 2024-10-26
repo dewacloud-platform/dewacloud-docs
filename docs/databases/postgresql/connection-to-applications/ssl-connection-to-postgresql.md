@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-slug: /ssl-connection-to-postgresql
+slug: /ssl-for-pgsql
 title: SSL Connection to PostgreSQL
 ---
 # Establishing SSL Connection to PostgreSQL DB Server

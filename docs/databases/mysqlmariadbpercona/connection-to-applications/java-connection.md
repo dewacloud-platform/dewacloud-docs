@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /connection-to-mysql
+slug: /connection-to-mysql-java
 title: Java Connection
 ---
 # Java Connection to MariaDB/MySQL/Percona

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 7
-slug: /postgis-extension
+slug: /postgis-extension-to-postgresql-for-geoserver-hosting
 title: PostGIS Extension
 ---
 # PostGIS Extension to PostgreSQL Database for Hosting GeoServer

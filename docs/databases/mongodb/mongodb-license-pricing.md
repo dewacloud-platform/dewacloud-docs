@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-slug: /mongodb-license-pricing
+slug: /mongodb-license
 title: MongoDB License Pricing
 ---
 # MongoDB License Pricing

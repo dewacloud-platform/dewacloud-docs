@@ -1,6 +1,6 @@
 ---
 sidebar_position: 6
-slug: /database-connection-via-jndi
+slug: /connection-to-db-via-jndi
 title: Database Connection via JNDI
 ---
 

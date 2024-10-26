@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /php-connection-to-postgresql
+slug: /connection-to-postgresql-php
 title: PHP Connection to PostgreSQL
 ---
 # Connection to PostgreSQL for PHP Applications
