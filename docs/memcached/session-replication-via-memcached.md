@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-slug: /session-replication-via-memcached
+slug: /replication-memcached
 title: Session Replication via Memcached
 ---
 
