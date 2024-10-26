@@ -1,6 +1,6 @@
 ---
 sidebar_position: 6
-slug: /external-nfs-server-configuration
+slug: /configure-external-nfs-server
 title: External NFS Server Configuration
 ---
 

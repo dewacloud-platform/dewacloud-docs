@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-slug: /external-server
+slug: /external-nfs-storage
 title: External Server
 ---
 

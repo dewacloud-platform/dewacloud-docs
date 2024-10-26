@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /exporting-data-for-sharing
+slug: /storage-exports
 title: Exporting Data for Sharing
 ---
 

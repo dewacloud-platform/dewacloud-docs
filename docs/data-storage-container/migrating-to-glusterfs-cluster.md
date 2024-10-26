@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-slug: /migrating-to-glusterfs-cluster
+slug: /migrating-standalone-storage-to-cluster
 title: Migrating to GlusterFS Cluster
 ---
 

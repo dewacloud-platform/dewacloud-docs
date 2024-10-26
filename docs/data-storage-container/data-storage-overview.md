@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /data-storage-overview
+slug: /data-storage-container-overview
 title: Data Storage Overview
 ---
 

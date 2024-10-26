@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
-slug: /master-container
-title: Master Container
+slug: /primary-container-storage
+title: Primary (Master) Container
 ---
 
 # Penyimpanan Data di Master Container
