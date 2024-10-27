@@ -13,7 +13,7 @@ title: Java Connection to MongoDB
 
 2\. [Buat environment](<https://docs.dewacloud.com/docs/setting-up-environment/>) dengan instance **MongoDB** (tersedia dalam bagian _NoSQL_). Server aplikasi yang Anda pilih untuk diterapkan dapat ditempatkan dalam environment yang sama atau terpisah (sebagai contoh, kami telah menambahkan _Tomcat_):
 
-![create mongodb environment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/connection-to-applications/java-connection/java-connection-1.png" alt="create mongodb environment" width="100%"/>
 
 Klik **Create** dan tunggu beberapa menit untuk environment Anda muncul di dashboard.
 
@@ -21,23 +21,23 @@ Klik **Create** dan tunggu beberapa menit untuk environment Anda muncul di dashb
 
 1\. Periksa kotak masuk email Anda - seharusnya terdapat pesan dengan rincian database:
 
-![email mongo credentials](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/connection-to-applications/java-connection/java-connection-2.png" alt="email mongo credentials" width="100%"/>
 
 2\. Klik tombol **Open in browser** untuk node _MongoDB_ di dalam dashboard Anda atau gunakan _Access URL_ dari email untuk mengakses panel admin database.
 
-![mongo admin panel log in](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/connection-to-applications/java-connection/java-connection-3.png" alt="mongo admin panel log in" width="70%"/>
 
 Masuk menggunakan kredensial yang telah disebutkan di atas.
 
 3\. Buat database baru dengan beralih ke tab **Databases** dan mengetikkan _Name_ untuknya (misalnya, _mongodb-connect_) dalam formulir _**Create Database**_.
 
-![create database](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/connection-to-applications/java-connection/java-connection-4.png" alt="create database" width="100%"/>
 
 Klik **Save** untuk melanjutkan.
 
 4\. Selanjutnya, Anda perlu membuat pengguna untuk DB ini - oleh karena itu, navigasikan ke tab **Execute** dan pilih database yang baru Anda buat melalui daftar drop-down yang sesuai.
 
-![execute command](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/connection-to-applications/java-connection/java-connection-5.png" alt="execute command" width="100%"/>
 
 Kemudian ketik perintah berikut dalam kolom input di atas:
 
@@ -61,7 +61,7 @@ Anda dapat menentukan semua data yang diperlukan untuk koneksi langsung di dalam
 
 Klik tombol **Config** di sebelah server aplikasi Anda dalam environment yang sesuai (_Tomcat_ dalam kasus kami).
 
-![environment node config](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/connection-to-applications/java-connection/java-connection-6.png" alt="environment node config" width="100%"/>
 
 Dalam tab yang terbuka, buat file _**mydb.cfg**_ baru di dalam direktori **home** dan tentukan string berikut di sana:
 
@@ -72,7 +72,7 @@ user={user_name}
 password={password}
 ```
 
-![database connection data](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/connection-to-applications/java-connection/java-connection-7.png" alt="database connection data" width="100%"/>
 
 di mana:
 
@@ -149,7 +149,7 @@ public class MongoManager {
 
 Untuk pengujian, Anda dapat mencoba proyek [mongoclient.war](<https://www.virtuozzo.com/application-platform-docs/connection-to-mongodb-java/mongoclient.zip>) yang siap pakai, yang sudah berisi driver konektor yang sesuai (atau unduh [sumbernya](<https://www.virtuozzo.com/application-platform-docs/connection-to-mongodb-java/mongoclient.zip>) dan sesuaikan dengan cara yang Anda inginkan).
 
-![upload application](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/connection-to-applications/java-connection/java-connection-8.png" alt="upload application" width="100%"/>
 
 :::note
 Untuk menghubungkan proyek Anda sendiri ke database MongoDB Anda, Anda perlu mengunggah perpustakaan _mongo-java-driver.jar_ yang sesuai ke folder _webapps/\{app_context\}/WEB-INF/lib_ dari server aplikasi Anda dengan aplikasi terdistribusi.
@@ -157,19 +157,19 @@ Untuk menghubungkan proyek Anda sendiri ke database MongoDB Anda, Anda perlu men
 
 3\. Sebagai hasilnya, Anda akan mendapatkan environment yang mirip dengan yang ada di bawah ini:
 
-![application deployed](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/connection-to-applications/java-connection/java-connection-9.png" alt="application deployed" width="100%"/>
 
 ## Connection Check Up{#connection-check-up}
 
 1\. Klik **Open in Browser** di sebelah environment Anda dengan aplikasi contoh yang terdistribusi. Anda akan melihat jendela baru terbuka dengan formulir _**MongoDB Manager**_ yang sederhana ditampilkan.
 
-![mongo manager application](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/connection-to-applications/java-connection/java-connection-10.png" alt="mongo manager application" width="70%"/>
 
 Ketik jumlah baris yang diinginkan (untuk ditambahkan ke database terkait) ke kolom yang sesuai dan klik tombol **Insert rows**.
 
 2\. Tunggu sebentar sampai halaman berhenti diperbarui dan kembali ke panel admin MongoDB.
 
-![check mycollection](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/connection-to-applications/java-connection/java-connection-11.png" alt="check mycollection" width="100%"/>
 
 Navigasi ke database _mongodb-connect_ dalam daftar di sebelah kiri dan periksa koleksi baru _**mycollection**_ di dalamnya - seharusnya termasuk jumlah catatan yang disebutkan di atas, _5_ dalam kasus kami.
 

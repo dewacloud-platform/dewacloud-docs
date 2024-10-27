@@ -73,7 +73,7 @@ $ mysqld --wsrep-recover
 
 Cari output data _**Recovered position**_ - periksa nilai di akhir baris setelah tanda titik dua (_85340_ dalam contoh di bawah):
 
-![Galera cluster recovered position](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/galera-cluster-recovery-1/galera-cluster-recovery-1.png" alt="Galera cluster recovered position" width="100%"/>
 
 ```
 .... 2020-12-24 10:51:15 0 [Note] WSREP: Recovered position: e94ca741-44f5-11eb-9bc4-b2e17ef1657d:85340 ....

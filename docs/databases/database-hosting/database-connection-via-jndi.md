@@ -18,7 +18,7 @@ Mari kita lakukan langkah demi langkah:
 
 1. Buat environment dengan database (MySQL dalam contoh ini):
 
-   ![environment with MySQL](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/connection-to-db-using-jnbi/jnbi-connection-1.png" alt="environment with MySQL" width="70%"/>
 
 2. Buat pengguna baru di database:
 

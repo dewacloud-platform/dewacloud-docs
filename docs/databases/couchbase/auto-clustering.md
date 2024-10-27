@@ -5,7 +5,7 @@ title: Auto-Clustering
 ---
 # Cluster Couchbase Otomatis Scalable dalam Kontainer: Penyebaran Satu Klik ke Cloud
 
-![couchbase auto scaling](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/couchbase/couchbase-1.png" alt="couchbase auto scaling" width="20%"/>
 
 Membangun dan menjalankan aplikasi kompleks yang mampu menangani data tidak terstruktur dan melayani banyak pengguna yang tersebar secara global adalah apa yang dibutuhkan perusahaan untuk menjadi gesit dan tangguh. Dalam menghadapi kebutuhan manajemen data yang muncul, banyak perusahaan lebih memilih teknologi penyimpanan data NoSQL sebagai solusi yang memberikan tingkat skala, kecepatan, dan variabilitas data yang substansial.
 
@@ -17,7 +17,7 @@ Dengan demikian, untuk memungkinkan pelanggan kami memanfaatkan semua keuntungan
 
 Paket [Couchbase Cluster](<https://github.com/jelastic-jps/couchbase?utm_source=blog-couchbase>) oleh Jelastic dibangun di atas image Docker resmi [_couchbase_](<https://hub.docker.com/_/couchbase/>) sebagai dasar. Selama penyebarannya, Anda dapat menetapkan jumlah node cluster yang diinginkan (hingga 10 instance) untuk dibuat. Semua anggota cluster (baik yang dibuat awalnya maupun node yang ditambahkan kemudian) akan saling terhubung secara otomatis untuk mewakili sistem penyimpanan data yang sangat tersedia. Dengan cara ini, Anda mendapatkan pengelompokan logis dari instance kontainer yang siap digunakan, bukan sekumpulan node mandiri yang memerlukan penerapan konfigurasi tambahan untuk distribusi data yang merata.
 
-![run couchbase cluster one click](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/couchbase/couchbase-2.png" alt="run couchbase cluster one click" width="80%"/>
 
 Di dalam paket ini, setiap kontainer Couchbase ditetapkan _16 cloudlet dinamis_ sebagai ruang sumber daya untuk [skala vertikal](<https://docs.jelastic.com/automatic-vertical-scaling/?utm_source=blog-couchbase>), dengan kapasitas maksimum 2 GiB RAM dan 6.4 GHz CPU (jika perlu, batas ini dapat disesuaikan kemudian dengan mengikuti panduan yang terlampir di atas). Dan dengan sertifikat [Jelastic SSL](<https://docs.jelastic.com/built-in-ssl/?utm_source=blog-couchbase>) yang secara otomatis disediakan, Anda mendapatkan kemampuan untuk mengakses cluster Couchbase Anda melalui koneksi HTTPS yang aman.
 
@@ -38,7 +38,7 @@ Modifikasi yang sesuai diterapkan secara otomatis untuk menambahkan/menghapus no
 
 Setiap kali cluster di-scale _in_ atau _out_, proses **rebalancing** berlangsung. Ini mewakili operasi otomatis redistribusi data di seluruh node yang tersedia dalam cluster. Selama operasi ini, cluster tetap sepenuhnya dapat berfungsi dan terus melayani serta menangani permintaan klien.
 
-![couchbase cluster one click](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/couchbase/couchbase-3.png" alt="couchbase cluster one click" width="100%"/>
 
 Dengan cara ini, solusi Couchbase tercluster yang otomatis scalable oleh Jelastic mampu beroperasi tanpa henti, memastikan ketersediaan tinggi layanan Anda dengan keterlibatan minimal dari pihak Anda.
 
@@ -50,23 +50,23 @@ Dengan solusi kemasan pra-siap untuk instalasi satu klik yang dipertimbangkan, p
 
 1. Masuk ke [Jelastic Cloud](<https://jelastic.cloud/?utm_source=blog-couchbase>) dengan kredensial Anda dan klik **Marketplace** di panel atas.
 
-![couchbase docker container](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/couchbase/couchbase-4.png" alt="couchbase docker container" width="100%"/>
 
 Di dalam bagian **Apps**, gunakan kotak pencarian untuk menemukan paket _Auto Scalable Couchbase Cluster_ dan pilih **Instal**.  
 
 2. Di jendela yang terbuka, atur jumlah _Nodes in Cluster_ yang akan dibuat (dengan mempertimbangkan bahwa nilai ini akan ditetapkan sebagai ukuran cluster minimal dan tidak dapat dikurangi karena auto-scaling). Kemudian ketik nama _Environment_, dan, jika diinginkan, nama _Display Name_ alternatif ([alias](<https://docs.jelastic.com/environment-aliases/?utm_source=blog-couchbase>)) untuk itu.
 
-![couchbase cloud hosting](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/couchbase/couchbase-5.png" alt="couchbase cloud hosting" width="100%"/>
 
 Juga, pilih [_Region_](<https://docs.jelastic.com/environment-regions/?utm_source=blog-couchbase>) perangkat keras yang diinginkan (jika ada beberapa yang tersedia) dan klik **Instal**.  
 
 3. Setelah penyebaran cluster selesai, Anda akan diberikan kredensial untuk administrasinya dalam pop-up yang muncul dan, pada saat yang sama, melalui notifikasi email yang didedikasikan.
 
-![scale couchbase cluster](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/couchbase/couchbase-6.png" alt="scale couchbase cluster" width="70%"/>
 
 Klik tautan **Web Console** dan masukkan data ini untuk mengakses panel manajemen Couchbase yang sesuai melalui HTTPS.
 
-![install couchbase cluster one click](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/couchbase/couchbase-7.png" alt="install couchbase cluster one click" width="100%"/>
 
 Di halaman awal yang terbuka, Anda akan melihat _Cluster Overview_ umum, yang terdiri dari bagian-bagian berikut:
 

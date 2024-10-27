@@ -11,7 +11,7 @@ title: PHP Connection to MongoDB
 
 Masuk ke akun platform Anda dan [buat](<https://docs.dewacloud.com/docs/setting-up-environment/>) environment baru dengan node **MongoDB** dari versi yang diinginkan (dapat ditemukan dalam bagian wizard _NoSQL_).
 
-![create mongodb environment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/connection-to-applications/php-connection/php-connection-1.png" alt="create mongodb environment" width="100%"/>
 
 Tambahkan semua instansi lain yang diperlukan (jika ada - kami juga akan menyertakan _Apache_ untuk kemudian menerapkan aplikasi uji ke dalamnya; namun, ini dapat ditempatkan dalam environment terpisah juga) dan konfigurasikan parameter lain yang diperlukan, seperti jumlah sumber daya, wilayah, nama environment, dll.
 
@@ -21,17 +21,18 @@ Klik tombol **Create** ketika siap dan tunggu beberapa menit agar environment An
 
 1\. Masuk ke kotak email Anda dan temukan surat yang berisi detail instansi MongoDB Anda dan data akses:
 
-![email mongo credentials](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/connection-to-applications/php-connection/php-connection-2.png" alt="email mongo credentials" width="100%"/>
 
 2\. Di sini, klik pada tautan _Access URL_ atau beralih ke dashboard dan **Open in browser** node _MongoDB_ Anda.
 
-![mongo admin panel log in](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/connection-to-applications/php-connection/php-connection-3.png" alt="mongo admin panel log in" width="100%"/>
 
 Di tab browser yang terbuka, Anda akan melihat formulir _**Sign in**_ untuk panel admin MongoDB. Masukkan kredensial admin yang telah Anda terima dalam email yang disebutkan di atas dan klik **Login** untuk mengaksesnya.
 
 3\. Sekarang, mari kita buat database terpisah untuk membangun koneksi. Untuk itu, beralihlah ke tab **Databases** dan tentukan _Name_ untuknya di dalam bagian _**Create Database**_ (misalnya, _mongodb-connect_).
 
-![create database](#) Klik **Save** untuk melanjutkan.
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/connection-to-applications/php-connection/php-connection-4.png" alt="create database" width="100%"/>
+ Klik **Save** untuk melanjutkan.
 
 4\. Langkah berikutnya adalah membuat pengguna DB terpisah untuk bekerja dengan database baru kami. Oleh karena itu, beralihlah ke tab **Execute** dan tempel perintah berikut di dalam kolom input yang ditampilkan:
 
@@ -45,7 +46,7 @@ di mana:
   * _**password**_ \- kata sandi untuk pengguna ini
   * _**db_name**_ \- database (yang telah dibuat sebelumnya) pengguna ini akan memiliki izin _read/write_
 
-![execute command](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/connection-to-applications/php-connection/php-connection-5.png" alt="execute command" width="100%"/>
 
 Kemudian, pilih database yang sesuai menggunakan daftar drop-down di bawah dan **Execute** perintah yang disebutkan dengan tombol bernama sama. Anda akan mendapatkan respons keberhasilan dalam beberapa detik.
 
@@ -58,19 +59,19 @@ Mulai dari versi 4.3 PaaS, terdapat dua versi driver yang tersedia di semua serv
 Dua ekstensi ini mengimplementasikan API yang berbeda, jadi kami merekomendasikan menggunakan modul lama untuk menjalankan aplikasi lama, sementara menyesuaikan proyek baru Anda dengan yang terbaru.
 :::
 
-![environment node config](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/connection-to-applications/php-connection/php-connection-6.png" alt="environment node config" width="100%"/>
 
 Jadi, untuk mengaktifkan driver yang diperlukan, kembali ke dashboard Anda, arahkan mouse ke node komputasi dalam environment Anda dan klik tombol **Config** yang muncul.
 
 6\. Dalam tab pengelola konfigurasi yang terbuka, perluas folder **etc** dan pilih file _**php.ini**_ di dalamnya.
 
-![phpini mongo driver](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/connection-to-applications/php-connection/php-connection-7.png" alt="phpini mongo driver" width="100%"/>
 
 Gulir ke bawah hingga kira-kira baris _483_ dan batalkan komentar pada baris dengan driver yang diperlukan (baik ekstensi _**mongo.so**_ atau _**mongodb.so**_) dengan menghapus tanda titik koma di awal.
 
 7\. **Save** perubahan yang dilakukan dan **Restart** node server aplikasi Anda untuk menerapkannya.
 
-![restart application server](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/connection-to-applications/php-connection/php-connection-8.png" alt="restart application server" width="100%"/>
 
 ## Application Deployment{#application-deployment}
 
@@ -144,7 +145,7 @@ Jadi, jika Anda ingin menguji koneksi itu sendiri, cukup [unduh](https://downloa
 Untuk versi driver lama (yaitu _mongo.so_), silakan gunakan [aplikasi uji ini](<https://example.com>). Alurnya akan mirip dengan yang dijelaskan di bawah.
 :::
 
-![application deployed](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/connection-to-applications/php-connection/php-connection-9.png" alt="application deployed" width="100%"/>
 
 Akibatnya, Anda akan menerima environment yang mirip dengan yang ditunjukkan di atas.
 
@@ -165,13 +166,14 @@ Setelah data dimasukkan ke kolom yang sesuai, klik tombol **Test Me!**.
 
 2\. Jika informasi yang ditentukan benar, pesan Good connection akan ditampilkan.
 
-![good connection](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/connection-to-applications/php-connection/php-connection-10.png" alt="good connection" width="100%"/>
 
 Jika tidak, Anda akan mendapatkan notifikasi bahwa koneksi Anda _**Doesn’t work**_ dan keluaran kesalahan terperinci yang disebabkannya.
 
 3\. Selain itu, setelah pembentukan koneksi yang berhasil, koleksi baru _**phptest**_ dengan beberapa catatan baru di dalamnya akan ditambahkan ke database yang ditentukan.
 
-![check phptest collection](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/connection-to-applications/php-connection/php-connection-11.png" alt="check phptest collection" width="100%"/>
+
 
 Jadi, Anda dapat menavigasi ke panel admin DB Anda untuk memastikan semuanya bekerja dengan benar dan melanjutkan dengan melakukan operasi lain yang diperlukan.
 

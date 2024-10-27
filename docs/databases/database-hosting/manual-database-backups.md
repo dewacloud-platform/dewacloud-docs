@@ -22,7 +22,7 @@ Mari kita gunakan skrip backup default untuk mengotomatisasi proses pembuatan ba
 
 1. Kode sumber skrip dapat dilihat langsung di dashboard. Klik tombol **Config** di sebelah database Anda untuk membuka file manager bawaan dan temukan file _**/var/lib/jelastic/bin/backup_script.sh**_.
 
-   ![database backup script](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/manual-database-backup/manual-db-backup-1.png" alt="database backup script" width="100%"/>
 
    :::warning
    Skrip backup tidak tersedia untuk stack Redis, yang merupakan penyimpanan key-value, biasanya digunakan sebagai cache.
@@ -34,7 +34,7 @@ Mari kita gunakan skrip backup default untuk mengotomatisasi proses pembuatan ba
    {frequency} {path-to-script} {script-parameters}
    ```
 
-   ![database cron config file](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/manual-database-backup/manual-db-backup-2.png" alt="database cron config file" width="100%"/>
 
    Di sini, Anda dapat menggunakan contoh yang dikomentari sebagai template untuk menentukan parameter yang diperlukan:
 
@@ -57,13 +57,13 @@ Mari kita gunakan skrip backup default untuk mengotomatisasi proses pembuatan ba
    */10 * * * * /var/lib/jelastic/bin/backup_script.sh -m dumpall -c 3 -u root -p passw0rd
    ```
 
-   ![cron expression for DB backup script](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/manual-database-backup/manual-db-backup-3.png" alt="cron expression for DB backup script" width="100%"/>
 
    **Simpan** pengaturan untuk menerapkannya.
 
 4. Untuk menyimpan data di node lain atau server remote, Anda dapat mengonfigurasi [mount point](<https://docs.dewacloud.com/docs/mount-points/>) yang sesuai untuk database Anda.
 
-   ![store backups on remote server](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/manual-database-backup/manual-db-backup-4.png" alt="store backups on remote server" width="100%"/>
 
    :::warning
    Data yang ada di folder mount point akan digantikan dengan file dari direktori remote.
@@ -75,7 +75,7 @@ Mari kita gunakan skrip backup default untuk mengotomatisasi proses pembuatan ba
 
 Tunggu hingga skrip dieksekusi (tergantung pada frekuensi cron yang dikonfigurasi) dan navigasikan ke folder **/var/lib/jelastic/backup**.
 
-![check database backup files](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/manual-database-backup/manual-db-backup-5.png" alt="check database backup files" width="100%"/>
 
 Jika operasi backup berhasil, Anda akan melihat arsip **.bz2** yang sesuai di dalam direktori.
 
@@ -85,13 +85,13 @@ Ada beberapa opsi untuk mengunduh file dari container:
 
 1. Cara paling mudah adalah menggunakan [configuration file manager](<https://docs.dewacloud.com/docs/configuration-file-manager/>) langsung di dashboard.
 
-   ![download backups with dashboard](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/manual-database-backup/manual-db-backup-6.png" alt="download backups with dashboard" width="100%"/>
 
    Temukan file yang diperlukan, arahkan kursor ke atasnya, dan pilih **Download** dari menu konteks.
 
 2. Opsi lain adalah menggunakan koneksi [SFTP/FISH protocol](<https://docs.dewacloud.com/docs/ssh-protocols/>).
 
-   ![download backups with SFTP FISH protocols](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/manual-database-backup/manual-db-backup-7.png" alt="download backups with SFTP FISH protocols" width="100%"/>
 
    Detail akses yang diperlukan dapat dilihat di dashboard.
 
@@ -100,6 +100,7 @@ Ada beberapa opsi untuk mengunduh file dari container:
    :::warning
    Alamat _Public IP_ diperlukan untuk opsi ini. Jika diperlukan, _Public IP_ akan secara otomatis ditambahkan ke node selama instalasi add-on.
    :::
+   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/manual-database-backup/manual-db-backup-8.png" alt="database ftp addon" width="100%"/>
 
    Berdasarkan preferensi Anda, Anda dapat memilih salah satu opsi yang ditawarkan.
 
@@ -109,17 +110,17 @@ Jika diperlukan, Anda dapat dengan mudah memulihkan database dari backup. Untuk 
 
 1. Akses panel **phpMyAdmin** dengan kredensial dari email yang Anda terima setelah pembuatan node DB.
 
-   ![email with DB credentials](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/manual-database-backup/manual-db-backup-9.png" alt="email with DB credentials" width="60%"/>
 
 2. Arahkan ke tab **Import**, centang opsi _Browse your computer_, dan gunakan tombol **Choose File** untuk mengunggah backup yang diperlukan.
 
-   ![import backups via DB admin panel](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/manual-database-backup/manual-db-backup-10.png" alt="import backups via DB admin panel" width="100%"/>
 
    Klik **Go** di bagian bawah halaman.
 
 3. Ketika proses impor berhasil diselesaikan, Anda akan melihat notifikasi yang sesuai di panel admin.
 
-   ![database successfully restored from backup](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/manual-database-backup/manual-db-backup-11.png" alt="database successfully restored from backup" width="100%"/>
 
 Itu saja! Sekarang, Anda bisa yakin bahwa semua data Anda disimpan secara berkala dan, jika diperlukan, dapat dipulihkan atau digunakan kembali.
 

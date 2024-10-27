@@ -9,11 +9,11 @@ Platform menyediakan satu set server database yang skalabel dan sepenuhnya dapat
 
 1\. Buka wizard Topologi dengan mengklik **New Environment** (untuk membuat environment baru) atau memilih tombol **Change environment topology** (untuk menambahkan database ke environment yang sudah ada).
 
-![new environment wizard](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/db-hosting-overview/db-hosting-overview-1.png" alt="new environment wizard" width="80%"/>
 
 2\. Kemudian, buka bagian wizard **SQL** atau **NoSQL** untuk memilih server database sesuai jenisnya.
 
-![create environment with database](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/db-hosting-overview/db-hosting-overview-2.png" alt="create environment with database" width="100%"/>
 
 Gunakan daftar drop-down untuk memilih di antara sistem manajemen DB yang tersedia:
 
@@ -28,7 +28,7 @@ Ketika server database yang sesuai telah dibuat, Anda akan menerima notifikasi e
 
 3\. Untuk meluncurkan panel admin database Anda, klik tombol **Open in Browser** di sebelah node database yang dituju di dashboard (atau susun URL panel admin [secara manual](<https://docs.dewacloud.com/docs/#database-admin-panel-url>)).
 
-![access database admin panel](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/db-hosting-overview/db-hosting-overview-3.png" alt="access database admin panel" width="100%"/>
 
 Di halaman yang terbuka, gunakan kredensial dari email untuk masuk dan mulai menerapkan konfigurasi yang diperlukan oleh aplikasi Anda.
 
@@ -42,7 +42,7 @@ Setelah server database Anda siap, Anda dapat [Menghubungkan aplikasi Anda ke DB
 
 Untuk **Reset password** untuk node database, klik tombol dengan nama yang sama di sebelahnya pada dashboard (atau untuk satu set [scaled DB](<https://docs.dewacloud.com/docs/horizontal-scaling/>) instances untuk mendapatkan kredensial baru untuk semuanya sekaligus).
 
-![database password reset](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/db-hosting-overview/db-hosting-overview-4.png" alt="database password reset" width="100%"/>
 
 Hasilnya, Anda akan menerima email dengan password baru untuk mengakses konsol admin database Anda.
 
@@ -58,7 +58,7 @@ di mana
 
   * `{node_id}` \- ID dari kontainer database yang dituju yang dapat ditemukan di dashboard (misalnya, _35316_ untuk MongoDB)
 
-![database node ID](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/db-hosting-overview/db-hosting-overview-5.png" alt="database node ID" width="100%"/>
 
   * `{environment_name}` \- nama environment yang Anda tambahkan server ke dalamnya (misalnya, _database_)
   * `{hoster_domain}` \- domain penyedia hosting Anda; dapat ditemukan di kolom terakhir tabel yang sesuai di halaman [Hosters Info](<https://docs.dewacloud.com/docs/paas-hosting-providers/>)
