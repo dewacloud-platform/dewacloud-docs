@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /auto-deploy-for-multiple-containers
+slug: /multiple-containers-auto-update
 title: Auto-Deploy for Multiple Containers
 ---
 # GIT & SVN Auto-Deploy for Multiple Containers
@@ -11,7 +11,7 @@ Namun demikian, jika Anda ingin mencapai ketersediaan yang lebih tinggi (misalny
 
 - Memulai operasi ini secara manual dengan menekan tombol **Update from GIT/SVN** (atau **Build and Deploy** untuk proyek Maven) di samping konteks aplikasi tersebut:
 
-  ![multiple containers auto update 5upload](#)
+ <img src="https://assets.dewacloud.com/dewacloud-docs/deployment/git_&_svn_auto-deploy/auto-deploy-for-multiple-containers/5upload.png" alt="multiple containers auto update 5upload" max-width="100%"/>
 
 - Menggunakan metode [CLI yang sesuai](https://docs.dewacloud.com/docs/cli#vcs-deploy) untuk manajemen proyek VCS:
 

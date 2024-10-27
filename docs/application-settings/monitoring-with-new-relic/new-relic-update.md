@@ -1,52 +1,53 @@
 ---
 sidebar_position: 2
-slug: /new-relic-update
-title: New Relic Update
+slug: /update-new-relic
+title: Update New Relic
 ---
-# How to Update Installed New Relic Monitoring Add-on
 
-To ensure your application is utilizing the latest features of **[New Relic](https://docs.dewacloud.com/docs/new-relic-installation)** monitoring, the platform provides a built-in update option for the New Relic add-on. This feature allows you to check for updates and apply them quickly without manual intervention. Here's how to update your New Relic agent in a few easy steps.
+# Cara Memperbarui Add-on Pemantauan New Relic yang Terpasang
 
-## New Relic Agent Update
+Untuk memastikan aplikasi Anda memanfaatkan fitur terbaru dari pemantauan **[New Relic](https://docs.dewacloud.com/docs/new-relic-installation)**, platform ini menyediakan opsi pembaruan bawaan untuk New Relic add-on. Fitur ini memungkinkan Anda memeriksa pembaruan dan menerapkannya dengan cepat tanpa intervensi manual. Berikut adalah cara untuk memperbarui agen New Relic Anda dalam beberapa langkah mudah.
 
-1. **Access the Add-ons Section**:
-   - Open the **Add-ons** section for the node where New Relic is installed by clicking the **Add-ons** button next to the node in your dashboard.
+## Pembaruan Agen New Relic
 
-2. **Update the New Relic Agent**:
-   - Find the New Relic add-on and click on the gear icon in the top corner.
-   - From the drop-down list, select the **Update Agent** option.
+1. **Akses Bagian Add-ons**:
+   - Buka bagian **Add-ons** untuk node tempat New Relic terpasang dengan mengklik tombol **Add-ons** di sebelah node di dashboard Anda.
 
-   ![new relic update](#)
+2. **Perbarui Agen New Relic**:
+   - Temukan add-on New Relic dan klik ikon roda gigi di pojok atas.
+   - Dari daftar drop-down, pilih opsi **Update Agent**.
 
-3. **Confirm Update**:
-   - A dialog box will appear asking for confirmation. Click **Yes** to proceed with the update check.
+   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/monitoring-with-new-relic/new-relic-update/01.png" alt="new relic update" width="100%"/>
 
-   ![check new relic updates](#)
+3. **Konfirmasi Pembaruan**:
+   - Kotak dialog akan muncul meminta konfirmasi. Klik **Yes** untuk melanjutkan pengecekan pembaruan.
 
-4. **Download and Install**:
-   - The platform will automatically download and install the necessary files if updates are available.
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/monitoring-with-new-relic/new-relic-update/02.png" alt="check new relic updates" width="50%"/>
 
-   ![new relic update](#)
+4. **Unduh dan Pasang**:
+   - Platform akan secara otomatis mengunduh dan memasang file yang diperlukan jika pembaruan tersedia.
+
+   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/monitoring-with-new-relic/new-relic-update/03.png" alt="new relic update" width="100%"/>
 
 5. **Restart Application Server**:
-   - After the update is complete, a notification will prompt you to restart the application server to apply the changes. Restart your node by clicking the **Restart** button next to your application server.
+   - Setelah pembaruan selesai, pemberitahuan akan meminta Anda untuk me-restart server aplikasi agar perubahan diterapkan. Restart node Anda dengan mengklik tombol **Restart** di sebelah server aplikasi Anda.
 
-   ![restart nodes](#)
+   ![restart nodes](https://assets.dewacloud.com/dewacloud-docs/application_settings/monitoring-with-new-relic/new-relic-update/04.png)
 
    :::note
-   If your project is running on a single app server, restarting the node will cause temporary downtime. However, if your app server is **horizontally scaled**, the downtime will be minimized, as nodes will be restarted sequentially.
+   Jika proyek Anda berjalan pada satu server aplikasi, me-restart node akan menyebabkan downtime sementara. Namun, jika server aplikasi Anda **diperluas secara horizontal**, downtime-nya akan diminimalkan, karena node akan di-restart secara berurutan.
    :::
 
-6. **Check the Updated Version**:
-   - For **Java** servers, you can check the current version of the agent within the file located in the directory where the add-on files are stored.
-   - For **PHP** servers, the version can be verified through the `phpinfo()` output.
+6. **Periksa Versi yang Diperbarui**:
+   - Untuk server **Java**, Anda dapat memeriksa versi saat ini dari agen dalam file yang terletak di direktori tempat file add-on disimpan.
+   - Untuk server **PHP**, versinya dapat diverifikasi melalui output `phpinfo()`.
 
-By following these steps, you can ensure that your New Relic add-on is always up-to-date and ready to provide the latest monitoring features for your application.
+Dengan mengikuti langkah-langkah ini, Anda dapat memastikan bahwa add-on New Relic Anda selalu mutakhir dan siap untuk memberikan fitur pemantauan terbaru untuk aplikasi Anda.
 
-## What's Next?
+## Baca Juga
 
-- [New Relic Monitoring Integration](https://docs.dewacloud.com/docs/new-relic-installation/)
-- [Automatic Horizontal Scaling](https://docs.dewacloud.com/docs/automatic-horizontal-scaling/)
+- [Integrasi Pemantauan New Relic](https://docs.dewacloud.com/docs/new-relic-installation/)
+- [Penskalaan Horizontal Otomatis](https://docs.dewacloud.com/docs/automatic-horizontal-scaling/)
 - [Marketplace](https://docs.dewacloud.com/docs/marketplace/)
-- [JPS Collection](https://github.com/jelastic-jps)
-- [Application Statistics](https://docs.dewacloud.com/docs/view-app-statistics/)
+- [Koleksi JPS](https://github.com/jelastic-jps)
+- [Statistik Aplikasi](https://docs.dewacloud.com/docs/view-app-statistics/)

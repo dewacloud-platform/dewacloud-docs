@@ -3,67 +3,76 @@ sidebar_position: 3
 slug: /traffic-distributor-installation
 title: Traffic Distributor Installation
 ---
-# Traffic Distributor Installation
 
-Installing the **Traffic Distributor** through the platform's **Marketplace** is a straightforward process. The following guide walks you through the steps needed to set up Traffic Distributor to manage and distribute traffic across multiple environments.
+# Instalasi Traffic Distributor
 
-:::note This guide focuses on installing Traffic Distributor for new environments. For applying it to existing projects, refer to the **Inject Traffic Distributor into Running Project** guide. :::
+Menginstal **Traffic Distributor** melalui **Marketplace** platform adalah proses yang mudah. Panduan berikut mengarahkan Anda melalui langkah-langkah yang diperlukan untuk mengatur Traffic Distributor untuk mengelola dan mendistribusikan lalu lintas di berbagai environment.
 
-## Installation Steps
+:::note
+Panduan ini berfokus pada pemasangan Traffic Distributor untuk environment baru. Untuk menerapkannya pada proyek yang sudah ada, silakan merujuk ke panduan **Inject Traffic Distributor into Running Project**.
+:::
 
-### Step 1: Access the Marketplace
-1. Log in to the platform dashboard.
-2. Click the **Marketplace** button at the top of the dashboard.
+## Langkah-Langkah Instalasi
 
-![PaaS main buttons](#)
+### Langkah 1: Akses Marketplace
+1. Masuk ke dashboard platform.
+2. Klik tombol **Marketplace** di bagian atas dashboard.
 
-### Step 2: Find the Traffic Distributor Package
-1. Within the **Apps** tab of the Marketplace, navigate to the **Dev & Admin Tools** section, or use the **Search** field to find **Traffic Distributor**.
-2. Click **Install** to proceed.
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distribution-installation/01-paas-main-buttons.png" alt="PaaS main buttons" max-width="100%"/>
 
-![Traffic Distributor in Marketplace](#)
+### Langkah 2: Temukan Paket Traffic Distributor
+1. Di dalam tab **Apps** dari Marketplace, navigasikan ke bagian **Dev & Admin Tools**, atau gunakan kolom **Search** untuk menemukan **Traffic Distributor**.
+2. Klik **Install** untuk melanjutkan.
 
-### Step 3: Review Traffic Distributor Overview
-1. The first time you install Traffic Distributor, you'll be shown an overview of its features.
-2. Click **OK** to proceed.
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distribution-installation/02-traffic-distributor-in-marketplace.png" alt="Traffic Distributor in Marketplace" max-width="100%"/>
 
-:::tip You can select the **Don’t show this message again** option to skip this window in the future. :::
+### Langkah 3: Tinjau Overview Traffic Distributor
+1. Saat pertama kali Anda menginstal Traffic Distributor, Anda akan ditampilkan overview dari fitur-fiturnya.
+2. Klik **OK** untuk melanjutkan.
 
-### Step 4: Configure Traffic Distributor Settings
-1. In the installation frame, configure the following settings:
-   - **Entrypoint**: Choose between **Shared Load Balancer** or **Public IP**.
-   - **Balancers**: Select the number of NGINX instances to use.
-   - **Routing Method**: Choose one of the three available routing methods: **Round Robin**, **Sticky Sessions**, or **Failover**.
-   - **Traffic Ratio**: Set the percentage distribution of traffic between environments.
-   - **HTTPS**: Enable this if backends use HTTPS.
-   - **Backends**: Select two environments for traffic distribution (from your account list or specify custom IP addresses/domains).
-   - **Environment**: Set the domain name for the environment.
-   - **Display Name**: Optionally, set an alias for the environment.
-   - **Region**: Select a region for the environment.
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distribution-installation/03-traffic-distributor-description-and-benefits.png" alt="Traffic Distributor description and benefits" max-width="100%"/>
+
+:::tip
+Anda dapat memilih opsi **Don’t show this message again** untuk melewati jendela ini di masa mendatang.
+:::
+
+### Langkah 4: Konfigurasi Pengaturan Traffic Distributor
+1. Dalam bingkai instalasi, konfigurasikan pengaturan berikut:
+   - **Entrypoint**: Pilih antara **Shared Load Balancer** atau **Public IP**.
+   - **Balancers**: Pilih jumlah instance NGINX yang akan digunakan.
+   - **Routing Method**: Pilih salah satu dari tiga metode routing yang tersedia: **Round Robin**, **Sticky Sessions**, atau **Failover**.
+   - **Traffic Ratio**: Atur persentase distribusi traffic antar environment.
+   - **HTTPS**: Aktifkan ini jika backend menggunakan HTTPS.
+   - **Backends**: Pilih dua environment untuk distribusi traffic (dari daftar akun Anda atau tentukan alamat IP/domain kustom).
+   - **Environment**: Tetapkan nama domain untuk environment.
+   - **Display Name**: Secara opsional, atur alias untuk environment.
+   - **Region**: Pilih region untuk environment.
    
-2. Click **Install** to complete the setup.
+2. Klik **Install** untuk menyelesaikan pengaturan.
 
-![Configure Traffic Distributor installation](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distribution-installation/04-configure-traffic-distributor-installation.png" alt="Configure Traffic Distributor installation" max-width="100%"/>
 
-### Step 5: Installation Completion
-1. After a few minutes, the installation will complete.
-2. A success window will appear with additional tips on using Traffic Distributor, such as **Blue-Green Deploy**, **A/B Testing**, and **Failover Protection**.
+### Langkah 5: Penyelesaian Instalasi
+1. Setelah beberapa menit, instalasi akan selesai.
+2. Jendela sukses akan muncul dengan tips tambahan tentang cara menggunakan Traffic Distributor, seperti **Blue-Green Deploy**, **A/B Testing**, dan **Failover Protection**.
 
-![Traffic Distributor installed](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distribution-installation/06-traffic-distributor-installed.png" alt="Traffic Distributor installed" max-width="100%"/>
 
-:::note The default vertical scaling configuration (up to 16 cloudlets) should be sufficient to handle a significant amount of traffic. :::
+:::note
+Konfigurasi vertical scaling default (hingga 16 cloudlets) harus cukup untuk menangani sejumlah besar traffic.
+:::
 
-## Traffic Distributor Reconfiguration
+## Rekonfigurasi Traffic Distributor
 
-You can adjust your Traffic Distributor setup at any time after installation.
+Anda dapat menyesuaikan pengaturan Traffic Distributor Anda kapan saja setelah instalasi.
 
-### Step 1: Access Reconfiguration Options
-1. Hover over the NGINX instance in your Traffic Distributor environment and click the **Add-Ons** button.
+### Langkah 1: Akses Opsi Rekonfigurasi
+1. Arahkan mouse ke instance NGINX dalam environment Traffic Distributor Anda dan klik tombol **Add-Ons**.
 
-![Traffic Distributor add-on](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distribution-installation/07-traffic-distributor-add-on.png" alt="Traffic Distributor add-on" max-width="100%"/>
 
-### Step 2: Configure Add-On Settings
-1. Click **Configure** to access the reconfiguration options. You can change the same settings as during installation:
+### Langkah 2: Konfigurasi Pengaturan Add-On
+1. Klik **Configure** untuk mengakses opsi rekonfigurasi. Anda dapat mengubah pengaturan yang sama seperti selama instalasi:
    - **Entrypoint**
    - **Balancers**
    - **Routing Method**
@@ -71,15 +80,18 @@ You can adjust your Traffic Distributor setup at any time after installation.
    - **HTTPS**
    - **Backends**
    
-2. Confirm changes by clicking **Apply**.
+2. Konfirmasikan perubahan dengan mengklik **Apply**.
 
-### Step 3: Monitor Changes
-1. Upon successful reconfiguration, you’ll see a notification at the top right of the dashboard.
-2. You can also view logs of Traffic Distributor actions and changes.
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distribution-installation/09-reconfigure-traffic-distributor.png" alt="Reconfigure Traffic Distributor" max-width="100%"/>
 
-![Show Traffic Distributor logs](#)
+### Langkah 3: Pantau Perubahan
+1. Setelah rekonfigurasi berhasil, Anda akan melihat notifikasi di kanan atas dashboard.
+2. Anda juga dapat melihat log dari tindakan dan perubahan Traffic Distributor.
 
-## What’s Next?
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distribution-installation/10-show-traffic-distributor-log.png" alt="Show Traffic Distributor logs" max-width="100%"/>
+
+## Baca Juga
+
 - [Traffic Distributor Overview](<https://docs.dewacloud.com/docs/traffic-distributor/>)
 - [Traffic Distributor Injection](<https://docs.dewacloud.com/docs/traffic-distributor-injection/>)
 - [Blue-Green Deploy](<https://docs.dewacloud.com/docs/blue-green-deploy/>)

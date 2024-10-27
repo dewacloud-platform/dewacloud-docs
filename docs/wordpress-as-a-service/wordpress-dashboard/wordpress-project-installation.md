@@ -8,9 +8,9 @@ title: WordPress Project Installation
 
 Dewacloud Application Platform untuk WordPress menyediakan prosedur instalasi cepat dan otomatis untuk pembuatan proyek baru. Fungsionalitas produksi/staging bawaan membantu mengimplementasikan berbagai integrasi DevOps. Mari kita lihat proses ini secara detail:
 
-- [Installing Project](https://docs.dewacloud.com/#installing-project)
-- [Staging Project](https://docs.dewacloud.com/#staging-project)
-- [Deleting Project](https://docs.dewacloud.com/#deleting-project)
+- [Installing Project](#installing-project)
+- [Staging Project](#staging-project)
+- [Deleting Project](#deleting-project)
 
 ## Installing Project{#installing-project}
 
@@ -88,7 +88,7 @@ Anda akan diminta untuk mengonfirmasi tindakan dengan mengetikkan nama proyek.
 
 ![delete project confirmation](#)
 
-**Note:** Menghapus _production_ akan menghapus seluruh proyek, sementara menghapus _[staging](https://docs.dewacloud.com/#staging-project)_ – hanya lingkungan yang sesuai (yang produksi akan tetap utuh).
+**Note:** Menghapus _production_ akan menghapus seluruh proyek, sementara menghapus _[staging](#staging-project)_ – hanya lingkungan yang sesuai (yang produksi akan tetap utuh).
 
 Proyek akan dihapus segera setelah konfirmasi.
 

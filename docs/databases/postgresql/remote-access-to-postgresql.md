@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-slug: /remote-access-to-postgresql
+slug: /remote-access-postgres
 title: Remote Access to PostgreSQL
 ---
 # Remote Access to PostgreSQL

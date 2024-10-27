@@ -265,18 +265,3 @@ Dalam blok keluaran berikutnya, informasi lengkap tentang host replica set ditam
 Selain itu, Anda dapat memulai dan menghentikan salah satu node database Anda dan menyegarkan halaman ini untuk melacak perubahan. Dengan cara ini, Anda dapat memastikan bahwa cluster MongoDB Anda tersedia dan berfungsi sebagaimana mestinya, dan dengan demikian dapat diterapkan untuk kasus nyata sekarang juga!
 
 Dapatkan replica set MongoDB yang sangat tersedia sendiri dengan Jelastic PaaS, cukup daftar untuk [free trial di salah satu penyedia layanan](<https://jelastic.com/public-cloud-registration/>) dan ikuti instruksi.
-
-[Subscribe](</newsletter-subscription/>) Search
-
-## Categories
-
-  * [IaaS](</company/blog/category/iaas/>)
-  * [DevOps PaaS](</company/blog/category/devops-paas/>)
-  * [WordPress](</company/blog/category/wordpress/>)
-  * [Kubernetes](</company/blog/category/kubernetes/>)
-  * [Storage](</company/blog/category/storage/>)
-  * [Multi-Cloud](</company/blog/category/multi-cloud/>)
-  * [Webinars](</company/blog/category/video/webinars/>)
-  * [Case Studies](</company/blog/category/case-studies/>)
-  * [Product Updates](</company/blog/category/product-updates/>)
-  * [News](</company/blog/category/news/>)

@@ -78,7 +78,6 @@ Most of the standard software stacks are free so that you pay only for the resou
 The cost for using software stacks depends on your hosting service provider’s tariffs. Navigate to **Balance > Quotas & Pricing** menu item.
 
 ![pricing software](#)
-
 ## Baca Juga{#whats-next}
 
   * [Charged Resources](https://docs.dewacloud.com/docs/resource-consumption/)

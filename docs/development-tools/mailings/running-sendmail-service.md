@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /running-sendmail-service
+slug: /sendmail
 title: Running Sendmail Service
 ---
 # Menjalankan Sendmail Di Dalam Container

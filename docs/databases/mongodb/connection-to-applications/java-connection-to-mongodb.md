@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /java-connection-to-mongodb
+slug: /connection-to-mongodb-java
 title: Java Connection to MongoDB
 ---
 # Java Connection to MongoDB
@@ -147,7 +147,7 @@ public class MongoManager {
 
 2\. Setiap aplikasi dapat didistribusikan menggunakan [Deployment Manager](<https://docs.dewacloud.com/docs/deployment-guide/>) platform (dengan file lokal/URL sebagai sumber) atau [Maven](<https://docs.dewacloud.com/docs/java-vcs-deployment/>) (untuk distribusi dari GIT/SVN).
 
-Untuk pengujian, Anda dapat mencoba proyek [mongoclient.war](<mongoclient.zip>) yang siap pakai, yang sudah berisi driver konektor yang sesuai (atau unduh [sumbernya](<mongoclient.zip>) dan sesuaikan dengan cara yang Anda inginkan).
+Untuk pengujian, Anda dapat mencoba proyek [mongoclient.war](<https://www.virtuozzo.com/application-platform-docs/connection-to-mongodb-java/mongoclient.zip>) yang siap pakai, yang sudah berisi driver konektor yang sesuai (atau unduh [sumbernya](<https://www.virtuozzo.com/application-platform-docs/connection-to-mongodb-java/mongoclient.zip>) dan sesuaikan dengan cara yang Anda inginkan).
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/connection-to-applications/java-connection/java-connection-8.png" alt="upload application" width="100%"/>
 

@@ -5,8 +5,6 @@ title: Auto-Clustering
 ---
 # Cluster Couchbase Otomatis Scalable dalam Kontainer: Penyebaran Satu Klik ke Cloud
 
-[Tetiana Markova](<https://www.virtuozzo.com/company/blog/author/tetianamarkova/> "Posts by Tetiana Markova") | 20 Juli 2017 | [DevOps PaaS](<https://www.virtuozzo.com/company/blog/category/devops-paas/>) | [couchbase](<https://www.virtuozzo.com/company/blog/tag/couchbase/>), [couchbase auto scaling](<https://www.virtuozzo.com/company/blog/tag/couchbase-auto-scaling/>), [couchbase cloudhosting](<https://www.virtuozzo.com/company/blog/tag/couchbase-cloudhosting/>), [couchbase hosting](<https://www.virtuozzo.com/company/blog/tag/couchbase-hosting/>)
-
 <img src="https://assets.dewacloud.com/dewacloud-docs/databases/couchbase/couchbase-1.png" alt="couchbase auto scaling" width="20%"/>
 
 Membangun dan menjalankan aplikasi kompleks yang mampu menangani data tidak terstruktur dan melayani banyak pengguna yang tersebar secara global adalah apa yang dibutuhkan perusahaan untuk menjadi gesit dan tangguh. Dalam menghadapi kebutuhan manajemen data yang muncul, banyak perusahaan lebih memilih teknologi penyimpanan data NoSQL sebagai solusi yang memberikan tingkat skala, kecepatan, dan variabilitas data yang substansial.
@@ -77,21 +75,4 @@ Di halaman awal yang terbuka, Anda akan melihat _Cluster Overview_ umum, yang te
 
 Untuk panduan terperinci tentang bekerja dengan Couchbase Web Console, lihat [dokumentasi resmi](<https://docs.couchbase.com/server/current/introduction/intro.html>).
 
-Sekarang, ketika cluster sudah berjalan, ia dapat melayani aplikasi Anda sebagai penyimpanan data yang sangat tersedia dan elastis - detail tentang cara mengatur interaksi yang tepat antara keduanya akan dipertimbangkan dalam salah satu artikel mendatang. Oleh karena itu, tetap ikuti pembaruan blog Jelastic sambil menjelajahi efisiensi solusi DB Couchbase tercluster yang dijelaskan di atas dengan periode percobaan gratis selama 2 minggu di salah satu [Cloud Platforms](<https://jelastic.cloud/?utm_source=blog-couchbase>) mitra kami.
-
-Apakah Anda memiliki pertanyaan tentang penyebaran cluster Couchbase yang scalable ke Jelastic dalam satu klik? Jangan ragu untuk mengajukannya di kolom komentar di bawah atau menghubungi ahli teknis kami di [Stackoverflow](<https://stackoverflow.com/questions/tagged/jelastic>).
-
-[Subscribe](</newsletter-subscription/>) Search
-
-## Kategori
-
-  * [IaaS](</company/blog/category/iaas/>)
-  * [DevOps PaaS](</company/blog/category/devops-paas/>)
-  * [WordPress](</company/blog/category/wordpress/>)
-  * [Kubernetes](</company/blog/category/kubernetes/>)
-  * [Penyimpanan](</company/blog/category/storage/>)
-  * [Multi-Cloud](</company/blog/category/multi-cloud/>)
-  * [Webinars](</company/blog/category/video/webinars/>)
-  * [Studi Kasus](</company/blog/category/case-studies/>)
-  * [Pembaruan Produk](</company/blog/category/product-updates/>)
-  * [Berita](</company/blog/category/news/>)
+Sekarang, ketika cluster sudah berjalan, ia dapat melayani aplikasi Anda sebagai penyimpanan data yang sangat tersedia dan elastis. 

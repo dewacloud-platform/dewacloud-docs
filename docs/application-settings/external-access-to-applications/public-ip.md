@@ -3,69 +3,47 @@ sidebar_position: 2
 slug: /public-ip
 title: Public IP
 ---
+
 # Public IP
 
-The platform provides users with [Shared Load Balancer](<https://docs.dewacloud.com/docs/shared-load-balancer/>) (SLB) as a default single entry point for all of the hosted
-applications, located on the hardware nodes. However, for the production
-environments, it is recommended receiving and processing the requests via
-**Public IP** address(es) that form a direct connection between the Internet
-and a specific container. Compared to the access over SLB, such approach
-ensures more secure and effective interaction.
+Platform menyediakan pengguna dengan [Shared Load Balancer](https://docs.dewacloud.com/docs/shared-load-balancer/) (SLB) sebagai titik masuk tunggal default untuk semua aplikasi yang di-host, yang terletak pada node perangkat keras. Namun, untuk lingkungan produksi, disarankan menerima dan memproses permintaan melalui **Alamat IP Publik** yang membentuk koneksi langsung antara Internet dan container tertentu. Dibandingkan dengan akses melalui SLB, pendekatan ini memastikan interaksi yang lebih aman dan efektif.
 
-![public IP vs shared load balancer](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/public-ip/01-public-ip-vs-shared-lb.png" alt="public IP vs shared load balancer" width="80%"/>
 
-Public IP can be attached to any software stack in your environment (except,
-[Memcached](<https://docs.dewacloud.com/docs/memcached/>)
-node), representing a more stable solution with less risk to be affected by
-other applications. Also, it opens access to such features as [FTP add-
-on](<https://docs.dewacloud.com/docs/ftp-ftps-support/>),
-[Custom SSL](<https://docs.dewacloud.com/docs/custom-ssl/>), [remotedebugging](<https://www.virtuozzo.com/application-platform-docs/remote-debugging/>) from IDE, [WebSockets](<https://www.virtuozzo.com/application-platform-docs/websockets/>), etc.
+IP Publik dapat dilampirkan ke tumpukan perangkat lunak mana pun di lingkungan Anda (kecuali, node [Memcached](https://docs.dewacloud.com/docs/memcached/)), mewakili solusi yang lebih stabil dengan risiko lebih rendah terkena dampak aplikasi lain. Selain itu, ini membuka akses ke fitur seperti [FTP add-on](https://docs.dewacloud.com/docs/ftp-ftps-support/), [Custom SSL](https://docs.dewacloud.com/docs/custom-ssl/), [remote debugging](https://www.virtuozzo.com/application-platform-docs/remote-debugging/) dari IDE, [WebSockets](https://www.virtuozzo.com/application-platform-docs/websockets/), dll.
 
-The platform supports two versions of the [Internet
-Protocol](<https://en.wikipedia.org/wiki/Internet_Protocol>):
+Platform mendukung dua versi [Internet Protocol](https://en.wikipedia.org/wiki/Internet_Protocol):
 
-  * _**Internet Protocol version 4 (IPv4)**_ is the fourth revision in the development of the IP and the first version of the protocol to be widely deployed
-  * _**Internet Protocol version 6 (IPv6)**_ is the most recent IP version, which is an evolutionary upgrade of IPv4 and is designed to fulfill the need of more addresses, provide better multicast routing and simplify processing by routers
+  * _**Internet Protocol version 4 (IPv4)**_ adalah revisi keempat dalam pengembangan IP dan versi pertama dari protokol yang akan digunakan secara luas
+  * _**Internet Protocol version 6 (IPv6)**_ adalah versi IP terbaru, yang merupakan peningkatan evolusioner dari IPv4 dan dirancang untuk memenuhi kebutuhan lebih banyak alamat, menyediakan routing multicast yang lebih baik dan menyederhanakan pemrosesan oleh router
 
-In order to bind an external IP address to the required node, you need to
-enable (or [set the required number](<https://www.virtuozzo.com/application-platform-docs/multiple-public-ip/>) of) _Public IPv4_ / _Public IPv6_ within
-the central part of the **topology wizard** window.
+Untuk mengikat alamat IP eksternal ke node yang dibutuhkan, Anda perlu mengaktifkan (atau [mengatur jumlah yang dibutuhkan](https://www.virtuozzo.com/application-platform-docs/multiple-public-ip/)) _Public IPv4_ / _Public IPv6_ dalam bagian tengah jendela **topology wizard**.
 
-![wizard add public IP](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/public-ip/02-wizard-add-public-ip.png" alt="wizard add public IP" width="100%"/>
 
-:::warning Enabling Public IPv4 turns off theAccess via SLBoption by default.
-It may cause a temporary (a few minutes) disruption in environment access due
-to the DNS cache.In case of attaching external IPs for thehorizontally
-scalednodes, each container within the layer will be supplied with its own set
-of addresses. :::
+:::warning
+Mengaktifkan Public IPv4 mematikan opsi Akses melalui SLB secara default. Hal ini dapat menyebabkan gangguan sementara (beberapa menit) dalam akses lingkungan karena cache DNS. Jika melampirkan IP eksternal untuk node yang diskalakan secara horizontal, setiap container dalam lapisan akan dilengkapi dengan kumpulan alamat sendiri.
+:::
 
-To find and manage the allocated IPs in the existing environment, expand the
-appropriate _**node**_ string in the environment topology list.
+Untuk menemukan dan mengelola IP yang dialokasikan dalam lingkungan yang ada, perluas string _**node**_ yang sesuai dalam daftar topologi lingkungan.
 
-![dashboard manage external ip addresses](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/public-ip/03-dashboard-manage-external-ip-addresses.png" alt="dashboard manage external ip addresses" width="100%"/>
 
-Here, upon hovering over IPs, you can get access to the following
-functionality:
+Di sini, saat melayang di atas IP, Anda dapat mengakses fungsionalitas berikut:
 
-  * **Copy to Clipboard** \- copies the appropriate address in one click
-  * **Attach/Detach IP(s)** \- allows adjusting a number of public IPs (both IPv4 and IPv6)
-  * **Detach IP** \- removes a particular address
+  * **Copy to Clipboard** \- menyalin alamat yang sesuai dalam satu klik
+  * **Attach/Detach IP(s)** \- memungkinkan penyesuaian jumlah IP publik (baik IPv4 dan IPv6)
+  * **Detach IP** \- menghapus alamat tertentu
 
-:::note The public IP is a paid option, which is charged for every hour of its
-usage. The exact price is defined by your particular hosting service provider
-and can be found at theQuotas & Pricing> Pricing > Optionsframe of the
-dashboard.If you have public IP enabled for any node in your environment, you
-can’t use theswap domainsfunctionality for it. Consider utilizing theswap
-Public IPsAPI instead.If working withmultiple public IPs, the very first
-external address attached (of each IPv4 and IPv6 types) is considered
-aprimaryone and can only be deleted last. It is used for both incoming and
-outgoing traffic, while the rest of IPs can only receive it. :::
+:::note
+IP publik adalah opsi berbayar, yang dikenakan biaya untuk setiap jam penggunaannya. Harga pasti ditentukan oleh penyedia layanan hosting Anda dan dapat ditemukan di frame Quotas & Pricing > Pricing > Options pada dashboard. Jika Anda mengaktifkan IP publik untuk node apa pun di lingkungan Anda, Anda tidak dapat menggunakan fungsionalitas swap domain untuk itu. Pertimbangkan menggunakan API swap Public IP. Jika bekerja dengan beberapa IP publik, alamat eksternal pertama yang terlampir (dari setiap jenis IPv4 dan IPv6) dianggap sebagai yang utama dan hanya dapat dihapus terakhir. Ini digunakan untuk lalu lintas masuk dan keluar, sementara sisanya hanya dapat menerima lalu lintas tersebut.
+:::
 
-## What’s next?[![](#)](<https://www.virtuozzo.com/application-platform-docs/public-ip/#whats-next>)
+## Baca Juga{#whats-next}
 
-  * [Shared Load Balancer](<https://docs.dewacloud.com/docs/shared-load-balancer/>)
-  * [Endpoints](<https://docs.dewacloud.com/docs/endpoints/>)
-  * [Custom Domains](<https://docs.dewacloud.com/docs/custom-domains/>)
-  * [Secure Sockets Layer](<https://docs.dewacloud.com/docs/secure-sockets-layer/>)
-  * [FTP/FTPS Support](<https://docs.dewacloud.com/docs/ftp-ftps-support/>)
-  * [Multiple Domains with Public IP](<https://docs.dewacloud.com/docs/multiple-domains/>)
+  * [Shared Load Balancer](https://docs.dewacloud.com/docs/shared-load-balancer/)
+  * [Endpoints](https://docs.dewacloud.com/docs/endpoints/)
+  * [Custom Domains](https://docs.dewacloud.com/docs/custom-domains/)
+  * [Secure Sockets Layer](https://docs.dewacloud.com/docs/secure-sockets-layer/)
+  * [FTP/FTPS Support](https://docs.dewacloud.com/docs/ftp-ftps-support/)
+  * [Multiple Domains with Public IP](https://docs.dewacloud.com/docs/multiple-domains/)

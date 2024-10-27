@@ -74,12 +74,3 @@ That’s all! You’ll be redirected back to the dashboard, where you can log in
 :::tip
 Also, you’ll receive an email about the success of the password reset operation.
 :::
-
-## Baca Juga{#whats-next}
-
-  * [Account Registration](https://docs.dewacloud.com/docs/account/)
-  * [Account Types](https://docs.dewacloud.com/docs/types-of-accounts/)
-  * [Account Statuses](https://docs.dewacloud.com/docs/account-statuses/)
-  * [Two-Factor Authentication](https://docs.dewacloud.com/docs/two-factor-authentication/)
-  * [Personal Access Tokens](https://docs.dewacloud.com/docs/personal-access-tokens/)
-  * [Accounts Collaboration](https://docs.dewacloud.com/docs/account-collaboration/)

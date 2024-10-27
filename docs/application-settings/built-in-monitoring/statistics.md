@@ -1,70 +1,70 @@
 ---
 sidebar_position: 2
-slug: /statistics
+slug: /statistics-monitoring
 title: Statistics
 ---
 # Statistics Monitoring
 
-Statistics monitoring is an essential tool for efficiently managing your environment's resources. The platform provides built-in statistics to help you monitor billable resource consumption and optimize your environment's topology to reduce costs.
+Pemantauan statistik adalah alat penting untuk mengelola sumber daya environment Anda dengan efisien. Platform ini menyediakan statistik bawaan untuk membantu Anda memantau konsumsi sumber daya yang dapat ditagih dan mengoptimalkan topologi environment Anda untuk mengurangi biaya.
 
-## View Statistics
+## View Statistics{#view-statistics}
 
-You can view usage statistics for various nodes in your environment, such as:
+Anda dapat melihat statistik penggunaan untuk berbagai node di dalam environment Anda, seperti:
 - _Application servers_
 - _Balancers_
 - _Web servers_
 - _Databases_
 
 ### How to View Statistics:
-1. **Log into the Platform Dashboard** and navigate to your environment.
-2. **Click the "Statistics" Button** next to the node you want to track.
+1. **Log into the Platform Dashboard** dan navigasikan ke environment Anda.
+2. **Click the "Statistics" Button** di samping node yang ingin Anda pantau.
 
-![view app statistics env](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/statistics/env.png" alt="view app statistics env" width="100%"/>
 
 ### Types of Tracked Resources:
-In the statistics panel, you'll find metrics for:
-- **RAM**: Memory consumption (in MiB)
-- **CPU**: Processor load (in MHz)
-- **Network**: Internal and external traffic (in MB)
-- **Disk**: Data stored (in MB) and I/O operations (in IOPS)
+Di panel statistik, Anda akan menemukan metrik untuk:
+- **RAM**: Konsumsi memori (dalam MiB)
+- **CPU**: Beban prosesor (dalam MHz)
+- **Network**: Lalu lintas internal dan eksternal (dalam MB)
+- **Disk**: Data yang disimpan (dalam MB) dan operasi I/O (dalam IOPS)
 
-![view app statistics statistics](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/statistics/statistics.png" alt="view app statistics statistics" width="100%"/>
 
 ### Usage Limits:
-- **RAM** and **CPU** depend on the number of [cloudlets](https://docs.dewacloud.com/docs/cloudlet/).
-- **Disk** can be adjusted within your allowed range.
-- **Network** and **IOPS** limits are predefined by your hosting provider.
+- **RAM** dan **CPU** bergantung pada jumlah [cloudlets](https://docs.dewacloud.com/docs/cloudlet/).
+- **Disk** dapat disesuaikan dalam rentang yang diizinkan.
+- Batasan **Network** dan **IOPS** telah ditetapkan oleh penyedia hosting Anda.
 
-You can adjust the display using the _Interval_ and _Duration_ settings, as well as enable or disable specific resource types at the top of the panel.
+Anda dapat menyesuaikan tampilan menggunakan pengaturan _Interval_ dan _Duration_, serta mengaktifkan atau menonaktifkan jenis sumber daya tertentu di bagian atas panel.
 
 #### Statistics Collection:
-The platform collects statistics every minute, storing data for an hour to implement the accurate "Pay-per-Use" model. Data is then aggregated into one-hour blocks:
-- For **CPU**, **Network**, **Disk IOPS**, and **Disk IO**, the platform sums the values.
-- For **RAM** and **Disk**, the platform uses the maximum value during the hour.
+Platform mengumpulkan statistik setiap menit, menyimpan data selama satu jam untuk mengimplementasikan model "Pay-per-Use" yang akurat. Data kemudian digabungkan menjadi blok satu jam:
+- Untuk **CPU**, **Network**, **Disk IOPS**, dan **Disk IO**, platform menjumlahkan nilai-nilai tersebut.
+- Untuk **RAM** dan **Disk**, platform menggunakan nilai maksimum selama jam tersebut.
 
 ### Monitoring Resource Usage:
-Use the data to analyze your application's resource consumption, predict future costs, and manage your environment more effectively. You can also configure [load alerts](https://www.virtuozzo.com/application-platform-docs/load-alerts/) to notify you when usage exceeds or falls below a certain threshold.
+Gunakan data tersebut untuk menganalisis konsumsi sumber daya aplikasi Anda, memprediksi biaya di masa depan, dan mengelola environment Anda dengan lebih efektif. Anda juga dapat mengonfigurasi [load alerts](https://docs.dewacloud.com/docs/load-alerts/) untuk memberi tahu Anda ketika penggunaan melebihi atau di bawah ambang batas tertentu.
 
-For more detailed information on resource consumption and billing, refer to [resources charging](https://docs.dewacloud.com/docs/resource-consumption/).
+Untuk informasi lebih detail tentang konsumsi dan penagihan sumber daya, lihat [resources charging](https://docs.dewacloud.com/docs/resource-consumption/).
 
-## I/O Usage Monitoring
+## I/O Usage Monitoring{#io-usage-monitoring}
 
-**Input/Output Operations per Second (IOPS)** is a common metric used to measure system efficiency based on read/write operations without degrading performance.
+**Input/Output Operations per Second (IOPS)** adalah metrik umum yang digunakan untuk mengukur efisiensi sistem berdasarkan operasi baca/tulis tanpa mengurangi kinerja.
 
 1. **View IOPS Data**:
-   The IOPS data is displayed in the **Disk** statistics section, alongside other resource metrics. Hover over a data point to see detailed information about disk space, IOPS, and limits.
+   Data IOPS ditampilkan di bagian statistik **Disk**, bersama dengan metrik sumber daya lainnya. Arahkan mouse ke titik data untuk melihat informasi detail tentang ruang disk, IOPS, dan batas.
 
-![view app statistics disk 1](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/statistics/disk-1.png" alt="view app statistics disk 1" width="100%"/>
 
 2. **Avoid Performance Degradation**:
-   A red dotted line on the graph indicates the IOPS limit, set by your hosting provider. If your container reaches this limit, performance may be negatively affected.
+   Garis putus-putus merah pada grafik menunjukkan batas IOPS, yang ditetapkan oleh penyedia hosting Anda. Jika container Anda mencapai batas ini, kinerja dapat terpengaruh secara negatif.
 
 3. **Adjusting IOPS Limit**:
-   The IOPS limit depends on the selected interval. For example, with a 1-hour interval, the IOPS limit is increased proportionally.
+   Batas IOPS bergantung pada interval waktu yang dipilih. Sebagai contoh, dengan interval 1 jam, batas IOPS meningkat secara proporsional.
 
-![view app statistics disk 3](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/statistics/disk-3.png" alt="view app statistics disk 3" width="100%"/>
 
-## What’s Next?
+## Baca Juga
 
 - [Log Files](https://docs.dewacloud.com/docs/view-log-files/)
 - [Charged Resources](https://docs.dewacloud.com/docs/resource-consumption/)

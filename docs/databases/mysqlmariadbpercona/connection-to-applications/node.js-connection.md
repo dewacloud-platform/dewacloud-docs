@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-slug: /node.js-connection
+slug: /connection-to-mysql-nodejs
 title: Node.js Connection
 ---
 # Node.js Application Connection to MySQL/MariaDB/Percona

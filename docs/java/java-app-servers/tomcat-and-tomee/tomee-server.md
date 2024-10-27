@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /tomee-server
+slug: /apache-tomee
 title: TomEE Server
 ---
 

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 8
-slug: /container-volumes
+slug: /cli-container-volumes
 title: Container Volumes
 ---
 # CLI Tutorial: Container Volumes

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 6
-slug: /app-security-with-nginx-balancer
+slug: /nginx-balancer-security
 title: App Security with NGINX Balancer
 ---
 # Keamanan Dasar untuk Aplikasi dengan NGINX Balancer

@@ -1,114 +1,114 @@
 ---
 sidebar_position: 14
-slug: /managing-timezone-settings
+slug: /timezone-management
 title: Managing Timezone Settings
 ---
 # Managing Timezone Data
 
-By default, all containers in the platform use UTC timezone. However, you can change this to any desired timezone using the _**[TimeZone Change](https://docs.dewacloud.com/docs/#timezone-add-on)**_ add-on. Alternatively, you can manually update the timezone for Java and PHP application servers.
+Secara default, semua container di platform menggunakan zona waktu UTC. Namun, Anda dapat mengubahnya ke zona waktu yang diinginkan menggunakan _**[TimeZone Change](https://docs.dewacloud.com/docs/#timezone-add-on)**_ add-on. Sebagai alternatif, Anda dapat secara manual memperbarui zona waktu untuk server aplikasi Java dan PHP.
 
-## Using TimeZone Add-On
+## Menggunakan TimeZone Add-On
 
-You can easily install the _TimeZone Change_ add-on to adjust the timezone of your environment:
+Anda dapat dengan mudah menginstal add-on _TimeZone Change_ untuk menyesuaikan zona waktu environment Anda:
 
-### 1. Check the Current Timezone
+### 1. Periksa Zona Waktu Saat Ini
 
-To verify the current timezone, use the following command in the terminal:
+Untuk memverifikasi zona waktu saat ini, gunakan perintah berikut di terminal:
 
 ```bash
 date
 ```
 
-By default, the result will show the UTC timezone.
+Secara default, hasilnya akan menunjukkan zona waktu UTC.
 
-![date before timezone change](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/managing-timezone-settings/01-date-before-timezone-change.png" alt="date before timezone change" max-width="100%"/>
 
-### 2. Install the Add-On
+### 2. Instal Add-On
 
-Navigate to the _TimeZone Change_ add-on repository on GitHub and import the _**manifest.jps**_ file through the platform dashboard:
+Arahkan ke repositori add-on _TimeZone Change_ di GitHub dan impor file _**manifest.jps**_ melalui dashboard platform:
 
 ```url
 https://github.com/jelastic-jps/time-zone-change/blob/master/manifest.jps
 ```
 
-![import timezone change add-on](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/managing-timezone-settings/02-import-timezone-change-add-on.png" alt="import timezone change add-on" max-width="100%"/>
 
-### 3. Set TimeZone
+### 3. Atur TimeZone
 
-Choose the target _Environment_ and specify the desired _TimeZone Name_ (e.g., _America/New_York_) from the [List of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
+Pilih _Environment_ tujuan dan tentukan _TimeZone Name_ yang diinginkan (misalnya, _America/New_York_) dari [Daftar zona waktu](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
 
-![install timezone change add-on](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/managing-timezone-settings/04-install-timezone-change-add-on.png" alt="install timezone change add-on" max-width="100%"/>
 
-### 4. Verify TimeZone Change
+### 4. Verifikasi Perubahan TimeZone
 
-After installation, run the `date` command again to ensure the timezone has been updated.
+Setelah instalasi, jalankan kembali perintah `date` untuk memastikan zona waktu telah diperbarui.
 
-![date after timezone change](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/managing-timezone-settings/05-date-after-timezone-change.png" alt="date after timezone change" max-width="100%"/>
 
-## Managing Timezone Rules for Java
+## Mengelola Aturan Zona Waktu untuk Java
 
-### Updating Timezone Data
+### Memperbarui Data Zona Waktu
 
-To ensure the timezone rules in your Java environment are up-to-date, use the built-in _TZUpdater_ tool:
+Untuk memastikan aturan zona waktu di environment Java Anda mutakhir, gunakan alat bawaan _TZUpdater_:
 
-1. Connect to your Java environment via SSH.
-2. Check the current TZdata version:
+1. Hubungkan ke environment Java Anda melalui SSH.
+2. Periksa versi TZdata saat ini:
 
 ```bash
 java -jar /usr/java/utils/tzupdater.jar -V
 ```
 
-3. If the data is outdated, update it with:
+3. Jika data sudah usang, perbarui dengan:
 
 ```bash
 java -jar /usr/java/utils/tzupdater.jar -u
 ```
 
-### Changing Timezone for Java
+### Mengubah Zona Waktu untuk Java
 
-To change the timezone for a Java application server, follow these steps:
+Untuk mengubah zona waktu untuk server aplikasi Java, ikuti langkah-langkah berikut:
 
-1. Edit the _variables.conf_ file (location varies by server):
-   - For **Tomcat**: `/opt/tomcat/conf/variables.conf`
-   - For **Jetty**: `/opt/jetty/etc/variables.conf`
-   - For **GlassFish**: Admin panel > _Configurations > JVM Settings_
+1. Edit file _variables.conf_ (lokasi bervariasi sesuai server):
+   - Untuk **Tomcat**: `/opt/tomcat/conf/variables.conf`
+   - Untuk **Jetty**: `/opt/jetty/etc/variables.conf`
+   - Untuk **GlassFish**: Admin panel > _Configurations > JVM Settings_
 
-2. Add or modify the _-Duser.timezone_ variable with the required timezone:
+2. Tambahkan atau modifikasi variabel _-Duser.timezone_ dengan zona waktu yang diperlukan:
 
 ```bash
 -Duser.timezone=America/New_York
 ```
 
-3. **Save** the changes and **Restart** the application server.
+3. **Simpan** perubahan dan **Restart** server aplikasi.
 
-## Managing Timezone Rules for PHP
+## Mengelola Aturan Zona Waktu untuk PHP
 
-### Checking Timezone Data
+### Memeriksa Data Zona Waktu
 
-To update the timezone for PHP servers (Apache, NGINX):
+Untuk memperbarui zona waktu bagi server PHP (Apache, NGINX):
 
-1. Open the _php.ini_ file from the configuration manager.
-2. Uncomment the line for external timezone database (Olson):
+1. Buka file _php.ini_ dari pengelola konfigurasi.
+2. Hapus komentari baris untuk basis data zona waktu eksternal (Olson):
 
 ```ini
 extension=tzdb
 ```
 
-3. Save and restart the server.
+3. Simpan dan mulai ulang server.
 
-### Changing Timezone for PHP
+### Mengubah Zona Waktu untuk PHP
 
-To change the timezone for PHP:
+Untuk mengubah zona waktu untuk PHP:
 
-1. Edit the _php.ini_ file and modify the `date.timezone` parameter:
+1. Edit file _php.ini_ dan modifikasi parameter `date.timezone`:
 
 ```ini
 date.timezone = Australia/Sydney
 ```
 
-2. Save and restart the server. The timezone will now reflect the new settings.
+2. Simpan dan mulai ulang server. Zona waktu sekarang akan mencerminkan pengaturan baru.
 
-## What's Next?
+## Baca Juga
 
 - [Managing Locale Settings](https://docs.dewacloud.com/docs/locale-settings/)
 - [Custom Error Page Settings](https://docs.dewacloud.com/docs/custom-error-page/)

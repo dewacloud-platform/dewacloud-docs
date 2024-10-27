@@ -1,6 +1,6 @@
 ---
 sidebar_position: 6
-slug: /auto-clustering-of-instances
+slug: /auto-clustering
 title: Auto-Clustering of Instances
 ---
 # Auto-Clustering of Instances via Topology Wizard
@@ -36,7 +36,7 @@ Tomcat - 10.0.5; 9.0.45; 8.5.64; 7.0.108
 TomEE - 9.0.0-M3; 8.0.5
 :::
 
-![Tomcat/TomEE cluster scheme](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/auto-clustering-of-instances/00-tomcat-tomee-cluster-scheme.svg" alt="Tomcat/TomEE cluster scheme" width="40%"/>
 
 [Learn More »](https://docs.dewacloud.com/docs/tomcat/)
 
@@ -44,7 +44,7 @@ TomEE - 9.0.0-M3; 8.0.5
 
 Interkoneksi server GlassFish dengan replikasi sesi yang sudah dikonfigurasi dan penyeimbangan beban.
 
-![GlassFish cluster scheme](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/auto-clustering-of-instances/01-glassfish-cluster-scheme.svg" alt="GlassFish cluster scheme" width="60%"/>
 
 [Learn More »](https://docs.dewacloud.com/docs/glassfish/)
 
@@ -52,7 +52,7 @@ Interkoneksi server GlassFish dengan replikasi sesi yang sudah dikonfigurasi dan
 
 Interkoneksi server Payara dengan replikasi sesi yang sudah dikonfigurasi dan penyeimbangan beban.
 
-![Payara cluster scheme](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/auto-clustering-of-instances/02-payara-cluster-scheme.svg" alt="Payara cluster scheme" width="60%"/>
 
 [Learn More »](https://docs.dewacloud.com/docs/payara/)
 
@@ -60,7 +60,7 @@ Interkoneksi server Payara dengan replikasi sesi yang sudah dikonfigurasi dan pe
 
 Node master Jenkins dalam mode master-slave dengan pekerja **Java Engine** yang dapat diskalakan secara otomatis dan plugin yang sudah diinstal untuk mendukung otomatisasi build dan deployment dalam pengaturan **CI** dan **CD**.
 
-![Jenkins cluster scheme](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/auto-clustering-of-instances/03-jenkins-cluster-scheme.svg" alt="Jenkins cluster scheme" width="30%"/>
 
 [Learn More »](https://docs.dewacloud.com/docs/jenkins/)
 
@@ -68,7 +68,7 @@ Node master Jenkins dalam mode master-slave dengan pekerja **Java Engine** yang 
 
 Node WildFly dalam mode _Domain Mode_ dengan clustering diaktifkan untuk mendapatkan ketersediaan tinggi dan menjamin kinerja terus-menerus dari aplikasi **Java EE** yang di-deploy.
 
-![WildFly cluster scheme](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/auto-clustering-of-instances/04-wildfly-cluster-scheme.svg" alt="WildFly cluster scheme" width="60%"/>
 
 [Learn More »](https://docs.dewacloud.com/docs/wildfly/)
 
@@ -84,13 +84,13 @@ Berdasarkan kebutuhan Anda, Anda dapat memilih **Scheme** dari jenis berikut:
 
 Replikasi yang sudah dikonfigurasi dengan dua database utama yang saling terhubung. Selama scaling horizontal, cluster diperluas dengan node sekunder tambahan.
 
-![MySQL cluster primary-primary scheme](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/auto-clustering-of-instances/05-mysql-cluster-primary-primary-scheme-1.svg" alt="MySQL cluster primary-primary scheme" width="40%"/>
 
   * **Primary-Secondary** with Extra Secondaries
 
 Replikasi yang sudah dikonfigurasi dengan satu database utama dan satu sekunder. Selama scaling horizontal, cluster diperluas dengan node sekunder tambahan.
 
-![MySQL cluster primary-secondary scheme](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/auto-clustering-of-instances/06-mysql-cluster-primary-secondary-scheme-1.svg" alt="MySQL cluster primary-secondary scheme" width="40%"/>
 
 [Learn More »](https://github.com/jelastic-jps/mysql-cluster)
 
@@ -106,19 +106,19 @@ Berdasarkan kebutuhan Anda, Anda dapat memilih **Scheme** dari jenis berikut:
 
 Replikasi yang sudah dikonfigurasi dengan dua database utama yang saling terhubung. Selama scaling horizontal, cluster diperluas dengan node sekunder tambahan.
 
-![MariaDB cluster primary-primary scheme](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/auto-clustering-of-instances/07-mariadb-cluster-primary-primary-scheme.svg" alt="MariaDB cluster primary-primary scheme" width="40%"/>
 
   * **Primary-Secondary** with Extra Secondaries
 
 Replikasi yang sudah dikonfigurasi dengan satu database utama dan satu sekunder. Selama scaling horizontal, cluster diperluas dengan node sekunder tambahan.
 
-![MariaDB cluster primary-secondary scheme](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/auto-clustering-of-instances/08-mariadb-cluster-primary-secondary-scheme.svg" alt="MariaDB cluster primary-secondary scheme" width="40%"/>
 
   * **Galera** Cluster
 
 Semua server dapat menerima pembaruan bahkan jika dikeluarkan secara bersamaan.
 
-![MariaDB cluster Galera scheme](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/auto-clustering-of-instances/09-mariadb-cluster-galera-scheme.svg" alt="MariaDB cluster Galera scheme" width="40%"/>
 
 [Learn More »](https://github.com/jelastic-jps/mysql-cluster)
 
@@ -132,19 +132,19 @@ Berdasarkan kebutuhan Anda, Anda dapat memilih **Scheme** dari jenis berikut:
 
 Replikasi yang sudah dikonfigurasi dengan dua database utama yang saling terhubung. Selama scaling horizontal, cluster diperluas dengan node sekunder tambahan.
 
-![Percona cluster Primary-Primary scheme](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/auto-clustering-of-instances/09.1-percona-cluster-primary-primary-scheme.svg" alt="Percona cluster Primary-Primary scheme" width="40%"/>
 
   * **Primary-Secondary** with Extra Secondaries
 
 Replikasi yang sudah dikonfigurasi dengan satu database utama dan satu sekunder. Selama scaling horizontal, cluster diperluas dengan node sekunder tambahan.
 
-![Percona cluster Primary-Secondary scheme](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/auto-clustering-of-instances/09.2-percona-cluster-primary-secondary-scheme.svg" alt="Percona cluster Primary-Secondary scheme" width="40%"/>
 
   * **XtraDB** Cluster
 
 Solusi clustering database yang memastikan ketersediaan tinggi, mencegah downtime dan kehilangan data, serta menyediakan skalabilitas linear untuk lingkungan yang berkembang.
 
-![Percona cluster XtraDB scheme](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/auto-clustering-of-instances/09.3-percona-cluster-xtradb-scheme.svg" alt="Percona cluster XtraDB scheme" width="40%"/>
 
 [Learn More »](https://github.com/jelastic-jps/mysql-cluster)
 
@@ -152,7 +152,7 @@ Solusi clustering database yang memastikan ketersediaan tinggi, mencegah downtim
 
 Cluster database PostgreSQL yang sudah dikonfigurasi dengan replikasi primary-secondary asynchronous dan penambahan otomatis node baru ke dalam cluster (sebagai sekunder).
 
-![PostgreSQL cluster primary-secondary scheme](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/auto-clustering-of-instances/10-postgresql-cluster-primary-secondary-scheme.svg" alt="PostgreSQL cluster primary-secondary scheme" width="50%"/>
 
 [Learn More »](https://docs.dewacloud.com/docs/postgresql/)
 
@@ -160,7 +160,7 @@ Cluster database PostgreSQL yang sudah dikonfigurasi dengan replikasi primary-se
 
 Server Couchbase yang saling terhubung secara otomatis dengan auto-scaling dan rebalancing yang sudah dikonfigurasi untuk menyediakan sistem penyimpanan data yang sangat tersedia.
 
-![Couchbase cluster scheme](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/auto-clustering-of-instances/11-couchbase-cluster-scheme.svg" alt="Couchbase cluster scheme" width="60%"/>
 
 [Learn More »](https://github.com/jelastic-jps/couchbase)
 
@@ -168,7 +168,7 @@ Server Couchbase yang saling terhubung secara otomatis dengan auto-scaling dan r
 
 Konfigurasi otomatis set replika MongoDB yang sangat tersedia dan andal dengan auto-discovery node baru.
 
-![MongoDB cluster scheme](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/auto-clustering-of-instances/12-mongodb-cluster-scheme.svg" alt="MongoDB cluster scheme" width="60%"/>
 
 [Learn More »](https://docs.dewacloud.com/docs/mongodb-auto-clustering/)
 
@@ -176,7 +176,7 @@ Konfigurasi otomatis set replika MongoDB yang sangat tersedia dan andal dengan a
 
 Otomatisasi untuk implementasi Redis Cluster yang terdistribusi - penyimpanan struktur data dalam memori open-source. Biasanya digunakan untuk caching, penyimpanan data, sebagai broker pesan, dan tugas lainnya. Topologi yang disediakan terdiri dari setidaknya tiga server Primary, masing-masing dengan node Secondary untuk memastikan distribusi beban baca dan pemulihan otomatis jika Primary turun.
 
-![Redis cluster scheme](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/auto-clustering-of-instances/12.1-redis-cluster-single-region-topology.svg" alt="Redis cluster scheme" width="40%"/>
 
 [Learn More »](https://docs.dewacloud.com/docs/redis-cluster/)
 
@@ -184,7 +184,7 @@ Otomatisasi untuk implementasi Redis Cluster yang terdistribusi - penyimpanan st
 
 Clusterisasi otomatis mesin pencari open-source yang didorong oleh komunitas, yang menyediakan pencarian teks lengkap yang terdistribusi dan mendukung banyak tenant. Solusi ini menyediakan pengaturan bawaan untuk menambahkan _OpenSearch Dashboards_ untuk visualisasi data dan _Logstash_ untuk memproses log.
 
-![OpenSearch cluster scheme](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/auto-clustering-of-instances/12.2-opensearch-cluster-scheme.png" alt="OpenSearch cluster scheme" width="100%"/>
 
 [Learn More »](https://docs.dewacloud.com/docs/opensearch-cluster/)
 
@@ -194,7 +194,7 @@ Clusterisasi otomatis mesin pencari open-source yang didorong oleh komunitas, ya
 
 Cluster penyimpanan yang dikonfigurasi secara otomatis, dapat diandalkan (volume yang direplikasi) berdasarkan solusi [Gluster](https://www.gluster.org/), yang memastikan keamanan data. Jika terjadi kegagalan satu atau beberapa node, klien _AutoFS_ secara otomatis beralih ke instance yang berfungsi, menyediakan penyimpanan dengan ketersediaan tinggi.
 
-![Shared Storage cluster scheme](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/auto-clustering-of-instances/13-shared-storage-cluster-scheme.svg" alt="Shared Storage cluster scheme" width="70%"/>
 
 [Learn More »](https://docs.dewacloud.com/docs/shared-storage-container/)
 
@@ -202,7 +202,7 @@ Cluster penyimpanan yang dikonfigurasi secara otomatis, dapat diandalkan (volume
 
 1\. Fitur _**Auto-Clustering**_ dapat diaktifkan untuk grup node melalui switcher dengan nama yang sama di bagian tengah topology wizard (jika tersedia untuk [stack yang dipilih](https://docs.dewacloud.com/docs/stacks/)).
 
-![wizard auto-clustering switcher](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/auto-clustering-of-instances/14-wizard-auto-clustering-switcher.png" alt="wizard auto-clustering switcher" width="50%"/>
 
 :::tip
 Berdasarkan implementasi spesifik, opsi **Auto-Clustering** bisa:
@@ -213,7 +213,7 @@ Berdasarkan implementasi spesifik, opsi **Auto-Clustering** bisa:
 
 2\. Untuk mendapatkan informasi tambahan tentang cluster yang akan dibuat, Anda dapat mengarahkan kursor ke tanda tanya di samping switcher. Dalam frame pop-up yang sesuai, Anda akan menemukan deskripsi singkat, yang biasanya dilengkapi dengan skema topologi dan tautan ke tinjauan yang lebih rinci.
 
-![auto-clustering hint description](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/auto-clustering-of-instances/18-auto-clustering-hint-description.png" alt="auto-clustering hint description" width="50%"/>
 
 :::tip
 Info tambahan tentang berbagai tipe cluster database dapat dilihat dengan mengarahkan kursor ke bagian **Scheme** yang sesuai.
@@ -221,7 +221,7 @@ Info tambahan tentang berbagai tipe cluster database dapat dilihat dengan mengar
 
 3\. Pengaturan lainnya dapat [dikonfigurasi](https://docs.dewacloud.com/docs/setting-up-environment/) seperti halnya environment biasa.
 
-![glassfish cluster at dashboard](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/auto-clustering-of-instances/20-glassfish-cluster-at-dashboard.png" alt="glassfish cluster at dashboard" width="100%"/>
 
 :::warning
 Setelah dikonfigurasi, auto-clustering tidak dapat dinonaktifkan dari topology wizard.
@@ -233,7 +233,7 @@ Setelah dikonfigurasi, auto-clustering tidak dapat dinonaktifkan dari topology w
 https://app.**[{platformDomain}](https://docs.dewacloud.com/docs/paas-hosting-providers/)**/console
 ```
 
-![cloud scripting console](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/auto-clustering-of-instances/21-cloud-scripting-console.png" alt="cloud scripting console" width="100%"/>
 
 Sebagai contoh, Anda dapat menggunakan informasi ini untuk debugging saat mengembangkan solusi paket dengan Cloud Scripting, yang memanfaatkan fitur auto-clustering.
 

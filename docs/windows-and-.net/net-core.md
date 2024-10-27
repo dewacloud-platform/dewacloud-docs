@@ -2,7 +2,6 @@
 sidebar_position: 1
 slug: /net-core
 title: .NET Core
-
 ---
 
 # Server Aplikasi .NET Core
@@ -26,13 +25,13 @@ Ketersediaan stack ini tergantung pada pengaturan penyedia hosting tertentu. Tem
 
 2. Dalam [topology wizard](https://docs.dewacloud.com/setting-up-environment/) yang terbuka, buka tab **.NET** dan pilih server aplikasi _**.NET Core**_. Konfigurasikan parameter lainnya (_[cloudlet](https://docs.dewacloud.com/docs/cloudlet/)_, _disk limit_, _[public IP](https://docs.dewacloud.com/public-ip/)_, dll.) sesuai kebutuhan Anda.
 
-![.NET Core topology wizard](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/windows-&-.net/.net-core/01-dotnet-core-topology-wizard.png" alt=".NET Core topology wizard" width="100%"/>
 
 Klik **Create** untuk melanjutkan.
 
 3. Environment Anda dengan server _.NET Core_ akan dibuat dalam beberapa menit.
 
-![.NET Core application server created](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/windows-&-.net/.net-core/02-dotnet-core-application-server-created.png" alt=".NET Core application server created" width="100%"/>
 
 Server aplikasi beroperasi di dalam container (node) terpisah - instance virtual yang terisolasi - disediakan untuk stack perangkat lunak. Container memiliki private IP nya sendiri dan record DNS unik.
 
@@ -42,7 +41,7 @@ Platform ini menyediakan beberapa opsi untuk secara otomatis [mendeploy proyek](
 
 1. Buka tab _**Git/SVN**_ dari **[Deployment Manager](https://docs.dewacloud.com/deployment-manager/#git--svn-projects)** untuk menambahkan repository baru.
 
-![deployment manager add repository](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/windows-&-.net/.net-core/03-deployment-manager-add-repository.png" alt="deployment manager add repository" width="50%"/>
 
 :::tip
 Jika Anda tertarik untuk membuat aplikasi .NET Anda sendiri, ikuti dokumentasi resmi.
@@ -57,17 +56,17 @@ ASPNETCORE_URLS - mengkonfigurasi layanan untuk bekerja dengan URL yang ditentuk
 RUN_OPTION - menyediakan opsi dotnet run tambahan untuk proyek Anda
 :::
 
-![add .NET Core application](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/windows-&-.net/.net-core/05-add-dotnet-core-application.png" alt="add .NET Core application" width="50%"/>
 
 Klik **Add** untuk menyimpan proyek di dalam Deployment Manager Anda.
 
 3. Buka dialog deployment menggunakan salah satu dari dua tombol pada gambar di bawah:
 
-![deploy from Git](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/windows-&-.net/.net-core/06-deploy-from-git.png" alt="deploy from Git" width="100%"/>
 
 4. Dalam bingkai yang terbuka, Anda perlu memilih aplikasi yang akan dideploy, branch, dan environment target.
 
-![deploy .NET Core application](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/windows-&-.net/.net-core/07-deploy-dotnet-core-application.png" alt="deploy .NET Core application" width="50%"/>
 
 :::note
 Mirip dengan bahasa pemrograman Python, Node.js, dan Go, .NET Core memiliki satu konteks (yaitu hanya satu aplikasi yang dapat dideploy pada satu waktu).
@@ -77,11 +76,11 @@ Konfigurasikan parameter lain sesuai kebutuhan Anda dengan mengikuti panduan dep
 
 5. Dalam satu menit, aplikasi akan dideploy dan dapat diakses menggunakan tombol **Open in Browser** di sebelah server aplikasi .NET Core.
 
-![open .NET Core in browser](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/windows-&-.net/.net-core/08-open-dotnet-core-in-browser.png" alt="open .NET Core in browser" width="100%"/>
 
 Aplikasi web Anda harus terbuka di tab baru browser. Dalam kasus kami, ini hanyalah sebuah situs .NET sederhana.
 
-![.NET Core web application](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/windows-&-.net/.net-core/09-dotnet-core-web-application.png" alt=".NET Core web application" width="100%"/>
 
 Gunakan panduan ini sebagai referensi untuk mendeploy aplikasi Anda sendiri ke server .NET Core.
 

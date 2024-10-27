@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-slug: /git-push-deploy-add-on
+slug: /git-push-deploy
 title: Git-Push-Deploy Add-On
 ---
 # Git-Push-Deploy Add-On
@@ -9,7 +9,7 @@ Ada sejumlah opsi untuk mendeploy kode sumber Anda dari repo Git ke container, t
 
 Secara khusus, di dunia container Anda harus mengelola build dari image stack Anda berurusan dengan kompleksitas tambahan dari pipeline CI/CD. Dan seluruh redeploy container mungkin bukan pendekatan terbaik jika Anda sering melakukan commit tanpa perubahan konfigurasi dalam sistem operasi, stack server aplikasi atau dependensinya.
 
-![GitHub CI/CD](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/deployment/git-push-deploy-add-on/01-github-ci-cd.png" alt="GitHub CI/CD" max-width="100%"/>
 
 Untuk memudahkan otomatisasi deployment, platform PaaS menyiapkan paket khusus **Git-Push-Deploy** untuk pengiriman kode ke dalam image container yang telah dibangun sebelumnya. Paket ini mengimplementasikan sejumlah konfigurasi untuk menyiapkan deployment otomatis dari perubahan yang di-commit dalam repositori sumber aplikasi Git Anda ke cloud, membuatnya tersedia untuk pengujian lebih lanjut dengan penundaan minimal.
 
@@ -32,15 +32,15 @@ Jadi mari kita buat satu, ikuti instruksi di bawah sesuai dengan VCS Git yang di
 
 Untuk mendapatkan [personal access token untuk GitHub](https://github.blog/2013-05-16-personal-api-tokens/) akun Anda, navigasikan ke **Settings > Developer Settings > Personal access tokens** dan klik tombol **Generate new token**.
 
-![GitHub Generate New Token](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/deployment/git-push-deploy-add-on/02-github-generate-new-token.png" alt="GitHub Generate New Token" max-width="100%"/>
 
 Pada halaman yang terbuka, tentukan **Note** (deskripsi token) dan **Select scopes** (setidaknya untuk _repo_ dan _admin:repo_hook_). Klik **Generate token** di bagian bawah halaman.
 
-![GitHub Token Scopes](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/deployment/git-push-deploy-add-on/03-github-token-scopes.png" alt="GitHub Token Scopes" max-width="100%"/>
 
 Setelah dialihkan, salin dan simpan akses token yang ditampilkan di tempat lain (karena tidak dapat dilihat lagi setelah Anda meninggalkan halaman ini).
 
-![GitHub Copy Token](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/deployment/git-push-deploy-add-on/04-github-copy-token.png" alt="GitHub Copy Token" max-width="100%"/>
 
 Setelah ini selesai, lanjutkan ke bagian **[Install Git-Push-Deploy Package](https://docs.dewacloud.com/docs/#install-git-push-deploy-package)** langsung di bawah artikel ini.
 
@@ -50,13 +50,13 @@ Untuk membuat [personal access token on GitLab](https://docs.gitlab.com/ee/user/
 
 Di sini, tentukan optional token **Name**, tanggal **Expiry** (bisa dibiarkan kosong) dan centang ruang lingkup izin **api**.
 
-![GitLab Generating Access Token](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/deployment/git-push-deploy-add-on/05-gitlab-generating-access-token.png" alt="GitLab Generating Access Token" max-width="100%"/>
 
 Klik tombol **Create Personal Access Token**.
 
 Pada halaman yang terbuka, salin dan simpan sementara nilai akses token Anda di tempat lain (karena Anda tidak akan bisa melihatnya lagi setelah meninggalkan halaman ini).
 
-![GitLab Copy Access Token](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/deployment/git-push-deploy-add-on/06-gitlab-copy-access-token.png" alt="GitLab Copy Access Token" max-width="100%"/>
 
 Sekarang, Anda siap untuk instalasi paket.
 
@@ -95,7 +95,7 @@ Jika Anda akan menggunakan environment yang sudah dibuat sebelumnya, perhatikan 
 
 1. Klik tombol **Marketplace** di panel atas dashboard dan cari add-on _**Git-Push-Deploy**_:
 
-   ![Install Add-On](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/deployment/git-push-deploy-add-on/07-install-addon.png" alt="Install Add-On" max-width="100%"/>
 
    Klik **Install** untuk melanjutkan.
 
@@ -108,13 +108,13 @@ Jika Anda akan menggunakan environment yang sudah dibuat sebelumnya, perhatikan 
    - _**Environment name**_ \- pilih environment tempat aplikasi Anda akan dideploy
    - _**Nodes**_ \- nama server aplikasi (diambil secara otomatis setelah memilih environment)
 
-   ![Configure Add-On](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/deployment/git-push-deploy-add-on/08-configure-addon.png" alt="Configure Add-On" max-width="100%"/>
 
    Klik **Install** untuk melanjutkan.
 
 3. Tunggu satu menit untuk platform mengambil sumber aplikasi Anda dari GitHub dan mengkonfigurasi webhook untuk continuous deployment.
 
-   ![Deployed Add-On](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/deployment/git-push-deploy-add-on/09-deployed-addon.png" alt="Deployed Add-On" max-width="100%"/>
 
    **Close** frame notifikasi ketika instalasi selesai.
 
@@ -134,7 +134,7 @@ Jika Anda akan menggunakan environment yang sudah dibuat sebelumnya, perhatikan 
 
 Untuk memulai aplikasi Anda, klik **Open in Browser** di sebelah server web Anda.
 
-![Hello World Application](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/deployment/git-push-deploy-add-on/10-hello-world-application.png" alt="Hello World Application" max-width="100%"/>
 
 Itulah! Sekarang versi baru aplikasi Anda secara otomatis dikirimkan ke server aplikasi setiap kali ada commit ke repositori.
 
@@ -166,17 +166,17 @@ Dan sekarang mari kita periksa bagaimana proses ini benar-benar bekerja. Lakukan
 
 1. Klik **Edit this file** untuk beberapa item dalam repositori proyek Anda dan **Commit changes** ke dalamnya - misalnya, kami akan memodifikasi teks di halaman awal HelloWorld kami.
 
-   ![Commit Changes](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/deployment/git-push-deploy-add-on/11-commint-changes.png" alt="Commit Changes" max-width="100%"/>
 
 2. Akibatnya, webhook yang sesuai akan dipicu untuk mendepoy perubahan yang dibuat ke lingkungan hosting Anda - rujuk ke bagian repository **Settings > Webhooks** untuk detailnya.
 
-   ![GitHub Webhook](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/deployment/git-push-deploy-add-on/12-github-webhook.png" alt="GitHub Webhook" max-width="100%"/>
 
    Setelah mengklik string ini, Anda akan melihat daftar **Recent Deliveries**, yang dimulai oleh webhook, dan hasil eksekusinya.
 
 3. Sebagai titik pemeriksaan terakhir, kembali ke halaman aplikasi Anda dan segarkan (sambil mengingat bahwa mungkin perlu waktu tambahan bagi Maven untuk membangun dan mendepoy proyek berbasis Java Anda).
 
-   ![Updated Application](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/deployment/git-push-deploy-add-on/13-updated-application.png" alt="Updated Application" max-width="100%"/>
 
 Itulah! Seperti yang Anda lihat, modifikasi berhasil diterapkan, sehingga solusinya berfungsi seperti yang diharapkan.
 

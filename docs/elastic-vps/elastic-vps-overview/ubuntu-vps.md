@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-slug: /ubuntu-vps
+slug: /vps-ubuntu
 title: Ubuntu VPS
 ---
 

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /tomcat-server
+slug: /tomcat
 title: Tomcat Server
 ---
 

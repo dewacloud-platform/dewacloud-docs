@@ -61,9 +61,7 @@ Nama Variabel | Dapat Diedit* | Stack | Deskripsi
 **MASTER_ID** | - | Semua | Pengidentifikasi node unik untuk node master dalam layer.  
 **MASTER_IP** | - | Semua | Alamat IP internal untuk node master dalam layer.  
 **MAVEN_DEPLOY_ARTIFACT** | + | Maven | Menentukan artefak yang akan dikirim (dapat diubah untuk proyek tertentu).  
-**MAVEN_OPTS** | + | Maven | Mengatur parameter yang digunakan untuk menjalankan JVM dengan Maven dan dapat
-
- digunakan untuk menyuplai [opsi](<https://docs.dewacloud.com/docs/java-options-arguments/>) tambahan global.  
+**MAVEN_OPTS** | + | Maven | Mengatur parameter yang digunakan untuk menjalankan JVM dengan Maven dan dapat digunakan untuk menyuplai [opsi](<https://docs.dewacloud.com/docs/java-options-arguments/>) tambahan global.  
 **MAVEN_RUN_ARGS** | + | Maven | Memungkinkan pengiriman beberapa argumen khusus untuk membangun aplikasi (dapat diubah untuk proyek tertentu).  
 **MAX_OOM_REDUCE_CYCLES** | + | MySQL, MariaDB, Percona | Mengatur jumlah siklus maksimum untuk pengurangan _innodb_buffer_pool_size_ setelah restart yang disebabkan oleh OOM (_5_ kali secara default).  
 **MY_RUBY_HOME** | - | Ruby | Jalur ke direktori tempat mesin _Ruby_ berada.  

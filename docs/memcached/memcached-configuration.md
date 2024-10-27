@@ -10,8 +10,8 @@ File konfigurasi Memcached berikut tersedia:
 
 | Folder | File | Path |
 |---|---|---|
-| [conf](https://docs.dewacloud.com/#conf) | memcached | /etc/sysconfig |
-| [keys](https://docs.dewacloud.com/#keys) | | /var/lib/jelastic/keys |
+| [conf](#conf) | memcached | /etc/sysconfig |
+| [keys](#keys) | | /var/lib/jelastic/keys |
 
 Informasi lebih lanjut tentang penggunaan Memcached dapat Anda temukan dalam dokumen [Memcached](https://docs.dewacloud.com/memcached/).
 

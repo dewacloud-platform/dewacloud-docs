@@ -1,13 +1,13 @@
 ---
 sidebar_position: 1
-slug: /connection-to-mysql
+slug: /connection-to-mysql-java
 title: Java Connection
 ---
 # Java Connection to MariaDB/MySQL/Percona
 
-**MariaDB** , **MySQL** , dan **Percona** adalah database open source yang sangat populer, digunakan oleh pengembang di seluruh dunia. Dalam instruksi ini, kami akan menunjukkan cara menghubungkan aplikasi Java Anda ke database ini, baik server standalone maupun [solusi cluster](\<https://docs.dewacloud.com/company/blog/mysql-mariadb-database-auto-clustering-cloud-hosting/\>).
+**MariaDB** , **MySQL** , dan **Percona** adalah database open source yang sangat populer, digunakan oleh pengembang di seluruh dunia. Dalam instruksi ini, kami akan menunjukkan cara menghubungkan aplikasi Java Anda ke database ini, baik server standalone maupun [solusi cluster](<https://docs.dewacloud.com/docs/db-auto-clustering>).
 
-1. Masuk ke akun PaaS Anda dan [buat environment](\<https://docs.dewacloud.com/docs/setting-up-environment/\>) dengan server database **MariaDB** (atau **MySQL**) (tersedia dalam bagian _**SQL**_ wizard):
+1. Masuk ke akun PaaS Anda dan [buat environment](<https://docs.dewacloud.com/docs/setting-up-environment>) dengan server database **MariaDB** (atau **MySQL**) (tersedia dalam bagian _**SQL**_ wizard):
 
    * untuk server database standalone 
    <img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/connection-to-applications/java-connection/java-connection-1.png" alt="marketplace backup storage" width="100%"/>
@@ -35,7 +35,7 @@ Masuk ke panel admin yang terbuka menggunakan kredensial dari email yang disebut
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/connection-to-applications/java-connection/java-connection-5.png" alt="MariaDB phpMyAdmin admin panel" width="100%"/>
 
-5. Kembali ke dashboard dan klik tombol **Config** di sebelah server aplikasi (_Tomcat_ , dalam kasus kami) untuk mengakses [file konfigurasi manager](\<https://docs.dewacloud.com/docs/configuration-file-manager/\>).
+5. Kembali ke dashboard dan klik tombol **Config** di sebelah server aplikasi (_Tomcat_ , dalam kasus kami) untuk mengakses [file konfigurasi manager](<https://docs.dewacloud.com/docs/configuration-file-manager/>).
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/connection-to-applications/java-connection/java-connection-6.png" alt="application server config button" width="100%"/>
 
@@ -111,9 +111,9 @@ public class DbManager {
 }
 ```
 
-8. [Deploy](\<https://docs.dewacloud.com/docs/deployment-guide/\>) aplikasi contoh kami ke server Tomcat Anda menggunakan tautan berikut:
+8. [Deploy](<https://docs.dewacloud.com/docs/deployment-guide/>) aplikasi contoh kami ke server Tomcat Anda menggunakan tautan berikut:
 
-_[https://download.jelastic.com/public.php?service=files&t=b2c6e4e01d487dfd5af953ba31dac848&download](\<https://download.jelastic.com/public.php?service=files&t=b2c6e4e01d487dfd5af953ba31dac848&download\>)_
+_[https://download.jelastic.com/public.php?service=files&t=b2c6e4e01d487dfd5af953ba31dac848&download](<https://download.jelastic.com/public.php?service=files&t=b2c6e4e01d487dfd5af953ba31dac848&download>)_
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/connection-to-applications/java-connection/java-connection-9.png" alt="Java deploy from URL" width="100%"/>
 
@@ -142,11 +142,11 @@ Anda akan melihat bahwa tabel yang baru dibuat muncul dengan nama _\{date-time o
 
 Platform ini juga memungkinkan Anda untuk memperluas fungsi server MariaDB/MySQL Anda dengan mengikuti instruksi yang sesuai dalam dokumentasi kami:
 
-   * atur jenis replikasi database yang disukai dengan fitur [Auto-Clustering](\<https://docs.dewacloud.com/company/blog/mysql-mariadb-database-auto-clustering-cloud-hosting/\>) yang disematkan untuk meningkatkan kinerja DB dan perlindungan dari kehilangan data
-   * sesuaikan [Jadwal Backup](\<https://docs.dewacloud.com/docs/database-backups/\>) untuk memastikan keamanan informasi di dalam DB Anda jika terjadi kegagalan server yang tak terduga
-   * lihat instruksi [Akses Jarak Jauh](\<https://docs.dewacloud.com/docs/remote-access-mysql/\>) dan pelajari cara mengakses database Anda dari jarak jauh melalui klien desktop MySQL yang disukai
-   * gunakan panduan [Impor/Ekspor Dump Files](\<https://docs.dewacloud.com/docs/dump-import-export-to-mysql/\>) untuk mengetahui cara membuat cadangan dan memulihkan data secara manual dari dump yang telah dibuat sebelumnya
-   * lihat [String Koneksi Database](\<https://docs.dewacloud.com/docs/database-connection/\>) untuk mendapatkan informasi lebih lanjut tentang cara mengonfigurasi koneksi ke berbagai jenis database
+   * atur jenis replikasi database yang disukai dengan fitur [Auto-Clustering](<https://docs.dewacloud.com/docs/db-auto-clustering>) yang disematkan untuk meningkatkan kinerja DB dan perlindungan dari kehilangan data
+   * sesuaikan [Jadwal Backup](<https://docs.dewacloud.com/docs/database-backups/>) untuk memastikan keamanan informasi di dalam DB Anda jika terjadi kegagalan server yang tak terduga
+   * lihat instruksi [Akses Jarak Jauh](<https://docs.dewacloud.com/docs/remote-access-mysql/>) dan pelajari cara mengakses database Anda dari jarak jauh melalui klien desktop MySQL yang disukai
+   * gunakan panduan [Impor/Ekspor Dump Files](<https://docs.dewacloud.com/docs/dump-import-export-to-mysql/>) untuk mengetahui cara membuat cadangan dan memulihkan data secara manual dari dump yang telah dibuat sebelumnya
+   * lihat [String Koneksi Database](<https://docs.dewacloud.com/docs/database-connection/>) untuk mendapatkan informasi lebih lanjut tentang cara mengonfigurasi koneksi ke berbagai jenis database
 
 ## Video Tutorial on MySQL Connection to Java Application{#video-tutorial-on-mysql-connection-to-java-application}
 
@@ -154,10 +154,8 @@ Anda dapat menggunakan versi video tutorial untuk melihat cara membuat environme
 
 ## Baca Juga{#whats-next}
 
-   * [Akses Jarak Jauh ke MySQL/MariaDB](\<https://docs.dewacloud.com/docs/remote-access-mysql/\>)
-   * [Replikasi Master-Slave MySQL](\<https://docs.dewacloud.com/docs/database-master-slave-replication/\>)
-   * [Replikasi
-
- Master-Slave MariaDB](\<https://docs.dewacloud.com/docs/mariadb-master-slave-replication/\>)
-   * [Backup Database](\<https://docs.dewacloud.com/docs/database-backups/\>)
-   * [Konfigurasi Database](\<https://docs.dewacloud.com/docs/database-configuration-files/\>)
+   * [Akses Jarak Jauh ke MySQL/MariaDB](<https://docs.dewacloud.com/docs/remote-access-mysql/>)
+   * [Replikasi Master-Slave MySQL](<https://docs.dewacloud.com/docs/database-master-slave-replication/>)
+   * [Replikasi Master-Slave MariaDB](<https://docs.dewacloud.com/docs/mariadb-master-slave-replication/>)
+   * [Backup Database](<https://docs.dewacloud.com/docs/database-backups/>)
+   * [Konfigurasi Database](<https://docs.dewacloud.com/docs/database-configuration-files/>)

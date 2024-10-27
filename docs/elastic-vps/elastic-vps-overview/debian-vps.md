@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-slug: /debian-vps
+slug: /vps-debian
 title: Debian VPS
 ---
 

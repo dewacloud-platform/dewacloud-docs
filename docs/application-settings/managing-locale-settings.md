@@ -1,61 +1,61 @@
 ---
 sidebar_position: 12
-slug: /managing-locale-settings
+slug: /locale-settings
 title: Managing Locale Settings
 ---
 # Managing Locale Settings
 
-A **locale** is a set of language and cultural preferences that define rules for how your interface and applications should behave, including language for messages, character sets, and more. Below is a guide on how to view and change the locale settings on your containers.
+**Locale** adalah serangkaian preferensi bahasa dan budaya yang menentukan aturan bagaimana antarmuka dan aplikasi Anda harus berperilaku, termasuk bahasa untuk pesan, set karakter, dan lainnya. Di bawah ini adalah panduan tentang cara melihat dan mengubah pengaturan locale pada container Anda.
 
-### 1. View Current Locale Settings
+### 1. Melihat Pengaturan Locale Saat Ini
 
-By default, platform-managed templates use **English** as the primary language. You can view the current locale settings in a container using the following command (this can be executed via [Web SSH](https://docs.dewacloud.com/docs/web-ssh-client/)):
+Secara default, templat yang dikelola platform menggunakan **Bahasa Inggris** sebagai bahasa utama. Anda dapat melihat pengaturan locale saat ini dalam container menggunakan perintah berikut (ini dapat dieksekusi melalui [Web SSH](https://docs.dewacloud.com/docs/web-ssh-client/)):
 
 ```bash
 locale -a
 ```
 
-This command will list all the currently supported locales in your container.
+Perintah ini akan menampilkan semua locale yang saat ini didukung dalam container Anda.
 
-![container default locale settings](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/managing-locale-settings/01-container-default-locale-settings.png" alt="container default locale settings" width="100%"/>
 
-### 2. Add New Language Support
+### 2. Tambahkan Dukungan Bahasa Baru
 
-To add support for a new language, use the **[localedef](http://man7.org/linux/man-pages/man1/localedef.1.html)** tool:
+Untuk menambahkan dukungan untuk bahasa baru, gunakan alat **[localedef](http://man7.org/linux/man-pages/man1/localedef.1.html)**:
 
 ```bash
 sudo localedef -i {language}_{country} -f {codeset} {language}_{country}.{codeset}
 ```
 
-Where:
-- `{language}_{country}`: Represents the language and country code. For example, `en_US` for U.S. English.
+Di mana:
+- `{language}_{country}`: Mewakili kode bahasa dan negara. Sebagai contoh, `en_US` untuk Bahasa Inggris U.S.
   
 :::tip
-To see a list of available locales for generation, run the following command:
+Untuk melihat daftar locale yang tersedia untuk dibuat, jalankan perintah berikut:
 ```bash
 ls /usr/share/i18n/locales
 ```
 :::
   
-- `{codeset}`: Specifies the character encoding, typically `UTF-8`.
+- `{codeset}`: Menentukan encoding karakter, biasanya `UTF-8`.
 
-![localedef to add new locale](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/managing-locale-settings/02-localedef-to-add-new-locale.png" alt="localedef to add new locale" width="100%"/>
 
-### 3. Verify New Locale
+### 3. Verifikasi Locale Baru
 
-After adding the new locale, verify it by running:
+Setelah menambahkan locale baru, verifikasi dengan menjalankan:
 
 ```bash
 locale -a
 ```
 
-This will show an updated list with the newly added language.
+Ini akan menampilkan daftar yang diperbarui dengan bahasa yang baru ditambahkan.
 
-![list locale settings](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/managing-locale-settings/03-list-locale-settings.png" alt="list locale settings" width="100%"/>
 
-Now, the new locale has been successfully added and is available for use by your applications.
+Sekarang, locale baru telah berhasil ditambahkan dan tersedia untuk digunakan oleh aplikasi Anda.
 
-## What’s Next?
+## Baca Juga
 
 - [Web SSH Access](https://docs.dewacloud.com/docs/web-ssh-client/)
 - [OOM Killer Overview](https://docs.dewacloud.com/docs/oom-killer-troubleshooting/)

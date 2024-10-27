@@ -9,7 +9,7 @@ Langkah pertama dari hosting aplikasi apa pun adalah pembuatan [environment](<ht
 
 1\. Masuk ke dashboard platform dan klik tombol **New Environment** di sudut kiri atas.
 
-![PaaS main buttons](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/setting-up-environment/01-paas-main-buttons.png" alt="PaaS main buttons" max-width="100%"/>
 
 2\. Di dalam dialog _**topology wizard**_ yang terbuka, Anda dapat mengatur semua kustomisasi yang diperlukan. Kami merekomendasikan melakukan penyesuaian dalam urutan berikut:
 
@@ -18,7 +18,7 @@ Langkah pertama dari hosting aplikasi apa pun adalah pembuatan [environment](<ht
   * [konfigurasikan resources dan spesifikasi nodes](<https://docs.dewacloud.com/docs/#configuring-nodes-resources-and-specifics>)
   * tinjau estimasi, beri nama environment, dan [konfirmasi pembuatan](<https://docs.dewacloud.com/docs/#reviewing-and-confirming-environment-creation>)
 
-![configure environment via wizard](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/setting-up-environment/02-configure-environment-via-wizard.png" alt="configure environment via wizard" max-width="100%"/>
 
 Di bawah ini, kami akan meninjau setiap poin ini secara detail, memberikan penjelasan tentang semua kemungkinan yang tersedia. Prosesnya mungkin terlihat rumit pada awalnya, tetapi setelah Anda terbiasa, Anda akan dapat mengkonfigurasi environment baru (atau menyesuaikan environment yang sudah ada) dalam waktu kurang dari satu menit.
 
@@ -28,13 +28,13 @@ Sebagai langkah pertama dalam pembuatan environment, Anda perlu memilih solusi d
 
 1\. Pilihan paling umum dan direkomendasikan (kecuali Anda mengejar aplikasi/arsitektur tertentu) adalah **container bersertifikat**. Stack [ini](<https://docs.dewacloud.com/docs/software-stacks-versions/>) dikonfigurasi dan dikelola khusus oleh platform (misalnya pembaruan versi, patch keamanan). Secara default, mereka mendukung semua fitur platform (scaling, deployment otomatis, redeploy, SSL, dll.) untuk hosting dan pengembangan yang paling mulus dan nyaman.
 
-![environment programming languages in wizard](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/setting-up-environment/03-environment-programming-languages-in-wizard.png" alt="environment programming languages in wizard" max-width="100%"/>
 
 Klik pada tab dengan bahasa pemrograman yang diperlukan (_Java_, _PHP_, _Ruby_, _.NET_, _Node.js_, atau _Python_) untuk melanjutkan dengan container bersertifikat platform.
 
 2\. Opsi deployment lainnya tersedia melalui tab _Custom_. Semua varian yang tercantum di bawah ini menggunakan [container sistem](<https://docs.dewacloud.com/docs/what-are-system-containers/>) dasar platform (disebut container OS), yang membuatnya kompatibel dengan sebagian besar (tetapi tidak semua) fitur pembeda platform (misalnya, vertical dan horizontal scaling).
 
-![topology wizard docker tab](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/setting-up-environment/04-topology-wizard-docker-tab.png" alt="topology wizard docker tab" max-width="100%"/>
 
   * **Custom Container Images** \- image _Docker_ apa pun (berdasarkan [OS yang didukung](<https://docs.dewacloud.com/docs/docker-supported-distributions/>)) yang dideploy ke dalam container sistem. Dibandingkan dengan **container terkelola**, opsi ini menyediakan akses ke lebih banyak solusi, mencari seluruh registry Docker Hub atau menggunakan repositori pribadi Anda. Namun, keberoperasian perangkat lunak dan kompatibilitas dengan platform tidak dapat dijamin karena konten dikelola oleh pemelihara image masing-masing. Disarankan untuk membangun image container kustom berdasarkan [image bersertifikat platform](<https://hub.docker.com/u/jelastic>) menggunakan instruksi [FROM](<https://docs.docker.com/engine/reference/builder/#from>).
 
@@ -44,7 +44,7 @@ Klik pada tab dengan bahasa pemrograman yang diperlukan (_Java_, _PHP_, _Ruby_, 
 
 3\. Disarankan juga untuk memilih [region](<https://docs.dewacloud.com/docs/environment-regions/>) yang diinginkan (jika tersedia) sebelum melanjutkan lebih jauh.
 
-![environment regions list](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/setting-up-environment/05-environment-regions-list.png" alt="environment regions list" max-width="100%"/>
 
 ## Mengkonfigurasi Topologi {#configuring-topology}
 
@@ -59,7 +59,7 @@ Anda dapat mengkonfigurasi topologi environment ([struktur layers](<https://docs
   * **[Build Node](<https://docs.dewacloud.com/docs/java-vcs-deployment/>)** \- alat otomatisasi build untuk proyek Java
   * **Extra** (custom layers) \- salah satu stack yang disebutkan di atas
 
-![environment topology builder ui](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/setting-up-environment/06-environment-topology-builder-ui.png" alt="environment topology builder ui" max-width="100%"/>
 
 :::tip
 Urutan blok yang ditampilkan di atas adalah urutan default. Namun, Anda dapat mencampur dan mencocokkan mereka dengan cara yang diinginkan untuk membuat topologi kustom Anda.
@@ -67,7 +67,7 @@ Urutan blok yang ditampilkan di atas adalah urutan default. Namun, Anda dapat me
 
 1\. Platform menawarkan sejumlah opsi paling populer untuk setiap bagian ini berdasarkan peran default. Jika Anda ingin menambahkan [stack](<https://docs.dewacloud.com/docs/software-stacks-versions/>) dengan peran yang berbeda, klik opsi **More** di bagian bawah daftar. Anda juga dapat menggunakan **Search** untuk dengan cepat menemukan stack yang dikelola platform.
 
-![categorized stacks with search](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/setting-up-environment/07-categorized-stacks-with-search.png" alt="categorized stacks with search" max-width="100%"/>
 
 :::tip
 Jika Anda tidak dapat menemukan solusi perangkat lunak yang diperlukan, Anda dapat menambahkannya sebagai container kustom dari Docker Hub atau repositori pribadi Anda.
@@ -82,7 +82,7 @@ Jika Anda tidak dapat menemukan solusi perangkat lunak yang diperlukan, Anda dap
 Anda juga dapat menerapkan add-on Let’s Encrypt SSL setelah environment dibuat untuk secara otomatis menerbitkan dan mengintegrasikan sertifikat SSL gratis.
 :::
 
-![environment ssl configuration](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/setting-up-environment/08-environment-ssl-configuration.png" alt="environment ssl configuration" max-width="100%"/>
 
 ## Mengkonfigurasi Resources dan Spesifikasi Node {#configuring-nodes-resources-and-specifics}
 
@@ -90,17 +90,17 @@ Setelah Anda selesai dengan struktur topologi, Anda dapat menyesuaikan setiap la
 
 1\. Anda dapat menghidupkan/mematikan layer serta memberikan alias kustom untuknya.
 
-![environment layer switcher](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/setting-up-environment/09-environment-layer-switcher.png" alt="environment layer switcher" max-width="100%"/>
 
 2\. Konfigurasikan [automatic vertical scaling](<https://docs.dewacloud.com/docs/automatic-vertical-scaling/>) dengan mengatur jumlah [cloudlets](<https://docs.dewacloud.com/docs/cloudlet/>) (1 cloudlet = **128 MiB** RAM dan **400 MHz** CPU) yang dicadangkan dan dinamis untuk node dalam layer tersebut.
 
-![layer vertical scaling configuration](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/setting-up-environment/10-layer-vertical-scaling-configuration.png" alt="layer vertical scaling configuration" max-width="100%"/>
 
 Anggap ini sebagai kapasitas minimum dan maksimum CPU & RAM per server. Perlu disebutkan bahwa tidak peduli seberapa tinggi batas scaling yang ditetapkan, hanya sumber daya yang sebenarnya digunakan yang akan dikenakan biaya. Ini membantu mengatasi lonjakan beban dan, pada saat yang sama, tidak membayar lebih untuk memori atau prosesor yang tidak digunakan.
 
 3\. Bagian _[Horizontal Scaling](<https://docs.dewacloud.com/docs/horizontal-scaling/>)_ memungkinkan Anda mendefinisikan jumlah node dalam layer dan memilih mode scaling yang diinginkan (stateful atau stateless).
 
-![horizontal scaling and engine search](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/setting-up-environment/11-horizontal-scaling-and-engine-search.png" alt="horizontal scaling and engine search" max-width="100%"/>
 
 Anda dapat menggunakan daftar drop-down untuk mengubah tipe/versi stack dan engine (jika diperlukan, perluas dan mulai mengetik untuk **Search**). Dalam hal menyesuaikan environment yang ada, daftar ini akan mengarahkan ke dialog [container redeploy](<https://docs.dewacloud.com/docs/container-redeploy/>) untuk menerapkan perubahan.
 
@@ -110,7 +110,7 @@ Klik ikon gear (dilingkari pada gambar di bawah) untuk opsi manajemen tambahan s
 
 4\. Selanjutnya, Anda perlu mengonfigurasi pengaturan tambahan.
 
-![additional layer configuration](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/setting-up-environment/13-additional-layer-configuration.png" alt="additional layer configuration" max-width="100%"/>
 
 Daftar dapat bervariasi tergantung pada stack tertentu dan izin akun:
 
@@ -129,7 +129,7 @@ Daftar dapat bervariasi tergantung pada stack tertentu dan izin akun:
   * **[Ports](<https://docs.dewacloud.com/docs/container-ports/>)** \- lihat informasi tentang port container
   * **[CMD / Entry Point](<https://docs.dewacloud.com/docs/container-run-configuration/>)** \- konfigurasikan _Entry Point_ dan _Run Command_ container
 
-![layer containers configuration](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/setting-up-environment/14-layer-containers-configuration.png" alt="layer containers configuration" max-width="100%"/>
 
 ## Meninjau dan Mengonfirmasi Pembuatan Environment {#reviewing-and-confirming-environment-creation}
 
@@ -137,7 +137,7 @@ Setelah semua konfigurasi selesai, Anda dapat meninjau jumlah sumber daya yang d
 
 1\. Satuan pengukuran sumber daya utama di platform adalah [cloudlets](<https://docs.dewacloud.com/docs/cloudlet/>). Di sini, Anda dapat melihat jumlah cloudlets _reserved_ dan _scaling limit_ (dinamis) untuk seluruh environment.
 
-![environment resource usage](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/setting-up-environment/15-environment-resource-usage.png" alt="environment resource usage" max-width="100%"/>
 
 Untuk analisis yang lebih baik, nilai-nilai tersebut dibagi menjadi kelompok-kelompok yang diberi tanda warna:
 
@@ -148,7 +148,7 @@ Untuk analisis yang lebih baik, nilai-nilai tersebut dibagi menjadi kelompok-kel
 
 2\. Selanjutnya, Anda dapat melihat **Estimated Cost** dari environment Anda. Widget menampilkan harga menggunakan tanda warna yang sama seperti di atas, dan Anda dapat mengubah periode - _hourly_, _daily_, atau _monthly_.
 
-![environment estimated cost](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/setting-up-environment/16-environment-estimated-cost.png" alt="environment estimated cost" max-width="100%"/>
 
 Tab **FROM** menunjukkan harga yang akan dikenakan secara penuh karena mencakup sumber daya yang dicadangkan. Tab **TO** menunjukkan harga maksimum yang mungkin jika semua node di environment mengonsumsi semua sumber daya hingga batas scaling selama periode tersebut.
 
@@ -156,15 +156,17 @@ Tab **FROM** menunjukkan harga yang akan dikenakan secara penuh karena mencakup 
 Arahkan kursor ke widget harga untuk melihat detail lebih lanjut tentang perhitungan biaya yang diperkirakan:
 :::
 
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/setting-up-environment/17-extended-details-on-environment-cost.png" alt="extended details on environment cost" max-width="100%"/>
+
 Jika diperlukan, Anda dapat mengklik tautan di bawah widget untuk informasi tambahan tentang [cara kerja harga](<https://docs.dewacloud.com/docs/pricing-model/>) dan [apa yang dikenakan biaya di platform](<https://docs.dewacloud.com/docs/chargeable-resources/>).
 
 3\. Terakhir, berikan nama untuk environment Anda dan klik tombol **Create** untuk melanjutkan.
 
-![environment name](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/setting-up-environment/18-environment-name.png" alt="environment name" max-width="100%"/>
 
 Itu saja! Dalam beberapa menit, environment baru Anda akan muncul di dashboard.
 
-![created environment in dashboard](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/setting-up-environment/19-created-environment-in-dashboard.png" alt="created environment in dashboard" max-width="100%"/>
 
 Sekarang, Anda siap untuk [deployment aplikasi](<https://docs.dewacloud.com/docs/deployment-guide/>) dan penggunaan lebih lanjut dari cloud environment Anda.
 

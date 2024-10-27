@@ -7,9 +7,9 @@ title: Node.js Tutorials
 
 |  |  |  |  |  |  |  |  |  
 ---|---|---|---|---|---|---|---|---  
-* | A | [B](https://docs.dewacloud.com/#b) | [C](https://docs.dewacloud.com/#c) | D | E | F | [G](https://docs.dewacloud.com/#g) | [H](https://docs.dewacloud.com/#h)  
-I | J | [K](https://docs.dewacloud.com/#k) | L | M | [N](https://docs.dewacloud.com/#n) | O | P | Q  
-R | [S](https://docs.dewacloud.com/#s) | T | U | V | [W](https://docs.dewacloud.com/#w) | X | Y | Z  
+* | A | [B](#b) | [C](#c) | D | E | F | [G](#g) | [H](#h)  
+I | J | [K](#k) | L | M | [N](#n) | O | P | Q  
+R | [S](#s) | T | U | V | [W](#w) | X | Y | Z  
 
 ## B{#b}
 

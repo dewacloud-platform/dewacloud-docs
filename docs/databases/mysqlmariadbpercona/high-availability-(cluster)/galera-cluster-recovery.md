@@ -1,6 +1,6 @@
 ---
 sidebar_position: 6
-slug: /galera-cluster-recovery
+slug: /galera-recovery
 title: Galera Cluster Recovery
 ---
 # Galera Cluster Limitations and Recovery
