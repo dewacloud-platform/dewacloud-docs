@@ -5,46 +5,46 @@ title: Encryption in Transit Add-On
 ---
 # SSL/TLS Encryption in Transit for MongoDB
 
-MongoDB database at the Virtuozzo Application Platform is provided with a built-in add-on that implements “**encryption in transit**”. The add-on is compatible with the standalone and clustered solutions, and its functionality ensures data protection with SSL/TLS encrypted connections during exchanges between servers. After installation, all related operations are handled automatically—data encryption before transmission, endpoints authentication, content decryption, and verification upon arrival.
+Database MongoDB pada Platform Aplikasi Virtuozzo dilengkapi dengan add-on bawaan yang menerapkan "**encryption in transit**". Add-on ini kompatibel dengan solusi standalone dan terkluster, dan fungsionalitasnya memastikan perlindungan data dengan koneksi terenkripsi SSL/TLS selama pertukaran antara server. Setelah instalasi, semua operasi terkait ditangani secara otomatis—enkripsi data sebelum transmisi, autentikasi endpoint, dekripsi konten, dan verifikasi setelah kedatangan.
 
-## Add-On Installation[![](#)](<https://www.virtuozzo.com/application-platform-docs/mongodb-ssl-addon/#add-on-installation>)
+## Add-On Installation{#add-on-installation}
 
-The add-on can be installed on top of the **MongoDB** database nodes of _**6 and later**_ versions.
+Add-on ini dapat dipasang di atas node database **MongoDB** versi _**6 dan yang lebih baru**_.
 
-1\. In the platform dashboard, go to the Add-Ons section of the appropriate database layer and click **Install** for the _**MongoDB Encrypted Connection**_ solution.
+1\. Di dashboard platform, buka bagian Add-Ons dari lapisan database yang sesuai dan klik **Install** untuk solusi _**MongoDB Encrypted Connection**_.
 
 :::tip
-The add-on is also available from the Marketplace and can be imported from the appropriate GitHub repository.
+Add-on ini juga tersedia di Marketplace dan dapat diimpor dari repositori GitHub yang sesuai.
 :::
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/encryption-in-transit-addon/encryption-in-transit-addon-1.png" alt="SSL/TLS encryption add-on" width="70%"/>
 
-2\. Within the opened installation window, select the target **Environment** and **Node Group(s)** (multiple layers can be selected if needed) where the add-on will be installed.
+2\. Di dalam jendela instalasi yang terbuka, pilih **Environment** dan **Node Group(s)** target (beberapa lapisan dapat dipilih jika diperlukan) di mana add-on akan dipasang.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/encryption-in-transit-addon/encryption-in-transit-addon-2.png" alt="SSL add-on installation" width="90%"/>
 
-Click **Install** to continue.
+Klik **Install** untuk melanjutkan.
 
-3\. Wait a minute, and your database will be configured to work over an encrypted connection.
+3\. Tunggu sebentar, dan database Anda akan dikonfigurasi untuk bekerja melalui koneksi terenkripsi.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/encryption-in-transit-addon/encryption-in-transit-addon-3.png" alt="SSL add-on installed" width="70%"/>
 
-## Add-On Specifics[![](#)](<https://www.virtuozzo.com/application-platform-docs/mongodb-ssl-addon/#add-on-specifics>)
+## Add-On Specifics{#add-on-specifics}
 
-Below you can learn about the certificate generation process and its specifics:
+Di bawah ini, Anda dapat mempelajari tentang proses dan spesifikasi pembuatan sertifikat:
 
-* Certificates are generated with the _**/usr/local/sbin/selfcertgen**_ utility.
-* Certificates of the PEM format are used in MongoDB.
-* Certificates are self-signed and issued for the particular node’s hostname. It means that each node has its own set of certificates, and you must use the ones corresponding to the accessed node for authentication.
-* Certificates are stored within the **/var/lib/jelastic/keys/SSL-TLS** folder (accessible via the _**keys**_ shortcut in the file manager). Two subfolders are present: 
-  * _**server**_ – server certificates are used to provide TLS encryption for the connection to the MongoDB database.
-  * _**client**_ – downloadable client certificates can be used to authenticate client connections to the database server.
+* Sertifikat dihasilkan dengan utilitas _**/usr/local/sbin/selfcertgen**_.
+* Sertifikat berformat PEM digunakan di MongoDB.
+* Sertifikat bersifat self-signed dan diterbitkan untuk hostname node tertentu. Artinya, setiap node memiliki satu set sertifikat sendiri, dan Anda harus menggunakan yang sesuai dengan node yang diakses untuk autentikasi.
+* Sertifikat disimpan dalam folder **/var/lib/jelastic/keys/SSL-TLS** (dapat diakses melalui pintasan _**keys**_ dalam file manager). Terdapat dua subfolder:
+  * _**server**_ – sertifikat server digunakan untuk menyediakan enkripsi TLS untuk koneksi ke database MongoDB.
+  * _**client**_ – sertifikat klien yang dapat diunduh dapat digunakan untuk mengautentikasi koneksi klien ke server database.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/encryption-in-transit-addon/encryption-in-transit-addon-4.png" alt="MongoDB SSL certificates" width="100%"/>
 
-**MongoDB configurations:**
+**Konfigurasi MongoDB:**
 
-* All the add-on configurations are provided via a separate _**/etc/mongod.conf**_ configuration file:
+* Semua konfigurasi add-on disediakan melalui file konfigurasi _**/etc/mongod.conf**_ terpisah:
 
 ```yaml
 net:
@@ -57,30 +57,30 @@ net:
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/encryption-in-transit-addon/encryption-in-transit-addon-5.png" alt="MongoDB SSL configurations" width="100%"/>
 
-* The config provides paths to server SSL files. Also, it includes the “_allowConnectionsWithoutCertificates: true_” option to make the usage of the secure connection optional. If removed, it will be impossible for the client to connect to this server using a plain non-encrypted connection.
+* Konfigurasinya menyediakan jalur ke file SSL server. Juga, termasuk opsi “_allowConnectionsWithoutCertificates: true_” untuk membuat penggunaan koneksi aman menjadi opsional. Jika dihapus, akan sulit bagi klien untuk terhubung ke server ini menggunakan koneksi yang tidak terenkripsi.
 
-## Add-On Configuration[![](#)](<https://www.virtuozzo.com/application-platform-docs/mongodb-ssl-addon/#add-on-configuration>)
+## Add-On Configuration{#add-on-configuration}
 
-The add-on can be found under the **Add-Ons** tab for the appropriate layer(s). You can use the following buttons to renew required certificates (if you think they are compromised or if accidentally removed):
+Add-on dapat ditemukan di bawah tab **Add-Ons** untuk lapisan yang sesuai. Anda dapat menggunakan tombol berikut untuk memperbarui sertifikat yang diperlukan (jika Anda pikir sertifikat tersebut dikompromikan atau jika secara tidak sengaja dihapus):
 
-* **Renew all certs** – generate all SSL certificates anew
-* **Renew server certs** – generate server SSL certificates anew
-* **Renew client certs** – generate client SSL certificates anew
+* **Renew all certs** – menghasilkan semua sertifikat SSL ulang
+* **Renew server certs** – menghasilkan sertifikat SSL server ulang
+* **Renew client certs** – menghasilkan sertifikat SSL klien ulang
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/encryption-in-transit-addon/encryption-in-transit-addon-6.png" alt="managing MongoDB SSL add-on" width="100%"/>
 
-To remove the add-on from the layer (including custom configs and generated SSL certificates), expand the menu in the top-right corner of the panel and click **Uninstall**.
+Untuk menghapus add-on dari lapisan (termasuk konfigurasi khusus dan sertifikat SSL yang dihasilkan), buka menu di sudut kanan atas panel dan klik **Uninstall**.
 
-## Secure Connection to MongoDB[![](#)](<https://docs.dewacloud.com/docs/mongodb-ssl-addon/#secure-connection-to-mongodb>)
+## Secure Connection to MongoDB{#secure-connection-to-mongodb}
 
-Let’s check the secure connection to the MongoDB nodes by using the _**tls**_ and _**tlsCAFile**_ options in the connection string:
+Mari kita cek koneksi aman ke node MongoDB dengan menggunakan opsi _**tls**_ dan _**tlsCAFile**_ dalam string koneksi:
 
-* _**–tls**_ – specifies the usage of TLS for this connection
-* _**–host**_ – sets the database hostname or IP
-* _**–tlsCAFile**_ – provides the path to the CA certificate file
+* _**–tls**_ – menentukan penggunaan TLS untuk koneksi ini
+* _**–host**_ – menetapkan hostname atau IP database
+* _**–tlsCAFile**_ – menyediakan jalur ke file sertifikat CA
 
 ```bash
-mongosh --tls --host {hostName} --tlsCAFile={path/to/root.pem}
+mongosh --tls --host \{hostName\} --tlsCAFile=\{path/to/root.pem\}
 ```
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/encryption-in-transit-addon/encryption-in-transit-addon-7.png" alt="MongoDB SSL connection" width="100%"/>

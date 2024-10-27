@@ -6,31 +6,31 @@ title: MongoDB License Pricing
 # MongoDB License Pricing
 
 :::warning
-The availability of the service depends on the hosting provider - check the list of supported platforms.
+Ketersediaan layanan tergantung pada penyedia hosting - periksa daftar platform yang didukung.
 :::
 
-Historically, Virtuozzo Application Platform provided the MongoDB software stack as a certified container without any additional charges. However, due to license changes, MongoDB versions newer than **3.6.8** and **4.0.2** cannot be distributed freely and require an additional agreement.
+Secara historis, Platform Aplikasi Virtuozzo menyediakan tumpukan perangkat lunak MongoDB sebagai container bersertifikat tanpa biaya tambahan. Namun, karena perubahan lisensi, versi MongoDB yang lebih baru dari **3.6.8** dan **4.0.2** tidak dapat didistribusikan secara bebas dan memerlukan perjanjian tambahan.
 
-If you want to use the latest versions of MongoDB with the Virtuozzo Application Platform, an additional **license fee** will be automatically applied. The exact amount can vary for different hosting providers, but you can always check the price via the [topology wizard](<https://docs.dewacloud.com/docs/setting-up-environment/>) (both before the installation and for existing environments). Once the environment topology is set up, choose the _hourly/daily/monthly_ estimated cost period, and hover over the price in the right part of the wizard:
+Jika Anda ingin menggunakan versi terbaru dari MongoDB dengan Platform Aplikasi Virtuozzo, biaya **lisensi tambahan** akan diterapkan secara otomatis. Jumlah yang tepat dapat bervariasi untuk penyedia hosting yang berbeda, tetapi Anda selalu dapat memeriksa harga melalui [topology wizard](<https://docs.dewacloud.com/docs/setting-up-environment/>) (baik sebelum instalasi maupun untuk environment yang sudah ada). Setelah topologi environment diatur, pilih periode estimasi biaya _per jam/hari/bulan_, dan arahkan kursor ke harga di bagian kanan wizard:
 
 :::tip
-The Virtuozzo Application Platform provides a MongoDB Sandbox image for testing purposes. It is offered license-free but includes some restrictions compared to the production version.
+Platform Aplikasi Virtuozzo menyediakan gambar MongoDB Sandbox untuk tujuan pengujian. Ini ditawarkan tanpa lisensi tetapi termasuk beberapa batasan dibandingkan dengan versi produksi.
 :::
 
-![license cost in wizard](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/mongodb-license-pricing/01-license-cost-in-wizard.png" alt="license cost in wizard" width="100%"/>
 
-The MongoDB license price correlates to the number of dynamic cloudlets (scaling limit) provided for the MongoDB nodes.
+Harga lisensi MongoDB berkorelasi dengan jumlah cloudlet dinamis (batas skala) yang disediakan untuk node MongoDB.
 
-__For example,__ for a replica set with 3 nodes with 32 cloudlets each and the license cost of 10$/month for 8 cloudlets (equivalent to per 1 GB of RAM):
+__Sebagai contoh,__ untuk set replika dengan 3 node masing-masing dengan 32 cloudlet dan biaya lisensi 10$/bulan untuk 8 cloudlet (setara dengan 1 GB RAM per cloudlet):
 
-* 3 * 32 = **96** (total cloudlets limit for MongoDB)
+* 3 * 32 = **96** (total batas cloudlet untuk MongoDB)
 
-![mongodb nodes cloudlets](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/mongodb-license-pricing/02-mongodb-nodes-cloudlets.png" alt="mongodb nodes cloudlets" width="100%"/>
 
-* 10 / 8 = **1.25** (license cost for a single cloudlet of resources)
-* 96 * 1.25 = **120** (total license cost)
+* 10 / 8 = **1.25** (biaya lisensi untuk satu cloudlet sumber daya)
+* 96 * 1.25 = **120** (total biaya lisensi)
 
-![03-total license cost](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/mongodb-license-pricing/03-total-license-cost.png" alt="03-total license cost" width="100%"/>
 
 ## Baca Juga{#whats-next}
 

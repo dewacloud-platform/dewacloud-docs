@@ -5,20 +5,20 @@ title: MongoDB Sandbox
 ---
 # MongoDB Sandbox
 
-If you want to try out the latest version of MongoDB, you have the option to test it without the additional [license cost](<https://docs.dewacloud.com/docs/mongodb-license/>). Go to the Marketplace tab at the top of your dashboard and search for the **MongoDB Sandbox** application.
+Jika Anda ingin mencoba versi terbaru dari MongoDB, Anda memiliki opsi untuk mengujinya tanpa [biaya lisensi](<https://docs.dewacloud.com/docs/mongodb-license/>) tambahan. Pergi ke tab Marketplace di bagian atas dashboard Anda dan cari aplikasi **MongoDB Sandbox**.
 
-![Marketplace MongoDB Sandbox](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/mongodb-sandbox/01-marketplace-mongodb-sandbox.png" alt="Marketplace MongoDB Sandbox" width="100%"/>
 
-If you cannot find the application, you can request adding the **MongoDB Sandbox** template. Contact your platform’s Support Team (e.g., accessible directly from the dashboard) and request access to the MongoDB sandbox image for your account.
+Jika Anda tidak dapat menemukan aplikasi tersebut, Anda dapat meminta penambahan template **MongoDB Sandbox**. Hubungi Tim Dukungan platform Anda (misalnya, dapat diakses langsung dari dashboard) dan minta akses ke gambar sandbox MongoDB untuk akun Anda.
 
-![Platform Support](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/mongodb-sandbox/02-platform-support.png" alt="Platform Support" width="100%"/>
 
-Before using the MongoDB Sandbox template, note some of its limitations:
+Sebelum menggunakan template MongoDB Sandbox, perhatikan beberapa keterbatasannya:
 
-* The image is preconfigured with a resource limit of **8 cloudlets per container** (equivalent to 1 GB of RAM). The MongoDB replica set cluster can be configured with the same limitation.
-* The sandbox template has **no extra license cost** that is applied to the production version of MongoDB.
-* The image is provided for a **limited time** only (determined by your service hosting provider).
-* The MongoDB Sandbox image is **for testing purposes** only, with no auto-upgrade to production. If you want to keep any data from the testing instance, you’ll need to migrate it manually.
+* Gambar sudah dikonfigurasikan dengan batas sumber daya **8 cloudlet per container** (setara dengan 1 GB RAM). Kluster set replika MongoDB dapat dikonfigurasi dengan batasan yang sama.
+* Template sandbox tidak memiliki **biaya lisensi tambahan** yang diterapkan pada versi produksi dari MongoDB.
+* Gambar ini disediakan hanya untuk **waktu terbatas** (ditentukan oleh penyedia hosting layanan Anda).
+* Gambar MongoDB Sandbox hanya untuk **tujuan pengujian**, tanpa upgrade otomatis ke produksi. Jika Anda ingin menyimpan data dari instance pengujian, Anda harus memindahkannya secara manual.
 
 ## Baca Juga{#whats-next}
 
