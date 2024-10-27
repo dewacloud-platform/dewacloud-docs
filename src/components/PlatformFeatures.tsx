@@ -27,7 +27,7 @@ const environmentFeatureList: PlatformFeatureItem[] = [
     title: "Database",
     description:
       "Database di Dewacloud adalah solusi penyimpanan yang kuat untuk aplikasi Anda, menawarkan performa tinggi dan skalabilitas.",
-    link: "/docs/db-hosting",
+    link: "/docs/database-hosting",
   },
   {
     title: "Auto Vertical Scaling",
