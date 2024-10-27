@@ -17,7 +17,7 @@ Jika Anda ingin menggunakan versi terbaru dari MongoDB dengan Platform Aplikasi 
 Platform Aplikasi Virtuozzo menyediakan gambar MongoDB Sandbox untuk tujuan pengujian. Ini ditawarkan tanpa lisensi tetapi termasuk beberapa batasan dibandingkan dengan versi produksi.
 :::
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/mongodb-license-pricing/01-license-cost-in-wizard.png" alt="license cost in wizard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/mongodb-license-pricing/01-license-cost-in-wizard.png" alt="license cost in wizard" width="80%"/>
 
 Harga lisensi MongoDB berkorelasi dengan jumlah cloudlet dinamis (batas skala) yang disediakan untuk node MongoDB.
 
@@ -25,12 +25,12 @@ __Sebagai contoh,__ untuk set replika dengan 3 node masing-masing dengan 32 clou
 
 * 3 * 32 = **96** (total batas cloudlet untuk MongoDB)
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/mongodb-license-pricing/02-mongodb-nodes-cloudlets.png" alt="mongodb nodes cloudlets" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/mongodb-license-pricing/02-mongodb-nodes-cloudlets.png" alt="mongodb nodes cloudlets" width="40%"/>
 
 * 10 / 8 = **1.25** (biaya lisensi untuk satu cloudlet sumber daya)
 * 96 * 1.25 = **120** (total biaya lisensi)
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/mongodb-license-pricing/03-total-license-cost.png" alt="03-total license cost" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/mongodb-license-pricing/03-total-license-cost.png" alt="03-total license cost" width="70%"/>
 
 ## Baca Juga{#whats-next}
 

@@ -11,7 +11,7 @@ Jika Anda ingin mencoba versi terbaru dari MongoDB, Anda memiliki opsi untuk men
 
 Jika Anda tidak dapat menemukan aplikasi tersebut, Anda dapat meminta penambahan template **MongoDB Sandbox**. Hubungi Tim Dukungan platform Anda (misalnya, dapat diakses langsung dari dashboard) dan minta akses ke gambar sandbox MongoDB untuk akun Anda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/mongodb-sandbox/02-platform-support.png" alt="Platform Support" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/mongodb-sandbox/02-platform-support.png" alt="Platform Support" width="30%"/>
 
 Sebelum menggunakan template MongoDB Sandbox, perhatikan beberapa keterbatasannya:
 
