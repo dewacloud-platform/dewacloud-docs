@@ -17,17 +17,17 @@ The add-on can be installed on top of the **MongoDB** database nodes of _**6 and
 The add-on is also available from the Marketplace and can be imported from the appropriate GitHub repository.
 :::
 
-![SSL/TLS encryption add-on](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/encryption-in-transit-addon/encryption-in-transit-addon-1.png" alt="SSL/TLS encryption add-on" width="70%"/>
 
 2\. Within the opened installation window, select the target **Environment** and **Node Group(s)** (multiple layers can be selected if needed) where the add-on will be installed.
 
-![SSL add-on installation](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/encryption-in-transit-addon/encryption-in-transit-addon-2.png" alt="SSL add-on installation" width="90%"/>
 
 Click **Install** to continue.
 
 3\. Wait a minute, and your database will be configured to work over an encrypted connection.
 
-![SSL add-on installed](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/encryption-in-transit-addon/encryption-in-transit-addon-3.png" alt="SSL add-on installed" width="70%"/>
 
 ## Add-On Specifics[![](#)](<https://www.virtuozzo.com/application-platform-docs/mongodb-ssl-addon/#add-on-specifics>)
 
@@ -40,7 +40,7 @@ Below you can learn about the certificate generation process and its specifics:
   * _**server**_ – server certificates are used to provide TLS encryption for the connection to the MongoDB database.
   * _**client**_ – downloadable client certificates can be used to authenticate client connections to the database server.
 
-![MongoDB SSL certificates](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/encryption-in-transit-addon/encryption-in-transit-addon-4.png" alt="MongoDB SSL certificates" width="100%"/>
 
 **MongoDB configurations:**
 
@@ -55,7 +55,7 @@ net:
     allowConnectionsWithoutCertificates: true
 ```
 
-![MongoDB SSL configurations](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/encryption-in-transit-addon/encryption-in-transit-addon-5.png" alt="MongoDB SSL configurations" width="100%"/>
 
 * The config provides paths to server SSL files. Also, it includes the “_allowConnectionsWithoutCertificates: true_” option to make the usage of the secure connection optional. If removed, it will be impossible for the client to connect to this server using a plain non-encrypted connection.
 
@@ -67,7 +67,7 @@ The add-on can be found under the **Add-Ons** tab for the appropriate layer(s). 
 * **Renew server certs** – generate server SSL certificates anew
 * **Renew client certs** – generate client SSL certificates anew
 
-![managing MongoDB SSL add-on](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/encryption-in-transit-addon/encryption-in-transit-addon-6.png" alt="managing MongoDB SSL add-on" width="100%"/>
 
 To remove the add-on from the layer (including custom configs and generated SSL certificates), expand the menu in the top-right corner of the panel and click **Uninstall**.
 
@@ -83,7 +83,7 @@ Let’s check the secure connection to the MongoDB nodes by using the _**tls**_ 
 mongosh --tls --host {hostName} --tlsCAFile={path/to/root.pem}
 ```
 
-![MongoDB SSL connection](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/encryption-in-transit-addon/encryption-in-transit-addon-7.png" alt="MongoDB SSL connection" width="100%"/>
 
 ## Baca Juga{#whats-next}
 

@@ -11,7 +11,7 @@ title: Multi-Region Cluster
 
 Paket [PostgreSQL Multi-Region Cluster](<https://github.com/jelastic-jps/postgres-multiregion>) menggunakan satu-satunya topologi Cluster PostgreSQL yang didukung secara resmi - **Primary-Secondary**. Namun, satu node sekunder lagi ditambahkan untuk pemulihan bencana. Akibatnya, topologi akhir adalah _Primary-Secondary-Secondary_.
 
-![PostgreSQL multi-region cluster](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/multi-region-cluster/multi-region-cluster-1.png" alt="PostgreSQL multi-region cluster" width="50%"/>
 
 Selain itu, paket ini mencakup lapisan [Pgpool-II Load Balancer](<https://www.pgpool.net/mediawiki/index.php/Main_Page>) yang sangat tersedia untuk mendistribusikan permintaan dan mengelola topologi replikasi PostgreSQL.
 
@@ -21,7 +21,7 @@ Jumlah dari penerapan ini memastikan ketersediaan tinggi dan failover out-of-box
 
 1\. Temukan aplikasi _**PostgreSQL Multi-Region Cluster**_ (bagian **Clusters** atau gunakan kolom **Search**) di dalam platform [Marketplace](<https://docs.dewacloud.com/docs/marketplace/>).
 
-![PostgreSQL multi-region marketplace](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/multi-region-cluster/multi-region-cluster-2.png" alt="PostgreSQL multi-region marketplace" width="100%"/>
 
 2\. Di jendela instalasi yang terbuka, tentukan data berikut:
 
@@ -32,7 +32,7 @@ Jumlah dari penerapan ini memastikan ketersediaan tinggi dan failover out-of-box
   * **Pgpool-II enabled** – aktifkan untuk menambahkan node penyeimbang beban, pemantauan, dan manajemen (_Pgpool-II_) di depan node database di setiap wilayah
   * **Pgpool regions** \- pilih wilayah platform tempat node penyeimbang beban akan diterapkan
 
-![install PostgreSQL multi-region cluster](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/multi-region-cluster/multi-region-cluster-3.png" alt="install PostgreSQL multi-region cluster" width="100%"/>
 
 Klik **Install** ketika sudah siap.
 
@@ -40,11 +40,11 @@ Klik **Install** ketika sudah siap.
 
 Untuk dengan mudah melihat semua environment yang terkait, Anda dapat beralih ke grup yang ditentukan pada langkah sebelumnya (_pgcluster_ dalam kasus kami).
 
-![PostgreSQL cluster group](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/multi-region-cluster/multi-region-cluster-4.png" alt="PostgreSQL cluster group" width="100%"/>
 
 4\. Titik masuk default untuk cluster multi-region Anda adalah pemimpin node _Pgpool-II_ (yang diterapkan di wilayah pertama). Jika gagal, Anda dapat menggunakan node _Pgpool-II_ lainnya dengan menggunakan [hostname](<https://docs.dewacloud.com/docs/container-dns-hostnames/#hostnames-for-specific-containers>) atau alamat IP.
 
-![PostgreSQL multi-region cluster environments](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/multi-region-cluster/multi-region-cluster-5.png" alt="PostgreSQL multi-region cluster environments" width="100%"/>
 
 Jika perangkat lunak klien Anda mendukung beberapa titik masuk, Anda dapat mengatur semuanya dalam string koneksi untuk memastikan failover otomatis.
 

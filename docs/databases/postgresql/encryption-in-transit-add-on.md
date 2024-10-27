@@ -17,11 +17,11 @@ Add-on ini hanya dapat dipasang pada node **PostgreSQL** dan **Pgpool-II** (untu
 Solusi ini juga tersedia dari Marketplace dan dapat diimpor dari repositori di GitHub.
 :::
 
-![PostgreSQL SSL/TLS add-on](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/encryption-in-transit-addon/encryption-in-transit-1.png" alt="PostgreSQL SSL/TLS add-on" width="100%"/>
 
 2\. Dalam jendela instalasi yang terbuka, pilih **Environment** dan **Node Group(s)** target di mana add-on akan dipasang.
 
-![PostgreSQL SSL add-on installation](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/encryption-in-transit-addon/encryption-in-transit-2.png" alt="PostgreSQL SSL add-on installation" width="100%"/>
 
 :::warning
 Kedua lapisan harus dipilih jika dipasang untuk cluster PostgreSQL dengan node penyeimbang beban Pgpool-II.
@@ -31,7 +31,7 @@ Klik **Install** untuk melanjutkan.
 
 3\. Dalam satu menit, database Anda akan dikonfigurasi ulang untuk bekerja melalui koneksi terenkripsi.
 
-![PostgreSQL SSL add-on installed](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/encryption-in-transit-addon/encryption-in-transit-3.png" alt="PostgreSQL SSL add-on installed" width="70%"/>
 
 ## Add-On Specifics{#add-on-specifics}
 
@@ -43,7 +43,7 @@ Di bawah ini Anda dapat mempelajari tentang proses dan spesifikasi pembuatan ser
     * _**server**_ – sertifikat server digunakan untuk memberikan enkripsi TLS dari koneksi ke database PostgreSQL
     * _**client**_ – sertifikat klien yang dapat diunduh dapat digunakan untuk mengotentikasi koneksi klien ke server database (fungsionalitas tidak tersedia untuk node _Pgpool-II_)
 
-![PostgreSQL SSL certificates](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/encryption-in-transit-addon/encryption-in-transit-4.png" alt="PostgreSQL SSL certificates" width="100%"/>
 
 **Konfigurasi PostgreSQL:**
 
@@ -58,7 +58,7 @@ Di bawah ini Anda dapat mempelajari tentang proses dan spesifikasi pembuatan ser
     ssl = on
     ```
 
-![postgresql.conf file](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/encryption-in-transit-addon/encryption-in-transit-5.png" alt="postgresql.conf file" width="100%"/>
 
   * Karena perubahan algoritma, password pengguna database yang ada harus direset. Ini dilakukan secara otomatis untuk pengguna default ‘ _**webadmin**_ ’ (ke password yang sama seperti sebelumnya) tetapi __harus dilakukan secara manual untuk pengguna kustom yang ada__.
   * Aturan ‘ _**hostssl**_ ’ digunakan sebagai pengganti ‘ _host_ ’ dalam file _**/var/lib/pgsql/data/pg_hba.conf**_ untuk memastikan autentikasi SSL untuk pengguna.
@@ -67,7 +67,7 @@ Di bawah ini Anda dapat mempelajari tentang proses dan spesifikasi pembuatan ser
     hostssl all all 0.0.0.0/0 scram-sha-256
     ```
 
-![pg_hba.conf file](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/encryption-in-transit-addon/encryption-in-transit-6.png" alt="pg_hba.conf file" width="100%"/>
 
   * Jika Anda ingin mengaktifkan autentikasi pengguna melalui sertifikat klien, Anda perlu menambahkan “ _cert_ ” secara manual sebagai [metode autentikasi](<https://www.postgresql.org/docs/current/auth-methods.html>).
 
@@ -83,7 +83,7 @@ Di bawah ini Anda dapat mempelajari tentang proses dan spesifikasi pembuatan ser
     pool_passwd = 'pool_passwd'
     ```
 
-![pgpool.conf file](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/encryption-in-transit-addon/encryption-in-transit-7.png" alt="pgpool.conf file" width="100%"/>
 
   * Aturan ‘ _**hostssl**_ ’ digunakan sebagai pengganti ‘ _host_ ’ dalam file _**/etc/pgpool-II/pool_hba.conf**_ untuk memastikan autentikasi SSL untuk pengguna.
 
@@ -91,7 +91,7 @@ Di bawah ini Anda dapat mempelajari tentang proses dan spesifikasi pembuatan ser
     hostssl all all 0.0.0.0/0 scram-sha-256
     ```
 
-![pool_hba.conf file](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/encryption-in-transit-addon/encryption-in-transit-8.png" alt="pool_hba.conf file" width="100%"/>
 
   * Catatan yang sesuai __harus ditambahkan untuk pengguna kustom__ ke file _**/etc/pgpool-II/pool_passwd**_. Dua catatan untuk pengguna default ‘ _**webadmin**_ ’ dan ‘ _**pgpool**_ ’ ditambahkan secara otomatis. Untuk semua pengguna lainnya, silakan gunakan utilitas **pg_enc**:
 
@@ -99,13 +99,13 @@ Di bawah ini Anda dapat mempelajari tentang proses dan spesifikasi pembuatan ser
     pg_enc -m -f /etc/pgpool-II/pgpool.conf -u $USERNAME $PASSWORD
     ```
 
-![pool_passwd configuration file](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/encryption-in-transit-addon/encryption-in-transit-9.png" alt="pool_passwd configuration file" width="100%"/>
 
 ## Add-On Configuration{#add-on-configuration}
 
 Setelah pemasangan, add-on dapat ditemukan di bawah tab **Add-Ons** untuk layer yang sesuai.
 
-![PostgrSQL SSL add-on configuration](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/encryption-in-transit-addon/encryption-in-transit-10.png" alt="PostgrSQL SSL add-on configuration" width="70%"/>
 
 Opsi konfigurasi yang tersedia cukup sederhana:
 
@@ -119,6 +119,7 @@ Opsi konfigurasi yang tersedia cukup sederhana:
 
 :::tip
 Anda dapat menggunakan endpoint atau public IP sebagai titik masuk database Anda untuk koneksi eksternal. Mari kita periksa contoh endpoint (ke node _Pgpool-II_ untuk cluster):
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/encryption-in-transit-addon/encryption-in-transit-11.png" alt="PostgrSQL SSL add-on configuration" width="100%"/>
 :::
 
 Hubungkan dari klien dengan perintah berikut (Anda bisa mendapatkan kredensial akses default dari email yang diterima setelah pemasangan database):
@@ -134,11 +135,11 @@ Di sini:
   * `{host}` \- titik masuk database (endpoint, dalam kasus kami)
   * `{port}` \- port untuk koneksi (dari endpoint, dalam kasus kami)
 
-![PostgreSQL SSL connect](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/encryption-in-transit-addon/encryption-in-transit-12.png" alt="PostgreSQL SSL connect" width="100%"/>
 
 2\. Selain itu, Anda dapat menggunakan sertifikat klien untuk otentikasi (_server- and client-side encryption_). Dalam hal ini, file sertifikat SSL harus diberikan kepada klien. Anda dapat mengunduhnya dari direktori **/var/lib/jelastic/keys/SSL-TLS/client** dari node PostgreSQL yang dibutuhkan.
 
-![PostgreSQL client certificates](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/encryption-in-transit-addon/encryption-in-transit-13.png" alt="PostgreSQL client certificates" width="100%"/>
 
 Klien perlu mengunggah file sertifikat (_client.crt_, _client.key_, _root.crt_) ke komputer/container/VM mereka. Setelah itu, koneksi ke node PostgreSQL yang dibutuhkan dapat dibangun sebagai berikut:
 
@@ -146,7 +147,7 @@ Klien perlu mengunggah file sertifikat (_client.crt_, _client.key_, _root.crt_) 
 psql "sslmode=verify-ca sslrootcert={path/to/root.crt} sslcert={path/to/client.crt} sslkey={path/to/client.key} host={host} port={port} user={userName} dbname={dbName}"
 ```
 
-![PostgreSQL client certificates connection](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/encryption-in-transit-addon/encryption-in-transit-14.png" alt="PostgreSQL client certificates connection" width="100%"/>
 
 :::tip
 Sebagai alternatif, Anda bisa memeriksa otentikasi dengan sertifikat klien seperti yang dijelaskan dalam panduan SSL Connection to PostgreSQL.

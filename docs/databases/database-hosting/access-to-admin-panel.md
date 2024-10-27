@@ -27,7 +27,7 @@ Mari kita telusuri langkah demi langkah:
 
 1. Untuk mengubah perilaku default, yang memungkinkan semua koneksi, Anda perlu mengomentari/menghapus baris yang sesuai, seperti yang ditunjukkan dalam gambar di bawah (misalnya, menggunakan [file configuration manager](<https://docs.dewacloud.com/docs/configuration-file-manager/>) atau melalui [Web SSH](<https://docs.dewacloud.com/docs/web-ssh-client/>)):
 
-   ![phpMyAdmin configuration file](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/access-to-admin-panel/access-to-admin-panel-1.png" alt="phpMyAdmin configuration file" width="100%"/>
 
 2. Selanjutnya, daftar IP yang diizinkan harus ditentukan dalam format berikut (Anda dapat menghapus komentar dari template yang disediakan dan menentukan alamat IP yang benar):
 
@@ -37,7 +37,7 @@ Mari kita telusuri langkah demi langkah:
      Require ip {ipAddress}
      ```
 
-     ![configure access for db with public ip](#)
+     <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/access-to-admin-panel/access-to-admin-panel-2.png" alt="configure access for db with public ip" width="100%"/>
 
    - jika node database Anda hanya memiliki IP internal
 
@@ -46,7 +46,7 @@ Mari kita telusuri langkah demi langkah:
      Require env {varName}
      ```
 
-     ![configure access for db with internal ip only](#)
+     <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/access-to-admin-panel/access-to-admin-panel-3.png" alt="configure access for db with internal ip only" width="100%"/>
 
      :::warning
      Dalam hal ini, Anda harus menentukan `{ipAddress}` dalam format ^xxx.xxx.xxx.xxx agar dapat diproses dengan benar oleh Apache. Juga, Anda dapat menggunakan nama variabel `{varName}` yang diinginkan, misalnya env_allow_1.
@@ -56,7 +56,7 @@ Mari kita telusuri langkah demi langkah:
 
 3. Hapus komentar dari baris terakhir dalam bagian tersebut, untuk menolak akses dari IP mana pun selain yang ditentukan:
 
-   ![deny access to admin from not listed addresses](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/access-to-admin-panel/access-to-admin-panel-4.png" alt="deny access to admin from not listed addresses" width="100%"/>
 
 4. **Simpan** perubahan dan **Restart Nodes** dari server database Anda.
 
@@ -64,7 +64,7 @@ Mari kita telusuri langkah demi langkah:
 
 Selesai! Setiap koneksi ke panel _phpMyAdmin_ dari alamat IP yang tidak ada dalam daftar yang diizinkan akan mengarah ke halaman seperti berikut:
 
-![403 forbidden page example](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/access-to-admin-panel/access-to-admin-panel-5.png" alt="403 forbidden page example" width="100%"/>
 
 Sekarang, Anda bisa yakin bahwa panel admin database Anda terlindungi dari koneksi yang tidak diizinkan.
 

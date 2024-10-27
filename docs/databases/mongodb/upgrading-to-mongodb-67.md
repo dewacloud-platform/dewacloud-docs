@@ -13,23 +13,23 @@ Upgrade from MongoDB 6 to 7 can be done via redeployment as usual (without the s
 
 1\. Install the _**Backup/Restore**_ add-on for your legacy MongoDB instance. For example, locate it in the Marketplace or import it from [GitHub](<https://github.com/jelastic-jps/database-backup-addon>):
 
-![backup add-on](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/upgrading-mongodb/upgrade-mongodb-1.png" alt="backup add-on" width="100%"/>
 
 2\. Go to the **Add-Ons** section for your legacy MongoDB database. Here, you can manually create a backup with the **Backup Now** button. We recommend doing it right before the restoration step to ensure no or minimal data loss.
 
-![backup legacy MongoDB](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/upgrading-mongodb/upgrade-mongodb-2.png" alt="backup legacy MongoDB" width="100%"/>
 
 3\. Create a new environment with the MongoDB 6/7 instance (the same topology is recommended). Once created, install the _**Backup/Restore**_ add-on for it as well and click the **Restore** option.
 
-![restore on MongoDB 7](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/upgrading-mongodb/upgrade-mongodb-3.png" alt="restore on MongoDB 7" width="100%"/>
 
 4\. Select to _restore from_ the environment with the legacy MongoDB instance and choose the latest _backup_ in the opened _**Restore Backup**_ form. Click the **Restore** button and confirm via pop-up.
 
-![restore backup](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/upgrading-mongodb/upgrade-mongodb-4.png" alt="restore backup" width="100%"/>
 
 5\. Once the process is complete, connect to the new database via the admin panel or SSH to verify that your custom data is present.
 
-![mongo express admin panel](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/upgrading-mongodb/upgrade-mongodb-5.png" alt="mongo express admin panel" width="100%"/>
 
 That’s all! Now, you just need to reconfigure your applications to work with the new database (like updating connection string and credentials).
 

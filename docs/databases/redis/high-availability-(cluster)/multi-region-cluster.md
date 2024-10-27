@@ -17,11 +17,11 @@ title: Multi-Region Cluster
 
   * **Kinerja Maksimum** – menyediakan kinerja maksimum dan skalabilitas horizontal
 
-![Redis multi-region maximum performance](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/redis/high-availability-cluster/multi-region-cluster/multi-region-cluster-1.png" alt="Redis multi-region maximum performance" width="50%"/>
 
   * **Keandalan Maksimum** – memastikan ketersediaan yang sangat tinggi bahkan jika satu atau dua pusat data gagal, tetapi solusi ini tidak dapat diskalakan
 
-![Redis multi-region maximum reliability](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/redis/high-availability-cluster/multi-region-cluster/multi-region-cluster-2.png" alt="Redis multi-region maximum reliability" width="50%"/>
 
 Kedua topologi menyediakan ketersediaan tinggi dan kemampuan failover secara out-of-box untuk cluster database Anda. Dalam kasus kegagalan node cluster, kedua topologi memastikan bahwa cluster database berfungsi tanpa waktu henti. Namun, topologi _**kinerja**_ dapat terus berfungsi meskipun satu atau dua _node_ gagal, sementara topologi _**keandalan**_ dapat pulih bahkan setelah satu atau dua _wilayah_ tidak tersedia.
 
@@ -29,7 +29,7 @@ Kedua topologi menyediakan ketersediaan tinggi dan kemampuan failover secara out
 
 1. Temukan aplikasi _**Multi-Region Redis Cluster**_ (bagian **Cluster** atau gunakan kolom **Pencarian**) di platform [Marketplace](<https://www.virtuozzo.com/application-platform-docs/marketplace/>).
 
-![Redis multi-region marketplace](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/redis/high-availability-cluster/multi-region-cluster/multi-region-cluster-3.png" alt="Redis multi-region marketplace" width="100%"/>
 
 2. Di jendela instalasi yang terbuka, tentukan data berikut:
 
@@ -40,7 +40,7 @@ Kedua topologi menyediakan ketersediaan tinggi dan kemampuan failover secara out
   * **Topologi** – pilih antara topologi _**Kinerja Maksimum**_ atau _**Keandalan Maksimum**_ (detail dapat ditemukan di bagian [Topologi Cluster](<https://docs.dewacloud.com/docs/#database-cluster-topology>) di atas)
   * **Wilayah** \- pilih wilayah platform di mana lingkungan cluster akan diterapkan. Untuk topologi _**Keandalan Maksimum**_, wilayah pertama akan menjadi tuan rumah server utama dan yang lainnya - database sekunder (salinan)
 
-![install Redis multi-region cluster](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/redis/high-availability-cluster/multi-region-cluster/multi-region-cluster-4.png" alt="install Redis multi-region cluster" width="100%"/>
 
 Klik **Instal** saat siap.
 
@@ -48,13 +48,13 @@ Klik **Instal** saat siap.
 
 Untuk melihat semua lingkungan terkait dengan mudah, Anda dapat beralih ke kelompok yang ditentukan di langkah sebelumnya (_redismulti_ dalam kasus kami).
 
-![Redis cluster group](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/redis/high-availability-cluster/multi-region-cluster/multi-region-cluster-5.png" alt="Redis cluster group" width="100%"/>
 
 4. Titik masuk default untuk cluster multi-wilayah Anda adalah IP yang ditetapkan ke node cluster (yang utama lebih diutamakan). Juga, sangat disarankan agar perangkat lunak klien Anda mendukung mode cluster.
 
 Jika opsi **Aktifkan Alamat IP Eksternal untuk node cluster** diaktifkan, silakan gunakan IP publik yang ditetapkan ke node cluster.
 
-![Redis multi-region cluster environments](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/redis/high-availability-cluster/multi-region-cluster/multi-region-cluster-6.png" alt="Redis multi-region cluster environments" width="100%"/>
 
 ## Baca Juga{#whats-next}
 

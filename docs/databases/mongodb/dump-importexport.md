@@ -20,51 +20,51 @@ Jika Anda ingin menggunakan klien MongoDB, Anda perlu mengaktifkan fitur IP publ
 
 1. Setelah koneksi jarak jauh ke **MongoDB**, klik **Impor** di klien desktop (kami menggunakan _Database Master 4_ sebagai contoh) dan pilih jenis file yang ingin Anda impor.
 
-![Database Master file import](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/dump-import-export/dump-import-export-1.png" alt="mongodb replica set change topology" width="100%"/>
 
 2. Telusuri file **XML/Csv** yang ingin Anda impor. Kemudian telusuri file log.
 
-![browse XML and log file](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/dump-import-export/dump-import-export-2.png" alt="browse XML and log file" width="100%"/>
 
 3. Gabungkan tabel sumber ke tabel target.
 
-![merge source and target tables](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/dump-import-export/dump-import-export-3.png" alt="merge source and target tables" width="100%"/>
 
-![XML import success](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/dump-import-export/dump-import-export-4.png" alt="XML import success" width="60%"/>
 
 4. Sekarang Anda dapat kembali ke dashboard platform, buka MongoDB di browser web dan temukan dump yang diimpor di direktori **test**.
 
-![check imported dump](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/dump-import-export/dump-import-export-5.png" alt="check imported dump" width="100%"/>
 
 ### Ekspor Dump dari MongoDB{#dump-export-from-mongodb}
 
 1. Klik **Ekspor > Ekspor Data**.
 
-![Database Master data export](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/dump-import-export/dump-import-export-6.png" alt="Database Master data export" width="100%"/>
 
 2. Telusuri folder target dan pilih tabel untuk diekspor.
 
-![select tables for export](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/dump-import-export/dump-import-export-7.png" alt="select tables for export" width="100%"/>
 
 3. Pilih opsi ekspor data dan klik **Selesai**.
 
-![data export options](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/dump-import-export/dump-import-export-8.png" alt="data export options" width="100%"/>
 
 4. Ekspor data selesai dengan sukses. Anda dapat memeriksa folder target Anda untuk memastikan semuanya baik-baik saja.
 
-![data export success](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/dump-import-export/dump-import-export-9.png" alt="data export success" width="60%"/>
 
 ## Panel Admin RockMongo{#rockmongo-admin-panel}
 
 1. Klik tombol **Buka di Browser** untuk node MongoDB di lingkungan Anda:
 
-![open MongoDB in browser](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/dump-import-export/dump-import-export-10.png" alt="open MongoDB in browser" width="80%"/>
 
 2. Di jendela yang terbuka, Anda akan diminta untuk login dengan kredensial yang Anda terima melalui email setelah membuat node MongoDB.
 
 3. Untuk **Ekspor** atau **Impor** file dump, gunakan tombol yang sesuai:
 
-![RockMongo import export](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/dump-import-export/dump-import-export-11.png" alt="RockMongo import export" width="100%"/>
 
 Semoga instruksi ini bermanfaat bagi Anda.
 

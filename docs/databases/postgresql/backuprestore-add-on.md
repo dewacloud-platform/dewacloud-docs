@@ -17,7 +17,7 @@ Sebelum memulai instalasi add-on, Anda perlu membuat instance penyimpanan khusus
 
 1\. Jika Anda belum memiliki, Anda dapat membuatnya dalam beberapa menit menggunakan paket **Backup Storage** khusus di [Marketplace platform](<https://docs.dewacloud.com/docs/marketplace/>).
 
-![marketplace backup storage](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/backup-restore-addon/backup-restore-addon-1.png" alt="marketplace backup storage" width="100%"/>
 
 Jika Anda sudah memiliki penyimpanan semacam itu, Anda dapat langsung menuju langkah keempat.
 
@@ -27,11 +27,11 @@ Jika Anda sudah memiliki penyimpanan semacam itu, Anda dapat langsung menuju lan
   * **Display Name** – [alias environment](<https://docs.dewacloud.com/docs/environment-aliases/>)
   * **Region** – [region environment](<https://docs.dewacloud.com/docs/environment-regions/>) (jika tersedia lebih dari satu)
 
-![backup storage installation](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/backup-restore-addon/backup-restore-addon-2.png" alt="backup storage installation" width="100%"/>
 
 3\. Klik tombol Install dan tunggu beberapa menit hingga penyimpanan dibuat. Penyimpanan tersebut akan otomatis ditambahkan ke “ _Backup storage nodes_ ” [group](<https://docs.dewacloud.com/docs/environment-groups/>).
 
-![backup storage environment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/backup-restore-addon/backup-restore-addon-3.png" alt="backup storage environment" width="100%"/>
 
 :::tip
 Satu penyimpanan dapat digunakan oleh sebanyak mungkin database yang diperlukan.
@@ -39,7 +39,7 @@ Satu penyimpanan dapat digunakan oleh sebanyak mungkin database yang diperlukan.
 
 4\. Setelah penyimpanan siap, Anda dapat menginstal backup add-on. Arahkan ke database Anda dan klik ikon **Add-Ons**.
 
-![backup restore add-on](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/backup-restore-addon/backup-restore-addon-4.png" alt="backup restore add-on" width="100%"/>
 
 Temukan _**Database Backup/Restore Add-On**_ yang diperlukan dan klik **Install**.
 
@@ -47,17 +47,19 @@ Temukan _**Database Backup/Restore Add-On**_ yang diperlukan dan klik **Install*
 
   * Pilih opsi penjadwalan:
     * **Pre-defined** – pilih dari daftar interval cadangan standar (setiap jam, harian, mingguan, bulanan)
-    * **Custom** – pilih waktu yang tepat, hari yang diperlukan dalam seminggu, dan zona waktu ![custom backup schedule](#)
-    * **Manual (crontab)** – berikan ekspresi sederhana berbasis [cron](<https://en.wikipedia.org/wiki/Cron#Overview>) (menggunakan zona waktu UTC) untuk menjadwalkan cadangan ![crontab backup schedule](#)
+    * **Custom** – pilih waktu yang tepat, hari yang diperlukan dalam seminggu, dan zona waktu
+    <img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/backup-restore-addon/backup-restore-addon-5.png" alt="custom backup schedule" width="100%"/>
+    * **Manual (crontab)** – berikan ekspresi sederhana berbasis [cron](<https://en.wikipedia.org/wiki/Cron#Overview>) (menggunakan zona waktu UTC) untuk menjadwalkan cadangan
+    <img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/backup-restore-addon/backup-restore-addon-6.png" alt="crontab backup schedule" width="100%"/>
   * **Backup storage** – pilih dari daftar backup storage yang diinstal di akun
   * **Number of backups** – atur jumlah cadangan terbaru yang akan disimpan untuk database saat ini
   * **Database User** dan **Database Password** – berikan kredensial pengguna untuk mengakses database
 
-![backup restore add-on installation](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/backup-restore-addon/backup-restore-addon-7.png" alt="backup restore add-on installation" width="100%"/>
 
 6\. Dalam satu menit, Anda akan melihat pop-up keberhasilan instalasi.
 
-![add-on installed](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/backup-restore-addon/backup-restore-addon-8.png" alt="add-on installed" width="70%"/>
 
 Backup add-on Anda sudah bekerja. Tunggu saja waktu yang ditentukan untuk cadangan dibuat.
 
@@ -70,7 +72,7 @@ Setelah instalasi, add-on memberikan opsi berikut:
   * **Restore** – memulihkan dari cadangan
   * **Uninstall** – menghapus backup add-on
 
-![managing add-on](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/backup-restore-addon/backup-restore-addon-9.png" alt="managing add-on" width="70%"/>
 
 __Selama proses backup,__ snapshot dari database dibuat. Snapshot ini disimpan di _Backup Storage_ di bawah folder khusus (dinamakan berdasarkan database yang dicadangkan) dan menggunakan nama unik (stempel waktu eksekusi). Struktur semacam ini membantu menjaga backup tetap terorganisir, terutama saat bekerja dengan beberapa database.
 
@@ -89,7 +91,7 @@ Untuk memulihkan database dari cadangan, Anda perlu memilih opsi **Restore** unt
   * **Restore from** – pilih environment target (beberapa opsi mungkin tersedia jika backup add-on digunakan pada beberapa environment)
   * **Backup** – pilih dari daftar cadangan untuk environment yang dipilih (nama-nama berisi stempel waktu untuk identifikasi cepat)
 
-![restore from backup](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/backup-restore-addon/backup-restore-addon-10.png" alt="restore from backup" width="100%"/>
 
 Klik **Restore** dan konfirmasi melalui pop-up. Setelah dimulai, tindakan ini tidak dapat dibatalkan atau dikembalikan. Anda akan melihat notifikasi keberhasilan di dashboard setelah proses selesai.
 
