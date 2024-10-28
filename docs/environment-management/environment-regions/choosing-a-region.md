@@ -28,15 +28,15 @@ Jika penyedia layanan hosting Anda menawarkan beberapa environment regions, Anda
 
   * _**topology wizard**_ 
 
-    ![topology wizard select region](#)
+    <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-regions/choosing-regions/01-topology-wizard-select-region.png" alt="topology wizard select region" max-width="100%"/>
 
   * _**[platform Marketplace](<https://docs.dewacloud.com/docs/marketplace>)**_ 
 
-    ![platform Marketplace select region](#)
+    <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-regions/choosing-regions/02-platform-marketplace-select-region.png" alt="platform Marketplace select region" max-width="100%"/>
 
   * _**environment[import](<https://docs.dewacloud.com/docs/environment-export-import#import>)**_ 
 
-    ![environment import select region](#)
+    <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-regions/choosing-regions/03-environment-import-select-region.png" alt="environment import select region" max-width="100%"/>
 
 Satu-satunya pengecualian adalah operasi [cloning](<https://docs.dewacloud.com/docs/clone-environment>) \- dalam hal ini, environment baru dibuat secara otomatis pada region perangkat keras yang sama. Namun, ini dapat dengan mudah dipindahkan ke lokasi yang diinginkan secara manual, dengan bantuan opsi [migration](<https://docs.dewacloud.com/docs/environment-regions-migration>).
 
@@ -46,7 +46,7 @@ Jumlah/nama/deskripsi/parameter dari region yang disediakan didefinisikan oleh m
 
 Pilih salah satu dari region yang disediakan (disarankan untuk [mengetahui detailnya](<https://docs.dewacloud.com/docs/#view-details>) terlebih dahulu) untuk menempatkan environment Anda di sana secara otomatis. Setelah pembuatan, Anda akan melihat environment baru Anda muncul di dashboard dengan ikon kecil khusus yang ditugaskan untuk region tersebut:
 
-![view environment regions in dashboard](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-regions/choosing-regions/04-view-environment-regions-in-dashboard.png" alt="view environment regions in dashboard" max-width="100%"/>
 
 Saat mengarahkan mouse di atasnya, nama region yang sesuai ditampilkan. Dengan cara ini, environment Anda dapat dengan cepat dibedakan berdasarkan region/lokasi.
 
@@ -56,17 +56,17 @@ Kami menyarankan untuk mengenal spesifik dari setiap region yang tersedia di muk
 
   * setiap region dilengkapi dengan deskripsi singkat tepat di dalam daftar 
 
-    ![environment regions short description](#)
+    <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-regions/choosing-regions/05-environment-regions-short-description.png" alt="environment regions short description" max-width="100%"/>
 
   * mengklik pada titik **More details** dari daftar di atas akan mengarahkan Anda ke tab **Regions** di dalam jendela informasi **Quotas & Pricing** 
 
-    ![available regions detailed overview](#)
+    <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-regions/choosing-regions/06-available-regions-detailed-overview.png" alt="available regions detailed overview" max-width="100%"/>
 
 Di sini, informasi detail tentang region yang disediakan dapat ditemukan, mis. deskripsi umum dengan daftar parameter yang disediakan dan fitur yang termasuk. Namun, tergantung pada pengaturan penyedia hosting Anda, tautan ini dapat mengarah ke situs terpisah atau halaman dokumen.
 
   * Bagian Pricing dari frame yang sama, detail tentang [charged resources](<https://docs.dewacloud.com/docs/chargeable-resources>) (_RAM/CPU_ , _Disk Space_ , _Traffic_ dan tab _Options_) dan biaya lisensi (tab _Software_) untuk setiap region dapat dilihat - gunakan daftar drop-down di bagian atas untuk beralih di antara mereka 
 
-    ![environment regions pricing](#)
+    <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-regions/choosing-regions/07-environment-regions-pricing.png" alt="environment regions pricing" max-width="100%"/>
 
 Jika informasi lebih lanjut tentang region tertentu diperlukan, silakan hubungi penyedia hosting Anda untuk mendapatkan bantuan yang sesuai. Juga, jika Anda menemukan lokasi lain yang lebih cocok untuk aplikasi Anda, Anda dapat dengan mudah [migrasi](<https://docs.dewacloud.com/docs/environment-regions-migration>) dan mendapatkan manfaat dari kondisi baru.
 

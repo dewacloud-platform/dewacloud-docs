@@ -75,12 +75,3 @@ Itu saja! Anda akan dialihkan kembali ke dashboard, tempat Anda bisa masuk mengg
 :::tip
 Anda juga akan menerima email tentang keberhasilan operasi reset kata sandi.
 :::
-
-## Baca Juga{#whats-next}
-
-* [Registrasi Akun](https://docs.dewacloud.com/docs/account/)
-* [Tipe-Tipe Akun](https://docs.dewacloud.com/docs/types-of-accounts/)
-* [Status-Status Akun](https://docs.dewacloud.com/docs/account-statuses/)
-* [Two-Factor Authentication](https://docs.dewacloud.com/docs/two-factor-authentication/)
-* [Personal Access Tokens](https://docs.dewacloud.com/docs/personal-access-tokens/)
-* [Kolaborasi Akun](https://docs.dewacloud.com/docs/account-collaboration/)

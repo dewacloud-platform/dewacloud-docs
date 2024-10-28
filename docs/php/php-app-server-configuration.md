@@ -67,7 +67,7 @@ Sebagai contoh, di sini Anda dapat mengatur:
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-server-configuration/03-php-ini-configuration-file.png" alt="php.ini configuration file" width="70%"/>
 
-[Kembali ke daftar](#back)
+
 
 ## CONF{#conf}
 
@@ -116,7 +116,7 @@ Untuk melakukan konfigurasi yang diperlukan untuk server NGINX-PHP, file _**ngin
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-server-configuration/08-nginx-configuration-file.png" alt="nginx.conf configuration file" width="50%"/>
 
-[Kembali ke daftar](#back)
+
 
 ## CONF.D{#confd}
 
@@ -124,7 +124,7 @@ Folder **conf.d** digunakan untuk menyimpan dan mengelola sub konfigurasi.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-server-configuration/09-confd-folder-for-configs.png" alt="confd folder for configs" width="50%"/>
 
-[Kembali ke daftar](#back)
+
 
 ## WEBROOT{#webroot}
 
@@ -132,7 +132,7 @@ Folder **webroot** digunakan untuk menyimpan aplikasi yang dibongkar dideploy ke
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-server-configuration/10-webroot-folder-for-applications.png" alt="webroot folder for applications" width="50%"/>
 
-[Kembali ke daftar](#back)
+
 
 ## CRON{#cron}
 
@@ -142,7 +142,7 @@ Informasi terperinci tentang konfigurasi Cronjob dapat ditemukan di dokumen [Set
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-server-configuration/11-cron-folder-for-cronjobs.png" alt="cron folder for cronjobs" width="50%"/>
 
-[Kembali ke daftar](#back)
+
 
 ## KEYS{#keys}
 
@@ -154,7 +154,7 @@ Hasilkan kunci, simpan sebagai file sederhana dan unggah ke folder **key**. Seka
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-server-configuration/12-keys-folder-for-ssh-keys.png" alt="keys folder for SSH keys" width="50%"/>
 
-[Kembali ke daftar](#back)
+
 
 ## MODULES{#modules}
 
@@ -164,7 +164,7 @@ Untuk informasi lebih lanjut, navigasikan ke dokumen [PHP Modules](https://docs.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-server-configuration/13-modules-folder-for-php-modules.png" alt="modules folder for PHP modules" width="50%"/>
 
-[Kembali ke daftar](#back)
+
 
 ## Baca Juga{#whats-next}
 

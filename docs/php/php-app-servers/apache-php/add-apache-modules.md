@@ -35,7 +35,7 @@ Berikut adalah cara kami mengompilasi modul **mod_pony** kami:
 apxs -i -a -c mod_pony.c /usr/lib64/apr-1/build/libtool --silent --mode=compile gcc -prefer-pic -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -Wformat-security -fno-strict-aliasing -DLINUX=2 -D_REENTRANT -D_GNU_SOURCE -pthread -I/usr/include/httpd -I/usr/include/apr-1 -I/usr/include/apr-1 -c -o mod_pony.lo mod_pony.c && touch mod_pony.slo /usr/lib64/apr-1/build/libtool --silent --mode=link gcc -o mod_pony.la -rpath /usr/lib64/httpd/modules -module -avoid-version mod_pony.lo /usr/lib64/httpd/build/instdso.sh SH_LIBTOOL='/usr/lib64/apr-1/build/libtool' mod_pony.la /usr/lib64/httpd/modules /usr/lib64/apr-1/build/libtool --mode=install cp mod_pony.la /usr/lib64/httpd/modules/ libtool: install: cp .libs/mod_pony.so /usr/lib64/httpd/modules/mod_pony.so libtool: install: cp .libs/mod_pony.lai /usr/lib64/httpd/modules/mod_pony.la libtool: install: cp .libs/mod_pony.a /usr/lib64/httpd/modules/mod_pony.a libtool: install: chmod 644 /usr/lib64/httpd/modules/mod_pony.a libtool: install: ranlib /usr/lib64/httpd/modules/mod_pony.a libtool: finish: PATH="/usr/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin:/sbin" ldconfig -n /usr/lib64/httpd/modules
 ```
 
-4\. Sebagai hasilnya, Anda akan mendapatkan file **.so** dari modul Apache Anda. Kami memiliki file [mod_pony.so](<mod_pony.so>) (_/usr/lib64/httpd/modules/mod_pony.so_).
+4\. Sebagai hasilnya, Anda akan mendapatkan file **.so** dari modul Apache Anda. Kami memiliki file mod_pony.so (_/usr/lib64/httpd/modules/mod_pony.so_).
 
 ## Upload and configure your module{#upload-and-configure-your-module}
 

@@ -93,8 +93,3 @@ Untuk operasi yang berhasil, Anda harus mendapatkan “_result_:0” sebagai res
 
 Itu saja! Manajemen API dengan token se-sederhana itu!
 
-## Baca Juga{#whats-next}
-
-  * [Ikhtisar API](https://docs.dewacloud.com/docs/api-overview/)
-  * [Ikhtisar CLI](https://docs.dewacloud.com/docs/cli/)
-  * [Autentikasi Dua Faktor](https://docs.dewacloud.com/docs/two-factor-authentication/)

@@ -3,51 +3,52 @@ sidebar_position: 3
 slug: /ab-testing
 title: A/B Testing
 ---
-# A/B Testing with Traffic Distributor
 
-A/B testing is a powerful method for improving the conversion rate of a website or application by comparing two versions and determining which one leads to better user engagement or higher conversions. With [Traffic Distributor](<https://www.virtuozzo.com/application-platform-docs/traffic-distributor/>), performing A/B testing becomes easy and efficient. Follow the steps below to set up and execute A/B testing for your application.
+# A/B Testing dengan Traffic Distributor
 
-## Steps for Setting Up A/B Testing
+A/B testing adalah metode yang kuat untuk meningkatkan tingkat konversi situs web atau aplikasi dengan membandingkan dua versi dan menentukan mana yang menghasilkan keterlibatan pengguna yang lebih baik atau konversi yang lebih tinggi. Dengan [Traffic Distributor](<https://docs.dewacloud.com/docs/traffic-distributor/>), melakukan A/B testing menjadi mudah dan efisien. Ikuti langkah-langkah di bawah ini untuk mengatur dan menjalankan A/B testing untuk aplikasi Anda.
 
-### 1. Prepare Two Application Versions
+## Langkah-Langkah Menyiapkan A/B Testing
 
-To conduct A/B testing, you'll need two different versions of your application that you wish to compare. You also need a way to track user actions (e.g., clicks, sign-ups, purchases, etc.) that contribute to the conversion rate.
+### 1. Persiapkan Dua Versi Aplikasi
+
+Untuk melakukan A/B testing, Anda memerlukan dua versi berbeda dari aplikasi Anda yang ingin Anda bandingkan. Anda juga memerlukan cara untuk melacak tindakan pengguna (misalnya, klik, pendaftaran, pembelian, dll.) yang berkontribusi pada tingkat konversi.
 
 :::tip
-You can use simple code to count conversions, such as incrementing a variable on specific actions, or use dedicated third-party testing tools that offer more advanced features like graphical analysis and automatic calculation of conversion rates.
+Anda dapat menggunakan kode sederhana untuk menghitung konversi, seperti meningkatkan variabel pada tindakan tertentu, atau menggunakan alat pengujian pihak ketiga yang menawarkan fitur lebih lanjut seperti analisis grafis dan perhitungan otomatis tingkat konversi.
 :::
 
-### 2. Install or Configure Traffic Distributor
+### 2. Instal atau Konfigurasikan Traffic Distributor
 
-If you haven’t already, [install Traffic Distributor](<https://www.virtuozzo.com/application-platform-docs/traffic-distributor-installation/>) from the platform Marketplace, or reconfigure an existing Traffic Distributor setup to fit your A/B testing needs.
+Jika belum, [instal Traffic Distributor](<https://docs.dewacloud.com/docs/traffic-distributor-installation/>) dari Marketplace platform, atau rekonfigurasikan pengaturan Traffic Distributor yang ada agar sesuai dengan kebutuhan A/B testing Anda.
 
-1. **Routing Method**: Select _Sticky Sessions_.
-2. **Traffic Ratio**: Set the ratio to _50:50_ to evenly distribute traffic between the two application versions.
+1. **Metode Routing**: Pilih _Sticky Sessions_.
+2. **Rasio Lalu Lintas**: Atur rasio menjadi _50:50_ untuk mendistribusikan lalu lintas secara merata antara dua versi aplikasi.
 
-![Traffic Distributor configurations for A/B testing](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/use-cases/ab-testing/01.png" alt="Traffic Distributor configurations for A/B testing" max-width="100%"/>
 
 :::warning
-**Do not use the Round Robin routing method** for A/B testing. Since A/B testing compares different content on each backend, Round Robin routing could lead to inconsistent availability of elements between requests.
+**Jangan gunakan metode routing Round Robin** untuk A/B testing. Karena A/B testing membandingkan konten yang berbeda pada setiap backend, routing Round Robin dapat menyebabkan ketersediaan elemen yang tidak konsisten antara permintaan.
 :::
 
-### 3. Route Traffic and Monitor
+### 3. Salurkan Lalu Lintas dan Monitor
 
-Once Traffic Distributor is configured, all incoming user requests will be evenly routed between the two versions of your application. Share the entry point link (either the environment domain or your [custom domain](<https://docs.dewacloud.com/docs/custom-domains/>)) with users to begin the testing phase.
+Setelah Traffic Distributor dikonfigurasi, semua permintaan pengguna yang masuk akan diarahkan secara merata antara dua versi aplikasi Anda. Bagikan tautan titik masuk (baik domain environment atau [domain kustom](<https://docs.dewacloud.com/docs/custom-domains/>)) dengan pengguna untuk memulai fase pengujian.
 
-Monitor the conversion rates using the tools you set up, ensuring you track user interactions over a period of time.
+Pantau tingkat konversi menggunakan alat yang Anda siapkan, pastikan Anda melacak interaksi pengguna selama periode waktu tertentu.
 
-### 4. Analyze Results
+### 4. Analisis Hasil
 
-After the testing period, analyze the data collected to determine which version of your application yielded a higher conversion rate. The version with the better conversion rate can be considered for production, while the other version can either be discarded or further optimized for future tests.
+Setelah periode pengujian, analisis data yang dikumpulkan untuk menentukan versi aplikasi mana yang menghasilkan tingkat konversi lebih tinggi. Versi dengan tingkat konversi yang lebih baik dapat dipertimbangkan untuk produksi, sementara versi lainnya dapat dihapus atau dioptimalkan lebih lanjut untuk pengujian di masa depan.
 
 :::tip
-Once you've identified the better-performing version, consider [injecting Traffic Distributor](<https://docs.dewacloud.com/docs/traffic-distributor-injection/>) into your production environment to ensure high availability and failover protection.
+Setelah Anda mengidentifikasi versi yang secara kinerja lebih baik, pertimbangkan untuk [menyuntikkan Traffic Distributor](<https://docs.dewacloud.com/docs/traffic-distributor-injection/>) ke dalam lingkungan produksi untuk memastikan ketersediaan tinggi dan perlindungan failover.
 :::
 
-## What’s Next?
+## Baca Juga
 
-- [Traffic Distributor Overview](<https://www.virtuozzo.com/application-platform-docs/traffic-distributor/>)
-- [Traffic Distributor Installation](<https://www.virtuozzo.com/application-platform-docs/traffic-distributor-installation/>)
-- [Traffic Distributor Injection](<https://www.virtuozzo.com/application-platform-docs/traffic-distributor-injection/>)
-- [Blue-Green Deploy](<https://www.virtuozzo.com/application-platform-docs/blue-green-deploy/>)
-- [Failover Protection](<https://www.virtuozzo.com/application-platform-docs/failover-protection/>)
+- [Traffic Distributor Overview](<https://docs.dewacloud.com/docs/traffic-distributor/>)
+- [Traffic Distributor Installation](<https://docs.dewacloud.com/docs/traffic-distributor-installation/>)
+- [Traffic Distributor Injection](<https://docs.dewacloud.com/docs/traffic-distributor-injection/>)
+- [Blue-Green Deploy](<https://docs.dewacloud.com/docs/blue-green-deploy/>)
+- [Failover Protection](<https://docs.dewacloud.com/docs/failover-protection/>)

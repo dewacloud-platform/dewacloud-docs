@@ -5,41 +5,41 @@ title: Log Files
 ---
 # View Log Files
 
-Log files are essential for understanding what has happened within your environment, whether for development, testing, or troubleshooting. Follow these steps to access and view your node’s logs:
+Log files sangat penting untuk memahami apa yang terjadi di dalam environment Anda, baik untuk pengembangan, pengujian, atau pemecahan masalah. Ikuti langkah-langkah ini untuk mengakses dan melihat log node Anda:
 
-## Steps to View Logs
+## Steps to View Logs{#steps-to-view-logs}
 
 ### 1. Log into the Platform Dashboard
-Use your credentials to log into the platform dashboard.
+Gunakan kredensial Anda untuk masuk ke platform dashboard.
 
 ### 2. Access Logs
-Click the **Log** icon for the node you want to view logs for.
+Klik ikon **Log** untuk node yang lognya ingin Anda lihat.
 
-![log button](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/log-files/1-log.png" alt="log button" width="100%"/>
 
 ### 3. View Logs
-The logs tab will appear at the bottom of your dashboard. If your environment contains multiple [nodes of the same type](https://docs.dewacloud.com/docs/horizontal-scaling/), use the drop-down list to select the node whose logs you want to view.
+Tab log akan muncul di bagian bawah dashboard Anda. Jika environment Anda berisi beberapa [nodes of the same type](https://docs.dewacloud.com/docs/horizontal-scaling/), gunakan daftar drop-down untuk memilih node yang lognya ingin Anda lihat.
 
-![select node to view logs](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/log-files/2-select-node.png" alt="select node to view logs" width="100%"/>
 
 ### 4. Manage Logs
-You can:
-- **Clear** the log
-- **Refresh** the log
-- Use **Prev** and **Next** buttons for navigation through larger logs
+Anda dapat:
+- **Clear** log
+- **Refresh** log
+- Gunakan tombol **Prev** dan **Next** untuk navigasi melalui log yang lebih besar
 
 #### Auto-Refresh Feature
-By default, the **Auto refresh** feature is enabled, refreshing the logs every 3 seconds. This is useful for real-time monitoring, such as during installation or updates. If you need to focus on specific log details, you can disable auto-refresh. To disable, uncheck **Auto refresh** in the **Refresh** drop-down list. You can enable it again the same way.
+Secara default, fitur **Auto refresh** diaktifkan, me-refresh log setiap 3 detik. Ini berguna untuk pemantauan real-time, seperti saat instalasi atau pembaruan. Jika Anda perlu fokus pada detail log tertentu, Anda dapat menonaktifkan auto-refresh. Untuk menonaktifkan, hapus centang **Auto refresh** di daftar drop-down **Refresh**. Anda dapat mengaktifkannya kembali dengan cara yang sama.
 
 ### 5. Delete Logs
-To delete a log, hover over it and click the cross button, or select it and click **Delete** at the top tools panel.
+Untuk menghapus log, arahkan mouse ke atasnya dan klik tombol silang, atau pilih dan klik **Delete** di panel alat atas.
 
-![delete log files](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/log-files/4-delete.png" alt="delete log files" width="100%"/>
 
 ### 6. Download Logs via FTP
-Logs can be downloaded using FTP. For more details on the installation and usage of FTP/FTPS, see the [FTP/FTPS Support](https://docs.dewacloud.com/docs/ftp-ftps-support/) document.
+Log dapat diunduh menggunakan FTP. Untuk lebih jelas tentang instalasi dan penggunaan FTP/FTPS, lihat dokumen [FTP/FTPS Support](https://docs.dewacloud.com/docs/ftp-ftps-support/).
 
-## Available Log Files by Node Type
+## Available Log Files by Node Type{#available-log-files-by-node-type}
 
 | Node Type         | Available Log Files                |
 |-------------------|------------------------------------|
@@ -57,9 +57,10 @@ Logs can be downloaded using FTP. For more details on the installation and usage
 | Node.js           | node                               |
 
 #### VCS Log Files
-If you're using a remote GIT/SVN repository for deploying your application, a new `vcs_update` pull log file will be added to your **Maven** node (for Java) or **Apache/NGINX** application server (for PHP), containing details about the project's build and deployment process.
+Jika Anda menggunakan repositori GIT/SVN jarak jauh untuk penempatan aplikasi Anda, file log `vcs_update` baru akan ditambahkan ke node **Maven** Anda (untuk Java) atau server aplikasi **Apache/NGINX** (untuk PHP), berisi detail tentang proses build dan deployment proyek.
 
-## What’s Next?
+## Baca Juga
+
 - [View Statistics](https://docs.dewacloud.com/docs/view-app-statistics/)
 - [Load Alerts](https://docs.dewacloud.com/docs/load-alerts/)
 - [Configuration File Manager](https://docs.dewacloud.com/docs/configuration-file-manager/)

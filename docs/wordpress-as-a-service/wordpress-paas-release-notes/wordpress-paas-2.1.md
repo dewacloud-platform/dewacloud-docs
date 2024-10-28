@@ -14,11 +14,11 @@ Ruang lingkup perubahan umum sama seperti untuk rilis _[Dewacloud Application Pl
 
 ## Peningkatan Langganan{#subscription-improvements}
 
-Diimplementasikan fitur baru untuk langganan, termasuk pembaruan langganan, migrasi, dan menonaktifkan/mengaktifkan opsi _Auto Pay_ [Pelajari lebih lanjut](https://docs.dewacloud.com/#subscription-improvements)
+Diimplementasikan fitur baru untuk langganan, termasuk pembaruan langganan, migrasi, dan menonaktifkan/mengaktifkan opsi _Auto Pay_ [Pelajari lebih lanjut](#subscription-improvements)
 
 ## Dukungan Endpoints{#endpoints-support}
 
-Diimplementasikan fitur _Endpoints_ baru yang memungkinkan pembentukan koneksi langsung ke node tanpa alamat IP publik yang wajib [Pelajari lebih lanjut](https://docs.dewacloud.com/#endpoints-support)
+Diimplementasikan fitur _Endpoints_ baru yang memungkinkan pembentukan koneksi langsung ke node tanpa alamat IP publik yang wajib [Pelajari lebih lanjut](#endpoints-support)
 
 ## Informasi Akun{#account-information}
 
@@ -30,7 +30,7 @@ Ditambahkan kemampuan untuk mengubah bahasa dashboard (ketersediaan tergantung p
 
 ## Peningkatan UI{#ui-improvements}
 
-Ditambahkan tautan langsung ke panel admin komponen proyek (WordPress, LiteSpeed, dll.) di dashboard [Pelajari lebih lanjut](https://docs.dewacloud.com/#ui-improvements)
+Ditambahkan tautan langsung ke panel admin komponen proyek (WordPress, LiteSpeed, dll.) di dashboard [Pelajari lebih lanjut](#ui-improvements)
 
 ## Peningkatan Langganan{#subscription-improvements}
 
@@ -49,7 +49,7 @@ Fitur baru utama lainnya adalah kemampuan untuk beralih paket langganan dalam pr
 
 [Informasi lebih lanjut](https://docs.dewacloud.com/wp-dashboard-overview/)
 
-[Kembali ke atas](https://docs.dewacloud.com/#back)
+
 
 ## Dukungan Endpoints{#endpoints-support}
 
@@ -61,7 +61,7 @@ Anda dapat menemukan fitur baru ini dengan memilih proyek tertentu dan menavigas
 
 [Informasi lebih lanjut](https://docs.dewacloud.com/wp-dashboard-project-management/)
 
-[Kembali ke atas](https://docs.dewacloud.com/#back)
+
 
 ## Informasi Akun{#account-information}
 
@@ -78,7 +78,7 @@ Dalam rilis platform 2.1 saat ini, bagian **User Information** baru ditambahkan 
 
 [Informasi lebih lanjut](https://docs.dewacloud.com/wp-dashboard-overview/#account-settings)
 
-[Kembali ke atas](https://docs.dewacloud.com/#back)
+
 
 ## Peningkatan UI{#ui-improvements}
 
@@ -88,7 +88,7 @@ Dashboard Dewacloud Application Platform for WordPress dirancang untuk memberika
 
 Selain itu, jika proyek memiliki panel admin lain (mis., untuk server _LiteSpeed_), tautan yang sesuai akan ditampilkan di samping informasi database. Perubahan ini memastikan manajemen proyek yang lebih cepat dengan menyederhanakan proses dan menghilangkan kebutuhan untuk mencari email dengan kredensial akses setiap kali Anda ingin mengakses salah satu panel administrasi.
 
-[Kembali ke atas](https://docs.dewacloud.com/#back)
+
 
 ## Lokalisasi Dashboard{#dashboard-localization}
 
@@ -96,4 +96,3 @@ Dewacloud Application Platform for WordPress mengimplementasikan dukungan untuk 
 
 ![changing dashboard language](#)
 
-[Kembali ke atas](https://docs.dewacloud.com/#back)

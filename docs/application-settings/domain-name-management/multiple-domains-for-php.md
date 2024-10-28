@@ -15,17 +15,17 @@ Mari kita lihat cara menjalankan beberapa domain pada server aplikasi PHP untuk 
 
 3\. Di wizard yang terbuka, navigasikan ke tab PHP, pilih server aplikasi, dan tentukan jumlah sumber daya yang diperlukan untuk aplikasi Anda. Setelah itu, masukkan nama untuk lingkungan dan klik tombol **Create**.
 
-![environment wizard](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-php/01-environment-wizard%20(1).png" alt="environment wizard" width="100%"/>
 
 Dalam beberapa detik, lingkungan Anda akan muncul di dashboard platform.
 
-![PHP environment for multi domains](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-php/02-php-environment-for-multi-domains.png" alt="PHP environment for multi domains" width="100%"/>
 
 4\. Anda harus memiliki nama domain di DNS yang mengarah ke alamat IP Anda. Jadi, beli nama domain untuk lingkungan Anda. Ini dapat dilakukan dengan dua cara: dengan menambahkan catatan CNAME atau dengan mengatur A Records. Anda bisa membaca lebih lanjut [di sini](https://docs.dewacloud.com/docs/custom-domains/).
 
 5\. Setelah itu, klik tombol **Settings** untuk lingkungan Anda dan ikat domain Anda. Sebagai contoh, kami menggunakan URL berikut: _mydomain.com_ dan _myseconddomain.com_.
 
-![bind domain](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-php/03-bind-domain.png" alt="bind domain" width="100%"/>
 
 :::note
 Dalam kasus ini, kami memasukkan entri di file hosts kami untuk pengujian lokal, dan ini hanya akan berfungsi dari mesin yang memiliki entri host tersebut.
@@ -33,9 +33,9 @@ Dalam kasus ini, kami memasukkan entri di file hosts kami untuk pengujian lokal,
 
 6\. Sekarang Anda dapat mengunggah paket **zip** dengan aplikasi Anda ke Deployment Manager dan melakukan deploy ke lingkungan yang telah Anda buat sebelumnya.
 
-![upload first application](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-php/04-upload-first-application.png" alt="upload first application" width="60%"/>
 
-![upload second application](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-php/05-upload-second-application.png" alt="upload second application" width="60%"/>
 
 7\. Setelah aplikasi Anda berhasil dideploy, Anda perlu menentukan konfigurasi virtual host Anda.
 
@@ -58,7 +58,7 @@ Listen 80
 </VirtualHost>
 ```
 
-![Apache httpd conf](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-php/06-apache-httpd-conf.png" alt="Apache httpd conf" width="100%"/>
 
   * **untuk NGINX**
 
@@ -123,15 +123,15 @@ server {
 }
 ```
 
-![NGINX nginx conf](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-php/07-nginx-conf.png" alt="NGINX nginx conf" width="100%"/>
 
 8\. Jangan lupa untuk **Save** perubahan dan **Restart** server aplikasi agar pengaturan baru diterapkan.
 
-![restart Apache](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-php/08-restart-apache.png" alt="restart Apache" width="100%"/>
 
 9\. Sekarang Anda dapat memeriksa hasilnya untuk memastikan semuanya berfungsi dengan baik.
 
-![PHP application in browser](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-php/09-php-application-in-browser.gif" alt="PHP application in browser" width="100%"/>
 
 Semoga panduan ini bermanfaat bagi Anda. Nama domain sangat penting bagi identitas online Anda, jadi jangan lupa untuk melindunginya. Dengan PaaS, ini hanya membutuhkan beberapa menit. Selamat mencoba!
 

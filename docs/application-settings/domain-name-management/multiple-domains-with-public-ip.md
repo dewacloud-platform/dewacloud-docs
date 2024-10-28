@@ -9,45 +9,45 @@ title: Multiple Domains with Public IP
 
   * _**Usability**_
 
-One of the main benefits of having multiple domain names is that it gives you _multiple points of entry_: this can be useful if, for example, you want different domains leading to differently themed sites for different marketing campaigns or user experiences.
+Salah satu manfaat utama memiliki beberapa nama domain adalah memberikan Anda _multiple points of entry_: ini bisa berguna jika, misalnya, Anda ingin domain yang berbeda mengarah ke situs yang berbeda temanya untuk kampanye pemasaran atau pengalaman pengguna yang beda.
 
   * _**Cost Saving**_
 
-Another benefit is the ability to have _more than one domain running on a single environment_. For example, you can have two different applications with two different domains running on a single Tomcat instance.
+Manfaat lainnya adalah kemampuan untuk memiliki _lebih dari satu domain berjalan pada satu environment._ Misalnya, Anda dapat memiliki dua aplikasi berbeda dengan dua domain berbeda yang berjalan pada satu instance Tomcat.
 
 ## Setting Up Multiple Domains{#setting-up-multiple-domains}
 
-_In order to use a domain name for your application, you need to register it or have administrative access to it._
+_Untuk menggunakan nama domain untuk aplikasi Anda, Anda perlu mendaftarkannya atau memiliki akses administratif ke domain tersebut._
 
-1\. Log into the PaaS account.
+1\. Masuk ke akun PaaS.
 
-2\. While in the platform dashboard, click the **Create environment** button:
+2\. Saat berada di platform dashboard, klik tombol **Create environment**:
 
-![create environment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-with-public-ip/01-create-environment.png" alt="create environment" width="50%"/>
 
-3\. In the **Environment Topology** dialog, pick your application server (for example, [Tomcat](https://docs.dewacloud.com/docs/tomcat/)), switch on **Public IPv4** for your server and type your environment name, for example, _multibinding_.
+3\. Dalam dialog **Environment Topology**, pilih server aplikasi Anda (misalnya, [Tomcat](https://docs.dewacloud.com/docs/tomcat/)), aktifkan **Public IPv4** untuk server Anda, dan ketik nama environment Anda, misalnya, _multibinding_.
 
-![environment wizard](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-with-public-ip/02-environment-wizard.png" alt="environment wizard" width="100%"/>
 
-In a minute, your environment with **Tomcat** will be successfully created.
+Dalam satu menit, environment Anda dengan **Tomcat** akan berhasil dibuat.
 
-![environment for multi domains](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-with-public-ip/03-environment-for-multi-domains.png" alt="environment for multi domains" width="100%"/>
 
-4\. Bind your **domain names** to the Tomcat’s Public IP address, which you can find in the drop-down list for the server. The binding procedure depends on the hosting company where you bought the domains.
+4\. Ikat **nama domain** Anda ke alamat IP Publik Tomcat, yang bisa Anda temukan di daftar drop-down untuk server. Prosedur pengikatan tergantung pada perusahaan hosting tempat Anda membeli domain.
 
-![server public IP](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-with-public-ip/04-server-public-ip.png" alt="server public IP" width="100%"/>
 
-5\. Upload your war files/file to the **Deployment manager** and deploy them to different contexts.
+5\. Unggah file/file war Anda ke **Deployment manager** dan deploy ke konteks yang berbeda.
 
-![applications deployed](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-with-public-ip/05-applications-deployed.png" alt="applications deployed" width="100%"/>
 
-6\. Click on **Config** button for Tomcat.
+6\. Klik tombol **Config** untuk Tomcat.
 
-![Tomcat config](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-with-public-ip/06-tomcat-config.png" alt="Tomcat config" width="100%"/>
 
-7\. Navigate to the **server.xml** file (_server_ directory) and set the configuration for hosting multiple domains (add _Host tags_ for each domain you want to host).
+7\. Arahkan ke file **server.xml** (_server directory_) dan atur konfigurasi untuk hosting beberapa domain (tambahkan _Host tags_ untuk setiap domain yang ingin Anda host).
 
-For example:
+Sebagai contoh:
 
 ```xml
 <Host name="firstdomain.com" appBase="webapps/firstdomain">
@@ -66,20 +66,20 @@ For example:
 </Host>
 ```
 
-![Tomcat server xml](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-with-public-ip/07-tomcat-server-xml.png" alt="Tomcat server xml" width="100%"/>
 
-8\. **Save** the changes and **Restart** Tomcat.
+8\. **Save** perubahan dan **Restart** Tomcat.
 
-9\. Now you can check the results. Your applications will be available through the specified domain names.
+9\. Sekarang Anda dapat memeriksa hasilnya. Aplikasi Anda akan tersedia melalui nama domain yang ditentukan.
 
-![first domain](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-with-public-ip/08-first-domain.png" alt="first domain" width="50%"/>
 
-![second domain](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-with-public-ip/09-second-domain.png" alt="second domain" width="50%"/>
 
-![third domain](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-with-public-ip/10-third-domain.png" alt="third domain" width="50%"/>
 
 :::note
-If you want to redeploy an application to the Tomcat instance with already configured _server.xml_, you need to comment the `<Host>` block before redeploying and uncomment it afterward.
+Jika Anda ingin redeploy aplikasi ke instance Tomcat dengan _server.xml_ yang sudah dikonfigurasi, Anda perlu mengomentari blok `<Host>` sebelum me-redeploy dan meng-uncomment setelahnya.
 :::
 
 ## Baca Juga{#whats-next}

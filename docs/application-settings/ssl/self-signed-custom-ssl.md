@@ -3,123 +3,144 @@ sidebar_position: 7
 slug: /self-signed-custom-ssl
 title: Self-Signed Custom SSL
 ---
-# Self-Signed Custom SSL Certificates
 
-A **Self-Signed SSL Certificate** is a method of securing an application using an SSL-encrypted connection. While custom SSL certificates are typically signed by a trusted Certificate Authority (CA) like **Let’s Encrypt**, self-signed certificates are created by the user and are not trusted by browsers by default.
+# Sertifikat SSL Kustom Self-Signed
 
-Self-signed certificates are useful in development or testing environments but are **not recommended for production** as visitors will receive warnings, advising them to leave the site due to the untrusted connection.
+**Sertifikat SSL Self-Signed** adalah metode untuk mengamankan aplikasi menggunakan koneksi SSL terenkripsi. Sementara sertifikat SSL kustom biasanya ditandatangani oleh Certificate Authority (CA) terpercaya seperti **Let’s Encrypt**, sertifikat self-signed dibuat oleh pengguna dan tidak dipercaya oleh browser secara default.
 
-![Self-Signed SSL Warning](#)
+Sertifikat self-signed berguna dalam lingkungan pengembangan atau pengujian tetapi **tidak disarankan untuk produksi** karena pengunjung akan menerima peringatan yang menyarankan mereka untuk meninggalkan situs karena koneksi yang tidak dipercaya.
 
-## How to Generate a Self-Signed SSL Certificate
+![Self-Signed SSL Warning](https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/self-signed-custom-ssl/01-ssl-warning.png)
 
-### Requirements:
-- A **domain name** (e.g., _mysite.com_). This can be purchased from any domain registrar.
-- **OpenSSL** or a similar tool for generating the certificate.
+## Cara Menghasilkan Sertifikat SSL Self-Signed
 
-Follow the instructions below depending on your operating system.
+### Persyaratan:
+- Nama **domain** (misalnya, _mysite.com_). Ini dapat dibeli dari registrar domain mana saja.
+- **OpenSSL** atau alat serupa untuk menghasilkan sertifikat.
 
-### For Windows
+Ikuti instruksi di bawah ini tergantung pada sistem operasi Anda.
 
-1. **Download and Install OpenSSL**
-   - [Download OpenSSL for Windows](https://code.google.com/archive/p/openssl-for-windows/downloads).
-   - Extract the downloaded archive and run _**openssl.exe**_ from the **bin** folder.
+### Untuk Windows
 
-2. **Generate an SSH Private Key**
-   - Open OpenSSL and generate a private key for your root certificate (this is what signs all issued certificates):
+1. **Unduh dan Instal OpenSSL**
+   - [Unduh OpenSSL untuk Windows](https://code.google.com/archive/p/openssl-for-windows/downloads).
+   - Ekstrak arsip yang diunduh dan jalankan _**openssl.exe**_ dari folder **bin**.
+
+2. **Hasilkan SSH Private Key**
+   - Buka OpenSSL dan hasilkan kunci privat untuk sertifikat root Anda (ini yang menandatangani semua sertifikat yang diterbitkan):
 
    ```bash
    genrsa -out rootCA.key 2048
    ```
 
-3. **Create a Root CA Certificate**
-   - Generate a root certificate using the private key:
+![Windows generate key](https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/self-signed-custom-ssl/02-windows-generate-key.png)
+
+3. **Buat Sertifikat Root CA**
+   - Hasilkan sertifikat root menggunakan kunci privat:
 
    ```bash
    req -config C:\path\to\openssl.cnf -x509 -new -key rootCA.key -days 365 -out rootCA.crt
    ```
 
-4. **Create a Private Key for Your Domain**
-   - Generate a private key for your domain:
+![Windows generate root certificate](https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/self-signed-custom-ssl/03-windows-generate-root-certificate.png)
+
+4. **Buat Kunci Privat untuk Domain Anda**
+   - Hasilkan kunci privat untuk domain Anda:
 
    ```bash
    genrsa -out host.key 2048
    ```
 
-5. **Create a Certificate Signing Request (CSR)**
-   - Generate a CSR for your domain:
+![Windows self-signed certificate](https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/self-signed-custom-ssl/04-windows-self-signed-certificate.png)
+
+5. **Buat Permintaan Penandatanganan Sertifikat (CSR)**
+   - Hasilkan CSR untuk domain Anda:
 
    ```bash
    req -config C:\path\to\openssl.cnf -new -key host.key -out host.csr
    ```
 
-   - **Important:** Ensure that the _Common Name_ matches your domain name.
+   - **Penting:** Pastikan _Common Name_ sesuai dengan nama domain Anda.
 
-6. **Generate the Self-Signed Certificate**
-   - Create the self-signed certificate using the root CA:
+![Windows signing request](https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/self-signed-custom-ssl/05-windows-signing-request.png)
+
+6. **Hasilkan Sertifikat Self-Signed**
+   - Buat sertifikat self-signed menggunakan root CA:
 
    ```bash
    x509 -req -in host.csr -CA rootCA.crt -CAkey rootCA.key -CAcreateserial -out host.crt -days 365
    ```
 
-### For Linux/MacOS/FreeBSD
+![Windows get self-signed certificate](https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/self-signed-custom-ssl/06-windows-get-self-signed-certificate.png)
 
-1. **Install OpenSSL (if not already installed)**
-   - Use the following command to install OpenSSL:
+### Untuk Linux/MacOS/FreeBSD
+
+1. **Instal OpenSSL (jika belum terinstal)**
+   - Gunakan perintah berikut untuk menginstal OpenSSL:
 
    ```bash
    sudo apt-get install openssl
    ```
 
-2. **Generate a Root CA Private Key**
-   - Run the following command to generate the root CA key:
+2. **Hasilkan Root CA Private Key**
+   - Jalankan perintah berikut untuk menghasilkan kunci root CA:
 
    ```bash
    openssl genrsa -out rootCA.key 2048
    ```
 
-3. **Create a Root CA Certificate**
-   - Generate the root certificate:
+![Unix generate key](https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/self-signed-custom-ssl/07-unix-generate-key.png)
+
+3. **Buat Sertifikat Root CA**
+   - Hasilkan sertifikat root:
 
    ```bash
    openssl req -x509 -new -key rootCA.key -days 365 -out rootCA.crt
    ```
 
-4. **Generate a Private Key for Your Domain**
-   - Create the private key for your domain:
+![Unix generate root certificate](https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/self-signed-custom-ssl/08-unix-generate-root-certificate.png)
+
+4. **Hasilkan Kunci Privat untuk Domain Anda**
+   - Buat kunci privat untuk domain Anda:
 
    ```bash
    openssl genrsa -out host.key 2048
    ```
 
-5. **Create a Certificate Signing Request (CSR)**
-   - Generate the CSR:
+![Unix self-signed certificate](https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/self-signed-custom-ssl/09-unix-self-signed-certificate.png)
+
+5. **Buat Permintaan Penandatanganan Sertifikat (CSR)**
+   - Hasilkan CSR:
 
    ```bash
    openssl req -new -key host.key -out host.csr
    ```
 
-   - **Important:** Ensure that the _Common Name_ matches your domain name.
+   - **Penting:** Pastikan _Common Name_ sesuai dengan nama domain Anda.
 
-6. **Generate the Self-Signed Certificate**
-   - Use the following command to create the self-signed certificate:
+![Unix signing request](https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/self-signed-custom-ssl/10-unix-signing-request.png)
+
+6. **Hasilkan Sertifikat Self-Signed**
+   - Gunakan perintah berikut untuk membuat sertifikat self-signed:
 
    ```bash
    openssl x509 -req -in host.csr -CA rootCA.crt -CAkey rootCA.key -CAcreateserial -out host.crt -days 365
    ```
 
-### Attaching Self-Signed SSL Certificates to Your Environment
+![Unix get self-signed certificate](https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/self-signed-custom-ssl/11-unix-get-self-signed-certificate.png)
 
-Once the certificate is created, follow the usual steps for attaching custom SSL certificates:
-1. **Adjust Environment Topology**: Ensure the environment supports custom SSL.
-2. **Domain Name and A Record Settings**: Set up the domain to point to your public IP address.
-3. **Upload Certificates to the Environment**: Upload the private key and certificate files.
+### Melampirkan Sertifikat SSL Self-Signed ke Environment Anda
 
-When you visit the site via **https://**, you’ll see a warning about the untrusted certificate. You can proceed by clicking "Proceed Anyway."
+Setelah sertifikat dibuat, ikuti langkah-langkah biasa untuk melampirkan sertifikat SSL kustom:
+1. **Sesuaikan Topologi Environment**: Pastikan environment mendukung SSL kustom.
+2. **Nama Domain dan Pengaturan A Record**: Atur domain agar mengarah ke alamat IP publik Anda.
+3. **Unggah Sertifikat ke Lingkungan**: Unggah file kunci privat dan sertifikat.
 
-![Self-Signed SSL Warning](#)
+Ketika Anda mengunjungi situs melalui **https://**, Anda akan melihat peringatan tentang sertifikat yang tidak dipercaya. Anda dapat melanjutkan dengan mengklik "Proceed Anyway."
 
-## Next Steps
+![Self-Signed SSL Warning](https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/self-signed-custom-ssl/12-ssl-warning-2.png)
+
+## Baca Juga
 
 - [Built-In SSL](https://docs.dewacloud.com/docs/built-in-ssl/)
 - [Custom SSL](https://docs.dewacloud.com/docs/custom-ssl/)

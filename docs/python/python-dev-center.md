@@ -19,7 +19,7 @@ Melalui artikel ini, Anda akan mengenal alat dan fitur utama yang tersedia di pl
   * [Automatic Vertical Scaling](<#automatic-vertical-scaling>)
   * [Manual Horizontal Scaling](<#manual-horizontal-scaling>)
   * [Automatic Horizontal Scaling](<#automatic-horizontal-scaling>)
-  * [Database Connection to PHP Application](<#database-connection-to-php-application>)
+  * [Database Connection to Python Application](<#database-connection-to-python-application>)
 
 ## Python Environment Hosting{#python-environment-hosting}
 

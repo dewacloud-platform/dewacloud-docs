@@ -3,26 +3,28 @@ sidebar_position: 3
 slug: /failover
 title: Failover
 ---
-# Failover Routing for Traffic Distributor
 
-**Failover** is a routing method designed to provide high availability by maintaining a fully functional backup environment in reserve. The method ensures that all incoming requests are initially directed to the primary server, while the secondary (backup) server remains on standby. If the primary server becomes unavailable, the backup server automatically takes over to handle the requests.
+# Failover Routing untuk Traffic Distributor
 
-![Traffic Distributor failover routing](#)
+**Failover** adalah metode routing yang dirancang untuk memberikan ketersediaan tinggi dengan menjaga lingkungan cadangan yang sepenuhnya berfungsi sebagai cadangan. Metode ini memastikan bahwa semua permintaan masuk awalnya diarahkan ke server utama, sementara server sekunder (cadangan) tetap dalam mode siaga. Jika server utama menjadi tidak tersedia, server cadangan secara otomatis mengambil alih untuk menangani permintaan.
 
-### How Failover Routing Works:
-- **Primary and Backup Setup**: You can configure one server as the primary and another as the backup. All requests go to the primary server as long as it is operational.
-- **Automatic Failover**: If the primary server encounters a failure, the system automatically redirects requests to the backup server.
-- **No Downtime**: Users will not notice any interruption since the backup server will handle all requests seamlessly.
-- **Geographical Redundancy**: By placing your primary and backup servers in different [environment regions](<https://docs.dewacloud.com/docs/environment-regions/>), you can ensure higher resilience and protect against region-specific hardware failures.
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/routing-methods/failover/1.png" alt="Traffic Distributor failover routing" max-width="30%"/>
 
-### Key Characteristics:
-- **Traffic Ratio**: This method doesn't allow for traffic distribution ratios (always 100% to 0%). The primary server handles all traffic until failure, at which point traffic is routed to the backup.
-- **High Availability**: Guarantees minimal downtime by quickly switching to a backup environment in the event of a failure.
-- **User Transparency**: Users are automatically redirected to the working server without experiencing downtime or disruptions.
+### Cara Kerja Failover Routing:
+- **Pengaturan Utama dan Cadangan**: Anda dapat mengkonfigurasi satu server sebagai utama dan satu lagi sebagai cadangan. Semua permintaan masuk ke server utama selama masih berfungsi.
+- **Failover Otomatis**: Jika server utama mengalami kegagalan, sistem secara otomatis mengarahkan permintaan ke server cadangan.
+- **Tanpa Downtime**: Pengguna tidak akan menyadari adanya gangguan karena server cadangan akan menangani semua permintaan tanpa masalah.
+- **Redundansi Geografis**: Dengan meletakkan server utama dan cadangan Anda di [region environment](https://docs.dewacloud.com/docs/environment-regions/) yang berbeda, Anda dapat memastikan ketahanan yang lebih tinggi dan melindungi terhadap kegagalan perangkat keras spesifik wilayah.
 
-## What’s Next?
-- [Traffic Distributor Overview](<https://docs.dewacloud.com/docs/traffic-distributor/>)
-- [Round Robin](<https://docs.dewacloud.com/docs/round-robin-traffic-routing/>)
-- [Sticky Sessions](<https://docs.dewacloud.com/docs/sticky-sessions-traffic-routing/>)
-- [Traffic Distributor Installation](<https://docs.dewacloud.com/docs/traffic-distributor-installation/>)
-- [Traffic Distributor Injection](<https://docs.dewacloud.com/docs/traffic-distributor-injection/>)
+### Karakteristik Utama:
+- **Rasio Lalu Lintas**: Metode ini tidak memungkinkan distribusi rasio lalu lintas (selalu 100% ke 0%). Server utama menangani semua lalu lintas hingga terjadi kegagalan, di mana lalu lintas diarahkan ke cadangan.
+- **Ketersediaan Tinggi**: Menjamin waktu henti minimal dengan cepat beralih ke lingkungan cadangan dalam peristiwa kegagalan.
+- **Transparansi Pengguna**: Pengguna secara otomatis diarahkan ke server yang berfungsi tanpa mengalami downtime atau gangguan.
+
+## Baca Juga
+
+- [Gambaran Umum Traffic Distributor](https://docs.dewacloud.com/docs/traffic-distributor/)
+- [Round Robin](https://docs.dewacloud.com/docs/round-robin-traffic-routing/)
+- [Sticky Sessions](https://docs.dewacloud.com/docs/sticky-sessions-traffic-routing/)
+- [Instalasi Traffic Distributor](https://docs.dewacloud.com/docs/traffic-distributor-installation/)
+- [Traffic Distributor Injection](https://docs.dewacloud.com/docs/traffic-distributor-injection/)

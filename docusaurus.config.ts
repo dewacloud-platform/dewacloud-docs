@@ -49,6 +49,8 @@ const config: Config = {
         },
         blog: {
           path: "./release-notes",
+          blogSidebarCount: "ALL",
+          sortPosts: "descending",
           tags: false,
           showReadingTime: false,
           feedOptions: {

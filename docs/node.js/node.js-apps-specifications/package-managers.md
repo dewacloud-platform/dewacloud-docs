@@ -20,8 +20,8 @@ Secara default, package manager _**npm**_ akan digunakan untuk deployment [archi
 
 Di bawah ini kami akan menjelaskan dasar-dasar dari kedua package manager tersebut, yang bertujuan untuk membantu Anda menentukan mana yang paling sesuai:
 
-- [Node Package Manager (npm)](https://docs.dewacloud.com/#node-package-manager-npm)
-- [Yarn Package Manager](https://docs.dewacloud.com/#yarn-package-manager)
+- [Node Package Manager (npm)](#node-package-manager-npm)
+- [Yarn Package Manager](#yarn-package-manager)
 
 ## Node Package Manager (npm){#node-package-manager-npm}
 

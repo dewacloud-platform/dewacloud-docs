@@ -5,7 +5,7 @@ title: File Synchronization in Cluster
 ---
 # File Synchronization Between Several Application Servers in a Cluster
 
-![file sync logo](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/file-synchronization-in-cluster/1.png" alt="file sync logo" width="10%"/>
 
 Ketika lalu lintas yang masuk ke proyek Anda meningkat, Anda perlu meningkatkan kinerja aplikasi Anda untuk mengimbanginya. Ruang kapasitas untuk perluasan elastis secara otomatis disediakan dalam batas server [vertical scaling](https://docs.dewacloud.com/docs/automatic-vertical-scaling/), tetapi pada akhirnya Anda kemungkinan besar akan menghadapi kebutuhan untuk memperbesar jumlah node (yaitu, menskalakannya secara [horizontal](https://docs.dewacloud.com/docs/horizontal-scaling/)) seiring meningkatnya popularitas layanan Anda.
 
@@ -24,7 +24,7 @@ Ikuti panduan di bawah ini untuk menyelami [implementasi spesifik](https://docs.
 
 Solusi **File Sync** disediakan sebagai [add-on](https://docs.dewacloud.com/docs/marketplace/) dengan sekali klik, yang diimplementasikan dengan bundel daemon **[lsyncd](http://code.google.com/p/lsyncd/)** dan utilitas **cron**. Dengan dikombinasikan secara cerdas dengan **[inotify](https://en.wikipedia.org/wiki/Inotify)**, _lsyncd_ memulai sinkronisasi file hanya saat ada perubahan nyata yang terdeteksi pada sistem. Realisasi semacam itu secara signifikan mengurangi beban CPU dibandingkan dengan panggilan sinkronisasi reguler dan menjaga data Anda tetap terbaru sepanjang waktu, yang membuat solusi ini mudah digunakan, kuat, dan terjangkau.
 
-![file sync](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/file-synchronization-in-cluster/2.png" alt="file sync" width="50%"/>
 
 Add-on **File Sync** dapat diinstal di atas stack application server yang dikelola platform (yaitu, kecuali [Docker](https://docs.dewacloud.com/docs/container-types/) containers). Sebelum pemasangan, Anda akan diminta untuk memilih folder yang akan disinkronkan. Dengan cara ini, Anda dapat menyinkronkan hanya bagian dari sistem file server aplikasi Anda yang benar-benar memerlukannya. Dengan demikian, hanya perubahan dalam direktori yang dipilih (pada instance application server yang ditentukan) yang akan memicu sinkronisasi.
 
@@ -40,17 +40,17 @@ Instruksi di bawah ini sepenuhnya sesuai untuk aplikasi serupa lainnya (Drupal, 
 
 1\. Anda dapat menginstal aplikasi **WordPress** Anda [secara manual](https://docs.dewacloud.com/docs/wordpress/) atau menemukan paket sekali klik yang sesuai di [Marketplace](https://docs.dewacloud.com/docs/marketplace/) untuk men-deploy-nya secara otomatis.
 
-![marketplace deploy WordPress](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/file-synchronization-in-cluster/03-marketplace-deploy-wordpress.png" alt="marketplace deploy WordPress" width="100%"/>
 
 Klik **Install** dan berikan detail yang diperlukan, seperti _Environment_, _Display Name_ ([alias](https://docs.dewacloud.com/docs/environment-aliases/)) dan _Region_ (jika beberapa [regions](https://docs.dewacloud.com/docs/environment-regions/) tersedia).
 
-![wordpress cluster](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/file-synchronization-in-cluster/4.png" alt="wordpress cluster" width="60%"/>
 
 Konfirmasikan pemasangan dan tunggu satu menit hingga pesan dengan data admin Anda ditampilkan (informasi yang sama akan dikirimkan kepada Anda melalui email).
 
 2\. Klik **Change environment topology** dan gunakan tombol **+** di bagian _[Horizontal Scaling](https://docs.dewacloud.com/docs/horizontal-scaling/)_ untuk menambahkan satu node app server lagi, sehingga menciptakan cluster.
 
-![create wordpress cluster](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/file-synchronization-in-cluster/5.png" alt="create wordpress cluster" width="100%"/>
 
 Setelah selesai, klik **Apply**.
 
@@ -64,21 +64,21 @@ Pada titik ini, mari kita periksa bagaimana proses unggahan file tanpa sinkronis
 
 1\. Akses panel admin Wordpress dengan menambahkan akhiran _/wp-login.php_ ke nama domain environment Anda dan **Log In** menggunakan kredensial yang telah Anda terima melalui email.
 
-![wordpress login](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/file-synchronization-in-cluster/6.png" alt="wordpress login" width="40%"/>
 
 2\. Setelah masuk, lakukan beberapa perubahan kustom (misalnya, unggah gambar atau file lain, edit tema, tambahkan halaman, dll.).
 
-![wordpress media](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/file-synchronization-in-cluster/7.png" alt="wordpress media" width="100%"/>
 
 Sebagai contoh, kami telah mengunggah satu gambar ke perpustakaan **Media**.
 
 3\. Sekarang, kembali ke dashboard platform dan klik **Config** di samping layer app server.
 
-![nginx config](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/file-synchronization-in-cluster/8.png" alt="nginx config" width="100%"/>
 
 4\. Arahkan ke direktori **webroot** (klik dari _Favorites_) **> ROOT > wp-content** dan bandingkan isinya dalam kedua node.
 
-![wordpress content](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/file-synchronization-in-cluster/9.png" alt="wordpress content" width="100%"/>
 
 :::warning
 Direktori dengan file yang diunggah bergantung pada aplikasi yang Anda jalankan. Berikut adalah daftar folder tersebut untuk beberapa aplikasi yang paling umum digunakan:
@@ -96,11 +96,11 @@ Untuk menerapkan sinkronisasi konten di dalam cluster kami, mari kita terapkan a
 
 1\. Temukan dan **Install** add-on _**File Synchronization**_ di [Marketplace](https://docs.dewacloud.com/docs/marketplace/).
 
-![file sync addon](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/file-synchronization-in-cluster/10.png" alt="file sync addon" width="100%"/>
 
 2\. Di kotak dialog yang terbuka, Anda perlu menentukan beberapa parameter sinkronisasi tambahan.
 
-![file sync between app servers](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/file-synchronization-in-cluster/11.png" alt="file sync between app servers" width="60%"/>
 
 Di sini, tentukan apakah sinkronisasi file harus berjalan dalam _One_ environment (seperti dalam contoh kami) atau antara _Two_ _environments_ yang berbeda (lihat opsi terkait di tabel di bawah). Selain itu, berikan detail berikut:
 
@@ -119,11 +119,11 @@ Password - kotak opsional untuk mengatur kata sandi pada sinkronisasi (harus din
 
 3\. Setelah pemasangan selesai, Anda akan melihat pesan konfirmasi.
 
-![file sync addon installed](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/file-synchronization-in-cluster/12.png" alt="file sync addon installed" width="100%"/>
 
 4\. Pada titik ini, Anda dapat memeriksa keberadaan file yang diunggah di kedua node.
 
-![synchronized files](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/file-synchronization-in-cluster/13.png" alt="synchronized files" width="70%"/>
 
 :::tip
 Jika Anda mengubah topology environment dengan menambahkan lebih banyak app server, add-on akan menerapkan sinkronisasi file yang sesuai ke node baru secara otomatis, tanpa perlu penyesuaian manual.
@@ -143,11 +143,11 @@ Mudah, bukan? Sinkronisasi file akan dilakukan secara otomatis setiap kali Anda 
 
 Proses sinkronisasi dapat dipantau melalui file log yang terletak di direktori web-server _**webroot/lsyncd/var/log**_.
 
-![lsyncd log](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/file-synchronization-in-cluster/14.png" alt="lsyncd log" width="100%"/>
 
 Informasi terpenting dan status sinkronisasi dapat dilihat di file _**lsyncd.log**_ dan _**lsyncd.status**_.
 
-![lsyncd status](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/file-synchronization-in-cluster/15.png" alt="lsyncd status" width="100%"/>
 
 Semoga instruksi ini membantu Anda.
 
