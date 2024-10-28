@@ -148,5 +148,5 @@ Penjadwalan Quartz sekarang akan menjalankan pekerjaan Anda setiap menit, sesuai
 ## Baca Juga
 
 - [Setting Up a Cronjob](https://docs.dewacloud.com/docs/cron-job/)
-- [Log Files](https://docs.dewacloud.com/docs/view-log-files/)
+- [Log Files](https://docs.dewacloud.com/docs/log-files/)
 - [Configuration File Manager](https://docs.dewacloud.com/docs/configuration-file-manager/)

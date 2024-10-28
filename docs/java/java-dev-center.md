@@ -47,7 +47,7 @@ Anda dapat memilih versi preferensi saat membuat environment, atau mengubahnya n
 Di dalam beragam software stack, platform ini mendukung [Java Engine](<https://docs.dewacloud.com/docs/java-engine-server/>) murni dan server aplikasi Java berikut:
 
   * [GlassFish](<https://docs.dewacloud.com/docs/glassfish/>)
-  * [Jetty](<https://docs.dewacloud.com/docs/eclipse-jetty/>)
+  * [Jetty](<https://docs.dewacloud.com/docs/jetty-server/>)
   * [Payara](<https://www.virtuozzo.com/company/blog/glassfish-payara-auto-clustering-cloud-hosting/>)
   * [Spring Boot](<https://www.virtuozzo.com/company/blog/hosting-spring-boot-java-applications/>)
   * [Tomcat](<https://docs.dewacloud.com/docs/tomcat/>)
@@ -147,7 +147,7 @@ Pemicu mulai memantau konsumsi sumber daya segera setelah penambahan, dan ketika
 
 Fitur clustering server aplikasi tersemat menyediakan replikasi sesi antar pasangan node dan menghilangkan kebutuhan untuk perangkat lunak tambahan atau penggunaan Memcached untuk meningkatkan ketersediaan aplikasi.
 
-Platform ini menyediakan replikasi sesi otomatis antara server _Tomcat_ dan _TomEE_ dengan bantuan multicast untuk mendapatkan ketersediaan tinggi aplikasi web dalam cluster Java. Fitur **[High-Availability](<https://docs.dewacloud.com/docs/session-replication/>)** ini dapat diaktifkan di wizard selama pembuatan environment atau penyesuaian topologi.
+Platform ini menyediakan replikasi sesi otomatis antara server _Tomcat_ dan _TomEE_ dengan bantuan multicast untuk mendapatkan ketersediaan tinggi aplikasi web dalam cluster Java. Fitur **[High-Availability](<https://docs.dewacloud.com/docs/auto-clustering/>)** ini dapat diaktifkan di wizard selama pembuatan environment atau penyesuaian topologi.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/java/java-dev-center/java-dev-center-8.png" alt="Java clusterization" width="100%"/>
 
@@ -164,7 +164,7 @@ Sekelompok server database yang dapat diskalakan dan dikelola sepenuhnya dapat d
 
   * [MySQL dan MariaDB Connection](<https://docs.dewacloud.com/docs/connection-to-mysql/>)
   * [PostgreSQL Connection](<https://www.virtuozzo.com/company/blog/java-connection-to-postgresql/>)
-  * [MongoDB Connection](<https://docs.dewacloud.com/docs/connection-to-mongodb/>)
+  * [MongoDB Connection](<https://docs.dewacloud.com/docs/connection-to-mongodb-java/>)
 
 Platform ini menyediakan hosting Java berkualitas tinggi dengan peningkatan ketersediaan, redundansi, dan kekuatan skalabilitas untuk aplikasi Anda.
 

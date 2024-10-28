@@ -11,7 +11,7 @@ Untuk melakukan ini, kami memperkenalkan file baru yang disebut _**rake_deploy**
 
 Platform mengeksekusi perintah dari _**rake_deploy**_ setiap kali layanan apache/nginx di-restart dan menghapusnya setelah eksekusi berhasil. Akibatnya, jika Anda perlu melewati perintah yang berbeda ke rake pada setiap deploy, Anda perlu membuat file _**rake_deploy**_ setiap kali dan meletakkan perintah yang benar di sana.
 
-Platform menempatkan output dari setiap _**rake_deploy**_ ke dalam file log yang sesuai yang tersedia melalui tampilan **[Log](<https://docs.dewacloud.com/docs/view-log-files/>)** di dashboard platform.
+Platform menempatkan output dari setiap _**rake_deploy**_ ke dalam file log yang sesuai yang tersedia melalui tampilan **[Log](<https://docs.dewacloud.com/docs/log-files/>)** di dashboard platform.
 
 _**Sintaksis dari file rake_deploy:**_
 

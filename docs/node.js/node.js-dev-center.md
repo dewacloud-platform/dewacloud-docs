@@ -11,15 +11,15 @@ Dewacloud menyediakan integrasi NodeJS siap pakai yang cepat, ringan, dan dapat 
 
 Gunakan daftar isi di bawah ini untuk menemukan informasi yang diperlukan dalam panduan lebih cepat:
 
-  * [Node.js Environment Hosting](<https://docs.dewacloud.com/docs/#nodejs-environment-hosting>)
-  * [Node.js Versioning](<https://docs.dewacloud.com/docs/#nodejs-versioning>)
-  * [Node.js Application Deployment](<https://docs.dewacloud.com/docs/#nodejs-application-deployment>)
-  * [Node.js Package Managers](<https://docs.dewacloud.com/docs/#nodejs-package-managers>)
-  * [Node.js Process Managers](<https://docs.dewacloud.com/docs/#nodejs-process-managers>)
-  * [Domains Management](<https://docs.dewacloud.com/docs/#domains-management>)
-  * [Automatic Vertical Scaling](<https://docs.dewacloud.com/docs/#automatic-vertical-scaling>)
-  * [Manual Horizontal Scaling](<https://docs.dewacloud.com/docs/#manual-horizontal-scaling>)
-  * [Automatic Horizontal Scaling](<https://docs.dewacloud.com/docs/#automatic-horizontal-scaling>)
+  * [Node.js Environment Hosting](<#nodejs-environment-hosting>)
+  * [Node.js Versioning](<#nodejs-versioning>)
+  * [Node.js Application Deployment](<#nodejs-application-deployment>)
+  * [Node.js Package Managers](<#nodejs-package-managers>)
+  * [Node.js Process Managers](<#nodejs-process-managers>)
+  * [Domains Management](<#domains-management>)
+  * [Automatic Vertical Scaling](<#automatic-vertical-scaling>)
+  * [Manual Horizontal Scaling](<#manual-horizontal-scaling>)
+  * [Automatic Horizontal Scaling](<#automatic-horizontal-scaling>)
 
 ## Node.js Environment Hosting{#nodejs-environment-hosting}
 
@@ -105,7 +105,7 @@ Selain itu, Anda dapat dengan cepat mengalihkan traffic antara environment Anda 
 
 ## Automatic Vertical Scaling{#automatic-vertical-scaling}
 
-Dewacloud secara dinamis menyediakan jumlah resource yang tepat (RAM dan CPU) yang dibutuhkan oleh node Anda sesuai dengan load saat ini tanpa intervensi manual yang diperlukan. Sebagai hasilnya, Anda [tidak pernah membayar lebih untuk sumber daya yang tidak digunakan](<https://docs.dewacloud.com/docs/blog/deceptive-cloud-efficiency-do-you-really-pay-as-you-use/>) dan menghemat waktu Anda karena Dewacloud menghilangkan kebutuhan untuk menangani penyesuaian terkait load atau perubahan arsitektural.
+Dewacloud secara dinamis menyediakan jumlah resource yang tepat (RAM dan CPU) yang dibutuhkan oleh node Anda sesuai dengan load saat ini tanpa intervensi manual yang diperlukan. Sebagai hasilnya, Anda [tidak pernah membayar lebih untuk sumber daya yang tidak digunakan](<https://www.virtuozzo.com/company/blog/deceptive-cloud-efficiency-do-you-really-pay-as-you-use/>) dan menghemat waktu Anda karena Dewacloud menghilangkan kebutuhan untuk menangani penyesuaian terkait load atau perubahan arsitektural.
 
 Anda hanya perlu menetapkan limit [cloudlets](<https://docs.dewacloud.com/docs/cloudlet/>) maksimum (satu cloudlet setara dengan _128 MiB_ RAM dan _400 MHz_ CPU) untuk server aplikasi NodeJS Anda dan semuanya akan ditangani secara otomatis.
 

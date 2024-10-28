@@ -72,8 +72,6 @@ Di bawah ini, Anda dapat menemukan informasi tentang alur dan spesifikasi proses
 
 ## Baca Juga{#whats-next}
 
-- [WordPress PaaS](https://docs.dewacloud.com/virtuozzo-application-platform-for-wordpress/)
-- [WordPress Dashboard](https://docs.dewacloud.com/wp-dashboard-overview/)
-- [WordPress Topologies](https://docs.dewacloud.com/wordpress-topologies/)
-- [WordPress Security](https://docs.dewacloud.com/wordpress-security/)
-- [WordPress PHP Optimization](https://docs.dewacloud.com/wordpress-php-optimization/)
+- [WordPress Topologies](https://docs.dewacloud.com/docs/wordpress-topologies/)
+- [WordPress Security](https://docs.dewacloud.com/docs/wordpress-security/)
+- [WordPress PHP Optimization](https://docs.dewacloud.com/docs/wordpress-php-optimization/)

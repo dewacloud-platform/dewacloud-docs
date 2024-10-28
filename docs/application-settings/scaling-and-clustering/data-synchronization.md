@@ -38,6 +38,6 @@ Anda perlu menggunakan file manager saat men-deploy aplikasi Anda untuk mencapai
 ## Baca Juga{#whats-next}
 
   * [Multi Nodes](https://docs.dewacloud.com/docs/horizontal-scaling/)
-  * [Session Replication](https://docs.dewacloud.com/docs/session-replication/)
+  * [Session Replication](https://docs.dewacloud.com/docs/auto-clustering/)
   * [Isolated Containers](https://docs.dewacloud.com/docs/isolated-containers/)
   * [Cluster in the Cloud](https://docs.dewacloud.com/docs/cluster-in-cloud/)

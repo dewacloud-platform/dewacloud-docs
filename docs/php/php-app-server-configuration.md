@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-slug: /php-app-server-config
+slug: /php-application-server-config
 title: PHP App Server Configuration
 ---
 <span id="back"></span>
@@ -62,7 +62,7 @@ Sebagai contoh, di sini Anda dapat mengatur:
 
   * [PHP Extensions](https://docs.dewacloud.com/docs/php-extensions/)
   * [PHP Accelerators](https://docs.dewacloud.com/docs/php-accelerators/)
-  * [Menyimpan sesi PHP di Memcached](https://docs.dewacloud.com/docs/php-sessions-memcached/)
+  * [Menyimpan sesi PHP di Memcached](https://docs.dewacloud.com/docs/memcached-php-sessions/)
   * [Konfigurasi Keamanan PHP.INI](https://docs.dewacloud.com/docs/php-security-settings/)
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-server-configuration/03-php-ini-configuration-file.png" alt="php.ini configuration file" width="70%"/>

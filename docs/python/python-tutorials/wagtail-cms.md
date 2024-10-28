@@ -23,7 +23,7 @@ Untuk memulai, Anda perlu membuat environment dengan server aplikasi yang sesuai
 
 **Note:** Versi terbaru Wagtail CMS hanya mendukung **_Python 3.x_**. Pada instance **_Python 2.7_**, jalankan versi aplikasi _1.13_.
 
-Konfigurasikan semua pengaturan lain sesuai kebutuhan Anda (misalnya [cloudlet limit](<https://docs.dewacloud.com/automatic-vertical-scaling/>), ruang disk, [region](<https://docs.dewacloud.com/environment-regions/>), dll.), tetapkan nama domain yang diinginkan, dan klik tombol **Create**.
+Konfigurasikan semua pengaturan lain sesuai kebutuhan Anda (misalnya [cloudlet limit](<https://docs.dewacloud.com/docs/automatic-vertical-scaling/>), ruang disk, [region](<https://docs.dewacloud.com/docs/environment-regions/>), dll.), tetapkan nama domain yang diinginkan, dan klik tombol **Create**.
 
 3\. Tunggu beberapa menit hingga environment Anda selesai dibuat.
 
@@ -41,7 +41,7 @@ Jika mengonfigurasi archive deployment sendiri, pastikan paket Wagtail CMS Anda 
   * file **_wsgi.py_** dengan skrip entry point untuk menjalankan aplikasi Anda di dalam virtual environment menggunakan _mod_wsgi_ untuk Apache
 :::
 
-1\. Unggah paket aplikasi Wagtail CMS Anda ke [deployment manager](<https://docs.dewacloud.com/deployment-manager/>) melalui tautan berikut:
+1\. Unggah paket aplikasi Wagtail CMS Anda ke [deployment manager](<https://docs.dewacloud.com/docs/deployment-manager/>) melalui tautan berikut:
 
 ```
 https://download.jelastic.com/public.php?service=files&t=b01aabf6a7fb615884c27eb4101e5150&download
@@ -49,7 +49,7 @@ https://download.jelastic.com/public.php?service=files&t=b01aabf6a7fb615884c27eb
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/python/wagtail-cms/wagtail-cms-deployment-manager.png" alt="wagtail hosting" width="60%"/>
 
-2\. [Deploy archive ini](<https://docs.dewacloud.com/deployment-guide/#archive>) ke dalam environment **_Python 3.x_** Anda.
+2\. [Deploy archive ini](<https://docs.dewacloud.com/docs/deployment-guide/#archive>) ke dalam environment **_Python 3.x_** Anda.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/python/wagtail-cms/deploy-the-archive-into-python-environment.png" alt="wagtail hosting" width="60%"/>
 3\. Setelah operasi selesai, pilih tombol **Open in Browser** di sebelah environment Anda.
@@ -66,7 +66,7 @@ Untuk deployment aplikasi Wagtail CMS secara manual, kami telah membagi prosesny
 
 ### Install Wagtail CMS{#install-wagtail-cms}
 
-1\. Akses server aplikasi Apache Anda melalui SSH. Misalnya, kami akan menggunakan alat [**Web SSH**](<https://docs.dewacloud.com/web-ssh-client/>).
+1\. Akses server aplikasi Apache Anda melalui SSH. Misalnya, kami akan menggunakan alat [**Web SSH**](<https://docs.dewacloud.com/docs/web-ssh-client/>).
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/python/wagtail-cms/web-ssh-tool.png" alt="cloud cms" width="100%"/>  
 2\. Praktik umum untuk menjalankan aplikasi web Python di virtual environment yang terisolasi adalah dengan menggunakan alat **virtual environment**. Alat ini memungkinkan Anda menyimpan ketergantungan yang diperlukan oleh berbagai proyek di tempat terpisah dan mengelolanya tanpa hak administrator.
@@ -112,7 +112,7 @@ Seperti semua aplikasi berbasis Django, Wagtail CMS mendukung berbagai jenis dat
   * **_SQLite_** adalah opsi default, yang tidak memerlukan konfigurasi tambahan (data akan disimpan secara lokal di **_~/ROOT/db.sqlite3_**); cepat, sederhana, dan ringan, sangat cocok untuk tujuan _development_ dan _testing_
   * **_external database_** (misalnya _MySQL_ atau _PostgreSQL_) adalah solusi yang lebih cocok untuk lingkungan _production_; menyediakan tingkat keamanan dan skalabilitas yang memadai
 
-Di bawah ini, kami akan memberikan panduan langkah demi langkah untuk menghubungkan database eksternal ke aplikasi Wagtail CMS Anda. Jika opsi pertama sudah cukup untuk keperluan Anda, lewati bagian ini dan lanjutkan ke [**Run Wagtail CMS**](<https://docs.dewacloud.com/run-wagtail-cms>) berikutnya.
+Di bawah ini, kami akan memberikan panduan langkah demi langkah untuk menghubungkan database eksternal ke aplikasi Wagtail CMS Anda. Jika opsi pertama sudah cukup untuk keperluan Anda, lewati bagian ini dan lanjutkan ke [**Run Wagtail CMS**](<https://docs.dewacloud.com/docs/run-wagtail-cms>) berikutnya.
 
 1\. Buat instance database yang diinginkan. Misalnya, gunakan tombol **Change Environment Topology** untuk menambahkan server **MariaDB** ke environment Anda dengan Wagtail CMS yang terinstal.
 

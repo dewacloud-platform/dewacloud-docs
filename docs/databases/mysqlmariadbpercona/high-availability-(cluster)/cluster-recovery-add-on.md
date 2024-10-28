@@ -77,7 +77,7 @@ Kami merekomendasikan membuat backup dari database sebelum pemulihan.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/cluster-recovery-addon/cluster-recovery-addon-7.png" alt="successful recovery" width="60%"/>
 
-Untuk detail tambahan atau jika terjadi kegagalan pemulihan, Anda dapat memeriksa [log](<https://docs.dewacloud.com/docs/view-log-files/>) _**db_recovery**_ yang disebutkan di atas. Juga, periksa panduan **[Manual Recovery](<https://github.com/jelastic-jps/mysql-cluster/blob/master/addons/recovery/docs/ManualRecoveryGuide.md#configuration-file-restoration>)** jika masalah tidak teratasi.
+Untuk detail tambahan atau jika terjadi kegagalan pemulihan, Anda dapat memeriksa [log](<https://docs.dewacloud.com/docs/log-files/>) _**db_recovery**_ yang disebutkan di atas. Juga, periksa panduan **[Manual Recovery](<https://github.com/jelastic-jps/mysql-cluster/blob/master/addons/recovery/docs/ManualRecoveryGuide.md#configuration-file-restoration>)** jika masalah tidak teratasi.
 
 ## Baca Juga{#whats-next}
 

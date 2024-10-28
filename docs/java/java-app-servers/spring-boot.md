@@ -32,7 +32,7 @@ Jadi, masuklah ke [dashboard Jelastic Cloud](<https://jelastic.cloud/?utm_source
 
 1\. Pertama-tama, Anda perlu membuat **Lingkungan Baru** - gunakan tombol yang sama
 untuk meluncurkan wizard topologi. Pindahlah ke tab bahasa **Java** dan pilih template **Spring Boot** dalam lapisan server aplikasi di
-panel sebelah kiri seperti yang ditunjukkan di bawah ini. Tetapkan jumlah [sumber daya yang dialokasikan](<https://docs.jelastic.com/automatic-vertical-scaling/>), ketik nama lingkungan Anda, dan klik **Create** untuk melanjutkan.
+panel sebelah kiri seperti yang ditunjukkan di bawah ini. Tetapkan jumlah [sumber daya yang dialokasikan](<https://docs.dewacloud.com/docs/automatic-vertical-scaling/>), ketik nama lingkungan Anda, dan klik **Create** untuk melanjutkan.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/spring-boot/spring-boot-2.png" alt="spring boot application cloud hosting" width="100%"/>
 
@@ -117,8 +117,7 @@ Tunggu hingga tugas yang sesuai selesai.
 
   * ****Deploy Jarak Jauh via CLI****
 
-Sebagai alternatif, Anda dapat memanfaatkan [Jelastic
-CLI](<https://docs.jelastic.com/cli/>) untuk menge-deploy aplikasi Anda ke
+Sebagai alternatif, Anda dapat memanfaatkan [Jelastic CLI](<https://docs.dewacloud.com/docs/cli/>) untuk menge-deploy aplikasi Anda ke
 lingkungan Spring Boot target secara jarak jauh dengan perintah berikut:
 
 ```
@@ -128,7 +127,7 @@ lingkungan Spring Boot target secara jarak jauh dengan perintah berikut:
 ### Memeriksa Log{#checking-logs}
 
 Setelah deployment selesai, beri sistem beberapa waktu lagi untuk menjalankan
-layanan yang diperlukan (di mana penundaan bergantung langsung pada kompleksitas proyek Anda) - kemajuan operasi ini saat ini dapat dilacak secara real-time melalui **_run.log_** [log](<https://docs.jelastic.com/view-log-files/>) server.
+layanan yang diperlukan (di mana penundaan bergantung langsung pada kompleksitas proyek Anda) - kemajuan operasi ini saat ini dapat dilacak secara real-time melalui **_run.log_** [log](<https://docs.dewacloud.com/docs/log-files/>) server.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/spring-boot/spring-boot-6.png" alt="spring boot logs" width="100%"/>
 
@@ -239,7 +238,7 @@ Arsip aplikasi Anda akan ditempatkan pada lokasi ...**_target/\{app_name\}-\{app
 #### **Plugin Maven Jelastic**{#jelastic-maven-plugin}
 
 Sebagai opsi build & deployment gabungan yang lebih nyaman, pertimbangkan untuk menggunakan
-[Jelastic Maven plugin](<https://docs.jelastic.com/maven-plugin-jelastic/>),
+[Jelastic Maven plugin](<https://docs.dewacloud.com/docs/maven-plugin-jelastic/>),
 yang bertujuan untuk memfasilitasi pengiriman aplikasi Anda ke Cloud. Integrasikan
 itu dalam konfigurasi _pom.xml_ proyek Maven Anda dan dapatkan
 kemampuan untuk membangun arsip aplikasi dan langsung mendorongnya ke lingkungan target dengan perintah tunggal.
@@ -248,7 +247,7 @@ kemampuan untuk membangun arsip aplikasi dan langsung mendorongnya ke lingkungan
 
 #### **Node Build Maven Khusus di Cloud**{#dedicated-maven-build-node-in-the-cloud}
 
-Jika Anda lebih suka bekerja melalui GUI, Anda dapat memanfaatkan [node build Maven](<https://docs.jelastic.com/java-vcs-deployment/>) khusus yang disediakan oleh Jelastic PaaS. Diikutsertakan dalam suatu environment bersamaan dengan server aplikasi Java, dapat digunakan untuk mengambil, mengkompilasi, dan mendeploy aplikasi dari sumber di repository GIT/SVN yang ditentukan.
+Jika Anda lebih suka bekerja melalui GUI, Anda dapat memanfaatkan [node build Maven](<https://docs.dewacloud.com/docs/java-vcs-deployment/>) khusus yang disediakan oleh Jelastic PaaS. Diikutsertakan dalam suatu environment bersamaan dengan server aplikasi Java, dapat digunakan untuk mengambil, mengkompilasi, dan mendeploy aplikasi dari sumber di repository GIT/SVN yang ditentukan.
 
 #### **Add-On Otomatisasi CI/CD**{#ci-cd-automation-add-on}
 
@@ -259,19 +258,19 @@ Sebagai tambahan untuk semua opsi yang disebutkan di atas, Jelastic menawarkan a
 Mayoritas operasi manajemen server dasar dapat dilakukan langsung melalui
 UI Jelastic Cloud dengan alat yang terintegrasi dengan sesuai, misalnya:
 
-  * gunakan [**Configuration Manager**](<https://docs.jelastic.com/configuration-file-manager/>) bawaan untuk membuat atau mengunggah file baru, mengedit atau menghapus yang sudah ada, mengatur [titik mount](<https://docs.jelastic.com/mount-points/>), dan mengelola [data yang di-export](<https://docs.jelastic.com/storage-exports/>) dari server lain
+  * gunakan [**Configuration Manager**](<https://docs.dewacloud.com/docs/configuration-file-manager/>) bawaan untuk membuat atau mengunggah file baru, mengedit atau menghapus yang sudah ada, mengatur [titik mount](<https://docs.dewacloud.com/docs/mount-points/>), dan mengelola [data yang di-export](<https://docs.dewacloud.com/docs/storage-exports/>) dari server lain
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/spring-boot/spring-boot-7.png" alt="spring boot file manager" width="100%"/>
 
-  * mengatur [opsi dan argumen Java](<https://docs.jelastic.com/java-options-arguments/>) kustom untuk server Anda dengan menyesuaikan variabel lingkungan **_JAVA_OPTS_** dan **_JAVA_ARGS_**
+  * mengatur [opsi dan argumen Java](<https://docs.dewacloud.com/docs/java-options-arguments/>) kustom untuk server Anda dengan menyesuaikan variabel lingkungan **_JAVA_OPTS_** dan **_JAVA_ARGS_**
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/spring-boot/spring-boot-8.png" alt="spring boot variables" width="100%"/>
 
-  * telusuri [**Logs**](<https://docs.jelastic.com/view-log-files/>) server untuk mendapatkan detail tentang operasi-run untuk administrasi layanan yang efisien dan pemecahan masalah
-  * lacak [**Statistics**](<https://docs.jelastic.com/view-app-statistics/>) pada sumber daya yang digunakan untuk mengetahui kapasitas yang sebenarnya dibutuhkan server Anda dan menentukan pendekatan terbaik untuk alokasinya 
+  * telusuri [**Logs**](<https://docs.dewacloud.com/docs/log-files/>) server untuk mendapatkan detail tentang operasi-run untuk administrasi layanan yang efisien dan pemecahan masalah
+  * lacak [**Statistics**](<https://docs.dewacloud.com/docs/view-app-statistics/>) pada sumber daya yang digunakan untuk mengetahui kapasitas yang sebenarnya dibutuhkan server Anda dan menentukan pendekatan terbaik untuk alokasinya 
 
 Untuk operasi pemeliharaan yang lebih kompleks, Anda dapat terhubung ke container
-Spring Boot Anda [via SSH](<https://docs.jelastic.com/ssh-access/>) (baik menggunakan
+Spring Boot Anda [via SSH](<https://docs.dewacloud.com/docs/ssh-access/>) (baik menggunakan
 _web_ atau _local_ SSH client). Tips berikut ini bisa berguna ketika
 bekerja dengan server Spring Boot Anda:
 
@@ -294,10 +293,10 @@ dengan beban kerja yang dapat berubah.
 
 #### **Penentuan Skala Vertikal Otomatis**{#automatic-vertical-scaling}
 
-[Skala vertikal otomatis](<https://docs.jelastic.com/automatic-vertical-scaling/>) diaktifkan secara default dan memastikan layanan Anda tetap
+[Skala vertikal otomatis](<https://docs.dewacloud.com/docs/automatic-vertical-scaling/>) diaktifkan secara default dan memastikan layanan Anda tetap
 tersedia selama lonjakan beban, dan pada saat yang sama, menghilangkan keperluan untuk
 membayar penggandaan kapasitas yang tidak digunakan. Tentukan saja batas maksimum
-sumber daya (dengan [cloudlets](<https://docs.jelastic.com/cloudlet/>)) yang bisa
+sumber daya (dengan [cloudlets](<https://docs.dewacloud.com/docs/cloudlet/>)) yang bisa
 digunakan aplikasi Anda dan Jelastic akan secara otomatis menyesuaikan ukuran memori maksimum (**_-Xmx_**) untuk aplikasi Anda berdasarkan kapasitas-kapasitas ini, misalnya:
 
   * 8 cloudlets (1GiB RAM) menetapkan ukuran heap maksimum ke 819 MB
@@ -309,7 +308,7 @@ Manager atau Jelastic SSH Gate.
 
 #### **Penentuan Skala Horizontal Otomatis**{#automatic-horizontal-scaling}
 
-Fitur [penentuan skala horizontal otomatis](<https://docs.jelastic.com/automatic-horizontal-scaling/>) memungkinkan menyesuaikan jumlah server web dan server
+Fitur [penentuan skala horizontal otomatis](<https://docs.dewacloud.com/docs/automatic-horizontal-scaling/>) memungkinkan menyesuaikan jumlah server web dan server
 aplikasi menurut konsumsi sumber daya aplikasi Anda. Ini diimplementasikan dengan
 triggers monitoring yang dapat disesuaikan yang didasarkan pada penggunaan jenis sumber daya tertentu:
 
@@ -322,8 +321,7 @@ triggers monitoring yang dapat disesuaikan yang didasarkan pada penggunaan jenis
 <img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/spring-boot/spring-boot-9.png" alt="spring boot application scaling" width="100%"/>
 
 **Note:** Ketika sebuah server diperbesar (baik dengan trigger atau
-[secara manual](<https://docs.jelastic.com/horizontal-scaling/>)), NGINX [load
-balancer](<https://docs.jelastic.com/load-balancing/>) akan secara otomatis
+[secara manual](<https://docs.dewacloud.com/docs/horizontal-scaling/>)), NGINX [load balancer](<https://docs.dewacloud.com/docs/load-balancing/>) akan secara otomatis
 ditambahkan ke environment Anda, dengan konfigurasi awal untuk pembalansan
 beban sesi sticky. Alternatifnya, Anda dapat beralih dari stack balancer
 yang digunakan ke _Apache_ , _HAProxy_ , _Varnish_ , atau _LiteSpeed ADC_.
@@ -337,12 +335,12 @@ Jika proyek Anda memerlukan beberapa konfigurasi yang lebih kompleks untuk penan
 permintaan, seperti HTTPS dan pembalansan beban, jangan ragu untuk memanfaatkan opsi
 keamanan berikut:
 
-  * Fungsi [SSL bawaan](<https://docs.jelastic.com/built-in-ssl/>) memungkinkan Anda segera menerapkan enkripsi untuk domain internal aplikasi Anda (yaitu _https://\{envName\}\{platformDomain\}_) dengan sertifikat wildcard Jelastic SSL  
+  * Fungsi [SSL bawaan](<https://docs.dewacloud.com/docs/built-in-ssl/>) memungkinkan Anda segera menerapkan enkripsi untuk domain internal aplikasi Anda (yaitu _https://\{envName\}\{platformDomain\}_) dengan sertifikat wildcard Jelastic SSL  
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/spring-boot/spring-boot-10.png" alt="spring boot ssl configuration" width="100%"/>
 
-  * [SSL kustom](<https://docs.jelastic.com/custom-ssl/>) dapat dikonfigurasikan untuk lingkungan berbasis Spring Boot dengan menambahkan salah satu dari balancer beban bersertifikat
-  * sebagai alternatif SSL gratis, berlaku untuk domain internal dan kustom, sebuah aplikasi tambahan Jelastic yang dikembangkan secara khusus menggunakan [Let’s Encrypt](<https://www.virtuozzo.com/company/blog/free-ssl-certificates-with-lets-encrypt/>) dapat digunakan (memerlukan [load balancer](<https://docs.jelastic.com/load-balancing/>) bersertifikat)
+  * [SSL kustom](<https://docs.dewacloud.com/docs/custom-ssl/>) dapat dikonfigurasikan untuk lingkungan berbasis Spring Boot dengan menambahkan salah satu dari balancer beban bersertifikat
+  * sebagai alternatif SSL gratis, berlaku untuk domain internal dan kustom, sebuah aplikasi tambahan Jelastic yang dikembangkan secara khusus menggunakan [Let’s Encrypt](<https://www.virtuozzo.com/company/blog/free-ssl-certificates-with-lets-encrypt/>) dapat digunakan (memerlukan [load balancer](<https://docs.dewacloud.com/docs/load-balancing/>) bersertifikat)
 
 Menerapkan solusi apa pun ini akan memungkinkan enkripsi lalu lintas pada tingkat
 environment, menghilangkan kebutuhan untuk mengkonfigurasinya di dalam aplikasi Anda.
@@ -355,7 +353,7 @@ Secara default, mayoritas aplikasi Java mendengarkan port **_8080_** pada
 tingkat HTTP, karena itu dianggap sebagai endpoint Spring Boot standar untuk
 lalu lintas HTTP.  
 Selain itu, ketika tautan environment Anda diminta di Internet,
-[ports](<https://docs.jelastic.com/container-ports/>) secara otomatis dipetakan
+[ports](<https://docs.dewacloud.com/docs/container-ports/>) secara otomatis dipetakan
 sebagai berikut:
 
   * port HTTP internal **_8080_** mengacu pada port **_80_**
@@ -367,25 +365,6 @@ ditentukan, tanpa perlu memasukkan nomor port yang tepat.
 
 Dan jika aplikasi Anda memang perlu memproses permintaan pada beberapa
 antar muka kustom, Jelastic memungkinkan mengekspos port TCP dan UDP container
-private melalui [Endpoints](<https://docs.jelastic.com/endpoints/>). Setelah menambahkan
+private melalui [Endpoints](<https://docs.dewacloud.com/docs/endpoints/>). Setelah menambahkan
 seperti itu, port yang sesuai akan secara otomatis diaktifkan dalam pengaturan firewall server,
 membuatnya dapat diakses untuk seluruh dunia.
-
-## Kesimpulan{#conclusion}
-
-Temukan lebih banyak kemungkinan dari server Spring Boot dengan mencobanya dalam
-Jelastic. [Buat akun Anda sendiri](<https://jelastic.cloud/?utm_source=jelastic-blog&utm_medium=article utm_campaign=Hosting-Spring-Boot-Applications>) dan
-gunakan untuk menge-deploy aplikasi Java yang dapat diskalakan dengan mudah untuk
-menjalankannya di cloud.
-
-Butuh beberapa detail atau bantuan? Jangan ragu untuk meminta bantuan dalam
-komentar di bawah atau hubungi ahli teknis kami di
-[Stackoverflow](<https://stackoverflow.com/questions/tagged/jelastic>).
-
-### Baca Juga{#related-articles}
-
-### [Membangun Microservices dengan Spring Boot Fat (Uber) Jar](<https://docs.dewacloud.com/company/blog/building-microservices-with-spring-boot-fat-uber-jar/>)
-
-### [Spring Boot Thin Jar Builder untuk MenjalankanJava Microservices](<https://docs.dewacloud.com/company/blog/spring-boot-thin-jar-builder-for-running-java-microservices/>)
-
-### [Cara Membuat dan Mendeploy Aplikasi Vert.x Fat atau Thin Microservice ke Cloud](<https://docs.dewacloud.com/company/blog/build-and-deploy-vertx-fat-thin-microservice-application-to-the-cloud/>)

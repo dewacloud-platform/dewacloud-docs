@@ -28,7 +28,7 @@ Untuk mengatur VPS Anda di dalam platform, ikuti langkah-langkah berikut.
 <img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/vps-config-2.png" alt="elastic vps topology wizard" width="100%"/>
 </p>
 
-Tentukan batasan cloudlet untuk node ini, [tambahkan scaling limit](#elastic-vps-scaling) jika diperlukan, pilih [region](https://docs.dewacloud.com/environment-regions/) yang diinginkan, ketik nama environment dan klik pada **Create**.
+Tentukan batasan cloudlet untuk node ini, [tambahkan scaling limit](#elastic-vps-scaling) jika diperlukan, pilih [region](https://docs.dewacloud.com/docs/environment-regions/) yang diinginkan, ketik nama environment dan klik pada **Create**.
 
 3. Dalam beberapa saat, environment baru Anda dengan virtual server yang dipilih akan muncul di dashboard. Anda juga akan menerima notifikasi email dengan data administrasi (kredensial login/password dan URL akses).
 
@@ -42,7 +42,7 @@ Anda juga bisa melihat private dan public IP address (jika sudah ditambahkan) se
 
 Fleksibilitas hosting VPS di platform dicapai berkat automatic scaling, baik secara vertikal maupun horizontal, yang dengan mudah disesuaikan selama pembuatan dan konfigurasi topologi environment.
 
-**[_Automatic vertical scaling_](https://www.virtuozzo.com/application-platform-docs/automatic-vertical-scaling/)** di jamin oleh kemampuan sistem untuk menyediakan resource yang dibutuhkan akibat load. Anda dapat memilih scaling limit untuk server Anda, yang mencegah downtime selama load spike yang tidak terduga dan mengoptimalkan biaya hosting.
+**[_Automatic vertical scaling_](https://docs.dewacloud.com/docs/automatic-vertical-scaling/)** di jamin oleh kemampuan sistem untuk menyediakan resource yang dibutuhkan akibat load. Anda dapat memilih scaling limit untuk server Anda, yang mencegah downtime selama load spike yang tidak terduga dan mengoptimalkan biaya hosting.
 
 Untuk scaling environment Anda, Anda perlu meningkatkan/menurunkan jumlah resource maksimum yang tersedia (cloudlets) dengan menyesuaikan slider cloudlet di bagian _Vertical Scaling per Node_.
 
@@ -50,7 +50,7 @@ Untuk scaling environment Anda, Anda perlu meningkatkan/menurunkan jumlah resour
 <img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/vps-config-4.png" alt="elastic VPS vertical scaling" width="100%"/>
 </p>
 
-Fungsi [horizontal scaling](https://www.virtuozzo.com/application-platform-docs/horizontal-scaling/) memungkinkan mudahnya menyesuaikan jumlah server dalam environment Anda menggunakan tombol “**-**” dan “**+**” yang sesuai. Di sini, Anda dapat memilih mode scaling yang diinginkan:
+Fungsi [horizontal scaling](https://docs.dewacloud.com/docs/horizontal-scaling/) memungkinkan mudahnya menyesuaikan jumlah server dalam environment Anda menggunakan tombol “**-**” dan “**+**” yang sesuai. Di sini, Anda dapat memilih mode scaling yang diinginkan:
 
 - _**Stateless**_ - secara bersamaan membuat semua node baru dari template image dasar
 - _**Stateful**_ - secara berurutan menyalin sistem file dari container master ke dalam node baru
@@ -67,7 +67,7 @@ Sebagian besar konfigurasi dasar pada instance VPS Anda dapat dilakukan langsung
 
 ### File Manager{#file-manager}
 
-**[Configuration file manager](https://docs.dewacloud.com/configuration-file-manager/)** bawaan dirancang untuk mengelola (membuat/menghapus, upload/download, mengedit) file di dalam container Anda, serta menyiapkan [mount point](https://docs.dewacloud.com/mount-points/) dan mengelola [data yang di-export](https://www.virtuozzo.com/application-platform-docs/storage-exports/).
+**[Configuration file manager](https://docs.dewacloud.com/docs/configuration-file-manager/)** bawaan dirancang untuk mengelola (membuat/menghapus, upload/download, mengedit) file di dalam container Anda, serta menyiapkan [mount point](https://docs.dewacloud.com/docs/mount-points/) dan mengelola [data yang di-export](https://docs.dewacloud.com/docs/storage-exports/).
 
 <p>
 <img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/vps-config-6.png" alt="elastic VPS file manager" width="100%"/>
@@ -77,7 +77,7 @@ Tab yang sesuai dapat dibuka dengan mengklik tombol **Config** di samping node V
 
 ### Log Files{#log-files}
 
-Tracking **[Log](https://docs.dewacloud.com/view-log-files/)** adalah pilihan yang berguna untuk manajemen VPS Anda secara efisien. Di sini, data tentang semua aspek lifecycle container Anda dikumpulkan, yang bisa bermanfaat saat troubleshooting dan debugging aplikasi serta layanan Anda.
+Tracking **[Log](https://docs.dewacloud.com/docs/log-files/)** adalah pilihan yang berguna untuk manajemen VPS Anda secara efisien. Di sini, data tentang semua aspek lifecycle container Anda dikumpulkan, yang bisa bermanfaat saat troubleshooting dan debugging aplikasi serta layanan Anda.
 
 <p>
 <img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/vps-config-7.png" alt="elastic VPS log files" width="100%"/>
@@ -85,11 +85,11 @@ Tracking **[Log](https://docs.dewacloud.com/view-log-files/)** adalah pilihan ya
 
 Tab logs dapat diakses dengan mengklik tombol **Log** di samping node VPS yang diperlukan (atau keseluruhan layer).
 
-Untuk konfigurasi yang lebih kompleks, Anda harus terhubung ke server VPS melalui [SSH Gate](https://docs.dewacloud.com/vps-ssh-gate/) (termasuk opsi untuk melanjutkan pekerjaan melalui dashboard menggunakan **Web SSH**) atau melakukan koneksi [SSH langsung menggunakan Public IP](https://docs.dewacloud.com/vps-public-ip).
+Untuk konfigurasi yang lebih kompleks, Anda harus terhubung ke server VPS melalui [SSH Gate](https://docs.dewacloud.com/docs/vps-ssh-gate/) (termasuk opsi untuk melanjutkan pekerjaan melalui dashboard menggunakan **Web SSH**) atau melakukan koneksi [SSH langsung menggunakan Public IP](https://docs.dewacloud.com/docs/vps-public-ip).
 
 ## Baca Juga{#whats-next}
 
-- [Elastic VPS Overview](https://docs.dewacloud.com/vps/)
-- [Linux VPS Access via SSH Gate](https://docs.dewacloud.com/vps-ssh-gate/)
-- [Linux VPS Access via Public IP](https://docs.dewacloud.com/vps-public-ip/)
-- [Windows VPS Access via RDP](https://docs.dewacloud.com/win-rdp-access/)
+- [Elastic VPS Overview](https://docs.dewacloud.com/docs/vps/)
+- [Linux VPS Access via SSH Gate](https://docs.dewacloud.com/docs/vps-ssh-gate/)
+- [Linux VPS Access via Public IP](https://docs.dewacloud.com/docs/vps-public-ip/)
+- [Windows VPS Access via RDP](https://docs.dewacloud.com/docs/win-rdp-access/)

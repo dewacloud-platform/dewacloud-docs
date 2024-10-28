@@ -37,7 +37,7 @@ Opsi lain yang tersedia diperlukan untuk koneksi melalui [klien RDP lokal](#rdp-
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/windows-&-.net/windows-rd-access/03-remote-desktop-web-client-access.png" alt="remote desktop web client access" width="100%"/>
 
-Setelah koneksi dibuat, Anda akan melihat window **Server Manager** terbuka. Sekarang, Anda dapat mulai [mengelola server Anda](https://docs.dewacloud.com/win-vps-roles-features/).
+Setelah koneksi dibuat, Anda akan melihat window **Server Manager** terbuka. Sekarang, Anda dapat mulai [mengelola server Anda](https://docs.dewacloud.com/docs/win-vps-roles-features/).
 
 ## RDP Connection via Local Client{#rdp-connection-via-local-client}
 
@@ -56,7 +56,7 @@ Di bawah ini, kami akan menjelaskan contoh bekerja dengan klien RDP paling umum 
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/windows-&-.net/windows-rd-access/04-windows-remote-desktop-application.png" alt="Windows remote desktop application" width="100%"/>
 
-3. Berikan link koneksi RDP ([endpoint](https://docs.dewacloud.com/endpoints/)) ke dalam field **PC name**.
+3. Berikan link koneksi RDP ([endpoint](https://docs.dewacloud.com/docs/endpoints/)) ke dalam field **PC name**.
 
 **Catatan:** Jika [public IP](https://www.virtuozzo.com/application-platform-docs/public-ip/) terpasang ke node Windows VM, itu harus digunakan sebagai pengganti endpoint.
 
@@ -116,6 +116,6 @@ Sekarang, Anda dapat mulai mengonfigurasi server Anda menggunakan **Server Manag
 
 ## Baca Juga{#whats-next}
 
-- [.NET Core (Beta)](https://docs.dewacloud.com/net-core/)
-- [Windows VM](https://docs.dewacloud.com/win-vm/)
-- [Windows Roles & Features](https://docs.dewacloud.com/win-vps-roles-features/)
+- [.NET Core (Beta)](https://docs.dewacloud.com/docs/net-core/)
+- [Windows VM](https://docs.dewacloud.com/docs/win-vm/)
+- [Windows Roles & Features](https://docs.dewacloud.com/docs/win-vps-roles-features/)

@@ -13,12 +13,12 @@ R | [S](#s) | T | U | V | [W](#w) | X | Y | Z
 
 ## B{#b}
 
-[Brackets](https://docs.dewacloud.com/brackets/)
+[Brackets](https://www.virtuozzo.com/application-platform-docs/brackets/)
 
 ## C{#c}
 
-[Calipso](https://docs.dewacloud.com/calipso/)  
-[Celebritychat](https://docs.dewacloud.com/celebritychat/)
+[Calipso](https://www.virtuozzo.com/application-platform-docs/calipso/)  
+[Celebritychat](https://www.virtuozzo.com/application-platform-docs/celebritychat/)
 
 ## G{#g}
 
@@ -26,17 +26,17 @@ R | [S](#s) | T | U | V | [W](#w) | X | Y | Z
 
 ## H{#h}
 
-[Hexo](https://docs.dewacloud.com/hexo/)
+[Hexo](https://www.virtuozzo.com/application-platform-docs/hexo/)
 
 ## K{#k}
 
-[Keystone](https://docs.dewacloud.com/keystone/)
+[Keystone](https://www.virtuozzo.com/application-platform-docs/keystone/)
 
 ## N{#n}
 
-[NodeBB](https://docs.dewacloud.com/nodebb/)  
-[NodeKick](https://docs.dewacloud.com/nodekick/)  
-[Nodize CMS](https://docs.dewacloud.com/nodize/)
+[NodeBB](https://www.virtuozzo.com/application-platform-docs/nodebb/)  
+[NodeKick](https://www.virtuozzo.com/application-platform-docs/nodekick/)  
+[Nodize CMS](https://www.virtuozzo.com/application-platform-docs/nodize/)
 
 ## S{#s}
 

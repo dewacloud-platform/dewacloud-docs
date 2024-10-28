@@ -6,10 +6,10 @@ title: Managing Server Roles & Features
 
 # Mengatur Peran dan Fitur Windows melalui Server Manager
 
-[Windows VM](https://docs.dewacloud.com/win-vm/) menyediakan GUI yang kuat dari Windows OS yang dapat diakses melalui [remote desktop protocol](https://docs.dewacloud.com/win-rdp-access/) (RDP). Ini memungkinkan Anda untuk terhubung dan mengelola instance Windows Anda dari jarak jauh, misalnya:
+[Windows VM](https://docs.dewacloud.com/docs/win-vm/) menyediakan GUI yang kuat dari Windows OS yang dapat diakses melalui [remote desktop protocol](https://docs.dewacloud.com/docs/win-rdp-access/) (RDP). Ini memungkinkan Anda untuk terhubung dan mengelola instance Windows Anda dari jarak jauh, misalnya:
 
-- melalui [Guacamole](https://docs.dewacloud.com/win-rdp-access/#rdp-connection-via-web-client) alat HTML5 langsung di browser Anda
-- melalui [klien RD lokal](https://docs.dewacloud.com/win-rdp-access/#rdp-connection-via-local-client) (kredensial yang sesuai untuk pembentukan koneksi dapat ditemukan dalam email yang dikirim setelah pembuatan environment)
+- melalui [Guacamole](https://docs.dewacloud.com/docs/win-rdp-access/#rdp-connection-via-web-client) alat HTML5 langsung di browser Anda
+- melalui [klien RD lokal](https://docs.dewacloud.com/docs/win-rdp-access/#rdp-connection-via-local-client) (kredensial yang sesuai untuk pembentukan koneksi dapat ditemukan dalam email yang dikirim setelah pembuatan environment)
 
 Untuk mengkonfigurasi virtual private server Windows via RDP, Server Manager bawaan digunakan. Di bawah ini kami soroti beberapa fungsionalitas dasar yang disediakan:
 
@@ -18,7 +18,7 @@ Untuk mengkonfigurasi virtual private server Windows via RDP, Server Manager baw
 
 ## Menetapkan Peran Windows VM{#set-windows-vm-roles}
 
-Setelah [terhubung](https://docs.dewacloud.com/win-rdp-access/) ke desktop node yang diperlukan, Anda akan melihat alat **Server Manager** terbuka. Sebagai contoh, mari kita tambahkan peran server baru dengan langkah-langkah berikut.
+Setelah [terhubung](https://docs.dewacloud.com/docs/win-rdp-access/) ke desktop node yang diperlukan, Anda akan melihat alat **Server Manager** terbuka. Sebagai contoh, mari kita tambahkan peran server baru dengan langkah-langkah berikut.
 
 1. Klik tautan **Add roles and features** yang terletak di halaman utama manager.
 
@@ -77,6 +77,6 @@ Jika Anda ingin mempelajari lebih lanjut tentang kemungkinan yang tersedia di Wi
 
 ## Baca Juga{#whats-next}
 
-- [.NET Core (Beta)](https://docs.dewacloud.com/net-core/)
-- [Windows VM](https://docs.dewacloud.com/win-vm/)
-- [Windows RD Access](https://docs.dewacloud.com/win-rdp-access/)
+- [.NET Core (Beta)](https://docs.dewacloud.com/docs/net-core/)
+- [Windows VM](https://docs.dewacloud.com/docs/win-vm/)
+- [Windows RD Access](https://docs.dewacloud.com/docs/win-rdp-access/)

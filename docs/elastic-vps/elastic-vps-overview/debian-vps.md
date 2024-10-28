@@ -12,7 +12,7 @@ title: Debian VPS
 
 **[Debian](https://www.debian.org/)** adalah sistem operasi gratis yang berkomitmen pada prinsip software open source dan menawarkan solusi yang terus berkembang dengan kemampuan kinerja yang fleksibel, aman, dan serbaguna. Debian menyediakan serangkaian program dan basic utility untuk menjalankan OS dan berbagai macam paket aplikasi software tambahan. Solusi seperti ini memiliki core yang ringan yang dapat dengan mudah disesuaikan sesuai kebutuhan Anda menggunakan package manager khusus untuk software yang dibutuhkan dan instalasi bundle.
 
-Dewacloud menyediakan Debian dengan semua keuntungan dari [Elastic VPS](https://docs.dewacloud.com/vps/) (jaminan keamanan, efisiensi biaya, root permission, dll.).
+Dewacloud menyediakan Debian dengan semua keuntungan dari [Elastic VPS](https://docs.dewacloud.com/docs/vps/) (jaminan keamanan, efisiensi biaya, root permission, dll.).
 
 ## Hosting Debian VPS{#debian-vps-hosting}
 
@@ -25,16 +25,16 @@ Buka wizard topologi environment dengan mengklik tombol **New Environment** di b
 </p>
 
 :::note
-Instance _**Elastic VPS**_ secara default memerlukan [Public IP address](https://docs.dewacloud.com/public-ip/) (satu per node).
+Instance _**Elastic VPS**_ secara default memerlukan [Public IP address](https://docs.dewacloud.com/docs/public-ip/) (satu per node).
 :::
 
-Sesuaikan opsi lainnya sesuai kebutuhan Anda ([vertical](https://docs.dewacloud.com/automatic-vertical-scaling/) dan [horizontal scaling](https://docs.dewacloud.com/horizontal-scaling/), disk limit, dll.) dan klik tombol **Create**.
+Sesuaikan opsi lainnya sesuai kebutuhan Anda ([vertical](https://docs.dewacloud.com/docs/automatic-vertical-scaling/) dan [horizontal scaling](https://docs.dewacloud.com/docs/horizontal-scaling/), disk limit, dll.) dan klik tombol **Create**.
 
 Dalam sekejap, virtual server Anda yang sepenuhnya terisolasi dengan sistem operasi Debian akan siap untuk dijalankan, memungkinkan Anda untuk melanjutkan dengan instalasi software dan layanan yang diperlukan.
 
 ## Baca Juga{#whats-next}
 
-- [Elastic VPS](https://docs.dewacloud.com/vps/)
-- [VPS Configuration](https://docs.dewacloud.com/vps-configuration/)
-- [VPS Access via SSH Gate](https://docs.dewacloud.com/vps-ssh-gate/)
-- [VPS Access via Public IP](https://docs.dewacloud.com/vps-public-ip/)
+- [Elastic VPS](https://docs.dewacloud.com/docs/vps/)
+- [VPS Configuration](https://docs.dewacloud.com/docs/vps-configuration/)
+- [VPS Access via SSH Gate](https://docs.dewacloud.com/docs/vps-ssh-gate/)
+- [VPS Access via Public IP](https://docs.dewacloud.com/docs/vps-public-ip/)

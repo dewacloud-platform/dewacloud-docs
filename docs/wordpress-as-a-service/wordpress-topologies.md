@@ -12,13 +12,13 @@ Setiap Dewacloud Application Platform untuk WordPress dapat menyediakan kombinas
 
 ## WordPress Standalone{#wordpress-standalone}
 
-Paket **WordPress Standalone** memiliki topologi node tunggal yang efisien berdasarkan template [LEMP](https://docs.dewacloud.com/lemp-llsmp/) (Linux + NGINX + MariaDB + PHP) yang disertifikasi oleh Dewacloud Application Platform dengan serangkaian fitur lanjutan bawaan. Struktur terpaket membuat solusi ini optimal untuk menjalankan proyek berukuran kecil hingga menengah dan lingkungan pengembangan yang tidak memerlukan skalabilitas atau ketersediaan tinggi.
+Paket **WordPress Standalone** memiliki topologi node tunggal yang efisien berdasarkan template [LEMP](https://docs.dewacloud.com/docs/lemp-llsmp/) (Linux + NGINX + MariaDB + PHP) yang disertifikasi oleh Dewacloud Application Platform dengan serangkaian fitur lanjutan bawaan. Struktur terpaket membuat solusi ini optimal untuk menjalankan proyek berukuran kecil hingga menengah dan lingkungan pengembangan yang tidak memerlukan skalabilitas atau ketersediaan tinggi.
 
 ![WordPress standalone scheme](#)
 
 ## WordPress Standalone Pro{#wordpress-standalone-pro}
 
-Paket **WordPress Standalone Pro** memiliki topologi node tunggal yang efisien berdasarkan template [LLSMP](https://docs.dewacloud.com/lemp-llsmp/) (Linux + LiteSpeed + MariaDB + PHP) yang disertifikasi oleh Dewacloud Application Platform dengan serangkaian fitur lanjutan bawaan. Struktur terpaket membuat solusi ini optimal untuk menjalankan proyek berukuran kecil hingga menengah dan lingkungan pengembangan yang tidak memerlukan skalabilitas atau ketersediaan tinggi.
+Paket **WordPress Standalone Pro** memiliki topologi node tunggal yang efisien berdasarkan template [LLSMP](https://docs.dewacloud.com/docs/lemp-llsmp/) (Linux + LiteSpeed + MariaDB + PHP) yang disertifikasi oleh Dewacloud Application Platform dengan serangkaian fitur lanjutan bawaan. Struktur terpaket membuat solusi ini optimal untuk menjalankan proyek berukuran kecil hingga menengah dan lingkungan pengembangan yang tidak memerlukan skalabilitas atau ketersediaan tinggi.
 
 ![WordPress standalone pro scheme](#)
 
@@ -28,7 +28,7 @@ Pelajari tentang manfaat LiteSpeed dibanding server lain untuk hosting WordPress
 
 ## WordPress WooCommerce{#wordpress-woocommerce}
 
-Paket **WordPress WooCommerce** memiliki topologi node tunggal yang efisien berdasarkan template [LEMP](https://docs.dewacloud.com/lemp-llsmp/) (Linux + NGINX + MariaDB + PHP) yang disertifikasi oleh Dewacloud Application Platform dengan plugin [WooCommerce](https://wordpress.org/plugins/woocommerce/) dan serangkaian fitur lanjutan bawaan. Struktur terpaket membuat solusi ini optimal untuk menjalankan proyek berukuran kecil hingga menengah dan lingkungan pengembangan yang tidak memerlukan skalabilitas atau ketersediaan tinggi.
+Paket **WordPress WooCommerce** memiliki topologi node tunggal yang efisien berdasarkan template [LEMP](https://docs.dewacloud.com/docs/lemp-llsmp/) (Linux + NGINX + MariaDB + PHP) yang disertifikasi oleh Dewacloud Application Platform dengan plugin [WooCommerce](https://wordpress.org/plugins/woocommerce/) dan serangkaian fitur lanjutan bawaan. Struktur terpaket membuat solusi ini optimal untuk menjalankan proyek berukuran kecil hingga menengah dan lingkungan pengembangan yang tidak memerlukan skalabilitas atau ketersediaan tinggi.
 
 ![WordPress WooCommerce scheme](#)
 
@@ -36,7 +36,7 @@ WooCommerce adalah plugin e-commerce sumber terbuka gratis yang dirancang khusus
 
 ## WordPress WooCommerce Pro{#wordpress-woocommerce-pro}
 
-Paket **WordPress WooCommerce Pro** memiliki topologi node tunggal yang efisien berdasarkan template [LLSMP](https://docs.dewacloud.com/lemp-llsmp/) (Linux + LiteSpeed + MariaDB + PHP) yang disertifikasi oleh Dewacloud Application Platform dengan plugin [WooCommerce](https://wordpress.org/plugins/woocommerce/) dan serangkaian fitur lanjutan bawaan. Struktur terpaket membuat solusi ini optimal untuk menjalankan proyek berukuran kecil hingga menengah dan lingkungan pengembangan yang tidak memerlukan skalabilitas atau ketersediaan tinggi.
+Paket **WordPress WooCommerce Pro** memiliki topologi node tunggal yang efisien berdasarkan template [LLSMP](https://docs.dewacloud.com/docs/lemp-llsmp/) (Linux + LiteSpeed + MariaDB + PHP) yang disertifikasi oleh Dewacloud Application Platform dengan plugin [WooCommerce](https://wordpress.org/plugins/woocommerce/) dan serangkaian fitur lanjutan bawaan. Struktur terpaket membuat solusi ini optimal untuk menjalankan proyek berukuran kecil hingga menengah dan lingkungan pengembangan yang tidak memerlukan skalabilitas atau ketersediaan tinggi.
 
 ![WordPress WooCommerce pro scheme](#)
 
@@ -72,7 +72,7 @@ WooCommerce adalah plugin e-commerce sumber terbuka gratis yang dirancang khusus
 
 ## WordPress Multi-Region Standalone{#wordpress-multi-region-standalone}
 
-Dewacloud Application Platform untuk WordPress menyediakan pendekatan distribusi geografis multi-region untuk deployment CMS WordPress. Aplikasi ini akan didistribusikan sebagai instance standalone di beberapa [region](https://docs.dewacloud.com/environment-regions/) dalam satu cloud untuk memastikan toleransi kesalahan otomatis dan operasi baca dengan latensi rendah bagi pengguna berdasarkan lokasi mereka.
+Dewacloud Application Platform untuk WordPress menyediakan pendekatan distribusi geografis multi-region untuk deployment CMS WordPress. Aplikasi ini akan didistribusikan sebagai instance standalone di beberapa [region](https://docs.dewacloud.com/docs/environment-regions/) dalam satu cloud untuk memastikan toleransi kesalahan otomatis dan operasi baca dengan latensi rendah bagi pengguna berdasarkan lokasi mereka.
 
 Implementasi semacam ini menyediakan tingkat ketersediaan tinggi dan memastikan kelangsungan bisnis bahkan jika terjadi gangguan pusat data. Selain itu, dengan memiliki beberapa instance WordPress di lokasi berbeda di seluruh dunia dapat secara signifikan meningkatkan peringkat website dari sisi mesin pencari dengan mengurangi waktu respons dan dengan demikian menarik lebih banyak pelanggan di seluruh dunia.
 
@@ -80,8 +80,7 @@ Implementasi semacam ini menyediakan tingkat ketersediaan tinggi dan memastikan 
 
 ## Baca Juga{#whats-next}
 
-- [WordPress PaaS](https://docs.dewacloud.com/virtuozzo-application-platform-for-wordpress/)
-- [WordPress Dashboard](https://docs.dewacloud.com/wp-dashboard-overview/)
-- [WordPress Backups](https://docs.dewacloud.com/wordpress-backups/)
-- [WordPress Security](https://docs.dewacloud.com/wordpress-security/)
-- [WordPress PHP Optimization](https://docs.dewacloud.com/wordpress-php-optimization/)
+- [WordPress Dashboard](https://docs.dewacloud.com/docs/wp-dashboard-overview/)
+- [WordPress Backups](https://docs.dewacloud.com/docs/wordpress-backups/)
+- [WordPress Security](https://docs.dewacloud.com/docs/wordpress-security/)
+- [WordPress PHP Optimization](https://docs.dewacloud.com/docs/wordpress-php-optimization/)

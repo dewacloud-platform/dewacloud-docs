@@ -1,12 +1,12 @@
 ---
 sidebar_position: 2
-slug: /vps-adding-mail-server
+slug: vps-adding-mail-server
 title: Setting Mail Server Inside VPS
 ---
 
 # Mengatur Mail Server di Dalam CentOS VPS
 
-Dengan platform ini, Anda dapat mengintegrasikan mail server ke virtual private machine Anda. Di bawah ini, kami akan memandu Anda melalui langkah-langkah yang diperlukan untuk mendapatkannya di [CentOS VPS](https://www.virtuozzo.com/application-platform-docs/vps-centos/). Untuk itu, Anda perlu mengakses container yang diperlukan melalui protokol SSH menggunakan alur koneksi yang disukai (misalnya, [klien berbasis web untuk CentOS](https://docs.dewacloud.com/vps-centos/#ssh-client) dalam kasus kami) dan melaksanakan langkah-langkah berikut:
+Dengan platform ini, Anda dapat mengintegrasikan mail server ke virtual private machine Anda. Di bawah ini, kami akan memandu Anda melalui langkah-langkah yang diperlukan untuk mendapatkannya di [CentOS VPS](https://docs.dewacloud.com/docs/vps-centos/). Untuk itu, Anda perlu mengakses container yang diperlukan melalui protokol SSH menggunakan alur koneksi yang disukai (misalnya, [klien berbasis web untuk CentOS](https://docs.dewacloud.com/docs/vps-centos/#ssh-client) dalam kasus kami) dan melaksanakan langkah-langkah berikut:
 
 - [Menginstal dan Menguji Mail Server](#set-up-and-test-mail-server)
 - [Mengkonfigurasi Jaringan yang Diotorisasi](#configure-postfix-authorized-networks)
@@ -113,7 +113,7 @@ Beberapa pengaturan mungkin berbeda tergantung pada instalan PaaS yang saat ini 
 
 ## Baca Juga{#whats-next}
 
-- [Elastic VPS Overview](https://docs.dewacloud.com/vps/)
-- [VPS Configurations](https://docs.dewacloud.com/vps-configuration/)
-- [Java Console Application](https://docs.dewacloud.com/standalone-application/)
-- [Windows VPS Use Cases](https://docs.dewacloud.com/win-vps-roles-and-features/)
+- [Elastic VPS Overview](https://docs.dewacloud.com/docs/vps/)
+- [VPS Configurations](https://docs.dewacloud.com/docs/vps-configuration/)
+- [Java Console Application](https://docs.dewacloud.com/docs/vps-standalone-application/)
+- [Windows VPS Use Cases](https://docs.dewacloud.com/docs/win-vps-roles-features/)

@@ -40,4 +40,4 @@ Itu saja. Sekarang environment Anda menggunakan TCP balancing untuk server aplik
 
   * [Testing Load Balancing](<https://docs.dewacloud.com/docs/testing-load-balancing/>)
   * [NGINX Balancer Configuration](<https://docs.dewacloud.com/docs/nginx-balancer-config/>)
-  * [Session Replication](<https://docs.dewacloud.com/docs/session-replication/>)
+  * [Session Replication](<https://docs.dewacloud.com/docs/auto-clustering/>)

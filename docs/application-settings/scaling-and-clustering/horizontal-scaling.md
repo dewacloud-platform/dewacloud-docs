@@ -70,7 +70,7 @@ Informasi lebih lanjut tentang fitur labeling ini dapat ditemukan di dokumen [En
 Saat menskalakan berbagai jenis stack, pertimbangkan spesifikasi berikut:
 
   * saat menskalakan instance application server, node load balancer akan secara otomatis ditambahkan ke topology environment
-  * jika mengaktifkan opsi [high-availability](https://docs.dewacloud.com/docs/session-replication/) untuk application server, load balancer NGINX yang diperlukan tidak dapat diskalakan secara horizontal (jika beberapa node NGINX tersedia sebelumnya, mereka akan secara otomatis dikurangi menjadi satu instance)
+  * jika mengaktifkan opsi [high-availability](https://docs.dewacloud.com/docs/auto-clustering/) untuk application server, load balancer NGINX yang diperlukan tidak dapat diskalakan secara horizontal (jika beberapa node NGINX tersedia sebelumnya, mereka akan secara otomatis dikurangi menjadi satu instance)
   * saat menskalakan node VPS, masing-masing diberikan alamat [public IP](https://docs.dewacloud.com/docs/public-ip/) terpisah yang dilampirkan
   * [Maven](https://docs.dewacloud.com/docs/java-vcs-deployment/) adalah satu-satunya node yang tidak dapat diskalakan secara horizontal (karena tidak ada gunanya dalam operasi semacam itu)
 

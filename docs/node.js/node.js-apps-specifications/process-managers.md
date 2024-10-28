@@ -10,11 +10,11 @@ Node.js process manager adalah tool yang menyediakan kemampuan untuk mengontrol 
 
 Dewacloud menyediakan tiga process manager pre-configured, yang dapat dipilih dengan cara berikut:
 
-- Dengan memilih tag yang sesuai selama [pembuatan](https://docs.dewacloud.com/setting-up-environment/) environment atau [redeploy](https://docs.dewacloud.com/container-redeploy/) container
+- Dengan memilih tag yang sesuai selama [pembuatan](https://docs.dewacloud.com/docs/setting-up-environment/) environment atau [redeploy](https://docs.dewacloud.com/docs/container-redeploy/) container
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/nodejs/process-manager/nodejs-process-manager-1.png" alt="select process manager wizard" width="40%"/>
 
-- Dengan mengedit [variable](https://docs.dewacloud.com/container-variables/) _**PROCESS_MANAGER**_ dalam container yang sudah dibuat dengan value _forever_, _npm_, atau _pm2_ (restart diperlukan untuk menerapkan opsi baru)
+- Dengan mengedit [variable](https://docs.dewacloud.com/docs/container-variables/) _**PROCESS_MANAGER**_ dalam container yang sudah dibuat dengan value _forever_, _npm_, atau _pm2_ (restart diperlukan untuk menerapkan opsi baru)
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/nodejs/process-manager/nodejs-process-manager-2.png" alt="select process manager variable" width="90%"/>
 
@@ -78,14 +78,14 @@ di mana:
 
 - **uid** - menetapkan nama yang unik untuk aplikasi Anda
 - **append** - memilih apakah log harus ditambahkan (_true_) atau di-overwrite (_false_)
-- **watch** - memungkinkan mengaktifkan atau menonaktifkan restart otomatis dari child process saat terjadi perubahan kode aplikasi yang sesuai; setel ke “_false_”, jika Anda ingin menghindari restart tak terduga setelah deployment dari VCS (termasuk [auto-deploy](https://docs.dewacloud.com/git-svn-auto-deploy/))
+- **watch** - memungkinkan mengaktifkan atau menonaktifkan restart otomatis dari child process saat terjadi perubahan kode aplikasi yang sesuai; setel ke “_false_”, jika Anda ingin menghindari restart tak terduga setelah deployment dari VCS (termasuk [auto-deploy](https://docs.dewacloud.com/docs/git-svn-auto-deploy/))
 - **script** - menentukan nama file _**.js**_ yang dapat dieksekusi
 - **sourceDir** - menyediakan absolute path ke script yang ditentukan
 
 ## Baca Juga{#whats-next}
 
-- [Node.js Dev Center](https://docs.dewacloud.com/nodejs-center/)
-- [Node.js Version](https://docs.dewacloud.com/nodejs-versions/)
-- [Node.js Package Managers](https://docs.dewacloud.com/nodejs-package-managers/)
-- [Deployment Guide](https://docs.dewacloud.com/deployment-guide/)
-- [Git/SVN Auto-Deploy](https://docs.dewacloud.com/git-svn-auto-deploy/)
+- [Node.js Dev Center](https://docs.dewacloud.com/docs/nodejs-center/)
+- [Node.js Version](https://docs.dewacloud.com/docs/nodejs-versions/)
+- [Node.js Package Managers](https://docs.dewacloud.com/docs/nodejs-package-managers/)
+- [Deployment Guide](https://docs.dewacloud.com/docs/deployment-guide/)
+- [Git/SVN Auto-Deploy](https://docs.dewacloud.com/docs/git-svn-auto-deploy/)

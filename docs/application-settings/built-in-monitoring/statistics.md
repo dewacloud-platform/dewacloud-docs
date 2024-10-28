@@ -66,6 +66,6 @@ Untuk informasi lebih detail tentang konsumsi dan penagihan sumber daya, lihat [
 
 ## Baca Juga
 
-- [Log Files](https://docs.dewacloud.com/docs/view-log-files/)
+- [Log Files](https://docs.dewacloud.com/docs/log-files/)
 - [Charged Resources](https://docs.dewacloud.com/docs/resource-consumption/)
 - [Load Alerts](https://docs.dewacloud.com/docs/load-alerts/)

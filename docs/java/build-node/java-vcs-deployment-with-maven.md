@@ -62,7 +62,7 @@ Proyek yang dibuat dengan opsi ini dapat secara otomatis diunggah ke Deployment 
 
   * **Config** \- membuka folder proyek build dalam [configuration file manager](<https://docs.dewacloud.com/docs/configuration-file-manager/>)
 
-  * **Log** \- membuka bagian [Log](<https://docs.dewacloud.com/docs/view-log-files/>) untuk pemecahan masalah dan analisis
+  * **Log** \- membuka bagian [Log](<https://docs.dewacloud.com/docs/log-files/>) untuk pemecahan masalah dan analisis
 
   * **Delete** \- menghapus proyek ini dari Maven
 

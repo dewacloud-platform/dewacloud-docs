@@ -4,22 +4,22 @@ slug: /ssh-management
 title: SSH Management
 ---
 # Akses SSH pada Container: Kelola Server Anda dari Manapun
-The Jelastic Platform allows establishing [SSH access](<https://docs.dewacloud.com/ssh-access/?utm_source=blog-ssh-to-container>) to any container on your account. In this guide, we’ll provide some of the most common commands that can come in handy when managing your server via SSH terminal.
+The Jelastic Platform allows establishing [SSH access](<https://docs.dewacloud.com/docs/ssh-access/?utm_source=blog-ssh-to-container>) to any container on your account. In this guide, we’ll provide some of the most common commands that can come in handy when managing your server via SSH terminal.
 
 There are two ways to connect your server inside Jelastic PaaS over SSH:
 
   * **Web SSH -** click on the same-named option next to the required environment layer or particular container to quickly access and start managing it online directly through your browser, via the automatically opened terminal tab at the bottom of Jelastic dashboard  
 <img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ssh/ssh-management/ssh-management-1.png" alt="Application Servers Web SSH" width="80%"/>
 
-  * **SSH Gate** \- alternatively, you can connect to your server via any preferred local SSH client basing on preliminary [generated](<https://docs.dewacloud.com/ssh-generate-key/?utm_source=blog-ssh-to-container>) SSH keys pair (where the public key should be [added](<https://docs.dewacloud.com/ssh-add-key/?utm_source=blog-ssh-to-container>) to your Account Settings, and the corresponding private key - being handled at your local machine) 
+  * **SSH Gate** \- alternatively, you can connect to your server via any preferred local SSH client basing on preliminary [generated](<https://docs.dewacloud.com/docs/ssh-generate-key/?utm_source=blog-ssh-to-container>) SSH keys pair (where the public key should be [added](<https://docs.dewacloud.com/docs/ssh-add-key/?utm_source=blog-ssh-to-container>) to your Account Settings, and the corresponding private key - being handled at your local machine) 
    <img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ssh/ssh-management/ssh-management-2.png" alt="SSH Keys" width="100%"/>
-   Once all the requirements are fulfilled, you can [establish an SSH connection](<https://docs.dewacloud.com/ssh-gate-access/?utm_source=blog-ssh-to-container>) by means of the corresponding command line (circled above) from the same-named tab of your account settings.
+   Once all the requirements are fulfilled, you can [establish an SSH connection](<https://docs.dewacloud.com/docs/ssh-gate-access/?utm_source=blog-ssh-to-container>) by means of the corresponding command line (circled above) from the same-named tab of your account settings.
   
   For the sake of simplicity and quick access, in this article we’ll leverage the inbuilt Web SSH tool; however, the described below commands can be used when working via remote local client absolutely similar.
 
 **Tips:**
 
-  * Within the majority of servers within Jelastic PaaS (including [custom Docker containers](<https://docs.dewacloud.com/custom-containers-deployment/?utm_source=blog-ssh-to-container>)), you are automatically granted full root permissions while connected via SSH. For the rest, mostly legacy nodes, which were created upon Jelastic-managed certified stack templates, the sufficient level of controllability is ensured with a set of additional intentionally allowed commands.
+  * Within the majority of servers within Jelastic PaaS (including [custom Docker containers](<https://docs.dewacloud.com/docs/custom-containers-deployment/?utm_source=blog-ssh-to-container>)), you are automatically granted full root permissions while connected via SSH. For the rest, mostly legacy nodes, which were created upon Jelastic-managed certified stack templates, the sufficient level of controllability is ensured with a set of additional intentionally allowed commands.
   * The full [list of terminal commands](<http://www.linfo.org/command_index.html>) with all the appropriate options description you can find at the dedicated websites, similar to the linked above. In this guide we’ll consider a number of the most common commands to give you insights on the basics of operating with containers via the SSH protocol.
 
 ## Navigation through Remote Container File System
@@ -40,7 +40,7 @@ Setelah Anda memasuki container yang diperlukan melalui konsol, Anda akan masuk 
 
 Sebagai hasilnya, string ungu di sebelah nama host container akan berubah, menunjukkan lokasi Anda saat ini.
 
-**Tip:** Jika Anda baru mengenal runtime stack yang dijalankan oleh instansi Anda, kemungkinan besar Anda ingin menjelajahi struktur internalnya terlebih dahulu (yaitu pohon file & direktori, file konfigurasi yang tersedia, dll.). Cara paling nyaman untuk mencapai ini adalah dengan menggunakan GUI [File Manager](<https://docs.dewacloud.com/configuration-file-manager/?utm_source=blog-ssh-to-container>) bawaan Jelastic, yang tersedia dengan mengklik tombol **Config** di sebelah server yang diperlukan pada panel pengembang Anda:
+**Tip:** Jika Anda baru mengenal runtime stack yang dijalankan oleh instansi Anda, kemungkinan besar Anda ingin menjelajahi struktur internalnya terlebih dahulu (yaitu pohon file & direktori, file konfigurasi yang tersedia, dll.). Cara paling nyaman untuk mencapai ini adalah dengan menggunakan GUI [File Manager](<https://docs.dewacloud.com/docs/configuration-file-manager/?utm_source=blog-ssh-to-container>) bawaan Jelastic, yang tersedia dengan mengklik tombol **Config** di sebelah server yang diperlukan pada panel pengembang Anda:
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ssh/ssh-management/ssh-management-4.png" alt="Application Servers" width="80%"/>
 
@@ -196,9 +196,9 @@ Dalam tanggapan konsol, Anda harus melihat string `{VAR_VALUE}` yang mirip denga
 
 ## Specifics of Certified Jelastic Containers Remote Management
 
-Pada Jelastic PaaS, ada 2 jenis templat [software stack](<https://docs.dewacloud.com/software-stacks-versions/?utm_source=blog-ssh-to-container>), yang digunakan sebagai dasar ketika membuat setiap container:
+Pada Jelastic PaaS, ada 2 jenis templat [software stack](<https://docs.dewacloud.com/docs/software-stacks-versions/?utm_source=blog-ssh-to-container>), yang digunakan sebagai dasar ketika membuat setiap container:
 
-  * **_dockerized_** \- model template terpadu berdasarkan [dukungan standar Docker asli](<https://docs.dewacloud.com/container-types/?utm_source=blog-ssh-to-container>) dengan prinsip manajemen dan fungsionalitas container yang umum untuk semua jenis server (yaitu terlepas dari apakah itu menghitung node, atau server basis data, atau instansi caching, dll).
+  * **_dockerized_** \- model template terpadu berdasarkan [dukungan standar Docker asli](<https://docs.dewacloud.com/docs/container-types/?utm_source=blog-ssh-to-container>) dengan prinsip manajemen dan fungsionalitas container yang umum untuk semua jenis server (yaitu terlepas dari apakah itu menghitung node, atau server basis data, atau instansi caching, dll).
 Saat terhubung ke server semacam itu melalui SSH, Anda secara otomatis mendapatkan kontrol penuh atas instansi dengan hak istimewa root yang diberikan dan dapat melakukan operasi yang diperlukan di dalam container.
 
   * **_certified_** software templates are based on native stack implementation, adapted by our team according to platform specifics. 

@@ -22,7 +22,7 @@ Dengan gelar CMS terbaik di pasar datanglah ancaman keamanan karena menjadi targ
 
 Untuk mencegah serangan semacam itu, server LiteSpeed melindungi file _**xmlrpc.php**_ dan _**wp-login.php**_ yang paling rentan. Ini juga memindahkan _Security Captcha_ dari tingkat aplikasi ke tingkat server dan mencegah upaya login yang tidak diinginkan dengan secara otomatis memblok alamat IP. Ini dicapai dengan menetapkan kuota otomatis untuk logins yang dikurangi satu setelah setiap percobaan gagal. Setelah mencapai nol, throttle, deny, atau drop permintaan akan diterapkan untuk melindungi instalasi WordPress Anda.
 
-Banyak opsi keamanan lainnya dapat dikonfigurasi untuk server LiteSpeed. Platform ini mengintegrasikan beberapa fitur paling populer yang digunakan dengan instalasi WordPress, memungkinkan pengguna untuk dengan mudah mengaktifkannya di server menggunakan [variabel lingkungan yang didedikasikan](https://docs.dewacloud.com/environment-variables/):
+Banyak opsi keamanan lainnya dapat dikonfigurasi untuk server LiteSpeed. Platform ini mengintegrasikan beberapa fitur paling populer yang digunakan dengan instalasi WordPress, memungkinkan pengguna untuk dengan mudah mengaktifkannya di server menggunakan [variabel lingkungan yang didedikasikan](https://docs.dewacloud.com/docs/environment-variables/):
 
 - _**WAF**_ - mengaktifkan (_true_) atau menonaktifkan (_false_, secara default) Web Application Firewall dengan ruleset default [Comodo](https://waf.comodo.com/)
 - _**WP_PROTECT**_ - mengkonfigurasi tindakan untuk fitur [WordPress Brute Force Attack Protection](https://www.litespeedtech.com/support/wiki/doku.php/litespeed_wiki:config:wordpress-protection) (_off|on|drop|deny|throttle|captcha_; _off_ secara default)
@@ -38,8 +38,8 @@ Periksa artikel **[WordPress Security Optimization for High-Performing Websites]
 
 ## Baca Juga{#whats-next}
 
-- [WordPress PaaS](https://docs.dewacloud.com/virtuozzo-application-platform-for-wordpress/)
-- [WordPress Dashboard](https://docs.dewacloud.com/wp-dashboard-overview/)
-- [WordPress Topologies](https://docs.dewacloud.com/wordpress-topologies/)
-- [WordPress Backups](https://docs.dewacloud.com/wordpress-backups/)
-- [WordPress PHP Optimization](https://docs.dewacloud.com/wordpress-php-optimization/)
+- [WordPress PaaS](https://docs.dewacloud.com/docs/virtuozzo-application-platform-for-wordpress/)
+- [WordPress Dashboard](https://docs.dewacloud.com/docs/wp-dashboard-overview/)
+- [WordPress Topologies](https://docs.dewacloud.com/docs/wordpress-topologies/)
+- [WordPress Backups](https://docs.dewacloud.com/docs/wordpress-backups/)
+- [WordPress PHP Optimization](https://docs.dewacloud.com/docs/wordpress-php-optimization/)

@@ -38,8 +38,6 @@ Ubuntu | ubuntu 23.04* | ubuntu-22.04-x86_64
   * Template _**[almalinux-8-x86_64](<https://docs.dewacloud.com/docs/release-notes-824/#almalinux-8-os-support>)**_ didukung sejak versi platform 8.2.4 (versi kernel _3.10.0-1160.80.1.vz7.191.4_).
   * Template _**[almalinux-9-x86_64](<https://docs.dewacloud.com/docs/release-notes-83/#almalinux-9-base-os-image>)**_ didukung sejak versi platform 8.3.1 (versi kernel _3.10.0-1160.80.1.vz7.191.4_).
 
-Untuk menjalankan containers dari jenis lain, silakan [hubungi kami](<https://docs.dewacloud.com/company/contact/>) untuk bernegosiasi dukungan OS yang sesuai.
-
 ## Supported Architectures{#supported-architectures}
 
 Saat ini, hanya arsitektur image _**amd64**_ yang didukung untuk [custom container deployment](<https://docs.dewacloud.com/docs/custom-containers-deployment/>) (dan [redeployment](<https://docs.dewacloud.com/docs/container-redeploy/>)).

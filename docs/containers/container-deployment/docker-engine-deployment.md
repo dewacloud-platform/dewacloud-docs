@@ -25,7 +25,7 @@ Anda juga dapat menginstal Docker Engine CE melalui topology wizard - cari stack
 2\. Selain pemilihan _**Docker Version**_, Anda dapat memilih dari beberapa opsi deployment saat menginstal dari Marketplace:
 
   * _**Create a clean standalone engine**_ \- menyiapkan node kosong dengan hanya Docker daemon di dalamnya. Jika diperlukan, Anda dapat memasang **Portainer UI** \- alat manajemen berbasis web tambahan
-  * _**Connect to an existing swarm cluster**_ \- secara otomatis memasukkan Docker Engine baru ini ke dalam [Docker Swarm](<https://docs.dewacloud.com/company/blog/docker-swarm-auto-clustering-and-scaling-with-paas/>) cluster yang sudah ada (memerlukan _Join Token_ dan _Host IP_ cluster yang sesuai)
+  * _**Connect to an existing swarm cluster**_ \- secara otomatis memasukkan Docker Engine baru ini ke dalam [Docker Swarm](<https://virtuozzo.com/company/blog/docker-swarm-auto-clustering-and-scaling-with-paas/>) cluster yang sudah ada (memerlukan _Join Token_ dan _Host IP_ cluster yang sesuai)
   * _**Deploy containers from compose.yml**_ \- secara otomatis menerapkan aplikasi dari repository custom yang terhubung
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/container/container-deployment/docker-engine-deployment/docker-engine-deployment-3.png" alt="Docker Engine CE package" width="100%"/>

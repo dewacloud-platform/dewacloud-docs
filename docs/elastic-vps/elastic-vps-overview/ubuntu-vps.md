@@ -12,7 +12,7 @@ title: Ubuntu VPS
 
 **[Ubuntu](https://www.ubuntu.com/)** merupakan salah satu sistem operasi paling populer untuk menjalankan virtual private server dalam Cloud. Dibangun di atas distribusi Debian Linux, Ubuntu membagikan komitmennya terhadap prinsip-prinsip software open source dan menawarkan solusi yang terus berkembang dengan kemampuan kinerja yang fleksibel, aman, dan serbaguna.
 
-Di Dewacloud, Elastic VPS berbasis Ubuntu disediakan dengan semua fungsionalitas dari [virtual machine independen](https://docs.dewacloud.com/vps/) (seperti jaminan keamanan, efisiensi biaya, dan root permission yang diberikan), mengombinasikannya dengan ekosistem Ubuntu yang andal dan kuat.
+Di Dewacloud, Elastic VPS berbasis Ubuntu disediakan dengan semua fungsionalitas dari [virtual machine independen](https://docs.dewacloud.com/docs/vps/) (seperti jaminan keamanan, efisiensi biaya, dan root permission yang diberikan), mengombinasikannya dengan ekosistem Ubuntu yang andal dan kuat.
 
 ## Hosting Ubuntu VPS{#ubuntu-vps-hosting}
 
@@ -24,16 +24,16 @@ Masuk ke dashboard Dewacloud dan buka wizard topologi environment dengan mengkli
 <img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/vps-ubuntu.png" alt="ubuntu vps topology wizard" width="100%"/>
 </p>
 
-Sesuaikan opsi lainnya (limit cloudlet, [jumlah](https://docs.dewacloud.com/horizontal-scaling/) instance server dan nama untuk environment Anda) dan klik tombol **Create**.
+Sesuaikan opsi lainnya (limit cloudlet, [jumlah](https://docs.dewacloud.com/docs/horizontal-scaling/) instance server dan nama untuk environment Anda) dan klik tombol **Create**.
 
 Itu saja! Virtual server Anda yang sepenuhnya terisolasi siap untuk dijalankan sehingga Anda dapat melanjutkan dengan pengaturan software dan layanan yang diperlukan.
 
-Untuk akses cepat ke sistem file container, penerapan beberapa konfigurasi dasar, dan melacak log melalui UI yang komprehensif, gunakan [inbuilt tools](https://docs.dewacloud.com/vps-configuration/#inbuilt-tools) dashboard platform. Untuk manajemen Ubuntu VPS yang lebih advanced, pertimbangkan untuk connect ke virtual private server melalui [SSH Gate](https://docs.dewacloud.com/vps-ssh-gate/) atau [Public IP address](https://docs.dewacloud.com/vps-public-ip/).
+Untuk akses cepat ke sistem file container, penerapan beberapa konfigurasi dasar, dan melacak log melalui UI yang komprehensif, gunakan [inbuilt tools](https://docs.dewacloud.com/docs/vps-configuration/#inbuilt-tools) dashboard platform. Untuk manajemen Ubuntu VPS yang lebih advanced, pertimbangkan untuk connect ke virtual private server melalui [SSH Gate](https://docs.dewacloud.com/docs/vps-ssh-gate/) atau [Public IP address](https://docs.dewacloud.com/docs/vps-public-ip/).
 
 ## Baca Juga{#whats-next}
 
-- [Elastic VPS Overview](https://docs.dewacloud.com/vps/)
-- [CentOS VPS](https://docs.dewacloud.com/vps-centos/)
-- [Windows VM](https://docs.dewacloud.com/win-vm/)
-- [VPS Access via SSH Gate](https://docs.dewacloud.com/vps-ssh-gate/)
-- [VPS Access via Public IP](https://docs.dewacloud.com/vps-public-ip/)
+- [Elastic VPS Overview](https://docs.dewacloud.com/docs/vps/)
+- [CentOS VPS](https://docs.dewacloud.com/docs/vps-centos/)
+- [Windows VM](https://docs.dewacloud.com/docs/win-vm/)
+- [VPS Access via SSH Gate](https://docs.dewacloud.com/docs/vps-ssh-gate/)
+- [VPS Access via Public IP](https://docs.dewacloud.com/docs/vps-public-ip/)

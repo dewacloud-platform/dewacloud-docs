@@ -61,7 +61,7 @@ Di bawah ini, kami telah memberikan deskripsi rinci untuk semua opsi yang mungki
 
 Klik **Deploy** untuk memulai proses.
 
-Dalam beberapa menit, aplikasi Anda akan berhasil dideploy. Sekarang, Anda dapat mengaksesnya dengan tombol **Open in Browser**, menganalisis melalui [Logs](https://docs.dewacloud.com/docs/view-log-files/), atau mengelolanya dengan [file manager](https://docs.dewacloud.com/docs/configuration-file-manager/) / melalui [akses SSH](https://docs.dewacloud.com/docs/ssh-access/).
+Dalam beberapa menit, aplikasi Anda akan berhasil dideploy. Sekarang, Anda dapat mengaksesnya dengan tombol **Open in Browser**, menganalisis melalui [Logs](https://docs.dewacloud.com/docs/log-files/), atau mengelolanya dengan [file manager](https://docs.dewacloud.com/docs/configuration-file-manager/) / melalui [akses SSH](https://docs.dewacloud.com/docs/ssh-access/).
 
 ## Editing Git / SVN Projects{#editing-git--svn-projects}
 

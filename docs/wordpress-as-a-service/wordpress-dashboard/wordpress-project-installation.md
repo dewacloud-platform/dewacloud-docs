@@ -58,7 +58,7 @@ Klik **Continue** untuk membuat langganan baru Anda dan tambahkan proyek dengan 
 
 ![project installing](#)
 
-Sekarang Anda dapat melanjutkan ke panduan [Project Management](https://docs.dewacloud.com/wp-dashboard-project-management/).
+Sekarang Anda dapat melanjutkan ke panduan [Project Management](https://docs.dewacloud.com/docs/wp-dashboard-project-management/).
 
 ## Staging Project{#staging-project}
 
@@ -94,10 +94,10 @@ Proyek akan dihapus segera setelah konfirmasi.
 
 ## Baca Juga{#whats-next}
 
-- [WordPress PaaS](https://docs.dewacloud.com/virtuozzo-application-platform-for-wordpress/)
-- [WordPress Dashboard Overview](https://docs.dewacloud.com/wp-dashboard-overview/)
-- [WordPress Project Management](https://docs.dewacloud.com/wp-dashboard-project-management/)
-- [WordPress Topologies](https://docs.dewacloud.com/wordpress-topologies/)
-- [WordPress Backups](https://docs.dewacloud.com/wordpress-backups/)
-- [WordPress Security](https://docs.dewacloud.com/wordpress-security/)
-- [WordPress PHP Optimization](https://docs.dewacloud.com/wordpress-php-optimization/)
+- [WordPress PaaS](https://docs.dewacloud.com/docs/virtuozzo-application-platform-for-wordpress/)
+- [WordPress Dashboard Overview](https://docs.dewacloud.com/docs/wp-dashboard-overview/)
+- [WordPress Project Management](https://docs.dewacloud.com/docs/wp-dashboard-project-management/)
+- [WordPress Topologies](https://docs.dewacloud.com/docs/wordpress-topologies/)
+- [WordPress Backups](https://docs.dewacloud.com/docs/wordpress-backups/)
+- [WordPress Security](https://docs.dewacloud.com/docs/wordpress-security/)
+- [WordPress PHP Optimization](https://docs.dewacloud.com/docs/wordpress-php-optimization/)

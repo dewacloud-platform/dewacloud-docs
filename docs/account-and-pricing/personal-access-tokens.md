@@ -73,7 +73,7 @@ Penggunaan access tokens terutama menyederhanakan autentikasi permintaan API, ka
 
 1\. Cukup jalankan metode API yang diperlukan, dengan menentukan _**token**_ Anda dalam parameter _**session**_.
 
-Sebagai contoh, Anda dapat [menghentikan lingkungan](https://docs.dewacloud.com/api/#!/api/environment.Control-method-StopEnv) dengan memasukkan URL berikut ke browser:
+Sebagai contoh, Anda dapat [menghentikan lingkungan](https://docs.jelastic.com/api/#!/api/environment.Control-method-StopEnv) dengan memasukkan URL berikut ke browser:
 
 `https://app.${platformDomain}/1.0/environment/control/rest/stopenv?envName=${envName}&session=${token}`
 

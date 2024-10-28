@@ -21,7 +21,7 @@ Jadi, hari ini kita akan membahas cara meng-host CMS seperti itu di Jelastic Paa
 
 ## Create Python Environment{#create-python-environment}
 
-Untuk meng-host Mezzanine CMS, Anda memerlukan server aplikasi berbasis Python. Mari [buat](<https://docs.dewacloud.com/setting-up-environment/>) environment baru dengan node Apache Python:
+Untuk meng-host Mezzanine CMS, Anda memerlukan server aplikasi berbasis Python. Mari [buat](<https://docs.dewacloud.com/docs/setting-up-environment/>) environment baru dengan node Apache Python:
 
 1\. Klik tombol **New Environment** di bagian atas dashboard untuk mengakses topology wizard.
 
@@ -35,7 +35,7 @@ Untuk meng-host Mezzanine CMS, Anda memerlukan server aplikasi berbasis Python. 
 Mezzanine CMS belum mendukung **_Python 3.7_**, dan juga tidak mendukung **_Python 2.7_** setelah rilis _1.4_. Oleh karena itu, disarankan untuk memilih antara versi engine **_3.4-3.6_**.
 :::
 
-Jika diperlukan, konfigurasikan pengaturan lainnya (misalnya [cloudlet limit](<https://docs.dewacloud.com/automatic-vertical-scaling/>), [public IPs](<https://docs.dewacloud.com/public-ip/>), [region](<https://docs.dewacloud.com/environment-regions/>), dll.), ketik nama environment dan klik **Create**.
+Jika diperlukan, konfigurasikan pengaturan lainnya (misalnya [cloudlet limit](<https://docs.dewacloud.com/docs/automatic-vertical-scaling/>), [public IPs](<https://docs.dewacloud.com/docs/public-ip/>), [region](<https://docs.dewacloud.com/docs/environment-regions/>), dll.), ketik nama environment dan klik **Create**.
 
 3\. Environment Anda akan muncul di dashboard dalam beberapa saat.
 
@@ -53,13 +53,13 @@ Jika mengonfigurasi archive deployment sendiri, pastikan paket Mezzanine CMS And
   * file **_wsgi.py_** dengan skrip entry point untuk menjalankan aplikasi Anda di dalam virtual environment menggunakan _mod_wsgi_ untuk Apache
 :::
 
-1\. Tambahkan archive aplikasi ke [deployment manager](<https://docs.dewacloud.com/deployment-manager/>) melalui tautan berikut:
+1\. Tambahkan archive aplikasi ke [deployment manager](<https://docs.dewacloud.com/docs/deployment-manager/>) melalui tautan berikut:
 
 [_https://download.jelastic.com/public.php?service=files&t=3d6fa1ed641a044c6a291bbeaa6c333c&download_](<https://download.jelastic.com/public.php?service=files&t=3d6fa1ed641a044c6a291bbeaa6c333c&download>)
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/upload-archive.png" alt="deploy mezzanine python" width="60%"/>
 
-2\. [Deploy](<https://docs.dewacloud.com/deployment-guide/#archive>) Mezzanine CMS ke dalam environment dengan server aplikasi Apache Python.
+2\. [Deploy](<https://docs.dewacloud.com/docs/deployment-guide/#archive>) Mezzanine CMS ke dalam environment dengan server aplikasi Apache Python.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/deploy-mezzanine-cms.png" alt="python application deployment" width="60%"/>
 
@@ -79,7 +79,7 @@ Proses deployment Mezzanine CMS dapat dibagi menjadi tiga langkah: instalasi, ko
 
 ### Install Mezzanine CMS{#install-mezzanine-cms}
 
-1\. Hubungkan ke server aplikasi Anda melalui [**Web SSH**](<https://docs.dewacloud.com/web-ssh-client/>).
+1\. Hubungkan ke server aplikasi Anda melalui [**Web SSH**](<https://docs.dewacloud.com/docs/web-ssh-client/>).
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/mezzanine-cms-web-ssh.png" alt="mezzanine postgresql" width="100%"/>
 

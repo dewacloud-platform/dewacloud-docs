@@ -20,7 +20,7 @@ Platform ini mengintegrasikan dukungan untuk virtual machines (VMs), yang memung
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/windows-&-.net/windows-server-vm/02-windows-vm-resource-plans.png" alt="Windows VM resource plans" width="100%"/>
 
-Juga, perhatikan bahwa opsi _[horizontal scaling](https://docs.dewacloud.com/horizontal-scaling/)_ dan _IPv6_ tidak tersedia untuk virtual machines.
+Juga, perhatikan bahwa opsi _[horizontal scaling](https://docs.dewacloud.com/docs/horizontal-scaling/)_ dan _IPv6_ tidak tersedia untuk virtual machines.
 
 3. Jika VM ditambahkan ke topologi, garis tambahan _**VM Resources**_ muncul di bagian kanan wizard (tepat di bawah informasi cloudlets untuk container).
 
@@ -69,7 +69,7 @@ Mari kita tinjau opsi-opsi ini secara terperinci.
 
 5. Selain web client bawaan, Anda dapat terhubung menggunakan aplikasi RDP lokal yang Anda pilih. Terhubung ke VM berdasarkan entry point-nya:
 
-- Jika dibuat __tanpa external IP__, [endpoint](https://docs.dewacloud.com/endpoints/) dibuat secara otomatis dan dapat digunakan untuk koneksi RDP <img src="https://assets.dewacloud.com/dewacloud-docs/windows-&-.net/windows-server-vm/10-windows-vm-endpoint-for-rdp.png" alt="Windows VM endpoint for RDP" width="100%"/>
+- Jika dibuat __tanpa external IP__, [endpoint](https://docs.dewacloud.com/docs/endpoints/) dibuat secara otomatis dan dapat digunakan untuk koneksi RDP <img src="https://assets.dewacloud.com/dewacloud-docs/windows-&-.net/windows-server-vm/10-windows-vm-endpoint-for-rdp.png" alt="Windows VM endpoint for RDP" width="100%"/>
   
 - Jika __public IP terpasang__, Anda dapat menggunakannya secara langsung sebagai host VM
 
@@ -85,6 +85,6 @@ Itu semua yang Anda butuhkan untuk mengelola Windows VM di platform. Lihat [doku
 
 ## Baca Juga{#whats-next}
 
-- [.NET Core (Beta)](https://docs.dewacloud.com/net-core/)
-- [Windows RD Access](https://docs.dewacloud.com/win-rdp-access/)
-- [Windows Roles & Features](https://docs.dewacloud.com/win-vps-roles-features/)
+- [.NET Core (Beta)](https://docs.dewacloud.com/docs/net-core/)
+- [Windows RD Access](https://docs.dewacloud.com/docs/win-rdp-access/)
+- [Windows Roles & Features](https://docs.dewacloud.com/docs/win-vps-roles-features/)

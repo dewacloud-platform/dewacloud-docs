@@ -45,7 +45,7 @@ Mari mulai eksplorasi mendetail dari dashboard platform:
 
 2. **Topology Wizard** akan terbuka, di mana Anda bisa sepenuhnya menyesuaikan pengaturan environment Anda.
 
-Kemungkinan penuh dari jendela ini dijelaskan di artikel [Setting Up Environment](https://docs.dewacloud.com/setting-up-environment/).
+Kemungkinan penuh dari jendela ini dijelaskan di artikel [Setting Up Environment](https://docs.dewacloud.com/docs/setting-up-environment/).
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/dashboard-guide/02-env-topology-wizard.png" alt="environment topology wizard" width="100%"/>
 
@@ -57,10 +57,10 @@ Setelah menyelesaikan konfigurasi, ketik _Environment Name_ Anda, dan klik tombo
 
 Anda dapat menemukan informasi berikut pada kolom:
 
-- **Name** - mencakup nama (atau [alias](https://docs.dewacloud.com/environment-aliases/) jika ditentukan) dari environment dan domennya. Dengan menggunakan ikon _arrow_ sebelum nama environment, Anda bisa memperluas daftar node yang ada di dalamnya.
+- **Name** - mencakup nama (atau [alias](https://docs.dewacloud.com/docs/environment-aliases/) jika ditentukan) dari environment dan domennya. Dengan menggunakan ikon _arrow_ sebelum nama environment, Anda bisa memperluas daftar node yang ada di dalamnya.
 - **Status** - menunjukkan status terkini dari environment Anda (_Running_, _Sleeping_, _Stopped_, _Creating_, _Launching_, _Stopping_, _Cloning_, _Redeploying_, _Exporting_, _Installing_, _Migrating_, _Deleting_).
-- **Tags** - menampilkan _[Environment Groups](https://docs.dewacloud.com/docs#environment-groups)_ dan [region](https://docs.dewacloud.com/environment-regions/) dari environment ini, versi (_tags_) dari container, dan nama dari _project_ yang dideploy.
-- **Usage** - menunjukkan beban saat ini (misal: penggunaan cloudlets dan ruang disk). Anda juga dapat menemukan tombol _**Billing History**_ ![billing history icon](https://assets.dewacloud.com/dewacloud-docs/quickstart/dashboard-guide/04-billing-history-icon.png) di sini, yang mengarah ke tab terpisah dengan [statistik pengeluaran Anda](https://docs.dewacloud.com/monitoring-consumed-resources/#billing-history) pada environment saat ini.
+- **Tags** - menampilkan _[Environment Groups](#environment-groups)_ dan [region](https://docs.dewacloud.com/docs/environment-regions/) dari environment ini, versi (_tags_) dari container, dan nama dari _project_ yang dideploy.
+- **Usage** - menunjukkan beban saat ini (misal: penggunaan cloudlets dan ruang disk). Anda juga dapat menemukan tombol _**Billing History**_ ![billing history icon](https://assets.dewacloud.com/dewacloud-docs/quickstart/dashboard-guide/04-billing-history-icon.png) di sini, yang mengarah ke tab terpisah dengan [statistik pengeluaran Anda](https://docs.dewacloud.com/docs/monitoring-consumed-resources/#billing-history) pada environment saat ini.
 
 ## Function Icons for Environments{#function-icons-for-environments}
 
@@ -84,8 +84,8 @@ Opsi ini mungkin tidak tersedia jika environment Anda tidak termasuk server apli
 
 Informasi lebih lanjut:
 
-- [Clone Environment](https://docs.dewacloud.com/clone-environment/)
-- [Application Lifecycle Management](https://docs.dewacloud.com/how-to-manage-application-lifecycle/)
+- [Clone Environment](https://docs.dewacloud.com/docs/clone-environment/)
+- [Application Lifecycle Management](https://docs.dewacloud.com/docs/how-to-manage-application-lifecycle/)
 
 6. Untuk mengubah status environment, gunakan tombol **Start** ![start environment icon](https://assets.dewacloud.com/dewacloud-docs/quickstart/dashboard-guide/11-start-environment-icon.png) dan **Stop** ![stop environment icon](https://assets.dewacloud.com/dewacloud-docs/quickstart/dashboard-guide/12-stop-environment-icon.png).
 
@@ -100,7 +100,7 @@ Saat environment dihentikan, hanya tombol Settings, Clone Environment, Start, da
 
 8. Arahkan kursor ke kolom _**Tags**_ untuk mengelola [grup dari environment ini](https://www.virtuozzo.com/application-platform-docs/#environment-groups) dengan tombol **Add/Edit Env Group** (![add env group icon](https://assets.dewacloud.com/dewacloud-docs/quickstart/dashboard-guide/15-add-env-group-icon.png) atau ![edit env groups icon](https://assets.dewacloud.com/dewacloud-docs/quickstart/dashboard-guide/16-edit-env-groups-icon.png) masing-masing).
 
-Untuk platform dengan beberapa [regions](https://docs.dewacloud.com/environment-regions/), setiap environment memiliki ikon region khusus di kolom **Tags**. Ini memungkinkan Anda memisahkan instance yang dihosting di server perangkat keras yang berbeda secara visual, dan dengan mengkliknya, hanya menampilkan environment di region yang sesuai.
+Untuk platform dengan beberapa [regions](https://docs.dewacloud.com/docs/environment-regions/), setiap environment memiliki ikon region khusus di kolom **Tags**. Ini memungkinkan Anda memisahkan instance yang dihosting di server perangkat keras yang berbeda secara visual, dan dengan mengkliknya, hanya menampilkan environment di region yang sesuai.
 
 ## Environment Settings{#environment-settings}
 
@@ -112,20 +112,20 @@ Terdapat dua belas opsi di tab environment _**Settings**_: _Custom Domains_, _Cu
 
 Informasi lebih lanjut:
 
-- [Custom Domain Name](https://docs.dewacloud.com/custom-domains/)
-- [Swap Domains](https://docs.dewacloud.com/swap-domains/)
-- [Application Lifecycle Management](https://docs.dewacloud.com/how-to-manage-application-lifecycle/)
+- [Custom Domain Name](https://docs.dewacloud.com/docs/custom-domains/)
+- [Swap Domains](https://docs.dewacloud.com/docs/swap-domains/)
+- [Application Lifecycle Management](https://docs.dewacloud.com/docs/how-to-manage-application-lifecycle/)
 
 2. Pilih opsi **Custom SSL** dan unggah file yang diperlukan untuk menerapkan sertifikat SSL kustom Anda.
 
-**Catatan:** Fitur ini hanya dapat dikonfigurasi untuk server aplikasi dan load balancer yang telah tersertifikasi dengan [public IP](https://docs.dewacloud.com/public-ip/) yang terpasang.
+**Catatan:** Fitur ini hanya dapat dikonfigurasi untuk server aplikasi dan load balancer yang telah tersertifikasi dengan [public IP](https://docs.dewacloud.com/docs/public-ip/) yang terpasang.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/dashboard-guide/18-custom-ssl-settings.png" alt="custom ssl settings" width="100%"/>
 
 Informasi lebih lanjut:
 
-- [Self-Signed Custom SSL](https://docs.dewacloud.com/self-signed-ssl/)
-- [Custom SSL](https://docs.dewacloud.com/custom-ssl/)
+- [Self-Signed Custom SSL](https://docs.dewacloud.com/docs/self-signed-ssl/)
+- [Custom SSL](https://docs.dewacloud.com/docs/custom-ssl/)
 
 3. Dalam bagian **SSH Access**, Anda dapat melihat tab **Public Keys**, **SSH Connection**, dan **SFTP / Direct SSH Access**. Yang pertama memungkinkan pengelolaan [public SSH keys](https://www.virtuozzo.com/application-platform-docs/ssh-add-key/). Yang kedua menunjukkan cara mengakses environment Anda (baik melalui _SSH Gate_ atau _Web SSH_). Yang ketiga menyediakan rincian tentang koneksi melalui protokol SFTP/FISH.
 
@@ -133,11 +133,11 @@ Informasi lebih lanjut:
 
 Informasi lebih lanjut:
 
-- [SSH Gate](https://docs.dewacloud.com/ssh-gate/)
-- [Add SSH Key](https://docs.dewacloud.com/ssh-add-key/)
-- [SSH Access via Web Browser](https://docs.dewacloud.com/web-ssh-client/)
-- [SSH Access via Local Client](https://docs.dewacloud.com/ssh-gate-access/)
-- [SSH Protocols](https://docs.dewacloud.com/ssh-protocols/)
+- [SSH Gate](https://docs.dewacloud.com/docs/ssh-gate/)
+- [Add SSH Key](https://docs.dewacloud.com/docs/ssh-add-key/)
+- [SSH Access via Web Browser](https://docs.dewacloud.com/docs/web-ssh-client/)
+- [SSH Access via Local Client](https://docs.dewacloud.com/docs/ssh-gate-access/)
+- [SSH Protocols](https://docs.dewacloud.com/docs/ssh-protocols/)
 
 4. Di dalam bagian **Endpoints**, Anda dapat mengelola pemetaan port TCP/UDP dari container Anda untuk memastikan kolaborasi mereka dengan sumber daya eksternal melalui koneksi langsung.
 
@@ -165,7 +165,7 @@ Informasi lebih lanjut: [Load Alerts](https://www.virtuozzo.com/application-plat
 
 Beralih ke tab History untuk melihat daftar semua operasi scaling yang dilakukan oleh platform karena pemicu yang dikonfigurasikan.
 
-Informasi lebih lanjut: [Automatic Horizontal Scaling](https://docs.dewacloud.com/automatic-horizontal-scaling/)
+Informasi lebih lanjut: [Automatic Horizontal Scaling](https://docs.dewacloud.com/docs/automatic-horizontal-scaling/)
 
 8. Dalam bagian **Collaboration**, Anda dapat melihat dan mengelola daftar akun yang memiliki akses ke environment saat ini.
 
@@ -181,13 +181,13 @@ Informasi lebih lanjut: [Account Collaboration](https://www.virtuozzo.com/applic
 
 Informasi lebih lanjut: [Environment Transferring](https://www.virtuozzo.com/application-platform-docs/environment-transferred/)
 
-10. Pilih **Migration** untuk memindahkan environment Anda ke perangkat keras lain ([region](https://docs.dewacloud.com/environment-regions/)).
+10. Pilih **Migration** untuk memindahkan environment Anda ke perangkat keras lain ([region](https://docs.dewacloud.com/docs/environment-regions/)).
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/dashboard-guide/26-migration-settings.png" alt="migration settings" width="100%"/>
 
 **Catatan:** Ketersediaan opsi ini, serta akses ke setiap region environment tertentu, tergantung pada pengaturan penyedia hosting Anda.
 
-Informasi lebih lanjut: [Environment Migration between Regions](https://docs.dewacloud.com/environment-regions-migration/)
+Informasi lebih lanjut: [Environment Migration between Regions](https://docs.dewacloud.com/docs/environment-regions-migration/)
 
 11. Pilih **Export** untuk mengemas semua pengaturan dan data environment Anda ke dalam satu file yang dapat diunduh. Selanjutnya, file ini dapat dipulihkan di platform penyedia hosting lain, menciptakan salinan environment yang identik.
 
@@ -197,11 +197,11 @@ Informasi lebih lanjut: [Environment Migration between Regions](https://docs.dew
 
 Informasi lebih lanjut:
 
-- [Environment Export](https://docs.dewacloud.com/environment-export/)
-- [Environment Import](https://docs.dewacloud.com/environment-import/)
+- [Environment Export](https://docs.dewacloud.com/docs/environment-export/)
+- [Environment Import](https://docs.dewacloud.com/docs/environment-import/)
 
 12. Beralih ke bagian **Info** untuk melihat informasi tambahan tentang _Domain_ environment, _Owner_ dan _Creator_ (dapat berbeda karena fitur [account collaboration](https://www.virtuozzo.com/application-platform-docs/account-collaboration/)),
-_[Region](https://docs.dewacloud.com/environment-regions/)_, dan _Creation Date_.
+_[Region](https://docs.dewacloud.com/docs/environment-regions/)_, dan _Creation Date_.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/dashboard-guide/28-info-settings.png" alt="info settings" width="100%"/>
 
@@ -209,7 +209,7 @@ Itulah semua pengaturan environment.
 
 ## Function Icons for Each Instance{#function-icons-for-each-instance}
 
-Klik pada environment di dashboard untuk melihat daftar [layers](https://docs.dewacloud.com/concept-and-terminology/#layer) (load balancers, application servers, databases, dll.). Anda dapat lebih lanjut memperluas kelompok node ini untuk melihat dan mengelola container terpisah, konteks yang terdeploy, dan IP alamat yang terlampir.
+Klik pada environment di dashboard untuk melihat daftar [layers](https://docs.dewacloud.com/docs/concept-and-terminology/#layer) (load balancers, application servers, databases, dll.). Anda dapat lebih lanjut memperluas kelompok node ini untuk melihat dan mengelola container terpisah, konteks yang terdeploy, dan IP alamat yang terlampir.
 
 Arahkan kursor ke layer atau container tertentu untuk melihat ikon pop-up dengan fungsi berbeda.
 
@@ -217,16 +217,16 @@ Arahkan kursor ke layer atau container tertentu untuk melihat ikon pop-up dengan
 
 Gunakan opsi ini untuk melakukan tindakan berikut:
 
-- Klik tombol **Set Alias** untuk mengkonfigurasi [nama alternatif](https://docs.dewacloud.com/environment-aliases/) untuk layer/node Anda (misalnya, untuk mendefinisikan primary dan secondary server dalam cluster DB).
+- Klik tombol **Set Alias** untuk mengkonfigurasi [nama alternatif](https://docs.dewacloud.com/docs/environment-aliases/) untuk layer/node Anda (misalnya, untuk mendefinisikan primary dan secondary server dalam cluster DB).
 - Gunakan **Open in Browser** untuk mengakses node dari layer dalam tab baru di browser (dapat tersembunyi untuk beberapa stacks, misal: _Shared Storage_ atau node build _Maven_).
 - Pilih opsi **Restart Node(s)** untuk me-restart layanan yang sesuai di dalam container tertentu atau semua container dari layer.
-- Pilih opsi **Config** untuk membuka [configuration file manager](https://docs.dewacloud.com/configuration-file-manager/) yang dapat menyesuaikan node dengan [mounting data](https://docs.dewacloud.com/mount-points/), membuat/mengunggah file baru, dan memodifikasi/menghapus yang sudah ada.
-- Pilih opsi **Log** untuk melihat log file untuk node dari layer. Daftar [log file](https://docs.dewacloud.com/view-log-files/) berbeda berdasarkan instance yang dipilih.
-- Klik tombol **Statistics** untuk [melacak data](https://docs.dewacloud.com/view-app-statistics/) pada konsumsi CPU, RAM, Network, ruang Disk, dan IOPS untuk node terpisah atau satu set node secara real-time.
-- Pilih opsi **Web SSH** untuk terhubung ke [container melalui SSH](https://docs.dewacloud.com/web-ssh-client/) protokol langsung di browser.
-- Gunakan opsi **Redeploy Container(s)** untuk [memperbarui node](https://docs.dewacloud.com/container-redeploy/) ke tag (versi) yang diinginkan.
-- Beberapa node dapat memiliki opsi tambahan, seperti **Add-Ons** (untuk menginstal modul pluggable) atau **Remote Desktop** (untuk [mengelola seluruh node berbasis Windows](https://docs.dewacloud.com/win-rdp-access/)).
-- Daftar **Additionally** memungkinkan Anda mengonfigurasi [pengaturan container](https://docs.dewacloud.com/container-configuration/) (_Variables_, _Links_, _Volumes_, _CMD / Entry Point_), melihat rincian _SFTP / Direct SSH Access_, dan mengakses fungsionalitas _Scaling Nodes_. Juga, tergantung pada node, itu bisa berisi opsi lain (misalnya, _Reset Password_ atau _Admin Panel Login_).
+- Pilih opsi **Config** untuk membuka [configuration file manager](https://docs.dewacloud.com/docs/configuration-file-manager/) yang dapat menyesuaikan node dengan [mounting data](https://docs.dewacloud.com/docs/mount-points/), membuat/mengunggah file baru, dan memodifikasi/menghapus yang sudah ada.
+- Pilih opsi **Log** untuk melihat log file untuk node dari layer. Daftar [log file](https://docs.dewacloud.com/docs/log-files/) berbeda berdasarkan instance yang dipilih.
+- Klik tombol **Statistics** untuk [melacak data](https://docs.dewacloud.com/docs/view-app-statistics/) pada konsumsi CPU, RAM, Network, ruang Disk, dan IOPS untuk node terpisah atau satu set node secara real-time.
+- Pilih opsi **Web SSH** untuk terhubung ke [container melalui SSH](https://docs.dewacloud.com/docs/web-ssh-client/) protokol langsung di browser.
+- Gunakan opsi **Redeploy Container(s)** untuk [memperbarui node](https://docs.dewacloud.com/docs/container-redeploy/) ke tag (versi) yang diinginkan.
+- Beberapa node dapat memiliki opsi tambahan, seperti **Add-Ons** (untuk menginstal modul pluggable) atau **Remote Desktop** (untuk [mengelola seluruh node berbasis Windows](https://docs.dewacloud.com/docs/win-rdp-access/)).
+- Daftar **Additionally** memungkinkan Anda mengonfigurasi [pengaturan container](https://docs.dewacloud.com/docs/container-configuration/) (_Variables_, _Links_, _Volumes_, _CMD / Entry Point_), melihat rincian _SFTP / Direct SSH Access_, dan mengakses fungsionalitas _Scaling Nodes_. Juga, tergantung pada node, itu bisa berisi opsi lain (misalnya, _Reset Password_ atau _Admin Panel Login_).
 
 ## Import{#import}
 
@@ -248,7 +248,7 @@ Dalam bingkai **Import** yang terbuka, Anda akan melihat tiga tab berikut (dan t
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/dashboard-guide/31-import-dialog-window.png" alt="import dialog window" width="100%"/>
 
-Untuk ikhtisar terperinci, periksa dokumen [Environment Import](https://docs.dewacloud.com/environment-import/).
+Untuk ikhtisar terperinci, periksa dokumen [Environment Import](https://docs.dewacloud.com/docs/environment-import/).
 
 ## Marketplace{#marketplace}
 
@@ -266,7 +266,7 @@ Periksa artikel [Marketplace](https://www.virtuozzo.com/application-platform-doc
 
 ## Environment Groups{#environment-groups}
 
-Platform ini menyediakan kemungkinan untuk membuat **[Environment Groups](https://docs.dewacloud.com/environment-groups/)**, yang membantu mengkategorikan environment Anda. Misalnya, administrasi beberapa proyek menjadi lebih sederhana ketika masing-masing diorganisasi ke dalam grup environment khusus. Jika perlu, Anda dapat menerapkan pembagian lebih lanjut dengan membuat subgroup, misalnya _development/testing/production_, _servers/databases/storages_, dll.
+Platform ini menyediakan kemungkinan untuk membuat **[Environment Groups](https://docs.dewacloud.com/docs/environment-groups/)**, yang membantu mengkategorikan environment Anda. Misalnya, administrasi beberapa proyek menjadi lebih sederhana ketika masing-masing diorganisasi ke dalam grup environment khusus. Jika perlu, Anda dapat menerapkan pembagian lebih lanjut dengan membuat subgroup, misalnya _development/testing/production_, _servers/databases/storages_, dll.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/dashboard-guide/34-environment-groups.png" alt="environment groups" width="50%"/>
 
@@ -277,9 +277,9 @@ Biasanya, environment pada akun yang sama dapat diakses satu sama lain melalui j
 
 Informasi lebih lanjut:
 
-- [Group Creation](https://docs.dewacloud.com/environment-groups-creation/)
-- [Navigation Across Groups](https://docs.dewacloud.com/environment-groups-navigation/)
-- [Group Management](https://docs.dewacloud.com/environment-groups-management/)
+- [Group Creation](https://docs.dewacloud.com/docs/environment-groups-creation/)
+- [Navigation Across Groups](https://docs.dewacloud.com/docs/environment-groups-navigation/)
+- [Group Management](https://docs.dewacloud.com/docs/environment-groups-management/)
 
 ## Dashboard Search{#dashboard-search}
 
@@ -290,7 +290,7 @@ Platform ini menyediakan fungsi pencarian bawaan di dalam dashboard. Fungsi utam
 Mesin pencarian yang diimplementasikan dapat dipersonalisasikan untuk memenuhi kebutuhan spesifik Anda dan memberikan hasil paling akurat untuk permintaan Anda. Di antara opsi utama:
 
 - _karakter khusus_ untuk ekspresi pencarian (misal: awalan “_**-**_” untuk mengecualikan istilah atau _"*****"_ wildcard)
-- _sumber pencarian_ (baik seluruh akun atau [grup environment](https://docs.dewacloud.com/environment-groups/) saat ini)
+- _sumber pencarian_ (baik seluruh akun atau [grup environment](https://docs.dewacloud.com/docs/environment-groups/) saat ini)
 - _filter kategori_ untuk mencari di antara entitas yang dipilih (misal: mengecualikan paket Marketplace atau mencari hanya untuk IP)
 
 Detail tambahan dapat ditemukan di petunjuk _help_ untuk formulir pencarian (dilingkari dalam gambar di atas).
@@ -299,10 +299,10 @@ Detail tambahan dapat ditemukan di petunjuk _help_ untuk formulir pencarian (dil
 
 **Deployment Manager** terletak di bagian bawah dashboard. Ini menyimpan aplikasi untuk mengotomatisasi deployment mereka ke environment Anda. Ada dua subbagian di dalam tab:
 
-- _**[Archive](https://docs.dewacloud.com/deployment-manager/#application-archives)**_ - menyimpan paket aplikasi itu sendiri, **Upload** dari mesin lokal Anda (_Local File_) atau melalui tautan eksternal (_URL_)
-- _**[Git / SVN](https://docs.dewacloud.com/deployment-manager/#git--svn-projects)**_ - menyimpan kredensial akses ke proyek Anda di repositori Git / SVN jarak jauh; klik tombol **Add Repo** dan tentukan detail yang diperlukan
+- _**[Archive](https://docs.dewacloud.com/docs/deployment-manager/#application-archives)**_ - menyimpan paket aplikasi itu sendiri, **Upload** dari mesin lokal Anda (_Local File_) atau melalui tautan eksternal (_URL_)
+- _**[Git / SVN](https://docs.dewacloud.com/docs/deployment-manager/#git--svn-projects)**_ - menyimpan kredensial akses ke proyek Anda di repositori Git / SVN jarak jauh; klik tombol **Add Repo** dan tentukan detail yang diperlukan
 
-Setelah paket Anda ditambahkan ke Deployment Manager, paket itu dapat [deploy secara otomatis](https://docs.dewacloud.com/deployment-guide/) ke environment yang diperlukan dengan mengikuti panduan yang ditautkan.
+Setelah paket Anda ditambahkan ke Deployment Manager, paket itu dapat [deploy secara otomatis](https://docs.dewacloud.com/docs/deployment-guide/) ke environment yang diperlukan dengan mengikuti panduan yang ditautkan.
 
 :::note
 Jenis deployment VCS untuk server aplikasi Java dilakukan dengan bantuan node build Maven, proses deployment .NET untuk server aplikasi IIS berbasis Windows berbeda dari aliran standar.
@@ -351,20 +351,20 @@ Klik tombol **Settings** di sudut kanan atas dashboard untuk mengakses konfigura
 
 Di sini, Anda dapat menemukan bagian berikut: _Account_, _Access Tokens_, _SSH Keys / SSH Access_, dan _Collaboration_.
 
-1. Bagian _**Account**_ memungkinkan pengaturan [two-factor authentication](https://docs.dewacloud.com/two-factor-authentication/) untuk akun Anda, serta mengubah kata sandi.
+1. Bagian _**Account**_ memungkinkan pengaturan [two-factor authentication](https://docs.dewacloud.com/docs/two-factor-authentication/) untuk akun Anda, serta mengubah kata sandi.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/dashboard-guide/41-account-user-settings.png" alt="account user settings" width="100%"/>
 
-2. Di dalam tab _**Access Tokens**_, Anda dapat mengonfigurasi [personal access tokens](https://docs.dewacloud.com/personal-access-tokens/) untuk akun Anda.
+2. Di dalam tab _**Access Tokens**_, Anda dapat mengonfigurasi [personal access tokens](https://docs.dewacloud.com/docs/personal-access-tokens/) untuk akun Anda.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/dashboard-guide/42-access-tokens-user-settings.png" alt="access tokens user settings" width="100%"/>
 
 3. Poin _**SSH Keys**_ dan _**SSH Access**_ membuka bagian dengan empat sub-tab:
 
-- **Public Keys** - menyimpan [public keys](https://docs.dewacloud.com/ssh-add-key/) yang ditambahkan ke platform (diperlukan untuk akses jarak jauh melalui klien SSH lokal)
-- **Private Keys** - mencantumkan [private keys](https://docs.dewacloud.com/git-ssh/#add-private-ssh-key-to-platform-account) yang ditambahkan ke platform (diperlukan untuk akses ke repositori Git pribadi Anda melalui SSH)
-- **SSH Connection** - menunjukkan langkah yang diperlukan untuk terhubung ke akun Anda melalui _[SSH Gate](https://docs.dewacloud.com/ssh-gate-access/)_ dan memungkinkan akses ke node tertentu langsung di browser menggunakan _[Web SSH](https://docs.dewacloud.com/web-ssh-client/)_
-- **SFTP / Direct SSH Access** - menampilkan data koneksi untuk [protokol SFTP/FISH](https://docs.dewacloud.com/ssh-protocols/)
+- **Public Keys** - menyimpan [public keys](https://docs.dewacloud.com/docs/ssh-add-key/) yang ditambahkan ke platform (diperlukan untuk akses jarak jauh melalui klien SSH lokal)
+- **Private Keys** - mencantumkan [private keys](https://docs.dewacloud.com/docs/git-ssh/#add-private-ssh-key-to-platform-account) yang ditambahkan ke platform (diperlukan untuk akses ke repositori Git pribadi Anda melalui SSH)
+- **SSH Connection** - menunjukkan langkah yang diperlukan untuk terhubung ke akun Anda melalui _[SSH Gate](https://docs.dewacloud.com/docs/ssh-gate-access/)_ dan memungkinkan akses ke node tertentu langsung di browser menggunakan _[Web SSH](https://docs.dewacloud.com/docs/web-ssh-client/)_
+- **SFTP / Direct SSH Access** - menampilkan data koneksi untuk [protokol SFTP/FISH](https://docs.dewacloud.com/docs/ssh-protocols/)
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/dashboard-guide/43-ssh-keys-user-settings.png" alt="ssh keys user settings" width="100%"/>
 
@@ -372,7 +372,7 @@ Di sini, Anda dapat menemukan bagian berikut: _Account_, _Access Tokens_, _SSH K
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/dashboard-guide/44-collaboration-user-settings.png" alt="collaboration user settings" width="100%"/>
 
-Untuk ikhtisar terperinci tentang fitur [Account Collaboration](https://docs.dewacloud.com/account-collaboration/), rujuk ke panduan yang ditautkan.
+Untuk ikhtisar terperinci tentang fitur [Account Collaboration](https://docs.dewacloud.com/docs/account-collaboration/), rujuk ke panduan yang ditautkan.
 
 ## Upgrade Trial Account & Balance{#upgrade-trial-account--balance}
 
@@ -384,10 +384,10 @@ Tergantung pada [jenis akun](https://www.virtuozzo.com/application-platform-docs
 
 Perluas menu tarik-turun **Upgrade Account** untuk melihat opsi berikut:
 
-- Gunakan tombol **Upgrade Account** untuk mendapatkan [akun yang sepenuhnya fungsional tanpa batasan](https://docs.dewacloud.com/types-of-accounts/#billing).
-- Opsi **Learn about Trial Limitations** membuka tab _[Account Limits](https://docs.dewacloud.com/quotas-system/)_ yang sesuai di dalam bingkai _Quotas & Pricing_.
-- Klik pada **Learn about Pricing** untuk dialihkan ke halaman dokumentasi dengan informasi tentang [model penetapan harga](https://docs.dewacloud.com/pricing-model/).
-- Pilih opsi **See statistics on recent resource usage** untuk membuka [sejarah penagihan](https://docs.dewacloud.com/monitoring-consumed-resources/#billing-history) akun.
+- Gunakan tombol **Upgrade Account** untuk mendapatkan [akun yang sepenuhnya fungsional tanpa batasan](https://docs.dewacloud.com/docs/types-of-accounts/#billing).
+- Opsi **Learn about Trial Limitations** membuka tab _[Account Limits](https://docs.dewacloud.com/docs/quotas-system/)_ yang sesuai di dalam bingkai _Quotas & Pricing_.
+- Klik pada **Learn about Pricing** untuk dialihkan ke halaman dokumentasi dengan informasi tentang [model penetapan harga](https://docs.dewacloud.com/docs/pricing-model/).
+- Pilih opsi **See statistics on recent resource usage** untuk membuka [sejarah penagihan](https://docs.dewacloud.com/docs/monitoring-consumed-resources/#billing-history) akun.
 
 2. Akun _Billing_ tidak memiliki batasan apa pun tetapi dibebankan sesuai dengan harga penyedia hosting.
 
@@ -395,9 +395,9 @@ Perluas menu tarik-turun **Upgrade Account** untuk melihat opsi berikut:
 
 Klik tombol **Balance** untuk memperluas daftar opsi berikut:
 
-- Klik pada **Refill Balance** untuk [mengirimkan pembayaran](https://docs.dewacloud.com/upgrade-refill-account/).
-- Klik pada item **Quotas & Pricing** untuk melihat bingkai [informasi](https://docs.dewacloud.com/resource-consumption/#how-much-do-resources-cost) dengan satu set tab tentang platform _Regions_ (jika beberapa tersedia), _Pricing_, dan _Account Limits_.
-- **Billing History** menunjukkan [pengeluaran akun](https://docs.dewacloud.com/monitoring-consumed-resources/#billing-history) untuk periode yang ditentukan.
+- Klik pada **Refill Balance** untuk [mengirimkan pembayaran](https://docs.dewacloud.com/docs/upgrade-refill-account/).
+- Klik pada item **Quotas & Pricing** untuk melihat bingkai [informasi](https://docs.dewacloud.com/docs/resource-consumption/#how-much-do-resources-cost) dengan satu set tab tentang platform _Regions_ (jika beberapa tersedia), _Pricing_, dan _Account Limits_.
+- **Billing History** menunjukkan [pengeluaran akun](https://docs.dewacloud.com/docs/monitoring-consumed-resources/#billing-history) untuk periode yang ditentukan.
 - Klik opsi **View Invoices** untuk pergi ke panel sistem penagihan eksternal dengan faktur akun, pesanan, pembayaran, dll.
 
 ## Help and Account Options{#help-and-account-options}
@@ -408,9 +408,9 @@ Dua bagian terakhir dari dashboard adalah **Help** dan **Account** (alamat email
 
 - **Contact Support** mengarahkan ke halaman dukungan pelanggan platform (berdasarkan pengaturan penyedia hosting, itu bisa tersedia hanya untuk pengguna penagihan)
 - **Go to Community** adalah tautan ke komunitas online PaaS di [Stackoverflow](https://stackoverflow.com/search?tab=newest&q=jelastic)
-- **Documentation** mengarahkan ke [Platform Devs Documentation](https://docs.dewacloud.com/)
+- **Documentation** mengarahkan ke [Platform Devs Documentation](https://docs.dewacloud.com/docs/)
 - **API** membuka [Platform API Documentation](https://www.virtuozzo.com/application-platform-api-docs/)
-- **CLI** mengarahkan ke [Platform Command-Line Interface Overview](https://docs.dewacloud.com/cli/)
+- **CLI** mengarahkan ke [Platform Command-Line Interface Overview](https://docs.dewacloud.com/docs/cli/)
 - **Video** menunjuk ke [Platform YouTube Channel](https://www.youtube.com/user/JelasticCloud)
 - **Tutorial** memulai panduan pendek dan interaktif, yang menjelaskan dasar-dasar bekerja dengan platform
 - **How do I..?** menunjukkan daftar dokumen yang relevan dengan permintaan Anda
@@ -430,9 +430,9 @@ Sekarang, Anda tahu semua kemungkinan dasar dashboard dan semoga tidak akan kesu
 
 ## Baca Juga{#whats-next}
 
-- [Getting Started](https://docs.dewacloud.com/getting-started/)
-- [Basics & Terminology](https://docs.dewacloud.com/concept-and-terminology/)
-- [Setting Up Environment](https://docs.dewacloud.com/setting-up-environment/)
-- [Software Stack Versions](https://docs.dewacloud.com/software-stacks-versions/)
-- [Hosters Info](https://docs.dewacloud.com/paas-hosting-providers/)
+- [Getting Started](https://docs.dewacloud.com/docs/getting-started/)
+- [Basics & Terminology](https://docs.dewacloud.com/docs/concept-and-terminology/)
+- [Setting Up Environment](https://docs.dewacloud.com/docs/setting-up-environment/)
+- [Software Stack Versions](https://docs.dewacloud.com/docs/software-stacks-versions/)
+- [Hosters Info](https://docs.dewacloud.com/docs/paas-hosting-providers/)
 - [What is PaaS & CaaS](https://www.virtuozzo.com/company/blog/what-is-paas-platform-as-a-service-types-explained/)

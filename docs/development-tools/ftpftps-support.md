@@ -18,7 +18,7 @@ Berbeda dengan HTTP, protokol FTP bersifat stateful: Anda membuat koneksi kontro
 **Penggunaan FTP:**
 
   * mengunggah/mengunduh sumber daya
-  * mengunduh dan membaca [log](<https://docs.dewacloud.com/docs/view-log-files/>) untuk analisis
+  * mengunduh dan membaca [log](<https://docs.dewacloud.com/docs/log-files/>) untuk analisis
   * mengedit konfigurasi
   * menyinkronkan file
   * meng-deploy aplikasi (tidak direkomendasikan)

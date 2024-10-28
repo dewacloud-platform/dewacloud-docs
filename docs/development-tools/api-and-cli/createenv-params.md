@@ -20,7 +20,7 @@ Parameter di bawah ini harus ditentukan dalam array _**env**_ (dari perintah CLI
 Nama | Deskripsi | Tipe | Contoh Nilai | Wajib  
 ---|---|---|---|---  
 _region_ | [Region environment](<https://docs.dewacloud.com/docs/environment-regions>) | string | Nama region yang dibutuhkan - tergantung pada pengaturan penyedia layanan hosting. | tidak  
-_ishaenabled_ | [High Availability](<https://docs.dewacloud.com/docs/session-replication>) | boolean | _true_, _false_  
+_ishaenabled_ | [High Availability](<https://docs.dewacloud.com/docs/auto-clustering>) | boolean | _true_, _false_  
 **Catatan:** Berlaku hanya untuk _Tomcat 6/7_, _Jetty6_, _TomEE_, _GlassFish3_ | tidak  
 _engine_ | Versi programming language | string | _java6_, _java7_, _java8_, _php5.3_, _php5.4_, _php5.5_, dll. | ya (kecuali environment berbasis Docker)  
 _displayName_ | [Alias environment](<https://docs.dewacloud.com/docs/environment-aliases>) | string | _my-env-alias_ | tidak  

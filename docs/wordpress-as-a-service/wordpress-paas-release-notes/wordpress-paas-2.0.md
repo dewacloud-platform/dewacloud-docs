@@ -18,8 +18,8 @@ Dokumen ini mengumumkan Ketersediaan Global dari Dewacloud Application Platform 
 
 Anda dapat mempelajari lebih lanjut dalam panduan dokumentasi kami yang didedikasikan:
 
-- [Dashboard Overview](https://docs.dewacloud.com/wp-dashboard-overview/)
-- [Project Installation](https://docs.dewacloud.com/wp-dashboard-project-installation/)
-- [Project Management](https://docs.dewacloud.com/wp-dashboard-project-management/)
+- [Dashboard Overview](https://docs.dewacloud.com/docs/wp-dashboard-overview/)
+- [Project Installation](https://docs.dewacloud.com/docs/wp-dashboard-project-installation/)
+- [Project Management](https://docs.dewacloud.com/docs/wp-dashboard-project-management/)
 
 Semua peningkatan lebih lanjut pada produk akan dicantumkan dalam ruang lingkup rilis baru yang sesuai.

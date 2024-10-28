@@ -12,7 +12,7 @@ Akibatnya, pengembang menggunakan node standalone sebagai satu-satunya opsi siap
 
 Tetapi apa yang harus dilakukan pengembang jika mereka mencari solusi untuk memigrasikan cluster Jakarta EE yang sudah ada dan berfungsi baik dalam mode managed domain dari VM ke container?
 
-Hingga saat ini, ada sangat sedikit contoh (misalnya untuk [GlassFish](<https://docs.dewacloud.com/company/blog/glassfish-payara-auto-clustering-cloud-hosting/?utm_source=blog-wildfly-managed-domain>) dan [WebLogic](<https://docs.dewacloud.com/company/blog/migration-from-vms-to-containers/?utm_source=blog-wildfly-managed-domain>)) tentang cara menjalankan dan menskalakan server aplikasi Java dalam mode managed domain di dalam container dengan benar. Dalam kebanyakan kasus, kurangnya pengetahuan atau bahkan tidak adanya solusi yang bekerja untuk mode domain dalam container menyebabkan hilangnya fitur clustering terintegrasi Jakarta EE yang menjadi usang.
+Hingga saat ini, ada sangat sedikit contoh (misalnya untuk [GlassFish](<https://www.virtuozzo.com/company/blog/glassfish-payara-auto-clustering-cloud-hosting/?utm_source=blog-wildfly-managed-domain>) dan [WebLogic](<https://www.virtuozzo.com/company/blog/migration-from-vms-to-containers/?utm_source=blog-wildfly-managed-domain>)) tentang cara menjalankan dan menskalakan server aplikasi Java dalam mode managed domain di dalam container dengan benar. Dalam kebanyakan kasus, kurangnya pengetahuan atau bahkan tidak adanya solusi yang bekerja untuk mode domain dalam container menyebabkan hilangnya fitur clustering terintegrasi Jakarta EE yang menjadi usang.
 
 Namun, mode managed domain masih hebat! Sebagian besar aplikasi besar dan penting misi seperti perbankan dan penagihan tetap berjalan pada Jakarta EE di VM. Clustering [Jakarta EE](<https://jakartablogs.ee/>) terintegrasi memberikan fungsionalitas yang diminati orang, termasuk ketersediaan tinggi dan deployment otomatis di antara server aplikasi Java yang terdistribusi terlepas dari infrastruktur yang mendasarinya, dan, tentu saja, Panel Admin untuk mengelola kluster Anda menggunakan UI yang bagus. 
 
@@ -64,7 +64,7 @@ Selain itu, container sistem memberikan isolasi sumber daya dan keamanan yang le
 
 ## Dekonstruksi dan Membangun Topologi yang Dimodifikasi{#decomposition-and-building-modified-topology}
 
-Kami siap memulai perjalanan dekonstruksi kami. Aturan pertama adalah dalam semangat microservices - selalu lebih baik menempatkan hanya satu Worker Server untuk satu container. Selain itu, kami membuat hanya satu kelompok server per domain untuk semua container di dalam kluster. Penyesuaian sederhana semacam itu akan memberikan fleksibilitas yang luar biasa dan diinginkan untuk menskalakan setiap Worker Server secara vertikal, meningkatkan [efisiensi penggunaan sumber daya](<https://docs.dewacloud.com/company/blog/stop-overpaying-for-java-cloud-hosting-resources/?utm_source=blog-wildfly-managed-domain>), dan menskalakan kelompok container tersebut secara horizontal dengan menambahkan instans baru sesuai kebutuhan.
+Kami siap memulai perjalanan dekonstruksi kami. Aturan pertama adalah dalam semangat microservices - selalu lebih baik menempatkan hanya satu Worker Server untuk satu container. Selain itu, kami membuat hanya satu kelompok server per domain untuk semua container di dalam kluster. Penyesuaian sederhana semacam itu akan memberikan fleksibilitas yang luar biasa dan diinginkan untuk menskalakan setiap Worker Server secara vertikal, meningkatkan [efisiensi penggunaan sumber daya](<https://www.virtuozzo.com/company/blog/stop-overpaying-for-java-cloud-hosting-resources/?utm_source=blog-wildfly-managed-domain>), dan menskalakan kelompok container tersebut secara horizontal dengan menambahkan instans baru sesuai kebutuhan.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-managed-domain/wildfly-managed-domain-4.png" alt="resource usage efficiency" width="100%"/>
 
@@ -72,11 +72,11 @@ Perlu diingat bahwa setiap container untuk menangani permintaan yang masuk menja
 
 ## WildFly Managed Domain di Jelastic{#wildfly-managed-domain-in-jelastic}
 
-Untuk memudahkan migrasi aplikasi Jakarta EE legacy dari VM ke container, kami menciptakan mode [Auto-Clustering](<https://docs.dewacloud.com/auto-clustering/>) tersemat khusus untuk WildFly yang dapat diaktifkan untuk instans baru.
+Untuk memudahkan migrasi aplikasi Jakarta EE legacy dari VM ke container, kami menciptakan mode [Auto-Clustering](<https://docs.dewacloud.com/docs/auto-clustering/>) tersemat khusus untuk WildFly yang dapat diaktifkan untuk instans baru.
 
 Keuntungan utama dari solusi ini adalah interkoneksi otomatis dari beberapa server aplikasi ketika ada perubahan topologi lingkungan, yang mengimplementasikan konfigurasi clustering yang umum digunakan dalam mode managed domain.
 
-Di bawah ini, Anda akan melihat bagaimana WildFly standalone diubah menjadi kluster melalui fitur Auto-Clustering dan [scaling horizontal](<https://docs.dewacloud.com/automatic-horizontal-scaling/?utm_source=blog-wildfly-managed-domain>) sederhana tanpa konfigurasi manual yang diperlukan. Selain itu, kami akan menjelaskan spesifikasi topologi infrastruktur dan cara mendapatkan lingkungan pengembangan dan produksi yang tepat dan berjalan di dalam Jelastic PaaS.
+Di bawah ini, Anda akan melihat bagaimana WildFly standalone diubah menjadi kluster melalui fitur Auto-Clustering dan [scaling horizontal](<https://docs.dewacloud.com/docs/automatic-horizontal-scaling/?utm_source=blog-wildfly-managed-domain>) sederhana tanpa konfigurasi manual yang diperlukan. Selain itu, kami akan menjelaskan spesifikasi topologi infrastruktur dan cara mendapatkan lingkungan pengembangan dan produksi yang tepat dan berjalan di dalam Jelastic PaaS.
 
 ## Membuat WildFly Standalone{#create-standalone-wildfly}
 
@@ -105,7 +105,7 @@ Tentukan **Context** sesuai kebutuhan atau biarkan default ROOT.
 Pastikan bahwa aplikasi Anda berjalan, dengan menekan **Open in browser** di dekat lingkungan yang dibuat.  
 <img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-managed-domain/wildfly-managed-domain-10.png" alt="create wildfly environment" width="100%"/>
 
-Jika Anda masuk ke container Anda melalui [Web SSH client](<https://docs.dewacloud.com/web-ssh-client/?utm_source=blog-wildfly-managed-domain>) bawaannya, Anda akan melihat hanya satu proses **Standalone** yang berjalan.  
+Jika Anda masuk ke container Anda melalui [Web SSH client](<https://docs.dewacloud.com/docs/web-ssh-client/?utm_source=blog-wildfly-managed-domain>) bawaannya, Anda akan melihat hanya satu proses **Standalone** yang berjalan.  
 <img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-managed-domain/wildfly-managed-domain-11.png" alt="web ssh client" width="100%"/>
 
 ## Mendapatkan WildFly Terkelompok dengan Mode Managed Domain{#get-clustered-wildfly-with-managed-domain-mode}
@@ -114,15 +114,15 @@ Clustering WildFly dengan mode domain dikonfigurasikan secara otomatis melalui f
 
 - **Secara Manual**
 
-Tambahkan server baru melalui wizard saat membuat lingkungan atau dengan [mengubah topologinya](<https://docs.dewacloud.com/dashboard-guide/?utm_source=blog-wildfly-managed-domain>).  
+Tambahkan server baru melalui wizard saat membuat lingkungan atau dengan [mengubah topologinya](<https://docs.dewacloud.com/docs/dashboard-guide/?utm_source=blog-wildfly-managed-domain>).  
 <img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-managed-domain/wildfly-managed-domain-12.png" alt="change wildfly environment topology" width="100%"/>
 
-Cukup merujuk ke lapisan server aplikasi dalam panel lingkungan sebelah kiri, aktifkan mode Auto-Clustering dan tambahkan **(+)** node dalam frame [Horizontal Scaling](<https://docs.dewacloud.com/horizontal-scaling/?utm_source=blog-wildfly-managed-domain>).  
+Cukup merujuk ke lapisan server aplikasi dalam panel lingkungan sebelah kiri, aktifkan mode Auto-Clustering dan tambahkan **(+)** node dalam frame [Horizontal Scaling](<https://docs.dewacloud.com/docs/horizontal-scaling/?utm_source=blog-wildfly-managed-domain>).  
 <img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-managed-domain/wildfly-managed-domain-13.png" alt="wildfly horizontal scaling" width="100%"/>
 
 - **Secara Otomatis**
 
-Jumlah server dapat diubah secara otomatis dengan mengatur [triggers penskalaan](<https://docs.dewacloud.com/automatic-horizontal-scaling/?utm_source=blog-wildfly-managed-domain>) berdasarkan konsumsi sumber daya dalam **Settings > Auto Horizontal Scaling**.  
+Jumlah server dapat diubah secara otomatis dengan mengatur [triggers penskalaan](<https://docs.dewacloud.com/docs/automatic-horizontal-scaling/?utm_source=blog-wildfly-managed-domain>) berdasarkan konsumsi sumber daya dalam **Settings > Auto Horizontal Scaling**.  
 <img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/wildfly/wildfly-managed-domain/wildfly-managed-domain-14.png" alt="wildfly horizontal scaling" width="100%"/>
 
 **Catatan**:

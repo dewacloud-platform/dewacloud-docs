@@ -29,7 +29,7 @@ Isi kolom **Comment** (jika diperlukan) dan klik **Upload**.
 
 3\. Untuk menerapkan aplikasi dari arsip, arahkan kursor ke file yang diperlukan dan klik tombol **Deploy to** yang muncul. <img src="https://assets.dewacloud.com/dewacloud-docs/deployment/deployment-manager/03-deploy-archive-from-deployment-manager.png" alt="deploy archive from deployment manager" max-width="100%"/>
 
-Dalam jendela yang terbuka, Anda dapat [mengonfigurasi deployment](<https://docs.dewacloud.com/deployment-guide#archive>) sesuai kebutuhan Anda.
+Dalam jendela yang terbuka, Anda dapat [mengonfigurasi deployment](<https://docs.dewacloud.com/docs/deployment-guide#archive>) sesuai kebutuhan Anda.
 
 4\. Arsip yang tidak lagi diperlukan dapat dihapus dengan memilihnya menggunakan kotak centang sebelum nama dan mengklik tombol **Delete** di panel atas. <img src="https://assets.dewacloud.com/dewacloud-docs/deployment/deployment-manager/04-deployment-manager-delete-archives.png" alt="deployment manager delete archives" max-width="100%"/>
 
@@ -47,7 +47,7 @@ Sekarang, Anda tahu cara kerja tab arsip dari Deployment Manager dan dapat mengg
 
     * _URL_ \- URL yang sesuai ke repositori
     * _Branch_ \- cabang proyek yang diinginkan (_master_ secara default)
-    * opsional, centang kotak _Use Authentication_ dan sediakan kredensial berbasis _Password or Token_ atau _[SSH Key](<https://docs.dewacloud.com/git-ssh>)_ 
+    * opsional, centang kotak _Use Authentication_ dan sediakan kredensial berbasis _Password or Token_ atau _[SSH Key](<https://docs.dewacloud.com/docs/git-ssh>)_ 
 
 **Note:** Jika repositori Anda dilindungi dengan autentikasi dua faktor, Anda perlu menggunakan token akses yang sesuai (misalnya untuk [GitHub](<https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line>) atau [GitLab](<https://docs.gitlab.com/ee/user/project/deploy_tokens/>)) alih-alih kata sandi Anda.
 
@@ -62,7 +62,7 @@ Selain itu, Anda dapat mengelola cakupan izin yang diberikan selama pembuatan to
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/deployment/deployment-manager/06-add-vcs-repository-to-deployment-manager.png" alt="add vcs repository to deployment manager" max-width="100%"/>
 
-Anda bisa **Add** proyek ini ke Deployment Manager atau **Add + Deploy** untuk langsung memulai [deployment](<https://docs.dewacloud.com/deployment-guide#vcs>) aplikasi ini.
+Anda bisa **Add** proyek ini ke Deployment Manager atau **Add + Deploy** untuk langsung memulai [deployment](<https://docs.dewacloud.com/docs/deployment-guide#vcs>) aplikasi ini.
 
 3\. Arahkan kursor ke proyek Git / SVN di Deployment Manager untuk mengakses opsi **Deploy to**, **Edit**, dan **Delete**.
 
@@ -72,7 +72,7 @@ Sekarang, Anda tahu cara mengelola proyek VCS di dalam platform Deployment Manag
 
 ## Baca Juga{#whats-next}
 
-  * [Deployment Guide](<https://docs.dewacloud.com/deployment-guide/>)
-  * [Deployment Hooks](<https://docs.dewacloud.com/deployment-hooks/>)
-  * [SSH Access to GIT Repository](<https://docs.dewacloud.com/git-ssh/>)
-  * [Git / SVN Auto-Deploy](<https://docs.dewacloud.com/git-svn-auto-deploy/>)
+  * [Deployment Guide](<https://docs.dewacloud.com/docs/deployment-guide/>)
+  * [Deployment Hooks](<https://docs.dewacloud.com/docs/deployment-hooks/>)
+  * [SSH Access to GIT Repository](<https://docs.dewacloud.com/docs/git-ssh/>)
+  * [Git / SVN Auto-Deploy](<https://docs.dewacloud.com/docs/git-svn-auto-deploy/>)

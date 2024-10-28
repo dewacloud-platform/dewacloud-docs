@@ -2,6 +2,7 @@
   "label": "Environment Groups",
   "position": 10,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "slug": "/environment-groups"
   }
 }

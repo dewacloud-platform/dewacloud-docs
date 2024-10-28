@@ -45,7 +45,7 @@ Sekarang, aplikasi Anda dilindungi dengan ModSecurity.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/nginx%20modsecurity/modsecurity-nginx-waf-web-ssh.png" alt="modsecurity nginx waf web ssh" width="100%"/>
 
-6\. Keberfungsian ModSecurity dapat diuji dengan mensimulasikan serangan pada aplikasi Anda. Misalnya, coba tambahkan string **_/?q="><script>alert(1)</script>_** ke domain environment Anda. Jika modul berfungsi sebagaimana mestinya, halaman **_403 error_** akan ditampilkan, dan tindakan yang sesuai akan [dilog](<https://docs.dewacloud.com/docs/view-log-files/>) di file log kesalahan:
+6\. Keberfungsian ModSecurity dapat diuji dengan mensimulasikan serangan pada aplikasi Anda. Misalnya, coba tambahkan string **_/?q="><script>alert(1)</script>_** ke domain environment Anda. Jika modul berfungsi sebagaimana mestinya, halaman **_403 error_** akan ditampilkan, dan tindakan yang sesuai akan [dilog](<https://docs.dewacloud.com/docs/log-files/>) di file log kesalahan:
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/nginx%20modsecurity/modsecurity-nginx-waf-log.png" alt="modsecurity nginx waf log" width="100%"/>
 

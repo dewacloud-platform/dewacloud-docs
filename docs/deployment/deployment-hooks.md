@@ -108,5 +108,5 @@ Jika Anda menghadapi masalah saat bekerja dengan hooks, jangan ragu untuk memint
 
 * [Deployment Guide](https://docs.dewacloud.com/docs/deployment-guide/)
 * [Maven for Deploy via GIT/SVN](https://docs.dewacloud.com/docs/java-vcs-deployment/)
-* [Log Files](https://docs.dewacloud.com/docs/view-log-files/)
+* [Log Files](https://docs.dewacloud.com/docs/log-files/)
 * [Container Redeploy](https://docs.dewacloud.com/docs/container-redeploy/)

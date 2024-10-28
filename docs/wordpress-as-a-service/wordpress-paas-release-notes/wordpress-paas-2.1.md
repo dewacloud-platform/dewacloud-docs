@@ -47,7 +47,7 @@ Fitur baru utama lainnya adalah kemampuan untuk beralih paket langganan dalam pr
 
 ![changing project subscription plan](#)
 
-[Informasi lebih lanjut](https://docs.dewacloud.com/wp-dashboard-overview/)
+[Informasi lebih lanjut](https://docs.dewacloud.com/docs/wp-dashboard-overview/)
 
 
 
@@ -59,7 +59,7 @@ Anda dapat menemukan fitur baru ini dengan memilih proyek tertentu dan menavigas
 
 ![project endpoints](#)
 
-[Informasi lebih lanjut](https://docs.dewacloud.com/wp-dashboard-project-management/)
+[Informasi lebih lanjut](https://docs.dewacloud.com/docs/wp-dashboard-project-management/)
 
 
 
@@ -76,7 +76,7 @@ Dalam rilis platform 2.1 saat ini, bagian **User Information** baru ditambahkan 
 
 ![user information](#)
 
-[Informasi lebih lanjut](https://docs.dewacloud.com/wp-dashboard-overview/#account-settings)
+[Informasi lebih lanjut](https://docs.dewacloud.com/docs/wp-dashboard-overview/#account-settings)
 
 
 

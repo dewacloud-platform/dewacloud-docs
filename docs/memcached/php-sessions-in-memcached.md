@@ -28,7 +28,7 @@ Jika server asli gagal, permintaan berikutnya dialihkan ke server aplikasi lain.
 
 Ketika server menjawab permintaan, itu juga memperbarui sesi di node Memcached. Dengan demikian, tidak ada gangguan pada aplikasi yang disebabkan oleh kegagalan server asli - failover berhasil ditangani.
 
-Pada saat yang sama, load balancer NGINX mendistribusikan lalu lintas ke seluruh cluster yang berisi sumber daya HTTP. Anda dapat [memeriksa load balancing](https://docs.dewacloud.com/testing-load-balancing/) di Dewacloud menggunakan berbagai tool load balancing.
+Pada saat yang sama, load balancer NGINX mendistribusikan lalu lintas ke seluruh cluster yang berisi sumber daya HTTP. Anda dapat [memeriksa load balancing](https://docs.dewacloud.com/docs/testing-load-balancing/) di Dewacloud menggunakan berbagai tool load balancing.
 
 ## Cara Mengkonfigurasi{#how-to-configure}
 
@@ -67,6 +67,5 @@ Itu saja! Sekarang jika salah satu instance gagal, pengguna akan secara otomatis
 
 ## Baca Juga{#whats-next}
 
-- [Memcached Configuration](https://docs.dewacloud.com/memcached-configuration/)
-- [WordPress Cluster](https://www.virtuozzo.com/company/blog/wordpress-hosting-enterprise-high-availability-auto-scaling/)
-- [Setting Up a Cronjob](https://docs.dewacloud.com/cron-job/)
+- [Memcached Configuration](https://docs.dewacloud.com/docs/memcached-configuration/)
+- [Setting Up a Cronjob](https://docs.dewacloud.com/docs/cron-job/)

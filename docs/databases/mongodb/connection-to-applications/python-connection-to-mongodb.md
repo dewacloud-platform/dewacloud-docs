@@ -60,7 +60,7 @@ String “ _You are connected!_ ” memastikan bahwa aplikasi berhasil menghubun
 
 ## Baca Juga{#whats-next}
 
-  * [Java Connection to MongoDB](<https://docs.dewacloud.com/docs/connection-to-mongodb/>)
+  * [Java Connection to MongoDB](<https://docs.dewacloud.com/docs/connection-to-mongodb-java/>)
   * [PHP Connection to MongoDB](<https://docs.dewacloud.com/docs/connection-to-mongodb-php/>)
   * [Node.js Connection to MongoDB](<https://docs.dewacloud.com/docs/connection-to-mongodb-nodejs/>)
   * [MongoDB Auto-Clustering](<https://docs.dewacloud.com/docs/mongodb-auto-clustering/>)

@@ -332,9 +332,3 @@ sudo service postgresql restart
 <img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/auto-clustering/auto-clustering-30.png" alt="restart PostgreSQL nodes again" width="100%"/>
 
 Setelah proses restart selesai, cluster kembali ke topologi asli dan dapat di-scale secara horizontal.
-
-## Baca Juga{#whats-next}
-
-  * [Java Connection to PostgreSQL](<https://docs.dewacloud.com/company/blog/java-connection-to-postgresql/>)
-  * [PHP Connection to PostgreSQL](<https://docs.dewacloud.com/docs/connection-to-postgresql-php/>)
-  * [Remote Access to PostgreSQL](<https://docs.dewacloud.com/docs/remote-access-postgres/>)

@@ -26,13 +26,13 @@ Lihat tabel jenis database untuk menemukan kode koneksi DB yang sesuai untuk apl
 
 DB Type | Connection code  
 ---|---  
-[MySQL](<https://docs.dewacloud.com/docs/connection-to-mysql>)/[MariaDB](<https://docs.dewacloud.com/docs/connection-to-mariadb>) | _String URL = “jdbc:mysql://node\{node_id\}-\{environment_name\}.\{hoster_domain\}/\{dbname\}"; DriverManager.getConnection(URL, user_name, user_password);_  
+[MySQL/MariaDB](<https://docs.dewacloud.com/docs/connection-to-mysql-java>)| _String URL = “jdbc:mysql://node\{node_id\}-\{environment_name\}.\{hoster_domain\}/\{dbname\}"; DriverManager.getConnection(URL, user_name, user_password);_  
 MySQL [Auto-Cluster](<https://docs.dewacloud.com/docs/auto-clustering>) | Highly available connection via the scaled dedicated ProxySQL load balancers.  
 String URL = “jdbc:mysql://proxy.\{environment_name\}.\{hoster_domain\}:3306/\{dbname\}"; DriverManager.getConnection(URL, user_name, user_password);_  
 MariaDB [Auto-Cluster](<https://docs.dewacloud.com/docs/auto-clustering>) | Highly available connection via the scaled dedicated ProxySQL load balancers.  
 String URL = “jdbc:mariadb://proxy.\{environment_name\}.\{hoster_domain\}:3306/\{dbname\}**?usePipelineAuth=false** "; DriverManager.getConnection(URL, user_name, user_password);_  
-[PostgreSQL](<https://docs.dewacloud.com/docs/connection-to-postgresql>) | _String URL = “jdbc:postgresql://node\{node_id\}-\{environment_name\}.\{hoster_domain\}/\{dbname\}"; DriverManager.getConnection(URL, user_name, user_password);_  
-[MongoDB](<https://docs.dewacloud.com/docs/connection-to-mongodb>) | _Mongo m = new Mongo(node`node_id`-`environment_name`.`hoster_domain`); DB db = m.getDB(`database_name`); if(db.authenticate(user_name, user_password.toCharArray())) `{ System.out.println(“Connected!"); }`_
+[PostgreSQL](<https://docs.dewacloud.com/docs/java-connection-to-postgresql>) | _String URL = “jdbc:postgresql://node\{node_id\}-\{environment_name\}.\{hoster_domain\}/\{dbname\}"; DriverManager.getConnection(URL, user_name, user_password);_  
+[MongoDB](<https://docs.dewacloud.com/docs/connection-to-mongodb-java>) | _Mongo m = new Mongo(node`node_id`-`environment_name`.`hoster_domain`); DB db = m.getDB(`database_name`); if(db.authenticate(user_name, user_password.toCharArray())) `{ System.out.println(“Connected!"); }`_
 
 Untuk encoding UTF-8, ubah connection string Anda seperti berikut ini:
 

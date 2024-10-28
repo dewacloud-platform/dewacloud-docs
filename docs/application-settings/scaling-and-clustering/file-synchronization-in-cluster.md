@@ -158,5 +158,5 @@ Punya pertanyaan tentang sinkronisasi file antara application servers? Jangan ra
   * [Cluster in the Cloud](https://docs.dewacloud.com/docs/cluster-in-cloud/)
   * [WordPress Cluster](https://docs.dewacloud.com/docs/wordpress-cluster-devops/)
   * [Horizontal Scaling](https://docs.dewacloud.com/docs/horizontal-scaling/)
-  * [High Availability](https://docs.dewacloud.com/docs/session-replication/)
+  * [High Availability](https://docs.dewacloud.com/docs/auto-clustering/)
   * [Marketplace](https://docs.dewacloud.com/docs/marketplace/)

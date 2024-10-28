@@ -16,7 +16,7 @@ Platform ini memungkinkan untuk memilih sebelumnya rilis server aplikasi NodeJS 
 - _22.5.1_
 - _22.8.0_
 
-Daftar rilis terbaru yang tersedia di platform disediakan melalui dokumen [Software Stack Versions](https://docs.dewacloud.com/software-stacks-versions/#engines) yang diperbarui secara reguler (mingguan).
+Daftar rilis terbaru yang tersedia di platform disediakan melalui dokumen [Software Stack Versions](https://docs.dewacloud.com/docs/software-stacks-versions/#engines) yang diperbarui secara reguler (mingguan).
 
 Versi Node.js yang diperlukan dapat dipilih saat membuat [environment baru](#create-nodejs-environment), serta diubah untuk [yang sudah ada](#change-nodejs-version).
 
@@ -30,7 +30,7 @@ Versi Node.js yang diperlukan dapat dipilih saat membuat [environment baru](#cre
 
 ![topology wizard select Node.js version](#)
 
-3. Selanjutnya, Anda dapat memilih [process manager](https://docs.dewacloud.com/nodejs-process-managers/) yang diinginkan (_forever_, _npm_, atau _pm2_) melalui daftar drop-down _tags_ (dilingkari dalam gambar di bawah):
+3. Selanjutnya, Anda dapat memilih [process manager](https://docs.dewacloud.com/docs/nodejs-process-managers/) yang diinginkan (_forever_, _npm_, atau _pm2_) melalui daftar drop-down _tags_ (dilingkari dalam gambar di bawah):
 
 ![topology wizard select Node.js process manager](#)
 
@@ -40,7 +40,7 @@ Node.js process manager membantu mengontrol siklus hidup aplikasi Anda, menyedia
 - _**forever**_ - mengelola proses node (mis. memulai, menghentikan, me-restart layanan) agar layanan tetap hidup dengan menjalankannya secara terus-menerus
 - _**pm2**_ - menyediakan beberapa opsi khusus (seperti pemantauan, keseimbangan beban, deployment, dll.), memungkinkan untuk mengelola aplikasi Anda secara lebih efektif
 
-Tentukan parameter server dan environment lainnya (mis. batas cloudlet, [region](https://docs.dewacloud.com/environment-regions/), nama environment, dll.) dan klik tombol **Create** di pojok bawah kanan kerangka.
+Tentukan parameter server dan environment lainnya (mis. batas cloudlet, [region](https://docs.dewacloud.com/docs/environment-regions/), nama environment, dll.) dan klik tombol **Create** di pojok bawah kanan kerangka.
 
 ## Mengubah Versi Node.js{#change-nodejs-version}
 
@@ -61,8 +61,8 @@ Anda juga dapat mengganti versi server NodeJS dan process manager setelahnya, un
 2. Dalam dialog _**Redeploy container(s)**_ yang terbuka, konfigurasikan ulang opsi-opsi berikut:
 
 - _**Tag**_ - menyediakan pilihan versi Node.js yang diperlukan dan process manager yang diinginkan
-- _**Keep volumes data**_ - memungkinkan penyimpanan data dalam [volumes](https://docs.dewacloud.com/container-volumes/)
-- _**Simultaneous**_ or _**Sequential deployment with delay**_ (khusus untuk [scaled servers](https://docs.dewacloud.com/horizontal-scaling/)) - menentukan apakah semua container dalam satu lapisan harus di-redeploy sekaligus atau satu per satu, untuk menghindari downtime
+- _**Keep volumes data**_ - memungkinkan penyimpanan data dalam [volumes](https://docs.dewacloud.com/docs/container-volumes/)
+- _**Simultaneous**_ or _**Sequential deployment with delay**_ (khusus untuk [scaled servers](https://docs.dewacloud.com/docs/horizontal-scaling/)) - menentukan apakah semua container dalam satu lapisan harus di-redeploy sekaligus atau satu per satu, untuk menghindari downtime
 
 ![redeploy dialog for Node.js](#)
 
@@ -76,8 +76,8 @@ Untuk panduan detail tentang hosting proyek Node.js, silakan merujuk ke panduan 
 
 ## Baca Juga{#whats-next}
 
-- [Create Environment](https://docs.dewacloud.com/setting-up-environment/)
-- [Node.js Package Managers](https://docs.dewacloud.com/nodejs-package-managers/)
-- [Node.js Process Managers](https://docs.dewacloud.com/nodejs-process-managers/)
-- [Deployment Guide](https://docs.dewacloud.com/deployment-guide/)
-- [Node.js Tutorials](https://docs.dewacloud.com/nodejs-tutorials/)
+- [Create Environment](https://docs.dewacloud.com/docs/setting-up-environment/)
+- [Node.js Package Managers](https://docs.dewacloud.com/docs/nodejs-package-managers/)
+- [Node.js Process Managers](https://docs.dewacloud.com/docs/nodejs-process-managers/)
+- [Deployment Guide](https://docs.dewacloud.com/docs/deployment-guide/)
+- [Node.js Tutorials](https://docs.dewacloud.com/docs/nodejs-tutorials/)

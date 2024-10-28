@@ -50,29 +50,29 @@ Setelah mengklik tombol, dialog _**Refill Balance**_ akan ditampilkan. Di sini, 
 
 ![refill balance dialog](#)
 
-Metode pembayaran dan informasi penagihan secara umum dikelola di sistem penagihan eksternal. Itu dapat diakses dari bagian **[Your Account](https://docs.dewacloud.com/wp-dashboard-overview/#account-settings) > Payment Settings** di dashboard dengan tombol **Manage**.
+Metode pembayaran dan informasi penagihan secara umum dikelola di sistem penagihan eksternal. Itu dapat diakses dari bagian **[Your Account](https://docs.dewacloud.com/docs/wp-dashboard-overview/#account-settings) > Payment Settings** di dashboard dengan tombol **Manage**.
 
 ![payment settings](#)
 
-[Informasi lebih lanjut](https://docs.dewacloud.com/wp-dashboard-overview/)
+[Informasi lebih lanjut](https://docs.dewacloud.com/docs/wp-dashboard-overview/)
 
 
 
 ## Bayar Faktur dari Dashboard{#pay-invoices-from-dashboard}
 
-Untuk menyederhanakan manajemen pembayaran, bagian **[Your Account](https://docs.dewacloud.com/wp-dashboard-overview/#account-settings) > Invoices** diperbarui. Tergantung pada status (_open_ atau _expired_), tombol untuk membayar faktur akan ditampilkan dalam kolom _Actions_ yang baru.
+Untuk menyederhanakan manajemen pembayaran, bagian **[Your Account](https://docs.dewacloud.com/docs/wp-dashboard-overview/#account-settings) > Invoices** diperbarui. Tergantung pada status (_open_ atau _expired_), tombol untuk membayar faktur akan ditampilkan dalam kolom _Actions_ yang baru.
 
 ![pay invoices](#)
 
 Klik tombol bayar untuk melihat jendela konfirmasi yang akan menunjukkan semua detail terkait pada faktur dan langganan.
 
-[Informasi lebih lanjut](https://docs.dewacloud.com/wp-dashboard-overview/#account-settings)
+[Informasi lebih lanjut](https://docs.dewacloud.com/docs/wp-dashboard-overview/#account-settings)
 
 
 
 ## Peningkatan Halaman Informasi Pengguna{#user-information-page-improvements}
 
-Bagian **[Your Account](https://docs.dewacloud.com/wp-dashboard-overview/#account-settings) > User Information** di dashboard memungkinkan personalisasi akun dengan memberikan detail dalam formulir yang khusus. Untuk meningkatkan pengalaman pengguna, perubahan berikut diterapkan ke bagian dalam rilis WordPress PaaS 2.2 saat ini:
+Bagian **[Your Account](https://docs.dewacloud.com/docs/wp-dashboard-overview/#account-settings) > User Information** di dashboard memungkinkan personalisasi akun dengan memberikan detail dalam formulir yang khusus. Untuk meningkatkan pengalaman pengguna, perubahan berikut diterapkan ke bagian dalam rilis WordPress PaaS 2.2 saat ini:
 
 - pengoptimalan UI
 - penyesuaian informasi yang dapat disediakan
@@ -83,7 +83,7 @@ Saat bekerja dengan platform, beberapa fitur dapat sepenuhnya atau sebagian diba
 
 ![05-user-information.png](#)
 
-[Informasi lebih lanjut](https://docs.dewacloud.com/wp-dashboard-overview/#account-settings)
+[Informasi lebih lanjut](https://docs.dewacloud.com/docs/wp-dashboard-overview/#account-settings)
 
 
 
@@ -101,14 +101,14 @@ Selain itu, saat merestart seluruh kelompok dengan beberapa node, Anda akan mend
 
 ## Manajemen Git Repositories{#git-repositories-management}
 
-Platform WordPress PaaS memungkinkan Anda [mendeploy proyek WordPress kustom](https://docs.dewacloud.com/wp-dashboard-project-management/#application-deployment) dari repositori Git jarak jauh. Anda dapat menambahkan repositori semacam itu di bagian **System Settings > Git Configuration**, yang diperbarui untuk mendukung pengelolaan repositori yang sudah ada. Untuk saat ini, dua tombol baru ditambahkan di sebelah kanan setiap catatan:
+Platform WordPress PaaS memungkinkan Anda [mendeploy proyek WordPress kustom](https://docs.dewacloud.com/docs/wp-dashboard-project-management/#application-deployment) dari repositori Git jarak jauh. Anda dapat menambahkan repositori semacam itu di bagian **System Settings > Git Configuration**, yang diperbarui untuk mendukung pengelolaan repositori yang sudah ada. Untuk saat ini, dua tombol baru ditambahkan di sebelah kanan setiap catatan:
 
 - **Edit** – menyesuaikan detail repositori (field sama seperti saat penambahan)
 - **Delete** – menghapus catatan repositori dari dashboard
 
 ![manage Git repositories](#)
 
-[Informasi lebih lanjut](https://docs.dewacloud.com/wp-dashboard-overview/#account-settings)
+[Informasi lebih lanjut](https://docs.dewacloud.com/docs/wp-dashboard-overview/#account-settings)
 
 
 

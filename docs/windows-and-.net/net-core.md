@@ -23,7 +23,7 @@ Ketersediaan stack ini tergantung pada pengaturan penyedia hosting tertentu. Tem
 
 1. Masuk ke dashboard PaaS dan klik tombol **New Environment** di pojok kiri atas.
 
-2. Dalam [topology wizard](https://docs.dewacloud.com/setting-up-environment/) yang terbuka, buka tab **.NET** dan pilih server aplikasi _**.NET Core**_. Konfigurasikan parameter lainnya (_[cloudlet](https://docs.dewacloud.com/docs/cloudlet/)_, _disk limit_, _[public IP](https://docs.dewacloud.com/public-ip/)_, dll.) sesuai kebutuhan Anda.
+2. Dalam [topology wizard](https://docs.dewacloud.com/docs/setting-up-environment/) yang terbuka, buka tab **.NET** dan pilih server aplikasi _**.NET Core**_. Konfigurasikan parameter lainnya (_[cloudlet](https://docs.dewacloud.com/docs/cloudlet/)_, _disk limit_, _[public IP](https://docs.dewacloud.com/docs/public-ip/)_, dll.) sesuai kebutuhan Anda.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/windows-&-.net/.net-core/01-dotnet-core-topology-wizard.png" alt=".NET Core topology wizard" width="100%"/>
 
@@ -37,9 +37,9 @@ Server aplikasi beroperasi di dalam container (node) terpisah - instance virtual
 
 ## Mendeploy Aplikasi ke Server .NET Core{#deploying-application-to-net-core-server}
 
-Platform ini menyediakan beberapa opsi untuk secara otomatis [mendeploy proyek](https://docs.dewacloud.com/deployment-guide/). Dalam contoh ini, kita akan menambahkan proyek .NET sederhana yang disimpan di GitHub.
+Platform ini menyediakan beberapa opsi untuk secara otomatis [mendeploy proyek](https://docs.dewacloud.com/docs/deployment-guide/). Dalam contoh ini, kita akan menambahkan proyek .NET sederhana yang disimpan di GitHub.
 
-1. Buka tab _**Git/SVN**_ dari **[Deployment Manager](https://docs.dewacloud.com/deployment-manager/#git--svn-projects)** untuk menambahkan repository baru.
+1. Buka tab _**Git/SVN**_ dari **[Deployment Manager](https://docs.dewacloud.com/docs/deployment-manager/#git--svn-projects)** untuk menambahkan repository baru.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/windows-&-.net/.net-core/03-deployment-manager-add-repository.png" alt="deployment manager add repository" width="50%"/>
 
@@ -86,6 +86,6 @@ Gunakan panduan ini sebagai referensi untuk mendeploy aplikasi Anda sendiri ke s
 
 ## Baca Juga{#whats-next}
 
-- [Windows VM](https://docs.dewacloud.com/win-vm/)
-- [Windows RD Access](https://docs.dewacloud.com/win-rdp-access/)
-- [Windows Roles & Features](https://docs.dewacloud.com/win-vps-roles-features/)
+- [Windows VM](https://docs.dewacloud.com/docs/win-vm/)
+- [Windows RD Access](https://docs.dewacloud.com/docs/win-rdp-access/)
+- [Windows Roles & Features](https://docs.dewacloud.com/docs/win-vps-roles-features/)

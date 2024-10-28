@@ -63,4 +63,3 @@ Idle| Dengan panel admin yang diluncurkan
   * [Environment Variables in GlassFish Admin Console](<https://docs.dewacloud.com/docs/environment-variables-in-glassfish/>)
   * [Java Application Server Configuration](<https://docs.dewacloud.com/docs/java-application-server-config/>)
   * [GlassFish Cluster](<https://docs.dewacloud.com/docs/glassfish-server-clustering/>)
-  * [GlassFish Auto-Clustering](<https://docs.dewacloud.com/company/blog/glassfish-payara-auto-clustering-cloud-hosting/>)
