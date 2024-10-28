@@ -154,7 +154,7 @@ Selain itu, hosting di PaaS memungkinkan penggunaan alat dan fitur bawaan lainny
 - [Built-in](<https://docs.dewacloud.com/docs/built-in-ssl/>) atau [Custom SSL](<https://docs.dewacloud.com/docs/custom-ssl/>)
 - [Public IPv4 and IPv6](<https://docs.dewacloud.com/docs/public-ip/>)
 - Beragam [software stacks](<https://docs.dewacloud.com/docs/software-stacks-versions/>) pelengkap, termasuk basis data SQL dan NoSQL
-- [Container firewalls](<https://docs.dewacloud.com/docs/custom-firewall/>), [endpoints](<https://docs.dewacloud.com/docs/endpoints/>) dan [environment network isolation](<https://docs.dewacloud.com/docs/environment-isolation/>)
+- [Container firewalls](<https://docs.dewacloud.com/docs/container-firewall/>), [endpoints](<https://docs.dewacloud.com/docs/endpoints/>) dan [environment network isolation](<https://docs.dewacloud.com/docs/environment-isolation/>)
 - [User-friendly UI](<https://docs.dewacloud.com/docs/dashboard-guide/>) dan [SSH access](<https://docs.dewacloud.com/docs/ssh-access/>)
 - [Open API](<https://docs.dewacloud.com/docs/api-overview/>) dan [Cloud Scripting](<https://docs.cloudscripting.com/>) untuk otomatisasi
 - [Pay-per-use pricing model](<https://docs.dewacloud.com/docs/pricing-model/>)

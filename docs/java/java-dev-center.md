@@ -44,7 +44,7 @@ Anda dapat memilih versi preferensi saat membuat environment, atau mengubahnya n
 
 ## Java Application Servers{#java-application-servers}
 
-Di dalam beragam software stack, platform ini mendukung [Java Engine](<https://docs.dewacloud.com/docs/java-engine/>) murni dan server aplikasi Java berikut:
+Di dalam beragam software stack, platform ini mendukung [Java Engine](<https://docs.dewacloud.com/docs/java-engine-server/>) murni dan server aplikasi Java berikut:
 
   * [GlassFish](<https://docs.dewacloud.com/docs/glassfish/>)
   * [Jetty](<https://docs.dewacloud.com/docs/eclipse-jetty/>)

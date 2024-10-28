@@ -47,6 +47,5 @@ Dengan cara ini Anda dapat dengan mudah memigrasikan aplikasi apa pun ke PaaS da
 
 ## Baca Juga{#whats-next}
 
-  * [Apa itu PaaS & CaaS](<https://docs.dewacloud.com/docs/what-is-paas-and-caas/>)
   * [PaaS Cluster Overview](<https://docs.dewacloud.com/docs/software-stacks-versions/>)
   * [Panduan Deployment](<https://docs.dewacloud.com/docs/deployment-guide/>)

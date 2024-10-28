@@ -67,16 +67,9 @@ Integrasi tersebut memungkinkan bekerja dengan alat inti teknologi container Doc
   * _**Docker Compose**_ \- membantu merakit aplikasi, yang terdiri dari beberapa komponen di mana semua konfigurasi yang diperlukan dideklarasikan dalam satu file compose
   * _**Docker Swarm**_ \- mewakili beberapa Docker nodes independen, saling terhubung dalam satu cluster
 
-Platform ini menyajikan versi pre-packaged dari solusi _Docker Engine CE_ dan _Docker Swarm Cluster_ dengan [auto-clustering](<https://docs.dewacloud.com/docs/docker-swarm-auto-clustering-and-scaling-with-paas/>) terintegrasi. 
+Platform ini menyajikan versi pre-packaged dari solusi _Docker Engine CE_ dan _Docker Swarm Cluster_ dengan [auto-clustering](<https://www.virtuozzo.com/company/blog/docker-swarm-auto-clustering-and-scaling-with-paas/>) terintegrasi. 
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/container/container-types/container-types-7.png" alt="Docker Engine CE" width="70%"/><img src="https://assets.dewacloud.com/dewacloud-docs/container/container-types/container-types-8.png" alt="Docker Swarm cluster" width="70%"/>
-
-Baca seri blog khusus kami untuk lebih jelasnya:
-
-  * [Auto-Install Docker Engine and Connect It to Swarm Cluster](<https://www.virtuozzo.com/company/blog/docker-engine-automatic-install-swarm-connect/>)
-  * [Docker Swarm Auto-Clustering and Scaling](<https://www.virtuozzo.com/company/blog/docker-swarm-auto-clustering-and-scaling-with-paas/>)
-  * [Connecting to Docker Engine and Its Management](<https://www.virtuozzo.com/company/blog/docker-engine-auto-install-connect-ssh-portainer/>)
-  * [Deploying Services to Docker Swarm Cluster](<https://www.virtuozzo.com/company/blog/deploy-services-docker-swarm-cluster/>)
 
 ## Kubernetes Cluster{#kubernetes-cluster}
 

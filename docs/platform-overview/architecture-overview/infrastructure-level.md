@@ -15,7 +15,6 @@ Setiap **environment** adalah kumpulan dari container virtual terisolasi yang me
 
 ## Baca Juga{#whats-next}
 
-* [Apa Itu PaaS & CaaS](https://docs.dewacloud.com/docs/what-is-paas-and-caas/)
 * [PaaS Cluster Overview](https://docs.dewacloud.com/docs/cluster-overview/)
 * [Cluster Orchestrator](https://docs.dewacloud.com/docs/cluster-orchestrator/)
 * [Isolated Containers](https://docs.dewacloud.com/docs/isolated-containers/)

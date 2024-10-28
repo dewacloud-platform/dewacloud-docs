@@ -36,7 +36,7 @@ Saat mengelola _Network Isolation_, Anda harus mempertimbangkan kekhasan berikut
 
 ## Using Network Isolation{#using-network-isolation}
 
-Singkatnya, _Network Isolation_ adalah fitur yang berguna dan berorientasi pengguna yang bertujuan untuk mencegah akses yang tidak diinginkan ke environments Anda. Umumnya, praktik yang baik adalah mengisolasi [applications](<https://docs.dewacloud.com/docs/paas-components-definition/#application>) Anda dari satu sama lain. Sebagai contoh:
+Singkatnya, _Network Isolation_ adalah fitur yang berguna dan berorientasi pengguna yang bertujuan untuk mencegah akses yang tidak diinginkan ke environments Anda. Umumnya, praktik yang baik adalah mengisolasi [applications](<https://docs.dewacloud.com/docs/concept-and-terminology/#application>) Anda dari satu sama lain. Sebagai contoh:
 
   * Jika Anda perlu berbagi akses ke aplikasi atau database Anda dengan karyawan atau perusahaan pihak ketiga, Anda akan yakin bahwa container di dalam kelompok terisolasi tidak akan dapat diakses melalui jaringan internal platform
 
@@ -47,7 +47,7 @@ Dengan cara ini, fitur _Network Isolation_ dapat memisahkan proyek pada satu aku
 ## Baca Juga{#whats-next}
 
   * [Environment Groups](<https://docs.dewacloud.com/docs/environment-groups/>)
-  * [Container Firewall](<https://docs.dewacloud.com/docs/custom-firewall/>)
+  * [Container Firewall](<https://docs.dewacloud.com/docs/container-firewall/>)
   * [Shared Load Balancer](<https://docs.dewacloud.com/docs/shared-load-balancer/>)
   * [Public IP](<https://docs.dewacloud.com/docs/public-ip/>)
   * [Endpoints](<https://docs.dewacloud.com/docs/endpoints/>)

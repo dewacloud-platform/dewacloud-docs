@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-slug: /software-stack-versions
+slug: /software-stacks-versions
 title: Software Stack Versions
 ---
 # Software Stack Versions

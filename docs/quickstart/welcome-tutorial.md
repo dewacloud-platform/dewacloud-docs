@@ -22,7 +22,7 @@ Arahkan kursor ke titik tertentu dalam daftar untuk melihat ilustrasi penjelasan
 
 Menggerakkan kursor ke titik manapun akan memunculkan ilustrasi yang sesuai, sementara mengkliknya akan mengarahkan ke halaman dokumentasi khusus.
 
-2\. Slide kedua _**Build Your Application Topology**_ menunjukkan cara membangun topologi aplikasi Anda menggunakan komponen platform. Lihat dokumen [**Concept & Terminology**](<https://docs.dewacloud.com/docs/paas-components-definition/>) untuk detail tambahan.
+2\. Slide kedua _**Build Your Application Topology**_ menunjukkan cara membangun topologi aplikasi Anda menggunakan komponen platform. Lihat dokumen [**Concept & Terminology**](<https://docs.dewacloud.com/docs/concept-and-terminology/>) untuk detail tambahan.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/platform-welcome-tutorial/03-tutorial-build-application-topology.png" alt="tutorial build application topology" width="100%"/>
 
@@ -75,7 +75,7 @@ Seluruh tur memerlukan beberapa menit tetapi menyediakan informasi tentang prins
 ## Baca Juga{#whats-next}
 
   * [Getting Started](<https://docs.dewacloud.com/docs/getting-started/>)
-  * [Basics & Terminology](<https://docs.dewacloud.com/docs/paas-components-definition/>)
+  * [Basics & Terminology](<https://docs.dewacloud.com/docs/concept-and-terminology/>)
   * [Dashboard Guide](<https://docs.dewacloud.com/docs/dashboard-guide/>)
   * [Setting Up Environment](<https://docs.dewacloud.com/docs/setting-up-environment/>)
   * [Deployment Guide](<https://docs.dewacloud.com/docs/deployment-guide/>)

@@ -81,7 +81,7 @@ LLSMP memiliki variabel tambahan (misalnya WAF, WP_PROTECT, WP_PROTECT_LIMIT) ya
   * [skala vertikal otomatis](<https://docs.dewacloud.com/docs/automatic-vertical-scaling/>)
   * [penawaran harga berbasis penggunaan](<https://docs.dewacloud.com/docs/pricing-model/>)
   * [akses SSH](<https://docs.dewacloud.com/docs/ssh-access/>)
-  * [firewall kontainer](<https://docs.dewacloud.com/docs/custom-firewall/>)
+  * [firewall kontainer](<https://docs.dewacloud.com/docs/container-firewall/>)
   * [redeploy kontainer](<https://docs.dewacloud.com/docs/container-redeploy/>)
   * [pemantauan statistik](<https://docs.dewacloud.com/docs/view-app-statistics/>)
   * [otomatisasi deployment](<https://docs.dewacloud.com/docs/deployment-guide/>)

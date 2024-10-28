@@ -51,8 +51,8 @@ Berdasarkan jenis DB yang digunakan, lihat contoh kode koneksi di bawah ini dan 
 DB Type | Connection code  
 ---|---  
 [MySQL dan MariaDB](<https://docs.dewacloud.com/docs/connection-to-mysql-php>) | _mysql_connect('HOST', 'USERNAME', 'PASSWORD')_  
-[MongoDB](<https://docs.dewacloud.com/docs/connection-to-mongodb-for-php>) | _Mongo(“hostaddress”, array(“username” => “username”, “password” => “password”))_  
-[PostgreSQL](<https://docs.dewacloud.com/docs/connection-to-postgresql-for-php>) | _pg_connect(“host=host_address port=5432 dbname=postgres user=webadmin password=password”)_  
+[MongoDB](<https://docs.dewacloud.com/docs/connection-to-mongodb-php>) | _Mongo(“hostaddress”, array(“username” => “username”, “password” => “password”))_  
+[PostgreSQL](<https://docs.dewacloud.com/docs/connection-to-postgresql-php>) | _pg_connect(“host=host_address port=5432 dbname=postgres user=webadmin password=password”)_  
 
 :::note
 Diperlukan untuk menentukan string host tanpa **http://**. Alamat dan kredensial yang sesuai terletak di email yang Anda terima setelah pembuatan database.
