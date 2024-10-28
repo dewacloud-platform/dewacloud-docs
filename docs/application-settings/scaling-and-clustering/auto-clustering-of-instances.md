@@ -1,6 +1,6 @@
 ---
 sidebar_position: 6
-slug: /auto-clustering-of-instances
+slug: /auto-clustering
 title: Auto-Clustering of Instances
 ---
 # Auto-Clustering of Instances via Topology Wizard

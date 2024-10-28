@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-slug: /php-app-server-configuration
+slug: /php-app-server-config
 title: PHP App Server Configuration
 ---
 <span id="back"></span>

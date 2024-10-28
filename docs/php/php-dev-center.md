@@ -120,8 +120,8 @@ Selain itu, platform ini memiliki [WordPress Cluster](<https://github.com/jelast
 Platform ini menyediakan satu set server database yang dapat diskalakan dan sepenuhnya dapat dikelola yang dapat Anda instal dan operasikan dengan mudah dalam PHP environment. Untuk melakukan koneksi, sesuaikan aplikasi Anda mengikuti instruksi berdasarkan database yang Anda perlukan:
 
   * [MySQL/MariaDB Connection](<https://docs.dewacloud.com/docs/connection-to-mysql-php/>)
-  * [PostgreSQL Connection](<https://docs.dewacloud.com/docs/connection-to-postgresql-for-php/>)
-  * [MongoDB Connection](<https://docs.dewacloud.com/docs/connection-to-mongodb-for-php/>)
+  * [PostgreSQL Connection](<https://docs.dewacloud.com/docs/connection-to-postgresql-php/>)
+  * [MongoDB Connection](<https://docs.dewacloud.com/docs/connection-to-mongodb-php/>)
 
 ## Modules and Accelerators{#modules-and-accelerators}
 
@@ -148,7 +148,7 @@ Panduan konfigurasi tambahan tersedia untuk server aplikasi tertentu:
   * [Apache Security Configurations](<https://docs.dewacloud.com/docs/apache-security-configurations/>)
   * [NGINX Security Configurations](<https://docs.dewacloud.com/docs/nginx-security-configurations/>)
 
-Cara lain untuk memastikan perlindungan aplikasi adalah dengan menggunakan [container firewall feature](<https://docs.dewacloud.com/docs/custom-firewall/>). Ini memungkinkan Anda mengontrol ketersediaan nodes baik dari dalam maupun luar platform.
+Cara lain untuk memastikan perlindungan aplikasi adalah dengan menggunakan [container firewall feature](<https://docs.dewacloud.com/docs/container-firewall/>). Ini memungkinkan Anda mengontrol ketersediaan nodes baik dari dalam maupun luar platform.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/php/php-dev-center/10-php-container-firewall.png" alt="PHP container firewall" width="100%"/>
 

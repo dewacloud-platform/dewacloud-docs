@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /collaboration-roles-and-policies
+slug: /collaboration-roles-policies
 title: Peran & Kebijakan Kolaborasi
 ---
 

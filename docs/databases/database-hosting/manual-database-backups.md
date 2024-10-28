@@ -1,6 +1,6 @@
 ---
 sidebar_position: 8
-slug: /manual-database-backups
+slug: /database-backups
 title: Manual Database Backups
 ---
 

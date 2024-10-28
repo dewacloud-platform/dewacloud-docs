@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-slug: /system-containers
+slug: /what-are-system-containers
 title: System Containers
 ---
 # Apa Itu System Containers
@@ -23,5 +23,5 @@ Ada beberapa implementasi yang berbeda dari system containers: _BSD jails_, _Lin
 
 * [Docker Standard Support](https://docs.dewacloud.com/docs/dockers-overview)
 * [Application Containers](https://docs.dewacloud.com/docs/what-are-application-containers)
-* [Supported OS Distributions](https://docs.dewacloud.com/docs/docker-supported-distributions)
+* [Supported OS Distributions](https://docs.dewacloud.com/docs/container-image-requirements)
 * [Container Redeploy](https://docs.dewacloud.com/docs/container-redeploy)

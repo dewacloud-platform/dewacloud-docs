@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /process-managers
+slug: /nodejs-process-managers
 title: Process Managers
 ---
 

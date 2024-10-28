@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /environment-groups
+slug: /environment-groups-overview
 title: Overview
 ---
 # Organizing Environments Into Groups: How to Smartly Structure Your Projects

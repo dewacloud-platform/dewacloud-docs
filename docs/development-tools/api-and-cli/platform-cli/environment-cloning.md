@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-slug: /environment-cloning
+slug: /cli-clone-environment
 title: Environment Cloning
 ---
 # CLI Tutorial: Environment Cloning

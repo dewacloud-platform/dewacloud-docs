@@ -134,7 +134,7 @@ Di sini, konfigurasi spesifik container yang diperlukan untuk operasi redeploy y
   * _**/etc/jelastic/redeploy.conf**_ \- konfigurasi redeployment saat ini sendiri (untuk menyimpan daftar file dan direktori yang diperlukan untuk disimpan selama setiap redeploy container selanjutnya)
   * _**$\{home\}/.bash_profile**_ \- berisi pengaturan shell SSH default (misalnya, pesan pengantar shell, file konfigurasi yang harus diambil, dll.)
   * _**/etc/sysconfig/iptables**_ \- menyimpan aturan firewall default
-  * _**/etc/sysconfig/iptables-custom**_ \- berisi [custom firewall rules](<https://docs.dewacloud.com/docs/custom-firewall/>)
+  * _**/etc/sysconfig/iptables-custom**_ \- berisi [custom firewall rules](<https://docs.dewacloud.com/docs/container-firewall/>)
   * _**/var/lib/jelastic/keys**_ \- menyimpan [SSH private keys yang diunggah](<https://docs.dewacloud.com/docs/ssh-generate-key/>), yang diperlukan untuk mengakses container via SSH dan untuk berinteraksi dengan containers lainnya
 
 Juga, **redeploy.conf** untuk tiap jenis node tertentu mencakup file-file spesifik stack yang berbeda.

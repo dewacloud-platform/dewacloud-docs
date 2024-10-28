@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /paas-cluster-overview
+slug: /cluster-overview
 title: PaaS Cluster Overview
 ---
 # PaaS Cluster Overview

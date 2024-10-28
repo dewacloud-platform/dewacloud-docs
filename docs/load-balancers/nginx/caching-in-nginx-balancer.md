@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-slug: /caching-in-nginx-balancer
+slug: /nginx-caching
 title: Caching in NGINX Balancer
 ---
 # NGINX Balancer Configuration

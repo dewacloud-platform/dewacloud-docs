@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /auto-deploy-for-multiple-containers
+slug: /multiple-containers-auto-update
 title: Auto-Deploy for Multiple Containers
 ---
 # GIT & SVN Auto-Deploy for Multiple Containers

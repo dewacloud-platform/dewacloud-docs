@@ -21,13 +21,13 @@ const environmentFeatureList: PlatformFeatureItem[] = [
     title: "Data Storage Container",
     description:
       "Data Storage Container di Dewacloud adalah solusi efisien untuk penyimpanan dan pengendalian data, memungkinkan berbagi file dan konfigurasi di berbagai lingkungan.",
-    link: "/docs/data-storage-overview/",
+    link: "/docs/data-storage-container-overview/",
   },
   {
     title: "Database",
     description:
       "Database di Dewacloud adalah solusi penyimpanan yang kuat untuk aplikasi Anda, menawarkan performa tinggi dan skalabilitas.",
-    link: "/docs/db-hosting-overview",
+    link: "/docs/database-hosting",
   },
   {
     title: "Auto Vertical Scaling",
@@ -60,7 +60,7 @@ const developmentToolsFeatureList: PlatformFeatureItem[] = [
     title: "SSH",
     description:
       "SSH di Dewacloud memungkinkan Anda untuk mengakses dan mengelola instance aplikasi dengan aman melalui koneksi terenkripsi.",
-    link: "/docs/ssh-overview",
+    link: "/docs/ssh-gate",
   },
   {
     title: "API & CLI",
@@ -78,7 +78,7 @@ const developmentToolsFeatureList: PlatformFeatureItem[] = [
     title: "FTP/FTPS",
     description:
       "FTP/FTPS Support di Dewacloud memungkinkan transfer file yang aman dan efisien antara klien dan server. Dengan dukungan FTP dan FTPS, Anda dapat mengelola file aplikasi dengan mudah, menjamin keamanan data selama proses transfer.",
-    link: "/docs/ftpftps-support/",
+    link: "/docs/ftp-ftps-support",
   },
   {
     title: "Remote Access",
@@ -102,7 +102,7 @@ const developmentToolsFeatureList: PlatformFeatureItem[] = [
     title: "Account Collaboration",
     description:
       "Account Collaboration di Dewacloud memungkinkan tim untuk bekerja sama secara efisien dalam mengelola sumber daya cloud.",
-    link: "/docs/collaboration-overview",
+    link: "/docs/account-collaboration",
   },
 ];
 
@@ -135,19 +135,19 @@ const deploymentToolsFeatureList: PlatformFeatureItem[] = [
     title: "Git Push Deploy",
     description:
       "Git Push Deploy di Dewacloud memungkinkan Anda untuk melakukan deployment aplikasi secara otomatis dengan hanya menggunakan perintah Git.",
-    link: "/docs/git-push-deploy-add-on",
+    link: "/docs/git-push-deploy",
   },
   {
     title: "SSH Access to Git Repository",
     description:
       "SSH Access to Git Repository di Dewacloud memungkinkan Anda untuk mengakses repositori Git melalui koneksi SSH yang aman.",
-    link: "/docs/ssh-access-to-git-repository",
+    link: "/docs/git-ssh",
   },
   {
     title: "Deployment Apps via Gitblit",
     description:
       "Deployment Apps via Gitbit di Dewacloud memungkinkan Anda untuk menyebarkan aplikasi dengan mudah menggunakan platform Gitbit.",
-    link: "/docs/deploying-apps-via-gitblit",
+    link: "/docs/gitblit",
   },
 ];
 

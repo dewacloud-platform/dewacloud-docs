@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-slug: /multiple-domains-for-glassfish
+slug: /multiple-domains-glassfish
 title: Multiple Domains for GlassFish
 ---
 # Running Multiple Custom Domains on GlassFish Server

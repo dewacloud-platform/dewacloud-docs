@@ -1,6 +1,6 @@
 ---
 sidebar_position: 7
-slug: /database-connection-via-hibernate
+slug: /connection-to-db-via-hibernate
 title: Database Connection via Hibernate
 ---
 

@@ -135,7 +135,6 @@ Itu saja! Nikmati menggunakan platform ini!
 
 ## Baca Juga
 
-  * [What is PaaS & CaaS](<https://docs.dewacloud.com/docs/what-is-paas-and-caas/>)
   * [Dashboard Guide](<https://docs.dewacloud.com/docs/dashboard-guide/>)
   * [Setting Up Environment](<https://docs.dewacloud.com/docs/setting-up-environment/>)
   * [Deployment Guide](<https://docs.dewacloud.com/docs/deployment-guide/>)

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 6
-slug: /external-nfs-server-configuration
+slug: /configure-external-nfs-server
 title: External NFS Server Configuration
 ---
 
@@ -75,7 +75,7 @@ exportfs -ra
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/External%20NFS%20Server%20Configuration/07-apply-new-export-settings.png" alt="apply new export settings" width="100%"/>
 
-5\. Selanjutnya, Anda perlu membuka port server NFS (_111_ , _2049_ , dan _20048_) untuk alamat IP klien NFS (yang digunakan dalam langkah kedua). Arahkan ke bagian **Settings >[Firewall](<https://docs.dewacloud.com/docs/custom-firewall/>)** environment penyimpanan untuk menambahkan aturan yang diperlukan melalui UI yang intuitif:
+5\. Selanjutnya, Anda perlu membuka port server NFS (_111_ , _2049_ , dan _20048_) untuk alamat IP klien NFS (yang digunakan dalam langkah kedua). Arahkan ke bagian **Settings >[Firewall](<https://docs.dewacloud.com/docs/container-firewall/>)** environment penyimpanan untuk menambahkan aturan yang diperlukan melalui UI yang intuitif:
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/External%20NFS%20Server%20Configuration/08-configure-firewall-rules-via-ui.png" alt="configure firewall rules via UI" width="100%"/>
 

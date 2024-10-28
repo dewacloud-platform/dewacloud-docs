@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /java-agent
+slug: /javaagent
 title: Java Agent
 ---
 

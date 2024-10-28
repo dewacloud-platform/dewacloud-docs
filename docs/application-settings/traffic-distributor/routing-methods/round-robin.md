@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /round-robin
+slug: /round-robin-traffic-routing
 title: Round Robin
 ---
 

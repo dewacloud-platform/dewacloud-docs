@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /local-filesystem
+slug: /local-filesystem-storage
 title: Local Filesystem
 ---
 

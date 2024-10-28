@@ -1,6 +1,6 @@
 ---
 sidebar_position: 6
-slug: /multiple-domains-with-public-ip
+slug: /multiple-domains
 title: Multiple Domains with Public IP
 ---
 # Setting Up Multiple Domains with Public IP

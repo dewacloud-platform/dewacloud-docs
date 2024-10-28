@@ -1,7 +1,8 @@
 {
   "label": "Container Configuration",
-  "position": 1,
+  "position": 4,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "slug": "/container-configuration"
   }
 }

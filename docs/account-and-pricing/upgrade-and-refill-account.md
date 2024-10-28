@@ -1,6 +1,6 @@
 ---
 sidebar_position: 10
-slug: /upgrade-and-refill-account
+slug: /upgrade-refill-account
 title: Upgrade & Isi Ulang Akun
 ---
 # Upgrade & Isi Ulang Akun

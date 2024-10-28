@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /setting-up-cronjob
+slug: /cronjob
 title: Setting Up Cronjob
 ---
 

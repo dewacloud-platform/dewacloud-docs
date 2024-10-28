@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-slug: /multiple-domains-for-tomcat
+slug: /multiple-domains-tomcat-server
 title: Multiple Domains for Tomcat
 ---
 # Multiple Domain Names on Tomcat Server

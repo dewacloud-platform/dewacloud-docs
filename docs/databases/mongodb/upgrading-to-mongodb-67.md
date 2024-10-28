@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-slug: /upgrading-to-mongodb-67
+slug: /updating-to-mongodb-7
 title: Upgrading to MongoDB 6/7
 ---
 # Upgrading to MongoDB 6/7

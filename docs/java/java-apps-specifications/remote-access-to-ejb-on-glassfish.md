@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-slug: /remote-access-to-ejb-on-glassfish
+slug: /remote-access-to-ejb-glassfish
 title: Remote Access to EJB on GlassFish
 ---
 

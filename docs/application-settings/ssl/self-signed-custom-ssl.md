@@ -1,6 +1,6 @@
 ---
 sidebar_position: 7
-slug: /self-signed-custom-ssl
+slug: /self-signed-ssl
 title: Self-Signed Custom SSL
 ---
 

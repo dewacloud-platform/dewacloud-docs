@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-slug: /application-containers
+slug: /what-are-application-containers
 title: Application Containers
 ---
 # Apa Itu Application Containers
@@ -23,5 +23,5 @@ Namun, beberapa aplikasi dan teknologi mungkin masih mengalami masalah saat berm
 
 * [Docker Standard Support](https://docs.dewacloud.com/docs/dockers-overview)
 * [System Containers](https://docs.dewacloud.com/docs/what-are-system-containers)
-* [Supported OS Distributions](https://docs.dewacloud.com/docs/docker-supported-distributions)
+* [Supported OS Distributions](https://docs.dewacloud.com/docs/container-image-requirements)
 * [Container Redeploy](https://docs.dewacloud.com/docs/container-redeploy)

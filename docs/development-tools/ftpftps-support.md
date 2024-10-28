@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-slug: /ftpftps-support
+slug: /ftp-ftps-support
 title: FTP/FTPS Support
 ---
 # Dukungan FTP/FTPS

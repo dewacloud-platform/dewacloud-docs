@@ -1,7 +1,8 @@
 {
   "label": "GIT & SVN Auto-Deploy",
-  "position": 1,
+  "position": 4,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "slug": "/git-svn-auto-deploy"
   }
 }

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 7
-slug: /subscription-based-products
+slug: /subscription-products
 title: Produk Berbasis Langganan
 ---
 # Produk Berbasis Langganan

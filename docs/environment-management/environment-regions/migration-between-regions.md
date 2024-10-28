@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /migration-between-regions
+slug: /environment-regions-migration
 title: Migration between Regions
 ---
 # Environment Migration between Regions

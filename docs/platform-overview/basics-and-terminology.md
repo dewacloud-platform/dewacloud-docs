@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /paas-components-definition
+slug: /concept-and-terminology
 title: Basics & Terminology
 ---
 # PaaS: Basic Concepts and Terminology{#paas-basic-concepts-and-terminology}
@@ -23,7 +23,7 @@ Dengan mengetahui tentang komponen dasar dan bagaimana mereka saling berhubungan
 
 ## Cloudlet{#cloudlet}
 
-**[Cloudlet](<https://docs.dewacloud.com/docs/paas-components-definition/#cloudlet>)** adalah komponen infrastruktur platform terkecil. Ini adalah unit sumber daya khusus yang setara dengan _**128 MiB**_ **RAM** dan _**400 MHz**_ **CPU** secara bersamaan. Granularitas sumber daya yang tinggi ini memungkinkan sistem untuk mengalokasikan kapasitas yang tepat yang dibutuhkan oleh setiap instance di lingkungan. Ini memastikan [harga berbasis penggunaan](<https://docs.dewacloud.com/docs/pricing-model/>) yang benar-benar adil, sehingga hanya sumber daya yang benar-benar dikonsumsi yang dibayar.
+**[Cloudlet](<https://docs.dewacloud.com/docs/concept-and-terminology/#cloudlet>)** adalah komponen infrastruktur platform terkecil. Ini adalah unit sumber daya khusus yang setara dengan _**128 MiB**_ **RAM** dan _**400 MHz**_ **CPU** secara bersamaan. Granularitas sumber daya yang tinggi ini memungkinkan sistem untuk mengalokasikan kapasitas yang tepat yang dibutuhkan oleh setiap instance di lingkungan. Ini memastikan [harga berbasis penggunaan](<https://docs.dewacloud.com/docs/pricing-model/>) yang benar-benar adil, sehingga hanya sumber daya yang benar-benar dikonsumsi yang dibayar.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/basics-terminology/01-cloudlet-resource-unit.png" alt="cloudlet - resource unit" width="100%"/>
 

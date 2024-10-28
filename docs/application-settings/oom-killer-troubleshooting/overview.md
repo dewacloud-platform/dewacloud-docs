@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /oom-killer-troubleshooting
+slug: /oom-killer-issues
 title: Overview
 ---
 # OOM Killer Issues Troubleshooting

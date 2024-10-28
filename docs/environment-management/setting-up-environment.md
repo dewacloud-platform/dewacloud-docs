@@ -5,7 +5,7 @@ title: Setting Up Environment
 ---
 # Menyiapkan Environment
 
-Langkah pertama dari hosting aplikasi apa pun adalah pembuatan [environment](<https://docs.dewacloud.com/docs/paas-components-definition/#environment>) dengan container terisolasi yang diperlukan. Platform ini menyediakan UI yang kuat dan intuitif untuk membuat dan mengkonfigurasi environment sesuai dengan kebutuhan Anda. Dokumen ini akan memandu Anda melalui semua langkah yang diperlukan, memberikan penjelasan yang lebih luas tentang spesifikasi dan fitur yang tersedia.
+Langkah pertama dari hosting aplikasi apa pun adalah pembuatan [environment](<https://docs.dewacloud.com/docs/concept-and-terminology/#environment>) dengan container terisolasi yang diperlukan. Platform ini menyediakan UI yang kuat dan intuitif untuk membuat dan mengkonfigurasi environment sesuai dengan kebutuhan Anda. Dokumen ini akan memandu Anda melalui semua langkah yang diperlukan, memberikan penjelasan yang lebih luas tentang spesifikasi dan fitur yang tersedia.
 
 1\. Masuk ke dashboard platform dan klik tombol **New Environment** di sudut kiri atas.
 
@@ -36,9 +36,9 @@ Klik pada tab dengan bahasa pemrograman yang diperlukan (_Java_, _PHP_, _Ruby_, 
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/setting-up-environment/04-topology-wizard-docker-tab.png" alt="topology wizard docker tab" max-width="100%"/>
 
-  * **Custom Container Images** \- image _Docker_ apa pun (berdasarkan [OS yang didukung](<https://docs.dewacloud.com/docs/docker-supported-distributions/>)) yang dideploy ke dalam container sistem. Dibandingkan dengan **container terkelola**, opsi ini menyediakan akses ke lebih banyak solusi, mencari seluruh registry Docker Hub atau menggunakan repositori pribadi Anda. Namun, keberoperasian perangkat lunak dan kompatibilitas dengan platform tidak dapat dijamin karena konten dikelola oleh pemelihara image masing-masing. Disarankan untuk membangun image container kustom berdasarkan [image bersertifikat platform](<https://hub.docker.com/u/jelastic>) menggunakan instruksi [FROM](<https://docs.docker.com/engine/reference/builder/#from>).
+  * **Custom Container Images** \- image _Docker_ apa pun (berdasarkan [OS yang didukung](<https://docs.dewacloud.com/docs/container-image-requirements/>)) yang dideploy ke dalam container sistem. Dibandingkan dengan **container terkelola**, opsi ini menyediakan akses ke lebih banyak solusi, mencari seluruh registry Docker Hub atau menggunakan repositori pribadi Anda. Namun, keberoperasian perangkat lunak dan kompatibilitas dengan platform tidak dapat dijamin karena konten dikelola oleh pemelihara image masing-masing. Disarankan untuk membangun image container kustom berdasarkan [image bersertifikat platform](<https://hub.docker.com/u/jelastic>) menggunakan instruksi [FROM](<https://docs.docker.com/engine/reference/builder/#from>).
 
-  * **Docker Engine** \- sebuah _[Docker Engine CE](<https://docs.dewacloud.com/docs/docker-engine-automatic-install-swarm-connect/>)_ yang dideploy ke dalam container sistem. Ini menyediakan akses ke semua fungsi asli Docker, termasuk deployment, scaling, dan manajemen dari banyak [container aplikasi](<https://docs.dewacloud.com/docs/what-are-application-containers/>) di dalamnya.
+  * **Docker Engine** \- sebuah _[Docker Engine CE](<https://www.virtuozzo.com/company/blog/docker-engine-automatic-install-swarm-connect/>)_ yang dideploy ke dalam container sistem. Ini menyediakan akses ke semua fungsi asli Docker, termasuk deployment, scaling, dan manajemen dari banyak [container aplikasi](<https://docs.dewacloud.com/docs/what-are-application-containers/>) di dalamnya.
 
   * **Kubernetes Cluster** \- _[Kubernetes cluster](<https://docs.dewacloud.com/docs/kubernetes-cluster/>)_ siap pakai dengan control plane dan worker nodes yang telah dikonfigurasi, dibuat berdasarkan container sistem. Deployment, scaling, dan orkestrasi dari microservices di dalamnya ditangani oleh control units Kubernetes, sementara platform menskalakan dan mengelola control plane dan worker nodes.
 
@@ -48,7 +48,7 @@ Klik pada tab dengan bahasa pemrograman yang diperlukan (_Java_, _PHP_, _Ruby_, 
 
 ## Mengkonfigurasi Topologi {#configuring-topology}
 
-Anda dapat mengkonfigurasi topologi environment ([struktur layers](<https://docs.dewacloud.com/docs/paas-components-definition/#layer>)) melalui bagian kiri wizard. Anggaplah itu sebagai konstruksi yang membantu Anda membuat environment Anda. Di sini, blok-blok berikut tersedia:
+Anda dapat mengkonfigurasi topologi environment ([struktur layers](<https://docs.dewacloud.com/docs/concept-and-terminology/#layer>)) melalui bagian kiri wizard. Anggaplah itu sebagai konstruksi yang membantu Anda membuat environment Anda. Di sini, blok-blok berikut tersedia:
 
   * **[Load Balancers](<https://docs.dewacloud.com/docs/load-balancing/>)** \- stack yang beroperasi sebagai titik masuk untuk environment guna mendistribusikan permintaan masuk dan menciptakan beban yang merata pada node lain
   * **[Application Servers](<https://docs.dewacloud.com/docs/tomcat/>)** (compute nodes) \- web server yang menjalankan aplikasi Anda
@@ -117,7 +117,7 @@ Daftar dapat bervariasi tergantung pada stack tertentu dan izin akun:
   * **[Auto-Clustering](<https://docs.dewacloud.com/docs/auto-clustering/>)** \- klasterisasi otomatis untuk beberapa template bersertifikat platform. Kolom tambahan dapat muncul setelah aktivasi, misalnya pemilihan skema (_master-slave_, _master-master_, atau _galera_) untuk cluster database.
   * **Disk Limit** \- jumlah ruang disk yang dicadangkan per node. Container [Shared Storage](<https://docs.dewacloud.com/docs/shared-storage-container/>) biasanya disediakan dengan kapasitas penyimpanan yang lebih besar.
   * **Sequential restart delay** \- penundaan antara penyelesaian operasi restart pada satu node dan dimulai pada node lain. Ini digunakan untuk menghindari downtime, memastikan bahwa setidaknya satu server aktif. Anda dapat mengaturnya ke " _-1_ " untuk restart simultan dari semua node dalam layer.
-  * **[High-Availability](<https://docs.dewacloud.com/docs/session-replication/>)** (opsi yang tidak disarankan, disarankan untuk redeploy ke versi terbaru stack dan menggunakan fitur _Auto-Clustering_ sebagai gantinya) \- replikasi sesi otomatis untuk server aplikasi _Tomcat_ dan _TomEE_
+  * **[High-Availability](<https://docs.dewacloud.com/docs/auto-clustering/>)** (opsi yang tidak disarankan, disarankan untuk redeploy ke versi terbaru stack dan menggunakan fitur _Auto-Clustering_ sebagai gantinya) \- replikasi sesi otomatis untuk server aplikasi _Tomcat_ dan _TomEE_
   * **[Access via SLB](<https://docs.dewacloud.com/docs/shared-load-balancer/#deny-access-via-shared-load-balancer>)** \- memblokir akses ke node layer melalui Shared Load Balancer platform
   * **[Public IPv4/IPv6](<https://docs.dewacloud.com/docs/public-ip/>)** \- melampirkan jumlah alamat IP eksternal yang ditentukan ke setiap node dalam layer
 

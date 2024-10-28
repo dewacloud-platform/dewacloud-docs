@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /new-relic-update
+slug: /update-new-relic
 title: Update New Relic
 ---
 
