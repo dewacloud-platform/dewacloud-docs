@@ -1,108 +1,108 @@
 ---
 sidebar_position: 6
 slug: /two-factor-authentication
-title: Two-Factor Authentication
+title: Autentikasi Dua Faktor
 ---
-# Two-Factor Authentication
+# Autentikasi Dua Faktor
 
-![two-factor authentication logo](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/two-factor-authentication/01--two-factor-authentication-logo.png" alt="two-factor authentication logo" width="100%"/>
 
-The platform allows configuring a **two-factor authentication** (2FA) to add an extra security layer for your account. With this feature enabled, in addition to username and password, you are required to enter the code randomly generated in the authenticator application on your phone to access PaaS account.
+Platform memungkinkan Anda mengonfigurasi **autentikasi dua faktor** (2FA) untuk menambahkan lapisan keamanan tambahan ke akun Anda. Dengan fitur ini diaktifkan, selain nama pengguna dan kata sandi, Anda diharuskan memasukkan kode yang dihasilkan secara acak dalam aplikasi autentikator di ponsel Anda untuk mengakses akun PaaS.
 
-Below, we’ll go step-by-step on the two-factor authentication feature management:
+Berikut, kami akan menjelaskan langkah demi langkah manajemen fitur autentikasi dua faktor:
 
-  * [enable 2FA](https://docs.dewacloud.com/docs/#enable)
-  * [manage recovery codes](https://docs.dewacloud.com/docs/#manage)
-  * [deactivate 2FA](https://docs.dewacloud.com/docs/#disable)
-  * [working with API](https://docs.dewacloud.com/docs/#api)
+  * [aktifkan 2FA](https://docs.dewacloud.com/docs/#enable)
+  * [kelola kode pemulihan](https://docs.dewacloud.com/docs/#manage)
+  * [nonaktifkan 2FA](https://docs.dewacloud.com/docs/#disable)
+  * [bekerja dengan API](https://docs.dewacloud.com/docs/#api)
 
-## Enable Two-Factor Authentication{#enable-two-factor-authentication}
+## Aktifkan Autentikasi Dua Faktor{#enable-two-factor-authentication}
 
-In order to secure your account with the 2FA follow the next steps:
+Untuk mengamankan akun Anda dengan 2FA, ikuti langkah-langkah berikut:
 
-1\. Go to the **Settings** section by clicking on the same-named button at the top-right corner of the dashboard.
+1\. Buka bagian **Settings** dengan mengklik tombol yang sama di sudut kanan atas dashboard.
 
-![account settings button](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/two-factor-authentication/02-account-settings-button.png" alt="account settings button" width="100%"/>
 
-2\. Within the opened frame, switch to the _**Account**_ tab and click **Set Up Two-Factor Authentication**.
+2\. Dalam bingkai yang terbuka, beralihlah ke tab _**Account**_ dan klik **Set Up Two-Factor Authentication**.
 
-![set up two-factor authentication button](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/two-factor-authentication/03--set-up-two-factor-authentication-button.png" alt="set up two-factor authentication button" width="100%"/>
 
-You need to confirm your password via the appeared pop-up to proceed.
+Anda perlu mengonfirmasi kata sandi Anda melalui pop-up yang muncul untuk melanjutkan.
 
-3\. Next, you need to interconnect your PaaS account with the [Google Authenticator](https://support.google.com/accounts/answer/1066447) application on your mobile phone (if needed, follow the linked guide to help you with installation). Open the app on your device and add the account by either scanning the displayed QR code or manually typing the provided data.
+3\. Selanjutnya, Anda perlu menghubungkan akun PaaS Anda dengan aplikasi [Google Authenticator](https://support.google.com/accounts/answer/1066447) di ponsel Anda (jika diperlukan, ikuti panduan yang ditautkan untuk membantu Anda dalam instalasi). Buka aplikasi di perangkat Anda dan tambahkan akun dengan memindai kode QR yang ditampilkan atau mengetik secara manual data yang disediakan.
 
-![register authentication application](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/two-factor-authentication/04-register-authentication-application.png" alt="register authentication application" width="100%"/>
 
-As a result, you’ll see the six-digit code (automatically refreshed every 30 seconds), type it into the dashboard frame and click **Next** to verify.
+Sebagai hasilnya, Anda akan melihat kode enam digit (secara otomatis diperbarui setiap 30 detik), ketikkan ke dalam bingkai dashboard dan klik **Next** untuk memverifikasi.
 
-4\. In the second step, you’ll see the recovery codes, which can be used as a one-time alternative to the generated authentication codes.
+4\. Pada langkah kedua, Anda akan melihat kode pemulihan, yang dapat digunakan sebagai alternatif satu kali untuk kode autentikasi yang dihasilkan.
 
 :::warning
-Ensure your recovery codes are saved. Otherwise, in case of your phone unavailability, you won’t be able to connect to your account. Also, they are the only option to restore access upon device loss.
+Pastikan kode pemulihan Anda disimpan. Jika tidak, dalam kasus ketidaktersediaan ponsel Anda, Anda tidak akan dapat terhubung ke akun Anda. Selain itu, mereka adalah satu-satunya opsi untuk memulihkan akses saat perangkat hilang.
 :::
 
-![save recovery codes](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/two-factor-authentication/05-save-recovery-codes.png" alt="save recovery codes" width="100%"/>
 
-You need to tick the _I’ve saved the data_ checkbox (automatically checked after using the **Download** or **Copy** buttons) to be able to close this window by clicking **Done**.
+Anda perlu mencentang kotak _I’ve saved the data_ (secara otomatis dicentang setelah menggunakan tombol **Download** atau **Copy**) untuk dapat menutup jendela ini dengan mengklik **Done**.
 
-5\. Now, to login into account, you’ll need to provide the login/password credentials (as usual) and enter a code from the authentication application on your device (or the recovery code).
+5\. Sekarang, untuk masuk ke akun, Anda perlu memberikan kredensial login/katasandi (seperti biasa) dan memasukkan kode dari aplikasi autentikasi di perangkat Anda (atau kode pemulihan).
 
-![two-factor authentication log in](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/two-factor-authentication/06--two-factor-authentication-log-in.png" alt="two-factor authentication log in" width="100%"/>
 
-That’s it! Your account is now protected with two-factor authentication.
+Itu saja! Akun Anda sekarang dilindungi dengan autentikasi dua faktor.
 
-## Manage Recovery Codes{#manage-recovery-codes}
+## Kelola Kode Pemulihan{#manage-recovery-codes}
 
-On the accounts with already enabled 2FA, it is possible to view/regenerate recovery codes:
+Pada akun dengan 2FA yang sudah diaktifkan, Anda dapat melihat/mengatur ulang kode pemulihan:
 
-1\. Go to the **Settings > Account** section and click the **View Recovery Codes** button.
+1\. Buka bagian **Settings > Account** dan klik tombol **View Recovery Codes**.
 
-![view recovery codes button](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/two-factor-authentication/07-view-recovery-codes-button.png" alt="view recovery codes button" width="100%"/>
 
-Confirm the password for your account to continue.
+Konfirmasikan kata sandi untuk akun Anda untuk melanjutkan.
 
-2\. Here, you can see your current recovery codes and, if necessary, **Download** /**Copy** them with the appropriate buttons.
+2\. Di sini, Anda dapat melihat kode pemulihan Anda saat ini dan, jika perlu, **Download**/**Copy** dengan tombol yang sesuai.
 
-![view and regenerate recovery codes](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/two-factor-authentication/08-view-and-regenerate-recovery-codes.png" alt="view and regenerate recovery codes" width="100%"/>
 
-If you ran out of the recovery codes (as each one can be used just once) or if you consider them compromised, click the link at the bottom of the frame (circled in the image above) to generate new ones.
+Jika Anda kehabisan kode pemulihan (karena masing-masing hanya dapat digunakan sekali) atau jika Anda menganggapnya telah kompromi, klik tautan di bagian bawah bingkai (dilingkari dalam gambar di atas) untuk menghasilkan yang baru.
 
-3\. In the appeared pop-up, confirm the operation and, in a moment, you’ll get new codes.
+3\. Dalam pop-up yang muncul, konfirmasi operasi dan, dalam sekejap, Anda akan mendapatkan kode baru.
 
-![updated recovery codes](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/two-factor-authentication/09-updated-recovery-codes.png" alt="updated recovery codes" width="100%"/>
 
-Don’t forget to save the displayed recovery codes with the **Download** /**Copy** buttons, as the old ones won’t work anymore.
+Jangan lupa untuk menyimpan kode pemulihan yang ditampilkan dengan tombol **Download**/**Copy**, karena yang lama tidak akan berfungsi lagi.
 
-## Disable Two-Factor Authentication{#disable-two-factor-authentication}
+## Nonaktifkan Autentikasi Dua Faktor{#disable-two-factor-authentication}
 
-If you need to disable the 2FA for your account, follow the next steps:
+Jika Anda perlu menonaktifkan 2FA untuk akun Anda, ikuti langkah-langkah berikut:
 
-1\. Navigate to the _**Settings > Account**_ section and click the **Disable Two-Factor Authentication** button.
+1\. Navigasikan ke bagian _**Settings > Account**_ dan klik tombol **Disable Two-Factor Authentication**.
 
-![disable two-factor authentication button](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/two-factor-authentication/10--disable-two-factor-authentication-button.png" alt="disable two-factor authentication button" width="100%"/>
 
 :::tip
-In case you want to disable/rebind two-factor authentication due to device loss, use one of the recovery codes to log into the dashboard.
+Jika Anda ingin menonaktifkan/menghubungkan ulang autentikasi dua faktor karena kehilangan perangkat, gunakan salah satu kode pemulihan untuk masuk ke dashboard.
 :::
 
-2\. Confirm your decision through the appropriate pop-up and provide a password in the next one.
+2\. Konfirmasikan keputusan Anda melalui pop-up yang sesuai dan berikan kata sandi pada yang berikutnya.
 
-![password confirmation  dialog](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/two-factor-authentication/pasted-image-0.png" alt="password confirmation dialog" width="100%"/>
 
-That’s it! Your account is now accessible with just the login/password credentials.
+Itu saja! Akun Anda sekarang dapat diakses dengan hanya menggunakan kredensial login/katasandi.
 
-## Using API with Two-Factor Authentication{#using-api-with-two-factor-authentication}
+## Menggunakan API dengan Autentikasi Dua Faktor{#using-api-with-two-factor-authentication}
 
-In order to get a valid session for the [API requests](https://www.virtuozzo.com/application-platform-api-docs/) on accounts with enabled 2FA, you need to call an additional _**Verify2FACode**_ method after the _**SignIn**_ one. In such a way, you’ll be able to provide a six-digit authentication code from the appropriate application on your device.
+Untuk mendapatkan sesi yang valid untuk [permintaan API](https://www.virtuozzo.com/application-platform-api-docs/) pada akun dengan 2FA diaktifkan, Anda perlu memanggil metode tambahan _**Verify2FACode**_ setelah metode _**SignIn**_. Dengan cara ini, Anda dapat memberikan kode autentikasi enam digit dari aplikasi yang sesuai di perangkat Anda.
 
-To avoid such complexity, it is recommended generating and using [personal access tokens](https://docs.dewacloud.com/docs/personal-access-tokens) in your API requests and custom automation scripts.
+Untuk menghindari kerumitan seperti itu, disarankan untuk menghasilkan dan menggunakan [personal access tokens](https://docs.dewacloud.com/docs/personal-access-tokens) dalam permintaan API dan skrip otomasi khusus Anda.
 
 ## Baca Juga{#whats-next}
 
-  * [Account Registration](https://docs.dewacloud.com/docs/account/)
-  * [Account Types](https://docs.dewacloud.com/docs/types-of-accounts/)
-  * [Account Statuses](https://docs.dewacloud.com/docs/account-statuses/)
-  * [Account Password Reset](https://docs.dewacloud.com/docs/account-password-reset/)
+  * [Pendaftaran Akun](https://docs.dewacloud.com/docs/account/)
+  * [Jenis Akun](https://docs.dewacloud.com/docs/types-of-accounts/)
+  * [Status Akun](https://docs.dewacloud.com/docs/account-statuses/)
+  * [Pengaturan Ulang Kata Sandi Akun](https://docs.dewacloud.com/docs/account-password-reset/)
   * [Personal Access Tokens](https://docs.dewacloud.com/docs/personal-access-tokens/)
-  * [Accounts Collaboration](https://docs.dewacloud.com/docs/account-collaboration/)
+  * [Kolaborasi Akun](https://docs.dewacloud.com/docs/account-collaboration/)

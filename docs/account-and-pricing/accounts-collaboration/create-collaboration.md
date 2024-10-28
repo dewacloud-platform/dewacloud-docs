@@ -1,125 +1,126 @@
 ---
 sidebar_position: 3
 slug: /create-collaboration
-title: Create Collaboration
+title: Membuat Kolaborasi
 ---
-# Create Collaboration
 
-In order to create your own [collaboration](https://docs.dewacloud.com/docs/account-collaboration/), you just need a billing PaaS account (**primary account**) that will invite additional customers/users (**collaboration members**). You can perform most collaboration-related operations via the dedicated section at the account settings panel.
+# Membuat Kolaborasi
 
-Click the **Settings** button in the top-right corner of the dashboard.
+Untuk membuat [kolaborasi](https://docs.dewacloud.com/docs/account-collaboration/) Anda sendiri, Anda hanya perlu akun PaaS penagihan (**akun utama**) yang akan mengundang pelanggan atau pengguna tambahan (**anggota kolaborasi**). Anda dapat melakukan sebagian besar operasi terkait kolaborasi melalui bagian khusus di panel pengaturan akun.
 
-![account settings button](#)
+Klik tombol **Settings** di sudut kanan atas dashboard.
 
-Within the opened **User Settings** sections, you have the following two collaboration sub-sections:
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/accounts-collaboration/create-collaboration/01-account-settings-button%20(1).png" alt="account settings button" width="100%"/>
 
-  * _**Shared by Me**_ \- collaboration options for the primary account, it has three tabs: 
-    * **Members** \- manages a list of collaboration members (invite new users, suspend or remove existing ones, customize shared environments, groups, roles, etc.)
-    * **Roles** \- configures custom roles (list of allowed actions) from the available policies
-    * **Policies** \- lists the actions that can be added to a role
-  * _**Shared with Me**_ \- options for the collaboration members
+Di dalam bagian **User Settings** yang terbuka, Anda memiliki dua sub-bagian kolaborasi berikut:
 
-![collaboration menu](#)
+* _**Shared by Me**_ \- opsi kolaborasi untuk akun utama, memiliki tiga tab:
+  * **Members** \- mengelola daftar anggota kolaborasi (mengundang pengguna baru, menangguhkan atau menghapus yang sudah ada, menyesuaikan environment yang dibagikan, grup, peran, dll.)
+  * **Roles** \- mengkonfigurasi peran khusus (daftar tindakan yang diizinkan) dari kebijakan yang tersedia
+  * **Policies** \- mencantumkan tindakan yang dapat ditambahkan ke peran
+* _**Shared with Me**_ \- opsi untuk anggota kolaborasi
 
-Now, follow the instructions below to set up a collaboration:
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/accounts-collaboration/create-collaboration/02-collaboration-menu.png" alt="collaboration menu" width="100%"/>
 
-  * [sent collaboration invite](https://docs.dewacloud.com/docs/#send-collaboration-invite) (as primary account)
-  * [accept collaboration invite](https://docs.dewacloud.com/docs/#accept-collaboration-invite) (as collaboration member)
+Sekarang, ikuti instruksi di bawah ini untuk mengatur kolaborasi:
 
-## Send Collaboration Invite{#send-collaboration-invite}
+* [kirim undangan kolaborasi](https://docs.dewacloud.com/docs/#send-collaboration-invite) (sebagai akun utama)
+* [terima undangan kolaborasi](https://docs.dewacloud.com/docs/#accept-collaboration-invite) (sebagai anggota kolaborasi)
 
-Go to the account **Shared by Me** section on the _primary_ account (the one where environments are actually hosted).
+## Kirim Undangan Kolaborasi{#send-collaboration-invite}
 
-1\. If you haven’t before, create at least one _**Role**_ at the appropriate tab.
+Pergi ke bagian **Shared by Me** pada akun _utama_ (yang merupakan tempat host environment sebenarnya).
 
-Provide the following information within the _**Add Role**_ dialog:
+1\. Jika belum, buat setidaknya satu _**Peran**_ pada tab yang sesuai.
 
-  * **Name** \- type any desired name for a role
-  * **Description** \- provide custom description (optional)
-  * **Policies** \- select actions allowed for a role; use _search_ to quickly locate required actions and _filter_ to review only selected ones
-  * **Receive Load Alerts Notifications** \- enable to allow collaboration members with this role to receive load alert notifications about shared items
+Berikan informasi berikut ini dalam dialog _**Add Role**_:
 
-![add collaboration role](#)
+* **Nama** \- ketik nama yang diinginkan untuk sebuah peran
+* **Deskripsi** \- berikan deskripsi khusus (opsional)
+* **Kebijakan** \- pilih tindakan yang diizinkan untuk peran; gunakan _pencarian_ untuk dengan cepat menemukan tindakan yang diperlukan dan _filter_ untuk melihat hanya yang dipilih
+* **Terima Notifikasi Peringatan Beban** \- aktifkan agar anggota kolaborasi dengan peran ini dapat menerima notifikasi peringatan beban tentang item yang dibagikan
 
-You can learn more about **[Roles & Policies](https://docs.dewacloud.com/docs/collaboration-roles-policies/)** at the dedicated guide.
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/accounts-collaboration/create-collaboration/03-add-collaboration-role.png" alt="add collaboration role" width="100%"/>
 
-2\. On the _**Members**_ tab, click the **Invite** button.
+Anda dapat mempelajari lebih lanjut tentang **[Peran & Kebijakan](https://docs.dewacloud.com/docs/collaboration-roles-policies/)** pada panduan khusus.
 
-Fill in the fields of the opened _**Invite Member**_ dialog:
+2\. Pada tab _**Members**_, klik tombol **Invite**.
 
-  * **Email** \- type in the address of the user you want to invite
-  * **Display Name** \- provide a custom name for the invited user (optional)
-  * **Shared Items** \- select separate items and categories (environments and groups) that you want to share with the member
+Isi kolom dalam dialog _**Invite Member**_ yang terbuka:
 
-![invite collaboration member](#)
+* **Email** \- ketik alamat email pengguna yang ingin Anda undang
+* **Nama Tampilan** \- berikan nama khusus untuk pengguna yang diundang (opsional)
+* **Item Dibagikan** \- pilih item dan kategori terpisah (environment dan grup) yang ingin Anda bagikan kepada anggota
+
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/accounts-collaboration/create-collaboration/04-invite-collaboration-member.png" alt="invite collaboration member" width="100%"/>
 
 :::note
-you can assign several roles for a component - use Ctrl to select multiple options and Alt to replace all selected roles  
-you can provide different roles for each (sub-)component  
-hover over a role in the list to see a hint with all included policies  
-if needed, you can Create New Role without closing the invite form  
-you can manage environment group structure directly in the invite form - hover over the group and click the gear icon to select the required option (Add, Edit, Remove)  
-to provide an ability to create environments at the account root (i.e. without any group), share the whole Environments category with a role that grants the appropriate permission  
-if you need to share a single environment, it can be done from the appropriate environment configs
+Anda dapat menetapkan beberapa peran untuk sebuah komponen - gunakan Ctrl untuk memilih beberapa opsi dan Alt untuk mengganti semua peran yang dipilih  
+Anda dapat memberikan peran yang berbeda untuk setiap (sub-)komponen  
+arahkan kursor kepada sebuah peran dalam daftar untuk melihat petunjuk dengan semua kebijakan yang termasuk  
+jika diperlukan, Anda dapat Membuat Peran Baru tanpa menutup formulir undangan  
+Anda dapat mengelola struktur grup environment langsung di formulir undangan - arahkan kursor pada grup dan klik ikon roda gigi untuk memilih opsi yang diperlukan (Tambahkan, Edit, Hapus)  
+untuk memberikan kemampuan membuat environment di root akun (yaitu tanpa grup apa pun), bagikan seluruh kategori Environments dengan peran yang memberikan izin yang sesuai  
+jika Anda perlu membagikan satu environment, itu dapat dilakukan dari konfigurasi environment yang sesuai
 :::
 
-3\. The invited member will appear in the list in the _**pending acceptance**_ state.
+3\. Anggota yang diundang akan muncul dalam daftar dalam status _**menunggu penerimaan**_.
 
-![collaboration pending acceptance](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/accounts-collaboration/create-collaboration/05-collaboration-pending-acceptance.png" alt="collaboration pending acceptance" width="100%"/>
 
-Now, you wait for the member to [accept the invitation](https://docs.dewacloud.com/docs/#accept-collaboration-invite). Any change to the invitation will be displayed at the **Members** tab. Also, you’ll get the appropriate email notification about the user’s decision.
+Sekarang, Anda menunggu anggota untuk [menerima undangan](https://docs.dewacloud.com/docs/#accept-collaboration-invite). Setiap perubahan pada undangan akan ditampilkan di tab **Members**. Juga, Anda akan mendapatkan notifikasi email yang sesuai tentang keputusan pengguna.
 
-4\. If needed, you can select a collaboration member to perform the necessary adjustments:
+4\. Jika diperlukan, Anda dapat memilih anggota kolaborasi untuk melakukan penyesuaian yang diperlukan:
 
-  * **Edit** \- to change shared components and permissions at any time  
+* **Edit** \- untuk mengubah komponen yang dibagikan dan izin kapan saja  
   :::warning
-  If a collaboration member was logged in during the adjustments, they might need to refresh the dashboard to view new shared possibilities.
+  Jika anggota kolaborasi sedang masuk saat penyesuaian, mereka mungkin perlu menyegarkan dashboard untuk melihat kemungkinan berbagi yang baru.
   :::
-  * **Copy** \- to share the same permissions with another user
-  * **Suspend / Activate** \- to temporarily stop / restore sharing
-  * **Remove** \- to terminate sharing and delete info about shared components and permissions
+* **Copy** \- untuk membagikan izin yang sama kepada pengguna lain
+* **Suspend / Activate** \- untuk menghentikan / melanjutkan berbagi secara sementara
+* **Remove** \- untuk menghentikan berbagi dan menghapus informasi tentang komponen dan izin yang dibagikan
 
-![manage collaboration member](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/accounts-collaboration/create-collaboration/06-manage-collaboration-member.png" alt="manage collaboration member" width="100%"/>
 
 :::tip
-For convenience, terminated collaborations (including the case of members leaving on their own) are not removed entirely. The remaining record allows you to re-activate collaboration if necessary.
+Untuk kenyamanan, kolaborasi yang dihentikan (termasuk kasus anggota yang pergi sendiri) tidak dihapus sepenuhnya. Rekaman yang tersisa memungkinkan Anda untuk mengaktifkan kembali kolaborasi jika perlu.
 :::
 
-## Accept Collaboration Invite{#accept-collaboration-invite}
+## Terima Undangan Kolaborasi{#accept-collaboration-invite}
 
-Wait for the primary account to [send a collaboration invite](https://docs.dewacloud.com/docs/#send-collaboration-invite) for you.
+Tunggu akun utama untuk [mengirim undangan kolaborasi](https://docs.dewacloud.com/docs/#send-collaboration-invite) bagi Anda.
 
-1\. Check your email inbox for the invite. It should look as follows:
+1\. Periksa kotak masuk email Anda untuk undangan. Itu harus terlihat seperti berikut:
 
-![collaboration invite email](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/accounts-collaboration/create-collaboration/08-collaboration-invite-email.png" alt="collaboration invite email" width="100%"/>
 
-If interested, click the **View Invitation** button.
+Jika tertarik, klik tombol **View Invitation**.
 
 :::warning
-If not registered at the platform, the account for the current email address will be created automatically.
+Jika tidak terdaftar di platform, akun untuk alamat email saat ini akan dibuat secara otomatis.
 :::
 
-2\. After confirming via email, you will be redirected to the platform dashboard. Here, you’ll see a dialog window that provides options to accept or reject the invitation.
+2\. Setelah mengonfirmasi melalui email, Anda akan diarahkan ke dashboard platform. Di sini, Anda akan melihat jendela dialog yang menyediakan opsi untuk menerima atau menolak undangan.
 
-![join collaboration dialog](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/accounts-collaboration/create-collaboration/09-join-collaboration-dialog.png" alt="join collaboration dialog" width="100%"/>
 
-You can close the dialog or cancel the operation to process it later at the account **Settings > Shared with Me** section.
+Anda dapat menutup dialog atau membatalkan operasi untuk memprosesnya nanti di bagian **Settings > Shared with Me** akun.
 
-![accept collaboration invite](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/accounts-collaboration/create-collaboration/10-accept-collaboration-invite.png" alt="accept collaboration invite" width="100%"/>
 
-3\. Once accepted, the member’s dashboard will get and display new shared items.
+3\. Setelah diterima, dashboard anggota akan mendapatkan dan menampilkan item yang baru dibagikan.
 
-![added to collaboration notification](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/accounts-collaboration/create-collaboration/11-added-to-collaboration-notification%20(1).png" alt="added to collaboration notification" width="100%"/>
 
-That’s it! All shared items are now available to the collaboration member (with defined permissions).
+Selesai! Semua item yang dibagikan sekarang tersedia bagi anggota kolaborasi (dengan izin yang ditentukan).
 
-![shared environment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/accounts-collaboration/create-collaboration/12-shared-environment.png" alt="shared environment" width="100%"/>
 
-Check out the **[Collaboration User Experience](https://docs.dewacloud.com/docs/collaboration-user-experience/)** guide to check the specifics of working in collaboration.
+Lihat panduan **[Pengalaman Pengguna Kolaborasi](https://docs.dewacloud.com/docs/collaboration-user-experience/)** untuk memeriksa detail dari bekerja dalam kolaborasi.
 
 ## Baca Juga{#whats-next}
 
-  * [Collaboration Overview](https://docs.dewacloud.com/docs/account-collaboration/)
-  * [Collaboration Roles & Policies](https://docs.dewacloud.com/docs/collaboration-roles-policies/)
-  * [Collaboration User Experience](https://docs.dewacloud.com/docs/collaboration-user-experience/)
-  * [Share Environment](https://docs.dewacloud.com/docs/share-environment/)
+* [Gambaran Umum Kolaborasi](https://docs.dewacloud.com/docs/account-collaboration/)
+* [Peran & Kebijakan Kolaborasi](https://docs.dewacloud.com/docs/collaboration-roles-policies/)
+* [Pengalaman Pengguna Kolaborasi](https://docs.dewacloud.com/docs/collaboration-user-experience/)
+* [Bagikan Environment](https://docs.dewacloud.com/docs/share-environment/)

@@ -1,108 +1,109 @@
 ---
 sidebar_position: 2
 slug: /oba-billing-system
-title: OBA Billing System
+title: Sistem Penagihan OBA
 ---
-# OBA Billing System
 
-This step-by-step instruction shows you how to convert and refill your account if your hosting provider uses **OBA (Odin Business Automation)** system.
+# Sistem Penagihan OBA
 
-At the moment OBA system is used by **[Tsukaeru](https://docs.dewacloud.com/docs/partners/tsukaeru/)**.
+Instruksi langkah demi langkah ini menunjukkan kepada Anda cara mengonversi dan mengisi ulang akun Anda jika penyedia hosting Anda menggunakan sistem **OBA (Odin Business Automation)**.
 
-## Conversion{#conversion}
+Saat ini, sistem OBA digunakan oleh **[Tsukaeru](https://docs.dewacloud.com/docs/partners/tsukaeru/)**.
 
-1\. At the dashboard click the button **Upgrade trial account** in the drop-down menu.
+## Konversi{#conversion}
+
+1\. Di dashboard, klik tombol **Upgrade trial account** di menu drop-down.
 
 ![upgrade trial account button](#)
 
-2\. Fill in the required fields in the opened window and confirm your agreement with **Terms of service**. Click **Next**.
+2\. Isi kolom yang diperlukan di jendela yang terbuka dan konfirmasikan persetujuan Anda dengan **Terms of service**. Klik **Next**.
 
 ![trial to paid conversion](#)
 
-Now you have a full account and will receive an email notification. After that, you’ll be prompted to perform refilling.
+Sekarang Anda memiliki akun penuh dan akan menerima notifikasi email. Setelah itu, Anda akan diminta untuk melakukan pengisian ulang.
 
-## Refilling{#refilling}
+## Pengisian Ulang{#refilling}
 
-You can proceed to the refilling right after conversion or perform it by clicking **Balance > Refill balance**.
+Anda dapat langsung melanjutkan pengisian ulang setelah konversi atau melakukannya dengan mengklik **Balance > Refill balance**.
 
-Select the payment method (**Diners, MasterCard, Visa, Check/cash,** or **Paypal**) and state the sum using the slider. **Submit Payment**.
+Pilih metode pembayaran (**Diners, MasterCard, Visa, Cek/tunai,** atau **Paypal**) dan tentukan jumlahnya menggunakan slider. **Submit Payment**.
 
 ![OBA refill balance](#)
 
-1\. _If you choose_ **Diners** _as payment method_.
+1\. _Jika Anda memilih_ **Diners** _sebagai metode pembayaran_.
 
-Diners is a special payment type for **OBA** users.
+Diners adalah jenis pembayaran khusus untuk pengguna **OBA**.
 
-Fill in the required fields and register.
+Isi kolom yang diperlukan dan daftarkan.
 
 ![OBA Diners payment](#)
 
-:::note After registering with Diners Club, you won’t need to enter card details again during the next refill (they are saved in Payment options). You just need to confirm refilling and that’s all. :::
+:::note Setelah mendaftar dengan Diners Club, Anda tidak perlu memasukkan detail kartu lagi selama pengisian ulang berikutnya (mereka disimpan dalam opsi Pembayaran). Anda hanya perlu mengonfirmasi pengisian ulang dan itu saja. :::
 
-You can also set auto-refill using **Diners**. Click **Configure auto-refill** in the drop-down menu.
+Anda juga dapat mengatur pengisian ulang otomatis menggunakan **Diners**. Klik **Configure auto-refill** dalam menu drop-down.
 
 ![configure auto-refill button](#)
 
-In the opened tab, specify the amount you want to add to your account. Then, choose the frequency of refilling:
+Di tab yang terbuka, tentukan jumlah yang ingin Anda tambahkan ke akun Anda. Kemudian, pilih frekuensi pengisian ulang:
 
-  * _weekly_ (every Monday)
-  * _monthly_ (1st of each month)
-  * when _balance less than_ the stated sum (up to your choice)
+* _mingguan_ (setiap Senin)
+* _bulanan_ (tanggal 1 setiap bulan)
+* ketika _saldo kurang dari_ jumlah yang ditentukan (sesuai pilihan Anda)
 
-**Confirm** your choice.
+**Konfirmasi** pilihan Anda.
 
 ![auto-refill form](#)
 
-To turn off **Auto refill**, click the link to disable it.
+Untuk mematikan **Auto refill**, klik tautan untuk menonaktifkannya.
 
 ![disable auto-refill](#)
 
-2\. _If you choose_ **cash** _as payment method_.
+2\. _Jika Anda memilih_ **tunai** _sebagai metode pembayaran_.
 
-You can refill your account by paying the invoice at the bank.
+Anda dapat mengisi ulang akun Anda dengan membayar faktur di bank.
 
-When choosing **cash** as a payment method, you will receive the invoice via email, which can be used for payment through the bank.
+Saat memilih **tunai** sebagai metode pembayaran, Anda akan menerima faktur melalui email, yang dapat digunakan untuk pembayaran melalui bank.
 
 ![OBA cash payment](#)
 
-3\. _If you choose_ **card** _as payment method_.
+3\. _Jika Anda memilih_ **kartu** _sebagai metode pembayaran_.
 
-Enter your card details and click **register**.
+Masukkan detail kartu Anda dan klik **register**.
 
-:::note If you have already refilled your account with this card before, you won’t need to re-enter your card details. Just confirm the refill. :::
+:::note Jika Anda telah mengisi ulang akun Anda dengan kartu ini sebelumnya, Anda tidak perlu memasukkan detail kartu lagi. Cukup konfirmasi pengisian ulang. :::
 
 ![OBA card payment](#)
 
-4\. _If you choose_ **PayPal** _as payment method_.
+4\. _Jika Anda memilih_ **PayPal** _sebagai metode pembayaran_.
 
-  * _**with PayPal account**_
+* _**dengan akun PayPal**_
 
-Click **Log In** and enter your PayPal email and password to make the purchase.
+Klik **Log In** dan masukkan email dan kata sandi PayPal Anda untuk melakukan pembelian.
 
 ![log in PayPal account](#)
 
 ![log in PayPal credentials](#)
 
-After conversion, you will receive emails with account conversion and refilling updates. These updates will also appear as messages on the dashboard.
+Setelah konversi, Anda akan menerima email dengan pembaruan konversi akun dan pengisian ulang. Pembaruan ini juga akan muncul sebagai pesan di dashboard.
 
-`tip If you want to use the auto-refill option, tick the “I’d like to use PayPal for future payments to {hoster’s name}” box as shown below.`
+`tip Jika Anda ingin menggunakan opsi pengisian ulang otomatis, centang kotak "I’d like to use PayPal for future payments to {hoster’s name}" seperti yang ditunjukkan di bawah ini.`
 
-  * _**without PayPal account**_
+* _**tanpa akun PayPal**_
 
-If you don't have a PayPal account, click **Buy as a guest**. Enter your billing information.
+Jika Anda tidak memiliki akun PayPal, klik **Buy as a guest**. Masukkan informasi penagihan Anda.
 
 ![PayPal refill as guest](#)
 
-Fill in all the required fields and press **Continue**. Then, enter your debit/credit card details.
+Isi semua kolom yang diperlukan dan tekan **Continue**. Kemudian, masukkan detail kartu debit/kredit Anda.
 
 ![PayPal credit card](#)
 
-You’ll receive emails with updates about your account conversion and refilling. This information will also appear as a message on the dashboard.
+Anda akan menerima email dengan pembaruan tentang konversi akun dan pengisian ulang Anda. Informasi ini juga akan muncul sebagai pesan di dashboard.
 
-:::note With this payment method, you cannot use the auto-refill option. :::
+:::note Dengan metode pembayaran ini, Anda tidak dapat menggunakan opsi pengisian ulang otomatis. :::
 
 ## Baca Juga{#whats-next}
 
-  * [Billing System Overview](https://docs.dewacloud.com/docs/billing-system/)
-  * [Upgrade & Refill Account](https://docs.dewacloud.com/docs/upgrade-refill-account/)
-  * [Pricing Model Overview](https://docs.dewacloud.com/docs/pricing-model/)
+* [Gambaran Umum Sistem Penagihan](https://docs.dewacloud.com/docs/billing-system/)
+* [Upgrade & Isi Ulang Akun](https://docs.dewacloud.com/docs/upgrade-refill-account/)
+* [Gambaran Umum Model Harga](https://docs.dewacloud.com/docs/pricing-model/)

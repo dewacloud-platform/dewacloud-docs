@@ -1,41 +1,41 @@
 ---
 sidebar_position: 5
 slug: /quotas-system
-title: Quotas System
+title: Sistem Kuota
 ---
-# Quotas System
+# Sistem Kuota
 
-While working with the platform, you can notice some features being completely or partially restricted (e.g. [public IP](https://docs.dewacloud.com/docs/public-ip/) option or number of [cloudlets](https://docs.dewacloud.com/docs/cloudlet/) per container) by your particular service hosting provider. In most cases, such limitations are provided for trial accounts only, so [upgrading](https://docs.dewacloud.com/docs/upgrade-refill-account/) will automatically unlock access to all of the platform functionality.
+Saat bekerja dengan platform, Anda mungkin melihat beberapa fitur sepenuhnya atau sebagian dibatasi (misalnya, opsi [public IP](https://docs.dewacloud.com/docs/public-ip/) atau jumlah [cloudlet](https://docs.dewacloud.com/docs/cloudlet/) per container) oleh penyedia layanan hosting tertentu Anda. Dalam kebanyakan kasus, pembatasan semacam itu hanya disediakan untuk akun percobaan, jadi [peningkatan](https://docs.dewacloud.com/docs/upgrade-refill-account/) akan secara otomatis membuka akses ke semua fungsionalitas platform.
 
-If you still require some quotas enlargement after account conversion, please, contact your hosting service provider to get an assistance.
+Jika Anda masih memerlukan pembesaran kuota setelah konversi akun, silakan hubungi penyedia layanan hosting Anda untuk mendapatkan bantuan.
 
-The actual account permissions can be viewed via the **Quotas & Pricing > Account Limits** window at the platform dashboard.
+Izin akun yang sebenarnya dapat dilihat melalui jendela **Quotas & Pricing > Account Limits** di dashboard platform.
 
-![quotas and pricing account limits](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/quotas-system/01-quotas-and-pricing-account-limits.png" alt="quotas and pricing account limits" width="100%"/>
 
-Quotas  
+Kuota  
 ---  
-Maximum number of environments that you can create  
-Maximum number of nodes per environment  
-Maximum number of nodes per node group (layer)  
-Maximum size of the server in cloudlets (128 MiB RAM and 400 MHz CPU)  
-Maximum available disk space per node  
-Maximum available disk space per storage node  
-External network bandwidth  
-Option to set up high-availability cluster  
-Public IPv4 addresses  
-Maximum number of Public IPv4 addresses per environment  
-Maximum number of Public IPv4 addresses per node  
-Public IPv6 addresses  
-Maximum number of Public IPv6 addresses per environment  
-Maximum number of Public IPv6 addresses per node  
-The period during which you can use your trial account  
-The minimal amount of money in the account, which allows you to create environment  
-Built-in SSL  
-Custom domains  
+Jumlah maksimum lingkungan yang dapat Anda buat  
+Jumlah maksimum node per lingkungan  
+Jumlah maksimum node per kelompok node (layer)  
+Ukuran maksimum server dalam cloudlet (128 MiB RAM dan 400 MHz CPU)  
+Ruang disk maksimum yang tersedia per node  
+Ruang disk maksimum yang tersedia per node penyimpanan  
+Bandwidth jaringan eksternal  
+Opsi untuk mengatur kluster ketersediaan tinggi  
+Alamat IPv4 publik  
+Jumlah maksimum alamat IPv4 publik per lingkungan  
+Jumlah maksimum alamat IPv4 publik per node  
+Alamat IPv6 publik  
+Jumlah maksimum alamat IPv6 publik per lingkungan  
+Jumlah maksimum alamat IPv6 publik per node  
+Periode selama Anda dapat menggunakan akun percobaan  
+Jumlah minimal uang di akun, yang memungkinkan Anda membuat lingkungan  
+SSL bawaan  
+Domain khusus  
   
 ## Baca Juga{#whats-next}
 
-  * [Account Types](https://docs.dewacloud.com/docs/types-of-accounts/)
-  * [Upgrade/Refill Account](https://docs.dewacloud.com/docs/upgrade-refill-account/)
-  * [Pricing Model Overview](https://docs.dewacloud.com/docs/pricing-model/)
+  * [Jenis Akun](https://docs.dewacloud.com/docs/types-of-accounts/)
+  * [Tingkatkan/Isi Ulang Akun](https://docs.dewacloud.com/docs/upgrade-refill-account/)
+  * [Ikhtisar Model Harga](https://docs.dewacloud.com/docs/pricing-model/)

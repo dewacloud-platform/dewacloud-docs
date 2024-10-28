@@ -1,143 +1,145 @@
 ---
 sidebar_position: 7
 slug: /subscription-based-products
-title: Subscription-Based Products
+title: Produk Berbasis Langganan
 ---
-# Subscription-Based Products
+# Produk Berbasis Langganan
 
-_This feature availability depends on the particular hosting provider’s settings._
+_Ketersediaan fitur ini tergantung pada pengaturan penyedia hosting tertentu._
 
-The platform can offer some products based on the subscription model. The flow is standard to the modern subscription services implementations – a client is charged once and gets a designated product for a specified period. The solution gives you a fix-priced alternative to the default [usage-based model](https://docs.dewacloud.com/docs/pricing-model/).  
-Let’s see how it works.
+Platform dapat menawarkan beberapa produk berdasarkan model langganan. Alurnya standar untuk implementasi layanan langganan modern – klien dikenakan biaya satu kali dan mendapatkan produk yang ditentukan untuk periode tertentu. Solusi ini memberikan alternatif harga tetap terhadap model [berbasis penggunaan](https://docs.dewacloud.com/docs/pricing-model/) default.  
+Mari kita lihat bagaimana cara kerjanya.
 
-## Purchasing Subscription
+## Pembelian Langganan
 
-1. All products that are available for the user are displayed in the dedicated **Subscription Plans** tab of the [Marketplace](https://www.virtuozzo.com/application-platform-docs/marketplace/).
+1. Semua produk yang tersedia untuk pengguna ditampilkan dalam tab **Subscription Plans** yang didedikasikan pada [Marketplace](https://www.virtuozzo.com/application-platform-docs/marketplace/).
 
-   ![Marketplace subscription plans](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/subscription-based-products/01-marketplace-subscription-plans.png" alt="Marketplace subscription plans" width="100%"/>
 
-   Hover over the required package from the list and click **Install**.
+   Arahkan kursor ke paket yang diperlukan dari daftar dan klik **Install**.
 
-2. Within the opened window, you can see all the configured service plans for the product (multiple options can be available).
+2. Dalam jendela yang terbuka, Anda dapat melihat semua paket layanan yang dikonfigurasi untuk produk (beberapa opsi dapat tersedia).
 
-   ![selecting subscription plan](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/subscription-based-products/02-selecting-subscription-plan.png" alt="selecting subscription plan" width="100%"/>
 
-   Choose the required plan and click **Buy**.
+   Pilih paket yang diperlukan dan klik **Buy**.
 
-3. In the pop-up, specify the following data:
-    - **Billing Period** – choose the preferred period and pricing option from the list
-    - **Quantity** – set a total number of instances included in the subscription
-    - **Auto Pay** – enable automatic subscription renewal after the initial period
+3. Dalam pop-up, tentukan data berikut:
+    - **Billing Period** – pilih periode dan opsi harga yang diinginkan dari daftar
+    - **Quantity** – tetapkan jumlah total instans yang termasuk dalam langganan
+    - **Auto Pay** – aktifkan perpanjangan otomatis langganan setelah periode awal
 
-   ![buying subscription plan](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/subscription-based-products/03-buying-subscription-plan.png" alt="buying subscription plan" width="100%"/>
 
    :::warning  
-   Although subscription environments are bought separately, they will still be stopped in case of account deactivation.
+   Meskipun lingkungan langganan dibeli secara terpisah, mereka tetap akan dihentikan jika akun dinonaktifkan.
    :::
 
-   At the bottom of the frame, you can see the total sum of the configured subscription.
+   Di bagian bawah bingkai, Anda dapat melihat jumlah total langganan yang dikonfigurasi.
 
-4. An invoice will be generated immediately after clicking the **Subscribe & Pay** button.
+4. Faktur akan dihasilkan segera setelah menekan tombol **Subscribe & Pay**.
 
-   After that, your subscription will be added to the dedicated account section, where you can [manage all your subscriptions](https://docs.dewacloud.com/docs/#managing-subscriptions).
+   Setelah itu, langganan Anda akan ditambahkan ke bagian akun khusus, di mana Anda dapat [mengelola semua langganan Anda](https://docs.dewacloud.com/docs/#managing-subscriptions).
+
+   <img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/subscription-based-products/04-successfully-purchaced-subscription-plan.png" alt="successfully purchased subscription plan" width="100%"/>
 
    :::tip  
-   Within the initial Marketplace window, the **Buy** button will be replaced with the **Install** one, allowing you to immediately install the obtained package (just like any standard solution). Later, once all the available installations are deployed, the button will change to the **Upgrade** one.  
+   Dalam jendela Marketplace awal, tombol **Buy** akan digantikan oleh tombol **Install**, yang memungkinkan Anda untuk segera memasang paket yang diperoleh (sama seperti solusi standar apa pun). Kemudian, setelah semua instalasi yang tersedia diterapkan, tombol akan berubah menjadi **Upgrade**.  
    :::
 
-## Managing Subscriptions
+## Mengelola Langganan
 
-All the **Subscriptions** are added to the dedicated section in the account settings. Initially, all the new entries are in the _Incomplete_ status, which will be updated as soon as the appropriate invoice is fulfilled (or expires). Here, you can view all the subscription details, buy new packages, install (uninstall) corresponding instances, and view invoices.
+Seluruh **Langganan** ditambahkan ke bagian khusus di pengaturan akun. Pada awalnya, semua entri baru berada dalam status _Incomplete_, yang akan diperbarui segera setelah faktur yang sesuai terpenuhi (atau kedaluwarsa). Di sini, Anda dapat melihat semua detail langganan, membeli paket baru, memasang (menghapus) instans yang sesuai, dan melihat faktur.
 
-   ![subscriptions section](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/subscription-based-products/05-subscriptions-section.png" alt="subscriptions section" width="100%"/>
 
-The subscription table provides the following information:
-  - **Name** – shows the product and tariff plan name (expand to see the list of installations)
-  - **Usage** – displays the installed to the total number of subscription instances
-  - **Status** – provides the subscription status:
-    - _Incomplete_ – complete the invoice to start using the subscription
-    - _Active_ – the subscription is ready for work (the last invoice is in the “_paid_” status)
-    - _Unpaid_ – the last invoice still needs to be paid
-    - _Canceled_ – you’ve canceled the subscription
-  - **Payment** – shows the information on the due or next payment (you can hover over and click **Pay** to complete the due invoice)
-  - **Cost** – provides subscription price/period
-  - **Auto Pay** – displays whether the auto-payment feature is enabled for the subscription
-  - **Created** – shows the creation date (hover over to see additional info on when the subscription was activated and the billing period)
+Tabel langganan menyediakan informasi berikut:
+  - **Name** – menunjukkan nama produk dan paket tarif (perluas untuk melihat daftar instalasi)
+  - **Usage** – menampilkan instans langganan yang terpasang dan total
+  - **Status** – menunjukkan status langganan:
+    - _Incomplete_ – selesaikan faktur untuk mulai menggunakan langganan
+    - _Active_ – langganan siap digunakan (faktur terakhir dalam status “_paid_”)
+    - _Unpaid_ – faktur terakhir masih perlu dibayar
+    - _Canceled_ – Anda telah membatalkan langganan
+  - **Payment** – menunjukkan informasi tentang pembayaran yang harus dibayar atau berikutnya (Anda dapat mengarahkan kursor dan klik **Pay** untuk menyelesaikan faktur yang harus dibayar)
+  - **Cost** – menyediakan harga langganan/periode
+  - **Auto Pay** – menampilkan apakah fitur pembayaran otomatis diaktifkan untuk langganan
+  - **Created** – menampilkan tanggal pembuatan (arahkan kursor untuk melihat info tambahan tentang kapan langganan diaktifkan dan periode penagihan)
 
-1. Let’s go through the available functionality and specifics:
+1. Mari kita bahas fungsionalitas dan spesifik yang tersedia:
 
-   ![subscriptions tools panel](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/subscription-based-products/06-subscriptions-tools-panel.png" alt="subscriptions tools panel" width="100%"/>
 
-   The buttons on the tools panel allow you to:
-    - **Buy** [new subscriptions](https://docs.dewacloud.com/docs/#purchasing-subscription), which will redirect to the appropriate Marketplace section.
-    - **Install** packages for the existing subscriptions.
-    - **Edit** a subscription to change installation quantity and the _Auto Pay_ option.
-    - **Refresh** the information in the list.
+   Tombol-tombol pada panel alat memungkinkan Anda untuk:
+    - **Buy** [langganan baru](https://docs.dewacloud.com/docs/#purchasing-subscription), yang akan dialihkan ke bagian Marketplace yang sesuai.
+    - **Install** paket untuk langganan yang ada.
+    - **Edit** langganan untuk mengubah jumlah pemasangan dan opsi _Auto Pay_.
+    - **Refresh** informasi dalam daftar.
 
-1.1 The installation window is similar to a standard package. Provide all the required parameters and click the **Install** button.
+1.1 Jendela instalasi mirip dengan paket standar. Berikan semua parameter yang diperlukan dan klik tombol **Install**.
 
-   ![subscription item installation](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/subscription-based-products/07-subscription-item-installation.png" alt="subscription item installation" width="100%"/>
 
    :::note  
-   Products installed through subscriptions may have some restrictions due to the fixed pricing nature (e.g., topology adjustment, environment cloning, and removal).  
+   Produk yang dipasang melalui langganan mungkin memiliki beberapa batasan karena sifat harga tetapnya (misalnya, penyesuaian topologi, kloning lingkungan, dan penghapusan).  
    :::
 
-   The product will be automatically created in a minute.
+   Produk akan secara otomatis dibuat dalam satu menit.
 
-1.2 The **Edit** subscription option allows updating the number of installations for the existing subscriptions. The price per installation is calculated according to the remaining billing period.
-   - Upon _upgrade_ (increasing the number of installations), the platform will automatically generate an additional “_update quantity_” invoice.
-   - In case of a _downgrade_ (no less than the existing number of instances), the platform will generate a refund invoice, and the account’s balance will be recharged.
+1.2 Opsi **Edit** langganan memungkinkan memperbarui jumlah pemasangan untuk langganan yang ada. Harga per pemasangan dihitung sesuai dengan periode penagihan yang tersisa.
+   - Pada saat _peningkatan_ (menambah jumlah pemasangan), platform akan secara otomatis menghasilkan faktur “_update quantity_” tambahan.
+   - Dalam kasus _penurunan_ (tidak kurang dari jumlah instans yang ada), platform akan menghasilkan faktur pengembalian dana, dan saldo akun akan diisi ulang.
 
-   ![edit subscription dialog](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/subscription-based-products/09-edit-subscription-dialog.png" alt="edit subscription dialog" width="100%"/>
 
-   Additionally, you can turn the **Auto Pay** option on/off.
+   Selain itu, Anda dapat menghidupkan/mematikan opsi **Auto Pay**.
 
    :::tip  
-   The **Edit** button will be replaced with the **Discard Changes** one until the appropriate invoice is fulfilled.  
+   Tombol **Edit** akan digantikan dengan **Discard Changes** sampai faktur yang sesuai terpenuhi.  
    :::
 
-2. Hover over the subscription to see the **Install** option (as described in the previous step) and a drop-down menu with additional options:
-    - **Invoices** – switches to the _Invoices_ tab, filtered by the current subscription
-    - **Edit Subscription** – opens the _Edit Subscriptions_ dialog
-    - **Enable/Disable Auto Pay** – changes the _Auto Pay_ option state for the current subscription
-    - **Cancel** (or **Don’t Cancel**) – terminates the subscription (or cancels termination)
+2. Arahkan kursor ke langganan untuk melihat opsi **Install** (seperti dijelaskan pada langkah sebelumnya) dan menu drop-down dengan opsi tambahan:
+    - **Invoices** – beralih ke tab _Invoices_ yang difilter oleh langganan saat ini
+    - **Edit Subscription** – membuka dialog _Edit Subscriptions_
+    - **Enable/Disable Auto Pay** – mengubah status opsi _Auto Pay_ untuk langganan saat ini
+    - **Cancel** (atau **Don’t Cancel**) – menghentikan langganan (atau membatalkan penghentian)
 
-   ![subscription product menu](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/subscription-based-products/10-subscription-product-menu.png" alt="subscription product menu" width="100%"/>
 
-2.1 Upon canceling the subscription, you can still use it until the end of the paid period. During this time, you can choose **Don’t Cancel** from the same menu. Afterward, your subscription will be removed from the list.
+2.1 Setelah membatalkan langganan, Anda masih dapat menggunakannya hingga akhir periode yang dibayar. Selama waktu ini, Anda dapat memilih **Don’t Cancel** dari menu yang sama. Setelah itu, langganan Anda akan dihapus dari daftar.
 
-   ![cancel subscription confirmation](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/subscription-based-products/11-cancel-subscription-confirmation.png" alt="cancel subscription confirmation" width="100%"/>
 
-3. Hover over the installation within your subscription to access the following actions:
-    - **Switch Subscription** – allows moving installations between subscription plans **within the same product**
-    - **Delete** – removes selected installation from the account
+3. Arahkan kursor ke pemasangan dalam langganan Anda untuk mengakses tindakan berikut:
+    - **Switch Subscription** – memungkinkan memindahkan pemasangan di antara paket langganan **dalam produk yang sama**
+    - **Delete** – menghapus pemasangan yang dipilih dari akun
 
-   ![subscription item menu](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/subscription-based-products/12-subscription-item-menu.png" alt="subscription item menu" width="100%"/>
 
-3.1 The **Switch Subscription** functionality depends on the hosting provider configurations. If available, you can move your installation as follows:
-    - **Current Subscription** is selected automatically based on the installation for which the option was clicked.
-    - **New Subscription** drop-down allows selecting the existing subscription (or buying a new one) within the same product
-    - **Passphrase** is a confirmation code to perform the operation.
+3.1 Fungsi **Switch Subscription** bergantung pada konfigurasi penyedia hosting. Jika tersedia, Anda dapat memindahkan pemasangan Anda sebagai berikut:
+    - **Current Subscription** dipilih secara otomatis berdasarkan pemasangan tempat opsi diklik.
+    - Kotak **New Subscription** memungkinkan memilih langganan yang ada (atau membeli yang baru) dalam produk yang sama
+    - **Passphrase** adalah kode konfirmasi untuk melakukan operasi.
 
-   ![switch subscription dialog](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/subscription-based-products/13-switch-subscription-dialog.png" alt="switch subscription dialog" width="100%"/>
 
-3.2 When deleting the installation, you will be asked for confirmation.
+3.2 Saat menghapus pemasangan, Anda akan diminta untuk konfirmasi.
 
-   ![delete subscription item confirmation](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/subscription-based-products/14-delete-subscription-item-confirmation.png" alt="delete subscription item confirmation" width="100%"/>
 
-4. The **Invoices** tab allows reviewing all the subscription-related payments. Filters by _subscription_, _status_, and _number (ID)_ can help you locate the invoices needed.
+4. Tab **Invoices** memungkinkan meninjau semua pembayaran terkait langganan. Filter berdasarkan _subscription_, _status_, dan _number (ID)_ dapat membantu Anda menemukan faktur yang dibutuhkan.
 
-   ![subscription invoices](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/subscription-based-products/15-subscription-invoices.png" alt="subscription invoices" width="100%"/>
 
-   If you have open invoices, you can **Pay** them directly from this panel.
+   Jika Anda memiliki faktur terbuka, Anda dapat **Pay** langsung dari panel ini.
 
-   ![pay subscription invoice](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/subscription-based-products/16-pay-subscription-invoice.png" alt="pay subscription invoice" width="100%"/>
 
-Now, you know all the needed information on how to work with subscriptions and should be ready to start using the feature on your own.
+Sekarang, Anda tahu semua informasi yang dibutuhkan tentang cara bekerja dengan langganan dan seharusnya siap untuk mulai menggunakan fitur ini sendiri.
 
-## What’s next?
+## Baca Juga{#whats-next}
 
-- [Usage-Based Pricing](https://docs.dewacloud.com/docs/pricing-model/)
+- [Harga Berbasis Penggunaan](https://docs.dewacloud.com/docs/pricing-model/)
 - [Platform Marketplace](https://docs.dewacloud.com/docs/marketplace/)
-- [Two-Factor Authentication](https://docs.dewacloud.com/docs/two-factor-authentication/)
+- [Autentikasi Dua Faktor](https://docs.dewacloud.com/docs/two-factor-authentication/)
 - [Personal Access Tokens](https://docs.dewacloud.com/docs/personal-access-tokens/)

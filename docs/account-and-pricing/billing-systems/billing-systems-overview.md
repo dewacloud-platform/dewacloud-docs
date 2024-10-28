@@ -1,24 +1,25 @@
 ---
 sidebar_position: 1
 slug: /billing-systems-overview
-title: Billing Systems Overview
+title: Gambaran Umum Sistem Penagihan
 ---
-# Billing System
 
-The platform supports the following billing systems (the one used on your particular platform depends on the service provider):
+# Sistem Penagihan
 
-  * [WHMCS Billing System](https://docs.dewacloud.com/docs/whmcs-billing) \- Web Host Manager Complete Solution, is one of the leading web hosting management and billing software, which automates all aspects of the business  
-:::tip The WHMCS integration is ensured with the help of the appropriate plugin, which provides smooth integration of the two products and allows PaaS account management directly via the WHMCS dashboard. :::  
-  * [OBA Billing System](https://docs.dewacloud.com/docs/pba-billing-system) \- Odin Business Automation, is a billing automation solution for the small and medium web hosting businesses management and scaling  
-  * [OBAS Billing System](https://docs.dewacloud.com/docs/pbas) \- Odin Business Automation Standard, is an automation solution, which supports management of all the business aspects of a web hosting service  
-  * [HostBill Billing System](https://hostbillapp.com/feature/jelastic/) \- a powerful and flexible, all-in-one automation solution that handles billing, client management and support in online businesses. Easily extensible via modules and integrated with apps to create the most comprehensive solution for your needs  
+Platform ini mendukung sistem penagihan berikut (yang digunakan pada platform Anda tergantung pada penyedia layanan):
 
-Also, some particular hosting providers can opt to use a _custom_ billing system. In such a case, refer to the appropriate provider’s documentation for the additional details.
+* [Sistem Penagihan WHMCS](https://docs.dewacloud.com/docs/whmcs-billing) \- Web Host Manager Complete Solution, adalah salah satu perangkat lunak manajemen dan penagihan hosting web terkemuka, yang mengotomatiskan semua aspek bisnis  
+:::tip Integrasi WHMCS dijamin dengan bantuan plugin yang sesuai, yang memungkinkan integrasi mulus antara dua produk dan memungkinkan manajemen akun PaaS langsung melalui dashboard WHMCS. :::  
+* [Sistem Penagihan OBA](https://docs.dewacloud.com/docs/pba-billing-system) \- Odin Business Automation, adalah solusi otomatisasi penagihan untuk manajemen bisnis hosting web kecil dan menengah serta skalabilitas  
+* [Sistem Penagihan OBAS](https://docs.dewacloud.com/docs/pbas) \- Odin Business Automation Standard, adalah solusi otomatisasi, yang mendukung manajemen semua aspek bisnis dari layanan hosting web  
+* [Sistem Penagihan HostBill](https://hostbillapp.com/feature/jelastic/) \- solusi otomatisasi yang kuat dan fleksibel, yang menangani penagihan, manajemen klien, dan dukungan dalam bisnis online. Mudah diperluas melalui modul dan diintegrasikan dengan aplikasi untuk menciptakan solusi paling komprehensif sesuai kebutuhan Anda  
+
+Selain itu, beberapa penyedia hosting tertentu dapat memilih untuk menggunakan sistem penagihan _custom_. Dalam hal ini, lihat dokumentasi penyedia yang sesuai untuk detail tambahan.
 
 ## Baca Juga{#whats-next}
 
-  * [Hosters List & Info](https://docs.dewacloud.com/docs/paas-hosting-providers/)
-  * [WHMCS Billing System](https://docs.dewacloud.com/docs/whmcs-billing/)
-  * [PBA Billing System](https://docs.dewacloud.com/docs/pba-billing-system/)
-  * [PBAS Billing System](https://docs.dewacloud.com/docs/pbas/)
-  * [Hosters Pricing](https://docs.dewacloud.com/docs/pricing-pages/)
+* [Daftar & Info Hosters](https://docs.dewacloud.com/docs/paas-hosting-providers/)
+* [Sistem Penagihan WHMCS](https://docs.dewacloud.com/docs/whmcs-billing/)
+* [Sistem Penagihan PBA](https://docs.dewacloud.com/docs/pba-billing-system/)
+* [Sistem Penagihan PBAS](https://docs.dewacloud.com/docs/pbas/)
+* [Harga Hosters](https://docs.dewacloud.com/docs/pricing-pages/)
