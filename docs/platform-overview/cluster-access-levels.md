@@ -73,7 +73,6 @@ Tingkat akses membuat penggunaan dan pengelolaan PaaS Cluster menjadi efisien, n
 
 ## Baca Juga{#whats-next}
 
-* [Apa Itu Platform-as-a-Service](https://docs.dewacloud.com/docs/what-is-paas-and-caas/)
 * [Dashboard Guide](https://docs.dewacloud.com/docs/dashboard-guide/)
 * [Application Lifecycle](https://docs.dewacloud.com/docs/how-to-manage-application-lifecycle/)
 * [Shared Load Balancer](https://docs.dewacloud.com/docs/shared-load-balancer/)

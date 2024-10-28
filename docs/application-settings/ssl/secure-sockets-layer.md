@@ -44,4 +44,4 @@ Untuk mempelajari lebih lanjut tentang integrasi SSL dan mengamankan environment
 - [Shared Load Balancer](https://docs.dewacloud.com/docs/shared-load-balancer/)
 - [Public IP](https://docs.dewacloud.com/docs/public-ip/)
 - [Custom Domain Names](https://docs.dewacloud.com/docs/custom-domains/)
-- [Container Firewall](https://docs.dewacloud.com/docs/custom-firewall/)
+- [Container Firewall](https://docs.dewacloud.com/docs/container-firewall/)

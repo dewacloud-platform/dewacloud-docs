@@ -2,6 +2,7 @@
   "label": "Environment Regions",
   "position": 9,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "slug": "/environment-regions"
   }
 }

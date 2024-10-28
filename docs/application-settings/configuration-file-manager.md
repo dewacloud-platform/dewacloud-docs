@@ -5,7 +5,7 @@ title: Configuration File Manager
 ---
 # Configuration File Manager
 
-Platform configuration manager adalah alat yang sangat berguna, yang memungkinkan Anda untuk mengontrol semua file dalam container tertentu. Hal ini memungkinkan Anda dengan mudah dan cepat menerapkan beberapa konfigurasi umum ke node Anda melalui GUI yang nyaman langsung di browser, tanpa perlu menghubungkan [koneksi SSH](https://docs.dewacloud.com/docs/ssh-overview/), yang mungkin diperlukan untuk beberapa operasi yang kompleks.
+Platform configuration manager adalah alat yang sangat berguna, yang memungkinkan Anda untuk mengontrol semua file dalam container tertentu. Hal ini memungkinkan Anda dengan mudah dan cepat menerapkan beberapa konfigurasi umum ke node Anda melalui GUI yang nyaman langsung di browser, tanpa perlu menghubungkan [koneksi SSH](https://docs.dewacloud.com/docs/ssh-gate/), yang mungkin diperlukan untuk beberapa operasi yang kompleks.
 
 Untuk membuka configuration manager, arahkan mouse ke node yang diperlukan dan klik tombol **Config** (yang memiliki ikon kunci pas).
 
@@ -24,7 +24,7 @@ Di sini tersedia beberapa bagian berikut:
 
 Selanjutnya dalam panduan ini, kita akan membahas dasar-dasar penggunaan configuration manager yang dapat diterapkan untuk container platform mana pun. Namun, jika Anda memerlukan informasi spesifik tentang konfigurasi untuk tipe node tertentu, pilih salah satu dokumen berikut:
 
-  * [Docker Container Configuration](https://docs.dewacloud.com/docs/docker-configuration/)
+  * [Container Configuration](https://docs.dewacloud.com/docs/configuration-file-manager/)
   * [Java Application Server Configuration](https://docs.dewacloud.com/docs/java-application-server-config/)
   * [PHP Application Server Configuration](https://docs.dewacloud.com/docs/php-application-server-config/)
   * [Ruby Application Server Configuration](https://docs.dewacloud.com/docs/ruby-application-server-config/)

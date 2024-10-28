@@ -230,7 +230,7 @@ Sebagai hasilnya, Anda akan mendapatkan set string yang serupa:
 
 Jangan lupa untuk **Save** file ini.
 
-4\. Apache memerlukan modul khusus untuk dapat [berinteraksi dengan server MongoDB](<https://docs.jelastic.com/connection-to-mongodb-for-php/>), jadi Anda perlu menambahkannya dalam konfigurasi.
+4\. Apache memerlukan modul khusus untuk dapat [berinteraksi dengan server MongoDB](<https://docs.jelastic.com/connection-to-mongodb-php/>), jadi Anda perlu menambahkannya dalam konfigurasi.
 
 Untuk itu, buka folder **etc** dan buka file **php.ini**. Temukan bagian **[mongodb]** dan hapus titik koma sebelum baris **extension=mongodb.so** untuk mengaktifkan ekstensi ini.
 

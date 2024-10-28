@@ -166,7 +166,7 @@ Direktori yang paling sering digunakan ditambahkan ke daftar _Favorites_ untuk a
 
 Untuk membatasi akses ke proyek Anda yang dideploy ke server Tomcat, kami merekomendasikan dua solusi yang mungkin: mengatur **user authentication** dan **menolak akses** ke aplikasi web Anda dari alamat IP tertentu. Instruksi terperinci dijelaskan dalam artikel tentang cara [Secure Tomcat Hosting](<https://www.virtuozzo.com/company/blog/restrict-access-tomcat-web-application-hosting/>).
 
-Cara lain untuk memastikan keamanan aplikasi Anda adalah dengan fitur **Container Firewall**. Ini memungkinkan Anda untuk mengontrol ketersediaan node Anda baik dari dalam maupun luar platform. Konfigurasi container firewall Tomcat menggunakan informasi dari artikel [Container Firewall Management](<https://docs.dewacloud.com/docs/custom-firewall/>).
+Cara lain untuk memastikan keamanan aplikasi Anda adalah dengan fitur **Container Firewall**. Ini memungkinkan Anda untuk mengontrol ketersediaan node Anda baik dari dalam maupun luar platform. Konfigurasi container firewall Tomcat menggunakan informasi dari artikel [Container Firewall Management](<https://docs.dewacloud.com/docs/container-firewall/>).
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-server/tomcat-server-22.png" alt="Tomcat firewall" width="100%"/>
 

@@ -149,7 +149,7 @@ Informasi lebih lanjut: [Endpoints](https://www.virtuozzo.com/application-platfo
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/dashboard-guide/21-firewall-settings.png" alt="firewall settings" width="100%"/>
 
-Informasi lebih lanjut: [Container Firewall](https://www.virtuozzo.com/application-platform-docs/custom-firewall/)
+Informasi lebih lanjut: [Container Firewall](https://www.virtuozzo.com/application-platform-docs/container-firewall/)
 
 6. Gunakan **Load Alerts** untuk mengatur pemicu baru (atau sesuaikan yang default) untuk menerima pemberitahuan email yang sesuai jika penggunaan sumber daya yang ditentukan melebihi batas yang ditetapkan.
 
@@ -209,7 +209,7 @@ Itulah semua pengaturan environment.
 
 ## Function Icons for Each Instance{#function-icons-for-each-instance}
 
-Klik pada environment di dashboard untuk melihat daftar [layers](https://docs.dewacloud.com/paas-components-definition/#layer) (load balancers, application servers, databases, dll.). Anda dapat lebih lanjut memperluas kelompok node ini untuk melihat dan mengelola container terpisah, konteks yang terdeploy, dan IP alamat yang terlampir.
+Klik pada environment di dashboard untuk melihat daftar [layers](https://docs.dewacloud.com/concept-and-terminology/#layer) (load balancers, application servers, databases, dll.). Anda dapat lebih lanjut memperluas kelompok node ini untuk melihat dan mengelola container terpisah, konteks yang terdeploy, dan IP alamat yang terlampir.
 
 Arahkan kursor ke layer atau container tertentu untuk melihat ikon pop-up dengan fungsi berbeda.
 
@@ -431,7 +431,7 @@ Sekarang, Anda tahu semua kemungkinan dasar dashboard dan semoga tidak akan kesu
 ## Baca Juga{#whats-next}
 
 - [Getting Started](https://docs.dewacloud.com/getting-started/)
-- [Basics & Terminology](https://docs.dewacloud.com/paas-components-definition/)
+- [Basics & Terminology](https://docs.dewacloud.com/concept-and-terminology/)
 - [Setting Up Environment](https://docs.dewacloud.com/setting-up-environment/)
 - [Software Stack Versions](https://docs.dewacloud.com/software-stacks-versions/)
 - [Hosters Info](https://docs.dewacloud.com/paas-hosting-providers/)

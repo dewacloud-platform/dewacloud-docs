@@ -336,5 +336,5 @@ Setelah proses restart selesai, cluster kembali ke topologi asli dan dapat di-sc
 ## Baca Juga{#whats-next}
 
   * [Java Connection to PostgreSQL](<https://docs.dewacloud.com/company/blog/java-connection-to-postgresql/>)
-  * [PHP Connection to PostgreSQL](<https://docs.dewacloud.com/docs/connection-to-postgresql-for-php/>)
+  * [PHP Connection to PostgreSQL](<https://docs.dewacloud.com/docs/connection-to-postgresql-php/>)
   * [Remote Access to PostgreSQL](<https://docs.dewacloud.com/docs/remote-access-postgres/>)

@@ -1,71 +1,72 @@
 ---
 sidebar_position: 2
 slug: /chargeable-resources
-title: Charged Resources
+title: Sumber Daya yang Dikenakan Biaya
 ---
-# Charged Resources
 
-Resource consumption for each environment is charged to the account owner on an hourly basis.
+# Sumber Daya yang Dikenakan Biaya
 
-  * [Primary Chargeable Resources](https://docs.dewacloud.com/docs/#primary-chargeable-resources)
-  * [Provider-Dependent Charges](https://docs.dewacloud.com/docs/#provider-dependent-charges)
-  * [Optional Extras](https://docs.dewacloud.com/docs/#optional-extras)
+Konsumsi sumber daya untuk setiap environment dikenakan biaya kepada pemilik akun setiap jam.
 
-You can track resource usage (_CPU_ , _RAM_ , _Network_ , _Disk_) in real time via built-in [statistics monitoring](https://docs.dewacloud.com/docs/view-app-statistics/).
+* [Sumber Daya yang Dikenakan Biaya Utama](https://docs.dewacloud.com/docs/#primary-chargeable-resources)
+* [Biaya Tergantung Penyedia](https://docs.dewacloud.com/docs/#provider-dependent-charges)
+* [Ekstra Opsional](https://docs.dewacloud.com/docs/#optional-extras)
 
-![01-statistics-monitoring.png](#)
+Anda dapat melacak penggunaan sumber daya (_CPU_, _RAM_, _Network_, _Disk_) secara real-time melalui [pemantauan statistik](https://docs.dewacloud.com/docs/view-app-statistics/) bawaan.
 
-:::note Resources consumed by environments provided based on the subscriptions are considered free of charge by default. :::
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/resource-charging/charged-resources/01-statistics-monitoring.png" alt="01-statistics-monitoring.png" width="100%"/>
 
-## Primary Chargeable Resources{#primary-chargeable-resources}
+:::note Sumber daya yang dikonsumsi oleh environment yang disediakan berdasarkan langganan dianggap gratis secara default. :::
+
+## Sumber Daya yang Dikenakan Biaya Utama{#primary-chargeable-resources}
 
 ### RAM & CPU{#ram--cpu}
 
-RAM & CPU are measured in a platform resource unit called a [Cloudlet](https://docs.dewacloud.com/docs/cloudlet/).  
-One **Cloudlet** is equivalent to 128 MiB RAM and 400MHz CPU.
+RAM & CPU diukur dalam unit sumber daya platform yang disebut [Cloudlet](https://docs.dewacloud.com/docs/cloudlet/).  
+Satu **Cloudlet** setara dengan 128 MiB RAM dan 400MHz CPU.
 
-Resources are charged on an hourly basis:
+Sumber daya dikenakan biaya setiap jam:
 
-  * **RAM** usage: the _peak_ RAM usage over the hour
-  * **CPU** usage: the _average_ CPU usage over the hour
+* Penggunaan **RAM**: penggunaan puncak RAM selama satu jam
+* Penggunaan **CPU**: penggunaan rata-rata CPU selama satu jam
 
-When calculating your cloudlet usage, we only consider the larger of RAM or CPU usage each hour (not both combined). E.g. if during one hour your average CPU usage is 2400MHz (6 cloudlets), and your peak RAM usage is 1024MiB (8 cloudlets), you pay for 8 cloudlets - not the combined total (14 cloudlets).
+Ketika menghitung penggunaan cloudlet Anda, kami hanya mempertimbangkan penggunaan terbesar antara RAM atau CPU setiap jamnya (tidak keduanya digabungkan). Misalnya, jika selama satu jam, rata-rata penggunaan CPU Anda adalah 2400MHz (6 cloudlets), dan penggunaan puncak RAM Anda adalah 1024MiB (8 cloudlets), Anda membayar untuk 8 cloudlets - bukan total gabungannya (14 cloudlets).
 
-There are two types of cloudlets:
+Ada dua jenis cloudlet:
 
-  * _Reserved cloudlets_ are reserved in advance (using the topology wizard).
-  * _Dynamic cloudlets_ are scaled dynamically for your application.
+* _Cloudlets yang dipesan_ dipesan terlebih dahulu (menggunakan wizard topologi).
+* _Cloudlets dinamis_ diskalakan secara dinamis untuk aplikasi Anda.
 
-:::warning You are not charged for the RAM used for disk cache and buffers. :::
+:::warning Anda tidak dikenakan biaya untuk RAM yang digunakan untuk cache disk dan buffer. :::
 
-More details about cloudlet charges and the differences between Reserved / Dynamic cloudlets can be found in the [Pricing System](https://docs.dewacloud.com/docs/pricing-model/) and [Automatic Discounts](https://docs.dewacloud.com/docs/automatic-discounts/#ramcpu) documents.
+Lebih banyak detail tentang biaya cloudlet dan perbedaan antara cloudlet Dipesan / Dinamis dapat ditemukan di dokumen [Sistem Harga](https://docs.dewacloud.com/docs/pricing-model/) dan [Diskon Otomatis](https://docs.dewacloud.com/docs/automatic-discounts/#ramcpu).
 
-## Provider-Dependent Charges{#provider-dependent-charges}
+## Biaya Tergantung Penyedia{#provider-dependent-charges}
 
-The following resources are charged at some hosting providers, but others include a free amount.
+Sumber daya berikut dikenakan biaya di beberapa penyedia hosting, tetapi penyedia lain memasukkan jumlah gratis.
 
-### Disk Space{#disk-space}
+### Ruang Disk{#disk-space}
 
-**Disk Space** usage is measured in GB. Like all platform resources, you only pay for your actual consumption (you do not need to buy extra space “just in case” you need it). More details about charging disk space can be found in the [Pricing System](https://docs.dewacloud.com/docs/pricing-model/) and [Automatic Discounts](https://docs.dewacloud.com/docs/automatic-discounts/#disk-space) documents.
+Penggunaan **Ruang Disk** diukur dalam GB. Seperti semua sumber daya platform, Anda hanya membayar untuk konsumsi aktual Anda (Anda tidak perlu membeli ruang tambahan "untuk jaga-jaga" jika membutuhkannya). Lebih banyak detail tentang biaya ruang disk dapat ditemukan di dokumen [Sistem Harga](https://docs.dewacloud.com/docs/pricing-model/) dan [Diskon Otomatis](https://docs.dewacloud.com/docs/automatic-discounts/#disk-space).
 
-:::tip If facing a need to store data in a separate storage node, consider using Master or Compound data containers to lower disk space consumption and reduce overall environment cost. :::
+:::tip Jika menghadapi kebutuhan untuk menyimpan data dalam node penyimpanan terpisah, pertimbangkan untuk menggunakan container data Master atau Compound untuk mengurangi konsumsi ruang disk dan mengurangi biaya environment secara keseluruhan. :::
 
-### Traffic{#traffic}
+### Lalu Lintas{#traffic}
 
-**Traffic** usage is measured in GB. Only __external traffic__ is charged - the sum of incoming and outgoing traffic between your environment and the Internet. __Internal traffic__ is absolutely free - traffic within your environment or between environments within the same hosting provider. More details about charging traffic can be found in the [Pricing System](https://docs.dewacloud.com/docs/pricing-model/) and [Automatic Discounts](https://docs.dewacloud.com/docs/automatic-discounts/#traffic) documents.
+Penggunaan **Lalu Lintas** diukur dalam GB. Hanya __lalu lintas eksternal__ yang dikenakan biaya - jumlah dari lalu lintas masuk dan keluar antara environment Anda dan Internet. __Lalu lintas internal__ sepenuhnya gratis - lalu lintas dalam environment Anda atau antara environment dalam penyedia hosting yang sama. Lebih banyak detail tentang biaya lalu lintas dapat ditemukan di dokumen [Sistem Harga](https://docs.dewacloud.com/docs/pricing-model/) dan [Diskon Otomatis](https://docs.dewacloud.com/docs/automatic-discounts/#traffic).
 
-## Optional Extras{#optional-extras}
+## Ekstra Opsional{#optional-extras}
 
-With the platform, you can add the following optional services to your environment:
+Dengan platform, Anda dapat menambahkan layanan opsional berikut ke environment Anda:
 
-**Public IPv4** is an external IP address which is directly accessible from outside of the cluster. This allows you to form direct connections between the Internet and specific servers within your environment. Otherwise (without buying a Public IPv4 address), traffic is routed from the Internet to your environment via the platform resolver (SLB).
+**Public IPv4** adalah alamat IP eksternal yang dapat diakses langsung dari luar kluster. Ini memungkinkan Anda untuk membentuk koneksi langsung antara Internet dan server tertentu dalam environment Anda. Jika tidak (tanpa membeli alamat Public IPv4), lalu lintas dialihkan dari Internet ke environment Anda melalui resolver platform (SLB).
 
-**Built-in SSL** is a protocol which establishes a secure connection between your client and your environment (some hosting providers offer this service free of charge).
+**Built-in SSL** adalah protokol yang membangun koneksi aman antara klien Anda dan environment Anda (beberapa penyedia hosting menawarkan layanan ini secara gratis).
 
-More details about charges for optional services can be found in the [Pricing System](https://docs.dewacloud.com/docs/pricing-model/) and [Automatic Discounts](https://docs.dewacloud.com/docs/automatic-discounts/#options) documents.
+Lebih banyak detail tentang biaya untuk layanan opsional dapat ditemukan di dokumen [Sistem Harga](https://docs.dewacloud.com/docs/pricing-model/) dan [Diskon Otomatis](https://docs.dewacloud.com/docs/automatic-discounts/#options).
 
 ## Baca Juga{#whats-next}
 
-  * [Resource Consumption](https://docs.dewacloud.com/docs/resource-consumption/)
-  * [Monitor Consumed Resources](https://docs.dewacloud.com/docs/monitoring-consumed-resources/)
-  * [Pricing Model](https://docs.dewacloud.com/docs/pricing-model/)
+* [Konsumsi Sumber Daya](https://docs.dewacloud.com/docs/resource-consumption/)
+* [Pemantauan Sumber Daya yang Dikonsumsi](https://docs.dewacloud.com/docs/monitoring-consumed-resources/)
+* [Model Harga](https://docs.dewacloud.com/docs/pricing-model/)

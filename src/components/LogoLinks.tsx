@@ -30,7 +30,7 @@ const logoLinkLists = [
       "https://assets.dewacloud.com/dewacloud-docs/static/golang_logo.webp",
     title: "Golang",
     alt: "Golang Logo",
-    link: "/docs/golang-center",
+    link: "/docs/go-center",
   },
   {
     image: "https://assets.dewacloud.com/dewacloud-docs/static/ruby_logo.webp",
@@ -43,28 +43,28 @@ const logoLinkLists = [
       "https://assets.dewacloud.com/dewacloud-docs/static/dotnet_logo.webp",
     title: ".NET",
     alt: ".NET Logo",
-    link: "/docs/dotnet-center",
+    link: "/docs/net-core",
   },
   {
     image:
       "https://assets.dewacloud.com/dewacloud-docs/static/container_logo.webp",
     title: "Containers",
     alt: "Containers Logo",
-    link: "/docs/container-overview",
+    link: "/docs/container-types",
   },
   {
     image:
       "https://assets.dewacloud.com/dewacloud-docs/static/kubernetes_logo.webp",
     title: "Kubernetes",
     alt: "Kubernetes Logo",
-    link: "/docs/kubernetes-cluster",
+    link: "/docs/kubernetes-cluster-overview",
   },
   {
     image:
       "https://assets.dewacloud.com/dewacloud-docs/static/databases_logo.webp",
     title: "Databases",
     alt: "Databases Logo",
-    link: "/docs/db-hosting-overview",
+    link: "/docs/database-hosting",
   },
   {
     image:
@@ -91,7 +91,7 @@ const logoLinkLists = [
     image: "https://assets.dewacloud.com/dewacloud-docs/static/cache_logo.webp",
     title: "Cache",
     alt: "Cache Logo",
-    link: "/docs/memcached",
+    link: "/docs/memcached-caching-system",
   },
 ];
 

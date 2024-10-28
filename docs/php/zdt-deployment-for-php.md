@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-slug: /zdt-deployment-for-php
+slug: /php-zero-downtime-deploy
 title: ZDT Deployment for PHP
 ---
 # Zero DownTime (ZDT) Deployment for PHP

@@ -60,7 +60,7 @@ Jika Anda memutuskan untuk memperkecil topologi _primary-secondary/primary-prima
 
 ### Cluster Layers Isolation{#cluster-layers-isolation}
 
-Tergantung apakah Anda akan menggunakan aplikasi eksternal atau tidak, Anda dapat memutuskan [layer](<https://docs.dewacloud.com/docs/paas-components-definition/#layer>) mana yang akan diekspos ke luar - semuanya atau hanya layer proxy entry point. Putar switch [SLB access](<https://docs.dewacloud.com/docs/shared-load-balancer/#deny-access-via-shared-load-balancer>) ke posisi yang diperlukan untuk setiap layer dan klik **Create**.
+Tergantung apakah Anda akan menggunakan aplikasi eksternal atau tidak, Anda dapat memutuskan [layer](<https://docs.dewacloud.com/docs/concept-and-terminology/#layer>) mana yang akan diekspos ke luar - semuanya atau hanya layer proxy entry point. Putar switch [SLB access](<https://docs.dewacloud.com/docs/shared-load-balancer/#deny-access-via-shared-load-balancer>) ke posisi yang diperlukan untuk setiap layer dan klik **Create**.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/auto-clustering/auto-clustering-6.png" alt="database access via SLB" width="100%"/>
 

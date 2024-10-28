@@ -1,29 +1,30 @@
 ---
 sidebar_position: 1
 slug: /account-collaboration
-title: Collaboration Overview
+title: Overview Kolaborasi
 ---
-# Account Collaboration
 
-Every large project is a result of the joint effort of multiple people. However, different team members working in a single account is not an efficient workflow that can cause numerous problems (including security issues). The platform provides a reliable _**account collaboration**_ feature that greatly facilitates joint development and management, ensuring successful and efficient collaboration.
+# Kolaborasi Akun
 
-The core idea is pretty straightforward - one user (_primary account_) hosts all the necessary environments and can share required components with required permissions to others (_collaboration members_). The most distinct benefits of the process are efficient resource utilization and extreme management flexibility. There is no need to create environment duplicates for different members - the platform’s collaboration allows sharing required instances to as many users as needed. Complete control over the shared management permissions makes the feature suitable for most of the existing use cases.
+Setiap proyek besar adalah hasil dari upaya bersama beberapa orang. Namun, anggota tim yang berbeda bekerja dalam satu akun tidaklah efisien dan dapat menyebabkan berbagai masalah (termasuk masalah keamanan). Platform ini menyediakan fitur _**kolaborasi akun**_ yang andal, yang sangat memfasilitasi pengembangan dan pengelolaan bersama, memastikan kolaborasi yang sukses dan efisien.
 
-![account collaboration scheme](#)
+Ide utamanya cukup sederhana - satu pengguna (_akun utama_) menjadi tuan rumah semua environment yang diperlukan dan dapat berbagi komponen yang diperlukan dengan izin yang diperlukan kepada orang lain (_anggota kolaborasi_). Manfaat paling menonjol dari proses ini adalah pemanfaatan sumber daya yang efisien dan fleksibilitas manajemen yang ekstrem. Tidak perlu membuat duplikat environment untuk anggota yang berbeda - kolaborasi platform memungkinkan berbagi instances yang diperlukan kepada sebanyak mungkin pengguna yang diperlukan. Kontrol penuh atas izin manajemen yang dibagikan membuat fitur ini cocok untuk sebagian besar kasus penggunaan yang ada.
 
-The **primary account** has full access to all hosted environments regardless of whether they are shared or not (including ones created by collaboration members). It is responsible for managing collaboration and its members - inviting users, adjusting shared components, specifying [roles and permissions](https://docs.dewacloud.com/docs/collaboration-roles-policies/), etc. However, be aware that all charges for the shared environments (including actions performed by collaborators) are applied to this account.
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/accounts-collaboration/collaboration-overview/01-account-collaboration-scheme.png" alt="account collaboration scheme" width="100%"/>
 
-**Collaboration members** are accounts that have accepted a collaboration invite from the _primary account_. The members are not charged for the shared environments and can work with them just as with regular ones. However, the list of allowed actions is defined and managed by the primary account (or other collaborators with the appropriate permission).
+**Akun utama** memiliki akses penuh ke semua environment yang di-hosting, terlepas dari apakah mereka dibagikan atau tidak (termasuk yang dibuat oleh anggota kolaborasi). Akun ini bertanggung jawab untuk mengelola kolaborasi dan anggotanya - mengundang pengguna, menyesuaikan komponen yang dibagikan, menentukan [peran dan izin](https://docs.dewacloud.com/docs/collaboration-roles-policies/), dll. Namun, perhatikan bahwa semua biaya untuk environment yang dibagikan (termasuk tindakan yang dilakukan oleh kolaborator) dikenakan pada akun ini.
 
-If provided with sufficient permissions, a member can create new environments on the primary collaboration account. In such a case, limitations ([quotas](https://docs.dewacloud.com/docs/quotas-system/)) of the primary account will be considered, allowing to bypass any restrictions of the member’s account. Once again, all charges for the environment usage will be applied to the primary account.
+**Anggota kolaborasi** adalah akun yang menerima undangan kolaborasi dari _akun utama_. Anggota tidak dikenakan biaya untuk environment yang dibagikan dan dapat bekerja dengan environment tersebut seperti halnya dengan environment biasa. Namun, daftar tindakan yang diizinkan didefinisikan dan dikelola oleh akun utama (atau kolaborator lain dengan izin yang sesuai).
+
+Jika diberikan izin yang cukup, seorang anggota dapat membuat environment baru pada akun kolaborasi utama. Dalam hal ini, batasan ([kuota](https://docs.dewacloud.com/docs/quotas-system/)) dari akun utama akan dipertimbangkan, memungkinkan untuk melewati batasan apa pun pada akun anggota. Sekali lagi, semua biaya untuk penggunaan environment akan dikenakan pada akun utama.
 
 :::warning
-After leaving the collaboration, the member will no longer have access to any shared environments on the primary account, including ones created by them.
+Setelah meninggalkan kolaborasi, anggota tidak akan lagi memiliki akses ke environment yang dibagikan pada akun utama, termasuk yang dibuat oleh mereka sendiri.
 :::
 
 ## Baca Juga{#whats-next}
 
-  * [Collaboration Roles & Policies](https://docs.dewacloud.com/docs/collaboration-roles-policies/)
-  * [Create Collaboration](https://docs.dewacloud.com/docs/collaboration-create/)
-  * [Collaboration User Experience](https://docs.dewacloud.com/docs/collaboration-user-experience/)
-  * [Share Environment](https://docs.dewacloud.com/docs/share-environment/)
+* [Peran & Kebijakan Kolaborasi](https://docs.dewacloud.com/docs/collaboration-roles-policies/)
+* [Buat Kolaborasi](https://docs.dewacloud.com/docs/collaboration-create/)
+* [Pengalaman Pengguna Kolaborasi](https://docs.dewacloud.com/docs/collaboration-user-experience/)
+* [Bagikan Environment](https://docs.dewacloud.com/docs/share-environment/)

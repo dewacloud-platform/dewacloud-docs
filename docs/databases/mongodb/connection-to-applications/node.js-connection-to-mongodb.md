@@ -66,7 +66,7 @@ Jika semuanya ditentukan dengan benar, Anda harus melihat string “ _You are co
 ## Baca Juga{#whats-next}
 
   * [Java Connection to MongoDB](<https://docs.dewacloud.com/docs/connection-to-mongodb/>)
-  * [PHP Connection to MongoDB](<https://docs.dewacloud.com/docs/connection-to-mongodb-for-php/>)
+  * [PHP Connection to MongoDB](<https://docs.dewacloud.com/docs/connection-to-mongodb-php/>)
   * [Python Connection to MongoDB](<https://docs.dewacloud.com/docs/connection-to-mongodb-python/>)
   * [MongoDB Auto-Clustering](<https://docs.dewacloud.com/docs/mongodb-auto-clustering/>)
   * [MongoDB Replica Set](<https://docs.dewacloud.com/docs/mongodb-replica-set/>)

@@ -1,17 +1,17 @@
 ---
 sidebar_position: 1
-slug: /environment-variables
-title: Environment Variables
+slug: /default=environment-variables
+title: Environment Variables Default
 ---
-# Variabel Lingkungan
+# Variabel Environment
 
-**Variabel lingkungan** digunakan untuk menyimpan nilai dari parameter yang sering digunakan dan diberikan ke program perangkat lunak saat runtime. Penggunaan placeholder semacam ini membuat aplikasi Anda lebih portabel dan fleksibel.
+**Variabel environment** digunakan untuk menyimpan nilai dari parameter yang sering digunakan dan diberikan ke program perangkat lunak saat runtime. Penggunaan placeholder semacam ini membuat aplikasi Anda lebih portabel dan fleksibel.
 
-Penggunaan variabel yang paling umum adalah untuk melakukan penyesuaian cepat terhadap nilai-nilai tertentu yang digunakan berkali-kali dalam kode aplikasi Anda. Ikuti panduan yang ditautkan jika Anda perlu membuat [variabel lingkungan khusus](<https://docs.dewacloud.com/docs/custom-environment-variables/>) untuk proyek Anda.
+Penggunaan variabel yang paling umum adalah untuk melakukan penyesuaian cepat terhadap nilai-nilai tertentu yang digunakan berkali-kali dalam kode aplikasi Anda. Ikuti panduan yang ditautkan jika Anda perlu membuat [variabel environment khusus](<https://docs.dewacloud.com/docs/custom-environment-variables/>) untuk proyek Anda.
 
 Kasus penggunaan lain dari variabel adalah untuk mengkonfigurasi aplikasi melalui serangkaian nilai yang telah ditentukan (mengaktifkan/menonaktifkan fitur, mengubah perilaku, dll.). Platform ini menyediakan sebagian besar stack perangkat lunak bersertifikat dengan sejumlah variabel default, yang dapat digunakan oleh pengembang untuk membantu hosting aplikasi.
 
-## Variabel Lingkungan Default {#default-environment-variables}
+## Variabel Environment Default {#default-environment-variables}
 
 Klik abstrak ini untuk melihat daftar lengkap variabel default yang digunakan dalam container platform.
 
@@ -30,7 +30,7 @@ Nama Variabel | Dapat Diedit* | Stack | Deskripsi
 **DAS** | - | GlassFish (Payara) | Menunjukkan apakah ada node DAS (diperlukan untuk mengkonfigurasi cluster) untuk layer saat ini.  
 **DB_MEM_LIMIT** | + | LLSMP, LEMP | Mendefinisikan bagian dari RAM, yang harus disediakan untuk server database _MariaDB_ bawaan, _40%_ dari total RAM container secara default.  
 **DEFAULT_CLUSTER** | + | LiteSpeed ADC | Memilih jenis penyeimbangan beban untuk proxying permintaan (_HTTP_, _AJP_, _FCGI_, _LSAPI_). Logika ini dapat dinonaktifkan (_0_, _disabled_, _false_).  
-**DOCKER_EXPOSED_PORT** | - | Semua | Menampilkan port dari direktif _EXPOSE_ pada dockerfile gambar, yang dibuka melalui firewall container saat pembuatan lingkungan.  
+**DOCKER_EXPOSED_PORT** | - | Semua | Menampilkan port dari direktif _EXPOSE_ pada dockerfile gambar, yang dibuka melalui firewall container saat pembuatan environment.  
 **FULL_GC_AGENT_DEBUG** | + | Java | Mengaktifkan (_true_) atau menonaktifkan (_false_) mode debug untuk melacak proses GC Java di log.  
 **FULL_GC_PERIOD** | + | Java | Mengatur interval (dalam detik) antara panggilan GC penuh; _900_ secara default, yaitu 15 menit.  
 **G1PERIODIC_GC_INTERVAL** | + (untuk openJDK 12/13 saja) | Java | Frekuensi Koleksi Periodik G1 dalam milidetik (_G1PeriodicGCInterval - 15 menit_ secara default); setel sebagai _0_ untuk menonaktifkan.  
@@ -65,10 +65,10 @@ Nama Variabel | Dapat Diedit* | Stack | Deskripsi
 **MAVEN_RUN_ARGS** | + | Maven | Memungkinkan pengiriman beberapa argumen khusus untuk membangun aplikasi (dapat diubah untuk proyek tertentu).  
 **MAX_OOM_REDUCE_CYCLES** | + | MySQL, MariaDB, Percona | Mengatur jumlah siklus maksimum untuk pengurangan _innodb_buffer_pool_size_ setelah restart yang disebabkan oleh OOM (_5_ kali secara default).  
 **MY_RUBY_HOME** | - | Ruby | Jalur ke direktori tempat mesin _Ruby_ berada.  
-**NODE_ENV** | - | Node.js | Menentukan lingkungan di mana aplikasi berjalan (misalnya, _development_, _staging_, _production_, _testing_, dll.).  
+**NODE_ENV** | - | Node.js | Menentukan environment di mana aplikasi berjalan (misalnya, _development_, _staging_, _production_, _testing_, dll.).  
 **NODE_OPTIONS** | + | Node.js | Variabel untuk menentukan opsi runtime _v8_ pada Node.js.  
 **NVM_DIR** | - | Node.js | Jalur ke lokasi instalasi _NVM_.  
-**ON_ENV_INSTALL** | + (sebelum pembuatan env) | Semua | Skrip (atau tautan ke skrip) yang akan dijalankan setelah pembuatan lingkungan.  
+**ON_ENV_INSTALL** | + (sebelum pembuatan env) | Semua | Skrip (atau tautan ke skrip) yang akan dijalankan setelah pembuatan environment.  
 **OOM_ADJUSTMENT** | + | MySQL, MariaDB, Percona | Mendefinisikan nilai dalam %, MB, GB (_10%_ secara default) yang harus dikurangi pada parameter _innodb_buffer_pool_size_ setelah setiap restart yang disebabkan oleh OOM.  
 **OOM_DETECTION_DELTA** | + | MySQL, MariaDB, Percona | Menetapkan periode (_2_ detik secara default) untuk platform menganalisis log setelah setiap restart layanan untuk memutuskan apakah itu disebabkan oleh OOM killer.  
 **OPEN_INBOUND_PORTS (JELASTIC_PORTS)** | + (sebelum pembuatan env) | Semua | Menentukan port khusus yang harus dibuka di firewall selama pembuatan container.  

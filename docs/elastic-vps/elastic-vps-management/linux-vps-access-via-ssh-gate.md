@@ -6,7 +6,7 @@ title: Linux VPS Access via SSH Gate
 
 # Akses Linux VPS melalui SSH Gate
 
-Untuk mengelola software yang diperlukan di dalam container Elastic VPS Anda, Anda perlu terhubung ke dalamnya melalui SSH Gate. Koneksi dapat dilakukan melalui [SSH Gate](https://www.virtuozzo.com/application-platform-docs/ssh-overview) khusus, yang menyediakan satu titik akses untuk mengkonfigurasi semua environment dan server dalam akun Anda secara remote.
+Untuk mengelola software yang diperlukan di dalam container Elastic VPS Anda, Anda perlu terhubung ke dalamnya melalui SSH Gate. Koneksi dapat dilakukan melalui [SSH Gate](https://www.virtuozzo.com/application-platform-docs/ssh-gate) khusus, yang menyediakan satu titik akses untuk mengkonfigurasi semua environment dan server dalam akun Anda secara remote.
 
 
 Proses [akses SSH](https://www.virtuozzo.com/application-platform-docs/ssh-access) ke node Elastic VPS sama seperti untuk container lainnya di Dewacloud, tetapi menyediakan full root access.

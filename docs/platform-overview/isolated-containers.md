@@ -41,7 +41,6 @@ Karena setiap instance dalam platform mewakili isolated container, ini tidak dap
 
 ## Baca Juga{#whats-next}
 
-* [Apa Itu PaaS & CaaS](https://docs.dewacloud.com/docs/what-is-paas-and-caas/)
 * [Automatic Vertical Scaling](https://docs.dewacloud.com/docs/automatic-vertical-scaling/)
 * [Setting Up Environment](https://docs.dewacloud.com/docs/setting-up-environment/)
 * [PaaS Cluster Overview](https://docs.dewacloud.com/docs/cluster-overview/)
