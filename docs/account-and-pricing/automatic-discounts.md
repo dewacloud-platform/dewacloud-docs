@@ -3,9 +3,9 @@ sidebar_position: 13
 slug: /automatic-discounts
 title: Automatic Discounts
 ---
-# Automatic Discounts
+# Diskon Otomatis
 
-The platform can give you automatic discounts for your resource usage depending on the amount that you consume (so higher volume usage is automatically cheaper). The availability and the level of discount depends on your chosen hosting provider and the specific resource:
+Platform dapat memberikan diskon otomatis untuk penggunaan resource Anda tergantung pada jumlah yang Anda konsumsi (sehingga penggunaan volume yang lebih tinggi akan lebih murah secara otomatis). Ketersediaan dan tingkat diskon tergantung pada hosting provider yang Anda pilih dan resource spesifiknya:
 
   * [RAM/CPU (cloudlets)](https://docs.dewacloud.com/docs/#ramcpu)
   * [disk space](https://docs.dewacloud.com/docs/#disk-space)
@@ -15,69 +15,69 @@ The platform can give you automatic discounts for your resource usage depending 
 
 ## RAM/CPU{#ramcpu}
 
-The platform measures RAM and CPU in cloudlets. One cloudlet is equivalent to 128 MiB RAM and 400MHz CPU.
+Platform mengukur RAM dan CPU dalam cloudlets. Satu cloudlet setara dengan 128 MiB RAM dan 400MHz CPU.
 
-Cloudlet consumption is considered across each individual environment (combining all servers within one environment, rather than per server within the environment). This makes it’s easy to get to the higher discount tiers and make some really big savings!
+Konsumsi cloudlet dihitung berdasarkan setiap environment individual (menggabungkan semua server dalam satu environment, bukan per server di dalam environment). Ini memudahkan Anda untuk mencapai tier diskon yang lebih tinggi dan membuat beberapa penghematan besar!
 
-The platform offers two types of cloudlets: Reserved and Dynamic.
+Platform menawarkan dua jenis cloudlet: Reserved dan Dynamic.
 
-**Reserved cloudlets** are ‘consumed’ simply by configuring them within your environment (since you pay for Reserved cloudlets irrespective of your actual resource usage). So you can see the discount applied as you configure the environment using the topology wizard. The total of all Reserved cloudlets configured in your environment determine the discount tier applied.
+**Cloudlet Tersetup** 'dikonsumsi' hanya dengan mengkonfigurasinya di dalam environment Anda (karena Anda membayar untuk cloudlet tersetup terlepas dari penggunaan resource aktual Anda). Jadi Anda dapat melihat diskon berlaku saat Anda mengkonfigurasi environment menggunakan wizard topologi. Total dari semua cloudlet tersetup yang dikonfigurasi di environment Anda menentukan tier diskon yang diterapkan.
 
-**Dynamic cloudlet** consumption is calculated based on your usage each individual hour. The total of all Dynamic cloudlets consumed by your environment during one hour determines your discount tier for that hour.
+Konsumsi **cloudlet dinamis** dihitung berdasarkan penggunaan Anda setiap jam berindividu. Total dari semua cloudlet dinamis yang dikonsumsi oleh environment Anda selama satu jam menentukan tier diskon Anda untuk jam tersebut.
 
-If you use both types of cloudlets in your environment, you may have a different discount tier for each type.
+Jika Anda menggunakan kedua jenis cloudlet dalam environment Anda, Anda mungkin memiliki tier diskon yang berbeda untuk masing-masing tipe.
 
-![automatic discount scheme](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/automatic-discounts/01-automatic-discount-scheme.png" alt="automatic discount scheme" width="100%"/>
 
-You can see the exact discount tiers and corresponding pricing inside your platform dashboard.
+Anda dapat melihat tepatnya tier diskon dan harga yang sesuai di dalam dashboard platform Anda.
 
-Navigate to **Balance > Quotas & Pricing** menu item.
+Navigasi ke item menu **Balance > Quotas & Pricing**.
 
-![pricing RAM](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/automatic-discounts/02-pricing-ram.png" alt="pricing RAM" width="100%"/>
 
 ## Disk Space{#disk-space}
 
-Disk space is charged hourly per GB of disk space used in your environment.
+Disk space ditagih setiap jam per GB dari disk space yang digunakan dalam environment Anda.
 
-Your chosen hosting provider may include some disk space for free, or may provide discount tiers depending on the amount of disk consumption.
+Penyedia hosting pilihan Anda mungkin menyertakan disk space gratis, atau dapat memberikan tier diskon tergantung pada jumlah konsumsi disk.
 
-You can see the exact discount tiers, corresponding pricing, and any included free amount inside your platform dashboard. Navigate to **Balance > Quotas & Pricing** menu item.
+Anda dapat melihat tier diskon yang pasti, harga yang sesuai, dan jumlah gratis yang termasuk di dalam dashboard platform Anda. Navigasi ke item menu **Balance > Quotas & Pricing**.
 
-![pricing disk](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/automatic-discounts/03-pricing-disk.png" alt="pricing disk" width="100%"/>
 
 ## Traffic{#traffic}
 
-Traffic usage is charged hourly per GB of **external** traffic used by your environment.
+Penggunaan traffic ditagih setiap jam per GB dari **external** traffic yang digunakan oleh environment Anda.
 
-Your chosen hosting provider may include some free traffic usage, or may provide discount tiers depending on the amount of traffic consumption.
+Penyedia hosting pilihan Anda mungkin menyertakan beberapa penggunaan traffic gratis, atau dapat memberikan tier diskon tergantung pada jumlah konsumsi traffic.
 
-Since the amount of traffic can fluctuate so much, the discount tiers for traffic is set based on the total amount of (external) traffic used in the _previous_ month.
+Karena jumlah traffic dapat sangat bervariasi, tier diskon untuk traffic diatur berdasarkan total jumlah traffic (external) yang digunakan pada bulan _sebelumnya_.
 
-**Internal traffic** (traffic between servers within your environment, or between multiple environments at the same hosting provider) **is absolutely free**!
+**Internal traffic** (traffic antara server di dalam environment Anda, atau antar beberapa environment pada penyedia hosting yang sama) **sepenuhnya gratis**!
 
-You can see the exact discount tiers, corresponding pricing, and any included free amount inside your platform dashboard. Navigate to **Balance > Quotas & Pricing** menu item.
+Anda dapat melihat tepatnya tier diskon, harga yang sesuai, dan jumlah gratis yang termasuk di dalam dashboard platform Anda. Navigasi ke item menu **Balance > Quotas & Pricing**.
 
-![pricing traffic](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/automatic-discounts/04-pricing-traffic.png" alt="pricing traffic" width="100%"/>
 
 ## Options{#options}
 
-_**Built-In SSL**_ establishes a secure connection between your client and environment. The charge is taken hourly.
+_**Built-In SSL**_ membangun sebuah koneksi aman antara klien Anda dan environment. Biaya diambil setiap jam.
 
-You can see the price (if any - it can be available for free) set by your chosen hosting provider inside your platform dashboard. Navigate to **Balance > Quotas & Pricing** menu item.
+Anda dapat melihat harga (jika ada - dapat tersedia secara gratis) yang ditetapkan oleh penyedia hosting pilihan Anda di dalam dashboard platform Anda. Navigasi ke item menu **Balance > Quotas & Pricing**.
 
-An _**external IP**_ address provides a direct access from outside of the cluster. The charge is taken hourly.
+Sebuah _**external IP**_ address menyediakan akses langsung dari luar cluster. Biaya diambil setiap jam.
 
-You can see the price set by your chosen hosting provider inside your platform dashboard. Navigate to **Balance > Quotas & Pricing** menu item.
+Anda dapat melihat harga yang ditetapkan oleh penyedia hosting pilihan Anda di dalam dashboard platform Anda. Navigasi ke item menu **Balance > Quotas & Pricing**.
 
-![pricing options](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/automatic-discounts/05-pricing-options.png" alt="pricing options" width="100%"/>
 
 ## Software{#software}
 
-Most of the standard software stacks are free so that you pay only for the resources consumed. However, some additional software may require additional license fee. The charge is taken hourly.
+Kebanyakan software stacks standar gratis sehingga Anda hanya membayar untuk resource yang dikonsumsi. Namun, beberapa software tambahan dapat memerlukan biaya lisensi tambahan. Biaya diambil setiap jam.
 
-The cost for using software stacks depends on your hosting service provider’s tariffs. Navigate to **Balance > Quotas & Pricing** menu item.
+Biaya penggunaan software stacks tergantung pada tarif penyedia layanan hosting Anda. Navigasi ke item menu **Balance > Quotas & Pricing**.
 
-![pricing software](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/automatic-discounts/06-pricing-software.png" alt="pricing software" width="100%"/>
 
 ## Baca Juga{#whats-next}
 
