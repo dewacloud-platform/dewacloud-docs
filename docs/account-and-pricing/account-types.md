@@ -1,43 +1,44 @@
 ---
 sidebar_position: 2
 slug: /account-types
-title: Account Types
+title: Jenis Akun
 ---
-# Types of Accounts
 
-By default, accounts created in the platform are considered to be **trial accounts**. Those accounts, which were created before commercial release, also become trial.
+# Jenis Akun
 
-The platform imposes various limits on trial users. Once you change your account to **billing account**, the limits are reduced and the account becomes a paid one.
+Secara default, akun yang dibuat di platform dianggap sebagai **akun percobaan**. Akun-akun yang dibuat sebelum rilis komersial juga menjadi percobaan.
 
-According to the type of your account, you have a particular set of rights and [quotas](https://docs.dewacloud.com/docs/quotas-system). If you have a trial account and need more possibilities, you can convert your account to a billing one without waiting till the end of the trial period.
+Platform memberlakukan berbagai batasan pada pengguna percobaan. Setelah Anda mengubah akun Anda menjadi **akun penagihan**, batasannya akan dikurangi dan akun tersebut menjadi berbayar.
 
-## Trial{#trial}
+Menurut jenis akun Anda, Anda memiliki set hak tertentu dan [kuota](https://docs.dewacloud.com/docs/quotas-system). Jika Anda memiliki akun percobaan dan memerlukan lebih banyak kemungkinan, Anda bisa mengonversi akun Anda menjadi berbayar tanpa menunggu hingga akhir periode percobaan.
 
-When you create an account, you get a trial period. During this period, you’ll be limited by one of these items:
+## Percobaan{#trial}
 
-  * money (bonus)
-  * time
+Saat Anda membuat akun, Anda mendapatkan periode percobaan. Selama periode ini, Anda akan dibatasi oleh salah satu dari item berikut:
 
-If you are limited by **money**, you get a particular amount of free bonuses, which you can spend while using our service.
+* uang (bonus)
+* waktu
 
-If you are limited by **time**, you get a specific period during which you can use our service free of charge.
+Jika Anda dibatasi oleh **uang**, Anda mendapatkan sejumlah bonus gratis, yang dapat Anda gunakan saat menggunakan layanan kami.
 
-Before the end of your trial period, you’ll see a message that you need to convert your account. When the trial period finishes, all your environments will be suspended. After that, you still have some time to change your account to a billing one. If you don’t do that, your account will be destroyed.
+Jika Anda dibatasi oleh **waktu**, Anda mendapatkan periode tertentu di mana Anda dapat menggunakan layanan kami secara gratis.
 
-To cancel your trial and delete your account, please contact Hosters Support.
+Sebelum akhir periode percobaan Anda, Anda akan melihat pesan bahwa Anda perlu mengonversi akun Anda. Ketika periode percobaan selesai, semua lingkungan Anda akan ditangguhkan. Setelah itu, Anda masih memiliki waktu untuk mengubah akun Anda menjadi berbayar. Jika tidak melakukannya, akun Anda akan dihancurkan.
 
-## Billing{#billing}
+Untuk membatalkan percobaan dan menghapus akun Anda, silakan hubungi Dukungan Hosters.
 
-A billing account is a full paid account. You can convert to a billing account right after your trial period expiration or from the very time of registration.
+## Penagihan{#billing}
 
-A full account provides you with a larger set of possibilities. First of all, the limitations are reduced. Secondly, you’ll get the opportunity to be fully supported by your hoster.
+Akun penagihan adalah akun berbayar penuh. Anda dapat beralih menjadi akun penagihan segera setelah periode percobaan Anda berakhir atau sejak waktu pendaftaran.
 
-The prices and quotas of your billing account depend on your hosting provider. The information about your account limitations can be found at your dashboard in **Quotas & Pricing**. To get acquainted with the platform pricing system, look through our [Pricing FAQ](https://jelastic.com/pricing).
+Akun penuh memberikan Anda lebih banyak kemungkinan. Pertama-tama, batasan dikurangi. Kedua, Anda akan mendapatkan kesempatan untuk didukung sepenuhnya oleh hoster Anda.
+
+Harga dan kuota akun penagihan Anda bergantung pada penyedia hosting Anda. Informasi tentang batasan akun Anda dapat ditemukan di dashboard Anda di **Quotas & Pricing**. Untuk berkenalan dengan sistem harga platform, lihat [FAQ Harga](https://jelastic.com/pricing).
 
 ## Baca Juga{#whats-next}
 
-  * [Account Statuses](https://docs.dewacloud.com/docs/account-statuses/)
-  * [Upgrade Account](https://docs.dewacloud.com/docs/upgrade-refill-account/)
-  * [Pricing Model Overview](https://docs.dewacloud.com/docs/pricing-model/)
-  * [Billing Systems](https://docs.dewacloud.com/docs/billing-system/)
-  * [Hosters Pricing](https://docs.dewacloud.com/docs/pricing-pages/)
+* [Status Akun](https://docs.dewacloud.com/docs/account-statuses/)
+* [Upgrade Akun](https://docs.dewacloud.com/docs/upgrade-refill-account/)
+* [Gambaran Umum Model Harga](https://docs.dewacloud.com/docs/pricing-model/)
+* [Sistem Penagihan](https://docs.dewacloud.com/docs/billing-system/)
+* [Harga Hosters](https://docs.dewacloud.com/docs/pricing-pages/)
