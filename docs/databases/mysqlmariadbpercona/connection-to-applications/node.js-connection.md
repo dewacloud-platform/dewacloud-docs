@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-slug: /node.js-connection
+slug: /connection-to-mysql-nodejs
 title: Node.js Connection
 ---
 # Node.js Application Connection to MySQL/MariaDB/Percona
@@ -9,11 +9,11 @@ title: Node.js Connection
 
 1. Masuk ke akun PaaS Anda dan [buat environment](<https://docs.dewacloud.com/docs/setting-up-environment/>) dengan server database _MySQL_ (atau _MariaDB_), kami juga akan menambahkan _NodeJS_ compute node untuk tutorial ini.
 
-![create NodeJS MySQL environment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/connection-to-applications/nodejs-connection/nodejs-connection-1.png" alt="create NodeJS MySQL environment" width="100%"/>
 
 2. Akses server NodeJS Anda melalui SSH, misalnya dengan [Web SSH](<https://docs.dewacloud.com/docs/web-ssh-client/>) yang disediakan.
 
-![NodeJS Web SSH button](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/connection-to-applications/nodejs-connection/nodejs-connection-2.png" alt="NodeJS Web SSH button" width="100%"/>
 
 3. Setelah terhubung, dapatkan [driver MySQL resmi untuk Node.js](<https://www.npmjs.com/package/mysql>) (kompatibel dengan MariaDB) dengan menjalankan perintah berikut:
 
@@ -21,7 +21,7 @@ title: Node.js Connection
 npm install mysql
 ```
 
-![NodeJS install MySQL connector](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/connection-to-applications/nodejs-connection/nodejs-connection-3.png" alt="NodeJS install MySQL connector" width="100%"/>
 
 :::note
 Driver MySQL untuk NodeJS 10 saat ini sedang dalam pengujian, jadi jika peringatan deprecation muncul saat mengoperasikan versi server ini, Anda mungkin perlu menginstal versi pengujian:
@@ -58,7 +58,7 @@ Tempat penampung dalam kode di atas harus disesuaikan menggunakan informasi kone
   * _**\{host\}**_ \- tautan ke container MySQL / MariaDB Anda
   * _**\{database\}**_ \- database yang akan diakses (misalnya, default - _mysql_)
 
-![NodeJS MySQL connection code](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/connection-to-applications/nodejs-connection/nodejs-connection-4.png" alt="NodeJS MySQL connection code" width="100%"/>
 
 Dengan menggunakan skrip ini, Anda dapat memeriksa koneksi ke database dari server aplikasi Anda dan, jika gagal, mendapatkan deskripsi kesalahan.
 
@@ -68,13 +68,13 @@ Dengan menggunakan skrip ini, Anda dapat memeriksa koneksi ke database dari serv
 node script.js
 ```
 
-![nodejs successful connection](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/connection-to-applications/nodejs-connection/nodejs-connection-5.png" alt="nodejs successful connection" width="100%"/>
 
 Untuk koneksi yang berhasil, frasa “_You are connected!_” akan ditampilkan di terminal, jika tidak, deskripsi kesalahan akan disediakan. Sekarang, setelah Anda yakin container database Anda dapat diakses, [perluas kode](<https://www.npmjs.com/package/mysql>) untuk menjalankan beberapa tindakan nyata di server DB Anda.
 
 ## Baca Juga{#whats-next}
 
-  * [Java Connection to MySQL](<https://docs.dewacloud.com/docs/connection-to-mysql/>)
+  * [Java Connection to MySQL](<https://docs.dewacloud.com/docs/connection-to-mysql-java/>)
   * [PHP Connection to MySQL](<https://docs.dewacloud.com/docs/connection-to-mysql-php/>)
   * [Python Connection to MySQL](<https://docs.dewacloud.com/docs/connection-to-mysql-python/>)
   * [MySQL Master Slave Replication](<https://docs.dewacloud.com/docs/database-master-slave-replication/>)

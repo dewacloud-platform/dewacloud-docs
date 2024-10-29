@@ -1,19 +1,16 @@
 ---
-sidebar_position: 13
+sidebar_position: 2
 slug: /automatic-discounts
-title: Automatic Discounts
+title: Diskon Otomatis
 ---
 # Diskon Otomatis
 
-Platform dapat memberikan diskon otomatis untuk penggunaan resource Anda tergantung pada jumlah yang Anda konsumsi (sehingga penggunaan volume yang lebih tinggi akan lebih murah secara otomatis). Ketersediaan dan tingkat diskon tergantung pada hosting provider yang Anda pilih dan resource spesifiknya:
+Platform dapat memberikan diskon otomatis untuk penggunaan resource Anda tergantung pada jumlah yang Anda konsumsi (sehingga penggunaan volume yang lebih tinggi akan lebih murah secara otomatis).
 
-  * [RAM/CPU (cloudlets)](https://docs.dewacloud.com/docs/#ramcpu)
-  * [disk space](https://docs.dewacloud.com/docs/#disk-space)
-  * [traffic](https://docs.dewacloud.com/docs/#traffic)
-  * [options (Public IP, SSL)](https://docs.dewacloud.com/docs/#options)
-  * [software](https://docs.dewacloud.com/docs/#software)
+Secara default, akun yang dibuat di platform dianggap sebagai **akun percobaan**. Akun-akun yang dibuat sebelum rilis komersial juga menjadi percobaan.
 
-## RAM/CPU{#ramcpu}
+Platform memberlakukan berbagai batasan pada pengguna percobaan. Setelah Anda mengubah akun Anda menjadi **akun penagihan**, batasannya akan dikurangi dan akun tersebut menjadi berbayar.
+
 
 Platform mengukur RAM dan CPU dalam cloudlets. Satu cloudlet setara dengan 128 MiB RAM dan 400MHz CPU.
 
@@ -35,7 +32,8 @@ Navigasi ke item menu **Balance > Quotas & Pricing**.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/automatic-discounts/02-pricing-ram.png" alt="pricing RAM" width="100%"/>
 
-## Disk Space{#disk-space}
+
+Akun penuh memberikan Anda lebih banyak kemungkinan. Pertama-tama, batasan dikurangi. Kedua, Anda akan mendapatkan kesempatan untuk didukung sepenuhnya oleh hoster Anda.
 
 Disk space ditagih setiap jam per GB dari disk space yang digunakan dalam environment Anda.
 
@@ -79,10 +77,11 @@ Biaya penggunaan software stacks tergantung pada tarif penyedia layanan hosting 
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/automatic-discounts/06-pricing-software.png" alt="pricing software" width="100%"/>
 
+
 ## Baca Juga{#whats-next}
 
-  * [Charged Resources](https://docs.dewacloud.com/docs/resource-consumption/)
-  * [Pricing Model](https://docs.dewacloud.com/docs/pricing-model/)
-  * [Billing Systems Overview](https://docs.dewacloud.com/docs/billing-system/)
-  * [Hosters Pricing](https://docs.dewacloud.com/docs/pricing-pages/)
-  * [PaaS vs Amazon Pricing](https://www.virtuozzo.com/company/blog/fair-pricing-model-jelastic-vs-amazon/)
+* [Status Akun](https://docs.dewacloud.com/docs/account-statuses/)
+* [Upgrade Akun](https://docs.dewacloud.com/docs/upgrade-refill-account/)
+* [Gambaran Umum Model Harga](https://docs.dewacloud.com/docs/pricing-model/)
+* [Sistem Penagihan](https://docs.dewacloud.com/docs/billing-system/)
+* [Harga Hosters](https://docs.dewacloud.com/docs/pricing-pages/)

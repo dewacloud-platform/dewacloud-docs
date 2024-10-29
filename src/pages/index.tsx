@@ -1,26 +1,46 @@
-import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
-
-import styles from "./index.module.css";
+import LanguageFeatures from "../components/LanguageFeatures";
+import PlatformFeatures from "../components/PlatformFeatures";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
+    // <header className={clsx("hero hero--primary", styles.heroBanner)}>
+    <header className="hero">
       <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link className="button button--secondary button--lg" to="/docs">
+        <div className="hero__cta">
+          <Link className="button button--secondary" to="/docs">
+            Panduan untuk Developer
+          </Link>
+        </div>
+        <div className="hero__title">
+          <Heading as="h1" className="hero__title">
+            Dokumentasi & Tutorial Platform Dewacloud
+          </Heading>
+          <p className="hero__subtitle">
+            Platform Dewacloud memberikan kemudahan untuk developer dalam
+            melakukan penentuan resource server, infrastruktur server,
+            arsitektur server, management server hingga integrasi development
+            tools, sehingga para developer bisa lebih fokus pada pengembangan
+            aplikasi. Segera pelajari segala fitur canggih Dewacloud di bawah
+            ini!
+          </p>
+        </div>
+        <div className="hero__cta">
+          <Link
+            id="get-started-button"
+            className="button "
+            to="/docs/getting-started"
+          >
             Get Started️
           </Link>
         </div>
+      </div>
+      <div className="hero__image">
+        <img src="/img/hero-image.png" alt="Developer Activity" />
       </div>
     </header>
   );
@@ -33,10 +53,13 @@ export default function Home(): JSX.Element {
       title={`${siteConfig.title} Platform Documentation`}
       description="Belajaran tentang Dewacloud Platform yang membantu developer dalam membangun aplikasi Java, PHP, Node.Js, Ruby, Python, Golang, dan lain-lainnya."
     >
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
+      <div className="landing-page-wrapper">
+        <HomepageHeader />
+        <main>
+          <LanguageFeatures />
+          <PlatformFeatures />
+        </main>
+      </div>
     </Layout>
   );
 }

@@ -6,7 +6,7 @@ title: WordPress Backups
 
 # WordPress Backups
 
-Virtuozzo Application Platform untuk WordPress menyediakan solusi backup otomatis sepenuhnya (berdasarkan perangkat lunak **[Restic](https://restic.readthedocs.io/en/stable/010_introduction.html)**) untuk semua topologi yang didukung. Platform ini memungkinkan Anda mengatur proses berdasarkan kebutuhan Anda melalui antarmuka pengguna yang jelas dan intuitif.
+Dewacloud Application Platform untuk WordPress menyediakan solusi backup otomatis sepenuhnya (berdasarkan perangkat lunak **[Restic](https://restic.readthedocs.io/en/stable/010_introduction.html)**) untuk semua topologi yang didukung. Platform ini memungkinkan Anda mengatur proses berdasarkan kebutuhan Anda melalui antarmuka pengguna yang jelas dan intuitif.
 
 :::tip
 Lihat bagian yang terhubung jika Anda tertarik dengan alur proses backup dan spesifikasinya.
@@ -20,7 +20,7 @@ Urutan operasinya adalah sebagai berikut:
 
 Marilah kita melalui langkah-langkah yang diperlukan secara rinci:
 
-1. Masuk ke akun Virtuozzo Application Platform untuk WordPress Anda dan buka Pengaturan Sistem di sudut kanan atas.
+1. Masuk ke akun Dewacloud Application Platform untuk WordPress Anda dan buka Pengaturan Sistem di sudut kanan atas.
 
 ![account system settings](#)
 
@@ -72,8 +72,6 @@ Di bawah ini, Anda dapat menemukan informasi tentang alur dan spesifikasi proses
 
 ## Baca Juga{#whats-next}
 
-- [WordPress PaaS](https://docs.dewacloud.com/virtuozzo-application-platform-for-wordpress/)
-- [WordPress Dashboard](https://docs.dewacloud.com/wp-dashboard-overview/)
-- [WordPress Topologies](https://docs.dewacloud.com/wordpress-topologies/)
-- [WordPress Security](https://docs.dewacloud.com/wordpress-security/)
-- [WordPress PHP Optimization](https://docs.dewacloud.com/wordpress-php-optimization/)
+- [WordPress Topologies](https://docs.dewacloud.com/docs/wordpress-topologies/)
+- [WordPress Security](https://docs.dewacloud.com/docs/wordpress-security/)
+- [WordPress PHP Optimization](https://docs.dewacloud.com/docs/wordpress-php-optimization/)

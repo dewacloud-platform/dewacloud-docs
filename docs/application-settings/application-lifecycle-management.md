@@ -1,93 +1,95 @@
 ---
 sidebar_position: 17
-slug: /application-lifecycle-management
+slug: /application-lifecycle
 title: Application Lifecycle Management
 ---
-# Managing Application Lifecycle
+# Mengelola Siklus Hidup Aplikasi
 
-Effective application lifecycle management ensures that your project works as intended and meets users' needs throughout development, testing, and production stages. Even if your project is not very large, using separate development and test environments can help prevent any disruption to users. Below is a step-by-step guide to managing the lifecycle of an application on the platform.
+Manajemen siklus hidup aplikasi yang efektif memastikan bahwa proyek Anda bekerja sesuai yang diinginkan dan memenuhi kebutuhan pengguna sepanjang tahap pengembangan, pengujian, dan produksi. Meskipun proyek Anda tidak terlalu besar, menggunakan environment pengembangan dan pengujian yang terpisah dapat membantu mencegah gangguan bagi pengguna. Di bawah ini adalah panduan langkah demi langkah untuk mengelola siklus hidup aplikasi pada platform.
 
-![application lifecycle](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/application-lifecycle-management/01-application-lifecycle.png" alt="application lifecycle" max-width="100%"/>
 
-## Steps for Managing the Application Lifecycle
+## Langkah-langkah untuk Mengelola Siklus Hidup Aplikasi
 
-### 1. Create the Production Environment
+### 1. Buat Lingkungan Produksi
 
-1. Log into the platform dashboard.
-2. Click **Create environment**.
-3. Choose the application server (e.g., **GlassFish**), set the cloudlets limit, and name your environment (e.g., `prodenv`). Click **Create**.
+1. Masuk ke dashboard platform.
+2. Klik **Create environment**.
+3. Pilih server aplikasi (misalnya, **GlassFish**), atur batas cloudlets, dan beri nama environment Anda (misalnya, `prodenv`). Klik **Create**.
 
-![create environment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/application-lifecycle-management/03-create-environment.png" alt="create environment" max-width="100%"/>
 
-Once the environment is created, it will be ready for your production application.
+Setelah environment dibuat, itu akan siap untuk aplikasi produksi Anda.
 
-### 2. Create the Build Environment
+### 2. Buat Lingkungan Build
 
-1. Create another environment, choosing **Maven** as the build tool. Set the cloudlets limit and name the environment (e.g., `buildenv`).
+1. Buat environment lain dengan memilih **Maven** sebagai alat build. Atur batas cloudlets dan beri nama environment (misalnya, `buildenv`).
 
-![build environment wizard](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/application-lifecycle-management/06-build-environment-wizard.png" alt="build environment wizard" max-width="100%"/>
 
-In just a couple of minutes, the environment will be ready for building your project.
+Dalam beberapa menit, environment akan siap untuk membangun proyek Anda.
 
-### 3. Build and Deploy the Project
+### 3. Build dan Deploy Proyek
 
-1. Add your project to **Maven**.
-2. Navigate to the **Git** tab if using Git for version control. Provide project details such as the **Path**, **Branch**, **Login**, and **Password**. Specify the **Environment** and **Context** for deployment, then click **Add**.
-3. Click **Build and Deploy** for the project.
+1. Tambahkan proyek Anda ke **Maven**.
 
-![build and deploy](#)
+2. Arahkan ke tab **Git** jika menggunakan Git untuk kontrol versi. Berikan detail proyek seperti **Path**, **Branch**, **Login**, dan **Password**. Tentukan **Environment** dan **Context** untuk deployment, lalu klik **Add**.
 
-### 4. Create the Database Environment
+3. Klik **Build and Deploy** untuk proyek tersebut.
 
-1. Create a new environment and select the database type (e.g., **MySQL**).
-2. After the environment is created, open **MySQL** in the browser and use the credentials sent via email to create a database.
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/application-lifecycle-management/10-build-and-deploy.png" alt="build and deploy" max-width="100%"/>
 
-![database environment wizard](#)
+### 4. Buat Lingkungan Database
 
-### 5. Configure the Database Connection
+1. Buat environment baru dan pilih jenis database (misalnya, **MySQL**).
+2. Setelah environment dibuat, buka **MySQL** di browser dan gunakan kredensial yang dikirim via email untuk membuat database.
 
-1. In the dashboard, click **Config** next to the application server (e.g., **GlassFish**) in your production environment.
-2. Create a configuration file (e.g., `mydb.cfg`) and add the database connection details:
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/application-lifecycle-management/11-database-environment-wizard.png" alt="database environment wizard" max-width="100%"/>
 
-```bash
-host=jdbc:mysql://mysql{node_id}-{your_env_name}.{hoster_domain}/{db_name}
-username={get in the email}
-password={get in the email}
-driver=com.mysql.jdbc.Driver
-```
+### 5. Konfigurasi Koneksi Database
 
-![database connection configs](#)
+1. Di dashboard, klik **Config** di sebelah server aplikasi (misalnya, **GlassFish**) di lingkungan produksi Anda.
+2. Buat file konfigurasi (misalnya, `mydb.cfg`) dan tambahkan detail koneksi database:
 
-3. Upload the **MySQL connector** to the `lib` directory of **GlassFish** and restart the server.
+   ```bash
+   host=jdbc:mysql://mysql\{node_id\}-\{your_env_name\}.\{hoster_domain\}/\{db_name\}
+   username=\{get in the email\}
+   password=\{get in the email\}
+   driver=com.mysql.jdbc.Driver
+   ```
 
-### 6. Create the Test Environment
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/application-lifecycle-management/15-database-connection-configs.png" alt="database connection configs" max-width="100%"/>
 
-1. Clone your production environment to create an exact copy for testing (name it `testenv`).
-2. Open the test environment in a browser to verify it.
+3. Unggah **MySQL connector** ke direktori `lib` dari **GlassFish** dan restart servernya.
 
-![clone environment](#)
+### 6. Buat Lingkungan Pengujian
 
-### 7. Upgrade the Application
+1. Klon environment produksi Anda untuk membuat salinan yang sama persis untuk pengujian (berikan nama `testenv`).
+2. Buka environment pengujian di browser untuk memverifikasi.
 
-1. Add the updated project to **Maven**.
-2. Click **Build and Deploy** for the new project. The new project will be deployed to the specified context.
-3. Bind a custom domain (e.g., `test.com`) to your test environment.
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/application-lifecycle-management/20-clone-environment.png" alt="clone environment" max-width="100%"/>
 
-![bind test domain](#)
+### 7. Tingkatkan Aplikasi
 
-4. Open the new application in a browser to see the updates.
+1. Tambahkan proyek yang diperbarui ke **Maven**.
+2. Klik **Build and Deploy** untuk proyek baru. Proyek baru akan diterapkan ke konteks yang ditentukan.
+3. Hubungkan domain kustom (misalnya, `test.com`) ke environment pengujian Anda.
 
-### 8. Swap Domains
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/application-lifecycle-management/25-bind-test-domain.png" alt="bind test domain" max-width="100%"/>
 
-After testing, you can swap domains between the test and production environments to deploy your changes without downtime. This allows for seamless updates.
+4. Buka aplikasi baru di browser untuk melihat pembaruan.
 
-1. In the environment settings, choose **Swap** to swap the domains between your production and test environments.
+### 8. Tukar Domain
 
-![swap domains](#)
+Setelah pengujian, Anda dapat menukar domain antara environment pengujian dan produksi untuk menerapkan perubahan Anda tanpa downtime. Ini memungkinkan pembaruan yang mulus.
 
-Once swapped, your production domain (e.g., `production.com`) will reflect the updated application.
+1. Di pengaturan environment, pilih **Swap** untuk menukar domain antara lingkungan produksi dan pengujian Anda.
 
-## What’s Next?
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/application-lifecycle-management/27-swap-domains.png" alt="swap domains" max-width="100%"/>
+
+Setelah ditukar, domain produksi Anda (misalnya, `production.com`) akan mencerminkan aplikasi yang diperbarui.
+
+## Baca Juga
 
 - [Application Configuration](https://docs.dewacloud.com/docs/configuration-file-manager/)
 - [Clone Environment](https://docs.dewacloud.com/docs/clone-environment/)

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-slug: /ports
+slug: /container-ports
 title: Ports
 ---
 
@@ -8,7 +8,7 @@ title: Ports
 
 Tab **Ports** memberikan informasi umum tentang pengelolaan port container di platform.
 
-![ports layer settings](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/configuration/ports/ports-1.png" alt="ports layer settings" width="100%"/>
 
 Port berikut ini dibuka secara default:
 
@@ -42,7 +42,7 @@ Port tambahan dapat dibuka menggunakan:
   * _**[endpoints](<https://docs.dewacloud.com/docs/endpoints/>)**_ \- memetakan port internal container ke port eksternal acak melalui platform [Shared LB](<https://docs.dewacloud.com/docs/shared-load-balancer/>)
   * _**[Public IP](<https://docs.dewacloud.com/docs/public-ip/>)**_ \- memberikan akses langsung ke semua port dari container Anda
 
-![containers access ports scheme](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/configuration/ports/ports-2.png" alt="containers access ports scheme" width="60%"/>
 
 Bergantung pada cara yang dipilih, cukup ikat layanan Anda (pendengar aplikasi) ke alamat internal atau eksternal yang diterima.
 
@@ -66,7 +66,7 @@ Sebagai alternatif, daftar port yang dipisahkan koma dapat diberikan melalui var
 Jika port yang tepat ditentukan melalui variabel JELASTIC_EXPOSE, JELASTIC_PRIORITY_PORTS diabaikan. Jika tidak ada layanan yang ditemukan pada JELASTIC_PRIORITY_PORTS, alur auto-redirect default dipanggil. Saat bekerja dengan server aplikasi NodeJS, variabel REDIRECT_EXCLUDE_PORTS tambahan dapat digunakan untuk secara manual mengecualikan port dari algoritma auto-redirect (yaitu port 80 tidak akan diarahkan ke mereka).
 :::
 
-Untuk mendapatkan fleksibilitas yang lebih besar atas aksesibilitas node, Anda dapat menyesuaikan pengaturan [container firewall](<https://docs.dewacloud.com/docs/custom-firewall/>).
+Untuk mendapatkan fleksibilitas yang lebih besar atas aksesibilitas node, Anda dapat menyesuaikan pengaturan [container firewall](<https://docs.dewacloud.com/docs/container-firewall/>).
 
 ## Baca Juga{#whats-next}
 

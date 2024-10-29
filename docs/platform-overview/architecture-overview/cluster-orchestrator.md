@@ -26,6 +26,5 @@ Platform mencakup sejumlah subsistem, yang melakukan operasi yang disebutkan di 
 
 ## Baca Juga{#whats-next}
 
-* [Apa Itu Platform-as-a-Service](https://docs.dewacloud.com/docs/what-is-paas-and-caas/)
 * [PaaS Cluster Overview](https://docs.dewacloud.com/docs/cluster-overview/)
 * [Infrastructure Level](https://docs.dewacloud.com/docs/infrastructure-level/)

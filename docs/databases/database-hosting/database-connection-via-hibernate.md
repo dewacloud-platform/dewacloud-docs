@@ -1,8 +1,9 @@
 ---
 sidebar_position: 7
-slug: /database-connection-via-hibernate
+slug: /connect-db-hibernate
 title: Database Connection via Hibernate
 ---
+
 # Connection to DB using Hibernate
 
 Untuk menghubungkan ke DB menggunakan Hibernate, pengguna harus melakukan langkah-langkah berikut:
@@ -14,82 +15,74 @@ Untuk menghubungkan ke DB menggunakan Hibernate, pengguna harus melakukan langka
 
 Mari kita lakukan langkah demi langkah:
 
-1\. Buat environment dengan server database (MySQL dalam contoh ini):
+1. Buat environment dengan server database (MySQL dalam contoh ini):
 
-![database hibernate env created](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/database-connection-via-hibernate/db-connection-hibernate-1.png" alt="database hibernate env created" width="100%"/>
 
-2\. Buat pengguna baru di database:
+2. Buat pengguna baru di database:
 
-Cara membuat pengguna baru - [klik di sini](<https://docs.dewacloud.com/docs/connection-to-mysql/>).
+   Cara membuat pengguna baru - [klik di sini](<https://docs.dewacloud.com/docs/connection-to-mysql-java/>).
 
-    
-    
-    1 2 3 
+   ```plaintext
+   Database name : jelasticDb
+   Username : jelastic
+   Password : jelastic
+   ```
 
-|    
+   Untuk contoh ini, kami telah membuat tabel _books_ dengan kolom _book_name_ dan _book_author_ di dalam database _jelasticDb_.
 
-    
-    
-    Database name : jelasticDb   Username : jelastic   Password : jelastic   
-  
----|---  
-  
-Untuk contoh ini, kami telah membuat tabel _books_ dengan kolom _book_name_ dan _book_author_ di dalam database _jelasticDb_.
+3. Modifikasi file konfigurasi berikut dari web-application Anda:
 
-3\. Modifikasi file konfigurasi berikut dari web-application Anda:
+   **_hibernate.cfg.xml_**
 
-_**hibernate.cfg.xml**_
+   ```xml
+   <hibernate-configuration>
+     <session-factory>
+       <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+       <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+       <property name="hibernate.connection.url">jdbc:mysql://mysql{node_id}.{your_env_name}.{hoster_domain}:3306/jelasticDb</property>
+       <property name="hibernate.connection.username">jelastic</property>
+       <property name="hibernate.connection.password">jelastic</property>
+       <property name="hibernate.current_session_context_class">thread</property>
+       <mapping resource="com/Testdata.hbm.xml"/>
+     </session-factory>
+   </hibernate-configuration>
+   ```
 
-    
-    
-     1  2  3  4  5  6  7  8  9 10 11 
+   :::note
+   Jangan lupa untuk memasukkan nilai yang benar ke dalam string `hibernate.connection.url`, menggantikan teks di dalam kurung kurawal. `jdbc:mysql://mysql{node_id}.{your_env_name}.{hoster_domain}:3306/jelasticDb` di mana `{node_id}` adalah ID dari kontainer dengan server MySQL yang ingin Anda akses. Ini dapat dilihat di dashboard:
+   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/database-connection-via-hibernate/db-connection-hibernate-2.png" alt="database hibernate env nodeid" width="100%"/>
+   :::
 
-|    
+   **_hibernate.revenge.xml_**
 
-    
-    
-    <hibernate-configuration>   <session-factory>     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>     <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>     <property name="hibernate.connection.url">jdbc:mysql://mysql{node_id}.{your_env_name}.{hoster_domain}:3306/jelasticDb</property>     <property name="hibernate.connection.username">jelastic</property>     <property name="hibernate.connection.password">jelastic</property>     <property name="hibernate.current_session_context_class">thread</property>     <mapping resource="com/Testdata.hbm.xml"/>   </session-factory> </hibernate-configuration>   
-  
----|---  
-  
-:::note
-Jangan lupa untuk memasukkan nilai yang benar ke dalam string hibernate.connection.url, menggantikan teks di dalam kurung kurawal. jdbc:mysql://mysql{node_id}.{your_env_name}.{hoster_domain}:3306/jelasticDb di mana {node_id} adalah ID dari kontainer dengan server MySQL yang ingin Anda akses. Ini dapat dilihat di dashboard:
-:::
+   ```xml
+   <hibernate-reverse-engineering>
+     <schema-selection match-catalog="jelasticDb"/>
+     <table-filter match-name="books"/>
+   </hibernate-reverse-engineering>
+   ```
 
-_**hibernate.revenge.xml**_
+   Untuk langkah berikutnya, kami telah menggunakan mekanisme reverse engineering dan mendapatkan 2 file di proyek web kami:
 
-    
-    
-    1 2 3 4 
+   - Books.java
+   - Books.hbm.xml
 
-|    
+   Anda juga perlu membuat file _**HibernateUtil.java**_, tetapi tidak perlu mengubahnya.
 
-    
-    
-    <hibernate-reverse-engineering>   <schema-selection match-catalog="jelasticDb"/>   <table-filter match-name="books"/> </hibernate-reverse-engineering>   
-  
----|---  
-  
-Untuk langkah berikutnya, kami telah menggunakan mekanisme reverse engineering dan mendapatkan 2 file di proyek web kami:
+4. Buat metode Java sederhana, yang akan menambahkan baris baru ke tabel _books_ dalam database kami:
 
-  * Books.java
-  * Books.hbm.xml
+   ```java
+   public void addBook(){
+     Session s = HibernateUtil.getSessionFactory().getCurrentSession();
+     s.beginTransaction();
+     Books book = new Books("romeo and juliet","william shakespeare ");
+     s.save(book);
+     s.getTransaction().commit();
+   }
+   ```
 
-Anda juga perlu membuat file _**HibernateUtil.java**_, tetapi tidak perlu mengubahnya.
-
-4\. Buat metode Java sederhana, yang akan menambahkan baris baru ke tabel _books_ dalam database kami:
-
-    
-    
-    1 2 3 4 5 6 7 
-
-|    
-```
-    public void addBook(){         Session s = HibernateUtil.getSessionFactory().getCurrentSession();                 s.beginTransaction();                    Books book = new Books("romeo and juliet","william shakespeare ");             s.save(book);             s.getTransaction().commit();     }   
-```
----|---  
-  
-Perhatikan bahwa Anda harus meletakkan konektor untuk database (**.jar** library) ke dalam proyek Anda atau ke folder server web yang sesuai di environment.
+   Perhatikan bahwa Anda harus meletakkan konektor untuk database (**.jar** library) ke dalam proyek Anda atau ke folder server web yang sesuai di environment.
 
 ## Baca Juga {#whats-next}
 

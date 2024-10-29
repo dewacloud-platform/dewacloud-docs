@@ -41,7 +41,7 @@ Misalnya, Anda dapat menemukan semua chart yang tersedia secara publik untuk _Wo
 helm search hub wordpress
 ```
 
-![helm search hub command](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/application%20deployment/Helm%20Integration/01-helm-search-hub-command.png" alt="helm search hub command" width="100%"/>
 
   * _**helm search repo**_ mencari repository yang telah Anda tambahkan ke klien helm lokal Anda (dengan _helm repo add_). Pencarian ini dilakukan melalui data lokal, dan tidak memerlukan koneksi jaringan publik
 
@@ -52,7 +52,7 @@ Helm 3 (digunakan sejak _Kubernetes 1.18.10_) tidak lagi menyertakan repository 
 helm repo add bitnami https://charts.bitnami.com/bitnami
 ```
 
-![helm add bitnami repo](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/application%20deployment/Helm%20Integration/02-helm-add-bitnami-repo.png" alt="helm add bitnami repo" width="100%"/>
 
 Anda bisa melihat repository mana yang dikonfigurasi menggunakan perintah _**helm repo list**_:
 
@@ -60,7 +60,7 @@ Anda bisa melihat repository mana yang dikonfigurasi menggunakan perintah _**hel
 helm repo list
 ```
 
-![helm repo list command](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/application%20deployment/Helm%20Integration/03-helm-repo-list-command.png" alt="helm repo list command" width="100%"/>
 
 Karena repository chart sering berubah, Anda bisa memastikan klien Helm Anda terbaru dengan menjalankan:
 
@@ -68,7 +68,7 @@ Karena repository chart sering berubah, Anda bisa memastikan klien Helm Anda ter
 helm repo update
 ```
 
-![helm repo update command](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/application%20deployment/Helm%20Integration/04-helm-repo-update-command.png" alt="helm repo update command" width="100%"/>
 
 ## Installing Helm Package{#installing-helm-package}
 
@@ -83,7 +83,7 @@ Selain itu, Anda dapat menyediakan opsi chart untuk menyesuaikan aplikasi (lihat
 helm install --set wordpressBlogName='My Blog!' mywordpress bitnami/wordpress
 ```
 
-![helm install WordPress chart](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/application%20deployment/Helm%20Integration/05-helm-install-wordpress-chart.png" alt="helm install WordPress chart" width="100%"/>
 
 Memasang chart menciptakan objek rilis baru. Jika Anda ingin helm menghasilkan nama untuk Anda, hilangkan nama rilis dan gunakan parameter _\--generate-name_.
 
@@ -100,13 +100,13 @@ export SERVICE_IP=$(kubectl get svc --namespace default mywordpress --template "
 printf "WordPress URL: http://$SERVICE_IP/\nWordPress Admin URL: http://$SERVICE_IP/admin\nUsername: user\nPassword: $(kubectl get secret --namespace default mywordpress -o jsonpath="{.data.wordpress-password}" | base64 --decode)\n"
 ```
 
-![WordPress chart access credentials](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/application%20deployment/Helm%20Integration/08-wordpress-chart-access-credentials.png" alt="WordPress chart access credentials" width="100%"/>
 
 Sekarang, gunakan data yang diperoleh untuk mengakses situs WordPress dan admin Anda.
 
-![WordPress blog site](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/application%20deployment/Helm%20Integration/09-wordpress-blog-site.png" alt="WordPress blog site" width="80%"/>
 
-![WordPress admin panel](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/application%20deployment/Helm%20Integration/10-wordpress-admin-panel.png" alt="WordPress admin panel" width="100%"/>
 
 Seperti yang Anda lihat, nama blog kustom kami (_My Blog!_) yang disediakan melalui parameter _**\--set**_ diterapkan secara otomatis.
 
@@ -124,7 +124,7 @@ Untuk informasi lebih lanjut tentang perintah, lihat bantuan bawaan Helm - _helm
 helm status mywordpress
 ```
 
-![WordPress release status](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/application%20deployment/Helm%20Integration/12-wordpress-release-status.png" alt="WordPress release status" width="100%"/>
 
 2\. Sering kali, Anda ingin menyesuaikan chart untuk menggunakan konfigurasi yang Anda inginkan. Ini dapat dilakukan dengan menyediakan nilai yang diperlukan melalui bendera **\--values** (**-f**) atau **\--set** selama prosedur instalasi dan upgrade. Yang pertama meneruskan nilai kustom dalam file YAML terpisah, sedangkan yang kedua - langsung dari command line (misalnya _\--set a=b,c=d_ atau _\--set outer.inner=value_).
 
@@ -157,7 +157,7 @@ Sekarang, Anda dapat menyediakan kata sandi melalui bendera _**\--set**_:
 helm upgrade --set wordpressPassword=$WORDPRESS_PASSWORD,mariadb.auth.rootPassword=$MARIADB_ROOT_PASSWORD,mariadb.auth.password=$MARIADB_PASSWORD mywordpress bitnami/wordpress
 ```
 
-![helm upgrade WordPress](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/application%20deployment/Helm%20Integration/14-helm-upgrade-wordpress.png" alt="helm upgrade WordPress" width="100%"/>
 
 :::tip
 Saat Anda perlu menyediakan banyak parameter kustom, mungkin lebih nyaman untuk menentukannya dalam file YAML terpisah. Contohnya untuk WordPress, Anda dapat menyiapkan file _values-template.yaml_ berikut:  
@@ -184,7 +184,7 @@ helm upgrade -f values.yaml mywordpress bitnami/wordpress
 helm get values mywordpress
 ```
 
-![helm get custom values](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/application%20deployment/Helm%20Integration/15-helm-get-custom-values.png" alt="helm get custom values" width="100%"/>
 
 Seperti yang Anda lihat, nilai kata sandi kami bertahan melalui upgrade.
 
@@ -203,7 +203,7 @@ helm history mywordpress
 helm rollback mywordpress 1
 ```
 
-![helm rollback command](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/application%20deployment/Helm%20Integration/17-helm-rollback-command.png" alt="helm rollback command" width="100%"/>
 
 6\. Untuk menghapus rilis dari cluster, gunakan perintah berikut:
 
@@ -211,7 +211,7 @@ helm rollback mywordpress 1
 helm uninstall mywordpress
 ```
 
-![helm list and uninstall commands](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/application%20deployment/Helm%20Integration/18-helm-list-and-uninstall-commands.png" alt="helm list and uninstall commands" width="100%"/>
 
 :::tip
 Jika Anda ingin menyimpan catatan penghapusan rilis, gunakan bendera _--keep-history_.

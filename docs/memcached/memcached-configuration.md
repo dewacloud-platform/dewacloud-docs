@@ -10,10 +10,10 @@ File konfigurasi Memcached berikut tersedia:
 
 | Folder | File | Path |
 |---|---|---|
-| [conf](https://docs.dewacloud.com/#conf) | memcached | /etc/sysconfig |
-| [keys](https://docs.dewacloud.com/#keys) | | /var/lib/jelastic/keys |
+| [conf](#conf) | memcached | /etc/sysconfig |
+| [keys](#keys) | | /var/lib/jelastic/keys |
 
-Informasi lebih lanjut tentang penggunaan Memcached dapat Anda temukan dalam dokumen [Memcached](https://docs.dewacloud.com/memcached/).
+Informasi lebih lanjut tentang penggunaan Memcached dapat Anda temukan dalam dokumen [Memcached](https://docs.dewacloud.com/docs/memcached/).
 
 ## CONF{#conf}
 
@@ -37,7 +37,7 @@ _/var/lib/jelastic/keys/\{key_file_name\}_
 
 ## Baca Juga{#whats-next}
 
-- [Memcached System](https://docs.dewacloud.com/memcached/)
-- [Session Replication via Memcached](https://docs.dewacloud.com/replication-memcached/)
-- [PHP Sessions Clustering](https://docs.dewacloud.com/php-sessions-memcached/)
-- [Maven Configuration](https://docs.dewacloud.com/maven-configuration/)
+- [Memcached System](https://docs.dewacloud.com/docs/memcached/)
+- [Session Replication via Memcached](https://docs.dewacloud.com/docs/replication-memcached/)
+- [PHP Sessions Clustering](https://docs.dewacloud.com/docs/memcached-php-sessions/)
+- [Maven Configuration](https://docs.dewacloud.com/docs/maven-configuration/)

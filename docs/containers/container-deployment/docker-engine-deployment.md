@@ -15,19 +15,20 @@ Platform ini menyediakan dukungan untuk **Docker Engine Community Edition** deng
 
 1\. **Docker Engine CE** disajikan sebagai solusi pre-packaged yang tersedia melalui [platform Marketplace](<https://docs.dewacloud.com/docs/marketplace/>). Gunakan kolom _search_ di bagian atas atau cari paket di kategori _Dev & Admin Tools_:
 
-![Docker Engine in Marketplace](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/container-deployment/docker-engine-deployment/docker-engine-deployment-1.png" alt="Docker Engine in Marketplace" width="100%"/>
 
 :::tip
 Anda juga dapat menginstal Docker Engine CE melalui topology wizard - cari stack atau temukan secara manual di bagian More > Extra Services.
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/container-deployment/docker-engine-deployment/docker-engine-deployment-2.png" alt="Docker Engine in Extra Services" width="100%"/>
 :::
 
 2\. Selain pemilihan _**Docker Version**_, Anda dapat memilih dari beberapa opsi deployment saat menginstal dari Marketplace:
 
   * _**Create a clean standalone engine**_ \- menyiapkan node kosong dengan hanya Docker daemon di dalamnya. Jika diperlukan, Anda dapat memasang **Portainer UI** \- alat manajemen berbasis web tambahan
-  * _**Connect to an existing swarm cluster**_ \- secara otomatis memasukkan Docker Engine baru ini ke dalam [Docker Swarm](<https://docs.dewacloud.com/company/blog/docker-swarm-auto-clustering-and-scaling-with-paas/>) cluster yang sudah ada (memerlukan _Join Token_ dan _Host IP_ cluster yang sesuai)
+  * _**Connect to an existing swarm cluster**_ \- secara otomatis memasukkan Docker Engine baru ini ke dalam [Docker Swarm](<https://virtuozzo.com/company/blog/docker-swarm-auto-clustering-and-scaling-with-paas/>) cluster yang sudah ada (memerlukan _Join Token_ dan _Host IP_ cluster yang sesuai)
   * _**Deploy containers from compose.yml**_ \- secara otomatis menerapkan aplikasi dari repository custom yang terhubung
 
-![Docker Engine CE package](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/container-deployment/docker-engine-deployment/docker-engine-deployment-3.png" alt="Docker Engine CE package" width="100%"/>
 
 Konfirmasi instalasi dengan memberikan informasi umum (_Environment_, _Display Name_, _Region_) dan klik tombol **Install**.
 

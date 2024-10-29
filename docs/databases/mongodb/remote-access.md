@@ -13,37 +13,37 @@ Anda dapat bekerja dengan database Anda dari jarak jauh menggunakan komputer And
 
 2. Klik tombol **Buat lingkungan** di bagian kiri atas.
 
-![create environment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/remote-access/remote-access-1.png" alt="create environment" width="50%"/>
 
 3. Dalam dialog **Topologi Lingkungan**, pilih server aplikasi Anda (misalnya, **Tomcat**) dan **MongoDB** sebagai database yang ingin Anda gunakan. Aktifkan **Public IPv4** untuk **MongoDB**. Kemudian ketik nama lingkungan Anda, misalnya, _remotemongo_.
 
-![environment wizard](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/remote-access/remote-access-2.png" alt="environment wizard" width="100%"/>
 
 Tunggu sebentar hingga lingkungan Anda dibuat.
 
 4. Klik tombol **info** untuk MongoDB dan Anda akan melihat **Public IP** Anda di akhir daftar dropdown.
 
-![MongoDB node public IP](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/remote-access/remote-access-3.png" alt="MongoDB node public IP" width="100%"/>
 
 ## Koneksi Jarak Jauh ke MongoDB{#remote-connection-to-mongodb}
 
 1. Buat proyek baru menggunakan klien desktop yang sesuai untuk **MongoDB** (kami menggunakan Database Master 4 sebagai contoh).
 
-![remote connection new project](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/remote-access/remote-access-4.png" alt="remote connection new project" width="70%"/>
 
-![add remote connection](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/remote-access/remote-access-5.png" alt="add remote connection" width="100%"/>
 
 2. Tentukan **host** (IP publik Anda), **nomor port** (27017), **username**, dan **password** (ketika Anda membuat lingkungan, platform mengirimkan email kepada Anda dengan kredensial ke database).
 
-![remote connection credentials](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/remote-access/remote-access-6.png" alt="remote connection credentials" width="100%"/>
 
 Kemudian klik **Uji Koneksi**.
 
-![test remote connection](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/remote-access/remote-access-7.png" alt="test remote connection" width="60%"/>
 
 Seperti yang Anda lihat, koneksi berhasil dibuat.
 
-![remote connection created](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/remote-access/remote-access-8.png" alt="remote connection created" width="100%"/>
 
 ## Baca Juga{#whats-next}
 

@@ -5,21 +5,19 @@ title: Java Connection
 ---
 # How to Connect PostgreSQL with Java Application
 
-[Gleb Antonov](<https://www.virtuozzo.com/company/blog/author/gleb-antonov/> "Posts by Gleb Antonov") | 24 September 2021 | [Databases](<https://www.virtuozzo.com/company/blog/category/databases/>), [DevOps PaaS](<https://www.virtuozzo.com/company/blog/category/devops-paas/>)
-
 PostgreSQL adalah database SQL open source yang kuat dengan struktur objek-relasional dan berbagai fitur kuat untuk memastikan kinerja dan keandalan yang sangat baik. Dalam tutorial ini, kami akan menunjukkan cara menghubungkan database [PostgreSQL](<https://www.postgresql.org/>) dengan aplikasi Java yang di-host di Jelastic PaaS.
 
 1\. Masuk ke dashboard Jelastic, [buat](<https://docs.dewacloud.com/docs/setting-up-environment/>) **Environment Baru** dengan server aplikasi **_Java_** dan **_database PostgreSQL._**
 
-![create postgresql database](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/java-connection/java-connection-1.png" alt="create postgresql database" width="100%"/>
 
 2\. Setelah pembuatan, Anda akan menerima email dengan kredensial akses database Anda (host, login, dan password).
 
-![postgresql access credentials](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/java-connection/java-connection-2.png" alt="postgresql access credentials" width="100%"/>
 
 3\. Klik tombol **Config** di sebelah server aplikasi Anda (_Tomcat_ dalam kasus kami) untuk mengakses [pengelola file konfigurasi](<https://docs.dewacloud.com/docs/configuration-file-manager/>) dan buat file **_mydb.cfg_** baru di folder **/opt/tomcat/temp**.
 
-![postgresql configuration files](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/java-connection/java-connection-3.png" alt="postgresql configuration files" width="100%"/>
 
 4\. Berikan detail koneksi berikut di file **_mydb.cfg_**:
 
@@ -30,13 +28,13 @@ password={password}
 driver=org.postgresql.Driver
 ```
 
-![postgresql connection details](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/java-connection/java-connection-4.png" alt="postgresql connection details" width="100%"/>
 
 Di sini:
 
-  * **_{host}_** \- tautan ke node DB Anda tanpa bagian protokol
-  * **_{db_name}_** \- nama database (postgres dalam kasus kami)
-  * **_{user}_** dan {password} - kredensial pengguna admin
+  *`{host}` \- tautan ke node DB Anda tanpa bagian protokol
+  *`{db_name}` \- nama database (postgres dalam kasus kami)
+  *`{user}` dan `{password}` - kredensial pengguna admin
 
 **Catatan:** Biasanya, untuk produksi, disarankan untuk mendefinisikan pengguna terbatas baru melalui **_phpPgAdmin_** untuk aplikasi Anda dengan akses hanya ke database yang didedikasikan.
 Namun, untuk contoh ini, kami akan mengambil pengguna default (yaitu _webadmin_ dengan akses administratif penuh ke server) dan database (_postgres_).
@@ -126,32 +124,22 @@ Untuk Tomcat 9:
 Untuk Tomcat 10:
 [https://download.jelastic.com/public.php?service=files&t=503e9768ee573fd452cec8a34a2215b2&download](<https://download.jelastic.com/public.php?service=files&t=503e9768ee573fd452cec8a34a2215b2&download>)
 
-![deploy java application](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/java-connection/java-connection-5.png" alt="deploy java application" width="100%"/>
 
-**Catatan:** Aplikasi contoh kami sudah berisi _jdbc-connector_ untuk akses database PostgreSQL. Namun, untuk proyek lain, Anda mungkin perlu mengunggahnya secara manual ke folder **webapps/{app_context}/WEB-INF/lib** pada server aplikasi Anda (jangan lupa untuk memulai ulang server setelah untuk menerapkan perubahan).
+**Catatan:** Aplikasi contoh kami sudah berisi _jdbc-connector_ untuk akses database PostgreSQL. Namun, untuk proyek lain, Anda mungkin perlu mengunggahnya secara manual ke folder **webapps/\{app_context\}/WEB-INF/lib** pada server aplikasi Anda (jangan lupa untuk memulai ulang server setelah untuk menerapkan perubahan).
 
 7\. Setelah sukses deploy, klik **Open in Browser** di sebelah server aplikasi Anda.
 
-![open java application](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/java-connection/java-connection-6.png" alt="open java application" width="100%"/>
 
 8\. Di dalam tab browser yang terbuka, klik tombol **Create test table in your database**.
 
-![java jdbc connection](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/java-connection/java-connection-7.png" alt="java jdbc connection" width="70%"/>
 
 Permintaan Anda akan diproses sebentar dan menampilkan pesan hasil.
 
-![connect postgresql database in java](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/java-connection/java-connection-8.png" alt="connect postgresql database in java" width="70%"/>
 
 9\. Mari kita akses database kita melalui **phpPgAdmin** untuk memastikan bahwa tabel baru telah dibuat (kredensial akses diberikan melalui email yang dijelaskan pada langkah kedua panduan ini).
 
-![create postgresql table](#)
-
-Seperti yang Anda lihat, tabel baru (diberi nama sesuai dengan tanggal dan waktu pembuatan) telah berhasil ditambahkan oleh aplikasi Java kami. Koneksi berhasil dibuat! Cobalah di salah satu [penyedia layanan Jelastic yang tersedia secara global](<https://jelastic.cloud/>).
-
-## Artikel Terkait
-
-### [PostgreSQL Auto-Clustering with Asynchronous Master-Slave Replication](<https://www.virtuozzo.com/company/blog/postgresql-auto-clustering-master-slave-replication/>)
-
-### [Establish Secure SSL Connection to PostgreSQL Database Server](<https://www.virtuozzo.com/company/blog/establish-secure-ssl-connection-to-postgresql-database-server/>)
-
-### [How to Install Hasura GraphQL Engine for PostgreSQL-Based Applications](<https://www.virtuozzo.com/company/blog/hasura-graphql-postgresql/>)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/java-connection/java-connection-9.png" alt="create postgresql table" width="100%"/>

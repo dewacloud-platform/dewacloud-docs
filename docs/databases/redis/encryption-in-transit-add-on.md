@@ -17,20 +17,21 @@ Add-on ini hanya dapat dipasang di atas node Redis.
 Add-on ini juga tersedia dari Marketplace dan dapat diimpor dari repositori GitHub yang sesuai.
 :::
 
-![Redis SSL add-on](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/redis/encryption-in-transit-addon/encryption-in-transit-addon-1.png" alt="Redis SSL add-on" width="100%"/>
 
 2\. Dalam jendela instalasi yang terbuka, pilih **Environment** dan **Node Group(s)** target di mana add-on akan dipasang.
 
-![install Redis SSL](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/redis/encryption-in-transit-addon/encryption-in-transit-addon-2.png" alt="install Redis SSL" width="100%"/>
 
 Klik **Install** untuk melanjutkan.
 
 3\. Dalam satu menit, environment Anda akan dikonfigurasikan.
 
-![SSL add-on installed](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/redis/encryption-in-transit-addon/encryption-in-transit-addon-3.png" alt="SSL add-on installed" width="70%"/>
 
 :::warning
 Port 6380 digunakan untuk koneksi aman secara default dan otomatis ditambahkan ke aturan firewall selama pemasangan add-on.
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/redis/encryption-in-transit-addon/encryption-in-transit-addon-4.png" alt="Redis port 6380" width="100%"/>
 :::
 
 Anda dapat menemukan sertifikat SSL yang dihasilkan di dalam folder **/var/lib/jelastic/keys/SSL-TLS**.
@@ -53,13 +54,13 @@ RANDFILE=/tmp/.random openssl x509 -req -in ${CERT_DIR}/server-req.pem -days 365
     * _**server**_ – sertifikat server digunakan untuk menyediakan enkripsi TLS dari koneksi ke database Redis
     * _**client**_ – sertifikat klien yang dapat diunduh dapat digunakan untuk mengotentikasi koneksi klien ke server database
 
-![Redis SSL certificates](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/redis/encryption-in-transit-addon/encryption-in-transit-addon-5.png" alt="Redis SSL certificates" width="100%"/>
 
 **Konfigurasi Redis:**
 
 Semua konfigurasi add-on disediakan melalui file konfigurasi _**/etc/redis.conf**_ yang terpisah (juga ditambahkan ke daftar _Favorites_ dalam file manager).
 
-![Redis configuration file](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/redis/encryption-in-transit-addon/encryption-in-transit-addon-6.png" alt="Redis configuration file" width="100%"/>
 
 Di bawah ini, Anda dapat memeriksa daftar pengaturan paling umum yang terkait dengan SSL:
 
@@ -78,7 +79,7 @@ Kedua nilai sengaja dipisahkan secara default untuk memastikan kompatibilitas ke
 
 Setelah pemasangan, add-on dapat ditemukan di bawah tab **Add-Ons** untuk layer yang sesuai.
 
-![manage Redis SSL add-on](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/redis/encryption-in-transit-addon/encryption-in-transit-addon-7.png" alt="manage Redis SSL add-on" width="100%"/>
 
 Di sini Anda dapat mengklik tombol **Re-issue certificates** untuk menghasilkan sertifikat SSL untuk koneksi aman yang baru.
 
@@ -99,9 +100,9 @@ export REDISCLI_AUTH={password}
 redis-cli -p 6380 --tls --cacert /var/lib/jelastic/keys/SSL-TLS/client/root.crt {command}
 ```
 
-![Redis secure connect](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/redis/encryption-in-transit-addon/encryption-in-transit-addon-8.png" alt="Redis secure connect" width="100%"/>
 
-Anda dapat menjalankan _**{command}**_ apa pun yang diinginkan atau mengabaikannya untuk terhubung ke database dalam mode interaktif.
+Anda dapat menjalankan `{command}` apa pun yang diinginkan atau mengabaikannya untuk terhubung ke database dalam mode interaktif.
 
 Jika server memerlukan otentikasi menggunakan sertifikat klien, Anda dapat menentukan sertifikat dan kunci privat yang sesuai menggunakan parameter _**\--cert**_ dan _**\--key**_.
 
@@ -109,7 +110,7 @@ Jika server memerlukan otentikasi menggunakan sertifikat klien, Anda dapat menen
 redis-cli -p 6380 --tls --cert /var/lib/jelastic/keys/SSL-TLS/client/client.crt --key /var/lib/jelastic/keys/SSL-TLS/client/client.key --cacert /var/lib/jelastic/keys/SSL-TLS/client/root.crt {command}
 ```
 
-![Redis secure connect certificates](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/redis/encryption-in-transit-addon/encryption-in-transit-addon-9.png" alt="Redis secure connect certificates" width="100%"/>
 
 Untuk koneksi eksternal, klien perlu mengunggah file sertifikat (_client.crt_, _client.key_, _root.crt_) ke komputer/container/VM mereka dan menggunakan opsi _**-h**_ untuk menentukan hostname atau alamat IP jarak jauh.
 

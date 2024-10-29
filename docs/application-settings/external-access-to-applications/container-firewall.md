@@ -3,144 +3,145 @@ sidebar_position: 4
 slug: /container-firewall
 title: Container Firewall
 ---
+
 # Container Firewall Rules Management
 
-The platform’s **Container Firewall** feature provides a way to control the availability of your nodes both inside and outside the PaaS. It evaluates various parameters (such as the source of incoming requests, protocol, and target node port) to flexibly manage access to your containers by configuring the necessary connection rules.
+Fitur **Container Firewall** dari platform menyediakan cara untuk mengontrol ketersediaan node Anda baik di dalam maupun di luar PaaS. Ini mengevaluasi berbagai parameter (seperti sumber permintaan masuk, protokol, dan port node target) untuk secara fleksibel mengelola akses ke container Anda dengan mengonfigurasi aturan koneksi yang diperlukan.
 
-![firewall and isolation illustration](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/container-firewall/01-firewall-and-isolation-illustration.png" alt="firewall and isolation illustration" width="80%"/>
 
 :::tip
-For restricting access between environments within a single account, consider using the **Network Isolation** feature.
+Untuk membatasi akses antar lingkungan dalam satu akun, pertimbangkan menggunakan fitur **Network Isolation**.
 :::
 
-## Container Firewall Management via Platform UI
+## Container Firewall Management via Platform UI{#container-firewall-management-via-platform-ui}
 
-Each node (excluding custom [Docker](<https://docs.dewacloud.com/docs/container-types/>) and [Windows](<https://www.virtuozzo.com/application-platform-docs/iis8/>) containers) is provisioned with firewall rules, which can be managed through a graphical user interface (GUI). Access this section by selecting **Settings** next to the required environment and clicking **Firewall**.
+Setiap node (kecuali container [Docker](https://docs.dewacloud.com/docs/container-types/) dan [Windows](https://www.virtuozzo.com/application-platform-docs/iis8/)) kustom) dilengkapi dengan aturan firewall, yang dapat dikelola melalui antarmuka pengguna grafis (GUI). Akses bagian ini dengan memilih **Settings** di sebelah lingkungan yang diperlukan dan klik **Firewall**.
 
 :::note
-The availability of the **Container Firewall** UI depends on your hosting provider. Contact your platform support to request activation if you don’t see this feature.
+Ketersediaan UI **Container Firewall** bergantung pada penyedia hosting Anda. Hubungi dukungan platform Anda untuk meminta aktivasi jika Anda tidak melihat fitur ini.
 :::
 
-![firewall environment settings](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/container-firewall/02-firewall-environment-settings.png" alt="firewall environment settings" width="100%"/>
 
-### Tabs Available:
+### Tabs Available:{#tabs-available}
 
-- **Overview**: Displays general information about the firewall and allows you to change the firewall state (enabled by default for all containers).
-- **Inbound Rules**: Manages incoming requests (requests not listed are denied by default).
-- **Outbound Rules**: Controls outgoing connections (requests not listed are allowed by default).
+- **Overview**: Menampilkan informasi umum tentang firewall dan memungkinkan Anda untuk mengubah status firewall (diaktifkan secara default untuk semua container).
+- **Inbound Rules**: Mengelola permintaan masuk (permintaan yang tidak terdaftar ditolak secara default).
+- **Outbound Rules**: Mengontrol koneksi keluar (permintaan yang tidak terdaftar diizinkan secara default).
 
-### Default Firewall Rules
+### Default Firewall Rules{#default-firewall-rules}
 
-Upon creating a new container, the platform automatically populates the **Inbound** and **Outbound Rules** sections with necessary records to ensure container operability.
+Setelah membuat container baru, platform secara otomatis mengisi bagian **Inbound** dan **Outbound Rules** dengan catatan yang diperlukan untuk memastikan pengoperasian container.
 
 :::tip
-Default rules are fetched based on the **EXPOSE** ports in the image’s dockerfile.
+Aturan default diambil berdasarkan port **EXPOSE** dalam dockerfile gambar.
 :::
 
-![container firewall inbound rules](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/container-firewall/03-container-firewall-inbound-rules.png" alt="container firewall inbound rules" width="100%"/>
 
-Rules are structured as follows:
+Aturan disusun sebagai berikut:
 
-1. **Non-editable rules**: A gray-colored record with the highest priority allows platform infrastructure to manage operations, SSH access, and load balancing without public IP.
-2. **Default and user-added rules**: These include rules for **SSH**, **HTTP**, **HTTPS**, and **FTP** connections.
-3. **Final rule**: The last rule, non-editable and gray-colored, blocks any incoming connection not allowed by the previous rules.
+1. **Aturan yang tidak dapat diedit**: Catatan berwarna abu-abu dengan prioritas tertinggi memungkinkan infrastruktur platform mengelola operasi, akses SSH, dan load balancing tanpa IP publik.
+2. **Aturan default dan tambahannya oleh pengguna**: Termasuk aturan untuk koneksi **SSH**, **HTTP**, **HTTPS**, dan **FTP**.
+3. **Aturan terakhir**: Aturan terakhir, tidak dapat diedit dan berwarna abu-abu, memblokir setiap koneksi masuk yang tidak diizinkan oleh aturan sebelumnya.
 
-### Adding Default Rules
+### Menambahkan Aturan Default{#adding-default-rules}
 
-To define custom ports opened via the container firewall during node creation, you can use the **OPEN_INBOUND_PORTS** environment variable.
+Untuk menentukan port kustom yang dibuka melalui container firewall selama pembuatan node, Anda dapat menggunakan variabel lingkungan **OPEN_INBOUND_PORTS**.
 
-1. Create a new environment, select the software stack, and navigate to **Variables**.
-2. Add the variable in this format:
+1. Buat lingkungan baru, pilih stack perangkat lunak, dan navigasikan ke **Variables**.
+2. Tambahkan variabel dalam format ini:
    
     ```bash
     "OPEN_INBOUND_PORTS": "port1, port2, ..., portN"
     ```
 
-3. Check the firewall rules after creation to confirm the added ports.
+3. Periksa aturan firewall setelah pembuatan untuk memastikan port yang ditambahkan.
 
-### Rules Management
+### Rules Management{#rules-management}
 
-You can manage existing firewall rules and add new ones using the **Add**, **Edit**, **Remove**, **Disable**, **Enable**, and **Refresh** buttons.
+Anda dapat mengelola aturan firewall yang ada dan menambah yang baru menggunakan tombol **Add**, **Edit**, **Remove**, **Disable**, **Enable**, dan **Refresh**.
 
-![firewall rules management buttons](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/container-firewall/04-firewall-rules-management-buttons.png" alt="firewall rules management buttons" width="80%"/>
 
-Parameters for a new firewall rule include:
+Parameter untuk aturan firewall baru meliputi:
 
-- **Nodes**: Select the environment layer.
-- **Name**: Provide a name for the rule.
-- **Protocol**: Choose **TCP**, **UDP**, or both.
-- **Port Range**: Specify the port or range of ports to be opened/closed.
-- **Source**: Choose the request source, which could be custom IPs, predefined ranges, or environment nodes.
-- **Priority**: Assign a priority (lower values are applied first).
-- **Action**: Set to allow or deny the request.
+- **Nodes**: Pilih layer lingkungan.
+- **Name**: Berikan nama untuk aturan.
+- **Protocol**: Pilih **TCP**, **UDP**, atau keduanya.
+- **Port Range**: Tentukan port atau rentang port untuk dibuka/tutup.
+- **Source**: Pilih sumber permintaan, dapat berupa IP kustom, rentang yang telah ditentukan, atau node lingkungan.
+- **Priority**: Tetapkan prioritas (nilai lebih rendah diterapkan terlebih dahulu).
+- **Action**: Atur untuk mengizinkan atau menolak permintaan.
 
-You can edit existing rules except for the **Nodes** field. Rules can be temporarily disabled or enabled using the appropriate buttons.
+Anda dapat mengedit aturan yang ada kecuali untuk bidang **Nodes**. Aturan dapat dinonaktifkan atau diaktifkan sementara menggunakan tombol yang sesuai.
 
-## Firewall Use Cases
+## Use Cases Firewall{#firewall-use-cases}
 
-### Restrict Access via User Interface
+### Batasi Akses melalui Antarmuka Pengguna{#restrict-access-via-user-interface}
 
-Here’s how to block access to a container from a specific IP address:
+Berikut adalah cara memblokir akses ke container dari alamat IP tertentu:
 
-1. Access the **Firewall** settings for the desired environment and navigate to the **Inbound Rules** tab.
-2. Click **Add** and configure the rule as follows:
+1. Akses pengaturan **Firewall** untuk lingkungan yang diinginkan dan navigasikan ke tab **Inbound Rules**.
+2. Klik **Add** dan konfigurasikan aturan sebagai berikut:
 
-    - **Nodes**: Select the container.
-    - **Name**: Provide a rule name.
-    - **Protocol**: Set to **TCP**.
-    - **Port Range**: Leave blank to apply to all ports.
-    - **Source**: Choose **Custom IP Address(es)** and enter the IP address.
-    - **Priority**: Set an appropriate value (e.g., 900).
-    - **Action**: Choose **Deny**.
+    - **Nodes**: Pilih container.
+    - **Name**: Berikan nama aturan.
+    - **Protocol**: Atur ke **TCP**.
+    - **Port Range**: Biarkan kosong untuk diterapkan ke semua port.
+    - **Source**: Pilih **Custom IP Address(es)** dan masukkan alamat IP.
+    - **Priority**: Setel nilai yang sesuai (misalnya, 900).
+    - **Action**: Pilih **Deny**.
 
-3. Click **Add** to save and apply the rule. The blocked IP will receive a 403 Forbidden page when attempting to connect.
+3. Klik **Add** untuk menyimpan dan menerapkan aturan. IP yang diblokir akan menerima halaman 403 Forbidden ketika mencoba terhubung.
 
-![prohibited connection](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/container-firewall/08-prohibited-connection.png" alt="prohibited connection" width="60%"/>
 
-### Restrict Access via SSH
+### Batasi Akses melalui SSH{#restrict-access-via-ssh}
 
-Firewall rules can also be managed via [SSH Gate](<https://docs.dewacloud.com/docs/ssh-access/>).
+Aturan firewall juga dapat dikelola melalui [SSH Gate](https://docs.dewacloud.com/docs/ssh-access/).
 
-1. Use **Web SSH** from the platform dashboard to access the node.
-2. Verify that the container firewall is enabled by checking `/etc/jelastic/metainf.conf`:
+1. Gunakan **Web SSH** dari dashboard platform untuk mengakses node.
+2. Verifikasi bahwa firewall container diaktifkan dengan memeriksa `/etc/jelastic/metainf.conf`:
 
     ```bash
     cat /etc/jelastic/metainf.conf
     ```
 
-3. Edit the `/etc/sysconfig/iptables-custom` file and declare your firewall rules in the `iptables-save` format:
+3. Edit file `/etc/sysconfig/iptables-custom` dan deklarasikan aturan firewall Anda dalam format `iptables-save`:
 
     ```bash
     -I INPUT -s 111.111.111.111 -p tcp -m state --state NEW -m tcp --dport 1111 -j DROP
     ```
 
-4. Apply the custom firewall rules:
+4. Terapkan aturan firewall kustom:
 
     ```bash
     sudo /usr/bin/jem firewall fwstart
     ```
 
-5. Verify the firewall rules with:
+5. Verifikasi aturan firewall dengan:
 
     ```bash
     sudo jem firewall list {table} {options}
     ```
 
-### Setting Rules via Platform API
+### Setting Rules via Platform API{#setting-rules-via-platform-api}
 
-The following API methods are available for managing firewall rules:
+Metode API berikut tersedia untuk mengelola aturan firewall:
 
-- **AddRule**: Create a new rule.
-- **EditRule**: Edit an existing rule.
-- **GetRules**: Retrieve firewall rules for an environment.
-- **RemoveRule**: Delete a rule.
-- **SetFirewallEnabled**: Enable the firewall.
+- **AddRule**: Buat aturan baru.
+- **EditRule**: Edit aturan yang ada.
+- **GetRules**: Ambil aturan firewall untuk lingkungan.
+- **RemoveRule**: Hapus aturan.
+- **SetFirewallEnabled**: Aktifkan firewall.
 
-These methods can be used for custom scripts and automation.
+Metode ini dapat digunakan untuk skrip kustom dan otomatisasi.
 
-## What’s Next?
+## Baca Juga{#whats-next}
 
-- [Network Isolation](<https://docs.dewacloud.com/docs/environment-isolation/>)
-- [Shared Load Balancer](<https://docs.dewacloud.com/docs/shared-load-balancer/>)
-- [Public IP](<https://docs.dewacloud.com/docs/public-ip/>)
-- [Endpoints](<https://docs.dewacloud.com/docs/endpoints/>)
+- [Network Isolation](https://docs.dewacloud.com/docs/environment-isolation/)
+- [Shared Load Balancer](https://docs.dewacloud.com/docs/shared-load-balancer/)
+- [Public IP](https://docs.dewacloud.com/docs/public-ip/)
+- [Endpoints](https://docs.dewacloud.com/docs/endpoints/)

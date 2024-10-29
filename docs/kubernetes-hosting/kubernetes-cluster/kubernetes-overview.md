@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /kubernetes-cluster
+slug: /kubernetes-cluster-overview
 title: Kubernetes Overview
 ---
 # Kubernetes Cluster Overview{#kubernetes-cluster-overview}

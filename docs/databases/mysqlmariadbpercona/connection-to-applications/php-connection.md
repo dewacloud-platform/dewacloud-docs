@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /php-connection
+slug: /connection-to-mysql-php
 title: PHP Connection
 ---
 # Connection to MySQL/MariaDB/Percona for PHP
@@ -17,23 +17,23 @@ title: PHP Connection
 
 1. Masuk ke akun PaaS Anda dan [buat environment](<https://docs.dewacloud.com/docs/setting-up-environment/>) dengan server database **MySQL** atau **MariaDB** (keduanya tersedia dalam bagian _**SQL**_ wizard).
 
-![create PHP MySQL environment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/connection-to-applications/php-connection/php-connection-1.png" alt="create PHP MySQL environment" width="100%"/>
 
 Untuk memberikan contoh koneksi, kami telah menambahkan server aplikasi **Apache PHP**.
 
 2. Setelah environment dibuat, Anda akan menerima email dengan detail administrasi dan koneksi MySQL (atau MariaDB):
 
-![email MySQL connection details](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/connection-to-applications/php-connection/php-connection-2.png" alt="email MySQL connection details" width="80%"/>
 
 3. Kembali ke dashboard Anda dan klik tombol **Open in Browser** untuk node database yang sesuai (baik MySQL atau MariaDB).
 
-![MySQL node open in browser button](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/connection-to-applications/php-connection/php-connection-3.png" alt="MySQL node open in browser button" width="100%"/>
 
 Masuk ke panel admin yang terbuka menggunakan kredensial yang Anda terima di email yang disebutkan di atas.
 
 4. Buka tab _**Databases**_ dan **Buat** database baru (misalnya, _mysqldb_).
 
-![MySQL create new database](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/connection-to-applications/php-connection/php-connection-4.png" alt="MySQL create new database" width="100%"/>
 
 Sekarang, Anda bisa [deploy](<https://docs.dewacloud.com/docs/deployment-guide/>) aplikasi Anda (baik dari _archive_ atau _GIT/SVN repository_) ke environment yang telah dibuat.
 
@@ -94,7 +94,7 @@ Jangan lupa untuk mengganti \{host\}, \{user\}, \{password\}, dan \{db_name\} da
 
 Jika semuanya berjalan dengan baik, Anda akan melihat pesan berikut ketika halaman ini dibuka di browser.
 
-![MySQL database connected](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/connection-to-applications/php-connection/php-connection-5.png" alt="MySQL database connected" width="60%"/>
 
 ## Executing Simple Request{#executing-simple-request}
 
@@ -128,7 +128,7 @@ echo "</table>";
 
 Sebagai hasilnya, Anda akan menerima semacam indeks untuk semua fungsi MySQL yang tersedia dengan tautan ke instruksi tentang penggunaannya.
 
-![database connection example applicatiom](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/connection-to-applications/php-connection/php-connection-6.png" alt="database connection example applicatiom" width="100%"/>
 
 Hebat! Sekarang Anda dapat dengan mudah menghubungkan aplikasi PHP Anda ke database **MySQL** atau **MariaDB**.
 

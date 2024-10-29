@@ -6,11 +6,11 @@ title: WordPress Project Installation
 
 # Instalasi Proyek WordPress
 
-Virtuozzo Application Platform untuk WordPress menyediakan prosedur instalasi cepat dan otomatis untuk pembuatan proyek baru. Fungsionalitas produksi/staging bawaan membantu mengimplementasikan berbagai integrasi DevOps. Mari kita lihat proses ini secara detail:
+Dewacloud Application Platform untuk WordPress menyediakan prosedur instalasi cepat dan otomatis untuk pembuatan proyek baru. Fungsionalitas produksi/staging bawaan membantu mengimplementasikan berbagai integrasi DevOps. Mari kita lihat proses ini secara detail:
 
-- [Installing Project](https://docs.dewacloud.com/#installing-project)
-- [Staging Project](https://docs.dewacloud.com/#staging-project)
-- [Deleting Project](https://docs.dewacloud.com/#deleting-project)
+- [Installing Project](#installing-project)
+- [Staging Project](#staging-project)
+- [Deleting Project](#deleting-project)
 
 ## Installing Project{#installing-project}
 
@@ -58,7 +58,7 @@ Klik **Continue** untuk membuat langganan baru Anda dan tambahkan proyek dengan 
 
 ![project installing](#)
 
-Sekarang Anda dapat melanjutkan ke panduan [Project Management](https://docs.dewacloud.com/wp-dashboard-project-management/).
+Sekarang Anda dapat melanjutkan ke panduan [Project Management](https://docs.dewacloud.com/docs/wp-dashboard-project-management/).
 
 ## Staging Project{#staging-project}
 
@@ -88,16 +88,16 @@ Anda akan diminta untuk mengonfirmasi tindakan dengan mengetikkan nama proyek.
 
 ![delete project confirmation](#)
 
-**Note:** Menghapus _production_ akan menghapus seluruh proyek, sementara menghapus _[staging](https://docs.dewacloud.com/#staging-project)_ – hanya lingkungan yang sesuai (yang produksi akan tetap utuh).
+**Note:** Menghapus _production_ akan menghapus seluruh proyek, sementara menghapus _[staging](#staging-project)_ – hanya lingkungan yang sesuai (yang produksi akan tetap utuh).
 
 Proyek akan dihapus segera setelah konfirmasi.
 
 ## Baca Juga{#whats-next}
 
-- [WordPress PaaS](https://docs.dewacloud.com/virtuozzo-application-platform-for-wordpress/)
-- [WordPress Dashboard Overview](https://docs.dewacloud.com/wp-dashboard-overview/)
-- [WordPress Project Management](https://docs.dewacloud.com/wp-dashboard-project-management/)
-- [WordPress Topologies](https://docs.dewacloud.com/wordpress-topologies/)
-- [WordPress Backups](https://docs.dewacloud.com/wordpress-backups/)
-- [WordPress Security](https://docs.dewacloud.com/wordpress-security/)
-- [WordPress PHP Optimization](https://docs.dewacloud.com/wordpress-php-optimization/)
+- [WordPress PaaS](https://docs.dewacloud.com/docs/virtuozzo-application-platform-for-wordpress/)
+- [WordPress Dashboard Overview](https://docs.dewacloud.com/docs/wp-dashboard-overview/)
+- [WordPress Project Management](https://docs.dewacloud.com/docs/wp-dashboard-project-management/)
+- [WordPress Topologies](https://docs.dewacloud.com/docs/wordpress-topologies/)
+- [WordPress Backups](https://docs.dewacloud.com/docs/wordpress-backups/)
+- [WordPress Security](https://docs.dewacloud.com/docs/wordpress-security/)
+- [WordPress PHP Optimization](https://docs.dewacloud.com/docs/wordpress-php-optimization/)

@@ -1,67 +1,68 @@
 ---
 sidebar_position: 1
-slug: /pricing-faq
-title: Pricing FAQ
+slug: /resource-consumption
+title: FAQ Harga
 ---
-# Pricing FAQ
 
-  * [What is charged?](https://docs.dewacloud.com/docs/#what-is-charged)
-  * [Where can consumed resources be seen?](https://docs.dewacloud.com/docs/#consumed-resources)
-  * [How much do resources cost?](https://docs.dewacloud.com/docs/#resource-cost)
-  * [How to decrease the consumption?](https://docs.dewacloud.com/docs/#decrease-consumption)
+# FAQ Harga
 
-## What is Charged?{#what-is-charged}
+* [Apa yang Dikenakan Biaya?](https://docs.dewacloud.com/docs/#what-is-charged)
+* [Di Mana Sumber Daya yang Dikonsumsi Dapat Dilihat?](https://docs.dewacloud.com/docs/#consumed-resources)
+* [Berapa Biaya Sumber Daya?](https://docs.dewacloud.com/docs/#resource-cost)
+* [Bagaimana Cara Mengurangi Konsumsi?](https://docs.dewacloud.com/docs/#decrease-consumption)
 
-Resource consumption for each environment is charged to the account owner on an hourly basis. There are 3 types of charges:
+## Apa yang Dikenakan Biaya?{#what-is-charged}
 
-  * **Primary** \- fees for the main platform resources (i.e. RAM & CPU), provided within cloudlets
-  * **Provider-dependent** \- the ones that can be either payable or not, according to the chosen hosting provider settings
-  * **Optional extras** \- charges for usage of some additional platform features
+Konsumsi sumber daya untuk setiap environment dikenakan biaya kepada pemilik akun setiap jam. Ada 3 jenis biaya:
 
-Detailed information on each of these types of charges can be found in the [Charged Resources](https://docs.dewacloud.com/docs/chargeable-resources/) document.
+* **Utama** \- biaya untuk sumber daya utama platform (yaitu RAM & CPU), yang disediakan dalam cloudlets
+* **Tergantung Penyedia** \- yang dapat dikenakan biaya atau tidak, sesuai dengan pengaturan penyedia hosting yang dipilih
+* **Ekstra opsional** \- biaya untuk penggunaan beberapa fitur tambahan platform
 
-## Where the Consumed Resources Can be Seen?{#where-the-consumed-resources-can-be-seen}
+Informasi terperinci tentang masing-masing jenis biaya ini dapat ditemukan dalam dokumen [Sumber Daya yang Dikenakan Biaya](https://docs.dewacloud.com/docs/chargeable-resources/).
 
-The detailed information on the amount of consumed resources can be seen in different places at your dashboard, for example:
+## Di Mana Sumber Daya yang Dikonsumsi Dapat Dilihat?{#where-the-consumed-resources-can-be-seen}
 
-  * pricing widget at the **environment wizard** ’s right pane shows the approximate monthly spends, based on the stated amount of reserved cloudlets
-  * the current resources consumption of every environment is displayed in the **Usage** column of your environments list. It includes the amount of occupied disk space (in MB) and currently used/overall amount of cloudlets
-  * the total usage **Statistics** on all resources types (i.e. RAM, CPU, Storage, and Network Bandwidth) can be seen via the appropriate section for the desired node/set of the same-type nodes
-  * finally, the **Billing History** section provides any information on all the payable resources, consumed during the stated period, and their costs.
+Informasi terperinci tentang jumlah sumber daya yang dikonsumsi dapat dilihat di berbagai tempat di dashboard Anda, misalnya:
 
-The details on each of these options can be seen in the [Monitor Consumed Resources](https://docs.dewacloud.com/docs/monitoring-consumed-resources/) document.
+* widget harga di bagian kanan **environment wizard** menunjukkan perkiraan pengeluaran bulanan, berdasarkan jumlah cloudlet yang dipesan
+* konsumsi sumber daya saat ini dari setiap environment ditampilkan dalam kolom **Usage** daftar environment Anda. Termasuk jumlah ruang disk yang ditempati (dalam MB) dan jumlah cloudlet yang digunakan/sebelumnya
+* total penggunaan **Statistik** pada semua jenis sumber daya (yaitu RAM, CPU, Penyimpanan, dan Bandwidth Jaringan) dapat dilihat melalui bagian yang sesuai untuk node yang diinginkan/set node dengan tipe yang sama
+* akhirnya, bagian **Billing History** menyediakan informasi tentang semua sumber daya yang dibayar, yang dikonsumsi selama periode yang telah ditentukan, dan biaya mereka.
 
-## How Much do Resources Cost?{#how-much-do-resources-cost}
+Detail tentang masing-masing opsi ini dapat dilihat dalam dokumen [Pemantauan Sumber Daya yang Dikonsumsi](https://docs.dewacloud.com/docs/monitoring-consumed-resources/).
 
-With the platform, you only pay for consumed resources. The resource pricing is set by your chosen hosting provider. You can find the exact cost for each resource unit by going to your hoster’s [Pricing page](https://docs.dewacloud.com/docs/pricing-pages/).
+## Berapa Biaya Sumber Daya?{#how-much-do-resources-cost}
 
-The prices can also be seen inside your platform dashboard.
+Dengan platform, Anda hanya membayar untuk sumber daya yang dikonsumsi. Harga sumber daya ditetapkan oleh penyedia hosting yang Anda pilih. Anda dapat menemukan biaya pasti untuk setiap unit sumber daya dengan pergi ke [Halaman Harga](https://docs.dewacloud.com/docs/pricing-pages/) dari hoster Anda.
 
-Navigate to **Balance > Quotas & Pricing** menu item. Here you’ll see a set of tabs displaying pricing information for each kind of resource available in the platform.
+Harga juga dapat dilihat di dalam dashboard platform Anda.
 
-![quotas and pricing](#)
+Arahkan ke item menu **Balance > Quotas & Pricing**. Di sini Anda akan melihat serangkaian tab yang menampilkan informasi harga untuk setiap jenis sumber daya yang tersedia di platform.
 
-Choose the one you are interested in to see the pricing and discount scale offered by your hosting provider. You can find more information about pricing and discount systems in the [Pricing System](https://docs.dewacloud.com/docs/pricing-model/) and [Automatic Discounts](https://docs.dewacloud.com/docs/automatic-discounts/) documents.
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/resource-charging/pricing-FAQ/01-quotas-and-pricing.png" alt="quotas and pricing" width="100%"/>
 
-Note that the various software stacks are provided free of charge in the platform. You only pay for the resources consumed but not for the software itself.
+Pilih yang Anda minati untuk melihat harga dan skala diskon yang ditawarkan oleh penyedia hosting Anda. Anda dapat menemukan lebih banyak informasi tentang sistem harga dan diskon dalam dokumen [Sistem Harga](https://docs.dewacloud.com/docs/pricing-model/) dan [Diskon Otomatis](https://docs.dewacloud.com/docs/automatic-discounts/).
 
-## How to Decrease the Consumption?{#how-to-decrease-the-consumption}
+Perlu dicatat bahwa berbagai tumpukan perangkat lunak disediakan secara gratis di platform. Anda hanya membayar untuk sumber daya yang dikonsumsi tetapi bukan untuk perangkat lunak itu sendiri.
 
-To decrease your spending, you can _stop your environment_ when it is not needed. For example, if you happen to be using your environment as a test or dev one and you don’t use it on nights and weekends - you don’t have to pay for the resources that you don’t use.
+## Bagaimana Cara Mengurangi Konsumsi?{#how-to-decrease-the-consumption}
 
-![stop environment](#)
+Untuk mengurangi pengeluaran Anda, Anda dapat _menghentikan environment Anda_ ketika tidak dibutuhkan. Misalnya, jika Anda menggunakan environment Anda sebagai uji atau dev dan Anda tidak menggunakannya pada malam hari dan akhir pekan - Anda tidak perlu membayar untuk sumber daya yang tidak Anda gunakan.
 
-In such a way **RAM (Memory)** , **CPU** and **traffic** are _not_ going to be charged.
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/resource-charging/pricing-FAQ/02-stop-environment.png" alt="stop environment" width="100%"/>
 
-You are going to pay only for **disk space** that you use and for **public IP** and **SSL** if you purchased any.
+Dengan cara ini, **RAM (Memory)**, **CPU**, dan **lalu lintas** tidak akan dikenakan biaya.
 
-Follow the links to get acquainted with useful tips on consuming platform resources in a smart way:
+Anda hanya akan membayar untuk **ruang disk** yang Anda gunakan dan untuk **public IP** dan **SSL** jika Anda membeli.
 
-  * [Save Your Cloud Money!](https://www.virtuozzo.com/company/blog/save-your-cloud-money/)
-  * [How to Manage the Application Lifecycle in PaaS](https://docs.dewacloud.com/docs/how-to-manage-application-lifecycle/)
+Ikuti tautan untuk berkenalan dengan tips berguna tentang konsumsi sumber daya platform dengan cara yang cerdas:
+
+* [Hemat Uang Cloud Anda!](https://www.virtuozzo.com/company/blog/save-your-cloud-money/)
+* [Cara Mengelola Siklus Hidup Aplikasi di PaaS](https://docs.dewacloud.com/docs/application-lifecycle/)
 
 ## Baca Juga{#whats-next}
 
-  * [Charged Resources](https://docs.dewacloud.com/docs/chargeable-resources/)
-  * [Monitor Consumed Resources](https://docs.dewacloud.com/docs/monitoring-consumed-resources/)
-  * [Hosters Pricing](https://docs.dewacloud.com/docs/pricing-pages/)
+* [Sumber Daya yang Dikenakan Biaya](https://docs.dewacloud.com/docs/chargeable-resources/)
+* [Pemantauan Sumber Daya yang Dikonsumsi](https://docs.dewacloud.com/docs/monitoring-consumed-resources/)
+* [Harga Hosters](https://docs.dewacloud.com/docs/pricing-pages/)

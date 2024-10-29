@@ -8,7 +8,7 @@ title: WordPress PHP Optimization
 
 Server aplikasi berbasis PHP memiliki berbagai fungsi yang memungkinkan Anda untuk menyetel proyek dan mencapai kinerja serta keamanan maksimum. Kami merekomendasikan mengonfigurasi beberapa fungsi PHP standar untuk melindungi server Anda dari bahaya. Tentu saja, ini hanya alat dasar yang dapat melengkapi perlindungan keseluruhan sistem Anda. Jadi, mari kita lihat cara melakukan beberapa konfigurasi awal untuk meningkatkan keamanan lingkungan PHP Anda.
 
-File konfigurasi utama PHP, yang bernama _**php.ini**_, berisi sejumlah pengaturan default yang dapat Anda sesuaikan atau bahkan tambahkan tergantung pada kebutuhan Anda. File ini terletak di direktori **etc** dari server aplikasi PHP Anda. File ini dapat diakses dan diedit melalui [embedded file manager](https://docs.dewacloud.com/wp-dashboard-project-management/#environment-management) langsung di dashboard. Anda dapat menemukannya di antara file konfigurasi utama di tab _Favorites_.
+File konfigurasi utama PHP, yang bernama _**php.ini**_, berisi sejumlah pengaturan default yang dapat Anda sesuaikan atau bahkan tambahkan tergantung pada kebutuhan Anda. File ini terletak di direktori **etc** dari server aplikasi PHP Anda. File ini dapat diakses dan diedit melalui [embedded file manager](https://docs.dewacloud.com/docs/wp-dashboard-project-management/#environment-management) langsung di dashboard. Anda dapat menemukannya di antara file konfigurasi utama di tab _Favorites_.
 
 ![WordPress php.ini configuration](#)
 
@@ -74,7 +74,7 @@ Sekali lagi, saat menentukan pengaturan yang disebutkan di atas, Anda harus memp
 
 ## Ekstensi PHP{#php-extensions}
 
-File _**php.ini**_ berisi daftar ekstensi PHP. Beberapa modul ini diaktifkan untuk server secara default, sementara yang lain dapat diaktifkan secara manual ketika diperlukan. Lihat daftar [ekstensi PHP](https://docs.dewacloud.com/php-extensions/) yang tersedia secara default di dokumen yang ditautkan.
+File _**php.ini**_ berisi daftar ekstensi PHP. Beberapa modul ini diaktifkan untuk server secara default, sementara yang lain dapat diaktifkan secara manual ketika diperlukan. Lihat daftar [ekstensi PHP](https://docs.dewacloud.com/docs/php-extensions/) yang tersedia secara default di dokumen yang ditautkan.
 
 Jika Anda ingin ekstensi dimuat secara otomatis, gunakan sintaks berikut:
 
@@ -95,8 +95,7 @@ Juga, Anda dapat mengkonfigurasi ekstensi dengan menyesuaikan direktif yang tela
 
 ## Baca Juga{#whats-next}
 
-- [WordPress PaaS](https://docs.dewacloud.com/virtuozzo-application-platform-for-wordpress/)
-- [WordPress Dashboard](https://docs.dewacloud.com/wp-dashboard-overview/)
-- [WordPress Topologies](https://docs.dewacloud.com/wordpress-topologies/)
-- [WordPress Backups](https://docs.dewacloud.com/wordpress-backups/)
-- [WordPress Security](https://docs.dewacloud.com/wordpress-security/)
+- [WordPress Dashboard](https://docs.dewacloud.com/docs/wp-dashboard-overview/)
+- [WordPress Topologies](https://docs.dewacloud.com/docs/wordpress-topologies/)
+- [WordPress Backups](https://docs.dewacloud.com/docs/wordpress-backups/)
+- [WordPress Security](https://docs.dewacloud.com/docs/wordpress-security/)

@@ -9,7 +9,7 @@ Dengan platform ini, hosting aplikasi Anda menjadi benar-benar fleksibel. Selain
 
 Proses scaling manual cukup sederhana - buka wizard environment topology dan gunakan tombol “**+**” dan “**-**” yang sesuai atau ketik jumlah yang diinginkan di panel tengah. Anda juga dapat menggunakan slider yang secara otomatis muncul saat melakukan penyesuaian.
 
-![topology wizard horizontal scaling](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/horizontal-scaling/01-topology-wizard-horizontal-scaling.png" alt="topology wizard horizontal scaling" width="100%"/>
 
 :::tip
 Anda dapat mengotomatisasi horizontal scaling berdasarkan beban masuk dengan bantuan **tunable triggers**. Anda dapat menggunakan node awal (master) dari layer sebagai **storage server** untuk berbagi data dalam seluruh layer. Dalam kasus pengurangan skala (mis. mengurangi jumlah node), container terakhir yang ditambahkan ke layer adalah yang pertama dihapus (kecuali dipilih secara eksplisit).
@@ -24,7 +24,7 @@ Mulai dari versi platform 5.5, mode scaling yang diinginkan dapat dipilih untuk 
   * _**Stateless**_ \- membuat semua node baru secara bersamaan dari template image dasar
   * _**Stateful**_ \- secara berurutan menyalin sistem file dari container master ke node baru
 
-![scaling modes](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/horizontal-scaling/02-scaling-modes.png" alt="scaling modes" width="50%"/>
 
 Opsi pertama relatif lebih cepat, sementara yang kedua secara otomatis menyalin semua konfigurasi khusus. Dalam pembuatan layer awal, semua node dibuat secara bersamaan untuk mempercepat proses (bahkan untuk mode _**stateful**_, karena tidak ada kustomisasi yang diterapkan).
 
@@ -47,30 +47,30 @@ Jumlah maksimum server tipe yang sama dalam satu layer environment tergantung pa
 
 Semua server yang baru ditambahkan dibuat di node hardware yang berbeda, memberikan keandalan dan ketersediaan tinggi.
 
-![horizontal scaling high-availability](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/horizontal-scaling/03-horizontal-scaling-high-availability.png" alt="horizontal scaling high-availability" width="70%"/>
 
 Setiap grup node environment (layer) diberikan nama yang didedikasikan, yang, jika diperlukan, dapat disesuaikan secara manual. Jika ada beberapa instance di dalamnya, nama layer akan dilengkapi dengan label _**xN**_ (di mana _**N**_ adalah jumlah node yang sebenarnya).
 
 Memiliki beberapa node tipe yang sama dalam satu layer memungkinkan pengelolaan sinkron mereka. Dengan demikian, semua container dapat secara bersamaan [dikonfigurasi](https://docs.dewacloud.com/docs/container-configuration/), diperiksa untuk log dan statistik, [di-restart atau di-redeploy](https://docs.dewacloud.com/docs/container-redeploy/) melalui ikon yang sesuai.
 
-![scaled nodes management](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/horizontal-scaling/04-scaled-nodes-management.png" alt="scaled nodes management" width="100%"/>
 
 Untuk mengoperasikan container tertentu secara terpisah, perluas string layer untuk melihat daftar lengkap nodenya. Masing-masing container ini adalah instance terisolasi yang memiliki _**Node ID**_ unik dan dapat diakses/dikonfigurasi secara terpisah dari yang lain. Node master layer dapat dengan mudah ditemukan karena ikon khusus.
 
-![nodes in scaled layer](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/horizontal-scaling/05-nodes-in-scaled-layer.png" alt="nodes in scaled layer" width="100%"/>
 
 Untuk memfasilitasi interaksi dengan banyak server dari tipe yang sama, platform juga memungkinkan menandai node tertentu dengan label yang sesuai, misalnya untuk mendefinisikan instance master dan slave dalam cluster DB.
 
 Cukup klik dua kali pada nilai _**Node ID: xxx**_ default (atau arahkan kursor ke atasnya untuk menampilkan ikon pensil khusus) dan tentukan nama alternatif yang diinginkan.
 
-![aliases for scaled nodes](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/horizontal-scaling/06-aliases-for-scaled-nodes.png" alt="aliases for scaled nodes" width="100%"/>
 
 Informasi lebih lanjut tentang fitur labeling ini dapat ditemukan di dokumen [Environment Aliases](https://docs.dewacloud.com/docs/environment-aliases/).
 
 Saat menskalakan berbagai jenis stack, pertimbangkan spesifikasi berikut:
 
   * saat menskalakan instance application server, node load balancer akan secara otomatis ditambahkan ke topology environment
-  * jika mengaktifkan opsi [high-availability](https://docs.dewacloud.com/docs/session-replication/) untuk application server, load balancer NGINX yang diperlukan tidak dapat diskalakan secara horizontal (jika beberapa node NGINX tersedia sebelumnya, mereka akan secara otomatis dikurangi menjadi satu instance)
+  * jika mengaktifkan opsi [high-availability](https://docs.dewacloud.com/docs/auto-clustering/) untuk application server, load balancer NGINX yang diperlukan tidak dapat diskalakan secara horizontal (jika beberapa node NGINX tersedia sebelumnya, mereka akan secara otomatis dikurangi menjadi satu instance)
   * saat menskalakan node VPS, masing-masing diberikan alamat [public IP](https://docs.dewacloud.com/docs/public-ip/) terpisah yang dilampirkan
   * [Maven](https://docs.dewacloud.com/docs/java-vcs-deployment/) adalah satu-satunya node yang tidak dapat diskalakan secara horizontal (karena tidak ada gunanya dalam operasi semacam itu)
 
@@ -80,15 +80,19 @@ Sekarang Anda tahu betapa mudahnya menskalakan instance secara horizontal di pla
 
 Platform menyediakan pengelolaan node yang sederhana, di mana Anda hanya perlu menentukan jumlah container yang diperlukan dalam satu layer. Proses penghapusan dilakukan dalam urutan yang berlawanan dengan penambahan - yaitu container yang paling baru ditambahkan dihapus pertama. Jika Anda perlu menghapus node tertentu, Anda dapat memilih yang diinginkan melalui:
 
-  * bagian _**Horizontal Scaling**_ di topology wizard - dapat diakses menggunakan tombol **Change Environment Topology** di sebelah environment yang diperlukan ![nodes management wizard](#)
+  * bagian _**Horizontal Scaling**_ di topology wizard - dapat diakses menggunakan tombol **Change Environment Topology** di sebelah environment yang diperlukan
+  
+   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/horizontal-scaling/07-nodes-management-wizard.png" alt="nodes management wizard" width="50%"/>
 
-  * formulir _**Scaling Nodes**_ khusus di dashboard - dapat diakses menggunakan opsi **Additionally > Scaling Nodes** di sebelah layer atau **Additionally > Delete** di sebelah node tertentu ![delete node dashboard](#)
+  * formulir _**Scaling Nodes**_ khusus di dashboard - dapat diakses menggunakan opsi **Additionally > Scaling Nodes** di sebelah layer atau **Additionally > Delete** di sebelah node tertentu 
+  
+    <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/horizontal-scaling/08-delete-node-dashboard.png" alt="delete node dashboard" width="100%"/>
 
 Dalam jendela **Scaling Nodes**, Anda dapat melakukan tindakan berikut:
 
 1. Tambahkan node baru ke layer, menggunakan tombol **+** atau **Add New Node**.
 
-![scaling nodes add](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/horizontal-scaling/09-scaling-nodes-add.png" alt="scaling nodes add" width="40%"/>
 
 :::tip
 Jika opsi _high availability_ diaktifkan untuk layer (tersedia hanya untuk Tomcat dan TomEE application server), node ditambahkan dan dihapus dalam pasangan. Ikon node baru mewakili mode scaling dari layer - container kosong untuk _stateless_ dan penuh untuk _stateful_.
@@ -96,7 +100,7 @@ Jika opsi _high availability_ diaktifkan untuk layer (tersedia hanya untuk Tomca
 
 2. Hapus instance dengan tombol **-** dan **Delete** (saat mengarahkan kursor ke node tertentu).
 
-![scaling nodes delete](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/horizontal-scaling/10-scaling-nodes-delete.png" alt="scaling nodes delete" width="40%"/>
 
 :::tip
 Node pertama dalam daftar disebut sebagai “master” dari layer (disorot dengan ikon khusus) dan hanya dapat dihapus bersama dengan seluruh layer. Anda dapat _Undo Deletion_ dari node yang ada selama konfigurasi. Namun, setelah menerapkan perubahan, instance akan dihapus secara permanen.
@@ -104,7 +108,7 @@ Node pertama dalam daftar disebut sebagai “master” dari layer (disorot denga
 
 3. Di bagian bawah frame, terdapat redirect ke bagian _[Automatic Horizontal Scaling](https://docs.dewacloud.com/docs/automatic-horizontal-scaling/)_.
 
-![auto scaling redirect](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/horizontal-scaling/12-auto-scaling-redirect.png" alt="auto scaling redirect" width="50%"/>
 
 Jika ada penyesuaian yang dilakukan dalam formulir, Anda harus mengonfirmasi redirect melalui pop-up (karena perubahan yang tidak disimpan akan dibuang).
 
@@ -114,7 +118,7 @@ Jika ada penyesuaian yang dilakukan dalam formulir, Anda harus mengonfirmasi red
   * pengingat penghapusan layer dan node terpisah
   * dampak pada mount NFS yang ada
 
-![confirm changes](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/horizontal-scaling/13-confirm-changes.png" alt="confirm changes" width="50%"/>
 
 Sebelum melanjutkan, pastikan bahwa poin yang terdaftar tidak akan mempengaruhi aplikasi Anda, dan data penting (dari node yang dihapus) telah dicadangkan dengan aman.
 

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-slug: /application-containers
+slug: /what-are-application-containers
 title: Application Containers
 ---
 # Apa Itu Application Containers
@@ -15,7 +15,7 @@ __Saat ini,__ banyak alat tambahan diimplementasikan untuk pemanfaatan layanan y
 
 Beberapa implementasi application container secara aktif dikembangkan: _Docker_, _CRI-O_, _containerd_, dan beberapa lainnya. Saat ini, platform menggunakan Docker sebagai teknologi application containers yang paling banyak diadopsi. Platform menyediakan [otomatisasi deployment](https://docs.dewacloud.com/docs/dockers-overview), [provisioning server cepat](https://docs.dewacloud.com/docs/dockers-management), dan [alat penyimpanan/pemrosesan data stateful](https://docs.dewacloud.com/docs/container-volumes) (sesi, log, konfigurasi, dll.) untuk pemanfaatan application containers yang mudah.
 
-![services in application and system containers](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/application-containers/services-in-application-and-system-containers.png" alt="services in application and system containers" width="100%"/>
 
 Namun, beberapa aplikasi dan teknologi mungkin masih mengalami masalah saat bermigrasi ke application containers (karena kurangnya isolasi yang tepat, statelessness, dan persyaratan single-process). Ini terutama relevan untuk alat orkestrasi application containers yang kompleks seperti Kubernetes. Dalam kasus kesulitan dengan migrasi, [system containers](https://docs.dewacloud.com/docs/what-are-system-containers) dapat dianggap sebagai alternatif yang lebih cocok untuk containerization.
 
@@ -23,5 +23,5 @@ Namun, beberapa aplikasi dan teknologi mungkin masih mengalami masalah saat berm
 
 * [Docker Standard Support](https://docs.dewacloud.com/docs/dockers-overview)
 * [System Containers](https://docs.dewacloud.com/docs/what-are-system-containers)
-* [Supported OS Distributions](https://docs.dewacloud.com/docs/docker-supported-distributions)
+* [Supported OS Distributions](https://docs.dewacloud.com/docs/container-image-requirements)
 * [Container Redeploy](https://docs.dewacloud.com/docs/container-redeploy)

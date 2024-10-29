@@ -1,0 +1,85 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+
+@use "components/docs";
+@use "components/search";
+@use "components/landing";
+@use "components/features";
+@use "components/footer";
+@use "components/navbar";
+@use "components/intro";
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+  --ifm-background-color: #fafbfc;
+
+  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, Inter, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI emoji";
+
+  --ifm-font-family-monospace: "SFMono-Regular", "Roboto Mono", Consolas,
+    "Liberation Mono", Menlo, Courier, monospace;
+
+  --ifm-color-primary: #038dc8;
+  --ifm-color-primary-dark: #037fb4;
+  --ifm-color-primary-darker: #0378aa;
+  --ifm-color-primary-darkest: #02638c;
+  --ifm-color-primary-light: #039bdc;
+  --ifm-color-primary-lighter: #03a2e6;
+  --ifm-color-primary-lightest: #0db4fb;
+  --ifm-code-font-size: 95%;
+
+  --ifm-background-surface-color: #fafbfc; /* controls color of navbar, searchbar, etc. */
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --border-color: #e1e4e8;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme="dark"] {
+  --ifm-color-primary: #038dc8;
+  --ifm-color-primary-dark: #037fb4;
+  --ifm-color-primary-darker: #0378aa;
+  --ifm-color-primary-darkest: #02638c;
+  --ifm-color-primary-light: #039bdc;
+  --ifm-color-primary-lighter: #03a2e6;
+  --ifm-color-primary-lightest: #0db4fb;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --border-color: #393a3b;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+[class*="announcementBar_"] {
+  border: none !important;
+  --docusaurus-announcement-bar-height: 2rem;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(7, 15, 107, 1) 25%,
+    rgba(7, 7, 97, 1) 46%,
+    rgba(5, 22, 90, 1) 72%,
+    rgba(14, 0, 48, 1) 100%
+  );
+
+  [class*="announcementBarContent_"] {
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #fff;
+  }
+}
+
+article {
+  font-family: -apple-system, BlinkMacSystemFont, Inter, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI emoji";
+}

@@ -1,8 +1,9 @@
 ---
 sidebar_position: 6
-slug: /database-connection-via-jndi
+slug: /connection-to-db-via-jndi
 title: Database Connection via JNDI
 ---
+
 # Connection to DB using JNDI
 
 Untuk menghubungkan ke DB menggunakan JNDI, Anda perlu melakukan langkah-langkah berikut:
@@ -15,68 +16,71 @@ Untuk menghubungkan ke DB menggunakan JNDI, Anda perlu melakukan langkah-langkah
 
 Mari kita lakukan langkah demi langkah:
 
-1\. Buat environment dengan database (MySQL dalam contoh ini):
+1. Buat environment dengan database (MySQL dalam contoh ini):
 
-![environment with MySQL](#)
+   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/connection-to-db-using-jnbi/jnbi-connection-1.png" alt="environment with MySQL" width="70%"/>
 
-2\. Buat pengguna baru di database:
+2. Buat pengguna baru di database:
 
-    
-    
-    1 2 3 
+   ```plaintext
+   Database name : jelasticDb
+   User_name : jelastic
+   Password : jelastic
+   ```
 
-|    
+   Cara membuat pengguna baru - [klik di sini](<https://docs.dewacloud.com/docs/connection-to-mysql-java/>).
 
-    
-    
-    Database name : jelasticDb User_name : jelastic Password : jelastic   
-  
----|---  
-  
-Cara membuat pengguna baru - [klik di sini](<https://docs.dewacloud.com/docs/connection-to-mysql/>).
+3. Modifikasi file konfigurasi di web-application Anda:
 
-3\. Modifikasi file konfigurasi di web-application Anda:
+   * **_context.xml_**
 
-  * _**context.xml**_
+     ```xml
+     <Context antiJARLocking="true" path="/JNDI">
+       <Resource name="jdbc/jelasticDb" auth="Container" type="javax.sql.DataSource"
+                 maxActive="100" maxIdle="30" maxWait="10000"
+                 username="jelastic" password="jelastic" driverClassName="com.mysql.jdbc.Driver"
+                 url="jdbc:mysql://mysql-jndi-example.{hoster_domain}/jelasticDb"/>
+     </Context>
+     ```
 
-    
-    
-    1 2 3 4 5 6 
+   * **_web.xml_**
 
-|    
+     ```xml
+     <resource-ref>
+       <description>MySQL Datasource example</description>
+       <res-ref-name>jdbc/jelasticDb</res-ref-name>
+       <res-type>javax.sql.DataSource</res-type>
+       <res-auth>Container</res-auth>
+     </resource-ref>
+     ```
 
-    
-    
-    <Context antiJARLocking="true" path="/JNDI">     <Resource name="jdbc/jelasticDb" auth="Container" type="javax.sql.DataSource"                maxActive="100" maxIdle="30" maxWait="10000"                username="jelastic" password="jelastic" driverClassName="com.mysql.jdbc.Driver"                url="jdbc:mysql://mysql-jndi-example.{hoster_domain}/jelasticDb"/> </Context>   
-  
----|---  
-  
-  * _**web.xml**_
+4. Buat koneksi dalam java-class:
 
-    
-    
-    1 2 3 4 5 6 
+   ```java
+   public class MyConnection {
+     private DataSource dataSource;
+   
+     public MyConnection() {
+       try {
+         InitialContext context = new InitialContext();
+         dataSource = (DataSource) context.lookup("java:comp/env/jdbc/jelasticDb");
+       } catch (NamingException ex) {
+         Logger.getLogger(MyConnection.class.getName()).log(Level.SEVERE, null, ex);
+       }
+     }
+   
+     public Connection getConnection() {
+       Connection conn = null;
+       try {
+         conn = dataSource.getConnection();
+       } catch (SQLException ex) {
+         Logger.getLogger(MyConnection.class.getName()).log(Level.SEVERE, null, ex);
+       }
+       return conn;
+     }
+   }
+   ```
 
-|    
-
-    
-    
-    <resource-ref>  <description>MySQL Datasource example</description>  <res-ref-name>jdbc/jelasticDb</res-ref-name>  <res-type>javax.sql.DataSource</res-type>  <res-auth>Container</res-auth> </resource-ref>   
-  
----|---  
-  
-4\. Buat koneksi dalam java-class:
-
-    
-    
-     1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 
-
-|      
-    ```
-    public class MyConnection {      private DataSource dataSource;    public MyConnection() {         try {              InitialContext context = new InitialContext();             dataSource = (DataSource) context.lookup("java:comp/env/jdbc/jelasticDb");          } catch (NamingException ex) {             Logger.getLogger(MyConnection.class.getName()).log(Level.SEVERE, null, ex);         }     }      public Connection getConnection() {         Connection conn = null;         try {             conn = dataSource.getConnection();         } catch (SQLException ex) {             Logger.getLogger(MyConnection.class.getName()).log(Level.SEVERE, null, ex);         }         return conn;     } }  
-    ```
----|---  
-  
 ## Baca Juga {#whats-next}
 
   * [Create DB Server](<https://docs.dewacloud.com/docs/database-hosting/>)

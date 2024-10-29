@@ -1,67 +1,68 @@
 ---
 sidebar_position: 1
 slug: /new-relic-installation
-title: New Relic Installation
+title: Pemasangan New Relic
 ---
-# New Relic Monitoring for Your Application inside the PaaS
 
-**[New Relic](https://newrelic.com/)** is an advanced application performance monitoring (APM) tool designed for real-time tracking and troubleshooting of applications. It provides deep insights into web transactions, application exceptions, and performance bottlenecks. The platform enables you to install New Relic easily, track crucial metrics, and optimize your app's performance.
+# Pemantauan New Relic untuk Aplikasi Anda di dalam PaaS
 
-New Relic can be integrated into your cloud environment using a simplified **New Relic APM Add-On**, which supports both Java- and PHP-based environments. 
+**[New Relic](https://newrelic.com/)** adalah alat pemantauan kinerja aplikasi canggih yang dirancang untuk pelacakan dan pemecahan masalah aplikasi secara real-time. Ini memberikan wawasan mendalam tentang transaksi web, pengecualian aplikasi, dan kemacetan kinerja. Platform ini memungkinkan Anda menginstal New Relic dengan mudah, melacak metrik penting, dan mengoptimalkan kinerja aplikasi Anda.
 
-## Requirements
+New Relic dapat diintegrasikan ke dalam lingkungan cloud Anda menggunakan **New Relic APM Add-On** yang disederhanakan, yang mendukung lingkungan berbasis Java dan PHP.
 
-Before proceeding with the New Relic installation, make sure that:
-- You have a **New Relic account** with your **License Key**.
-- You have an existing **cloud environment** on the platform with the application you want to monitor.
+## Persyaratan
 
-### New Relic Add-On Installation
+Sebelum melanjutkan dengan pemasangan New Relic, pastikan bahwa:
+- Anda memiliki **akun New Relic** dengan **License Key** Anda.
+- Anda memiliki **lingkungan cloud** yang ada di platform dengan aplikasi yang ingin Anda monitor.
 
-1. **Open the Marketplace**:
-   - Log into your platform dashboard and click on **Marketplace** at the top of the page.
+### Pemasangan New Relic Add-On
 
-   ![PaaS main buttons](#)
+1. **Buka Marketplace**:
+   - Masuk ke dashboard platform Anda dan klik **Marketplace** di bagian atas halaman.
 
-2. **Select New Relic APM**:
-   - In the **Add-ons** section, search for _New Relic APM_ and click **Install**.
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/monitoring-with-new-relic/new-relic-installation/02-paas-main-buttons.png" alt="PaaS main buttons" width="60%"/>
 
-   ![New Relic add-on package](#)
+2. **Pilih New Relic APM**:
+   - Di bagian **Add-ons**, cari _New Relic APM_ dan klik **Install**.
 
-3. **Configure New Relic**:
-   - In the installation form, fill out the following fields:
-     - **Application name**: The name that will appear in your New Relic dashboard (e.g., _my-project_).
-     - **License key**: Your unique New Relic License Key (can be found in your [New Relic account settings](https://login.newrelic.com/login)).
-     - **Environment name**: Select the environment where New Relic will be installed.
-     - **Nodes**: Choose the specific application server nodes for monitoring.
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/monitoring-with-new-relic/new-relic-installation/03-new-relic-add-on-package.png" alt="New Relic add-on package" width="80%"/>
 
-   ![New Relic add-on installation](#)
+3. **Konfigurasi New Relic**:
+   - Dalam formulir pemasangan, isi kolom-kolom berikut:
+     - **Application name**: Nama yang akan muncul di dashboard New Relic Anda (mis. _proyek-saya_).
+     - **License key**: Kunci Lisensi New Relic unik Anda (dapat ditemukan di [pengaturan akun New Relic Anda](https://login.newrelic.com/login)).
+     - **Environment name**: Pilih lingkungan tempat New Relic akan dipasang.
+     - **Nodes**: Pilih node server aplikasi spesifik untuk pemantauan.
+
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/monitoring-with-new-relic/new-relic-installation/04-new-relic-add-on-installation.png" alt="New Relic add-on installation" width="60%"/>
 
    :::tip
-   If you skip entering the License Key, the installation will proceed, but New Relic won't report data to your account until the key is added manually later via the **Configuration Manager**.
+   Jika Anda melewati memasukkan License Key, pemasangan akan tetap dilanjutkan, tetapi New Relic tidak akan melaporkan data ke akun anda hingga kunci ditambahkan secara manual kemudian melalui **Configuration Manager**.
    :::
 
-4. **Confirm and Install**:
-   - Once the details are entered, click **Install** to start the process.
+4. **Konfirmasi dan Pasang**:
+   - Setelah detail diisi, klik **Install** untuk memulai proses.
 
 5. **Restart Application Server**:
-   - After installation, you must restart the application server to begin gathering performance data. Use the **Restart** button next to the application server node.
+   - Setelah pemasangan, Anda harus me-restart server aplikasi untuk mulai mengumpulkan data kinerja. Gunakan tombol **Restart** di samping node server aplikasi.
 
-   ![restart Tomcat server](#)
+   ![restart Tomcat server](https://assets.dewacloud.com/dewacloud-docs/application_settings/monitoring-with-new-relic/new-relic-installation/07-restart-tomcat-server.png)
 
    :::warning
-   Restarting a single application server node will cause temporary downtime. However, if you have horizontally scaled your app server, the impact will be minimized as servers restart sequentially.
+   Me-restart satu node server aplikasi akan menyebabkan downtime sementara. Namun, jika Anda sudah melakukan penskalaan horizontal untuk server aplikasi, dampaknya akan diminimalkan karena server di-restart secara berurutan.
    :::
 
-6. **View Monitoring Data**:
-   - Log into your New Relic account to access real-time performance metrics, including server health, transaction times, and error rates.
+6. **Lihat Data Pemantauan**:
+   - Masuk ke akun New Relic Anda untuk mengakses metrik kinerja real-time, termasuk kesehatan server, waktu transaksi, dan tingkat kesalahan.
 
-   ![monitoring with New Relic](#)
+   ![monitoring with New Relic](https://assets.dewacloud.com/dewacloud-docs/application_settings/monitoring-with-new-relic/new-relic-installation/08-monitoring-with-new-relic.png)
 
-By following these steps, you'll successfully integrate New Relic into your environment and begin tracking your application’s performance with minimal setup time.
+Dengan mengikuti langkah-langkah ini, Anda akan berhasil mengintegrasikan New Relic ke dalam lingkungan Anda dan mulai melacak kinerja aplikasi Anda dengan waktu pengaturan minimal.
 
-## What's Next?
+## Baca Juga
 
-- [Application Monitoring](https://docs.dewacloud.com/docs/view-app-statistics/)
+- [Application Monitoring](https://docs.dewacloud.com/docs/statistics-monitoring/)
 - [New Relic Update](https://docs.dewacloud.com/docs/update-new-relic/)
 - [Java Agent Integration](https://docs.dewacloud.com/docs/javaagent/)
 - [PHP Extensions](https://docs.dewacloud.com/docs/php-extensions/)

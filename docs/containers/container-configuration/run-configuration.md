@@ -1,6 +1,6 @@
 ---
 sidebar_position: 6
-slug: /run-configuration
+slug: /container-run-configuration
 title: Run Configuration
 ---
 
@@ -15,7 +15,7 @@ Tab **CMD / Entry Point** terakhir berisi dua kolom input, di mana Anda dapat me
     * _jika tidak ada entry point yang ditentukan_ \- command yang akan dijalankan
     * _jika entry point diberikan_ \- parameter tambahan untuk command
 
-![cmd entrypoint layer settings](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/configuration/run-configuration/run-config-1.png" alt="cmd entrypoint layer settings" width="100%"/>
 
 Menggunakan tombol panah terbalik, yang muncul saat memasukkan beberapa string custom di salah satu dari kolom ini, opsi run yang ditentukan dapat dengan mudah di-**Reset ke nilai default**.
 

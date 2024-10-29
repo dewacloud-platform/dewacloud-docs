@@ -7,7 +7,7 @@ title: Auto-Clustering
 
 **Replication** adalah teknologi mendasar untuk server database karena downtime atau kehilangan data dapat mengakibatkan berkurangnya aksesibilitas, produktivitas, dan kepercayaan produk. Menggunakan replikasi data dari primary ke satu atau lebih server standby mengurangi kemungkinan kehilangan data. Dengan PostgreSQL, Anda dapat dengan mudah membuat cluster database dengan topologi **Primary-Secondary** (sebelumnya dikenal sebagai master-slave replication) dengan satu atau lebih server standby.
 
-![PostgreSQL cluster primary-secondary scheme](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/auto-clustering/auto-clustering-1.png" alt="PostgreSQL cluster primary-secondary scheme" width="50%"/>
 
 Menggunakan data WAL (Write-Ahead Logging) adalah cara tercepat yang tersedia untuk replikasi dengan kinerja tinggi, yang disebut **asynchronous replication**. Dalam kasus ini, server database primary bekerja dalam mode archiving, hanya menulis file WAL ke penyimpanan dan menyebarkannya ke server database standby yang beroperasi dalam mode recovery. File-file ini ditransfer ke server database standby segera setelah penulisan selesai.
 
@@ -26,17 +26,17 @@ Cara tercepat dan paling sederhana untuk membuat cluster PostgreSQL adalah denga
 
 1\. Klik tombol **Marketplace** di pojok kiri atas dashboard dan cari paket _**PostgreSQL Primary-Secondary Cluster**_.
 
-![marketplace PostgreSQL cluster](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/auto-clustering/auto-clustering-2.png" alt="marketplace PostgreSQL cluster" width="100%"/>
 
 Arahkan ke solusi tersebut dan klik **Install** untuk melanjutkan.
 
 2\. Di dalam dialog yang terbuka, Anda dapat memilih versi PostgreSQL yang diinginkan dan mengaktifkan load balancers Pgpool-II.
 
-![PostgreSQL cluster installation](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/auto-clustering/auto-clustering-3.png" alt="PostgreSQL cluster installation" width="100%"/>
 
 3\. Tunggu beberapa menit hingga platform mempersiapkan environment Anda dan mengatur konfigurasi replikasi yang diperlukan.
 
-![PostgreSQL cluster successful installation](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/auto-clustering/auto-clustering-4.png" alt="PostgreSQL cluster successful installation" width="70%"/>
 
 Setelah selesai, Anda akan menerima notifikasi yang sesuai dengan data untuk mengakses antarmuka administrasi PostgreSQL (juga dikirim melalui email).
 
@@ -46,13 +46,13 @@ Cluster database PostgreSQL dapat diaktifkan melalui fitur **Auto-Clustering** y
 
 1\. Buka wizard [topology environment](<https://docs.dewacloud.com/docs/setting-up-environment/>), pilih stack software _**PostgreSQL**_ dan aktifkan switch **Auto-Clustering** khusus. Jika diperlukan, Anda dapat mengaktifkan load balancer _Pgpool-II_ untuk cluster Anda.
 
-![PostgreSQL auto-clustering](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/auto-clustering/auto-clustering-5.png" alt="PostgreSQL auto-clustering" width="100%"/>
 
 Selanjutnya, Anda dapat sepenuhnya memanfaatkan kekuatan kustomisasi wizard untuk mengubah jumlah node per lapisan, mengalokasikan sumber daya tambahan, menambahkan stack software lain ke environment Anda, dll.
 
 2\. Jika sudah siap, klik **Create** dan tunggu beberapa menit hingga platform membuat environment Anda.
 
-![PostgreSQL cluster environment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/auto-clustering/auto-clustering-6.png" alt="PostgreSQL cluster environment" width="100%"/>
 
 ## Managing PostgreSQL Cluster{#managing-postgresql-cluster}
 
@@ -78,17 +78,17 @@ Di PaaS, komponen cluster PostgreSQL dapat dikelola melalui [CLI](<https://docs.
 
 Node database memiliki panel administrasi manajemen bawaan phpPgAdmin. Gunakan hanya pada node Primary.
 
-![phpPgAdmin panel](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/auto-clustering/auto-clustering-7.png" alt="phpPgAdmin panel" width="100%"/>
 
 Jika diperlukan, node terpisah dapat diinstal dengan software manajemen database PostgreSQL yang lebih canggih [pgAdmin4](<https://www.pgadmin.org/>) melalui impor [manifest](<https://github.com/jelastic-jps/pgadmin/blob/master/manifest.yaml>).
 
-![pgAdmin panel](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/auto-clustering/auto-clustering-8.png" alt="pgAdmin panel" width="100%"/>
 
   * **Pgpool-II Management**
 
 Node Pgpool-II juga dapat dikelola melalui panel administrasi bawaan yang ramah pengguna [pgpoolAdmin](<https://www.pgpool.net/docs/pgpoolAdmin/index_en.html>).
 
-![pgpoolAdmin panel](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/auto-clustering/auto-clustering-9.png" alt="pgpoolAdmin panel" width="100%"/>
 
 Panel admin Pgpool-II menyediakan kemampuan untuk menyesuaikan:
 
@@ -105,11 +105,11 @@ Mari kita lihat parameter konfigurasi node primary yang digunakan dalam auto-clu
 
 1\. Temukan environment dengan database primary di daftar environment Anda. Klik tombol **Config** di sebelah node PostgreSQL Primary.
 
-![PostgreSQL nodes config](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/auto-clustering/auto-clustering-10.png" alt="PostgreSQL nodes config" width="100%"/>
 
 2\. Buka direktori **conf** dan navigasikan ke file _**postgresql.conf**_.
 
-![PostgreSQL conf settings](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/auto-clustering/auto-clustering-11.png" alt="PostgreSQL conf settings" width="100%"/>
 
 Baris-baris berikut terkait dengan file WAL dapat diubah jika diperlukan:
 
@@ -134,7 +134,7 @@ Dimana:
 archive_command = 'test ! -f /var/lib/pgsql/data/pg_wal/%f && cp %p /tmp/mydata/%f'
 ```
 
-![PostgreSQL conf archive command](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/auto-clustering/auto-clustering-12.png" alt="PostgreSQL conf archive command" width="100%"/>
 
 Tekan tombol **Save** di atas editor.
 
@@ -144,7 +144,7 @@ Tekan tombol **Save** di atas editor.
 host replication all {standby_IP_address}/32 trust
 ```
 
-![pg-hba.conf settings](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/auto-clustering/auto-clustering-13.png" alt="pg-hba.conf settings" width="100%"/>
 
 Itu saja untuk primary! Mari lanjutkan ke konfigurasi server standby.
 
@@ -154,20 +154,22 @@ Mari kita periksa file konfigurasi pada node Secondary. Ada tiga opsi yang membe
 
 1\. Buka file _**postgresql.conf**_, temukan bagian _Standby Servers_. Seperti yang Anda lihat, server ini bertindak sebagai standby karena parameter _**hot_standby**_ diatur _**on**_, tidak seperti node primary di mana parameter ini dikomentari.
 
-![PostgreSQL primary configs](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/auto-clustering/auto-clustering-14.png" alt="PostgreSQL primary configs" width="100%"/>
 
 2\. Gulir ke akhir file konfigurasi. Terdapat parameter **primary_conninfo** yang menentukan string koneksi yang akan digunakan server standby untuk terhubung ke server pengirim. String koneksi harus menunjukkan nama host (atau alamat) dari server pengirim, serta nomor port. Nama pengguna yang sesuai dengan peran dengan hak istimewa yang sesuai di server pengirim juga disediakan. Password juga harus ditentukan di _primary_conninfo_ atau di file ~/.pgpass terpisah di server backup jika pengirim mem
 
 erlukan autentikasi password.
 
-![PostgreSQL secondary configs](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/auto-clustering/auto-clustering-15.png" alt="PostgreSQL secondary configs" width="100%"/>
 
 3\. Opsi terakhir yang membuat server database sebagai secondary adalah ketersediaan file **standby.signal**, yang menunjukkan bahwa server harus dimulai sebagai hot standby. File ini harus terletak di direktori data PostgreSQL dan dapat kosong atau berisi informasi apa pun. Setelah secondary dipromosikan menjadi primary, file ini akan dihapus.
 
 :::warning
 Ingatlah bahwa sebagian besar opsi yang diubah memerlukan server untuk di-restart. Ini dapat dilakukan dengan dua cara:
 1. Dari dashboard Anda dapat merestart salah satu atau kedua node.
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/auto-clustering/auto-clustering-16.png" alt="restart node1" width="100%"/>
 2. Melalui antarmuka baris perintah via Web SSH client. Untuk melakukannya, klik tombol Web SSH di node yang diperlukan, misalnya secondary.
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/auto-clustering/auto-clustering-17.png" alt="restart node2" width="100%"/>
 Dan keluarkan perintah untuk merestart server database:
 ```bash
 sudo service postgresql restart
@@ -178,15 +180,15 @@ sudo service postgresql restart
 
 1\. Buka panel **phpPgAdmin** untuk database **primary** Anda dengan mengklik tombol **Open in Browser** di sebelahnya.
 
-![PostgreSQL open in browser](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/auto-clustering/auto-clustering-18.png" alt="PostgreSQL open in browser" width="100%"/>
 
 2\. Masuk dengan kredensial database yang telah Anda terima melalui email sebelumnya dan buat database baru.
 
-![phpPgAdmin create database](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/auto-clustering/auto-clustering-19.png" alt="phpPgAdmin create database" width="100%"/>
 
 3\. Kemudian, Anda harus membuka panel admin dari server database **standby** Anda (dengan cara yang sama seperti primary) dan memeriksa apakah database baru berhasil direplikasi atau tidak.
 
-![replicated secondary database](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/auto-clustering/auto-clustering-20.png" alt="replicated secondary database" width="100%"/>
 
 ### Automatic Failover Scenario{#automatic-failover-scenario}
 
@@ -198,7 +200,7 @@ PostgreSQL tidak memiliki skenario failover otomatis native untuk cluster databa
 
 Topologi default terdiri dari dua node:
 
-![PostgreSQL primary-secondary scheme](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/auto-clustering/auto-clustering-21.png" alt="PostgreSQL primary-secondary scheme" width="50%"/>
 
 Begitu node primary gagal, node secondary harus dipromosikan menjadi primary baru. Ini dapat dilakukan dengan utilitas _pg_ctl_ yang digunakan untuk menginisialisasi, memulai, menghentikan, atau mengontrol server PostgreSQL. Untuk melakukan ini, masuk ke server standby melalui Web SSH dan keluarkan perintah sebagai berikut:
 
@@ -208,7 +210,7 @@ Begitu node primary gagal, node secondary harus dipromosikan menjadi primary bar
 
 Dimana _/var/lib/pgsql/data_ adalah direktori data database.
 
-![promote secondary PostgreSQL node](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/auto-clustering/auto-clustering-22.png" alt="promote secondary PostgreSQL node" width="100%"/>
 
 Begitu database secondary dipromosikan menjadi primary, Anda harus mengubah string koneksi aplikasi Anda agar mengubah entry point cluster database ke hostname atau alamat IP baru.
 
@@ -233,7 +235,7 @@ fi
 
 Setelah script dipicu oleh promosi secondary ke primary, output script harus terlihat seperti:
 
-![PostgreSQL failover script](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/auto-clustering/auto-clustering-23.png" alt="PostgreSQL failover script" width="100%"/>
 
 Sekarang database Anda kembali berfungsi dan siap untuk menangani permintaan baca/tulis dengan alamat primary baru.
 
@@ -263,7 +265,7 @@ Lakukan langkah-langkah berikut untuk mendapatkan cluster dengan topologi awal:
 rm -rf /var/lib/pgsql/data/*
 ```
 
-![cleanup on primary](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/auto-clustering/auto-clustering-24.png" alt="cleanup on primary" width="100%"/>
 
 2\. Tambahkan alamat IP primary sebelumnya 172.22.2.22 ke **pg_hba.conf** di node primary saat ini:
 
@@ -271,7 +273,7 @@ rm -rf /var/lib/pgsql/data/*
 host replication replication 172.22.2.22/32 trust
 ```
 
-![add IP to pg-hba](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/auto-clustering/auto-clustering-25.png" alt="add IP to pg-hba" width="100%"/>
 
 Restart database primary saat ini untuk menerapkan perubahan:
 
@@ -285,7 +287,7 @@ sudo service postgresql restart
 pg_basebackup -U replication -h 172.25.2.31 -D /var/lib/pgsql/data -Fp -Xs -P -R
 ```
 
-![replicate data to primary](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/auto-clustering/auto-clustering-26.png" alt="replicate data to primary" width="100%"/>
 
 Dimana:
 
@@ -295,7 +297,7 @@ Dimana:
 
 4\. Pastikan alamat IP dalam parameter _**host**_ yang dijelaskan di langkah kedua dari [Configuring Standby](<https://docs.dewacloud.com/docs/#configuring-standby>) berisi alamat IP primary sebelumnya yang benar.
 
-![recheck primary connection info](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/auto-clustering/auto-clustering-27.png" alt="recheck primary connection info" width="100%"/>
 
 5\. Buat file _**standby.signal**_ di primary saat ini:
 
@@ -303,7 +305,7 @@ Dimana:
 touch /var/lib/pgsql/data/standby.signal
 ```
 
-![create standby.signal file](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/auto-clustering/auto-clustering-28.png" alt="create standby.signal file" width="100%"/>
 
 Dan restart node untuk mendapatkan database secondary baru:
 
@@ -317,7 +319,7 @@ Hapus file _standby.signal_ di primary sebelumnya:
 rm /var/lib/pgsql/data/standby.signal
 ```
 
-![remove standby.signal file](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/auto-clustering/auto-clustering-29.png" alt="remove standby.signal file" width="100%"/>
 
 Dan restart node untuk mendapatkan database primary baru:
 
@@ -327,12 +329,6 @@ sudo service postgresql restart
 
 6\. Terakhir, untuk mencapai status recovery yang konsisten untuk kedua database primary dan standby, restart akhir diperlukan yang dapat dilakukan melalui dashboard sebagai berikut:
 
-![restart PostgreSQL nodes again](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/auto-clustering/auto-clustering-30.png" alt="restart PostgreSQL nodes again" width="100%"/>
 
 Setelah proses restart selesai, cluster kembali ke topologi asli dan dapat di-scale secara horizontal.
-
-## Baca Juga{#whats-next}
-
-  * [Java Connection to PostgreSQL](<https://docs.dewacloud.com/company/blog/java-connection-to-postgresql/>)
-  * [PHP Connection to PostgreSQL](<https://docs.dewacloud.com/docs/connection-to-postgresql-for-php/>)
-  * [Remote Access to PostgreSQL](<https://docs.dewacloud.com/docs/remote-access-postgres/>)

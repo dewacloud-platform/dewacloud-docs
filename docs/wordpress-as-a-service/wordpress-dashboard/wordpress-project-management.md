@@ -10,11 +10,11 @@ Semua proyek WordPress di platform disediakan dengan halaman khusus di mana Anda
 
 Berikut ini, kami telah mengelompokkan semua fungsionalitas yang tersedia untuk proyek di dashboard WordPress ke dalam kelompok berikut:
 
-- [Settings and Basic Actions](https://docs.dewacloud.com/#settings-and-basic-actions)
-- [General Data](https://docs.dewacloud.com/#general-data)
-- [WordPress Plugins](https://docs.dewacloud.com/#wordpress-plugins)
-- [Application Deployment](https://docs.dewacloud.com/#application-deployment)
-- [Environment Management](https://docs.dewacloud.com/#environment-management)
+- [Settings and Basic Actions](#settings-and-basic-actions)
+- [General Data](#general-data)
+- [WordPress Plugins](#wordpress-plugins)
+- [Application Deployment](#application-deployment)
+- [Environment Management](#environment-management)
 
 ## Settings and Basic Actions{#settings-and-basic-actions}
 
@@ -28,7 +28,7 @@ Klik tombol yang diperlukan untuk melakukan operasi yang sesuai.
 Saat merestart solusi yang terklaster, Anda akan melihat daftar drop-down dengan semua node dan kelompok node. Untuk kelompok dengan beberapa node, Anda dapat memilih untuk merestart secara bersamaan (semua node sekaligus) atau secara berurutan (satu per satu). Opsi yang terakhir memastikan bahwa setidaknya satu node tetap aktif dan dapat memproses permintaan end-user (tanpa downtime). Penundaan diperlukan untuk memastikan bahwa node sepenuhnya online sebelum merestart node berikutnya.
 :::
 
-2. Tombol dengan ikon roda gigi akan mengarahkan Anda ke halaman **Settings** proyek, yang memiliki beberapa bagian, termasuk opsi untuk [menghapus proyek](https://docs.dewacloud.com/wp-dashboard-project-installation/#deleting-project) di bagian bawah.
+2. Tombol dengan ikon roda gigi akan mengarahkan Anda ke halaman **Settings** proyek, yang memiliki beberapa bagian, termasuk opsi untuk [menghapus proyek](https://docs.dewacloud.com/docs/wp-dashboard-project-installation/#deleting-project) di bagian bawah.
 
 ![project settings](#)
 
@@ -36,11 +36,11 @@ Saat merestart solusi yang terklaster, Anda akan melihat daftar drop-down dengan
 
 ![settings custom domains](#)
 
-2.2. Bagian **SSL Installation** memungkinkan menerbitkan sertifikat baru atau melihat yang sudah ada. Anda dapat menggunakan _[Let’s Encrypt SSL](https://docs.dewacloud.com/company/blog/free-ssl-certificates-with-lets-encrypt/)_ otomatis atau mengelola _custom SSL_ untuk proyek secara manual (Anda harus menambahkan domain kustom terlebih dahulu).
+2.2. Bagian **SSL Installation** memungkinkan menerbitkan sertifikat baru atau melihat yang sudah ada. Anda dapat menggunakan _[Let’s Encrypt SSL](https://docs.dewacloud.com/docs/let's-encrypt-ssl)_ otomatis atau mengelola _custom SSL_ untuk proyek secara manual (Anda harus menambahkan domain kustom terlebih dahulu).
 
 ![settings SSL installation](#)
 
-2.3. Bagian **Backup Storage** memungkinkan backup otomatis untuk proyek Anda berdasarkan jadwal yang ditentukan (_pre-defined_, _custom_, atau _crontab_). Selain itu, Anda dapat memilih storage backup (tambahkan melalui [pengaturan akun](https://docs.dewacloud.com/wp-dashboard-overview/#account-settings)) dan menetapkan sejumlah backup terbaru untuk disimpan. Pelajari lebih lanjut tentang [proses backup dan restore](https://docs.dewacloud.com/wordpress-backups/).
+2.3. Bagian **Backup Storage** memungkinkan backup otomatis untuk proyek Anda berdasarkan jadwal yang ditentukan (_pre-defined_, _custom_, atau _crontab_). Selain itu, Anda dapat memilih storage backup (tambahkan melalui [pengaturan akun](https://docs.dewacloud.com/docs/wp-dashboard-overview/#account-settings)) dan menetapkan sejumlah backup terbaru untuk disimpan. Pelajari lebih lanjut tentang [proses backup dan restore](https://docs.dewacloud.com/docs/wordpress-backups/).
 
 ![settings backup storage](#)
 
@@ -48,13 +48,13 @@ Saat merestart solusi yang terklaster, Anda akan melihat daftar drop-down dengan
 
 ![settings endpoints](#)
 
-[Endpoints](https://docs.dewacloud.com/endpoints/) membuat koneksi langsung (melalui protokol raw TCP atau UDP) ke salah satu node proyek tanpa alamat _Public IP_ wajib. Ini dapat digunakan untuk mengatur akses jarak jauh. Misalnya, salah satu kasus penggunaan paling umum adalah mendapatkan akses jarak jauh ke instance database Anda menggunakan klien database lokal.
+[Endpoints](https://docs.dewacloud.com/docs/endpoints/) membuat koneksi langsung (melalui protokol raw TCP atau UDP) ke salah satu node proyek tanpa alamat _Public IP_ wajib. Ini dapat digunakan untuk mengatur akses jarak jauh. Misalnya, salah satu kasus penggunaan paling umum adalah mendapatkan akses jarak jauh ke instance database Anda menggunakan klien database lokal.
 
 2.5. Bagian **Subscription Plan** menunjukkan detail langganan dari proyek saat ini dan, tergantung pada konfigurasi penyedia hosting, dapat memberikan opsi **Change Plan**. Ini memberikan kemampuan untuk memindahkan proyek saat ini ke rencana berbeda dalam langganan yang sama.
 
 ![settings subscription plan](#)
 
-3. Di sebelah tombol yang disebutkan di atas, Anda dapat menemukan daftar drop-down untuk beralih antara [_Production_ dan _Staging_ environments](https://docs.dewacloud.com/wp-dashboard-project-installation/#staging-project) untuk proyek Anda.
+3. Di sebelah tombol yang disebutkan di atas, Anda dapat menemukan daftar drop-down untuk beralih antara [_Production_ dan _Staging_ environments](https://docs.dewacloud.com/docs/wp-dashboard-project-installation/#staging-project) untuk proyek Anda.
 
 ![staging project](#)
 
@@ -64,11 +64,11 @@ Bagian _**Overview**_ proyek menyediakan data yang paling sering dibutuhkan untu
 
 ![WordPress project overview](#)
 
-1. Ikon di awal menunjukkan apakah proyek adalah solusi terklaster atau standalone. Titik berwarna di sebelahnya menunjukkan status proyek (_hijau_ – aktif, _kuning_ – sedang berjalan, _merah_ – berhenti). Nama yang mengikuti menentukan apakah [environment adalah production atau staging](https://docs.dewacloud.com/wp-dashboard-project-installation/#staging-project). Terakhir, Anda dapat melihat domain internal dari proyek.
+1. Ikon di awal menunjukkan apakah proyek adalah solusi terklaster atau standalone. Titik berwarna di sebelahnya menunjukkan status proyek (_hijau_ – aktif, _kuning_ – sedang berjalan, _merah_ – berhenti). Nama yang mengikuti menentukan apakah [environment adalah production atau staging](https://docs.dewacloud.com/docs/wp-dashboard-project-installation/#staging-project). Terakhir, Anda dapat melihat domain internal dari proyek.
 
 ![WordPress project domains](#)
 
-Anda dapat mengklik tombol **Edit Domain Name** untuk [menghubungkan custom external domain](https://docs.dewacloud.com/#settings-and-basic-actions).
+Anda dapat mengklik tombol **Edit Domain Name** untuk [menghubungkan custom external domain](#settings-and-basic-actions).
 
 ![project edit domain](#)
 
@@ -76,7 +76,7 @@ Anda dapat mengklik tombol **Edit Domain Name** untuk [menghubungkan custom exte
 
 ![project deployment menu](#)
 
-Pelajari lebih lanjut di bagian [Application Deployment](https://docs.dewacloud.com/#application-deployment).
+Pelajari lebih lanjut di bagian [Application Deployment](#application-deployment).
 
 3. Di bawahnya, platform menampilkan **WordPress version** yang terdeteksi secara otomatis dan menyediakan tautan ke panel admin WordPress.
 
@@ -90,13 +90,13 @@ Arahkan kursor untuk melihat opsi **Redeploy** yang memungkinkan pembaruan PHP v
 
 ![WordPress project redeployment](#)
 
-Kami merekomendasikan untuk melakukan redeployment secara teratur ke versi terbaru untuk memastikan container proyek Anda menjalankan sistem operasi dan stack perangkat lunak terbaru dengan semua perbaikan kerentanan terbaru. Namun, perlu diketahui bahwa operasi ini akan menyebabkan downtime singkat untuk proyek. Anda dapat membaca lebih lanjut tentang fitur **[Redeployment](https://docs.dewacloud.com/container-redeploy/)** di dokumen yang terhubung.
+Kami merekomendasikan untuk melakukan redeployment secara teratur ke versi terbaru untuk memastikan container proyek Anda menjalankan sistem operasi dan stack perangkat lunak terbaru dengan semua perbaikan kerentanan terbaru. Namun, perlu diketahui bahwa operasi ini akan menyebabkan downtime singkat untuk proyek. Anda dapat membaca lebih lanjut tentang fitur **[Redeployment](https://docs.dewacloud.com/docs/container-redeploy/)** di dokumen yang terhubung.
 
 5. Klik **Datacenter Info** untuk memeriksa informasi yang relevan.
 
 ![WordPress project datacenter info](#)
 
-6. Klik **SSH/SFTP Info** untuk melihat bagaimana Anda dapat mengakses proyek Anda melalui protokol [SSH](https://docs.dewacloud.com/ssh-gate-access/#ssh-access-to-platform-account) dan [SFTP](https://docs.dewacloud.com/ssh-protocols/). Daftar drop-down memungkinkan melihat informasi untuk berbagai node dari klaster.
+6. Klik **SSH/SFTP Info** untuk melihat bagaimana Anda dapat mengakses proyek Anda melalui protokol [SSH](https://docs.dewacloud.com/docs/ssh-gate-access/#ssh-access-to-platform-account) dan [SFTP](https://docs.dewacloud.com/docs/ssh-protocols/). Daftar drop-down memungkinkan melihat informasi untuk berbagai node dari klaster.
 
 ![WordPress project SSH SFTP info](#)
 
@@ -140,7 +140,7 @@ Konfirmasi tindakan melalui pop-up.
 
 ![project deploy application](#)
 
-3. Di dalam jendela yang terbuka, Anda dapat memilih repository Git yang diinginkan dari daftar yang ditambahkan melalui [pengaturan akun](https://docs.dewacloud.com/wp-dashboard-overview/#account-settings). Opsional, centang kotak " _Check and auto-deploy updates (min_)” dan berikan periode yang diinginkan untuk mengaktifkan pembaruan otomatis dari aplikasi yang dideploy (hanya jika ada perubahan).
+3. Di dalam jendela yang terbuka, Anda dapat memilih repository Git yang diinginkan dari daftar yang ditambahkan melalui [pengaturan akun](https://docs.dewacloud.com/docs/wp-dashboard-overview/#account-settings). Opsional, centang kotak " _Check and auto-deploy updates (min_)” dan berikan periode yang diinginkan untuk mengaktifkan pembaruan otomatis dari aplikasi yang dideploy (hanya jika ada perubahan).
 
 ![deploy application](#)
 
@@ -208,14 +208,14 @@ Tab **Favorites** digunakan untuk akses cepat ke file konfigurasi utama dari nod
 
 ![managing project files](#)
 
-Untuk [lebih banyak opsi manajemen](https://docs.dewacloud.com/#general-data), hubungkan melalui SSH atau lakukan penyesuaian melalui database dan panel admin WordPress.
+Untuk [lebih banyak opsi manajemen](#general-data), hubungkan melalui SSH atau lakukan penyesuaian melalui database dan panel admin WordPress.
 
 ## Baca Juga{#whats-next}
 
-- [WordPress PaaS](https://docs.dewacloud.com/virtuozzo-application-platform-for-wordpress/)
-- [WordPress Dashboard Overview](https://docs.dewacloud.com/wp-dashboard-overview/)
-- [WordPress Project Installation](https://docs.dewacloud.com/wp-dashboard-project-installation/)
-- [WordPress Topologies](https://docs.dewacloud.com/wordpress-topologies/)
-- [WordPress Backups](https://docs.dewacloud.com/wordpress-backups/)
-- [WordPress Security](https://docs.dewacloud.com/wordpress-security/)
-- [WordPress PHP Optimization](https://docs.dewacloud.com/wordpress-php-optimization/)
+- [WordPress PaaS](https://docs.dewacloud.com/docs/virtuozzo-application-platform-for-wordpress/)
+- [WordPress Dashboard Overview](https://docs.dewacloud.com/docs/wp-dashboard-overview/)
+- [WordPress Project Installation](https://docs.dewacloud.com/docs/wp-dashboard-project-installation/)
+- [WordPress Topologies](https://docs.dewacloud.com/docs/wordpress-topologies/)
+- [WordPress Backups](https://docs.dewacloud.com/docs/wordpress-backups/)
+- [WordPress Security](https://docs.dewacloud.com/docs/wordpress-security/)
+- [WordPress PHP Optimization](https://docs.dewacloud.com/docs/wordpress-php-optimization/)

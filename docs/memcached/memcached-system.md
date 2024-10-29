@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /memcached-system
+slug: /memcached-caching-system
 title: Memcached System
 ---
 
@@ -53,7 +53,7 @@ Itu saja yang perlu Anda lakukan! Sekarang, Memcached tersedia di environment An
 
 ## Baca Juga{#whats-next}
 
-- [Memcached Memory Allocation](https://docs.dewacloud.com/memcached-memory-allocation/)
-- [Memcached Configuration](https://docs.dewacloud.com/memcached-configuration/)
-- [Session Replication via Memcached](https://docs.dewacloud.com/replication-memcached/)
-- [PHP Sessions in Memcached](https://docs.dewacloud.com/memcached-php-sessions/)
+- [Memcached Memory Allocation](https://docs.dewacloud.com/docs/memcached-memory-allocation/)
+- [Memcached Configuration](https://docs.dewacloud.com/docs/memcached-configuration/)
+- [Session Replication via Memcached](https://docs.dewacloud.com/docs/replication-memcached/)
+- [PHP Sessions in Memcached](https://docs.dewacloud.com/docs/memcached-php-sessions/)

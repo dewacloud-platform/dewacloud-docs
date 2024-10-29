@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-slug: /cluster-troubleshooting
+slug: /kubernetes-troubleshooting
 title: Cluster Troubleshooting
 ---
 # Kubernetes Cluster: Troubleshooting{#kubernetes-cluster-troubleshooting}
@@ -15,7 +15,7 @@ Paket **Kubernetes Cluster** adalah produk yang sangat kompleks, yang mencakup b
 
 Pemasangan cluster Kubernetes adalah proses yang kompleks tetapi sepenuhnya otomatis, yang sudah termasuk mekanisme penanganan kesalahan. Platform ini secara otomatis memproses masalah yang paling umum dan menunjukkan penyebab akar mereka langsung di dashboard. Untuk masalah yang lebih kompleks, Anda bisa **Kirim Laporan** ke tim dukungan melalui widget yang sesuai.  
 
-![kubernetes cluster installation error](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/managing%20kubernetes/Cluster%20Troubleshooting/01-kubernetes-cluster-installation-error.png" alt="kubernetes cluster installation error" width="50%"/>
 
 Laporan semacam itu mencakup log instalasi, pesan kesalahan, dan semua informasi debug lain yang diperlukan.
 
@@ -29,11 +29,11 @@ Anda dapat menggunakan _kubectl_ atau _Kubernetes Dashboard_ untuk melacak dan m
 
   * **Events** di _Kubernetes Dashboard_  
 
-![kubernetes dashboard events](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/managing%20kubernetes/Cluster%20Troubleshooting/02-kubernetes-dashboard-events.png" alt="kubernetes dashboard events" width="100%"/>
 
   * contoh output dari perintah _**kubectl get events -n $namespace**_  
 
-![kubectl get events](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/managing%20kubernetes/Cluster%20Troubleshooting/03--kubectl-get-events.png" alt="kubectl get events" width="100%"/>
 
 ### Pod Logs{#pod-logs}
 

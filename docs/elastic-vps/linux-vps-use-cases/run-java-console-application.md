@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /run-java-console-application
+slug: /vps-standalone-application
 title: Run Java Console Application
 ---
 
@@ -8,14 +8,14 @@ title: Run Java Console Application
 
 Dalam tutorial ini kami akan meninjau cara menginstal sampel aplikasi konsol Java ke virtual private server [CentOS](https://www.virtuozzo.com/application-platform-docs/vps-centos/) Anda dan memeriksa operasionalitasnya. Untuk itu, Anda perlu menjalankan operasi berikut:
 
-- [menginstal Java](https://docs.dewacloud.com/#install-java)
-- [mengunggah aplikasi](https://docs.dewacloud.com/#upload)
-- [mengakses aplikasi via SSH](https://docs.dewacloud.com/#access-via-ssh)
-- [memeriksa operasionalitas aplikasi](https://docs.dewacloud.com/#operability)
+- [menginstal Java](#install-java)
+- [mengunggah aplikasi](#upload)
+- [mengakses aplikasi via SSH](#access-via-ssh)
+- [memeriksa operasionalitas aplikasi](#operability)
 
-## Instal Java ke VPS{#install-java-to-vps}
+## Instal Java ke VPS{#install-java}
 
-Untuk menginstal Java ke container VPS Anda, lakukan langkah-langkah berikut, sambil terhubung melalui protokol SSH dengan menggunakan [SSH Gate](https://docs.dewacloud.com/vps-ssh-gate/) atau [public IP](https://docs.dewacloud.com/vps-public-ip/).
+Untuk menginstal Java ke container VPS Anda, lakukan langkah-langkah berikut, sambil terhubung melalui protokol SSH dengan menggunakan [SSH Gate](https://docs.dewacloud.com/docs/vps-ssh-gate/) atau [public IP](https://docs.dewacloud.com/docs/vps-public-ip/).
 
 1. Masukkan perintah berikut untuk memulai unduhan paket _Java_.
 
@@ -51,7 +51,7 @@ java -version
 
 Bagus! Java berhasil diinstal, jadi mari kita lanjutkan ke pengunggahan aplikasi.
 
-## Unggah Aplikasi ke VPS{#upload-application-to-vps}
+## Unggah Aplikasi ke VPS{#upload}
 
 Siapkan aplikasi Java Anda untuk diunggah ke container VPS. Anda dapat menggunakan contoh berikut, yang akan mendengarkan port yang ditentukan untuk koneksi:
 
@@ -94,7 +94,7 @@ public class VdsSocket {
 }
 ```
 
-Setelah aplikasi Anda siap, Anda perlu mengemasnya ke dalam arsip _**.jar**_ dan mengunggahnya ke container VPS melalui klien transfer file yang dipilih. Dalam contoh kami, kami akan mengunggah file [vdssocket.jar](<https://www.virtuozzo.com/application-platform-docs/standalone-application/vdssocket.jar>) menggunakan alat [WinSCP](https://winscp.net/eng/index.php). Untuk itu, mari lakukan langkah-langkah berikut.
+Setelah aplikasi Anda siap, Anda perlu mengemasnya ke dalam arsip _**.jar**_ dan mengunggahnya ke container VPS melalui klien transfer file yang dipilih. Dalam contoh kami, kami akan mengunggah file vdssocket.jar menggunakan alat [WinSCP](https://winscp.net/eng/index.php). Untuk itu, mari lakukan langkah-langkah berikut.
 
 1. Akses klien WinSCP dan hubungkan ke container VPS Anda menggunakan kredensial yang diterima melalui email saat instalasi server:
 
@@ -112,9 +112,9 @@ Klik tombol **Login** untuk memulai pengaturan koneksi.
 
 Dalam dialog pengaturan transfer yang muncul, klik **Copy** untuk memulai pengunggahan. Setelah selesai, Anda akan melihat file tersebut di direktori pada remote VPS.
 
-## Akses Aplikasi via SSH{#aссess-application-via-ssh}
+## Akses Aplikasi via SSH{#access-via-ssh}
 
-Akses container VPS Anda melalui [protokol SSH](https://docs.dewacloud.com/ssh-access/) untuk menemukan aplikasi yang baru saja diunggah.
+Akses container VPS Anda melalui [protokol SSH](https://docs.dewacloud.com/docs/ssh-access/) untuk menemukan aplikasi yang baru saja diunggah.
 
 1. Pindah ke direktori yang Anda buat di bagian sebelumnya dan periksa isinya untuk memastikan arsip aplikasi ada.
 
@@ -135,7 +135,7 @@ java -jar vdssocket.jar
 
 Selesai! Sekarang, seperti yang bisa Anda lihat, port yang ditentukan sedang didengarkan.
 
-## Memeriksa Operasionalitas Aplikasi{#check-application-operability}
+## Memeriksa Operasionalitas Aplikasi{#operability}
 
 Untuk memeriksa alur kerja aplikasi yang benar, kita akan terhubung ke container VPS melalui protokol [Telnet](https://en.wikipedia.org/wiki/Telnet). Untuk itu, [pasang](https://technet.microsoft.com/en-us/library/cc771275%28v=ws.10%29.aspx#bkmk_installcmd) klien Telnet dan jalankan.
 
@@ -164,7 +164,7 @@ Itu saja. Aplikasi konsol Java Anda telah diatur dan berfungsi dengan baik!
 
 ## Baca Juga{#whats-next}
 
-- [Elastic VPS Overview](https://docs.dewacloud.com/vps/)
-- [VPS Configuration](https://docs.dewacloud.com/vps-configuration/)
-- [Setting Mail Server Inside VPS](https://docs.dewacloud.com/adding-mail-server-vps/)
-- [Windows VPS Use Cases](https://docs.dewacloud.com/win-vps-roles-and-features/)
+- [Elastic VPS Overview](https://docs.dewacloud.com/docs/vps/)
+- [VPS Configuration](https://docs.dewacloud.com/docs/vps-configuration/)
+- [Setting Mail Server Inside VPS](https://docs.dewacloud.com/docs/vps-adding-mail-server/)
+- [Windows VPS Use Cases](https://docs.dewacloud.com/docs/win-vps-roles-features/)

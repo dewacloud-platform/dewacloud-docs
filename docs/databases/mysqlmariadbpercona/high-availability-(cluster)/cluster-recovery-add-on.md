@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-slug: /cluster-recovery-add-on
+slug: /db-cluster-recovery-add-on
 title: Cluster Recovery Add-On
 ---
 # Database Cluster Recovery Add-On
@@ -32,7 +32,7 @@ Seorang pengguna _replica_ ditambahkan untuk melakukan validasi cluster. Juga, p
   * **REPLICA_USER:** repl-xxxxxx
   * **REPLICA_PSWD:** xxxxxxxxxxxx
 
-![replica user credentials](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/cluster-recovery-addon/cluster-recovery-addon-1.png" alt="replica user credentials" width="100%"/>
 
 Selain itu, akses SSH dikonfigurasikan antara node database (dengan set kunci SSH khusus) untuk memungkinkan penyalinan data dengan _rsync_ selama prosedur pemulihan.
 
@@ -40,7 +40,7 @@ Selain itu, akses SSH dikonfigurasikan antara node database (dengan set kunci SS
 
 Add-on tersedia melalui platform Marketplace. Sebagai alternatif, Anda dapat mengimpor paket _**[Database Cluster Recovery](<https://github.com/jelastic-jps/mysql-cluster/tree/master/addons/recovery>)**_ yang sesuai dari GitHub.
 
-![database recovery add-on](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/cluster-recovery-addon/cluster-recovery-addon-2.png" alt="database recovery add-on" width="100%"/>
 
 Dalam jendela konfirmasi yang terbuka, berikan data yang diperlukan:
 
@@ -48,11 +48,11 @@ Dalam jendela konfirmasi yang terbuka, berikan data yang diperlukan:
   * **Environment name** \- pilih environment dengan cluster database yang diperlukan dari daftar
   * **Nodes** \- pilih lapisan dengan cluster database
 
-![recovery add-on installation](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/cluster-recovery-addon/cluster-recovery-addon-3.png" alt="recovery add-on installation" width="100%"/>
 
 Klik **Install** dan tunggu beberapa menit agar add-on terinstal. Ini akan muncul dalam daftar add-on dari lapisan yang sesuai.
 
-![recovery add-on actions](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/cluster-recovery-addon/cluster-recovery-addon-4.png" alt="recovery add-on actions" width="100%"/>
 
 ## Penggunaan Add-On{#add-on-usage}
 
@@ -63,11 +63,11 @@ Add-on dapat melakukan dua tindakan yang dapat dijalankan dengan mengklik tombol
 
 Hasil dari tindakan _**Cluster Diagnostic**_ dapat berupa “_Cluster is OK_” atau pemberitahuan dashboard “_Errors discovered_”.
 
-![recovery add-on diagnostic errors](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/cluster-recovery-addon/cluster-recovery-addon-5.png" alt="recovery add-on diagnostic errors" width="60%"/>
 
 Untuk detail yang lebih lengkap, Anda dapat mengklik tombol **Show Logs** untuk membuka file _**/var/log/db_recovery.log**_:
 
-![recovery add-on logs](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/cluster-recovery-addon/cluster-recovery-addon-6.png" alt="recovery add-on logs" width="100%"/>
 
 Jika ada masalah yang ditemukan, Anda dapat mencoba menyelesaikannya secara otomatis dengan tindakan _**Cluster Recovery**_. Ini harus dapat menangani sebagian besar masalah dan sepenuhnya memulihkan operabilitas cluster:
 
@@ -75,9 +75,9 @@ Jika ada masalah yang ditemukan, Anda dapat mencoba menyelesaikannya secara otom
 Kami merekomendasikan membuat backup dari database sebelum pemulihan.
 :::
 
-![successful recovery](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/cluster-recovery-addon/cluster-recovery-addon-7.png" alt="successful recovery" width="60%"/>
 
-Untuk detail tambahan atau jika terjadi kegagalan pemulihan, Anda dapat memeriksa [log](<https://docs.dewacloud.com/docs/view-log-files/>) _**db_recovery**_ yang disebutkan di atas. Juga, periksa panduan **[Manual Recovery](<https://github.com/jelastic-jps/mysql-cluster/blob/master/addons/recovery/docs/ManualRecoveryGuide.md#configuration-file-restoration>)** jika masalah tidak teratasi.
+Untuk detail tambahan atau jika terjadi kegagalan pemulihan, Anda dapat memeriksa [log](<https://docs.dewacloud.com/docs/log-files/>) _**db_recovery**_ yang disebutkan di atas. Juga, periksa panduan **[Manual Recovery](<https://github.com/jelastic-jps/mysql-cluster/blob/master/addons/recovery/docs/ManualRecoveryGuide.md#configuration-file-restoration>)** jika masalah tidak teratasi.
 
 ## Baca Juga{#whats-next}
 

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-slug: /non-leaking-processes
+slug: /oom-killer-non-leaking-processes
 title: Non-Leaking Processes
 ---
 # OOM Killer Resolutions: Non-Leaking Processes
@@ -66,6 +66,6 @@ _xinetd_ | Restart container untuk memulihkan proses
   
 ## Baca Juga
 
-  * [OOM Killer Troubleshooting](https://docs.dewacloud.com/docs/oom-killer-troubleshooting/)
+  * [OOM Killer Troubleshooting](https://docs.dewacloud.com/docs/oom-killer-issues/)
   * [Common Cases](https://docs.dewacloud.com/docs/oom-killer-common-cases/)
   * [Memory Leak Processes](https://docs.dewacloud.com/docs/oom-killer-leak-risk-processes/)

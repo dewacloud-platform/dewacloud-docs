@@ -3,95 +3,114 @@ sidebar_position: 5
 slug: /endpoints
 title: Endpoints
 ---
+
 # Endpoints: A Direct Connection to the Cloud
 
-The **Endpoints** feature enables TCP/UDP ports mapping via the Shared Load Balancer, allowing simplified collaboration between instances and third-party tools. This feature facilitates a direct connection to nodes without requiring a [Public IP](<https://www.virtuozzo.com/application-platform-docs/public-ipv4>), which helps in tasks like remote database management, direct app deployment from IDE, and accessing server admin panels.
+Fitur **Endpoints** memungkinkan pemetaan port TCP/UDP melalui Shared Load Balancer, memfasilitasi kolaborasi yang lebih sederhana antara instance dan alat pihak ketiga. Fitur ini mempermudah sambungan langsung ke node tanpa memerlukan [IP Publik](https://docs.dewacloud.com/docs/public-ipv4), yang membantu dalam tugas seperti manajemen basis data jarak jauh, penerapan aplikasi langsung dari IDE, dan mengakses panel admin server.
 
-### Key Advantages:
-- Simplified instance collaboration with third-party tools.
-- Cost savings by reducing the need for External IP addresses.
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/endpoints/1-logo.png" alt="endpoints logo" width="20%"/>
+
+### Keuntungan Utama:
+- Kolaborasi instance yang lebih sederhana dengan alat pihak ketiga.
+- Penghematan biaya dengan mengurangi kebutuhan alamat IP Eksternal.
   
-## Managing Endpoints
+## Managing Endpoints{#managing-endpoints}
 
-Endpoints can be managed from the **Settings** menu in your platform dashboard. To access, select **Settings** next to the desired environment and click **Endpoints**.
+Endpoints dapat diatur dari menu **Settings** di dashboard platform Anda. Untuk mengaksesnya, pilih **Settings** di sebelah lingkungan yang diinginkan dan klik **Endpoints**.
 
-### Adding Endpoints
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/endpoints/2-env.png" alt="environment settings" width="100%"/>
 
-1. **Add a New Endpoint**: Click **Add** and fill out the **Add Endpoint** form:
-   - **Node**: Select the node.
-   - **Name**: Choose a name (either custom or from predefined options).
-   - **Private Port**: Specify the local node port for mapping.
-   - **Protocol**: Choose TCP or UDP.
+### Menambahkan Endpoints{#adding-endpoints}
 
-The **Public Port** and **Access URL** will be automatically assigned by the platform. Click **Add** to finalize the creation.
+1. **Tambahkan Endpoint Baru**: Klik **Add** dan isi formulir **Add Endpoint**:
+   - **Node**: Pilih node.
+   - **Name**: Pilih nama (baik kustom atau dari opsi yang sudah ditentukan).
+   - **Private Port**: Tentukan port node lokal untuk pemetaan.
+   - **Protocol**: Pilih TCP atau UDP.
 
-**Preconfigured Options** (Examples):
+**Port Publik** dan **URL Akses** akan secara otomatis diberikan oleh platform. Klik **Add** untuk menyelesaikan pembuatan.
 
-| Connection Name | Private Port |
-|-----------------|--------------|
-| Remote Desktop  | 3389         |
-| PowerShell      | 5986         |
-| HTTP            | 80           |
-| HTTPS           | 443          |
-| MySQL           | 3306         |
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/endpoints/4-add.png" alt="add endpoint" width="100%"/>
 
-### Editing or Removing Endpoints
+**Opsi yang Telah Dikonfigurasi Sebelumnya** (Contoh):
 
-To edit or remove an existing endpoint:
-- **Edit**: Select the endpoint and modify its settings (except the node selection).
-- **Remove**: Confirm your choice to delete the endpoint.
+| Nama Koneksi   | Port Pribadi |
+|----------------|--------------|
+| Remote Desktop | 3389         |
+| PowerShell     | 5986         |
+| HTTP           | 80           |
+| HTTPS          | 443          |
+| MySQL          | 3306         |
 
-## Endpoints Use Cases
+### Mengedit atau Menghapus Endpoints{#editing-or-removing-endpoints}
 
-### Database Management
+Untuk mengedit atau menghapus endpoint yang ada:
+- **Edit**: Pilih endpoint dan modifikasi pengaturan (kecuali pemilihan node).
+- **Remove**: Konfirmasi pilihan Anda untuk menghapus endpoint.
 
-Endpoints simplify remote database access without the need for a Public IP. Below are examples of accessing a MySQL database through both terminal and third-party DB clients.
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/endpoints/7-edit-remove.png" alt="edit remove endpoint" width="100%"/>
 
-#### Connection via Terminal
+## Use Cases Endpoints{#endpoints-use-cases}
 
-Use the terminal on your local machine to connect to the database:
+### Manajemen Basis Data{#database-management}
+
+Endpoints mempermudah akses database jarak jauh tanpa perlu IP Publik. Berikut adalah contoh mengakses database MySQL melalui terminal dan klien DB pihak ketiga.
+
+#### Koneksi melalui Terminal{#connection-via-terminal}
+
+Gunakan terminal di komputer lokal Anda untuk terhubung ke basis data:
 
 ```bash
-mysql -h {host} -P {port} -u {user} -p
+mysql -h \{host\} -P \{port\} -u \{user\} -p
 ```
 
-- **{host}**: The endpoint Access URL without the port.
-- **{port}**: The public port assigned to the endpoint.
-- **{user}**: Database user (usually `root` by default).
-- **{password}**: The password is prompted after entering the command.
+- `\{host\}`: URL Akses endpoint tanpa port.
+- `\{port\}`: Port publik yang diberikan ke endpoint.
+- `\{user\}`: Pengguna basis data (biasanya `root` secara default).
+- `\{password\}`: Kata sandi diminta setelah memasukkan perintah.
 
-#### Connection via Local Client (MySQL Workbench)
+#### Koneksi melalui Klien Lokal (MySQL Workbench){#connection-via-local-client-mysql-workbench}
 
-For a graphical interface, use a tool like MySQL Workbench:
+Untuk antarmuka grafis, gunakan alat seperti MySQL Workbench:
 
-1. **Create a New Connection**:
+1. **Buat Koneksi Baru**:
    - **Connection Method**: TCP/IP
-   - **Hostname**: The endpoint Access URL (without the port).
-   - **Port**: The public port assigned to the endpoint.
-   - **Username**: Database user.
-   - **Password**: Enter the password or store it in Keychain.
+   - **Hostname**: URL Akses endpoint (tanpa port).
+   - **Port**: Port publik yang diberikan ke endpoint.
+   - **Username**: Pengguna basis data.
+   - **Password**: Masukkan kata sandi atau simpan di Keychain.
 
-2. **Access the Database**: Double-click the connection to initiate and start working with the database.
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/endpoints/11-wb-1.png" alt="mysql workbench connection" width="100%"/>
 
-### Multiple Development Stages on a Single App Server
+2. **Akses Basis Data**: Klik dua kali koneksi untuk memulai dan mulai bekerja dengan basis data.
 
-Endpoints allow you to use a single app server for multiple environments, such as production and development.
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/endpoints/14-wb-4.png" alt="access database" width="100%"/>
 
-1. **Add an Endpoint** for the Apache server and choose a private port (e.g., 81).
-2. **Deploy your application twice** to different contexts (e.g., `/prod` and `/dev`).
-3. **Modify Apache Configurations**:
-   - Open the `httpd.conf` file and add a new listener for the private port:
+### Tahap Pengembangan Multiple pada Server Aplikasi Tunggal{#multiple-development-stages-on-a-single-app-server}
+
+Endpoints memungkinkan Anda menggunakan server aplikasi tunggal untuk beberapa lingkungan, seperti produksi dan pengembangan.
+
+1. **Tambahkan Endpoint** untuk server Apache dan pilih port pribadi (mis. 81).
+2. **Terapkan aplikasi Anda dua kali** ke konteks berbeda (mis. `/prod` dan `/dev`).
+
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/endpoints/18-ap-4.png" alt="deploy to different contexts" width="100%"/>
+
+3. **Modifikasi Konfigurasi Apache**:
+   - Buka file `httpd.conf` dan tambahkan pendengar baru untuk port pribadi:
    
    ```bash
-   Listen 0.0.0.0:{port}
+   Listen 0.0.0.0:\{port\}
    ```
 
-   - Create two **VirtualHost** sections, one for production and one for development.
-4. **Restart Apache** and access the production environment through its normal URL, while using the endpoint Access URL to reach the development version.
+   - Buat dua bagian **VirtualHost**, satu untuk produksi dan satu untuk pengembangan.
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/endpoints/19-ap-5.png" alt="apache virtualhost configurations" width="100%"/>
 
-This setup allows you to perform development tasks without impacting the production environment.
+4. **Restart Apache** dan akses lingkungan produksi melalui URL normalnya, sementara menggunakan URL Akses endpoint untuk mencapai versi pengembangannya.
 
-## What's Next?
-- [Public IP](<https://docs.dewacloud.com/docs/public-ip/>)
-- [Remote Access to MySQL](<https://docs.dewacloud.com/docs/remote-access-mysql/>)
-- [Application Lifecycle](<https://docs.dewacloud.com/docs/how-to-manage-application-lifecycle/>)
+Pengaturan ini memungkinkan Anda melakukan tugas pengembangan tanpa mempengaruhi lingkungan produksi.
+
+## Baca Juga{#whats-next}
+
+- [Public IP](https://docs.dewacloud.com/docs/public-ip/)
+- [Remote Access to MySQL](https://docs.dewacloud.com/docs/remote-access-mysql/)
+- [Application Lifecycle](https://docs.dewacloud.com/docs/application-lifecycle/)

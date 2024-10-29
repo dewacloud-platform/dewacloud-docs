@@ -5,77 +5,77 @@ title: Shared Load Balancer
 ---
 # Shared Load Balancer
 
-The platform utilizes several **Shared Load Balancer** (SLB) components to process all incoming requests (except direct connections via [public IP](https://docs.dewacloud.com/docs/public-ip/)) sent to hosted environments. SLB acts as an **NGINX proxy server**, connecting the client (e.g., browser) with your applications deployed on the platform.
+Platform ini memanfaatkan beberapa komponen **Shared Load Balancer** (SLB) untuk memproses semua permintaan yang masuk (kecuali koneksi langsung melalui [public IP](https://docs.dewacloud.com/docs/public-ip/)) yang dikirim ke environment yang di-host. SLB bertindak sebagai **NGINX proxy server**, menghubungkan klien (misalnya, browser) dengan aplikasi Anda yang di-deploy di platform.
 
-![shared load balancer overview](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/shared-load-balancer/01-shared-load-balancer-overview.png" alt="shared load balancer overview" width="50%"/>
 
-Shared Load Balancers route external requests over the internal network to connect to the required applications. SLB limits each source address to 50 simultaneous connections to prevent _DDoS attacks_.
+Shared Load Balancers mengarahkan permintaan eksternal melalui jaringan internal untuk terhubung ke aplikasi yang diperlukan. SLB membatasi setiap alamat sumber hingga 50 koneksi simultan untuk mencegah _DDoS attacks_.
 
-To ensure high availability, the platform uses **multiple synchronized Shared Load Balancers** hosted on different servers, handling requests simultaneously. These balancers work with shared data storage, ensuring full interchangeability if one instance fails.
+Untuk memastikan ketersediaan tinggi, platform ini menggunakan **multiple synchronized Shared Load Balancers** yang di-host di server yang berbeda, menangani permintaan secara bersamaan. Load balancer ini bekerja dengan penyimpanan data bersama, memastikan pertukaran penuh jika satu instance gagal.
 
-![shared load balancer high availability](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/shared-load-balancer/02-shared-load-balancer-high-availability.svg" alt="shared load balancer high availability" width="70%"/>
 
-This approach creates multiple entry points for environments, efficiently distributing incoming traffic.
+Pendekatan ini menciptakan banyak titik masuk untuk environment, mendistribusikan lalu lintas yang masuk secara efisien.
 
 :::note
-We recommend using SLB for **development** and **test** environments. For **production** environments that handle high traffic, it's more appropriate to use a [public IP](https://docs.dewacloud.com/docs/public-ip/) for enhanced security and customization options, like **Custom SSL** and **Custom Domain**.
+Kami merekomendasikan menggunakan SLB untuk environment **development** dan **test**. Untuk environment **production** yang menangani lalu lintas tinggi, lebih tepat menggunakan [public IP](https://docs.dewacloud.com/docs/public-ip/) untuk keamanan yang lebih baik dan opsi kustomisasi, seperti **Custom SSL** dan **Custom Domain**.
 :::
 
-## Backend Health Check with Shared Load Balancer
+## Backend Health Check dengan Shared Load Balancer{#backend-health-check}
 
-The platform's SLB uses the [NGINX upstream check module](https://github.com/yaoweibin/nginx_upstream_check_module) to constantly monitor server health using these settings:
+SLB platform menggunakan [NGINX upstream check module](https://github.com/yaoweibin/nginx_upstream_check_module) untuk memantau kesehatan server secara konstan menggunakan pengaturan ini:
 
 ```bash
 check interval=15000 rise=2 fall=3 timeout=2000 default_down=false;
 ```
 
-- SLB assumes all containers are "up" upon startup.
-- The system checks node availability every 15 seconds.
-- If no response is received within 2 seconds, the check fails.
-- Three consecutive failures mark the node as "down."
-- Two consecutive successes mark the node as "up."
+- SLB menganggap semua container sebagai "up" saat startup.
+- Sistem memeriksa ketersediaan node setiap 15 detik.
+- Jika tidak ada respons yang diterima dalam 2 detik, pemeriksaan gagal.
+- Tiga kegagalan berturut-turut menandai node sebagai "down."
+- Dua kesuksesan berturut-turut menandai node sebagai "up."
 
 :::tip
-If an environment has multiple backends (application servers), dedicated load balancer nodes are automatically added to manage traffic and perform health checks.
+Jika environment memiliki beberapa backend (server aplikasi), node load balancer khusus ditambahkan secara otomatis untuk mengelola lalu lintas dan melakukan pemeriksaan kesehatan.
 :::
 
-## Deny Access via Shared Load Balancer
+## Menolak Akses melalui Shared Load Balancer{#deny-access}
 
-You can easily disable external access to environment nodes through SLB with a predefined option in the platform. This prohibits access via default domain names with a single click, without the need for public IPs or firewall adjustments. You can enable or disable **Access via SLB** in the topology wizard.
+Anda dapat dengan mudah menonaktifkan akses eksternal ke node environment melalui SLB dengan opsi yang sudah ditentukan di platform. Ini melarang akses melalui nama domain default dengan satu klik, tanpa perlu public IP atau penyesuaian firewall. Anda dapat mengaktifkan atau menonaktifkan **Access via SLB** di topology wizard.
 
-![access via SLB](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/shared-load-balancer/04-access-via-slb.png" alt="access via SLB" width="50%"/>
 
 :::note
-If a public IP is added to a layer, **Access via SLB** is automatically disabled for that layer to enhance security. However, you can re-enable SLB access to use both options simultaneously.
+Jika public IP ditambahkan ke sebuah layer, **Access via SLB** secara otomatis dinonaktifkan untuk layer itu untuk meningkatkan keamanan. Namun, Anda dapat mengaktifkan kembali akses SLB untuk menggunakan kedua opsi secara bersamaan.
 :::
 
-### Enabled SLB Access (Default):
-- Nodes are accessible via the SLB through environment domain names on default ports (_80_, _8080_, _8686_, _8443_, _4848_, _4949_, _7979_).
-- The **Open in Browser** button opens the relevant service (e.g., a database admin panel).
-- Nodes' links are included in emails.
+### Akses SLB Diaktifkan (Default):
+- Node dapat diakses melalui SLB melalui nama domain environment pada port default (_80_, _8080_, _8686_, _8443_, _4848_, _4949_, _7979_).
+- Tombol **Open in Browser** membuka layanan terkait (misalnya, panel admin basis data).
+- Tautan node dimasukkan dalam email.
 
-### Disabled SLB Access:
-- Nodes are inaccessible via SLB, and layers are isolated from the SLB.
-- Clicking **Open in Browser** returns a _403 Forbidden_ error.
-- Nodes' links are excluded from emails.
-- **SSH** and **endpoints** access remains unaffected.
+### Akses SLB Dinonaktifkan:
+- Node tidak dapat diakses melalui SLB, dan layer diisolasi dari SLB.
+- Mengklik **Open in Browser** mengembalikan _403 Forbidden_ error.
+- Tautan node dikecualikan dari email.
+- Akses **SSH** dan **endpoints** tetap tidak terpengaruh.
 
-Layers with SLB access disabled are labeled accordingly in the dashboard:
+Layer dengan akses SLB yang dinonaktifkan diberi label sesuai di dashboard:
 
-![no SLB access label](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/shared-load-balancer/05-no-slb-access-label.png" alt="no SLB access label" width="100%"/>
 
-Attempting to access such nodes will result in a **403 Forbidden** error:
+Mencoba mengakses node semacam itu akan menghasilkan **403 Forbidden** error:
 
-![403 forbidden access](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/shared-load-balancer/06-403-forbidden-access.png" alt="403 forbidden access" width="100%"/>
 
-### Common Use Cases:
-- Closing public SLB access to nodes intended for internal use only (e.g., databases).
-- Forbidding SLB access to nodes with public IPs and custom domains.
-- Configuring topologies that allow load balancer connections but block direct URL access to containers.
+### Penggunaan Umum:
+- Menutup akses publik SLB ke node yang dimaksudkan untuk penggunaan internal saja (misalnya, basis data).
+- Melarang akses SLB ke node dengan public IP dan custom domains.
+- Mengonfigurasi topologi yang memungkinkan koneksi load balancer tetapi memblokir akses URL langsung ke container.
 
-For **development** and **testing** environments, SLB access is often sufficient. However, for **production** environments, it's recommended to disable SLB access and use [public IP](https://docs.dewacloud.com/docs/public-ip/) and [custom domains](https://docs.dewacloud.com/docs/custom-domains/) for better security.
+Untuk environment **development** dan **testing**, akses SLB sering mencukupi. Namun, untuk environment **production**, disarankan untuk menonaktifkan akses SLB dan menggunakan [public IP](https://docs.dewacloud.com/docs/public-ip/) dan [custom domains](https://docs.dewacloud.com/docs/custom-domains/) untuk keamanan yang lebih baik.
 
-## What's Next?
+## Baca Juga{#whats-next}
 
 - [Load Balancing](https://docs.dewacloud.com/docs/load-balancing/)
 - [Public IP](https://docs.dewacloud.com/docs/public-ip/)

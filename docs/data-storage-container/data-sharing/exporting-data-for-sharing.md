@@ -1,14 +1,14 @@
 ---
 sidebar_position: 2
-slug: /exporting-data-for-sharing
+slug: /storage-exports
 title: Exporting Data for Sharing
 ---
 
 # Exporting Data for Sharing
 
-![data export icon](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/data%20sharing/exporting%20data%20for%20sharing/01-data-export-icon.png" alt="data export icon" width="30%"/>
 
-Platform ini menyediakan dukungan yang diperluas untuk [berbagi data](<https://docs.dewacloud.com/docs/data-storage-container/>) antara instance di dalam akun yang sama. Panel UI khusus tersedia di dashboard untuk menyederhanakan ekspor yang diperlukan dari server (dijelaskan dalam panduan ini) dan operasi [mount pada klien](<https://docs.dewacloud.com/docs/mount-points/>). Anda hanya perlu melakukan salah satu dari tindakan ini, dan platform akan otomatis menerapkan konfigurasi terkait pada instance kedua yang sesuai.
+Platform ini menyediakan dukungan yang diperluas untuk [berbagi data](<https://docs.dewacloud.com/docs/data-storage-container/>) antara instance di dalam akun yang sama. Panel UI khusus tersedia di dashboard untuk menyederhanakan ekspor yang diperlukan dari server (dijelaskan dalam panduan ini) dan operasi [mount pada klien](<https://docs.dewacloud.com/docs/mount-points/>). Anda hanya perlu melakukan salah satu dari opsi ini, dan platform akan otomatis menerapkan konfigurasi terkait pada instance kedua yang sesuai.
 
 Jadi, mari kita tinjau bagaimana Anda dapat [berbagi direktori](<https://docs.dewacloud.com/docs/#directory-export>) pada container Anda dan bagaimana mengelola semua [ekspor container](<https://docs.dewacloud.com/docs/#managing-exports>).
 
@@ -22,11 +22,11 @@ Jika Anda perlu mengekspor data secara eksternal (yaitu ke server di luar akun P
 
 1\. Buka [configuration manager](<https://docs.dewacloud.com/docs/configuration-file-manager/>) untuk penyimpanan Anda (yaitu tempat file terletak secara fisik), beralih ke bagian _**Exports**_, dan klik tombol **Export** di panel atas.
 
-![create new export](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/data%20sharing/exporting%20data%20for%20sharing/02-create-new-export.png" alt="create new export" width="100%"/>
 
 2\. Tab _**Export Directory**_ yang sesuai akan dibuka.
 
-![configure new export](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/data%20sharing/exporting%20data%20for%20sharing/03-configure-new-export.png" alt="configure new export" width="100%"/>
 
 Di sini, Anda perlu menentukan informasi berikut:
 
@@ -45,7 +45,7 @@ Formulir yang sama dapat diakses langsung dari file manager node, menggunakan op
 
 3\. Dalam sekejap, folder yang diekspor ini akan muncul dalam daftar.
 
-![list of exports](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/data%20sharing/exporting%20data%20for%20sharing/05-list-of-exports.png" alt="list of exports" width="100%"/>
 
 Itu saja! Selama operasi, platform secara otomatis mengkonfigurasi [mount point](<https://docs.dewacloud.com/docs/mount-points/>) yang sesuai pada node target sehingga Anda dapat segera mulai bekerja dengan data yang dibagikan tanpa langkah tambahan yang diperlukan.
 
@@ -55,13 +55,13 @@ Selain [mengekspor direktori](<https://docs.dewacloud.com/docs/#directory-export
 
 1\. Semua direktori yang dibagikan dari container ini ke node mana pun di platform yang sama ditampilkan di sini (data yang diekspor [secara eksternal](<https://docs.dewacloud.com/docs/configure-external-nfs-server/>) tidak akan ditampilkan).
 
-![navigate to the exported directory](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/data%20sharing/exporting%20data%20for%20sharing/06-navigate-to-the-exported-directory.png" alt="navigate to the exported directory" width="100%"/>
 
 Anda dapat dengan cepat melompat ke salah satu folder yang diekspor dengan mengarahkan kursor ke catatan yang diperlukan dan memilih opsi **Navigate to directory** dari daftar _**Additionally**_.
 
 2\. Untuk mendapatkan lokasi dan detail node target yang tepat untuk direktori yang diekspor, kembangkan catatan yang sesuai.
 
-![view export target nodes](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/data%20sharing/exporting%20data%20for%20sharing/07-view-export-target-nodes.png" alt="view export target nodes" width="100%"/>
 
 Informasi berikut dapat ditemukan di sini:
 
@@ -71,18 +71,18 @@ Informasi berikut dapat ditemukan di sini:
 
 3\. Di panel alat di atas daftar, Anda dapat menemukan beberapa tombol yang dimaksudkan untuk membantu Anda mengelola ekspor Anda di container saat ini.
 
-![manage exports](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/data%20sharing/exporting%20data%20for%20sharing/08-manage-exports.png" alt="manage exports" width="100%"/>
 
   * dengan opsi **Export**, Anda dapat [berbagi direktori apa pun](<https://docs.dewacloud.com/docs/#directory-export>) di dalam container dengan node lain di akun Anda
   * tombol **Unmount** menghentikan pembagian data dengan node klien yang dipilih
 
-![unmount export](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/data%20sharing/exporting%20data%20for%20sharing/09-unmount-export.png" alt="unmount export" width="50%"/>
 
 Setelah konfirmasi, catatan yang sesuai akan dihapus dari daftar, dan data yang sesuai akan menjadi tidak tersedia di instance yang dipilih.
 
   * tombol **Configuration** mengarahkan ke file _**etc/exports**_, di mana Anda dapat memeriksa dan, jika diperlukan, mengedit secara manual daftar ekspor (folder yang dibagikan, alamat klien, parameter tambahan)
 
-![exports configuration file](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/data%20sharing/exporting%20data%20for%20sharing/10-exports-configuration-file.png" alt="exports configuration file" width="100%"/>
 
 **Catatan:** Jika bekerja dalam batas akun PaaS Anda, semua konfigurasi ekspor yang diperlukan otomatis. Penyesuaian manual file ini hanya diperlukan untuk [ekspor eksternal](<https://docs.dewacloud.com/docs/configure-external-nfs-server/>).
 

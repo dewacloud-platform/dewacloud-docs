@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /variables
+slug: /container-variables
 title: Variables
 ---
 
@@ -14,17 +14,17 @@ Dalam hal [container linking](<https://docs.dewacloud.com/docs/container-links/>
 
 **Catatan:** Nama variabel hanya boleh mengandung huruf Latin, angka, dan karakter underscore “_”.
 
-![add variable layer settings](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/configuration/variables/variables-1.png" alt="add variable layer settings" width="100%"/>
 
 Jangan lupa untuk **Save** variabel Anda.
 
 2\. Selain menambahkan, Anda juga bisa **Edit** dan **Remove** catatan yang sudah ada (kecuali beberapa yang default) dengan bantuan tombol bernama sama.
 
 :::tip 
-Berikut beberapa tips untuk mempercepat proses konfigurasi: klik ganda pada variabel akan segera mengalihkan Anda ke pengeditan; jika Anda perlu menghapus beberapa catatan, Anda dapat memilihnya menggunakan tombol Shift atau Ctrl.
+Berikut beberapa tips untuk mempercepat proses konfigurasi: double klik pada variabel akan segera mengalihkan Anda ke pengeditan; jika Anda perlu menghapus beberapa catatan, Anda dapat memilihnya menggunakan tombol Shift atau Ctrl.
 :::
 
-![edit remove variable layer settings](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/configuration/variables/variables-2.png" alt="edit remove variable layer settings" width="100%"/>
 
 3\. Klik **Apply** untuk menyimpan semua perubahan yang dibuat pada frame _Docker layer settings_ dan, jika diperlukan, satu kali lagi di jendela wizard untuk menerapkan perubahan tersebut.
 

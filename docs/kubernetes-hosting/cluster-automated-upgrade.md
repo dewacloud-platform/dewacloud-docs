@@ -4,7 +4,7 @@ slug: /kubernetes-cluster-automated-upgrade
 title: Cluster Automated Upgrade
 ---
 # Upgrade Otomatis Kubernetes Cluster di Dewacloud
-![Public IP for Access to Kubernetes](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Cluster%20Automated%20Upgrade/kubernetes-automated-upgrade-192x300.png" alt="Public IP for Access to Kubernetes" width="20%"/>
 
 Fleksibilitas, pengembangan dan pengiriman yang dipercepat, peningkatan skalabilitas, dan ketersediaan tinggi adalah alasan utama perusahaan mengadopsi teknologi Kubernetes (K8s). Namun, mengelola dan memastikan sistem tetap mutakhir bisa sangat kompleks bagi organisasi sehingga mereka perlu menyewa departemen terpisah hanya untuk menangani semuanya dengan benar.
 
@@ -16,19 +16,19 @@ Sebelum mengambil keputusan mengenai pembaruan, Anda dapat memeriksa versi clust
 
   * melalui dashboard di sebelah master dan worker nodes
 
-![kubernetes cluster version](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Cluster%20Automated%20Upgrade/version-detection.png" alt="kubernetes cluster version check" width="85%"/>
 
   * melalui klien WebSSH dengan menerbitkan perintah untuk mendapatkan [versi Kubernetes](<https://kubernetes.io/releases/version-skew-policy/>)
 
 ```bash
 kubectl version --short
 ```
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Cluster%20Automated%20Upgrade/version-console.png" alt="kubernetes cluster version" width="80%"/>
 
-![kubernetes web ssh](#)
 
 Kemudian bandingkan versi cluster saat ini dengan paket pembaruan otomatis yang tersedia yang dipresentasikan di halaman [versi Jelastic Kubernetes](<https://docs.dewacloud.com/docs/kubernetes-cluster-versions/#k8s-package-change-log>).
 
-![kubernetes versioning](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Cluster%20Automated%20Upgrade/image10.png" alt="kubernetes web ssh" width="65%"/>
 
 Meskipun versi Kubernetes baru dirilis secara teratur, tidak semuanya cocok untuk pembaruan otomatis segera. Ketika versi K8s telah melewati pengujian QA Jelastic dan telah mengumpulkan cukup penggunaan cluster untuk membuktikan stabilitas dari waktu ke waktu, kami dapat menambahkannya sebagai opsi.
 
@@ -42,25 +42,26 @@ Untuk mendapatkan versi yang lebih baru secara otomatis, Anda perlu menggunakan 
 
 1. Tekan **Add-Ons** di node Master dan klik **Start Cluster Upgrade**.
 
-![kubernetes upgrade add-on](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Cluster%20Automated%20Upgrade/version-detection.png" alt="kubernetes versioning" width="65%"/>
+
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Cluster%20Automated%20Upgrade/image8-1.png" alt="kubernetes upgrade process" width="65%"/>
 
 2. Konfirmasi proses pembaruan untuk melanjutkan.
 
-![kubernetes upgrade](#)
 
 **Catatan:** Setelah Anda memutakhirkan Kubernetes ke versi yang lebih baru, Anda tidak dapat menurunkannya. Oleh karena itu, Anda harus memastikan bahwa aplikasi yang dideploy di cluster kompatibel dengan versi yang Anda rencanakan untuk diaktifkan. Untuk ini, buat cluster pengembangan dan uji kompatibilitas versi baru dengan aplikasi Anda sebelum melakukan pembaruan di produksi.
 
 3. Sistem secara otomatis memeriksa versi Kubernetes baru yang tersedia di platform dan memulai pembaruan cluster
 
-![kubernetes cluster version check](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Cluster%20Automated%20Upgrade/image11.png" alt="kubernetes upgrade add-on" width="50%"/>
 
 atau memberi tahu Anda bahwa cluster Anda adalah versi terbaru yang tersedia.
 
-![kubernetes latest version](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Cluster%20Automated%20Upgrade/latest-version.png" alt="kubernetes latest version" width="50%"/>
 
 4. Ketika cluster ditingkatkan ke versi terbaru, pop-up konfirmasi sukses muncul:
 
-![kubernetes upgraded](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Cluster%20Automated%20Upgrade/successfull-upgrade18-10.png" alt="kubernetes upgraded" width="50%"/>
 
 Pembaruan tanpa waktu henti mungkin hanya untuk pemasangan Produksi karena mencakup 3 master, 2 API load balancers, dan 2 pekerja secara default. Ini siap untuk melakukan pembaruan tanpa henti kecuali untuk downtime controller ingress singkat yang mungkin (jika sedang ditingkatkan ke versi baru).
 
@@ -68,7 +69,7 @@ Pada saat yang sama, Anda harus tetap ingat bahwa zero downtime tidak hanya berg
 
 Jadi seluruh prosedur sepenuhnya otomatis dan tampak seperti di bawah ini.
 
-![](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Cluster%20Automated%20Upgrade/image2.gif" alt="kubernetes upgrade process" width="100%"/>
 
 ## Proses Pembaruan Cluster Kubernetes
 
@@ -171,7 +172,7 @@ Node master sebenarnya adalah control plane yang harus ditingkatkan terlebih dah
   * Konfigurasi pasca instance pekerja, menerapkan data integrasi
   * Mengeluarkan instance dari pemeliharaan
 
-![kubernetes upgrade process](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Cluster%20Automated%20Upgrade/image4-2-768x804.png" alt="kubernetes upgrade" width="65%"/>
 
 Selama redeploy kontainer, direktori dan file berikut tidak tersentuh:
 
@@ -204,4 +205,4 @@ Selain komponen internal Kubernetes, platform memperbarui fungsionalitas yang di
   * file konfigurasi (misalnya kubernetes-dashboard.yaml, jelastic-values.yaml, dll.)
   * integrated add-ons
 
-Jadi hasilnya, cluster Kubernetes ditingkatkan dengan lancar dan dengan intervensi manual minimal. 
+Jadi hasilnya, cluster Kubernetes ditingkatkan dengan lancar dan dengan intervensi manual minimal.

@@ -3,50 +3,62 @@ sidebar_position: 1
 slug: /traffic-distributor-overview
 title: Traffic Distributor Overview
 ---
+
 # Traffic Distributor Overview
 
-The **Traffic Distributor** is a load balancing solution designed to efficiently distribute traffic between multiple environments, improving your project's scalability and reliability. It offers advanced traffic routing methods and features such as high availability, Blue-Green deployment, A/B testing, and failover protection, simplifying the management of large-scale applications.
+**Traffic Distributor** adalah solusi load balancing yang dirancang untuk mendistribusikan lalu lintas secara efisien di antara beberapa environment, meningkatkan skalabilitas dan keandalan proyek Anda. Solusi ini menawarkan metode routing lalu lintas canggih dan fitur seperti ketersediaan tinggi, Blue-Green deployment, A/B testing, dan perlindungan failover, yang menyederhanakan manajemen aplikasi skala besar.
 
-## Key Features:
-- **High Availability & Failover**: Ensures continuous availability by distributing traffic between multiple hosts, minimizing downtime even if one instance fails.
-- **Blue-Green Deployment**: Allows seamless updates by directing traffic to one environment while updating another, ensuring zero downtime.
-- **A/B Testing**: Enables traffic routing between different versions of your application, allowing real-time performance comparison.
-- **Customizable Routing Methods**: Choose between Round Robin, Sticky Sessions, and Failover routing to meet your application's needs.
-- **Health Checks**: Automatically monitors backends, ensuring requests are only sent to healthy instances.
-- **Extensibility**: Allows for advanced configuration via NGINX for specific requirements, such as caching or SNI.
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distributor-overview/01-traffic-distributor-logo.png" alt="Traffic Distributor Logo" max-width="30%"/>
 
-## Routing Methods
+## Fitur Utama:
+- **Ketersediaan Tinggi & Failover**: Memastikan ketersediaan berkelanjutan dengan mendistribusikan lalu lintas di antara beberapa host, meminimalkan downtime bahkan jika satu instance gagal.
+- **Blue-Green Deployment**: Memungkinkan pembaruan yang mulus dengan mengarahkan lalu lintas ke satu environment saat memperbarui yang lain, memastikan tidak ada downtime.
+- **A/B Testing**: Memungkinkan routing lalu lintas antara versi aplikasi yang berbeda, memungkinkan perbandingan kinerja secara real-time.
+- **Metode Routing Dapat Disesuaikan**: Pilih antara Round Robin, Sticky Sessions, dan Failover routing untuk memenuhi kebutuhan aplikasi Anda.
+- **Health Checks**: Secara otomatis memantau backend, memastikan permintaan hanya dikirim ke instance yang sehat.
+- **Ekstensibilitas**: Memungkinkan konfigurasi lanjutan melalui NGINX untuk kebutuhan spesifik, seperti caching atau SNI.
 
-The Traffic Distributor supports three routing methods to suit various use cases:
+## Metode Routing
+
+Traffic Distributor mendukung tiga metode routing untuk memenuhi berbagai kasus penggunaan:
 
 ### 1. Round Robin
-- **Description**: Distributes traffic evenly among all environments by rotating requests.
-- **Use Case**: Ideal when identical content is served by all instances.
-- **Setup**: Requires identical application instances for balanced traffic distribution.
+- **Deskripsi**: Mendistribusikan lalu lintas secara merata di antara semua environment dengan memutar permintaan.
+- **Kasus Penggunaan**: Ideal ketika konten identik disajikan oleh semua instance.
+- **Pengaturan**: Memerlukan instance aplikasi identik untuk distribusi lalu lintas yang seimbang.
+
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distributor-overview/03-traffic-distributor-round-robin-routing.png" alt="Round Robin Routing" max-width="30%"/>
 
 ### 2. Sticky Sessions
-- **Description**: Assigns users to a specific backend based on session information, ensuring all requests during the session are handled by the same server.
-- **Use Case**: Useful when session persistence is needed (e.g., shopping carts).
-- **Setup**: Configures "stickiness" by session to route users consistently to the same server.
+- **Deskripsi**: Menugaskan pengguna ke backend tertentu berdasarkan informasi sesi, memastikan semua permintaan selama sesi ditangani oleh server yang sama.
+- **Kasus Penggunaan**: Berguna saat persistensi sesi diperlukan (misalnya, keranjang belanja).
+- **Pengaturan**: Mengkonfigurasi "stickiness" oleh sesi untuk merutekan pengguna secara konsisten ke server yang sama.
+
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distributor-overview/04-traffic-distributor-sticky-sessions-routing.png" alt="Sticky Sessions Routing" max-width="30%"/>
 
 ### 3. Failover
-- **Description**: Routes all traffic to a primary server but automatically switches to a backup server if the primary fails.
-- **Use Case**: Critical for maintaining uptime in high-availability applications.
-- **Setup**: Requires a backup environment to ensure seamless failover if the primary server goes down.
+- **Deskripsi**: Merutekan semua lalu lintas ke server utama tetapi secara otomatis beralih ke server cadangan jika server utama gagal.
+- **Kasus Penggunaan**: Kritis untuk mempertahankan uptime dalam aplikasi dengan ketersediaan tinggi.
+- **Pengaturan**: Memerlukan environment cadangan untuk memastikan failover yang mulus jika server utama mengalami kegagalan.
 
-## Traffic Distributor Implementation
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distributor-overview/05-traffic-distributor-failover-routing.png" alt="Failover Routing" max-width="30%"/>
 
-The Traffic Distributor is implemented as a separate environment containing NGINX load balancer nodes. To set it up, select the hosts, routing type, and traffic ratio, and configure it through a simple form. The installation creates a flexible load-balancing system that integrates with either a [Shared Load Balancer](<https://docs.dewacloud.com/docs/shared-load-balancer/>) or [public IP](<https://www.virtuozzo.com/application-platform-docs/public-ip/>) addresses.
+## Implementasi Traffic Distributor
 
-Traffic Distributor can handle multiple protocols, including HTTP, HTTPS, and WebSockets. The load balancing occurs during the HTTP handshake, and the WebSocket connection is persistent thereafter.
+Traffic Distributor diterapkan sebagai environment terpisah yang berisi node load balancer NGINX. Untuk mengatur, pilih host, tipe routing, dan rasio lalu lintas, serta konfigurasikan melalui formulir sederhana. Instalasi menciptakan sistem load balancing yang fleksibel yang terintegrasi dengan [Shared Load Balancer](<https://docs.dewacloud.com/docs/shared-load-balancer/>) atau alamat [Public IP](<https://docs.dewacloud.com/docs/public-ip/>).
 
-### Use Cases:
-- **Even Load Distribution**: Balance requests across servers to optimize resource usage.
-- **Blue-Green Deployment**: Direct traffic to one environment while updating another, enabling zero-downtime updates.
-- **A/B Testing**: Simultaneously test two versions of an application to measure performance differences.
-- **Failover Protection**: Ensure uninterrupted service by switching traffic to a backup server in case of failure.
+Traffic Distributor dapat menangani beberapa protokol, termasuk HTTP, HTTPS, dan WebSockets. Proses load balancing terjadi selama handshake HTTP, dan koneksi WebSocket tetap persisten setelahnya.
 
-## What’s Next?
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/traffic-distributor/traffic-distributor-overview/06-traffic-distributor-environment.png" alt="Traffic Distributor Environment" max-width="100%"/>
+
+### Kasus Penggunaan:
+- **Distribusi Beban Merata**: Mendistribusikan permintaan di seluruh server untuk mengoptimalkan penggunaan sumber daya.
+- **Blue-Green Deployment**: Mengarahkan lalu lintas ke satu environment sambil memperbarui yang lain, memungkinkan pembaruan tanpa downtime.
+- **A/B Testing**: Secara bersamaan menguji dua versi aplikasi untuk mengukur perbedaan kinerja.
+- **Perlindungan Failover**: Memastikan layanan tanpa gangguan dengan mengalihkan lalu lintas ke server cadangan jika terjadi kegagalan.
+
+## Baca Juga
+
 - [Traffic Distributor Installation](<https://docs.dewacloud.com/docs/traffic-distributor-installation/>)
 - [Traffic Distributor Injection](<https://docs.dewacloud.com/docs/traffic-distributor-injection/>)
 - [Blue-Green Deployment](<https://docs.dewacloud.com/docs/blue-green-deploy/>)

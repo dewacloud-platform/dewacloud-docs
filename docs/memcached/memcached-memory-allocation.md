@@ -79,6 +79,6 @@ Berkat optimisasi yang mudah dan langsung ini kita dapat meningkatkan penggunaan
 
 ## Baca Juga{#whats-next}
 
-- [Memcached System](https://docs.dewacloud.com/memcached/)
-- [Session Replication via Memcached](https://docs.dewacloud.com/replication-memcached/)
-- [PHP Sessions in Memcached](https://docs.dewacloud.com/php-sessions-memcached/)
+- [Memcached System](https://docs.dewacloud.com/docs/memcached/)
+- [Session Replication via Memcached](https://docs.dewacloud.com/docs/replication-memcached/)
+- [PHP Sessions in Memcached](https://docs.dewacloud.com/docs/memcached-php-sessions/)

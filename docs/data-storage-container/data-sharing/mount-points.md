@@ -6,7 +6,7 @@ title: Mount Points
 
 # Mount Points
 
-![mount points icon](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/data%20sharing/mount%20points/01-mount-points-icon.png" alt="mount points icon" width="30%"/>
 
 **Mount points** adalah fungsi berbagi data antara instance di dalam akun yang sama. Dimulai __dari klien__ dan menciptakan koneksi yang memungkinkan akses dan pengoperasian __data di server__ seolah-olah itu adalah file lokal. Platform menyediakan UI yang nyaman untuk operasi ini langsung di [Configuration Manager](<https://docs.dewacloud.com/docs/configuration-file-manager/>) bawaan. Dalam beberapa klik saja, Anda dapat menentukan direktori jauh yang terletak secara fisik di node lain tetapi harus dapat diakses pada container saat ini.
 
@@ -18,7 +18,7 @@ Saat membuat titik mount, platform mendukung dua protokol klien - **[NFS](<https
 
 1\. Jadi, untuk melakukan mount data ke container, klik tombol **Config** di sebelah container atau lapisan yang dipilih. Pada tab yang terbuka, beralih ke bagian _**Mount Points**_ di menu sebelah kiri Anda dan klik tombol **Mount**.
 
-![create new mount](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/data%20sharing/mount%20points/02-create-new-mount.png" alt="create new mount" width="100%"/>
 
 2\. Formulir yang terbuka menyediakan tiga jenis operasi berikut:
 
@@ -26,7 +26,7 @@ Saat membuat titik mount, platform mendukung dua protokol klien - **[NFS](<https
   * **Master Container** \- berbagi data di seluruh node dari lapisan yang sama dalam environment saat ini
   * **External Server** \- mengakses data dari server jarak jauh di luar akun PaaS
 
-![configure mount point](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/data%20sharing/mount%20points/03-configure-mount-point.png" alt="configure mount point" width="100%"/>
 
 3\. Setelah memilih jenis operasi yang diperlukan, berikan detail lain sebagai berikut:
 
@@ -67,14 +67,13 @@ Jika bukan Shared Storage Container dedikasi yang telah dipilih sebagai data con
 
 4\. Dalam sekejap, titik mount Anda akan dibuat dan ditambahkan ke daftar. Jadi, Anda dapat **Navigate to directory** (klik dua kali pada rekaman yang sesuai) atau **Unmount** ketika itu menjadi tidak perlu.
 
-![manage existing mount](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/data%20sharing/mount%20points/04-manage-existing-mount.png" alt="manage existing mount" width="100%"/>
 
 5\. Setelah menavigasi ke dalam, Anda akan melihat konten yang sama seperti di server jarak jauh Anda.
 
-![switch between nodes](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/data%20sharing/mount%20points/05-switch-between-nodes.png" alt="switch between nodes" width="100%"/>
 
-Berdasarkan konfigurasi mount, konten jarak jauh dapat diedit dari
-client atau tidak, serta tersedia untuk semua node lapisan atau hanya satu. Anda dapat beralih di antara node menggunakan daftar drop-down di menu sebelah kiri (dilingkari di atas).
+Berdasarkan konfigurasi mount, konten jarak jauh dapat diedit dari client atau tidak, serta tersedia untuk semua node lapisan atau hanya satu. Anda dapat beralih di antara node menggunakan daftar drop-down di menu sebelah kiri (dilingkari di atas).
 
 **Pertimbangkan** bahwa agar dapat diedit (yaitu jika klien diberikan hak RW), folder di server harus memiliki izin yang sesuai untuk pengguna klien (nama pengguna default dapat bervariasi untuk server yang berbeda - misalnya _root_ dan _jelastic_).
 
@@ -90,7 +89,7 @@ Di sini:
   * _**\{gid\}**_ \- pengidentifikasi grup, yang ditampilkan dalam file _**/etc/group**_
   * _**\{path\}**_ \- jalur ke direktori atau file yang ingin Anda ubah haknya
 
-![edit access permissions](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/data%20sharing/mount%20points/06-edit-access-permissions.png" alt="edit access permissions" width="100%"/>
 
 Platform mount points menyediakan sejumlah besar [skenario dan kemungkinan](<https://docs.dewacloud.com/docs/data-storage-container/>) untuk pengaturan dan pengendalian data tingkat lanjut.
 

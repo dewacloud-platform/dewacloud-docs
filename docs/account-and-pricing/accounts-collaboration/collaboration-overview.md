@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
-slug: /collaboration-overview
-title: Collaboration Overview
+slug: /account-collaboration
+title: Overview Kolaborasi
 ---
 # Kolaborasi Akun
 
@@ -21,9 +21,8 @@ Jika diberikan izin yang memadai, seorang anggota dapat membuat environment baru
 Setelah keluar dari kolaborasi, anggota tidak akan lagi memiliki akses ke environment yang dibagikan di akun utama, termasuk yang dibuat oleh mereka.
 :::
 
-## Baca Juga{#whats-next}
 
-  * [Peran & Kebijakan Kolaborasi](https://docs.dewacloud.com/docs/collaboration-roles-policies/)
-  * [Buat Kolaborasi](https://docs.dewacloud.com/docs/collaboration-create/)
-  * [Pengalaman Pengguna Kolaborasi](https://docs.dewacloud.com/docs/collaboration-user-experience/)
-  * [Bagikan Environment](https://docs.dewacloud.com/docs/share-environment/)
+* [Peran & Kebijakan Kolaborasi](https://docs.dewacloud.com/docs/collaboration-roles-policies/)
+* [Buat Kolaborasi](https://docs.dewacloud.com/docs/collaboration-create/)
+* [Pengalaman Pengguna Kolaborasi](https://docs.dewacloud.com/docs/collaboration-user-experience/)
+* [Bagikan Environment](https://docs.dewacloud.com/docs/share-environment/)

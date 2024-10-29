@@ -5,11 +5,9 @@ title: Replica Set Manual Setup
 ---
 # MongoDB Replication and Automated Failover: Configuration Guide
 
-[Vadym Lobzakov](<https://www.virtuozzo.com/company/blog/author/vadym-lobzakov/> "Posts by Vadym Lobzakov") | November 5, 2019 | [Containers](<https://www.virtuozzo.com/company/blog/category/containers/>), [DevOps PaaS](<https://www.virtuozzo.com/company/blog/category/devops-paas/>), [Installer](<https://www.virtuozzo.com/company/blog/category/installer/>)
-
 Replica set adalah istilah yang digunakan untuk mendefinisikan cluster database dengan beberapa node yang memiliki replikasi dan failover otomatis yang dikonfigurasi di antara mereka. Struktur semacam ini biasanya memerlukan jumlah anggota yang ganjil, baik dengan node [Arbiter](<https://docs.mongodb.com/manual/tutorial/add-replica-set-arbiter/>) atau tidak, untuk memastikan pemilihan database PRIMARY yang benar. Database yang terpilih ini akan memproses semua operasi tulis yang masuk, menyimpan informasi tentangnya dalam oplog-nya, di mana dapat diakses dan direplikasi oleh setiap anggota REPLIKA SEKUNDER untuk diterapkan pada dataset mereka. Dengan cara ini, semua server akan mewakili konten yang sama dan memastikan ketersediaannya.
 
-![mongodb replica set](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-1.png" alt="mongodb replica set" width="50%"/>
 
 Jika terjadi masalah tak terduga yang menyebabkan downtime database primary (misalnya, karena kegagalan perangkat keras atau gangguan koneksi), proses pemilihan baru akan secara otomatis dimulai, membantu memulihkan fungsi aplikasi yang normal, tanpa intervensi manual yang diperlukan. Dengan cara ini, replica set mewarisi manfaat [replikasi biasa](<https://www.virtuozzo.com/company/blog/mongodb-auto-clustering/>) (seperti redundansi failover, peningkatan ketersediaan data dan kapasitas baca, pemulihan bencana, dll.) dan sekaligus menghilangkan kompleksitas pengelolaan banyak database secara terpisah.
 
@@ -19,7 +17,7 @@ Jadi, berikut adalah instruksi sederhana yang akan menunjukkan kepada Anda cara 
 
 Untuk memulai, Anda memerlukan setidaknya tiga node MongoDB untuk mengonfigurasi replica set, jadi mari kita [create such an environment](<https://docs.jelastic.com/setting-up-environment/>). Dalam contoh ini, kami akan mengalokasikan instance MongoDB versi 4.0.10 dalam satu environment.
 
-![mongodb replica set environment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-2.png" alt="mongodb replica set environment" width="100%"/>
 
 Jika perlu, ubah **Environment Name** dan [Region](<https://docs.jelastic.com/environment-regions/>). Setelah instalasi selesai, Anda harus memastikan keamanan komunikasi node dengan bantuan file kunci autentikasi.
 
@@ -29,7 +27,7 @@ Autentikasi adalah proses jaminan keamanan penting yang memaksa setiap anggota r
 
 1\. Masuk ke salah satu node database melalui [Web SSH](<https://docs.jelastic.com/web-ssh-client/>).
 
-![mongodb replica set ssh](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-3.png" alt="mongodb replica set ssh" width="100%"/>
 
 2\. Gunakan file kunci Anda sendiri atau buat satu dengan [openssl](<https://en.wikipedia.org/wiki/OpenSSL>) (ukuran kunci dalam byte, misalnya 741, dan nama misalnya my.key) dengan perintah:
 
@@ -39,19 +37,19 @@ _**openssl rand -base64 741 > my.key**_
 
   * Klik pada tombol **Config** di sebelah node database Anda untuk mengakses [File Manager](<https://docs.jelastic.com/configuration-file-manager/>).
 
-![mongodb replica set config](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-4.png" alt="mongodb replica set config" width="100%"/>
 
   * Di tab konfigurasi yang dibuka, temukan file _**my.key**_ di bawah jalur: _**/home/jelastic/my.key**_ dan buka. Kemudian salin isinya ke clipboard.
 
-![mongodb replica set key](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-5.png" alt="mongodb replica set key" width="100%"/>
 
   * Di direktori **keys** (jalur lengkap adalah _**/var/lib/jelastic/keys**_), buat file yang akan digunakan oleh instance MongoDB untuk mengautentikasi satu sama lain, misalnya **mongo-set.key.**
 
-![mongodb replica set file](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-6.png" alt="mongodb replica set file" width="100%"/>
 
   * Tempelkan konten clipboard ke dalamnya dan terapkan perubahan dengan Save untuk semua instance. Dengan demikian file **mongo-set.key** telah didistribusikan ke semua node MongoDB.
 
-![mongodb replica set save](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-7.png" alt="mongodb replica set save" width="100%"/>
 
 ## Configure the MongoDB Replication
 
@@ -63,33 +61,35 @@ _**replSetName: db-replication**_
 
 2\. Tambahkan parameter **keyFile** di bagian **security** yang harus menentukan jalur ke file kunci Anda (yang dalam kasus kami adalah _**/var/lib/jelastic/keys/mongo-set.key**_).
 
-![mongodb replica set security](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-8.png" alt="mongodb replica set security" width="100%"/>
 
 3\. Segera **Save** perubahan **untuk semua instance** menggunakan tombol yang sesuai di jendela editor.
 
 4\. **Restart** node **DB** Anda agar parameter konfigurasi baru diterapkan.
 
-![mongodb replica set restart container](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-9.png" alt="mongodb replica set restart container" width="100%"/>
 
 **Note:** Perlu diingat bahwa setelah Anda menyelesaikan konfigurasi replica set, proses pemilihan PRIMARY database baru akan dipanggil selama semua node restart atau restart node PRIMARY (yaitu downtime database PRIMARY).
 
 5\. Selanjutnya, akses server MongoDB yang Anda anggap akan digunakan sebagai PRIMARY melalui protokol SSH.
 
-![mongodb replica set restart node](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-10.png" alt="mongodb replica set restart node" width="100%"/>
 
 **Note:** Setelah database PRIMARY dipilih, anggota replica set lainnya akan menjadi tidak dapat diakses untuk operasi tulis langsung, yang berarti bahwa setiap perubahan, konfigurasi, dll. (termasuk akses ke panel admin web) hanya dapat dilakukan untuk node PRIMARY yang saat ini. Jadi, Anda harus mengubah string koneksi di aplikasi Anda ke node PRIMARY yang baru, kecuali Anda telah mengatur [priorities](<https://docs.mongodb.com/manual/tutorial/force-member-to-be-primary/>) untuk semua anggota replica set yang menentukan satu node sebagai PRIMARY yang diutamakan.
 
 6\. Akses database yang harus direplikasi, dengan kredensial pengguna admin yang sesuai:  
 
-_mongo -u **{user}** -p **{password} {DB_name}**_
+```
+mongo -u {user} -p {password} {DB_name}
+```
 
-![mongodb replica set access](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-11.png" alt="mongodb replica set access" width="100%"/>
 
 Di mana:
 
-  * _**{user}**_ – nama pengguna administrator (dikirim ke email Anda, biasanya admin secara default)
-  * _**{password}**_ – kata sandi untuk pengguna DB yang sesuai (dapat ditemukan dalam email yang sama)
-  * _**{DB_name}**_ – nama database yang ingin Anda replikasi dalam replica set ini (kami akan menggunakan yang default admin)
+  * `{user}` – nama pengguna administrator (dikirim ke email Anda, biasanya admin secara default)
+  * `{password}` – kata sandi untuk pengguna DB yang sesuai (dapat ditemukan dalam email yang sama)
+  * `{DB_name}` – nama database yang ingin Anda replikasi dalam replica set ini (kami akan menggunakan yang default admin)
 
 **Note:** Jika pemilihan baru terjadi, kredensial pengguna admin untuk masuk ke database PRIMARY yang baru akan sama dengan yang Anda gunakan untuk yang lama.
 
@@ -102,10 +102,10 @@ rs.initiate()
 
 Jelas, nilai dalam tanda kurung harus diganti dengan data yang sesuai, yaitu:
 
-  * _**{replica_set}**_ – nama grup database Anda yang direplikasi, ditentukan di awal bagian ini (db-replication dalam kasus kami)
-  * _**{current_db_ip}**_ – alamat IP dari kontainer database yang dipilih
+  * `{replica_set}` – nama grup database Anda yang direplikasi, ditentukan di awal bagian ini (db-replication dalam kasus kami)
+  * `{current_db_ip}` – alamat IP dari kontainer database yang dipilih
 
-![mongodb replica set parameters](#)  
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-12.png" alt="mongodb replica set parameters" width="100%"/>
 
 Dalam contoh kami:
 
@@ -113,23 +113,23 @@ Dalam contoh kami:
 **config = {_id : "db-replication", members : [{_id : 0, host:"172.25.2.119:27017"},]}**
 ```
 
-![mongodb replica set configuration](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-13.png" alt="mongodb replica set configuration" width="100%"/>
 
 _**rs.initiate()**_
 
-![mongodb replica set setup](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-14.png" alt="mongodb replica set setup" width="100%"/>
 
-8\. Eksekusi perintah berikut untuk database lainnya di mana **{db_ip}** adalah alamat IP dari setiap database:
+8\. Eksekusi perintah berikut untuk database lainnya di mana `{db_ip}` adalah alamat IP dari setiap database:
 
 ```
-rs.add("**{db_ip}**:27017")
+rs.add("{db_ip}:27017")
 ```
 
-![mongodb replica set add](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-15.png" alt="mongodb replica set add" width="100%"/>
 
 9\. Setelah Anda menambahkan semua anggota replikasi, Anda akan mendapatkan replica set yang sepenuhnya fungsional. Jika Anda ingin memastikan bahwa semuanya dikonfigurasi dengan benar, eksekusi perintah **rs.status()** untuk mendapatkan informasi lengkap mengenai replica set Anda.
 
-![mongodb replica set status](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-16.png" alt="mongodb replica set status" width="100%"/>
 
 ## ReplicaSet Arbiter
 
@@ -146,7 +146,8 @@ Mari kita tambahkan node Arbiter tambahan ke replica set kami:
 
 1\. Skalakan cluster database secara horizontal dengan satu node:
 
-![mongodb replica set add arbiter](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-17.png" alt="mongodb replica set add arbiter" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-18.png" alt="mongodb replica set add arbiter2" width="100%"/>
 
 2\. Di direktori **keys**, buat file kunci **mongo-set.key** dan tempelkan konten file yang serupa dari node database yang sebelumnya dikonfigurasi.
 
@@ -157,23 +158,23 @@ Mari kita tambahkan node Arbiter tambahan ke replica set kami:
 
 4\. Restart node yang baru ditambahkan untuk menerapkan parameter konfigurasi.
 
-![mongodb replica set restart](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-19.png" alt="mongodb replica set restart" width="100%"/>
 
 **Note:** Jangan restart semua node karena itu akan menyebabkan pemilihan PRIMARY baru kecuali Anda telah menetapkan prioritas untuk memaksa node tertentu untuk dipilih sebagai node database PRIMARY.
 
 5\. Sekarang Arbiter siap ditambahkan ke replica set. Di node PRIMARY, keluarkan perintah untuk menambahkan arbiter ke cluster:
 
 ```
-rs.addArb("**{db_ip}**:27017")
+rs.addArb("{db_ip}:27017")
 ```
 
-_Di mana **{db_ip}** adalah alamat IP dari node yang baru ditambahkan._  
+_Di mana `{db_ip}` adalah alamat IP dari node yang baru ditambahkan._  
 
-![mongodb replica set arbiter](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-20.png" alt="mongodb replica set arbiter" width="100%"/>
 
 6\. Terakhir, mari kita periksa apakah node yang baru ditambahkan telah menjadi Arbiter atau tidak. Untuk melakukan ini, masuk ke node baru melalui SSH dan hubungkan instance MongoDB dengan kredensial dari email yang sesuai yang Anda terima saat pembuatan node.  
-
-![mongodb replica set arbiter access](#)  
+ 
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-21.png" alt="mongodb replica set arbiter access" width="100%"/>
 
 Seperti yang Anda lihat, node yang baru ditambahkan bertindak sebagai Arbiter dari **db-replication**, memastikan quorum dalam situasi apa pun.
 
@@ -185,11 +186,12 @@ Jelas, Anda akan memerlukan server aplikasi untuk itu (misalnya, Apache), jadi t
 
 1\. Tekan tombol **Change Environment Topology** dan tambahkan server.
 
-![mongodb replica set change topology](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-22.png" alt="mongodb replica set change topology" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-23.png" alt="mongodb replica set change topology2" width="100%"/>
 
 2\. Buka tab Configuration Manager untuk server **Apache** yang ditambahkan dengan memilih ikon **Config** di sampingnya.
 
-![mongodb replica set configure apache](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-24.png" alt="mongodb replica set configure apache" width="100%"/>
 
 3\. Navigasi ke direktori _**/var/www/webroot/ROOT**_, buka file **index.php** dan tempelkan kode berikut alih-alih konten defaultnya:
 
@@ -212,39 +214,39 @@ try {
 
 Di mana nilai berikut harus diganti dengan data yang sesuai:
 
-  * _**{replica_set_name}**_ – nama replica set Anda
-  * _**{db_username}**_ – pengguna admin dari database PRIMARY yang dipilih (admin, secara default)
-  * _**{db_password}**_ – kata sandi pengguna di atas
-  * _**{NodeID}**_ – nomor identifikasi node yang sesuai, yang dapat ditemukan di dashboard Jelastic
-  * _**{environment_domain}**_ \- domain environment yang dapat ditemukan di dashboard Jelastic
+  * `{replica_set_name}` – nama replica set Anda
+  * `{db_username}` – pengguna admin dari database PRIMARY yang dipilih (admin, secara default)
+  * `{db_password}` – kata sandi pengguna di atas
+  * `{NodeID}` – nomor identifikasi node yang sesuai, yang dapat ditemukan di dashboard Jelastic
+  * `{environment_domain}` \- domain environment yang dapat ditemukan di dashboard Jelastic
 
-![mongodb replica set domain](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-25.png" alt="mongodb replica set domain" width="60%"/>
 
 **Note:** Anda perlu menyebutkan ID dari setiap node yang termasuk dalam replica set Anda, dalam bagian mongodbConnectionURI yang sesuai.
 
 Sebagai hasilnya, Anda akan mendapatkan set string yang serupa:
 
-![mongodb replica set strings](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-26.png" alt="mongodb replica set strings" width="100%"/>
 
 Jangan lupa untuk **Save** file ini.
 
-4\. Apache memerlukan modul khusus untuk dapat [berinteraksi dengan server MongoDB](<https://docs.jelastic.com/connection-to-mongodb-for-php/>), jadi Anda perlu menambahkannya dalam konfigurasi.
+4\. Apache memerlukan modul khusus untuk dapat [berinteraksi dengan server MongoDB](<https://docs.jelastic.com/connection-to-mongodb-php/>), jadi Anda perlu menambahkannya dalam konfigurasi.
 
 Untuk itu, buka folder **etc** dan buka file **php.ini**. Temukan bagian **[mongodb]** dan hapus titik koma sebelum baris **extension=mongodb.so** untuk mengaktifkan ekstensi ini.
 
-![mongodb replica set extension](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-27.png" alt="mongodb replica set extension" width="100%"/>
 
 5\. Untuk menerapkan konfigurasi baru, klik **Save** dalam jendela editor dan tekan tombol **Restart Nodes** di samping server aplikasi Anda.
 
-![mongodb replica set restart server](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-28.png" alt="mongodb replica set restart server" width="100%"/>
 
 6\. Akhirnya, klik ikon **Open in Browser** di dekatnya.
 
-![mongodb replica set open](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-29.png" alt="mongodb replica set open" width="100%"/>
 
 Sebagai hasilnya, dalam tab browser baru, Anda akan melihat informasi tentang anggota replica set Anda dan aksesibilitas mereka.
 
-![mongodb replica set information](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-30.png" alt="mongodb replica set information" width="100%"/>
 
 Baris pertama menampilkan hasil pengecekan ketersediaan replica set, yang dilakukan dengan perintah "ping" (baris 6 dari **index.php**):
 
@@ -263,18 +265,3 @@ Dalam blok keluaran berikutnya, informasi lengkap tentang host replica set ditam
 Selain itu, Anda dapat memulai dan menghentikan salah satu node database Anda dan menyegarkan halaman ini untuk melacak perubahan. Dengan cara ini, Anda dapat memastikan bahwa cluster MongoDB Anda tersedia dan berfungsi sebagaimana mestinya, dan dengan demikian dapat diterapkan untuk kasus nyata sekarang juga!
 
 Dapatkan replica set MongoDB yang sangat tersedia sendiri dengan Jelastic PaaS, cukup daftar untuk [free trial di salah satu penyedia layanan](<https://jelastic.com/public-cloud-registration/>) dan ikuti instruksi.
-
-[Subscribe](</newsletter-subscription/>) Search
-
-## Categories
-
-  * [IaaS](</company/blog/category/iaas/>)
-  * [DevOps PaaS](</company/blog/category/devops-paas/>)
-  * [WordPress](</company/blog/category/wordpress/>)
-  * [Kubernetes](</company/blog/category/kubernetes/>)
-  * [Storage](</company/blog/category/storage/>)
-  * [Multi-Cloud](</company/blog/category/multi-cloud/>)
-  * [Webinars](</company/blog/category/video/webinars/>)
-  * [Case Studies](</company/blog/category/case-studies/>)
-  * [Product Updates](</company/blog/category/product-updates/>)
-  * [News](</company/blog/category/news/>)

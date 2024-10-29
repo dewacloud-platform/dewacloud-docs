@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /common-cases
+slug: /oom-killer-common-cases
 title: Common Cases
 ---
 # OOM Killer Resolutions: Common Cases
@@ -26,7 +26,7 @@ _taskrunner_ | Restart container untuk memulihkan proses
   
 ## Baca Juga
 
-  * [OOM Killer Troubleshooting](https://docs.dewacloud.com/docs/oom-killer-troubleshooting/)
+  * [OOM Killer Troubleshooting](https://docs.dewacloud.com/docs/oom-killer-issues/)
   * [Memory Leak Processes](https://docs.dewacloud.com/docs/oom-killer-leak-risk-processes/)
   * [Non-Leaking Processes](https://docs.dewacloud.com/docs/oom-killer-non-leaking-processes/)
   * [Auto-Deploy of Git Updates](https://docs.dewacloud.com/docs/git-svn-auto-deploy/)

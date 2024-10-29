@@ -1,17 +1,17 @@
 ---
 sidebar_position: 1
-slug: /wordpress-dashboard-overview
+slug: /wp-dashboard-overview
 title: WordPress Dashboard Overview
 ---
 
 # Ikhtisar Dashboard WordPress
 
-Virtuozzo Application Platform untuk WordPress menyediakan dashboard khusus yang dirancang dan dioptimalkan khusus untuk hosting WordPress. Ini memiliki integrasi mendalam dengan produk, menawarkan informasi diagnostik yang cukup dan opsi manajemen untuk melakukan semua operasi yang paling sering diperlukan tanpa membuat layar berantakan atau membebani pelanggan.
+Dewacloud Application Platform untuk WordPress menyediakan dashboard khusus yang dirancang dan dioptimalkan khusus untuk hosting WordPress. Ini memiliki integrasi mendalam dengan produk, menawarkan informasi diagnostik yang cukup dan opsi manajemen untuk melakukan semua operasi yang paling sering diperlukan tanpa membuat layar berantakan atau membebani pelanggan.
 
 Di bawah ini, kami akan memberikan ikhtisar tentang:
 
-- [WordPress Dashboard](https://docs.dewacloud.com/#wordpress-dashboard)
-- [Pengaturan Akun](https://docs.dewacloud.com/#account-settings)
+- [WordPress Dashboard](#wordpress-dashboard)
+- [Pengaturan Akun](#account-settings)
 
 ## WordPress Dashboard{#wordpress-dashboard}
 
@@ -27,7 +27,7 @@ Di bawah ini, kami akan memberikan ikhtisar tentang:
 
 ![dashboard tool panel](#)
 
-Selain itu, di sudut kanan atas halaman beranda, Anda dapat melihat tombol **Create New Project**. Pelajari lebih lanjut tentang panduan [WordPress Project Creation](https://docs.dewacloud.com/wp-dashboard-project-installation/).
+Selain itu, di sudut kanan atas halaman beranda, Anda dapat melihat tombol **Create New Project**. Pelajari lebih lanjut tentang panduan [WordPress Project Creation](https://docs.dewacloud.com/docs/wp-dashboard-project-installation/).
 
 3. Setiap proyek memiliki opsi berikut yang tersedia dari halaman beranda:
 
@@ -42,11 +42,11 @@ Selain itu, di sudut kanan atas halaman beranda, Anda dapat melihat tombol **Cre
 
 ![project management](#)
 
-Pelajari lebih lanjut di panduan [WordPress Project Management](https://docs.dewacloud.com/wp-dashboard-project-management/).
+Pelajari lebih lanjut di panduan [WordPress Project Management](https://docs.dewacloud.com/docs/wp-dashboard-project-management/).
 
 ## Pengaturan Akun{#account-settings}
 
-Di sudut kanan atas dashboard, Anda dapat menemukan menu untuk mengelola akun Virtuozzo Application Platform untuk WordPress Anda.
+Di sudut kanan atas dashboard, Anda dapat menemukan menu untuk mengelola akun Dewacloud Application Platform untuk WordPress Anda.
 
 1. Menampilkan alamat email akun dan Total Balance di bagian atas. Anda dapat mengklik tombol plus di samping saldo Anda untuk mengisinya kembali.
 
@@ -109,7 +109,7 @@ Platform mendukung tipe kunci berikut:
 - _EdDSA_
 - _RSA_
 
-Dalam dokumen yang terhubung, Anda dapat mempelajari lebih lanjut tentang [generating SSH keys](https://docs.dewacloud.com/ssh-generate-key/) dan [connecting via SSH Gate](https://docs.dewacloud.com/ssh-gate-access/).
+Dalam dokumen yang terhubung, Anda dapat mempelajari lebih lanjut tentang [generating SSH keys](https://docs.dewacloud.com/docs/ssh-generate-key/) dan [connecting via SSH Gate](https://docs.dewacloud.com/docs/ssh-gate-access/).
 
 3. Opsi **System Settings** akan membawa Anda ke bagian dengan data terkait manajemen proyek:
 
@@ -117,7 +117,7 @@ Dalam dokumen yang terhubung, Anda dapat mempelajari lebih lanjut tentang [gener
 - _Git Configuration_
 - _Backup Storage_
 
-3.1. Tab **SSL Certificates** mengelola sertifikat SSL pada akun. Ini secara otomatis mencantumkan semua [sertifikat Let’s Encrypt](https://docs.dewacloud.com/free-ssl-certificates-with-lets-encrypt/) yang diterbitkan untuk proyek Anda dan memungkinkan penambahan manual [custom SSL certificates](https://docs.dewacloud.com/custom-ssl/) dengan tombol **Add SSL**.
+3.1. Tab **SSL Certificates** mengelola sertifikat SSL pada akun. Ini secara otomatis mencantumkan semua [sertifikat Let’s Encrypt](https://docs.dewacloud.com/docs/let's-encrypt-ssl/) yang diterbitkan untuk proyek Anda dan memungkinkan penambahan manual [custom SSL certificates](https://docs.dewacloud.com/docs/custom-ssl/) dengan tombol **Add SSL**.
 
 ![settings SSL certificates](#)
 
@@ -154,7 +154,7 @@ Untuk menambahkan penyimpanan baru, klik tombol **Add Backup** dan berikan data 
 
 ![add backup storage](#)
 
-Klik **Add** saat siap. Produk penyimpanan baru Anda akan dibuat dalam beberapa menit. Pelajari lebih lanjut tentang [proses backup dan restore](https://docs.dewacloud.com/wordpress-backups/).
+Klik **Add** saat siap. Produk penyimpanan baru Anda akan dibuat dalam beberapa menit. Pelajari lebih lanjut tentang [proses backup dan restore](https://docs.dewacloud.com/docs/wordpress-backups/).
 
 4. Daftar Language memungkinkan mengubah lokalisasi dashboard ke bahasa yang diinginkan. Ketersediaan dan opsi yang tepat bergantung pada konfigurasi penyedia hosting layanan.
 
@@ -168,16 +168,16 @@ Gunakan toggle **Dark Mode** untuk beralih antara tema terang dan gelap dashboar
 - Terms Of Use
 - Privacy Policy
 
-6. Opsi terakhir **Log Out** akan mengakhiri sesi Anda saat ini dengan Virtuozzo Application Platform for WordPress.
+6. Opsi terakhir **Log Out** akan mengakhiri sesi Anda saat ini dengan Dewacloud Application Platform for WordPress.
 
 Anda perlu login kembali untuk melanjutkan pekerjaan Anda dengan dashboard.
 
 ## Baca Juga{#whats-next}
 
-- [WordPress PaaS](https://docs.dewacloud.com/virtuozzo-application-platform-for-wordpress/)
-- [WordPress Project Installation](https://docs.dewacloud.com/wp-dashboard-project-installation/)
-- [WordPress Project Management](https://docs.dewacloud.com/wp-dashboard-project-management/)
-- [WordPress Topologies](https://docs.dewacloud.com/wordpress-topologies/)
-- [WordPress Backups](https://docs.dewacloud.com/wordpress-backups/)
-- [WordPress Security Settings](https://docs.dewacloud.com/wordpress-security/)
-- [WordPress PHP Optimization](https://docs.dewacloud.com/wordpress-php-optimization/)
+- [WordPress PaaS](https://docs.dewacloud.com/docs/virtuozzo-application-platform-for-wordpress/)
+- [WordPress Project Installation](https://docs.dewacloud.com/docs/wp-dashboard-project-installation/)
+- [WordPress Project Management](https://docs.dewacloud.com/docs/wp-dashboard-project-management/)
+- [WordPress Topologies](https://docs.dewacloud.com/docs/wordpress-topologies/)
+- [WordPress Backups](https://docs.dewacloud.com/docs/wordpress-backups/)
+- [WordPress Security Settings](https://docs.dewacloud.com/docs/wordpress-security/)
+- [WordPress PHP Optimization](https://docs.dewacloud.com/docs/wordpress-php-optimization/)

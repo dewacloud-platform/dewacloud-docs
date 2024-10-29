@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-slug: /python-connection
+slug: /connection-to-mysql-python
 title: Python Connection
 ---
 # Python Application Connection to MySQL/MariaDB/Percona
@@ -9,7 +9,7 @@ title: Python Connection
 
 1. Masuk ke dashboard platform dan [buat environment baru](<https://docs.dewacloud.com/docs/setting-up-environment/>) dengan server _Python_ dan _MySQL_ (atau _Python_ dan _MariaDB_).
 
-![create Python MySQL environment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/connection-to-applications/python-connection/python-connection-1.png" alt="create Python MySQL environment" width="100%"/>
 
 :::tip
 Menempatkan instance dalam satu environment hanyalah contoh, Anda dapat membuat koneksi antara environment yang berbeda dengan cara yang sama.
@@ -17,7 +17,7 @@ Menempatkan instance dalam satu environment hanyalah contoh, Anda dapat membuat 
 
 2. Setelah environment dibuat, akses server aplikasi Anda melalui SSH Gate, misalnya dengan menekan tombol **[Web SSH](<https://docs.dewacloud.com/docs/web-ssh-client/>)**.
 
-![Python Web SSH button](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/connection-to-applications/python-connection/python-connection-2.png" alt="Python Web SSH button" width="100%"/>
 
 Emulator terminal dengan koneksi SSH yang otomatis terhubung ke node Anda akan terbuka di tab yang sesuai.
 
@@ -27,7 +27,7 @@ Emulator terminal dengan koneksi SSH yang otomatis terhubung ke node Anda akan t
 pip install mysql-connector==2.1.6
 ```
 
-![install Python MySQL connector](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/connection-to-applications/python-connection/python-connection-3.png" alt="install Python MySQL connector" width="100%"/>
 
 :::warning
 Untuk menggunakan versi yang lebih baru dari MySQL connector, Anda perlu menginstal **Protobuf C++** versi 2.6.0 atau di atasnya.
@@ -61,7 +61,7 @@ Di sini, Anda perlu menyesuaikan string koneksi (semua informasi yang diperlukan
   * _**\{host\}**_ \- tautan ke container MySQL / MariaDB Anda
   * _**\{database\}**_ \- database yang akan diakses (misalnya, default _mysql_)
 
-![Python MySQL connection code](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/connection-to-applications/python-connection/python-connection-4.png" alt="Python MySQL connection code" width="100%"/>
 
 Skrip ini akan menghubungkan ke server database yang ditentukan dengan kredensial yang diberikan dan akan mencetak kesalahan koneksi (jika ada) atau hanya menampilkan frasa “_You are connected!_”.
 
@@ -71,13 +71,13 @@ Skrip ini akan menghubungkan ke server database yang ditentukan dengan kredensia
 python script.py
 ```
 
-![Python MySQL connection test](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/connection-to-applications/python-connection/python-connection-5.png" alt="Python MySQL connection test" width="100%"/>
 
 Jika string “_You are connected!_” muncul di dalam terminal, koneksi berhasil. Sekarang, Anda bisa yakin bahwa server database Anda dapat diakses dan Anda dapat [memperluas kode](<https://dev.mysql.com/doc/connector-python/en/>) untuk mengeksekusi tindakan yang diperlukan.
 
 ## Baca Juga{#whats-next}
 
-  * [Java Connection to MySQL](<https://docs.dewacloud.com/docs/connection-to-mysql/>)
+  * [Java Connection to MySQL](<https://docs.dewacloud.com/docs/connection-to-mysql-java/>)
   * [PHP Connection to MySQL](<https://docs.dewacloud.com/docs/connection-to-mysql-php/>)
   * [Node.js Connection to MySQL](<https://docs.dewacloud.com/docs/connection-to-mysql-nodejs/>)
   * [MySQL Master Slave Replication](<https://docs.dewacloud.com/docs/database-master-slave-replication/>)

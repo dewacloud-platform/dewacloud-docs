@@ -1,12 +1,12 @@
 ---
 sidebar_position: 5
-slug: /session-replication-via-memcached
+slug: /replication-memcached
 title: Session Replication via Memcached
 ---
 
 # Replikasi Sesi via Memcached
 
-Dewacloud menyediakan [Replikasi Session](https://docs.dewacloud.com/session-replication/) antara instance web-server dengan bantuan multicast. Namun Anda juga bisa menggunakan **Replikasi Session via Memcached**.
+Dewacloud menyediakan [Replikasi Session](https://docs.dewacloud.com/docs/auto-clustering/) antara instance web-server dengan bantuan multicast. Namun Anda juga bisa menggunakan **Replikasi Session via Memcached**.
 
 Untuk menggunakan memcached untuk replikasi sesi ikuti petunjuk berikut.
 
@@ -90,6 +90,6 @@ Itu saja. Sekarang Anda memiliki cluster high availability dengan semua keuntung
 
 ## Baca Juga{#whats-next}
 
-- [Memcached Configuration](https://docs.dewacloud.com/memcached-configuration/)
-- [Memcached Memory Allocation](https://docs.dewacloud.com/memcached-memory-allocation/)
-- [PHP Sessions in Memcached](https://docs.dewacloud.com/memcached-php-sessions/)
+- [Memcached Configuration](https://docs.dewacloud.com/docs/memcached-configuration/)
+- [Memcached Memory Allocation](https://docs.dewacloud.com/docs/memcached-memory-allocation/)
+- [PHP Sessions in Memcached](https://docs.dewacloud.com/docs/memcached-php-sessions/)

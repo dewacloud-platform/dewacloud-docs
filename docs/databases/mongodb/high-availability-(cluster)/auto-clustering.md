@@ -11,7 +11,7 @@ Virtuozzo Application Platform menyediakan pengelompokan otomatis untuk tumpukan
   * **skala dan autodiscovery** – node baru yang ditambahkan selama [horizontal scaling](<https://docs.dewacloud.com/docs/horizontal-scaling/>) terhubung ke cluster dengan semua penyesuaian yang diperlukan diterapkan secara otomatis
   * **failover otomatis** – node database yang tidak tersedia sementara atau memiliki latensi tinggi secara otomatis dikecualikan dari cluster dan ditambahkan kembali setelah koneksi dipulihkan
 
-![MongoDB Replica Set](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/auto-clustering/auto-clustering-1.png" alt="MongoDB Replica Set" width="60%"/>
 
 Semua manfaat ini dapat dicapai hanya dalam beberapa klik dalam wizard topologi. Jelajahi langkah-langkah di bawah ini untuk mengaktifkan auto-clustering untuk database MongoDB Anda di PaaS.
 
@@ -44,21 +44,23 @@ Seluruh proses pembuatan auto-cluster MongoDB dapat dilakukan dalam beberapa kli
 
 1\. Buka wizard topologi dengan tombol **New Environment** di pojok kiri atas dashboard, pilih database **MongoDB**, dan aktifkan **[Auto-Clustering](<https://docs.dewacloud.com/docs/auto-clustering/>)** melalui switcher yang sesuai.
 
-![MongoDB auto-clustering](#)
+
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/auto-clustering/auto-clustering-2.png" alt="MongoDB auto-clustering" width="100%"/>
 
 :::tip
 Beberapa spesifikasi topologi cluster MongoDB tercantum di bawah ini: 4 GiB RAM (32 cloudlets) direkomendasikan untuk pekerjaan yang tepat dari node replica set. Secara default, jumlah cloudlets ini ditambahkan sebagai batas skala dinamis, sehingga Anda tidak akan dikenakan biaya kecuali sumber daya benar-benar digunakan. Jumlah minimum node yang diperlukan untuk auto-cluster MongoDB adalah 3.
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/auto-clustering/auto-clustering-3.png" alt="MongoDB recommended specs" width="50%"/>
 :::
 
 Konfigurasikan parameter lainnya sesuai kebutuhan Anda ([public IPs](<https://docs.dewacloud.com/docs/public-ip/>), [region](<https://docs.dewacloud.com/docs/environment-regions/>), dll.) dan klik **Create**.
 
 2\. Tunggu beberapa menit hingga platform mengonfigurasi cluster untuk Anda.
 
-![MongoDB cluster](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/auto-clustering/auto-clustering-4.png" alt="MongoDB cluster" width="100%"/>
 
 3\. Setelah instalasi, Anda akan menerima email dengan kredensial replica set:
 
-![email with MongoDB credentials](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/auto-clustering/auto-clustering-5.png" alt="email with MongoDB credentials" width="100%"/>
 
 Anda dapat menggunakan kredensial ini untuk mengakses panel admin atau untuk membangun koneksi dari aplikasi Anda ke node primary dari replica set.
 
@@ -75,7 +77,7 @@ Di mana:
 
 Koneksi aplikasi yang diuraikan di atas dianggap telah dibuat dalam satu platform hosting. Namun, jika diperlukan, Anda dapat membuat koneksi aplikasi eksternal ke replica set melalui [SLB](<https://docs.dewacloud.com/docs/shared-load-balancer/>). Dalam hal ini, Anda hanya perlu mempertahankan koneksi ke node primary untuk read/writes melalui [endpoints](<https://docs.dewacloud.com/docs/endpoints/>).
 
-![MongoDB endpoint](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/auto-clustering/auto-clustering-6.png" alt="MongoDB endpoint" width="100%"/>
 
 Jika Anda perlu membaca dari sekunder, Anda harus menyesuaikan kode aplikasi Anda untuk melakukan pembacaan dari sekunder dalam thread terpisah seperti yang Anda lakukan untuk primary. Bagaimanapun, untuk kasus seperti itu, Anda harus menghapus parameter _**replicaSet**_ dari string koneksi sehingga terlihat sebagai berikut:
 
@@ -85,7 +87,7 @@ client = new MongoClient("mongodb://admin:bfef7418d@node540102-mongo-cluster.mad
 
 4\. Secara default, auto-cluster memanfaatkan panel administrasi [Mongo Express](<https://github.com/mongo-express/mongo-express>) yang menyediakan dukungan untuk replica set.
 
-![Mongo Express admin panel](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/auto-clustering/auto-clustering-7.png" alt="Mongo Express admin panel" width="100%"/>
 
 5\. Anda juga dapat terhubung ke database Anda melalui mongo shell langsung di terminal Anda (misalnya, menggunakan opsi **[Web SSH](<https://docs.dewacloud.com/docs/web-ssh-client/>)** yang terintegrasi).
 
@@ -96,14 +98,13 @@ mongosh -u {user} -p {password} {DB_name}
 :::tip
 Jika bekerja dengan versi database yang lebih lama, gunakan perintah mongo (untuk MongoDB 3.x, 4.x) alih-alih mongosh (untuk MongoDB 6.x, 7.x) dengan parameter yang sama.
 :::
-
-![Mongo SSH connection](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/auto-clustering/auto-clustering-8.png" alt="Mongo SSH connection" width="100%"/>
 
 Di mana:
 
-  * _**{user}**_ – nama pengguna administrator (dikirim ke email Anda, _admin_ secara default)
-  * _**{password}**_ – kata sandi untuk pengguna DB yang sesuai (dapat ditemukan dalam email yang sama)
-  * _**{DB_name}**_ – nama database yang ingin Anda akses (kami akan menggunakan yang default _admin_)
+  * `{user}` – nama pengguna administrator (dikirim ke email Anda, _admin_ secara default)
+  * `{password}` – kata sandi untuk pengguna DB yang sesuai (dapat ditemukan dalam email yang sama)
+  * `{DB_name}` – nama database yang ingin Anda akses (kami akan menggunakan yang default _admin_)
 
 6\. Anda dapat memeriksa status replica set dengan perintah yang sesuai:
 
@@ -111,7 +112,7 @@ Di mana:
 rs.status()
 ```
 
-![Mongo replica status](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/auto-clustering/auto-clustering-9.png" alt="Mongo replica status" width="100%"/>
 
 Seperti yang Anda lihat, replica set (dengan nama _**rs0**_ default) sedang berjalan. Perintah [replica set lainnya](<https://www.mongodb.com/docs/manual/reference/method/js-replication/>) dapat ditemukan di dokumentasi resmi. Misalnya, gunakan operasi _**rs.conf()**_ jika Anda ingin melihat konfigurasi replica set.
 

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-slug: /corruption-diagnostic-add-on
+slug: /db-corruption-diagnostic-add-on
 title: Corruption Diagnostic Add-On
 ---
 # MySQL/MariaDB/Percona Corruption Diagnostic Add-On
@@ -21,7 +21,7 @@ Add-on dapat dipasang baik secara otomatis bersama dengan instalasi database clu
 
 1\. Pergi ke bagian **Add-Ons** di Marketplace dan pilih add-on **Database Corruption Diagnostic**.
 
-![Marketplace Corruption Diagnostic add-on](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/corruption-diagnostic-addon/corruption-diagnostic-addon-1.png" alt="Marketplace Corruption Diagnostic add-on" width="100%"/>
 
 2\. Pada jendela instalasi yang terbuka, berikan data yang diperlukan:
 
@@ -29,7 +29,7 @@ Add-on dapat dipasang baik secara otomatis bersama dengan instalasi database clu
   * **Environment name** \- pilih environment dengan cluster database yang diperlukan dari daftar
   * **Nodes** \- pilih layer dengan cluster database
 
-![install Corruption Diagnostic add-on](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/corruption-diagnostic-addon/corruption-diagnostic-addon-2.png" alt="install Corruption Diagnostic add-on" width="100%"/>
 
 Klik **Install** dan tunggu sebentar hingga add-on terpasang.
 
@@ -37,7 +37,7 @@ Klik **Install** dan tunggu sebentar hingga add-on terpasang.
 
 1\. Anda bisa menemukan add-on _**Database Corruption Diagnostic**_ di bawah tab **Add-On** untuk lapisan database.
 
-![installed add-ons](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/corruption-diagnostic-addon/corruption-diagnostic-addon-3.png" alt="installed add-ons" width="100%"/>
 
 2\. Klik tombol **Corruption Diagnostic** untuk menjalankan diagnostik untuk database Anda.
 
@@ -45,11 +45,11 @@ Klik **Install** dan tunggu sebentar hingga add-on terpasang.
 Operasi ini akan menghentikan layanan database sementara, jadi sadari waktu henti sebelum mengonfirmasi.
 :::
 
-![confirm corruption diagnostic](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/corruption-diagnostic-addon/corruption-diagnostic-addon-4.png" alt="confirm corruption diagnostic" width="60%"/>
 
 3\. Dalam beberapa menit, Anda akan melihat hasil diagnostik dalam notifikasi pop-up dengan tautan ke file _**/var/log/db_recovery.log**_ untuk lebih banyak detail.
 
-![diagnostic results](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/corruption-diagnostic-addon/corruption-diagnostic-addon-5.png" alt="diagnostic results" width="60%"/>
 
 Jika menemukan data yang korrup, disarankan untuk memulihkan database Anda dari backup. Anda bisa menggunakan add-on **[Backup/Restore](<https://docs.dewacloud.com/docs/db-backup-restore-addon/>)** untuk menjadwalkan pembuatan backup secara teratur, memastikan Anda selalu memiliki backup untuk memulihkan database Anda dalam keadaan darurat.
 

@@ -1,13 +1,13 @@
 ---
 sidebar_position: 3
-slug: /ssl-connection-to-postgresql
+slug: /ssl-for-pgsql
 title: SSL Connection to PostgreSQL
 ---
 # Establishing SSL Connection to PostgreSQL DB Server
 
 Ketika berusaha menjaga informasi dalam database PostgreSQL Anda tetap aman, hal pertama yang perlu Anda lakukan adalah mengenkripsi semua koneksi untuk melindungi kredensial otentikasi (username / password) dan data yang disimpan dari penyadapan. Panduan ini dimaksudkan untuk membantu Anda dalam membangun koneksi SSL yang aman ke container PostgreSQL Anda yang di-host di platform.
 
-![SSL for PostgreSQL](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/ssl-connection/ssl-connection-1.png" alt="SSL for PostgreSQL" width="70%"/>
 
 Di bawah ini, kami akan mengeksplorasi [penyesuaian server database](<https://docs.dewacloud.com/docs/#postgresql-server-configuration>) yang tepat, diperlukan untuk pengaktifan SSL, dan pembuatan sertifikat untuk itu. Kemudian, kami akan membuat dan menambahkan sertifikat untuk mesin [klien](<https://docs.dewacloud.com/docs/#client-certificates>), dan akhirnya, akan membangun koneksi aman ke server kami melalui alat [pgAdmin](<https://docs.dewacloud.com/docs/#establish-connection-via-pgadmin>). Jadi, mari kita mulai!
 
@@ -15,7 +15,7 @@ Di bawah ini, kami akan mengeksplorasi [penyesuaian server database](<https://do
 
 Jelas, untuk tutorial ini, kita akan menggunakan environment dengan database PostgreSQL di dalamnya - Anda dapat dengan mudah [membuatnya](<https://docs.dewacloud.com/docs/setting-up-environment/>) jika Anda belum melakukannya.
 
-![create PostgreSQL database](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/ssl-connection/ssl-connection-2.png" alt="create PostgreSQL database" width="100%"/>
 
 1\. Untuk memulai, hubungkan ke server database Anda melalui [SSH Gate](<https://docs.dewacloud.com/docs/ssh-gate/>).
 
@@ -26,7 +26,7 @@ Jika Anda belum melakukan operasi serupa sebelumnya, Anda perlu:
 - mengakses akun Anda melalui protokol SSH
 :::
 
-![connect to PostgreSQL via SSH](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/ssl-connection/ssl-connection-3.png" alt="connect to PostgreSQL via SSH" width="100%"/>
 
 2\. Sekarang, agar dapat bekerja dengan SSL, Anda perlu menambahkan tiga file berikut ke direktori server **/var/lib/pgsql/data**:
 
@@ -51,7 +51,7 @@ Jadi, navigasikan ke folder yang disebutkan dan lanjutkan dengan langkah-langkah
     openssl genrsa -des3 -out server.key 1024
     ```
 
-![generate SSL private key](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/ssl-connection/ssl-connection-4.png" alt="generate SSL private key" width="100%"/>
 
 Selama pembuatan _server.key_, Anda akan diminta untuk _pass phrase_ - tentukan dan konfirmasi untuk menyelesaikan pembuatan.
 
@@ -61,7 +61,7 @@ Selama pembuatan _server.key_, Anda akan diminta untuk _pass phrase_ - tentukan 
     openssl rsa -in server.key -out server.key
     ```
 
-![remove pass phrase from SSL key](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/ssl-connection/ssl-connection-5.png" alt="remove pass phrase from SSL key" width="100%"/>
 
 Masukkan kembali pass phrase satu kali lagi untuk konfirmasi.
 
@@ -72,7 +72,7 @@ Masukkan kembali pass phrase satu kali lagi untuk konfirmasi.
     chown postgres.postgres server.key
     ```
 
-![change SSL key owner and permissions](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/ssl-connection/ssl-connection-6.png" alt="change SSL key owner and permissions" width="100%"/>
 
 4\. Sekarang, Anda perlu membuat _sertifikat server_ berdasarkan file _server.key_ Anda, misalnya:
 
@@ -80,7 +80,7 @@ Masukkan kembali pass phrase satu kali lagi untuk konfirmasi.
     openssl req -new -key server.key -days 3650 -out server.crt -x509 -subj '/C=US/ST=California/L=PaloAlto/O=Jelastic/CN=mysite.com/emailAddress=mail@jelastic.com'
     ```
 
-![create server SSL certificate](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/ssl-connection/ssl-connection-7.png" alt="create server SSL certificate" width="100%"/>
 
 :::warning
 Diperlukan untuk mengatur data pribadi Anda untuk parameter _subj_ jika sertifikat dimaksudkan untuk digunakan dalam produksi:
@@ -96,7 +96,7 @@ Anda juga dapat melewatkan parameter _subj_ dalam perintah dan memasukkan semua 
     cp server.crt root.crt
     ```
 
-![copy server SSL certificate](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/ssl-connection/ssl-connection-8.png" alt="copy server SSL certificate" width="100%"/>
 
 Sekarang, karena Anda sudah memiliki semua tiga file sertifikat, Anda dapat melanjutkan ke konfigurasi database PostgreSQL yang diperlukan untuk aktivasi dan penggunaan SSL.
 
@@ -114,7 +114,7 @@ Gantikan isi defaultnya dengan baris berikut:
     hostssl all         webadmin    0.0.0.0/0             md5 clientcert=verify-full
     ```
 
-![setup SSL via pg_hba file](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/ssl-connection/ssl-connection-9.png" alt="setup SSL via pg_hba file" width="100%"/>
 
 :::warning
 Jika Anda ingin bekerja dengan database sebagai pengguna selain _webadmin_ default, ubah nilai yang sesuai dalam baris terakhir konfigurasi ke nama yang diperlukan. Dalam hal ini, Anda perlu menggunakan nama pengguna yang sama untuk semua perintah selanjutnya (kami akan menunjukkan di mana ini diperlukan). Juga, untuk versi PostgreSQL yang lebih lama (10 dan lebih rendah), Anda perlu mengganti nilai _clientcert_ ke "md5 clientcert=1" dalam baris terakhir dari konfigurasi:
@@ -134,7 +134,7 @@ Arahkan ke bagian _Security and Authentication_ (sekitar baris _80_) dan aktifka
     ssl_ca_file = 'root.crt'
     ```
 
-![enable SSL on PostgreSQL server](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/ssl-connection/ssl-connection-10.png" alt="enable SSL on PostgreSQL server" width="100%"/>
 
 Jangan lupa untuk menyimpan perubahan ini.
 
@@ -144,7 +144,7 @@ Jangan lupa untuk menyimpan perubahan ini.
     sudo service postgresql restart
     ```
 
-![restart PostgreSQL server](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/ssl-connection/ssl-connection-11.png" alt="restart PostgreSQL server" width="100%"/>
 
 ## Client Certificates{#client-certificates}
 
@@ -159,7 +159,7 @@ Begitu di dalam, buatlah kunci pribadi untuk klien (juga tanpa _pass phrase_, sa
     openssl rsa -in /tmp/postgresql.key -out /tmp/postgresql.key
     ```
 
-![generate SSL key and remove pass phrase](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/ssl-connection/ssl-connection-12.png" alt="generate SSL key and remove pass phrase" width="100%"/>
 
 2\. Selanjutnya, buat sertifikat SSL untuk pengguna database PostgreSQL Anda (_webadmin_ secara default) dan tanda tangani dengan file _**root.crt**_ tepercaya di server.
 
@@ -174,7 +174,7 @@ Walaupun biasanya data untuk parameter _subj_ dapat diubah ke data pribadi Anda 
 _file_ _root.crt_ dan _server.key_ harus berada di folder yang sama dengan perintah kedua dieksekusi dari; jika tidak, jalur lengkap ke mereka harus ditentukan.
 :::
 
-![create and sign certificate for SSL user](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/ssl-connection/ssl-connection-13.png" alt="create and sign certificate for SSL user" width="100%"/>
 
 3\. Setelah file - _postgresql.key_, _postgresql.crt_, _root.crt_ siap, Anda perlu memindahkannya ke folder **.postgresql** di mesin klien Anda (untuk itu, Anda dapat menggunakan [FTP add-on](<https://docs.dewacloud.com/docs/ftp-ftps-support/>) atau cukup salin dan tempel isi file).
 
@@ -182,7 +182,7 @@ _file_ _root.crt_ dan _server.key_ harus berada di folder yang sama dengan perin
 Jika direktori tersebut belum ada, buatlah dengan perintah _mkdir ~/.postgresql_ atau perintah serupa sesuai dengan distribusi OS Anda.
 :::
 
-![SSL certificates for client](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/ssl-connection/ssl-connection-14.png" alt="SSL certificates for client" width="100%"/>
 
 Juga, jika diperlukan, Anda dapat mengatur izin baca kunci untuk pemilik saja dengan perintah _chmod 0400 ~/.postgresql/postgresql.key_ untuk lebih meningkatkan keamanan.
 
@@ -198,11 +198,11 @@ Akhirnya, setelah konfigurasi server dan klien selesai, Anda siap untuk membangu
 
 Kami akan mempertimbangkan kasus terakhir - akses pengaturan environment, beralih ke bagian _**Endpoints**_ dan **Tambah** endpoint baru dengan tombol bernama sama di bagian atas.
 
-![attach endpoint to PostgreSQL](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/ssl-connection/ssl-connection-15.png" alt="attach endpoint to PostgreSQL" width="100%"/>
 
 2\. Sekarang, setelah Anda memiliki titik akses, jalankan klien **pgAdmin 3** Anda dan pilih opsi **New Server Registration**.
 
-![configure properties for connection via pgAdmin3](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/ssl-connection/ssl-connection-16.png" alt="configure properties for connection via pgAdmin3" width="100%"/>
 
 Di tab _**Properties**_ dari jendela yang terbuka, tentukan data berikut:
 
@@ -216,7 +216,7 @@ Sisa kolom dapat dibiarkan tidak berubah atau disesuaikan sesuai kebutuhan Anda.
 
 3\. Selanjutnya, beralih ke tab _**SSL**_ dan, untuk baris bernama sama, pilih opsi _require_ dari daftar drop-down.
 
-![configure SSL for connection via pgAdmin3](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/ssl-connection/ssl-connection-17.png" alt="configure SSL for connection via pgAdmin3" width="100%"/>
 
 Itu saja! Sertifikat yang diperlukan akan dimuat secara otomatis selama pembentukan koneksi pertama, jadi cukup klik **OK** untuk mulai mengelola database Anda melalui koneksi aman.
 

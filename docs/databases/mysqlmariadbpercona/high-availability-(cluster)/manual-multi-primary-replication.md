@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-slug: /manual-multi-primary-replication
+slug: /multi-primary-replication
 title: Manual Multi-Primary Replication
 ---
 # Multi-Primary Replication untuk MySQL/MariaDB/Percona
@@ -17,7 +17,7 @@ Hal pertama yang Anda butuhkan untuk mengkonfigurasi database replication adalah
 
 1\. Masuk ke platform. Setelah dashboard Anda terbuka, klik pada **Create Environment** di panel atas.
 
-![create environment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/manual-multi-primary-replication/manual-multi-primary-replication-1.png" alt="create environment" width="60%"/>
 
 2\. Dengan bantuan wizard topologi yang terbuka, atur environments berikut:
 
@@ -25,7 +25,7 @@ Hal pertama yang Anda butuhkan untuk mengkonfigurasi database replication adalah
 
 Tambahkan server aplikasi **Apache** dengan dukungan **PHP** dan database **MySQL**. Atur batas cloudlet untuk setiap container. Beri nama environment Anda (misalnya, _mysql-master-1_) dan klik **Create**.
 
-![first master environment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/manual-multi-primary-replication/manual-multi-primary-replication-2.png" alt="first master environment" width="100%"/>
 
   * **the second master DB environment**
 
@@ -33,9 +33,9 @@ Untuk membuat environment kedua (**master-mysql-2**) Anda akan diminta untuk men
 
 Atau, Anda bisa [mengkloning](<https://docs.dewacloud.com/docs/clone-environment/>) environment pertama, dengan menyebutkan nama yang tepat dalam kolom yang sesuai:
 
-![multi master mysql replication clone environment](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/manual-multi-primary-replication/manual-multi-primary-replication-3.png" alt="multi master mysql replication clone environment" width="100%"/>
 
-![master environments](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/manual-multi-primary-replication/manual-multi-primary-replication-4.png" alt="master environments" width="100%"/>
 
 3\. Perhatikan bahwa versi dan konfigurasi environments dapat bervariasi sesuai dengan kebutuhan Anda dan juga bergantung pada konfigurasi penyedia hosting Anda. Sebagai contoh, alih-alih menjalankan PHP Anda mungkin ingin menjalankan aplikasi Java atau Ruby. Namun demikian, referensi dalam artikel tersebut hanya boleh digunakan untuk mereplikasi server MySQL yang berjalan di platform ini.
 
@@ -49,7 +49,7 @@ Sekarang bahwa server MySQL telah terinstal dan berjalan, kita perlu mengaturnya
 
 1\. Mari mulai dengan **master-mysql-1**. Klik ikon MySQL **Config** untuk environment pertama Anda.
 
-![config first MySQL](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/manual-multi-primary-replication/manual-multi-primary-replication-5.png" alt="config first MySQL" width="100%"/>
 
 2\. Dalam Configuration manager yang terbuka, navigasikan ke file **/etc/my.cnf**, temukan string **#skip-networking** dan masukkan parameter berikut seperti di bawah ini:
 
@@ -62,7 +62,7 @@ auto_increment_increment= 1
 auto_increment_offset = 1
 ```
 
-![first skip networking configs](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/manual-multi-primary-replication/manual-multi-primary-replication-6.png" alt="first skip networking configs" width="100%"/>
 
 Mari kita tinjau secara detail apa yang sebenarnya kita konfigurasikan dengan opsi-opsi ini:
 
@@ -76,11 +76,11 @@ Kedua opsi **auto_increment_increment** dan **auto_increment_offset** dimaksudka
 
 3\. Setelah Anda selesai memodifikasi file **/etc/my.cnf**, cukup klik **Save** dan restart node MySQL di environment **master-mysql-1** seperti yang ditunjukkan di bawah ini.
 
-![restart first MySQL](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/manual-multi-primary-replication/manual-multi-primary-replication-7.png" alt="restart first MySQL" width="100%"/>
 
 4\. Untuk memeriksa apakah MySQL berhasil di-restart, Anda dapat menavigasikan ke tab **actions** yang terbuka otomatis.
 
-![first MySQL actions](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/manual-multi-primary-replication/manual-multi-primary-replication-8.png" alt="first MySQL actions" width="100%"/>
 
 Jika terjadi kesalahan selama tahap ini, ulangi prosedurnya lagi atau hubungi Dukungan Teknis Anda.
 
@@ -90,7 +90,7 @@ Sekarang saatnya untuk mulai mengatur server DB kedua (yang termasuk dalam envir
 
 1\. Buka _configuration manager_ untuk node MySQL di environment yang sesuai.
 
-![config second server](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/manual-multi-primary-replication/manual-multi-primary-replication-9.png" alt="config second server" width="100%"/>
 
 2\. Buka file yang sama **/etc/my.cnf**, temukan parameter **#skip-networking** lagi, dan tempelkan baris-baris berikut setelahnya:
 
@@ -107,7 +107,7 @@ auto_increment_offset = 2
 Kami telah mengubah nilai opsi server-id dan auto_increment_offset, karena mereka harus unik untuk setiap server.
 :::
 
-![second skip networking configs](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/manual-multi-primary-replication/manual-multi-primary-replication-10.png" alt="second skip networking configs" width="100%"/>
 
 3\. Setelah Anda selesai memodifikasi, cukup klik **Save** dan restart MySQL node di **master-mysql-2**, persis seperti yang Anda lakukan untuk node di environment **master-mysql-1**.
 
@@ -119,7 +119,7 @@ Akhirnya, mari kita atur replika itu sendiri. Untuk itu, Anda harus menjalankan 
 
 1\. Klik **Open in Browser** untuk server MySQL di environment pertama (**master-mysql-1**).
 
-![open first MySQL](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/manual-multi-primary-replication/manual-multi-primary-replication-11.png" alt="open first MySQL" width="100%"/>
 
 2\. Anda akan diarahkan ke panel administrator. Masuk ke panel tersebut dengan kredensial untuk pengguna _root_ yang Anda terima melalui email selama penciptaan environment dan navigasikan ke tab **SQL**. Dalam jendela yang terbuka, jalankan perintah berikut:
 
@@ -132,7 +132,7 @@ grant replication slave on *.* to 'replicator'@'%';
 Nilai password harus diganti dengan password Anda sendiri. JANGAN gunakan nilai default - ini tidak aman.
 :::
 
-![create first replication user](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/manual-multi-primary-replication/manual-multi-primary-replication-12.png" alt="create first replication user" width="100%"/>
 
 Dengan cara ini, kami telah membuat pengguna _replicator_ baru dan memberinya izin global untuk melakukan operasi replikasi.
 
@@ -146,7 +146,7 @@ show master status;
 
 Anda harus mendapatkan hasil yang mirip dengan berikut ini:
 
-![master status first node](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/manual-multi-primary-replication/manual-multi-primary-replication-13.png" alt="master status first node" width="100%"/>
 
 Ingatlah nama file binlog dan posisinya. Kami akan menggunakannya dalam konfigurasi lebih lanjut.
 
@@ -170,6 +170,9 @@ di mana:
 
 :::note
 Alamat IP internal/eksternal dapat dilihat dengan menekan tombol Info di sebelah server yang sesuai:
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/manual-multi-primary-replication/manual-multi-primary-replication-14.png" alt="server ip1" width="100%"/>
+
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/manual-multi-primary-replication/manual-multi-primary-replication-15.png" alt="server ip2" width="100%"/>
 :::
 
   * _password_ - yang Anda tentukan saat membuat pengguna DB untuk server MySQL pertama
@@ -178,7 +181,7 @@ Alamat IP internal/eksternal dapat dilihat dengan menekan tombol Info di sebelah
 
   * _binlog_file_position_ - posisi file binlog dari tabel yang sama
 
-![slave at second server](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/manual-multi-primary-replication/manual-multi-primary-replication-16.png" alt="slave at second server" width="100%"/>
 
 6\. Untuk memeriksa apakah perintah berhasil dijalankan atau tidak, jalankan perintah berikut:
 
@@ -186,7 +189,7 @@ Alamat IP internal/eksternal dapat dilihat dengan menekan tombol Info di sebelah
 show slave status;
 ```
 
-![slave status second node](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/manual-multi-primary-replication/manual-multi-primary-replication-17.png" alt="slave status second node" width="100%"/>
 
 7\. Buka panel administrator untuk node MySQL dari environment **master-mysql-1** dan jalankan baris yang sama dengan mengganti nilai parameter dengan data server DB kedua:
 
@@ -210,7 +213,7 @@ Dan akhirnya, mari kita pastikan semuanya bekerja dengan baik.
 
 1\. Masuk ke server DB pertama dan buat database _example_ baru:
 
-![create example database](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/manual-multi-primary-replication/manual-multi-primary-replication-18.png" alt="create example database" width="100%"/>
 
 Seperti yang Anda lihat, itu sudah ditandai sebagai direplikasi dalam kolom **Master replication**.
 
@@ -222,15 +225,15 @@ Nama database baru ini sesuai dengan yang kami tentukan dalam konfigurasi server
 
 Klik padanya dan tambahkan tabel baru dengan setidaknya satu kolom:
 
-![add table to database](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/manual-multi-primary-replication/manual-multi-primary-replication-19.png" alt="add table to database" width="100%"/>
 
 Tentukan nilai apapun yang diinginkan dan klik **Save**.
 
-![set column properties](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/manual-multi-primary-replication/manual-multi-primary-replication-20.png" alt="set column properties" width="100%"/>
 
 3\. Kembali ke panel admin dari server MySQL pertama dan pastikan database _example_ yang direplikasi sekarang berisi tabel _**jelastic**_.
 
-![multi master MySQL replication](#)
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/manual-multi-primary-replication/manual-multi-primary-replication-21.png" alt="multi master MySQL replication" width="100%"/>
 
 Anda juga dapat melakukan beberapa tindakan lainnya (mis. mengoperasikan catatan, triggers, indeks, dll.) untuk memastikan semua data langsung direplikasi dalam kluster MySQL.
 
@@ -238,7 +241,7 @@ Itu sangat mudah! Nikmati keamanan data lengkap dengan hosting platform ini.
 
 ## Baca Juga{#whats-next}
 
-  * [Java Connection ke MySQL/MariaDB](<https://docs.dewacloud.com/docs/connection-to-mysql/>)
+  * [Java Connection ke MySQL/MariaDB](<https://docs.dewacloud.com/docs/connection-to-mysql-java/>)
   * [PHP Connection ke MySQL/MariaDB](<https://docs.dewacloud.com/docs/connection-to-mysql-php/>)
   * [Multi Master Replication](<https://docs.dewacloud.com/docs/multi-master-mysql-replication/>)
   * [Remote Access ke MySQL/MariaDB](<https://docs.dewacloud.com/docs/remote-access-mysql/>)

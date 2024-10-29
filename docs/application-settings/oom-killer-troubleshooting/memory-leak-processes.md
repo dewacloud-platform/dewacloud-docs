@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-slug: /memory-leak-processes
+slug: /oom-killer-leak-risk-processes
 title: Memory Leak Processes
 ---
 # OOM Killer Resolutions: Processes with High Risk of Memory Leak
@@ -266,7 +266,7 @@ _newrelic-daemon_ | 3rd party | Restart layanan stack utama (nginx, tomcat, node
 
 ## Baca Juga
 
-  * [OOM Killer Troubleshooting](https://docs.dewacloud.com/docs/oom-killer-troubleshooting/)
+  * [OOM Killer Troubleshooting](https://docs.dewacloud.com/docs/oom-killer-issues/)
   * [Common Cases](https://docs.dewacloud.com/docs/oom-killer-common-cases/)
   * [Non-Leaking Processes](https://docs.dewacloud.com/docs/oom-killer-non-leaking-processes/)
   * [Java Garbage Collection](<https://www.virtuozzo.com/company/blog/garbage-collection/>)
