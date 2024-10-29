@@ -28,7 +28,7 @@ Mari kita lakukan langkah demi langkah:
    Password : jelastic
    ```
 
-   Cara membuat pengguna baru - [klik di sini](<https://docs.dewacloud.com/docs/connection-to-mysql/>).
+   Cara membuat pengguna baru - [klik di sini](<https://docs.dewacloud.com/docs/connection-to-mysql-java/>).
 
 3. Modifikasi file konfigurasi di web-application Anda:
 

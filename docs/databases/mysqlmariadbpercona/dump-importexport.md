@@ -61,6 +61,6 @@ File dump Anda akan berada di direktori yang jalurnya telah Anda tentukan.
 
 ## Baca Juga{#whats-next}
 
-  * [Java Connection to MySQL/MariaDB](<https://docs.dewacloud.com/docs/connection-to-mysql/>)
+  * [Java Connection to MySQL/MariaDB](<https://docs.dewacloud.com/docs/connection-to-mysql-java/>)
   * [PHP Connection to MySQL/MariaDB](<https://docs.dewacloud.com/docs/connection-to-mysql-php/>)
   * [Remote Access to MySQL/MariaDB](<https://docs.dewacloud.com/docs/remote-access-mysql/>)

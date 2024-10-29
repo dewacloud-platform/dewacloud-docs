@@ -50,4 +50,4 @@ Dengan mengikuti langkah-langkah ini, Anda dapat memastikan bahwa add-on New Rel
 - [Penskalaan Horizontal Otomatis](https://docs.dewacloud.com/docs/automatic-horizontal-scaling/)
 - [Marketplace](https://docs.dewacloud.com/docs/marketplace/)
 - [Koleksi JPS](https://github.com/jelastic-jps)
-- [Statistik Aplikasi](https://docs.dewacloud.com/docs/view-app-statistics/)
+- [Statistik Aplikasi](https://docs.dewacloud.com/docs/statistics-monitoring/)

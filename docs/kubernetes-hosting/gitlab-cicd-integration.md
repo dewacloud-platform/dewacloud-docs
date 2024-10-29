@@ -38,7 +38,7 @@ Masuk ke dashboard platform Jelastic, pergi ke [Marketplace](<https://docs.dewac
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/GitLab%20CICD%20Integration/image19.png" alt="GitLab Kubernetes Installation" width="90%"/>
 
-  * Jika Anda berencana menggunakan domain kustom, aktifkan opsi [Install Let’s Encrypt Certificates and Custom Domain Addon](<https://www.virtuozzo.com/company/blog/free-ssl-certificates-with-lets-encrypt/>) saat memasang server GitLab.
+  * Jika Anda berencana menggunakan domain kustom, aktifkan opsi [Install Let’s Encrypt Certificates and Custom Domain Addon](<https://docs.dewacloud.com/docs/let's-encrypt-ssl>) saat memasang server GitLab.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/GitLab%20CICD%20Integration/image35.png" alt="Kubernetes in GitLab" width="70%"/>
 

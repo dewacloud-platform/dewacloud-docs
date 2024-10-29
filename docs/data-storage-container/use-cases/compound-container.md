@@ -18,5 +18,5 @@ Juga ingat, bahwa file lokal dapat diambil oleh aplikasi jauh lebih cepat diband
 
   * Menambahkan [mount points](<https://docs.dewacloud.com/docs/mount-points/>) untuk mengakses data dalam folder jarak jauh
   * [Ekspor data](<https://docs.dewacloud.com/docs/storage-exports/>) dari satu node ke node lainnya
-  * Menyimpan data dalam [master layer container](<https://docs.dewacloud.com/docs/master-container-storage/>)
+  * Menyimpan data dalam [master layer container](<https://docs.dewacloud.com/docs/primary-container-storage/>)
   * Menggunakan [dedicated container](<https://docs.dewacloud.com/docs/dedicated-storage/>) untuk penyimpanan data

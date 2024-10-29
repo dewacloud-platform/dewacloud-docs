@@ -122,14 +122,6 @@ Setiap region environment memiliki kapasitasnya sendiri di pusat data tertentu, 
 
 Sebagai hasilnya, Anda mendapatkan solusi multi-data center atau bahkan multi-cloud untuk menjalankan aplikasi Anda dalam satu panel. Selain itu, setiap Platform dikelola oleh penyedia layanan hosting terpisah dengan tim dukungan lokalnya.
 
-## Cloud Union{#cloud-union}
-
-Platform ini memiliki model bisnis unik dalam mendistribusikan produk cloud-nya secara global melalui penyedia hosting yang membentuk **Cloud Union** kami. Ada banyak pilihan vendor platform yang diatur oleh pemerintah lokal dan hukum. Dengan kata lain, mitra hosting kami berbicara dalam bahasa Anda dan memahami kebutuhan spesifik Anda.
-
-<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/basics-terminology/10-cloud-union-paas-hosting-providers.png" alt="Cloud Union - PaaS hosting providers" width="100%"/>
-
-Cloud Union sudah mencakup [100 data centre](<https://docs.dewacloud.com/docs/application-platform-partners/>) yang tersedia di 38 negara (lebih dari [yang ditawarkan oleh raksasa cloud](<https://www.virtuozzo.com/company/blog/aws-azure-google-cloud-and-jelastic-choose-your-cloud-hosting-by-location/>)). Komunitas mitra ini menyediakan kebebasan memilih, sambil menghosting aplikasi Anda tanpa vendor lock-in dan tanpa kompromi pada lokasi data center, tingkat dukungan, kinerja, atau harga.
-
 ## Baca Juga{#whats-next}
 
   * [Getting Started](<https://docs.dewacloud.com/docs/getting-started/>)

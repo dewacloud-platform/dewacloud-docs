@@ -10,7 +10,7 @@ _Dokumen ini bersifat sementara dan dapat berubah._
 
 Dalam dokumen ini, Anda akan menemukan semua fitur baru, peningkatan, dan perubahan yang terlihat yang termasuk dalam rilis Dewacloud Application Platform for WordPress 2.1.
 
-Ruang lingkup perubahan umum sama seperti untuk rilis _[Dewacloud Application Platform (DevOps PaaS) 8.3](https://docs.dewacloud.com/docs/release-notes-83/)_. Semua peningkatan yang spesifik untuk WordPress PaaS saja disorot dalam daftar di bawah ini.
+Ruang lingkup perubahan umum sama seperti untuk rilis _[Dewacloud Application Platform (DevOps PaaS) 8.3](https://docs.dewacloud.com/release-notes/release-notes-83/)_. Semua peningkatan yang spesifik untuk WordPress PaaS saja disorot dalam daftar di bawah ini.
 
 ## Peningkatan Langganan{#subscription-improvements}
 

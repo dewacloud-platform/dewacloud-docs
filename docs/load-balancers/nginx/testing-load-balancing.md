@@ -5,7 +5,7 @@ title: Testing Load Balancing
 ---
 # How to Test Load Balancing
 
-Ketika proyek Anda menjadi sangat diminati dan dikunjungi, Anda akan menghadapi masalah - kebutuhan untuk meningkatkan produktivitas perangkat keras Anda, karena harus mampu menangani dan melayani semua permintaan pengguna yang masuk dengan cepat. Menambah lebih banyak sumber daya akan memperbaiki situasi untuk sementara, menyelamatkan server Anda dari kegagalan, tetapi tidak akan menyelesaikan masalah utamanya. Ini mengakibatkan kebutuhan untuk menyiapkan [solusi clustering](<https://docs.dewacloud.com/docs/cluster-in-cloud/>) dengan load balancing otomatis yang terintegrasi.
+Ketika proyek Anda menjadi sangat diminati dan dikunjungi, Anda akan menghadapi masalah - kebutuhan untuk meningkatkan produktivitas perangkat keras Anda, karena harus mampu menangani dan melayani semua permintaan pengguna yang masuk dengan cepat. Menambah lebih banyak sumber daya akan memperbaiki situasi untuk sementara, menyelamatkan server Anda dari kegagalan, tetapi tidak akan menyelesaikan masalah utamanya. Ini mengakibatkan kebutuhan untuk menyiapkan solusi clustering dengan load balancing otomatis yang terintegrasi.
 
 Penyesuaian cluster aplikasi sangat mudah dengan platform - cukup tambahkan beberapa instance server aplikasi ke environment Anda [melalui topology wizard](<https://docs.dewacloud.com/docs/horizontal-scaling/>). Selain itu, Anda secara otomatis akan mendapatkan server NGINX-balancer yang diaktifkan di depan proyek Anda. Server ini akan bertanggung jawab untuk distribusi beban yang merata di antara jumlah node server aplikasi yang ditentukan, dilakukan dengan [load balancing](<https://docs.dewacloud.com/docs/load-balancing/>).
 

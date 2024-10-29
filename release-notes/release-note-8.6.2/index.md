@@ -1,5 +1,5 @@
 ---
-slug: release-notes-8.6.2
+slug: release-notes-862
 title: Release Notes 8.6.2
 authors: [dewacloud]
 date: 2024-10-21
@@ -38,7 +38,7 @@ Daftar perbaikan yang diterapkan pada platform dimulai dari rilis saat ini [Pela
 
 ## Perubahan API{#api-changes}
 
-Di bawah ini, Anda dapat menemukan daftar semua perubahan pada API publik di versi platform 8.6.2 (dibandingkan dengan yang sebelumnya [8.4](<https://docs.dewacloud.com/docs/release-notes-84/#api-changes>)):
+Di bawah ini, Anda dapat menemukan daftar semua perubahan pada API publik di versi platform 8.6.2 (dibandingkan dengan yang sebelumnya [8.4](<https://docs.dewacloud.com/release-notes/release-notes-84/#api-changes>)):
 
   * Menambahkan parameter _**relatedEnvName**_ baru untuk menunjuk ke lingkungan yang terkait dengan aturan firewall (untuk metode **AddRules**, **EditRule**, dan **AddRule**)
 

@@ -78,7 +78,7 @@ Untuk contoh penggunaan yang lebih banyak, lihat dokumen berikut:
   * [environment cloning](https://docs.dewacloud.com/docs/cli-clone-environment/)
   * [environment migration](https://docs.dewacloud.com/docs/cli-environment-migration/)
   * [container redeploy](https://docs.dewacloud.com/docs/cli-container-redeploy/)
-  * [Docker volumes](https://docs.dewacloud.com/docs/cli-docker-volumes/)
+  * [Docker volumes](https://docs.dewacloud.com/docs/cli-container-volumes/)
   * [mount points](https://docs.dewacloud.com/docs/cli-mount-points/)
   * [swap Public IPs](https://docs.dewacloud.com/docs/cli-ip-swap/)
   * [installing JPS](https://docs.dewacloud.com/docs/cli-install-jps)

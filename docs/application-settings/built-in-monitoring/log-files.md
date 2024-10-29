@@ -61,6 +61,6 @@ Jika Anda menggunakan repositori GIT/SVN jarak jauh untuk penempatan aplikasi An
 
 ## Baca Juga
 
-- [View Statistics](https://docs.dewacloud.com/docs/view-app-statistics/)
+- [View Statistics](https://docs.dewacloud.com/docs/statistics-monitoring/)
 - [Load Alerts](https://docs.dewacloud.com/docs/load-alerts/)
 - [Configuration File Manager](https://docs.dewacloud.com/docs/configuration-file-manager/)

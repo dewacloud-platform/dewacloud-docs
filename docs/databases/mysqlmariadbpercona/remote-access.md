@@ -42,5 +42,5 @@ Tunggu beberapa menit hingga environment Anda dibuat.
 ## Baca Juga{#whats-next}
 
   * [Dump Import/Export to MySQL/MariaDB](<https://docs.dewacloud.com/docs/dump-import-export-to-mysql/>)
-  * [Java Connection to MySQL/MariaDB](<https://docs.dewacloud.com/docs/connection-to-mysql/>)
+  * [Java Connection to MySQL/MariaDB](<https://docs.dewacloud.com/docs/connection-to-mysql-java/>)
   * [PHP Connection to MySQL/MariaDB](<https://docs.dewacloud.com/docs/connection-to-mysql-php/>)

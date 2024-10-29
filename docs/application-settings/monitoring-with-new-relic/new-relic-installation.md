@@ -62,7 +62,7 @@ Dengan mengikuti langkah-langkah ini, Anda akan berhasil mengintegrasikan New Re
 
 ## Baca Juga
 
-- [Application Monitoring](https://docs.dewacloud.com/docs/view-app-statistics/)
+- [Application Monitoring](https://docs.dewacloud.com/docs/statistics-monitoring/)
 - [New Relic Update](https://docs.dewacloud.com/docs/update-new-relic/)
 - [Java Agent Integration](https://docs.dewacloud.com/docs/javaagent/)
 - [PHP Extensions](https://docs.dewacloud.com/docs/php-extensions/)

@@ -79,7 +79,7 @@ Jika Anda mengubah batas skalabilitas (yaitu jumlah cloudlet dinamis) untuk appl
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/automatic-vertical-scaling/05-adjust-cloudlets-restart-warning.png" alt="adjust cloudlets restart warning" width="80%"/>
 
-Anda dapat menggunakan [statistik](https://docs.dewacloud.com/docs/view-app-statistics/) yang dikumpulkan secara otomatis untuk memeriksa tingkat konsumsi selama sebulan terakhir dan mengatur jumlah sumber daya sesuai dengan itu. Dan jika aplikasi Anda menjadi sangat populer dan kapasitas server tunggal tidak cukup, Anda dapat menskalakannya secara horizontal dengan menambah jumlah node secara [manual](https://docs.dewacloud.com/docs/horizontal-scaling/) atau mengonfigurasi serangkaian [triggers untuk otomatisasi horizontal scaling](https://docs.dewacloud.com/docs/automatic-horizontal-scaling/) pada application server Anda.
+Anda dapat menggunakan [statistik](https://docs.dewacloud.com/docs/statistics-monitoring/) yang dikumpulkan secara otomatis untuk memeriksa tingkat konsumsi selama sebulan terakhir dan mengatur jumlah sumber daya sesuai dengan itu. Dan jika aplikasi Anda menjadi sangat populer dan kapasitas server tunggal tidak cukup, Anda dapat menskalakannya secara horizontal dengan menambah jumlah node secara [manual](https://docs.dewacloud.com/docs/horizontal-scaling/) atau mengonfigurasi serangkaian [triggers untuk otomatisasi horizontal scaling](https://docs.dewacloud.com/docs/automatic-horizontal-scaling/) pada application server Anda.
 
 ## Baca Juga{#whats-next}
 

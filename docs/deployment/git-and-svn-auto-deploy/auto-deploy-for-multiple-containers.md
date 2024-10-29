@@ -5,7 +5,7 @@ title: Auto-Deploy for Multiple Containers
 ---
 # GIT & SVN Auto-Deploy for Multiple Containers
 
-Ketika menangani proyek dengan tingkat kunjungan yang tinggi, umumnya disarankan untuk memanfaatkan fitur [Multi-Nodes](https://docs.dewacloud.com/docs/multi-nodes) di platform untuk memastikan kinerja yang cukup bagi aplikasi Anda. Selain itu, Anda perlu mempertimbangkan bahwa dengan opsi [auto-deploy](https://docs.dewacloud.com/docs/git-svn-auto-deploy) diaktifkan untuk proyek semacam itu, semua container dalam layer server aplikasi Anda akan diperbarui _secara bersamaan_.
+Ketika menangani proyek dengan tingkat kunjungan yang tinggi, umumnya disarankan untuk memanfaatkan fitur [Multi-Nodes](https://docs.dewacloud.com/docs/horizontal-scaling) di platform untuk memastikan kinerja yang cukup bagi aplikasi Anda. Selain itu, Anda perlu mempertimbangkan bahwa dengan opsi [auto-deploy](https://docs.dewacloud.com/docs/git-svn-auto-deploy) diaktifkan untuk proyek semacam itu, semua container dalam layer server aplikasi Anda akan diperbarui _secara bersamaan_.
 
 Namun demikian, jika Anda ingin mencapai ketersediaan yang lebih tinggi (misalnya untuk melakukan pengulangan deployment secara implisit dan _berurutan_ pada setiap node), berikut beberapa opsi yang dapat memastikan hal ini:
 

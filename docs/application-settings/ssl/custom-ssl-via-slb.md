@@ -8,7 +8,7 @@ title: Custom SSL via SLB
 
 Platform ini mendukung beberapa metode untuk mengonfigurasi sertifikat SSL, tergantung pada pengaturan environment dan konfigurasi domain:
 
-- **Environment dengan IP Publik**: Gunakan _[Let’s Encrypt SSL](https://docs.dewacloud.com/docs/lets-encrypt-ssl)_ dan _[Custom SSL](https://docs.dewacloud.com/docs/custom-ssl)_ untuk mengamankan domain kustom.
+- **Environment dengan IP Publik**: Gunakan _[Let’s Encrypt SSL](https://docs.dewacloud.com/docs/let's-encrypt-ssl)_ dan _[Custom SSL](https://docs.dewacloud.com/docs/custom-ssl)_ untuk mengamankan domain kustom.
 - **Environment tanpa IP Publik**: Gunakan _[Built-In SSL](https://docs.dewacloud.com/docs/built-in-ssl)_ untuk domain dasar.
 - **Custom SSL via SLB**: Memungkinkan sertifikat SSL kustom untuk environment tanpa IP publik melalui Shared Load Balancer (SLB).
 
@@ -56,5 +56,5 @@ Jelajahi solusi SSL lain dan fitur terkait:
 - [Secure Sockets Layer (SSL)](https://docs.dewacloud.com/docs/secure-sockets-layer)
 - [Built-In SSL](https://docs.dewacloud.com/docs/built-in-ssl)
 - [Custom SSL](https://docs.dewacloud.com/docs/custom-ssl)
-- [Let’s Encrypt SSL](https://docs.dewacloud.com/docs/lets-encrypt-ssl)
+- [Let’s Encrypt SSL](https://docs.dewacloud.com/docs/let's-encrypt-ssl)
 - [Shared Load Balancer](https://docs.dewacloud.com/docs/shared-load-balancer)

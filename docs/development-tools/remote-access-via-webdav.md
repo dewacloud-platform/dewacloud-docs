@@ -111,7 +111,7 @@ Tomcat mengimplementasikan spesifikasi WebDAV menggunakan WebDAV Servlet, yang d
 <img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/remote-access-via-webdav/remote-access-via-webdav-12.png" alt="remote access via webdav webdav11" width="60%"/>
 
 2\. Masukkan URL server Anda
-(_http://\{your_env_name\}.[\{hoster_domain\}](<https://docs.dewacloud.com/docs/paas-hosting-providers>)/\{context\}/webdav_), tentukan login dan password untuk pengguna Tomcat Anda (dalam kasus kami kredensialnya adalah _test/tomcat_).
+(_http://\{your_env_name\}.\{hoster_domain\}/\{context\}/webdav_), tentukan login dan password untuk pengguna Tomcat Anda (dalam kasus kami kredensialnya adalah _test/tomcat_).
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/remote-access-via-webdav/remote-access-via-webdav-13.png" alt="remote access via webdav webdav12" width="60%"/>
 

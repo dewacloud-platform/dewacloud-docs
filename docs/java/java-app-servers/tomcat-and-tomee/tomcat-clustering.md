@@ -128,6 +128,5 @@ Konfigurasi High Availability adalah otomatis sehingga Anda dapat dengan mudah m
 
 ## Baca Juga{#whats-next}
 
-  * [Cluster in Cloud](<https://docs.dewacloud.com/docs/cluster-in-cloud/>)
   * [Tomcat](<https://docs.dewacloud.com/docs/tomcat/>)
   * [TomEE](<https://docs.dewacloud.com/docs/tomee/>)

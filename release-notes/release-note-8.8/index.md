@@ -1,5 +1,5 @@
 ---
-slug: release-notes-8.8
+slug: release-notes-88
 title: Release Notes 8.8
 authors: [dewacloud]
 date: 2024-10-22
@@ -50,7 +50,7 @@ Daftar perbaikan yang diterapkan pada platform dimulai dari rilis saat ini [Pela
 
 ## Infrastruktur Berbasis AlmaLinux{#almalinux-based-infrastructure}
 
-Karena masa akhir dukungan (EOL) gambar _CentOS 7_ yang akan datang pada 30 Juni 2024, Dewacloud Application Platform beralih ke gambar OS dasar _**AlmaLinux 9**_ untuk semua [software stacks](<https://docs.dewacloud.com/docs/release-notes-83/#almalinux-9-base-os-image>) yang disertifikasi. Selama upgrade PaaS 8.8 saat ini, semua komponen infrastruktur akan secara otomatis dimigrasikan ke OS dasar baru. Transisi ini memastikan dukungan untuk semua fungsi modern, standar keamanan terkini, dan kompatibilitas dengan semua solusi perangkat lunak terbaru. Selain itu, fungsi _iptables_ akan digantikan dengan alternatif netfilter _**[nftables](<https://netfilter.org/projects/nftables/>)**_ yang lebih sederhana dan efisien dengan penanganan IPv4/IPv6 yang terintegrasi.
+Karena masa akhir dukungan (EOL) gambar _CentOS 7_ yang akan datang pada 30 Juni 2024, Dewacloud Application Platform beralih ke gambar OS dasar _**AlmaLinux 9**_ untuk semua [software stacks](<https://docs.dewacloud.com/release-notes/release-notes-83/#almalinux-9-base-os-image>) yang disertifikasi. Selama upgrade PaaS 8.8 saat ini, semua komponen infrastruktur akan secara otomatis dimigrasikan ke OS dasar baru. Transisi ini memastikan dukungan untuk semua fungsi modern, standar keamanan terkini, dan kompatibilitas dengan semua solusi perangkat lunak terbaru. Selain itu, fungsi _iptables_ akan digantikan dengan alternatif netfilter _**[nftables](<https://netfilter.org/projects/nftables/>)**_ yang lebih sederhana dan efisien dengan penanganan IPv4/IPv6 yang terintegrasi.
 
 
 

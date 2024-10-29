@@ -61,7 +61,7 @@ di mana
 <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/db-hosting-overview/db-hosting-overview-5.png" alt="database node ID" width="100%"/>
 
   * `{environment_name}` \- nama environment yang Anda tambahkan server ke dalamnya (misalnya, _database_)
-  * `{hoster_domain}` \- domain penyedia hosting Anda; dapat ditemukan di kolom terakhir tabel yang sesuai di halaman [Hosters Info](<https://docs.dewacloud.com/docs/paas-hosting-providers/>)
+  * `{hoster_domain}` \- domain dewacloud (misalnya, `user.cloudjkt01.com`);
 
 :::note
 Jika platform penyedia hosting Anda memiliki beberapa _environment regions_ untuk dipilih, nilai `{hoster_domain}` untuk environment Anda bisa berbeda dari platform umum.
@@ -73,8 +73,8 @@ _https://node35316-database.jelastic.com_
 
 ## Baca Juga {#whats-next}
 
-  * [Koneksi ke Database](<https://docs.dewacloud.com/docs/connect-app-to-db/>)
+  * [Koneksi ke Database](<https://docs.dewacloud.com/docs/database-connection-strings/>)
   * [Konfigurasi Database](<https://docs.dewacloud.com/docs/database-configuration-files/>)
-  * [Menjadwalkan Backup DB](<https://docs.dewacloud.com/docs/scheduling-backups/>)
+  * [Menjadwalkan Backup DB](<https://docs.dewacloud.com/docs/database-backups/>)
   * [Koneksi ke DB via JNDI](<https://docs.dewacloud.com/docs/connection-to-db-via-jndi/>)
   * [Koneksi ke DB menggunakan Hibernate](<https://docs.dewacloud.com/docs/connect-db-hibernate/>)

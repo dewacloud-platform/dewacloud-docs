@@ -21,7 +21,7 @@ Berikut ini, kita akan mempertimbangkan [jenis-jenis cloudlet](#types) yang digu
 
 Ada dua jenis cloudlet di platform, tersedia untuk diatur untuk setiap server dalam environment melalui bagian _[Vertical Scaling per Node](https://docs.dewacloud.com/docs/automatic-vertical-scaling)_ di topology wizard: _**Reserved**_ dan _**Dynamic**_.
 
-Jika sebuah layer berisi [beberapa node](https://docs.dewacloud.com/docs/multi-nodes), batas ini dikonfigurasikan untuk semuanya sekaligus, yaitu dinyatakan sama untuk setiap instance.
+Jika sebuah layer berisi [beberapa node](https://docs.dewacloud.com/docs/horizontal-scaling), batas ini dikonfigurasikan untuk semuanya sekaligus, yaitu dinyatakan sama untuk setiap instance.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/cloudlet/4.72.png" alt="cloudlets toddlers in topology wizard" width="100%"/>
 
@@ -51,7 +51,7 @@ Penggunaan sumber daya saat ini dari environment Anda secara umum dan untuk seti
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/cloudlet/4.76.png" alt="current cloudlets usage" width="100%"/>
 
-Dan untuk meninjau tingkat konsumsi server Anda dalam periode waktu tertentu, Anda dapat menggunakan bagian [Statistics](https://docs.dewacloud.com/docs/view-app-statistics) yang sesuai atau memeriksa biaya akun yang diterapkan dalam [Billing History](https://docs.dewacloud.com/docs/consumed-resources#billing).
+Dan untuk meninjau tingkat konsumsi server Anda dalam periode waktu tertentu, Anda dapat menggunakan bagian [Statistics](https://docs.dewacloud.com/docs/statistics-monitoring) yang sesuai atau memeriksa biaya akun yang diterapkan dalam [Billing History](https://docs.dewacloud.com/docs/monitoring-consumed-resources#billing).
 
 ## Bacaan Lebih Lanjut{#useful-links}
 

@@ -1,5 +1,5 @@
 ---
-slug: release-notes-8.2
+slug: release-notes-82
 title: Release Notes 8.2
 authors: [dewacloud]
 date: 2024-10-13
@@ -81,7 +81,7 @@ Ketika mengisi saldo akun menggunakan metode pembayaran yang disimpan dengan 3DS
 
 ## Perubahan API{#api-changes}
 
-Di bawah ini, Anda dapat menemukan daftar semua perubahan pada API publik di versi platform 8.2.2 (dibandingkan dengan yang sebelumnya [8.0.2](<https://docs.dewacloud.com/docs/release-notes-802/#api-changes>)):
+Di bawah ini, Anda dapat menemukan daftar semua perubahan pada API publik di versi platform 8.2.2 (dibandingkan dengan yang sebelumnya [8.0.2](<https://docs.dewacloud.com/release-notes/release-notes-802/#api-changes>)):
 
   * Menambahkan layanan **[Billing> Subscriptions](<https://docs.jelastic.com/api/#!/api/billing.Subscription>)** baru dengan metode API untuk mendukung fitur [subscriptions](<#subscription-based-solutions>).
 

@@ -227,10 +227,10 @@ Info tambahan tentang berbagai tipe cluster database dapat dilihat dengan mengar
 Setelah dikonfigurasi, auto-clustering tidak dapat dinonaktifkan dari topology wizard.
 :::
 
-4\. Jika diperlukan, Anda dapat melacak log konfigurasi cluster melalui konsol platform:
+4\. Jika diperlukan, Anda dapat melacak log konfigurasi cluster melalui konsol platform: 
 
 ```
-https://app.**[{platformDomain}](https://docs.dewacloud.com/docs/paas-hosting-providers/)**/console
+https://app.infra.dewacloud.com/
 ```
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/auto-clustering-of-instances/21-cloud-scripting-console.png" alt="cloud scripting console" width="100%"/>
@@ -294,4 +294,3 @@ Itu saja! Sekarang, Anda dapat dengan mudah menggunakan solusi auto-clustering y
   * [Horizontal Scaling](https://docs.dewacloud.com/docs/horizontal-scaling/)
   * [Automatic Horizontal Scaling](https://docs.dewacloud.com/docs/automatic-horizontal-scaling/)
   * [JPS Overview](https://docs.dewacloud.com/docs/jps/)
-  * [Cluster in the Cloud](https://docs.dewacloud.com/docs/cluster-in-cloud/)

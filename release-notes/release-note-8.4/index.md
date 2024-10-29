@@ -1,5 +1,5 @@
 ---
-slug: release-notes-8.4
+slug: release-notes-84
 title: Release Notes 8.4
 authors: [dewacloud]
 date: 2024-10-19
@@ -134,7 +134,7 @@ Selain itu, proses aktivasi akun juga ditingkatkan. Sekarang, proses ini dipicu 
 
 ## Perubahan API{#api-changes}
 
-Di bawah ini, Anda dapat menemukan daftar semua perubahan pada API publik di versi platform 8.4 (dibandingkan dengan yang sebelumnya [8.3](<https://docs.dewacloud.com/docs/release-notes-83/#api-changes>)):
+Di bawah ini, Anda dapat menemukan daftar semua perubahan pada API publik di versi platform 8.4 (dibandingkan dengan yang sebelumnya [8.3](<https://docs.dewacloud.com/release-notes/release-notes-83/#api-changes>)):
 
   * Respons diperluas dari metode _**GetSSLCerts**_ untuk memberikan informasi tentang tipe SSL. Parameter baru _**sslType**_ memiliki dua nilai: 
     * _CUSTOM_ – untuk setiap sertifikat yang ditambahkan melalui dashboard atau panggilan API _AddSslCert_

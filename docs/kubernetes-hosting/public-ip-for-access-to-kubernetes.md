@@ -25,7 +25,7 @@ Di sini kami menggunakan node load balancer NGINX, tetapi Anda bisa memilih yang
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Public%20IP%20for%20Access%20to%20Kubernetes/image13-2-768x224.png" alt="Kubernetes Ingress" width="100%"/>
 
-4\. Sekarang Anda bisa mengikat domain kustom ke cluster K8s dan mengajukan permintaan untuk menerbitkan sertifikat [Let’s Encrypt SSL](<https://www.virtuozzo.com/company/blog/free-ssl-certificates-with-lets-encrypt/>) yang terpercaya untuk mengamankan lalu lintas aplikasi.
+4\. Sekarang Anda bisa mengikat domain kustom ke cluster K8s dan mengajukan permintaan untuk menerbitkan sertifikat [Let’s Encrypt SSL](<https://docs.dewacloud.com/docs/let's-encrypt-ssl>) yang terpercaya untuk mengamankan lalu lintas aplikasi.
 
   * Pergi ke [Add-Ons](<https://docs.jelastic.com/marketplace/>) load balancer dan temukan **Let’s Encrypt Free SSL**.
 

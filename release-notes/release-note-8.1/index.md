@@ -1,5 +1,5 @@
 ---
-slug: release-notes-8.1
+slug: release-notes-81
 title: Release Notes 8.1
 authors: [dewacloud]
 date: 2024-10-12

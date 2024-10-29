@@ -35,7 +35,7 @@ MariaDB 10.3.30; 10.4.20; 10.5.11; 10.6.3
 Percona 5.7.33; 8.0.23
 :::
 
-Jika tindakan [OOM killer](https://docs.dewacloud.com/docs/oom-killer-troubleshooting/) membuat container tidak berfungsi (karena beberapa proses kritis dihentikan), kami secara otomatis me-restart node ini dan, karena pemulihan pintar, mengurangi nilai parameter _**innodb_buffer_pool_size**_. Jika situasi ini terjadi lagi, siklus pengurangan yang disebutkan akan diulangi.
+Jika tindakan [OOM killer](https://docs.dewacloud.com/docs/oom-killer-issues/) membuat container tidak berfungsi (karena beberapa proses kritis dihentikan), kami secara otomatis me-restart node ini dan, karena pemulihan pintar, mengurangi nilai parameter _**innodb_buffer_pool_size**_. Jika situasi ini terjadi lagi, siklus pengurangan yang disebutkan akan diulangi.
 
 Anda dapat menyesuaikan [environment variables](https://docs.dewacloud.com/docs/environment-variables/) untuk menyesuaikan perilaku sistem terkait masalah OOM kills:
 

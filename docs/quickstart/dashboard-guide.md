@@ -85,7 +85,7 @@ Opsi ini mungkin tidak tersedia jika environment Anda tidak termasuk server apli
 Informasi lebih lanjut:
 
 - [Clone Environment](https://docs.dewacloud.com/docs/clone-environment/)
-- [Application Lifecycle Management](https://docs.dewacloud.com/docs/how-to-manage-application-lifecycle/)
+- [Application Lifecycle Management](https://docs.dewacloud.com/docs/application-lifecycle/)
 
 6. Untuk mengubah status environment, gunakan tombol **Start** ![start environment icon](https://assets.dewacloud.com/dewacloud-docs/quickstart/dashboard-guide/11-start-environment-icon.png) dan **Stop** ![stop environment icon](https://assets.dewacloud.com/dewacloud-docs/quickstart/dashboard-guide/12-stop-environment-icon.png).
 
@@ -114,7 +114,7 @@ Informasi lebih lanjut:
 
 - [Custom Domain Name](https://docs.dewacloud.com/docs/custom-domains/)
 - [Swap Domains](https://docs.dewacloud.com/docs/swap-domains/)
-- [Application Lifecycle Management](https://docs.dewacloud.com/docs/how-to-manage-application-lifecycle/)
+- [Application Lifecycle Management](https://docs.dewacloud.com/docs/application-lifecycle/)
 
 2. Pilih opsi **Custom SSL** dan unggah file yang diperlukan untuk menerapkan sertifikat SSL kustom Anda.
 
@@ -222,7 +222,7 @@ Gunakan opsi ini untuk melakukan tindakan berikut:
 - Pilih opsi **Restart Node(s)** untuk me-restart layanan yang sesuai di dalam container tertentu atau semua container dari layer.
 - Pilih opsi **Config** untuk membuka [configuration file manager](https://docs.dewacloud.com/docs/configuration-file-manager/) yang dapat menyesuaikan node dengan [mounting data](https://docs.dewacloud.com/docs/mount-points/), membuat/mengunggah file baru, dan memodifikasi/menghapus yang sudah ada.
 - Pilih opsi **Log** untuk melihat log file untuk node dari layer. Daftar [log file](https://docs.dewacloud.com/docs/log-files/) berbeda berdasarkan instance yang dipilih.
-- Klik tombol **Statistics** untuk [melacak data](https://docs.dewacloud.com/docs/view-app-statistics/) pada konsumsi CPU, RAM, Network, ruang Disk, dan IOPS untuk node terpisah atau satu set node secara real-time.
+- Klik tombol **Statistics** untuk [melacak data](https://docs.dewacloud.com/docs/statistics-monitoring/) pada konsumsi CPU, RAM, Network, ruang Disk, dan IOPS untuk node terpisah atau satu set node secara real-time.
 - Pilih opsi **Web SSH** untuk terhubung ke [container melalui SSH](https://docs.dewacloud.com/docs/web-ssh-client/) protokol langsung di browser.
 - Gunakan opsi **Redeploy Container(s)** untuk [memperbarui node](https://docs.dewacloud.com/docs/container-redeploy/) ke tag (versi) yang diinginkan.
 - Beberapa node dapat memiliki opsi tambahan, seperti **Add-Ons** (untuk menginstal modul pluggable) atau **Remote Desktop** (untuk [mengelola seluruh node berbasis Windows](https://docs.dewacloud.com/docs/win-rdp-access/)).
@@ -434,5 +434,4 @@ Sekarang, Anda tahu semua kemungkinan dasar dashboard dan semoga tidak akan kesu
 - [Basics & Terminology](https://docs.dewacloud.com/docs/concept-and-terminology/)
 - [Setting Up Environment](https://docs.dewacloud.com/docs/setting-up-environment/)
 - [Software Stack Versions](https://docs.dewacloud.com/docs/software-stacks-versions/)
-- [Hosters Info](https://docs.dewacloud.com/docs/paas-hosting-providers/)
 - [What is PaaS & CaaS](https://www.virtuozzo.com/company/blog/what-is-paas-platform-as-a-service-types-explained/)

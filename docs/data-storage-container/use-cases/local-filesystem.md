@@ -16,4 +16,4 @@ Di antara keuntungan utama dari jenis penyimpanan sistem file lokal ini, dapat d
 
   * Menambahkan [mount points](<https://docs.dewacloud.com/docs/mount-points/>) untuk mengakses data dalam folder jarak jauh
   * [Ekspor data](<https://docs.dewacloud.com/docs/storage-exports/>) dari satu node ke node lainnya
-  * Menyimpan data dalam [master layer container](<https://docs.dewacloud.com/docs/master-container-storage/>)
+  * Menyimpan data dalam [master layer container](<https://docs.dewacloud.com/docs/primary-container-storage/>)

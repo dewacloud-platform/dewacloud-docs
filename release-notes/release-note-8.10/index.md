@@ -1,5 +1,5 @@
 ---
-slug: release-notes-8.10
+slug: release-notes-810
 title: Release Notes 8.10
 authors: [dewacloud]
 date: 2024-10-23
@@ -70,7 +70,7 @@ Untuk mencegah masalah selama deployment atau pembaruan proyek, opsi restart nod
 
 ## Perubahan API{#api-changes}
 
-Berikut ini, Anda dapat menemukan daftar semua perubahan pada API publik di versi platform 8.10 (dibandingkan dengan yang sebelumnya [8.8](<https://docs.dewacloud.com/docs/release-notes-88/#api-changes>)):
+Berikut ini, Anda dapat menemukan daftar semua perubahan pada API publik di versi platform 8.10 (dibandingkan dengan yang sebelumnya [8.8](<https://docs.dewacloud.com/release-notes/release-notes-88/#api-changes>)):
 
   * Parameter _envName_ dihapus dari metode _**GetGroups**_, _**CreateGroup**_, _**EditGroup**_, dan _**RemoveGroup**_ dalam layanan **[group](<https://docs.jelastic.com/api/#!/api/environment.Group>)**. Parameter _appid_ default sekarang digunakan untuk autentikasi.
 

@@ -12,7 +12,7 @@ Konsumsi sumber daya untuk setiap environment dikenakan biaya kepada pemilik aku
 * [Biaya Tergantung Penyedia](https://docs.dewacloud.com/docs/#provider-dependent-charges)
 * [Ekstra Opsional](https://docs.dewacloud.com/docs/#optional-extras)
 
-Anda dapat melacak penggunaan sumber daya (_CPU_, _RAM_, _Network_, _Disk_) secara real-time melalui [pemantauan statistik](https://docs.dewacloud.com/docs/view-app-statistics/) bawaan.
+Anda dapat melacak penggunaan sumber daya (_CPU_, _RAM_, _Network_, _Disk_) secara real-time melalui [pemantauan statistik](https://docs.dewacloud.com/docs/statistics-monitoring/) bawaan.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/resource-charging/charged-resources/01-statistics-monitoring.png" alt="01-statistics-monitoring.png" width="100%"/>
 

@@ -26,7 +26,7 @@ Sertifikat SSL Built-In secara otomatis diaktifkan di platform, menghemat waktu 
 - **Keunggulan**: Cepat dan mudah, diterapkan pada domain platform default.
 - **Keterbatasan**: Tidak kompatibel dengan server yang memiliki IP publik dan hanya berlaku untuk domain environment default platform (misalnya, dengan domain penyedia hosting di akhirnya).
 
-### 2. [Sertifikat SSL Let’s Encrypt](https://www.virtuozzo.com/company/blog/free-ssl-certificates-with-lets-encrypt/)
+### 2. [Sertifikat SSL Let’s Encrypt](https://docs.dewacloud.com/docs/let's-encrypt-ssl)
 Opsi ini memberikan akses mudah ke sertifikat SSL gratis dan terpercaya dari **Let’s Encrypt**, sebuah otoritas sertifikat terkenal. Dengan add-on yang telah dikonfigurasi sebelumnya, platform mengelola penerbitan sertifikat dan pembaharuan secara otomatis.
 
 - **Keunggulan**: Gratis, otomatis, sertifikat terpercaya.

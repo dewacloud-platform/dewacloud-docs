@@ -58,6 +58,6 @@ Sekarang, locale baru telah berhasil ditambahkan dan tersedia untuk digunakan ol
 ## Baca Juga
 
 - [Web SSH Access](https://docs.dewacloud.com/docs/web-ssh-client/)
-- [OOM Killer Overview](https://docs.dewacloud.com/docs/oom-killer-troubleshooting/)
+- [OOM Killer Overview](https://docs.dewacloud.com/docs/oom-killer-issues/)
 - [Custom Error Page Settings](https://docs.dewacloud.com/docs/custom-error-page/)
-- [Application Lifecycle Management](https://docs.dewacloud.com/docs/how-to-manage-application-lifecycle/)
+- [Application Lifecycle Management](https://docs.dewacloud.com/docs/application-lifecycle/)

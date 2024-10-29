@@ -15,7 +15,7 @@ Platform API mengikuti prinsip REST. **REST API** menentukan serangkaian fungsi 
 
 Semua permintaan metode API adalah permintaan HTTPS GET atau POST ke URL dengan serangkaian parameter:
 
-_**https://[\{hoster-api-host\}](<https://docs.dewacloud.com/docs/paas-hosting-providers/>) /1.0/**_
+_**https://\{hoster-api-host\} /1.0/**_
 
 Jenis URL yang harus digunakan, dinyatakan dalam deskripsi setiap metode (field REST).
 
@@ -57,7 +57,6 @@ Respons permintaan dikodekan dalam UTF-8. Respons untuk semua fungsi API diberik
 
 Untuk memulai otomatisasi proses yang diperlukan dengan Platform API, Anda harus menghadapi persyaratan berikut:
 
-  * Anda harus terdaftar di salah satu [penyedia hosting](<https://docs.dewacloud.com/docs/paas-hosting-providers/>)
   * Anda perlu mengunduh [Platform Client Library](<http://mvnrepository.com/artifact/com.jelastic/jelastic-public-j2se>) yang sesuai (sesuai dengan versi platform yang digunakan) dan menambahkannya ke classpath
 
 Jika Anda menggunakan Maven, tambahkan dependensi berikut ke _**pom.xml**_ :
@@ -103,7 +102,7 @@ private final static String ENV_NAME = "test-api-environment-" + new Random().ne
 
 dimana:
 
-  * \- URL dari hosting provider Anda (kolom _Hoster’s URL / API_ di [dokumen ini](<https://docs.dewacloud.com/docs/paas-hosting-providers/>))
+  * \- URL dari hosting provider Anda (kolom _Hoster’s URL / API_ )
   * \- email akun PaaS Anda (login)
   * \- password akun PaaS Anda
 

@@ -88,5 +88,5 @@ Ini memungkinkan Anda untuk memastikan bahwa aplikasi Anda dipantau dengan benar
 ## Baca Juga
 
 - [Log Files](https://docs.dewacloud.com/docs/log-files/)
-- [Statistics](https://docs.dewacloud.com/docs/view-app-statistics/)
+- [Statistics](https://docs.dewacloud.com/docs/statistics-monitoring/)
 - [Security of App with NGINX Balancer](https://docs.dewacloud.com/docs/nginx-balancer-security/)

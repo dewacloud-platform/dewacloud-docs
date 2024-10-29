@@ -122,6 +122,6 @@ Jika environment atau server dengan halaman kesalahan kustom tidak dapat dijangk
 ## Baca Juga
 
 - [Configuration File Manager](https://docs.dewacloud.com/docs/configuration-file-manager/)
-- [Application Lifecycle Management](https://docs.dewacloud.com/docs/how-to-manage-application-lifecycle/)
+- [Application Lifecycle Management](https://docs.dewacloud.com/docs/application-lifecycle/)
 - [NGINX Balancer Configuration](https://docs.dewacloud.com/docs/nginx-balancer-config/)
 - [Secure Sockets Layer](https://docs.dewacloud.com/docs/secure-sockets-layer/)

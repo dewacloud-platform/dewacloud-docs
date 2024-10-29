@@ -42,6 +42,6 @@ Contoh lain dari penggunaan CLI tercantum di bawah ini:
   * [environment migration](https://docs.dewacloud.com/docs/cli-environment-migration/)
   * [server scaling](https://docs.dewacloud.com/docs/cli-scaling/)
   * [Docker container redeploy](https://docs.dewacloud.com/docs/cli-container-redeploy/)
-  * [Docker volumes](https://docs.dewacloud.com/docs/cli-docker-volumes/)
+  * [Docker volumes](https://docs.dewacloud.com/docs/cli-container-volumes/)
   * [mount points](https://docs.dewacloud.com/docs/cli-mount-points/)
   * [VCS projects deployment](https://docs.dewacloud.com/docs/cli-vcs-deploy/)

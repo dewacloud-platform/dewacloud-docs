@@ -59,7 +59,7 @@ Dengan menggunakan file config berikut, Anda dapat melakukan tindakan yang terte
     
         -Xmx< size >m -Xms< size >m 
     
-    * tetapkan [system properties](<https://docs.dewacloud.com/docs/java-options-arguments/>) kustom untuk [Tomcat, TomEE, Jetty](<https://docs.dewacloud.com/docs/environment-variables-tomcat-jetty/>) atau [GlassFish](<https://docs.dewacloud.com/docs/custom-environment-variables/>):
+    * tetapkan [system properties](<https://docs.dewacloud.com/docs/java-options-arguments/>) kustom untuk [Tomcat, TomEE, Jetty](<https://docs.dewacloud.com/docs/custom-environment-variables/>) atau [GlassFish](<https://docs.dewacloud.com/docs/custom-environment-variables/>):
     
         -Dvar1=value1 -Dvar2=value2 -Dmy.var3=/my/value
     

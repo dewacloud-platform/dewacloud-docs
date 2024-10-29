@@ -51,5 +51,5 @@ Untuk melihat semua environment yang terkait dengan mudah, Anda dapat beralih ke
   * [Create DB Server](<https://docs.dewacloud.com/docs/database-hosting/>)
   * [Remote Access to MySQL/MariaDB](<https://docs.dewacloud.com/docs/remote-access-mysql/>)
   * [Dump Import/Export to MySQL/MariaDB](<https://docs.dewacloud.com/docs/dump-import-export-to-mysql/>)
-  * [Java Connection to MySQL/MariaDB](<https://docs.dewacloud.com/docs/connection-to-mysql/>)
+  * [Java Connection to MySQL/MariaDB](<https://docs.dewacloud.com/docs/connection-to-mysql-java/>)
   * [PHP Connection to MySQL/MariaDB](<https://docs.dewacloud.com/docs/connection-to-mysql-php/>)

@@ -78,14 +78,7 @@ Setelah semua data yang diperlukan dimasukkan, tekan tombol **Continue**. Anda a
 
 ## Sign In{#sign-in}
 
-Untuk masuk ke akun PaaS, Anda perlu membuka dashboard dari penyedia yang sesuai:
-
-  * Mengikuti tautan langsung dengan struktur berikut: `https://app.{[hoster_domain](https://docs.dewacloud.com/docs/paas-hosting-providers/)}`
-  * Klik penyedia hosting yang diperlukan dari daftar di [website](https://docs.dewacloud.com/docs/application-platform-partners/)
-
-<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/account-registration/06-platform-choose-provider.png" alt="platform choose provider" width="100%"/>
-
-Dalam kedua kasus, Anda akan diarahkan ke halaman login.
+Untuk masuk ke akun PaaS, Anda perlu membuka dashboard [dewacloud](https://app.infra.dewacloud.com/). Anda akan diarahkan ke halaman login.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/account-registration/07-dashboard-log-in.png" alt="dashboard log in" width="100%"/>
 

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-slug: /environment-migration
+slug: /cli-environment-migration
 title: Environment Migration
 ---
 # CLI Tutorial: Environment Migration
@@ -55,7 +55,7 @@ Periksa panduan di bawah ini untuk contoh tambahan metode CLI:
   * [environment cloning](https://docs.dewacloud.com/docs/cli-clone-environment/)
   * [server scaling](https://docs.dewacloud.com/docs/cli-scaling/)
   * [container redeploy](https://docs.dewacloud.com/docs/cli-container-redeploy/)
-  * [Docker volumes](https://docs.dewacloud.com/docs/cli-docker-volumes/)
+  * [Docker volumes](https://docs.dewacloud.com/docs/cli-container-volumes/)
   * [mount points](https://docs.dewacloud.com/docs/cli-mount-points/)
   * [VCS projects deployment](https://docs.dewacloud.com/docs/cli-vcs-deploy/)
   * [swap Public IPs](https://docs.dewacloud.com/docs/cli-ip-swap/)

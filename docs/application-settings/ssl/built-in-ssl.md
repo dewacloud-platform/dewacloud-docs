@@ -41,6 +41,6 @@ Setelah environment tersedia, Anda dapat mengaksesnya melalui tombol **Open in B
 Jelajahi opsi SSL tambahan untuk platform Anda:
 
 - [Custom SSL](https://docs.dewacloud.com/docs/custom-ssl/)
-- [Let’s Encrypt SSL](https://www.virtuozzo.com/company/blog/free-ssl-certificates-with-lets-encrypt/)
+- [Let’s Encrypt SSL](https://docs.dewacloud.com/docs/let's-encrypt-ssl)
 - [Self-Signed Custom SSL](https://docs.dewacloud.com/docs/self-signed-ssl/)
 - [Security Configs for Applications with NGINX Balancer](https://docs.dewacloud.com/docs/nginx-balancer-security/)

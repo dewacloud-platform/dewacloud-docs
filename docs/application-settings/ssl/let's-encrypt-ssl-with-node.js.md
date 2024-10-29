@@ -6,7 +6,7 @@ title: Let’s Encrypt SSL Add-On dengan NodeJS
 
 # Let’s Encrypt SSL Add-On dengan NodeJS
 
-Platform ini mengotomatisasi binding sertifikat SSL untuk sebagian besar stack software ketika bekerja dengan add-on **[Let’s Encrypt](<https://www.virtuozzo.com/company/blog/free-ssl-certificates-with-lets-encrypt/>)**. Namun, otomatisasi out-of-box mengalami kesulitan untuk Node.js nodes karena spesifikasi stack. Dalam aplikasi Node.js, sertifikat Let’s Encrypt diterbitkan tetapi tidak terikat - hanya disimpan di direktori **/var/lib/jelastic/keys**. Anda bisa menggunakannya secara manual dalam aplikasi Anda dengan membuat server Web dan membaca sertifikat langsung dari kode.
+Platform ini mengotomatisasi binding sertifikat SSL untuk sebagian besar stack software ketika bekerja dengan add-on **[Let’s Encrypt](<https://docs.dewacloud.com/docs/let's-encrypt-ssl>)**. Namun, otomatisasi out-of-box mengalami kesulitan untuk Node.js nodes karena spesifikasi stack. Dalam aplikasi Node.js, sertifikat Let’s Encrypt diterbitkan tetapi tidak terikat - hanya disimpan di direktori **/var/lib/jelastic/keys**. Anda bisa menggunakannya secara manual dalam aplikasi Anda dengan membuat server Web dan membaca sertifikat langsung dari kode.
 
 :::tip 
 Sebagai alternatif, Anda dapat menempatkan load balancer node di depan server Node.js Anda untuk bertindak sebagai reverse proxy. Add-on Let’s Encrypt SSL dapat diinstal pada balancer seperti itu, memanfaatkan otomatisasi out-of-box. Pendekatan seperti ini lebih disukai untuk proyek besar yang ingin menggunakan fitur horizontal scaling karena akan membutuhkan node load balancer juga.
@@ -20,7 +20,7 @@ Panduan ini akan memberikan contoh dasar bagaimana Anda dapat mengimplementasika
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/lets-encrypt-with-nodejs/01-create-nodejs-environment.png" alt="create Node.js environment" width="100%"/>
 
-2\. Install add-on [Let’s Encrypt](<https://www.virtuozzo.com/company/blog/free-ssl-certificates-with-lets-encrypt/>) untuk menghasilkan sertifikat SSL gratis untuk aplikasi Anda.
+2\. Install add-on [Let’s Encrypt](<https://docs.dewacloud.com/docs/let's-encrypt-ssl>) untuk menghasilkan sertifikat SSL gratis untuk aplikasi Anda.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/lets-encrypt-with-nodejs/02-install-lets-encrypt-addon.png" alt="install Let’s Encrypt add-on" width="100%"/>
 
@@ -151,12 +151,12 @@ Anda dapat memicu pembaruan sertifikat secara manual dari menu **Add-Ons** untuk
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/lets-encrypt-with-nodejs/06-lets-encrypt-certificates-variables.png" alt="Let’s Encrypt certificates variables" width="100%"/>
 
-  * Saat bekerja dengan [Let’s Encrypt add-on via API](<https://www.virtuozzo.com/company/blog/free-ssl-certificates-with-lets-encrypt/>), Anda dapat menggunakan parameter _**deployHook**_ untuk menangani logika khusus setelah sertifikat diterbitkan/diperbarui.
+  * Saat bekerja dengan [Let’s Encrypt add-on via API](<https://docs.dewacloud.com/docs/let's-encrypt-ssl>), Anda dapat menggunakan parameter _**deployHook**_ untuk menangani logika khusus setelah sertifikat diterbitkan/diperbarui.
 
 ## Baca Juga {#whats-next}
 
   * [Built-In SSL](<https://docs.dewacloud.com/docs/built-in-ssl/>)
   * [Custom SSL](<https://docs.dewacloud.com/docs/custom-ssl/>)
-  * [Let’s Encrypt SSL](<https://www.virtuozzo.com/company/blog/free-ssl-certificates-with-lets-encrypt/>)
+  * [Let’s Encrypt SSL](<https://docs.dewacloud.com/docs/let's-encrypt-ssl>)
   * [Custom Domains](<https://docs.dewacloud.com/docs/custom-domains/>)
   * [Self-Signed SSL](<https://docs.dewacloud.com/docs/self-signed-ssl/>)

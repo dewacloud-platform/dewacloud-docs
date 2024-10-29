@@ -59,7 +59,7 @@ Anda hanya akan membayar untuk **ruang disk** yang Anda gunakan dan untuk **publ
 Ikuti tautan untuk berkenalan dengan tips berguna tentang konsumsi sumber daya platform dengan cara yang cerdas:
 
 * [Hemat Uang Cloud Anda!](https://www.virtuozzo.com/company/blog/save-your-cloud-money/)
-* [Cara Mengelola Siklus Hidup Aplikasi di PaaS](https://docs.dewacloud.com/docs/how-to-manage-application-lifecycle/)
+* [Cara Mengelola Siklus Hidup Aplikasi di PaaS](https://docs.dewacloud.com/docs/application-lifecycle/)
 
 ## Baca Juga{#whats-next}
 

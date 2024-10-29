@@ -15,7 +15,7 @@ Jadi, mari mencari tahu bagaimana mendapatkannya di platform dengan beberapa lan
   * [deploying private registry](<https://docs.dewacloud.com/docs/#deploy-private-registry>)
   * [adding image to registry](<https://docs.dewacloud.com/docs/#add-image-to-registry>)
 
-Selanjutnya, Anda akan dapat dengan mudah mendeposisi image yang ditambahkan dari [private registry](<https://docs.dewacloud.com/docs/docker-custom-registry/>) Anda ke platform.
+Selanjutnya, Anda akan dapat dengan mudah mendeposisi image yang ditambahkan dari [private registry](<https://docs.dewacloud.com/docs/custom-containers-deployment/>) Anda ke platform.
 
 ## Deploy Private Registry{#deploy-private-registry}
 

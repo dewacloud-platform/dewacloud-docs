@@ -58,7 +58,7 @@ Di bawah ini, kami akan menjelaskan contoh bekerja dengan klien RDP paling umum 
 
 3. Berikan link koneksi RDP ([endpoint](https://docs.dewacloud.com/docs/endpoints/)) ke dalam field **PC name**.
 
-**Catatan:** Jika [public IP](https://www.virtuozzo.com/application-platform-docs/public-ip/) terpasang ke node Windows VM, itu harus digunakan sebagai pengganti endpoint.
+**Catatan:** Jika [public IP](https://docs.dewacloud.com/docs/public-ip/) terpasang ke node Windows VM, itu harus digunakan sebagai pengganti endpoint.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/windows-&-.net/windows-rd-access/05-provide-rdp-connection-link.png" alt="provide RDP connection link" width="100%"/>
 

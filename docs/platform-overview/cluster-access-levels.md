@@ -19,7 +19,7 @@ Platform menyediakan dua panel admin untuk mengakses cluster. Cluster Panel (JCA
 
 ## Administrators{#administrators}
 
-**Administrator** dari platform adalah departemen operasi dari [penyedia hosting](https://docs.dewacloud.com/docs/paas-hosting-providers/) atau departemen IT perusahaan. Setelah instalasi platform, mereka menjadi pemilik dan mulai mengelola kinerja keseluruhan melalui _Cluster Admin Panel_ dengan mengatur konfigurasi utama (kuota, tarif, kustomisasi, dll.) dan mendukung semua aspek yang diperlukan.
+**Administrator** dari platform adalah departemen operasi dari hosting Dewacloud atau departemen IT perusahaan. Setelah instalasi platform, mereka menjadi pemilik dan mulai mengelola kinerja keseluruhan melalui _Cluster Admin Panel_ dengan mengatur konfigurasi utama (kuota, tarif, kustomisasi, dll.) dan mendukung semua aspek yang diperlukan.
 
 Ada empat tugas utama yang dilakukan oleh administrator selama siklus hidup PaaS Cluster:
 
@@ -34,7 +34,7 @@ Platform menyediakan rangkaian lengkap analitik, dokumentasi, dan alat yang dipe
 
 ## Developers or SMBs{#developers-or-smbs}
 
-Kelompok pelanggan platform ini dapat membuat environments, mendistribusikan aplikasi mereka dan melakukan semua tindakan yang diperlukan untuk [siklus hidup aplikasi mereka yang sukses](https://www.virtuozzo.com/application-platform-docs/how-to-manage-application-lifecycle/). Manajemen environment dan aplikasi dilakukan melalui panel platform untuk pengembang - [PaaS Dashboard](https://www.virtuozzo.com/application-platform-docs/dashboard-guide/).
+Kelompok pelanggan platform ini dapat membuat environments, mendistribusikan aplikasi mereka dan melakukan semua tindakan yang diperlukan untuk [siklus hidup aplikasi mereka yang sukses](https://www.virtuozzo.com/application-platform-docs/application-lifecycle/). Manajemen environment dan aplikasi dilakukan melalui panel platform untuk pengembang - [PaaS Dashboard](https://www.virtuozzo.com/application-platform-docs/dashboard-guide/).
 
 Aktivitas utama yang tersedia untuk pengembang atau SMB di platform adalah sebagai berikut:
 
@@ -74,6 +74,6 @@ Tingkat akses membuat penggunaan dan pengelolaan PaaS Cluster menjadi efisien, n
 ## Baca Juga{#whats-next}
 
 * [Dashboard Guide](https://docs.dewacloud.com/docs/dashboard-guide/)
-* [Application Lifecycle](https://docs.dewacloud.com/docs/how-to-manage-application-lifecycle/)
+* [Application Lifecycle](https://docs.dewacloud.com/docs/application-lifecycle/)
 * [Shared Load Balancer](https://docs.dewacloud.com/docs/shared-load-balancer/)
 * [Public IP](https://docs.dewacloud.com/docs/public-ip/)

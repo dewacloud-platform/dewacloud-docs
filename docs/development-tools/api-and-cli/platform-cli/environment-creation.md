@@ -93,7 +93,7 @@ Sekarang, Anda dapat melanjutkan dengan operasi lain, seperti:
   * [environment migration](https://docs.dewacloud.com/docs/cli-environment-migration/)
   * [server scaling](https://docs.dewacloud.com/docs/cli-scaling/)
   * [container redeploy](https://docs.dewacloud.com/docs/cli-container-redeploy/)
-  * [Docker volumes](https://docs.dewacloud.com/docs/cli-docker-volumes/)
+  * [Docker volumes](https://docs.dewacloud.com/docs/cli-container-volumes/)
   * [mount points](https://docs.dewacloud.com/docs/cli-mount-points/)
   * [VCS projects deployment](https://docs.dewacloud.com/docs/cli-vcs-deploy/)
   * [swap Public IPs](https://docs.dewacloud.com/docs/cli-ip-swap/)

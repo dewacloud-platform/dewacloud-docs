@@ -86,4 +86,4 @@ If you experience any issues when swapping domains, you can seek assistance from
   * [Custom Domains](https://docs.dewacloud.com/docs/custom-domains/)
   * [Multiple Domains for Tomcat](https://docs.dewacloud.com/docs/multiple-domains-tomcat-server/)
   * [Multiple Domains with Public IP](https://docs.dewacloud.com/docs/multiple-domains/)
-  * [Application Lifecycle](https://docs.dewacloud.com/docs/how-to-manage-application-lifecycle/)
+  * [Application Lifecycle](https://docs.dewacloud.com/docs/application-lifecycle/)

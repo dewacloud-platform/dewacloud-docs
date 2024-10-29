@@ -85,7 +85,7 @@ Pilih opsi yang diperlukan untuk menyelesaikan pembuatan (penyesuaian) trigger.
 
 Anda dapat melihat riwayat eksekusi scaling triggers untuk environment tertentu.
 
-Dalam contoh di bawah ini, kami akan menerapkan beban tinggi selama 5 menit (lihat [statistik](https://docs.dewacloud.com/docs/view-app-statistics) penggunaan RAM pada gambar di bawah) di application server dengan trigger berikut dikonfigurasi:
+Dalam contoh di bawah ini, kami akan menerapkan beban tinggi selama 5 menit (lihat [statistik](https://docs.dewacloud.com/docs/statistics-monitoring) penggunaan RAM pada gambar di bawah) di application server dengan trigger berikut dikonfigurasi:
 
   * _**add node**_ ketika beban RAM rata-rata lebih dari 65% selama minimal 5 menit
   * _**remove node**_ ketika beban RAM rata-rata kurang dari 20% selama minimal 10 menit
@@ -120,5 +120,5 @@ Jika Anda memiliki pertanyaan, jangan ragu untuk meminta bantuan dari ahli tekni
 
   * [Automatic Vertical Scaling](https://docs.dewacloud.com/docs/automatic-vertical-scaling)
   * [Horizontal Scaling](https://docs.dewacloud.com/docs/horizontal-scaling)
-  * [Statistics Monitoring](https://docs.dewacloud.com/docs/view-app-statistics)
+  * [Statistics Monitoring](https://docs.dewacloud.com/docs/statistics-monitoring)
   * [Load Alerts](https://docs.dewacloud.com/docs/load-alerts)

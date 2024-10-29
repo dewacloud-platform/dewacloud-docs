@@ -10,7 +10,7 @@ _Dokumen ini bersifat sementara dan dapat berubah._
 
 Dalam dokumen ini, Anda akan menemukan semua fitur baru, peningkatan, dan perubahan yang terlihat yang termasuk dalam rilis **Virtuozzo Application Platform for WordPress 2.2**.
 
-Ruang lingkup perubahan umum sama seperti untuk rilis _[Dewacloud Application Platform (DevOps PaaS) 8.4](https://docs.dewacloud.com/docs/release-notes-84/)_. Di bawah ini, kami akan menyoroti semua peningkatan spesifik ke WordPress PaaS.
+Ruang lingkup perubahan umum sama seperti untuk rilis _[Dewacloud Application Platform (DevOps PaaS) 8.4](https://docs.dewacloud.com/release-notes/release-notes-84/)_. Di bawah ini, kami akan menyoroti semua peningkatan spesifik ke WordPress PaaS.
 
 ## Refill Balance dari Dashboard{#refill-balance-from-dashboard}
 

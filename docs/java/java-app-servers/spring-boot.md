@@ -267,7 +267,7 @@ UI Jelastic Cloud dengan alat yang terintegrasi dengan sesuai, misalnya:
 <img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/spring-boot/spring-boot-8.png" alt="spring boot variables" width="100%"/>
 
   * telusuri [**Logs**](<https://docs.dewacloud.com/docs/log-files/>) server untuk mendapatkan detail tentang operasi-run untuk administrasi layanan yang efisien dan pemecahan masalah
-  * lacak [**Statistics**](<https://docs.dewacloud.com/docs/view-app-statistics/>) pada sumber daya yang digunakan untuk mengetahui kapasitas yang sebenarnya dibutuhkan server Anda dan menentukan pendekatan terbaik untuk alokasinya 
+  * lacak [**Statistics**](<https://docs.dewacloud.com/docs/statistics-monitoring/>) pada sumber daya yang digunakan untuk mengetahui kapasitas yang sebenarnya dibutuhkan server Anda dan menentukan pendekatan terbaik untuk alokasinya 
 
 Untuk operasi pemeliharaan yang lebih kompleks, Anda dapat terhubung ke container
 Spring Boot Anda [via SSH](<https://docs.dewacloud.com/docs/ssh-access/>) (baik menggunakan
@@ -340,7 +340,7 @@ keamanan berikut:
 <img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/spring-boot/spring-boot-10.png" alt="spring boot ssl configuration" width="100%"/>
 
   * [SSL kustom](<https://docs.dewacloud.com/docs/custom-ssl/>) dapat dikonfigurasikan untuk lingkungan berbasis Spring Boot dengan menambahkan salah satu dari balancer beban bersertifikat
-  * sebagai alternatif SSL gratis, berlaku untuk domain internal dan kustom, sebuah aplikasi tambahan Jelastic yang dikembangkan secara khusus menggunakan [Let’s Encrypt](<https://www.virtuozzo.com/company/blog/free-ssl-certificates-with-lets-encrypt/>) dapat digunakan (memerlukan [load balancer](<https://docs.dewacloud.com/docs/load-balancing/>) bersertifikat)
+  * sebagai alternatif SSL gratis, berlaku untuk domain internal dan kustom, sebuah aplikasi tambahan Jelastic yang dikembangkan secara khusus menggunakan [Let’s Encrypt](<https://docs.dewacloud.com/docs/let's-encrypt-ssl>) dapat digunakan (memerlukan [load balancer](<https://docs.dewacloud.com/docs/load-balancing/>) bersertifikat)
 
 Menerapkan solusi apa pun ini akan memungkinkan enkripsi lalu lintas pada tingkat
 environment, menghilangkan kebutuhan untuk mengkonfigurasinya di dalam aplikasi Anda.

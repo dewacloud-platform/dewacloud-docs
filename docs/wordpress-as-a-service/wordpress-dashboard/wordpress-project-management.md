@@ -36,7 +36,7 @@ Saat merestart solusi yang terklaster, Anda akan melihat daftar drop-down dengan
 
 ![settings custom domains](#)
 
-2.2. Bagian **SSL Installation** memungkinkan menerbitkan sertifikat baru atau melihat yang sudah ada. Anda dapat menggunakan _[Let’s Encrypt SSL](https://docs.dewacloud.com/company/blog/free-ssl-certificates-with-lets-encrypt/)_ otomatis atau mengelola _custom SSL_ untuk proyek secara manual (Anda harus menambahkan domain kustom terlebih dahulu).
+2.2. Bagian **SSL Installation** memungkinkan menerbitkan sertifikat baru atau melihat yang sudah ada. Anda dapat menggunakan _[Let’s Encrypt SSL](https://docs.dewacloud.com/docs/let's-encrypt-ssl)_ otomatis atau mengelola _custom SSL_ untuk proyek secara manual (Anda harus menambahkan domain kustom terlebih dahulu).
 
 ![settings SSL installation](#)
 

@@ -113,4 +113,4 @@ Pengaturan ini memungkinkan Anda melakukan tugas pengembangan tanpa mempengaruhi
 
 - [Public IP](https://docs.dewacloud.com/docs/public-ip/)
 - [Remote Access to MySQL](https://docs.dewacloud.com/docs/remote-access-mysql/)
-- [Application Lifecycle](https://docs.dewacloud.com/docs/how-to-manage-application-lifecycle/)
+- [Application Lifecycle](https://docs.dewacloud.com/docs/application-lifecycle/)

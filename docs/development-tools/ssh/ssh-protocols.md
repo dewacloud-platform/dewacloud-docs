@@ -35,7 +35,7 @@ Sekarang kita dapat melanjutkan untuk membangun koneksi SFTP.
 
 4\. Di jendela yang terbuka, klik tombol **New site** dan tentukan parameter berikut:
 
-  * di bidang **Host**, nyatakan host SSH Anda (_gate.\{[hoster_domain](<https://docs.dewacloud.com/docs/paas-hosting-providers/>)\}_)
+  * di bidang **Host**, nyatakan host SSH Anda (_gate.\{hoster_domain\}_)
   * di bidang **Port**, masukkan nilai _3022_.
   * pilih **SFTP** dalam daftar drop-down Protocol.
   * pilih tipe Logon **Normal**.

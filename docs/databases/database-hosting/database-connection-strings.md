@@ -62,6 +62,6 @@ Diperlukan untuk menentukan string host tanpa **http://**. Alamat dan kredensial
 
   * [Create DB Server](<https://docs.dewacloud.com/docs/database-hosting/>)
   * [Database Configuration](<https://docs.dewacloud.com/docs/database-configuration-files/>)
-  * [Scheduling DB Backups](<https://docs.dewacloud.com/docs/scheduling-backups/>)
+  * [Scheduling DB Backups](<https://docs.dewacloud.com/docs/database-backups/>)
   * [Connection to DB via JNDI](<https://docs.dewacloud.com/docs/connection-to-db-via-jndi/>)
   * [Connection to DB using Hibernate](<https://docs.dewacloud.com/docs/connect-db-hibernate/>)

@@ -50,7 +50,6 @@ Platform menyediakan dokumentasi ekstensif, beberapa blog post, dan halaman GitH
 
 ## Baca Juga{#whats-next}
 
-* [Cluster in the Cloud](https://docs.dewacloud.com/docs/cluster-in-cloud/)
 * [Horizontal Scaling](https://docs.dewacloud.com/docs/horizontal-scaling/)
 * [Automatic Horizontal Scaling](https://docs.dewacloud.com/docs/automatic-horizontal-scaling/)
 * [Topology Wizard](https://docs.dewacloud.com/docs/setting-up-environment/)

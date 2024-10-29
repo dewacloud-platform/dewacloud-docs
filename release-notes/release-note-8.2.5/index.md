@@ -1,5 +1,5 @@
 ---
-slug: release-notes-8.2.5
+slug: release-notes-825
 title: Release Notes 8.2.5
 authors: [dewacloud]
 date: 2024-10-16

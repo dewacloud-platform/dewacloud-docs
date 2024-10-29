@@ -47,7 +47,7 @@ Ikon cloudlet berubah warna dari hijau ke kuning dan merah ketika Anda mendekati
 
 ## Statistik Konsumsi{#statistics-of-consumption}
 
-Anda juga dapat melihat jumlah Disk, RAM (Memori), CPU, dan Bandwidth Jaringan yang dikonsumsi sesuai dengan masing-masing container dengan mengklik tombol [Statistics](https://docs.dewacloud.com/docs/view-app-statistics/) pada node yang diinginkan.
+Anda juga dapat melihat jumlah Disk, RAM (Memori), CPU, dan Bandwidth Jaringan yang dikonsumsi sesuai dengan masing-masing container dengan mengklik tombol [Statistics](https://docs.dewacloud.com/docs/statistics-monitoring/) pada node yang diinginkan.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/resource-charging/monitoring-consumed-resources/04-application-statistics.png" alt="application statistics" width="100%"/>
 

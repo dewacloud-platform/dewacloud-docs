@@ -39,7 +39,7 @@ Dasar dari platform CLI diwakili oleh arsip _.jar_ yang dapat dieksekusi dan beb
 
 Cukup ikuti kuesioner yang muncul, tentukan nilai yang diminta:
 
-  * _**Platform URL**_ \- URL instalasi PaaS dalam format _app.[\{hoster_domain\}](https://docs.dewacloud.com/docs/paas-hosting-providers/)_
+  * _**Platform URL**_ \- URL instalasi PaaS dalam format _app.\{hoster_domain\}_
   * _**Email**_ \- email (login) terkait dengan akun Anda
   * _**Password**_ \- password akun Anda
 

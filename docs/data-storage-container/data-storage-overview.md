@@ -23,7 +23,7 @@ Dan untuk memastikan pengalaman terbaik saat memanfaatkan fitur ini, disediakan 
 Dengan Data Storage Container Anda mendapatkan berbagai peluang untuk memperbaiki struktur filesystem proyek Anda, membuatnya lebih andal dan dapat dikonfigurasi. Untuk mengetahui lebih lanjut, beralih ke dokumen yang terhubung di bawah ini, di mana kami mempertimbangkan secara detail jenis penyimpanan apa yang tersedia di platform dan untuk jenis data apa yang paling cocok:
 
   * [Local filesystem](<https://docs.dewacloud.com/docs/local-filesystem-storage/>)
-  * [Master container](<https://docs.dewacloud.com/docs/master-container-storage/>)
+  * [Master container](<https://docs.dewacloud.com/docs/primary-container-storage/>)
   * [Compound container](<https://docs.dewacloud.com/docs/compound-container-storage/>)
   * [Dedicated container](<https://docs.dewacloud.com/docs/dedicated-storage/>)
   * [External server](<https://docs.dewacloud.com/docs/external-nfs-storage/>)

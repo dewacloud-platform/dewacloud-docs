@@ -46,7 +46,7 @@ Sekarang, Anda dapat mulai mengelola lingkungan Anda:
 
   * [Deploy Application](<https://docs.dewacloud.com/docs/deployment-guide/>)
   * [Bind Custom Domain](<https://docs.dewacloud.com/docs/custom-domains/>)
-  * [Monitor the Statistics](<https://docs.dewacloud.com/docs/view-app-statistics/>) & [View Log Files](<https://docs.dewacloud.com/docs/log-files/>)
+  * [Monitor the Statistics](<https://docs.dewacloud.com/docs/statistics-monitoring/>) & [View Log Files](<https://docs.dewacloud.com/docs/log-files/>)
   * [Tune the Server Configurations](<https://docs.dewacloud.com/docs/configuration-file-manager/>)
   * [Access Environment via SSH](<https://docs.dewacloud.com/docs/ssh-access/>)
 

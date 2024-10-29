@@ -120,6 +120,6 @@ Untuk memverifikasi bahwa sertifikat SSL Anda terinstal dengan benar:
 Jelajahi lebih banyak solusi SSL dan fitur yang tersedia di platform:
 
 - [Built-In SSL](https://docs.dewacloud.com/docs/built-in-ssl/)
-- [Let’s Encrypt SSL](https://www.virtuozzo.com/company/blog/free-ssl-certificates-with-lets-encrypt/)
+- [Let’s Encrypt SSL](https://docs.dewacloud.com/docs/let's-encrypt-ssl)
 - [Custom Domains](https://docs.dewacloud.com/docs/custom-domains/)
 - [Self-Signed Custom SSL](https://docs.dewacloud.com/docs/self-signed-ssl/)

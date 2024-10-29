@@ -1,5 +1,5 @@
 ---
-slug: release-notes-8.6
+slug: release-notes-86
 title: Release Notes 8.6
 authors: [dewacloud]
 date: 2024-10-20

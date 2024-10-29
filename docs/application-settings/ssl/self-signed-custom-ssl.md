@@ -144,5 +144,5 @@ Ketika Anda mengunjungi situs melalui **https://**, Anda akan melihat peringatan
 
 - [Built-In SSL](https://docs.dewacloud.com/docs/built-in-ssl/)
 - [Custom SSL](https://docs.dewacloud.com/docs/custom-ssl/)
-- [Let’s Encrypt SSL](https://www.virtuozzo.com/company/blog/free-ssl-certificates-with-lets-encrypt/)
+- [Let’s Encrypt SSL](https://docs.dewacloud.com/docs/let's-encrypt-ssl)
 - [Custom Domains](https://docs.dewacloud.com/docs/custom-domains/)

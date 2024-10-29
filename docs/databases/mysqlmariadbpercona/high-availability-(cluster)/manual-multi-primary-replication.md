@@ -241,7 +241,7 @@ Itu sangat mudah! Nikmati keamanan data lengkap dengan hosting platform ini.
 
 ## Baca Juga{#whats-next}
 
-  * [Java Connection ke MySQL/MariaDB](<https://docs.dewacloud.com/docs/connection-to-mysql/>)
+  * [Java Connection ke MySQL/MariaDB](<https://docs.dewacloud.com/docs/connection-to-mysql-java/>)
   * [PHP Connection ke MySQL/MariaDB](<https://docs.dewacloud.com/docs/connection-to-mysql-php/>)
   * [Multi Master Replication](<https://docs.dewacloud.com/docs/multi-master-mysql-replication/>)
   * [Remote Access ke MySQL/MariaDB](<https://docs.dewacloud.com/docs/remote-access-mysql/>)

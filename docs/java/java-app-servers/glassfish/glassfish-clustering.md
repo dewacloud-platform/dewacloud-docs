@@ -47,7 +47,7 @@ Untuk manajemen repository pusat, Anda dapat menggunakan **Admin Console**, GUI 
 
 Instances dalam setiap cluster dipasangkan. Jika instance utama dalam cluster gagal, semua pengguna pada instance ini secara otomatis diarahkan ke instance kedua dalam cluster. Di mana pengguna akhir tidak akan melihat perubahan apa pun: instance yang direplikasi memiliki semua sesi dari instance yang gagal. Jika kebetulan kedua instance dalam sebuah cluster gagal, pengguna hanya akan beralih ke cluster lain. Untuk switching semacam itu, platform menggunakan **NGINX-balancer**. Ini menangani dan membagikan semua permintaan antar cluster dan instance berdasarkan beban dan ketersediaan.
 
-Selain itu, Anda disediakan sistem penskalaan lengkap: dengan penskalaan [horizontal](<https://docs.dewacloud.com/docs/multi-nodes>) dan penskalaan [vertical](<https://docs.dewacloud.com/docs/automatic-vertical-scaling>), ukuran dan jumlah cluster dapat berubah secara manual atau otomatis sesuai dengan peningkatan atau penurunan beban.
+Selain itu, Anda disediakan sistem penskalaan lengkap: dengan penskalaan [horizontal](<https://docs.dewacloud.com/docs/horizontal-scaling>) dan penskalaan [vertical](<https://docs.dewacloud.com/docs/automatic-vertical-scaling>), ukuran dan jumlah cluster dapat berubah secara manual atau otomatis sesuai dengan peningkatan atau penurunan beban.
 
 Untuk mendapatkan lingkungan cluster dengan GlassFish yang siap di platform ini, cukup pilih GlassFish sebagai server aplikasi Anda dan tingkatkan jumlah node seperti yang ditunjukkan pada gambar.
 
@@ -59,7 +59,6 @@ Itulah semua konfigurasi yang Anda butuhkan! Cukup klik tombol **Create** dan da
 
 ## Baca Juga{#whats-next}
 
-  * [Cluster in the Cloud](<https://docs.dewacloud.com/docs/cluster-in-cloud/>)
   * [GlassFish](<https://docs.dewacloud.com/docs/glassfish/>)
   * [GlassFish Auto-Clustering](<https://www.virtuozzo.com/company/blog/glassfish-payara-auto-clustering-cloud-hosting/>)
   * [JDBC Connection Pool](<https://docs.dewacloud.com/docs/jdbc-connection-pool/>)

@@ -115,7 +115,7 @@ Pelajari cara melakukan operasi lain melalui platform CLI:
   * [environment migration](https://docs.dewacloud.com/docs/cli-environment-migration/)
   * [server scaling](https://docs.dewacloud.com/docs/cli-scaling/)
   * [container redeploy](https://docs.dewacloud.com/docs/cli-container-redeploy/)
-  * [Docker volumes](https://docs.dewacloud.com/docs/cli-docker-volumes/)
+  * [Docker volumes](https://docs.dewacloud.com/docs/cli-container-volumes/)
   * [VCS projects deployment](https://docs.dewacloud.com/docs/cli-vcs-deploy/)
   * [swap Public IPs](https://docs.dewacloud.com/docs/cli-ip-swap/)
   * [installing JPS](https://docs.dewacloud.com/docs/cli-install-jps)

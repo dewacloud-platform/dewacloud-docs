@@ -162,7 +162,7 @@ Solusi **[Auto-Clustering](<https://docs.dewacloud.com/docs/auto-clustering/>)**
 
 Sekelompok server database yang dapat diskalakan dan dikelola sepenuhnya dapat dengan mudah diinstal dalam lingkungan Java. Untuk membangun koneksi, sesuaikan aplikasi Anda mengikuti instruksi berdasarkan database yang Anda butuhkan:
 
-  * [MySQL dan MariaDB Connection](<https://docs.dewacloud.com/docs/connection-to-mysql/>)
+  * [MySQL dan MariaDB Connection](<https://docs.dewacloud.com/docs/connection-to-mysql-java/>)
   * [PostgreSQL Connection](<https://www.virtuozzo.com/company/blog/java-connection-to-postgresql/>)
   * [MongoDB Connection](<https://docs.dewacloud.com/docs/connection-to-mongodb-java/>)
 

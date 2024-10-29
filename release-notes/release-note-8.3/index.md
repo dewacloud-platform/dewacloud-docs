@@ -1,5 +1,5 @@
 ---
-slug: release-notes-8.3
+slug: release-notes-83
 title: Release Notes 8.3
 authors: [dewacloud]
 date: 2024-10-17
@@ -108,7 +108,7 @@ Dewacloud Application Platform menyediakan fungsionalitas [kolaborasi](<https://
 
 ## Perubahan API{#api-changes}
 
-Di bawah ini, Anda dapat menemukan daftar semua perubahan pada API publik di versi platform 8.3 (dibandingkan dengan yang sebelumnya [8.2.2](<https://docs.dewacloud.com/docs/release-notes-82/#api-changes>)):
+Di bawah ini, Anda dapat menemukan daftar semua perubahan pada API publik di versi platform 8.3 (dibandingkan dengan yang sebelumnya [8.2.2](<https://docs.dewacloud.com/release-notes/release-notes-82/#api-changes>)):
 
   * Menambahkan metode API baru _**SetAutopay**_, _**MoveProduct**_, _**UpdateSubscription**_, _**UpcomingInvoice**_, dan _**DiscardUpdateSubscription**_ karena perubahan [langganan](<#subscription-improvements>).
   * Menambahkan parameter baru _**invalidateSessions**_ untuk semua metode reset password, yang memungkinkan mengakhiri semua sesi pengguna aktif (kecuali yang saat ini).

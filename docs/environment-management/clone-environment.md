@@ -9,7 +9,7 @@ title: Clone Environment
 
 Cepat atau lambat, setiap pengembang akan menghadapi kebutuhan untuk membuat cabang aplikasi yang sedang mereka kerjakan, misalnya untuk mencoba fungsionalitas baru sebelum benar-benar menerapkannya ke produksi. Untuk kasus seperti ini, platform menyediakan opsi khusus - **penggandaan environment**, yang memungkinkan Anda membuat salinan lengkap dari proyek yang sudah ada hanya dalam beberapa klik.
 
-Selain itu, jika berbicara tentang proyek yang lebih kompleks dan rumit (yang melibatkan seluruh tim pengembangan), beberapa salinan aplikasi Anda (yang didedikasikan untuk tugas tertentu) sangat disarankan. Implementasi [lifecycle aplikasi](<https://docs.dewacloud.com/docs/how-to-manage-application-lifecycle/>) yang paling umum melibatkan tahap-tahap berikut:
+Selain itu, jika berbicara tentang proyek yang lebih kompleks dan rumit (yang melibatkan seluruh tim pengembangan), beberapa salinan aplikasi Anda (yang didedikasikan untuk tugas tertentu) sangat disarankan. Implementasi [lifecycle aplikasi](<https://docs.dewacloud.com/docs/application-lifecycle/>) yang paling umum melibatkan tahap-tahap berikut:
 
   * _**pengembangan**_ \- untuk pengembang membuat dan memodifikasi fitur
   * _**pengujian**_ \- untuk memastikan kualitas dengan menemukan dan menganalisis masalah yang mungkin terjadi
@@ -72,4 +72,4 @@ Kasus penggunaan ini dapat membantu Anda mendapatkan hasil maksimal dari environ
   * [Menyiapkan Environment](<https://docs.dewacloud.com/docs/setting-up-environment/>)
   * [Berbagi Environment](<https://docs.dewacloud.com/docs/share-environment/>)
   * [Panduan Deployment](<https://docs.dewacloud.com/docs/deployment-guide/>)
-  * [Manajemen Lifecycle Aplikasi](<https://docs.dewacloud.com/docs/how-to-manage-application-lifecycle/>)
+  * [Manajemen Lifecycle Aplikasi](<https://docs.dewacloud.com/docs/application-lifecycle/>)

@@ -77,7 +77,7 @@ Jika string “_You are connected!_” muncul di dalam terminal, koneksi berhasi
 
 ## Baca Juga{#whats-next}
 
-  * [Java Connection to MySQL](<https://docs.dewacloud.com/docs/connection-to-mysql/>)
+  * [Java Connection to MySQL](<https://docs.dewacloud.com/docs/connection-to-mysql-java/>)
   * [PHP Connection to MySQL](<https://docs.dewacloud.com/docs/connection-to-mysql-php/>)
   * [Node.js Connection to MySQL](<https://docs.dewacloud.com/docs/connection-to-mysql-nodejs/>)
   * [MySQL Master Slave Replication](<https://docs.dewacloud.com/docs/database-master-slave-replication/>)

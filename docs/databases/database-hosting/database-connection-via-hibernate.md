@@ -1,6 +1,6 @@
 ---
 sidebar_position: 7
-slug: /connection-to-db-via-hibernate
+slug: /connect-db-hibernate
 title: Database Connection via Hibernate
 ---
 
@@ -21,7 +21,7 @@ Mari kita lakukan langkah demi langkah:
 
 2. Buat pengguna baru di database:
 
-   Cara membuat pengguna baru - [klik di sini](<https://docs.dewacloud.com/docs/connection-to-mysql/>).
+   Cara membuat pengguna baru - [klik di sini](<https://docs.dewacloud.com/docs/connection-to-mysql-java/>).
 
    ```plaintext
    Database name : jelasticDb

@@ -74,4 +74,4 @@ Jika informasi lebih lanjut tentang region tertentu diperlukan, silakan hubungi 
 
   * [Migration between Regions](<https://docs.dewacloud.com/docs/environment-regions-migration/>)
   * [Charged Resources](<https://docs.dewacloud.com/docs/chargeable-resources/>)
-  * [Application Lifecycle Management](<https://docs.dewacloud.com/docs/how-to-manage-application-lifecycle/>)
+  * [Application Lifecycle Management](<https://docs.dewacloud.com/docs/application-lifecycle/>)
