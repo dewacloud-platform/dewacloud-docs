@@ -1,6 +1,6 @@
 ---
 sidebar_position: 6
-slug: /mongodb-backuprestore-add-on
+slug: /mongodb-backup-restore-addon
 title: Backup/Restore Add-On
 ---
 # Database Backup/Restore Add-On

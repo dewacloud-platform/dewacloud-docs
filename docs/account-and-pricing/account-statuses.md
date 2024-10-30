@@ -43,7 +43,7 @@ Untuk menghapus akun Anda dan berhenti berlangganan dari email kami, silakan hub
 ## Baca Juga{#whats-next}
 
 * [Registrasi Akun](https://docs.dewacloud.com/docs/account/)
-* [Tipe-Tipe Akun](https://docs.dewacloud.com/docs/types-of-accounts/)
+* [Tipe-Tipe Akun](https://docs.dewacloud.com/docs/account-types/)
 * [Reset Kata Sandi Akun](https://docs.dewacloud.com/docs/account-password-reset/)
 * [Two-Factor Authentication](https://docs.dewacloud.com/docs/two-factor-authentication/)
 * [Personal Access Tokens](https://docs.dewacloud.com/docs/personal-access-tokens/)

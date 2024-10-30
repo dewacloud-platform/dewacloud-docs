@@ -5,7 +5,7 @@ title: Upgrade & Isi Ulang Akun
 ---
 # Upgrade & Isi Ulang Akun
 
-Setelah periode percobaan awal, jika Anda puas dengan produk kami dan ingin terus menggunakan platform, akun Anda harus di-upgrade ke akun [penagihan](https://docs.dewacloud.com/docs/types-of-accounts/). Konversi ini akan menghapus semua pembatasan dan memberikan akses ke semua fungsionalitas yang tersedia.
+Setelah periode percobaan awal, jika Anda puas dengan produk kami dan ingin terus menggunakan platform, akun Anda harus di-upgrade ke akun [penagihan](https://docs.dewacloud.com/docs/account-types/). Konversi ini akan menghapus semua pembatasan dan memberikan akses ke semua fungsionalitas yang tersedia.
 
 :::tip
 Jika Anda belum memiliki akun, pilih penyedia layanan yang paling cocok untuk Anda (berdasarkan geolokasi, kinerja, kualitas dukungan, dll.) dan daftar untuk uji coba gratis. Platform akan secara otomatis mengirim email konfirmasi, jadi ikuti saja instruksi yang diberikan (verifikasi captcha tambahan atau SMS mungkin diperlukan).
@@ -60,6 +60,4 @@ Sekarang, Anda tahu cara mengonversi ke penagihan dan cara menjaga akun Anda tet
 ## Baca Juga{#whats-next}
 
   * [Ikhtisar Model Harga](https://docs.dewacloud.com/docs/pricing-model/)
-  * [Ikhtisar Sistem Penagihan](https://docs.dewacloud.com/docs/billing-system/)
-  * [Harga Hosters](https://docs.dewacloud.com/docs/pricing-pages/)
   * [Sumber Daya yang Dikenakan Biaya](https://docs.dewacloud.com/docs/chargeable-resources/)

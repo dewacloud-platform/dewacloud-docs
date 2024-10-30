@@ -24,7 +24,7 @@ Fitur ini dapat bermanfaat dalam banyak kasus. Misalnya, jika Anda perlu:
 
 **Setiap environment** (dihentikan/berjalan) dapat dipindahkan **dari akun mana pun** (termasuk yang dinonaktifkan). Namun, akun target harus memenuhi persyaratan berikut:
 
-  * **jenis** \- bisa dari [jenis apa saja](<https://docs.dewacloud.com/docs/types-of-accounts/>) (beta, billing), __kecuali akun trial__
+  * **jenis** \- bisa dari [jenis apa saja](<https://docs.dewacloud.com/docs/account-types/>) (beta, billing), __kecuali akun trial__
   * **status** \- harus _[aktif](<https://docs.dewacloud.com/docs/account-statuses/>)_ (yaitu tidak ditangguhkan atau dinonaktifkan)
   * **kuota** \- harus memiliki [kuota](<https://docs.dewacloud.com/docs/quotas-system/>) yang cukup (batasan) untuk menambah environment
 

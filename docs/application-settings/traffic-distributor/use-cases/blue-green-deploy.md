@@ -39,6 +39,6 @@ Itu dia! Sebagai hasilnya, aplikasi Anda diperbarui pada kedua backend, sementar
 
 * [Traffic Distributor Overview](<https://docs.dewacloud.com/docs/traffic-distributor/>)
 * [Traffic Distributor Installation](<https://docs.dewacloud.com/docs/traffic-distributor-installation/>)
-* [Traffic Distributor Injection](<https://docs.dewacloud.com/docs/traffic-distributor-injection/>)
+* [Traffic Distributor Injection](<https://docs.dewacloud.com/docs/traffic-distributor-integration/>)
 * [Failover Protection](<https://docs.dewacloud.com/docs/failover-protection/>)
 * [A/B Testing](<https://docs.dewacloud.com/docs/ab-testing/>)

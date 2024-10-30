@@ -5,7 +5,7 @@ title: CreateEnv Params
 ---
 # Parameter untuk API CreateEnvironment
 
-Pembuatan environment baru pada platform dapat diotomatisasi dengan berbagai cara, misalnya dengan bantuan [platform CLI](<https://docs.dewacloud.com/docs/cli/>), melalui permintaan [API](<https://docs.dewacloud.com/docs/application-platform-api-docs/>) langsung atau dengan menyatakan parameter yang sesuai melalui manifest [JPS](<https://docs.dewacloud.com/docs/jps/>). Dalam hal ini, meskipun mewakili operasi yang cukup sederhana, ini dapat mencakup sejumlah parameter berbeda untuk definisi topologi yang tepat.
+Pembuatan environment baru pada platform dapat diotomatisasi dengan berbagai cara, misalnya dengan bantuan [platform CLI](<https://docs.dewacloud.com/docs/cli/>), melalui permintaan [API](<https://docs.jelastic.com/api/>) langsung atau dengan menyatakan parameter yang sesuai melalui manifest [JPS](<https://docs.dewacloud.com/docs/packaging-standard/>). Dalam hal ini, meskipun mewakili operasi yang cukup sederhana, ini dapat mencakup sejumlah parameter berbeda untuk definisi topologi yang tepat.
 
 Berikut ini kami memberikan deskripsi untuk semua pengaturan tersebut dengan contoh penggunaannya melalui CLI. Mereka dibagi menjadi 3 bagian utama sebagai array dari metode _~/jelastic/environment/control/createenvironment_, dinamai sesuai dengan denominasi array yang sesuai - dua yang umum dan daftar parameter khusus untuk pembuatan container Docker:
 
@@ -178,5 +178,5 @@ Contoh:
 ## Baca Juga{#whats-next}
 
   * [API Overview](<https://docs.dewacloud.com/docs/api-overview/>)
-  * [API Methods](<https://docs.dewacloud.com/docs/application-platform-api-docs/>)
+  * [API Methods](<https://docs.jelastic.com/api/>)
   * [Platform CLI](<https://docs.dewacloud.com/docs/cli/>)

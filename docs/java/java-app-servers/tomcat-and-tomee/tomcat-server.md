@@ -180,7 +180,7 @@ Seperti yang Anda lihat, platform ini membuat hosting Tomcat menjadi mudah dan f
 
 ## Baca Juga{#whats-next}
 
-  * [TomEE](<https://docs.dewacloud.com/docs/tomee/>)
+  * [TomEE](<https://docs.dewacloud.com/docs/apache-tomee/>)
   * [Java Application Server Configuration](<https://docs.dewacloud.com/docs/java-application-server-config/>)
   * [Tomcat Multiple Domains](<https://docs.dewacloud.com/docs/multiple-domains-tomcat-server/>)
   * [Deployment Guide](<https://docs.dewacloud.com/docs/deployment-guide/>)

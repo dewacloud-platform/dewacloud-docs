@@ -54,5 +54,5 @@ Jika perangkat lunak klien Anda mendukung beberapa titik masuk, Anda dapat menga
   * [Remote Access to PostgreSQL](<https://docs.dewacloud.com/docs/remote-access-postgres/>)
   * [Java Connection to PostgreSQL](<https://www.virtuozzo.com/company/blog/java-connection-to-postgresql/>)
   * [PHP Connection to PostgreSQL](<https://docs.dewacloud.com/docs/connection-to-postgresql-php/>)
-  * [PostgreSQL Replication](<https://docs.dewacloud.com/docs/postgresql-database-replication/>)
+  * [PostgreSQL Replication](<https://docs.dewacloud.com/docs/postgresql-auto-clustering>)
   * [Dump Import/Export to PostgreSQL](<https://docs.dewacloud.com/docs/dump-postgres/>)

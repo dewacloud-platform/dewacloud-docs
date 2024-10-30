@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /jps-overview
+slug: /packaging-standard
 title: JPS Overview
 ---
 # Packaging Standard untuk Otomatisasi CI/CD
@@ -15,7 +15,7 @@ Teknologi ini memungkinkan untuk [mengotomatisasi skenario CI/CD yang kompleks](
 
 ## Otomatisasi CI/CD Aplikasi dengan Cloud Scripting{#application-cicd-automation-with-cloud-scripting}
 
-Ditenagai oleh bahasa [Cloud Scripting](<http://docs.cloudscripting.com/>) yang dikembangkan secara khusus oleh platform, teknologi packaging JPS dapat membantu sepenuhnya mengotomatisasi proses pengiriman aplikasi - misalnya, untuk secara otomatis mentransfer setiap versi aplikasi baru melalui tahap pengembangan, pengujian, dan produksi. Ini dijamin dengan menerapkan logika pemrosesan proyek yang diperlukan melalui penghubung berbagai metode [API platform](<https://docs.dewacloud.com/docs/application-platform-api-docs/>).
+Ditenagai oleh bahasa [Cloud Scripting](<http://docs.cloudscripting.com/>) yang dikembangkan secara khusus oleh platform, teknologi packaging JPS dapat membantu sepenuhnya mengotomatisasi proses pengiriman aplikasi - misalnya, untuk secara otomatis mentransfer setiap versi aplikasi baru melalui tahap pengembangan, pengujian, dan produksi. Ini dijamin dengan menerapkan logika pemrosesan proyek yang diperlukan melalui penghubung berbagai metode [API platform](<https://docs.jelastic.com/api/>).
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/cloud-scripting-and-jps/jps-overview/jps-overview-2.png" alt="cloud scripting" width="40%"/>
 

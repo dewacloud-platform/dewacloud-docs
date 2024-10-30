@@ -115,7 +115,7 @@ Di bawah ini, Anda dapat menemukan daftar semua perubahan pada API publik di ver
 
 Tinjauan lengkap dokumentasi API telah dimulai untuk memberikan deskripsi komprehensif tentang semua metode dan parameter mereka. Saat ini, sebagian besar layanan _billing_ dan _environment_ telah diperbarui. Anda dapat mengharapkan cakupan penuh selama beberapa rilis mendatang.
 
-[Info lebih lanjut](<https://docs.dewacloud.com/docs/application-platform-api-docs/>)
+[Info lebih lanjut](<https://docs.jelastic.com/api/>)
 
 
 

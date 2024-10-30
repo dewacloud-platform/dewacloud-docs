@@ -99,5 +99,5 @@ Sekarang akses jarak jauh PostgreSQL telah dikonfigurasi dan Anda dapat mulai me
 
   * [Java Connection to PostgreSQL](<https://www.virtuozzo.com/company/blog/java-connection-to-postgresql/>)
   * [PHP Connection to PostgreSQL](<https://docs.dewacloud.com/docs/connection-to-postgresql-php/>)
-  * [PostgreSQL Replication](<https://docs.dewacloud.com/docs/postgresql-database-replication/>)
+  * [PostgreSQL Replication](<https://docs.dewacloud.com/docs/postgresql-auto-clustering>)
   * [Dump Import/Export to PostgreSQL](<https://docs.dewacloud.com/docs/dump-postgres/>)

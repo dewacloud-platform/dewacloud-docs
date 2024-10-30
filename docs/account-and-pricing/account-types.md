@@ -40,5 +40,3 @@ Harga dan kuota akun penagihan Anda bergantung pada penyedia hosting Anda. Infor
 * [Status Akun](https://docs.dewacloud.com/docs/account-statuses/)
 * [Upgrade Akun](https://docs.dewacloud.com/docs/upgrade-refill-account/)
 * [Gambaran Umum Model Harga](https://docs.dewacloud.com/docs/pricing-model/)
-* [Sistem Penagihan](https://docs.dewacloud.com/docs/billing-system/)
-* [Harga Hosters](https://docs.dewacloud.com/docs/pricing-pages/)

@@ -30,5 +30,5 @@ Jika Anda mengalami masalah saat mengonfigurasi pembaruan otomatis untuk proyek 
 - [Deployment Manager](https://docs.dewacloud.com/docs/deployment-manager/)
 - [Java VCS Deployment](https://docs.dewacloud.com/docs/java-vcs-deployment/)
 - [ZDT Deployment for PHP](https://docs.dewacloud.com/docs/php-zero-downtime-deploy/)
-- [Deploy .NET Project](https://docs.dewacloud.com/docs/deploy-dotnet-archive-url/)
+- [Deploy .NET Project](https://docs.dewacloud.com/docs/net-core/)
 - [Deployment Hooks](https://docs.dewacloud.com/docs/deployment-hooks/)

@@ -62,5 +62,5 @@ Karena semua konfigurasi telah selesai sekarang, Anda dapat **Open** aplikasi An
 ## Baca Juga{#whats-next}
 
   * [Dukungan Websockets](<https://docs.dewacloud.com/docs/websockets/>)
-  * [Dukungan Websockets untuk PHP](<https://docs.dewacloud.com/docs/websockets-apache-nginx/>)
+  * [Dukungan Websockets untuk PHP](<https://docs.dewacloud.com/docs/websockets-php/>)
   * [GlassFish Application Server](<https://docs.dewacloud.com/docs/glassfish/>)

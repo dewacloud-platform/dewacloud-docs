@@ -20,7 +20,7 @@ Cara termudah untuk mengaktifkan dukungan WebSockets adalah dengan menempatkan N
 Namun demikian, teknologi WebSockets juga didukung oleh server aplikasi yang disediakan di platform - contoh konfigurasi yang sesuai tersedia dalam dokumentasi kami:
 
   * [WebSockets untuk Java](<https://docs.dewacloud.com/docs/websockets-java/>)
-  * [WebSockets untuk PHP](<https://docs.dewacloud.com/docs/websockets-apache-nginx/>)
+  * [WebSockets untuk PHP](<https://docs.dewacloud.com/docs/websockets-php/>)
 
 Dan panduan di bawah ini akan memberikan wawasan tentang cara mengkonfigurasi dukungan WebSockets untuk aplikasi Anda, yang di-host di platform, dengan bantuan node **NGINX-balancer**. Sebagai contoh, kami akan menggunakan aplikasi chat sederhana, yang ditulis dalam PHP. Jadi, mari kita mulai dan bergerak langkah demi langkah dari awal sekali.
 
@@ -125,5 +125,5 @@ Seperti yang Anda lihat, jendela chat kecil kita berjalan, memungkinkan mengirim
 ## Baca Juga{#whats-next}
 
   * [Dukungan WebSockets untuk Java](<https://docs.dewacloud.com/docs/websockets-java/>)
-  * [Dukungan Websockets untuk PHP](<https://docs.dewacloud.com/docs/websockets-apache-nginx/>)
+  * [Dukungan Websockets untuk PHP](<https://docs.dewacloud.com/docs/websockets-php/>)
   * [NGINX Load Balancer](<https://docs.dewacloud.com/docs/nginx-load-balancer/>)

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /wordpress-project-installation
+slug: /wp-dashboard-project-installation
 title: WordPress Project Installation
 ---
 
@@ -94,7 +94,6 @@ Proyek akan dihapus segera setelah konfirmasi.
 
 ## Baca Juga{#whats-next}
 
-- [WordPress PaaS](https://docs.dewacloud.com/docs/virtuozzo-application-platform-for-wordpress/)
 - [WordPress Dashboard Overview](https://docs.dewacloud.com/docs/wp-dashboard-overview/)
 - [WordPress Project Management](https://docs.dewacloud.com/docs/wp-dashboard-project-management/)
 - [WordPress Topologies](https://docs.dewacloud.com/docs/wordpress-topologies/)

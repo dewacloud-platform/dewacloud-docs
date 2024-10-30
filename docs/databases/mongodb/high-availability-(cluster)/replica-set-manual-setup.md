@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /replica-set-manual-setup
+slug: /mongodb-replica-set
 title: Replica Set Manual Setup
 ---
 # MongoDB Replication and Automated Failover: Configuration Guide

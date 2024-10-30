@@ -92,5 +92,5 @@ Jika Anda ingin mengubah pengaturan ini secara manual, Anda perlu menghapus bari
 ## Baca Juga {#whats-next}
 
   * [Create DB Server](<https://docs.dewacloud.com/docs/database-hosting/>)
-  * [Database Connection Strings](<https://docs.dewacloud.com/docs/database-connection/>)
+  * [Database Connection Strings](<https://docs.dewacloud.com/docs/database-connection-strings/>)
   * [Database Backups](<https://docs.dewacloud.com/docs/database-backups/>)

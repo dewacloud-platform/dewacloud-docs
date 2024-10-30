@@ -43,51 +43,51 @@ title: PHP Tutorials
 
 ## A{#a}
 
-[Alto](https://docs.dewacloud.com/docs/alto/)
+[Alto](https://www.virtuozzo.com/application-platform-docs/alto/)
 
 ## C{#c}
 
 [Cloud9](https://www.virtuozzo.com/company/blog/web-development-cloud9-browser/)  
-[Cogear](https://docs.dewacloud.com/docs/cogear/)  
-[Concrete CMS](https://docs.dewacloud.com/docs/concrete-cms/)  
-[Contao](https://docs.dewacloud.com/docs/contao/)  
-[Coppermine](https://docs.dewacloud.com/docs/coppermine/)
+[Cogear](https://www.virtuozzo.com/application-platform-docs/cogear/)  
+[Concrete CMS](https://www.virtuozzo.com/application-platform-docs/concrete-cms/)  
+[Contao](https://www.virtuozzo.com/application-platform-docs/contao/)  
+[Coppermine](https://www.virtuozzo.com/application-platform-docs/coppermine/)
 
 ## D{#d}
 
-[Drupal](https://docs.dewacloud.com/docs/drupal/)
+[Drupal](https://www.virtuozzo.com/application-platform-docs/drupal/)
 
 ## J{#j}
 
-[Joomla](https://docs.dewacloud.com/docs/joomla/)
+[Joomla](https://www.virtuozzo.com/application-platform-docs/joomla/)
 
 ## M{#m}
 
-[Magento Cluster](https://docs.dewacloud.com/docs/magento-cluster/)  
-[Mibew Messenger](https://docs.dewacloud.com/docs/mibew-messenger/)
+[Magento Cluster](https://www.virtuozzo.com/application-platform-docs/magento-cluster/)  
+[Mibew Messenger](https://www.virtuozzo.com/application-platform-docs/mibew-messenger/)
 
 ## O{#o}
 
-[ownCloud](https://docs.dewacloud.com/docs/owncloud/)
+[ownCloud](https://www.virtuozzo.com/application-platform-docs/owncloud/)
 
 ## P{#p}
 
-[phpMyFAQ](https://docs.dewacloud.com/docs/phpmyfaq/)  
-[Piwik](https://docs.dewacloud.com/docs/piwik/)  
-[PrestaShop](https://docs.dewacloud.com/docs/prestashop/)  
-[Pydio](https://docs.dewacloud.com/docs/pydio/)
+[phpMyFAQ](https://www.virtuozzo.com/application-platform-docs/phpmyfaq/)  
+[Piwik](https://www.virtuozzo.com/application-platform-docs/piwik/)  
+[PrestaShop](https://www.virtuozzo.com/application-platform-docs/prestashop/)  
+[Pydio](https://www.virtuozzo.com/application-platform-docs/pydio/)
 
 ## S{#s}
 
-[SendGrid](https://docs.dewacloud.com/docs/sendgrid-php/)
+[SendGrid](https://www.virtuozzo.com/application-platform-docs/sendgrid-php/)
 
 ## T{#t}
 
-[Typo3](https://docs.dewacloud.com/docs/typo3/)
+[Typo3](https://www.virtuozzo.com/application-platform-docs/typo3/)
 
 ## W{#w}
 
-[WordPress](https://docs.dewacloud.com/docs/wordpress/)
+[WordPress](https://www.virtuozzo.com/application-platform-docs/wordpress/)
 
 ## Z{#z}
 

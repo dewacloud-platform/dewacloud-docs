@@ -102,5 +102,5 @@ Anda dapat menggunakan contoh-contoh yang dijelaskan di atas untuk membuat aplik
 ## Baca Juga{#whats-next}
 
   * [Remote Access to PostgreSQL](<https://docs.dewacloud.com/docs/remote-access-postgres/>)
-  * [PostgreSQL Replication](<https://docs.dewacloud.com/docs/postgresql-database-replication/>)
+  * [PostgreSQL Replication](<https://docs.dewacloud.com/docs/postgresql-auto-clustering>)
   * [Database Configuration](<https://docs.dewacloud.com/docs/database-configuration-files/>)

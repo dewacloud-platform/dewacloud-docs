@@ -80,5 +80,5 @@ Jelas, berdasarkan pro dan kontra yang disebutkan di atas, _live migration_ adal
 
   * [Multiple Environment Regions](<https://docs.dewacloud.com/docs/environment-regions/>)
   * [Environment Export and Import](<https://docs.dewacloud.com/docs/environment-export-import/>)
-  * [Environment Transferring](<https://docs.dewacloud.com/docs/environment-transferred/>)
+  * [Environment Transferring](<https://docs.dewacloud.com/docs/environment-transferring/>)
   * [CLI Environment Migration](<https://docs.dewacloud.com/docs/cli-environment-migration/>)

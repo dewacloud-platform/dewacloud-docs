@@ -38,7 +38,6 @@ Periksa artikel **[WordPress Security Optimization for High-Performing Websites]
 
 ## Baca Juga{#whats-next}
 
-- [WordPress PaaS](https://docs.dewacloud.com/docs/virtuozzo-application-platform-for-wordpress/)
 - [WordPress Dashboard](https://docs.dewacloud.com/docs/wp-dashboard-overview/)
 - [WordPress Topologies](https://docs.dewacloud.com/docs/wordpress-topologies/)
 - [WordPress Backups](https://docs.dewacloud.com/docs/wordpress-backups/)

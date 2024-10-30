@@ -42,7 +42,7 @@ Di bawah ini, Anda dapat menemukan daftar semua perubahan pada API publik di ver
 
   * Menambahkan parameter _**relatedEnvName**_ baru untuk menunjuk ke lingkungan yang terkait dengan aturan firewall (untuk metode **AddRules**, **EditRule**, dan **AddRule**)
 
-[Info lebih lanjut](<https://docs.dewacloud.com/docs/application-platform-api-docs/>)
+[Info lebih lanjut](<https://docs.jelastic.com/api/>)
 
 
 

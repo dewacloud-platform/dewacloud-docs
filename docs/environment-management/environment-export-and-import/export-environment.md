@@ -60,6 +60,6 @@ Itu saja! Anda telah berhasil mengekspor salinan environment Anda. Sekarang, And
 ## Baca Juga{#whats-next}
 
   * [Import Environment](<https://docs.dewacloud.com/docs/environment-import/>)
-  * [Environment Transferring](<https://docs.dewacloud.com/docs/environment-transferred/>)
+  * [Environment Transferring](<https://docs.dewacloud.com/docs/environment-transferring/>)
   * [Account Collaboration](<https://docs.dewacloud.com/docs/account-collaboration/>)
   * [Share Environment](<https://docs.dewacloud.com/docs/share-environment/>)

@@ -74,7 +74,7 @@ Berikut ini, Anda dapat menemukan daftar semua perubahan pada API publik di vers
 
   * Parameter _envName_ dihapus dari metode _**GetGroups**_, _**CreateGroup**_, _**EditGroup**_, dan _**RemoveGroup**_ dalam layanan **[group](<https://docs.jelastic.com/api/#!/api/environment.Group>)**. Parameter _appid_ default sekarang digunakan untuk autentikasi.
 
-[Info lebih lanjut](<https://docs.dewacloud.com/docs/application-platform-api-docs/>)
+[Info lebih lanjut](<https://docs.jelastic.com/api/>)
 
 
 

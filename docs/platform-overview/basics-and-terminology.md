@@ -46,7 +46,7 @@ Fungsi cloudlet yang direservasi dan dinamis keduanya menyediakan diskon otomati
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/basics-terminology/03-container-secure-and-isolated-instance.png" alt="container - secure and isolated instance" width="100%"/>
 
-Platform ini menyediakan [container bersertifikat](<https://docs.dewacloud.com/docs/software-stacks-versions/>) untuk _Java_, _PHP_, _Ruby_, _Node.js_, _Python_, _Go_, _.NET_ dan kemampuan untuk menerapkan container [Docker](<https://docs.dewacloud.com/docs/dockers-overview/>) kustom. Setiap container memiliki IP pribadinya sendiri dan catatan DNS unik, sementara [public IP](<https://docs.dewacloud.com/docs/public-ip/>) dapat dengan mudah dilampirkan dalam [UI dashboard](<https://docs.dewacloud.com/docs/dashboard-guide/>) atau melalui [API](<https://docs.dewacloud.com/docs/api-overview/>).
+Platform ini menyediakan [container bersertifikat](<https://docs.dewacloud.com/docs/software-stacks-versions/>) untuk _Java_, _PHP_, _Ruby_, _Node.js_, _Python_, _Go_, _.NET_ dan kemampuan untuk menerapkan container [Docker](<https://docs.dewacloud.com/docs/container-types/>) kustom. Setiap container memiliki IP pribadinya sendiri dan catatan DNS unik, sementara [public IP](<https://docs.dewacloud.com/docs/public-ip/>) dapat dengan mudah dilampirkan dalam [UI dashboard](<https://docs.dewacloud.com/docs/dashboard-guide/>) atau melalui [API](<https://docs.dewacloud.com/docs/api-overview/>).
 
 ## Layer{#layer}
 
@@ -59,7 +59,7 @@ Platform ini menyediakan [container bersertifikat](<https://docs.dewacloud.com/d
   * cache
   * VPS
   * build node
-  * ekstra (layer kustom; beberapa bisa ditambahkan untuk lingkungan [berbasis Docker](<https://docs.dewacloud.com/docs/dockers-overview/>))
+  * ekstra (layer kustom; beberapa bisa ditambahkan untuk lingkungan [berbasis Docker](<https://docs.dewacloud.com/docs/container-types/>))
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/basics-terminology/04-layer-group-of-similar-containers.png" alt="layer - group of similar containers" width="100%"/>
 
@@ -94,7 +94,7 @@ Kode sumber aplikasi atau biner yang dibangun dapat di-deploy dari:
 
   * GIT/SVN repository, yang memungkinkan mendapatkan manfaat dari [pembaruan otomatis](<https://docs.dewacloud.com/docs/git-svn-auto-deploy/>)
   * arsip lokal (_zip_, _war_, _ear_, dll.) melalui [UI dashboard](<https://docs.dewacloud.com/docs/dashboard-guide/>) atau [FTP](<https://docs.dewacloud.com/docs/ftp-ftps-support/>)
-  * template [Docker](<https://docs.dewacloud.com/docs/dockers-overview/>) kustom
+  * template [Docker](<https://docs.dewacloud.com/docs/container-types/>) kustom
 
 Selain itu, sejumlah aplikasi yang sudah dipaketkan sebelumnya dapat ditemukan di dalam [Marketplace](<https://docs.dewacloud.com/docs/marketplace/>) platform, yang dapat diatur hanya dalam beberapa klik.
 

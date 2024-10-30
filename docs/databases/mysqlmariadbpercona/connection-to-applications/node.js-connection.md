@@ -77,5 +77,5 @@ Untuk koneksi yang berhasil, frasa “_You are connected!_” akan ditampilkan d
   * [Java Connection to MySQL](<https://docs.dewacloud.com/docs/connection-to-mysql-java/>)
   * [PHP Connection to MySQL](<https://docs.dewacloud.com/docs/connection-to-mysql-php/>)
   * [Python Connection to MySQL](<https://docs.dewacloud.com/docs/connection-to-mysql-python/>)
-  * [MySQL Master Slave Replication](<https://docs.dewacloud.com/docs/database-master-slave-replication/>)
+  * [MySQL Master Slave Replication](<https://docs.dewacloud.com/docs/database-primary-secondary-replication/>)
   * [MySQL Multi Master Replication](<https://docs.dewacloud.com/docs/multi-master-mysql-replication/>)

@@ -220,7 +220,7 @@ Sisa kolom dapat dibiarkan tidak berubah atau disesuaikan sesuai kebutuhan Anda.
 
 Itu saja! Sertifikat yang diperlukan akan dimuat secara otomatis selama pembentukan koneksi pertama, jadi cukup klik **OK** untuk mulai mengelola database Anda melalui koneksi aman.
 
-Sekarang Anda dapat menghubungkan aplikasi Anda ke database (gunakan panduan [Connect to Database](<https://docs.dewacloud.com/docs/database-connection/>) sebagai contoh) dan mengaktifkan konfigurasi SSL untuk proyek Anda untuk mengenkripsi data Anda saat mengambil/mentransfer.
+Sekarang Anda dapat menghubungkan aplikasi Anda ke database (gunakan panduan [Connect to Database](<https://docs.dewacloud.com/docs/database-connection-strings/>) sebagai contoh) dan mengaktifkan konfigurasi SSL untuk proyek Anda untuk mengenkripsi data Anda saat mengambil/mentransfer.
 
 Jika Anda menghadapi masalah saat mengkonfigurasi koneksi SSL Anda, jangan ragu untuk mengajukan permohonan bantuan kepada tim teknis kami di [Stackoverflow](<https://stackoverflow.com/questions/tagged/jelastic>).
 

@@ -97,4 +97,3 @@ Seperti yang Anda lihat, platform menyediakan informasi lengkap tentang biaya la
 * [Sumber Daya yang Dikenakan Biaya](https://docs.dewacloud.com/docs/chargeable-resources/)
 * [Peringatan Beban](https://docs.dewacloud.com/docs/load-alerts/)
 * [Diskon Otomatis](https://docs.dewacloud.com/docs/automatic-discounts/)
-* [Gambaran Umum Sistem Penagihan](https://docs.dewacloud.com/docs/billing-system/)

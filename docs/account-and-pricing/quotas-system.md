@@ -36,6 +36,6 @@ Domain khusus
   
 ## Baca Juga{#whats-next}
 
-  * [Jenis Akun](https://docs.dewacloud.com/docs/types-of-accounts/)
+  * [Jenis Akun](https://docs.dewacloud.com/docs/account-types/)
   * [Tingkatkan/Isi Ulang Akun](https://docs.dewacloud.com/docs/upgrade-refill-account/)
   * [Ikhtisar Model Harga](https://docs.dewacloud.com/docs/pricing-model/)

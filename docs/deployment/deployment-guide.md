@@ -9,7 +9,7 @@ Platform ini mendukung berbagai cara deployment aplikasi secara otomatis, sehing
 
 - _**Dashboard**_ \- sesuai dengan [deployment via archive](#archive-deployment-configurations) (disediakan baik sebagai _local file_ atau _URL_)
 - _**VCS**_ \- memungkinkan untuk [mendeploy dari repositori VCS](#git--svn-deployment-configurations) Anda (misalnya, _Git_, _SVN_, _Bitbucket_)
-- _**Hub Registry**_ \- membuat container khusus dengan aplikasi Anda berdasarkan image Docker yang disimpan di registry _[publik](https://docs.dewacloud.com/docs/docker-container-deploy/)_ atau _[pribadi](https://docs.dewacloud.com/docs/docker-container-deploy/)_
+- _**Hub Registry**_ \- membuat container khusus dengan aplikasi Anda berdasarkan image Docker yang disimpan di registry _[publik](https://docs.dewacloud.com/docs/custom-containers-deployment/)_ atau _[pribadi](https://docs.dewacloud.com/docs/custom-containers-deployment/)_
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/deployment/deployment_guide/01-deployment-options.png" alt="deployment options" max-width="100%"/>
 
@@ -82,5 +82,5 @@ Jika kredensial akses ke repositori proyek berubah, Anda perlu menyediakan yang 
 - [Deployment Manager](https://docs.dewacloud.com/docs/deployment-manager/)
 - [Java VCS Deployment](https://docs.dewacloud.com/docs/java-vcs-deployment/)
 - [ZDT Deployment for PHP](https://docs.dewacloud.com/docs/php-zero-downtime-deploy/)
-- [Deploy .NET Project](https://docs.dewacloud.com/docs/deploy-dotnet-archive-url/)
+- [Deploy .NET Project](https://docs.dewacloud.com/docs/net-core/)
 - [Deployment Hooks](https://docs.dewacloud.com/docs/deployment-hooks/)

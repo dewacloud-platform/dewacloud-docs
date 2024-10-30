@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-slug: /wordpress-project-management
+slug: /wp-dashboard-project-management
 title: WordPress Project Management
 ---
 
@@ -212,7 +212,6 @@ Untuk [lebih banyak opsi manajemen](#general-data), hubungkan melalui SSH atau l
 
 ## Baca Juga{#whats-next}
 
-- [WordPress PaaS](https://docs.dewacloud.com/docs/virtuozzo-application-platform-for-wordpress/)
 - [WordPress Dashboard Overview](https://docs.dewacloud.com/docs/wp-dashboard-overview/)
 - [WordPress Project Installation](https://docs.dewacloud.com/docs/wp-dashboard-project-installation/)
 - [WordPress Topologies](https://docs.dewacloud.com/docs/wordpress-topologies/)

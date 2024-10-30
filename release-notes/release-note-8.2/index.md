@@ -85,7 +85,7 @@ Di bawah ini, Anda dapat menemukan daftar semua perubahan pada API publik di ver
 
   * Menambahkan layanan **[Billing> Subscriptions](<https://docs.jelastic.com/api/#!/api/billing.Subscription>)** baru dengan metode API untuk mendukung fitur [subscriptions](<#subscription-based-solutions>).
 
-[Info lebih lanjut](<https://docs.dewacloud.com/docs/application-platform-api-docs/>)
+[Info lebih lanjut](<https://docs.jelastic.com/api/>)
 
 
 

@@ -101,7 +101,7 @@ Untuk menghindari kerumitan seperti itu, disarankan untuk menghasilkan dan mengg
 ## Baca Juga{#whats-next}
 
   * [Pendaftaran Akun](https://docs.dewacloud.com/docs/account/)
-  * [Jenis Akun](https://docs.dewacloud.com/docs/types-of-accounts/)
+  * [Jenis Akun](https://docs.dewacloud.com/docs/account-types/)
   * [Status Akun](https://docs.dewacloud.com/docs/account-statuses/)
   * [Pengaturan Ulang Kata Sandi Akun](https://docs.dewacloud.com/docs/account-password-reset/)
   * [Personal Access Tokens](https://docs.dewacloud.com/docs/personal-access-tokens/)

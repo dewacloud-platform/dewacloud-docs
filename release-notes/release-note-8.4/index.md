@@ -142,7 +142,7 @@ Di bawah ini, Anda dapat menemukan daftar semua perubahan pada API publik di ver
 
 Tinjauan dokumentasi API publik telah diselesaikan. Semua layanan, metode, dan parameter disertakan dengan deskripsi yang komprehensif untuk membantu pengguna baru dan yang sudah ada memulai penggunaan API platform.
 
-[Info lebih lanjut](<https://docs.dewacloud.com/docs/application-platform-api-docs/>)
+[Info lebih lanjut](<https://docs.jelastic.com/api/>)
 
 
 

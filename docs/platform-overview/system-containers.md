@@ -21,7 +21,7 @@ Ada beberapa implementasi yang berbeda dari system containers: _BSD jails_, _Lin
 
 ## Baca Juga{#whats-next}
 
-* [Docker Standard Support](https://docs.dewacloud.com/docs/dockers-overview)
+* [Docker Standard Support](https://docs.dewacloud.com/docs/container-types)
 * [Application Containers](https://docs.dewacloud.com/docs/what-are-application-containers)
 * [Supported OS Distributions](https://docs.dewacloud.com/docs/container-image-requirements)
 * [Container Redeploy](https://docs.dewacloud.com/docs/container-redeploy)

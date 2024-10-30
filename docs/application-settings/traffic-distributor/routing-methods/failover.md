@@ -27,4 +27,4 @@ title: Failover
 - [Round Robin](https://docs.dewacloud.com/docs/round-robin-traffic-routing/)
 - [Sticky Sessions](https://docs.dewacloud.com/docs/sticky-sessions-traffic-routing/)
 - [Instalasi Traffic Distributor](https://docs.dewacloud.com/docs/traffic-distributor-installation/)
-- [Traffic Distributor Injection](https://docs.dewacloud.com/docs/traffic-distributor-injection/)
+- [Traffic Distributor Injection](https://docs.dewacloud.com/docs/traffic-distributor-integration/)

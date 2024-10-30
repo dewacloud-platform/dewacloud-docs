@@ -62,7 +62,7 @@ Selain itu, Anda dapat mendefinisikan ulang atau menambahkan beberapa pengaturan
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/environment-creation/environment-creation-2.png" alt="CLI create environment using json" width="100%"/>
 
-2\. Pembuatan [Docker-based environment](https://docs.dewacloud.com/docs/dockers-management) hampir mirip dengan metode yang dijelaskan di atas, tetapi mencakup beberapa parameter spesifik. Jadi, untuk mendapatkan Docker container menggunakan platform CLI, Anda perlu menjalankan baris berikut:
+2\. Pembuatan [Docker-based environment](https://docs.dewacloud.com/docs/custom-containers-deployment) hampir mirip dengan metode yang dijelaskan di atas, tetapi mencakup beberapa parameter spesifik. Jadi, untuk mendapatkan Docker container menggunakan platform CLI, Anda perlu menjalankan baris berikut:
 
 ```
 ~/jelastic/environment/control/createenvironment --env '{"shortdomain" : "{env_name}"}' --nodes '[{"nodeType" : "docker", "fixedCloudlets" : {cloudlets_amount}, "flexibleCloudlets" : {cloudlets_amount}, "docker" : {"image" : "{image_name}"}}]'

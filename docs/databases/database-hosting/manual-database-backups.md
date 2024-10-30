@@ -127,6 +127,6 @@ Itu saja! Sekarang, Anda bisa yakin bahwa semua data Anda disimpan secara berkal
 ## Baca Juga {#whats-next}
 
   * [Database Hosting](<https://docs.dewacloud.com/docs/database-hosting/>)
-  * [Database Connection Strings](<https://docs.dewacloud.com/docs/database-connection/>)
+  * [Database Connection Strings](<https://docs.dewacloud.com/docs/database-connection-strings/>)
   * [Setting Up Cronjob](<https://docs.dewacloud.com/docs/cron-job/>)
   * [Shared Storage](<https://docs.dewacloud.com/docs/shared-storage-container/>)

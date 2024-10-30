@@ -117,9 +117,7 @@ sudo service docker restart docker push  {entry_point}/{repository}
 
 Itu saja! Dalam waktu singkat, image Anda akan diunggah ke registry (waktu yang tepat tergantung pada ukuran image dan kecepatan koneksi internet) dan akan tersedia untuk digunakan di seluruh Internet.
 
-Sebagai hasilnya, Anda dapat dengan mudah [mendeploy-nya dalam platform](<https://docs.dewacloud.com/docs/dockers-management/>) dengan cara yang sama seperti yang telah kita lakukan di awal instruksi.
-
-Jika Anda menghadapi masalah saat mendeploy registry Anda sendiri atau menambahkan image ke dalamnya, jangan ragu untuk mencari bantuan dari pakar teknis kami di [Stackoverflow](<https://stackoverflow.com/questions/tagged/jelastic>).
+Sebagai hasilnya, Anda dapat dengan mudah [mendeploy-nya dalam platform](<https://docs.dewacloud.com/docs/custom-containers-deployment/>) dengan cara yang sama seperti yang telah kita lakukan di awal instruksi.
 
 ## Baca Juga{#whats-next}
 

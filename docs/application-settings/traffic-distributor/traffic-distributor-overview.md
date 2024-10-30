@@ -60,7 +60,7 @@ Traffic Distributor dapat menangani beberapa protokol, termasuk HTTP, HTTPS, dan
 ## Baca Juga
 
 - [Traffic Distributor Installation](<https://docs.dewacloud.com/docs/traffic-distributor-installation/>)
-- [Traffic Distributor Injection](<https://docs.dewacloud.com/docs/traffic-distributor-injection/>)
+- [Traffic Distributor Injection](<https://docs.dewacloud.com/docs/traffic-distributor-integration/>)
 - [Blue-Green Deployment](<https://docs.dewacloud.com/docs/blue-green-deploy/>)
 - [Failover Protection](<https://docs.dewacloud.com/docs/failover-protection/>)
 - [A/B Testing](<https://docs.dewacloud.com/docs/ab-testing/>)

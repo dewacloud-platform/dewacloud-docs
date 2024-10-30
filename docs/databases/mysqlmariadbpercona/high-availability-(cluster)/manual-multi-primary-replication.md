@@ -5,7 +5,7 @@ title: Manual Multi-Primary Replication
 ---
 # Multi-Primary Replication untuk MySQL/MariaDB/Percona
 
-Platform ini memungkinkan Anda untuk dengan mudah mengatur dua jenis replika database yang berbeda - **primary-secondary** dan **primary-primary** \- untuk menyelesaikan berbagai masalah performa, mendukung backup database, mengatasi kegagalan sistem, dan banyak lagi. Informasi tentang cara mengkonfigurasi master-slave replication untuk database MySQL Anda dapat ditemukan [di sini](<https://docs.dewacloud.com/docs/database-master-slave-replication/>).
+Platform ini memungkinkan Anda untuk dengan mudah mengatur dua jenis replika database yang berbeda - **primary-secondary** dan **primary-primary** \- untuk menyelesaikan berbagai masalah performa, mendukung backup database, mengatasi kegagalan sistem, dan banyak lagi. Informasi tentang cara mengkonfigurasi master-slave replication untuk database MySQL Anda dapat ditemukan [di sini](<https://docs.dewacloud.com/docs/database-primary-secondary-replication/>).
 
 Dan dalam tutorial ini kami akan menjelaskan cara mengkonfigurasi master-master (multi-master) replication di MySQL, khususnya untuk diterapkan pada environments. Proses ini cukup sederhana, tetapi membutuhkan perhatian pada beberapa detail penting.
 

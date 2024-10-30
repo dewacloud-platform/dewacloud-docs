@@ -204,4 +204,4 @@ Selamat! Sekarang Anda tahu cara mencadangkan proyek Kubernetes Anda secara otom
   * [K8s Access Control](<https://docs.dewacloud.com/docs/kubernetes-access-control/>)
   * [K8s Cluster Troubleshooting](<https://docs.dewacloud.com/docs/kubernetes-troubleshooting/>)
   * [K8s Cluster Upgrade](<https://docs.dewacloud.com/docs/kubernetes-upgrade/>)
-  * [Kubernetes Cluster Scaling](<https://docs.dewacloud.com/docs/scaling-kubernetes/>)
+  * [Kubernetes Cluster Scaling](<https://www.virtuozzo.com/company/blog/scaling-kubernetes/>)

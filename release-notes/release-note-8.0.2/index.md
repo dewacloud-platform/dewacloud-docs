@@ -94,7 +94,7 @@ Di bawah ini, Anda dapat menemukan daftar semua perubahan pada API publik di ver
 
   * Menambahkan metode baru ke dalam layanan **[environment> control](<https://docs.jelastic.com/api/private/#!/api/environment.Control>)** yang memungkinkan menambahkan dan mengelola data kustom dalam lingkungan – _**AddEnvProperty**_, _**RemoveEnvProperty**_, _**ApplyEnvProperty**_, _**GetEnvProperty**_
 
-[Info lebih lanjut](<https://docs.dewacloud.com/docs/application-platform-api-docs/>)
+[Info lebih lanjut](<https://docs.jelastic.com/api/>)
 
 
 

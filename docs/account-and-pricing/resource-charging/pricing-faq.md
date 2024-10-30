@@ -34,9 +34,7 @@ Detail tentang masing-masing opsi ini dapat dilihat dalam dokumen [Pemantauan Su
 
 ## Berapa Biaya Sumber Daya?{#how-much-do-resources-cost}
 
-Dengan platform, Anda hanya membayar untuk sumber daya yang dikonsumsi. Harga sumber daya ditetapkan oleh penyedia hosting yang Anda pilih. Anda dapat menemukan biaya pasti untuk setiap unit sumber daya dengan pergi ke [Halaman Harga](https://docs.dewacloud.com/docs/pricing-pages/) dari hoster Anda.
-
-Harga juga dapat dilihat di dalam dashboard platform Anda.
+Dengan platform, Anda hanya membayar untuk sumber daya yang dikonsumsi. Harga dapat dilihat di dalam dashboard platform Anda.
 
 Arahkan ke item menu **Balance > Quotas & Pricing**. Di sini Anda akan melihat serangkaian tab yang menampilkan informasi harga untuk setiap jenis sumber daya yang tersedia di platform.
 
@@ -65,4 +63,3 @@ Ikuti tautan untuk berkenalan dengan tips berguna tentang konsumsi sumber daya p
 
 * [Sumber Daya yang Dikenakan Biaya](https://docs.dewacloud.com/docs/chargeable-resources/)
 * [Pemantauan Sumber Daya yang Dikonsumsi](https://docs.dewacloud.com/docs/monitoring-consumed-resources/)
-* [Harga Hosters](https://docs.dewacloud.com/docs/pricing-pages/)

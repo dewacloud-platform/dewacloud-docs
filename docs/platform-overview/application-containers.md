@@ -13,7 +13,7 @@ Juga, sebagai solusi _stateless_, application containers tidak dapat menyimpan i
 
 __Saat ini,__ banyak alat tambahan diimplementasikan untuk pemanfaatan layanan yang menggunakan application containers secara mudah. Sebagai hasilnya, pengembang dapat memanfaatkan unit application containers yang sangat khusus tanpa kelemahan dari manajemen yang kompleks.
 
-Beberapa implementasi application container secara aktif dikembangkan: _Docker_, _CRI-O_, _containerd_, dan beberapa lainnya. Saat ini, platform menggunakan Docker sebagai teknologi application containers yang paling banyak diadopsi. Platform menyediakan [otomatisasi deployment](https://docs.dewacloud.com/docs/dockers-overview), [provisioning server cepat](https://docs.dewacloud.com/docs/dockers-management), dan [alat penyimpanan/pemrosesan data stateful](https://docs.dewacloud.com/docs/container-volumes) (sesi, log, konfigurasi, dll.) untuk pemanfaatan application containers yang mudah.
+Beberapa implementasi application container secara aktif dikembangkan: _Docker_, _CRI-O_, _containerd_, dan beberapa lainnya. Saat ini, platform menggunakan Docker sebagai teknologi application containers yang paling banyak diadopsi. Platform menyediakan [otomatisasi deployment](https://docs.dewacloud.com/docs/container-types), [provisioning server cepat](https://docs.dewacloud.com/docs/custom-containers-deployment), dan [alat penyimpanan/pemrosesan data stateful](https://docs.dewacloud.com/docs/container-volumes) (sesi, log, konfigurasi, dll.) untuk pemanfaatan application containers yang mudah.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/application-containers/services-in-application-and-system-containers.png" alt="services in application and system containers" width="100%"/>
 
@@ -21,7 +21,7 @@ Namun, beberapa aplikasi dan teknologi mungkin masih mengalami masalah saat berm
 
 ## Baca Juga{#whats-next}
 
-* [Docker Standard Support](https://docs.dewacloud.com/docs/dockers-overview)
+* [Docker Standard Support](https://docs.dewacloud.com/docs/container-types)
 * [System Containers](https://docs.dewacloud.com/docs/what-are-system-containers)
 * [Supported OS Distributions](https://docs.dewacloud.com/docs/container-image-requirements)
 * [Container Redeploy](https://docs.dewacloud.com/docs/container-redeploy)

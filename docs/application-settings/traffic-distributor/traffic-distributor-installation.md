@@ -93,7 +93,7 @@ Anda dapat menyesuaikan pengaturan Traffic Distributor Anda kapan saja setelah i
 ## Baca Juga
 
 - [Traffic Distributor Overview](<https://docs.dewacloud.com/docs/traffic-distributor/>)
-- [Traffic Distributor Injection](<https://docs.dewacloud.com/docs/traffic-distributor-injection/>)
+- [Traffic Distributor Injection](<https://docs.dewacloud.com/docs/traffic-distributor-integration/>)
 - [Blue-Green Deploy](<https://docs.dewacloud.com/docs/blue-green-deploy/>)
 - [Failover Protection](<https://docs.dewacloud.com/docs/failover-protection/>)
 - [A/B Testing](<https://docs.dewacloud.com/docs/ab-testing/>)

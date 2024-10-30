@@ -239,7 +239,7 @@ Sebagai contoh, Anda dapat menggunakan informasi ini untuk debugging saat mengem
 
 ## Setting Up Auto-Clusterization with Cloud Scripting{#setting-up-auto-clusterization-with-cloud-scripting}
 
-Untuk mendefinisikan pengaturan auto-clustering dalam [JPS solutions](https://docs.dewacloud.com/docs/jps/), properti baru _**cluster**_ dapat digunakan. Contohnya:
+Untuk mendefinisikan pengaturan auto-clustering dalam [JPS solutions](https://docs.dewacloud.com/docs/packaging-standard/), properti baru _**cluster**_ dapat digunakan. Contohnya:
 
 1\. Aktifkan atau nonaktifkan auto-clustering untuk layer tertentu.
 
@@ -293,4 +293,4 @@ Itu saja! Sekarang, Anda dapat dengan mudah menggunakan solusi auto-clustering y
   * [Automatic Vertical Scaling](https://docs.dewacloud.com/docs/automatic-vertical-scaling/)
   * [Horizontal Scaling](https://docs.dewacloud.com/docs/horizontal-scaling/)
   * [Automatic Horizontal Scaling](https://docs.dewacloud.com/docs/automatic-horizontal-scaling/)
-  * [JPS Overview](https://docs.dewacloud.com/docs/jps/)
+  * [JPS Overview](https://docs.dewacloud.com/docs/packaging-standard/)

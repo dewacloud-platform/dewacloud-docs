@@ -24,4 +24,4 @@ Cek halaman dokumentasi Kubernetes Versions untuk melihat daftar rilis yang ters
   * [K8s Cluster Access](<https://docs.dewacloud.com/docs/kubernetes-cluster-access>)
   * [K8s Access Control](<https://docs.dewacloud.com/docs/kubernetes-access-control>)
   * [K8s Cluster Troubleshooting](<https://docs.dewacloud.com/docs/kubernetes-troubleshooting>)
-  * [Kubernetes Cluster Scaling](<https://docs.dewacloud.com/docs/scaling-kubernetes/>)
+  * [Kubernetes Cluster Scaling](<https://www.virtuozzo.com/company/blog/scaling-kubernetes/>)

@@ -34,5 +34,5 @@ Anda dapat membuat jumlah grup yang tidak terbatas berdasarkan skema penamaan ap
 ## Baca Juga{#whats-next}
 
   * [Environment Sharing](<https://docs.dewacloud.com/docs/share-environment/>)
-  * [Environment Transferring](<https://docs.dewacloud.com/docs/environment-transferred/>)
+  * [Environment Transferring](<https://docs.dewacloud.com/docs/environment-transferring/>)
   * [Environment Regions](<https://docs.dewacloud.com/docs/environment-regions/>)

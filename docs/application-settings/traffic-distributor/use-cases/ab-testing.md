@@ -42,13 +42,13 @@ Pantau tingkat konversi menggunakan alat yang Anda siapkan, pastikan Anda melaca
 Setelah periode pengujian, analisis data yang dikumpulkan untuk menentukan versi aplikasi mana yang menghasilkan tingkat konversi lebih tinggi. Versi dengan tingkat konversi yang lebih baik dapat dipertimbangkan untuk produksi, sementara versi lainnya dapat dihapus atau dioptimalkan lebih lanjut untuk pengujian di masa depan.
 
 :::tip
-Setelah Anda mengidentifikasi versi yang secara kinerja lebih baik, pertimbangkan untuk [menyuntikkan Traffic Distributor](<https://docs.dewacloud.com/docs/traffic-distributor-injection/>) ke dalam lingkungan produksi untuk memastikan ketersediaan tinggi dan perlindungan failover.
+Setelah Anda mengidentifikasi versi yang secara kinerja lebih baik, pertimbangkan untuk [menyuntikkan Traffic Distributor](<https://docs.dewacloud.com/docs/traffic-distributor-integration/>) ke dalam lingkungan produksi untuk memastikan ketersediaan tinggi dan perlindungan failover.
 :::
 
 ## Baca Juga
 
 - [Traffic Distributor Overview](<https://docs.dewacloud.com/docs/traffic-distributor/>)
 - [Traffic Distributor Installation](<https://docs.dewacloud.com/docs/traffic-distributor-installation/>)
-- [Traffic Distributor Injection](<https://docs.dewacloud.com/docs/traffic-distributor-injection/>)
+- [Traffic Distributor Injection](<https://docs.dewacloud.com/docs/traffic-distributor-integration/>)
 - [Blue-Green Deploy](<https://docs.dewacloud.com/docs/blue-green-deploy/>)
 - [Failover Protection](<https://docs.dewacloud.com/docs/failover-protection/>)

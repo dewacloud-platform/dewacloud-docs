@@ -68,7 +68,7 @@ Itu saja! Dengan cara ini, Anda dapat secara otomatis menginstal solusi apa pun 
 
 ## JPS Deployment & Troubleshooting{#jps-deployment-troubleshooting}
 
-Opsi **Import > JPS** paling sering digunakan oleh pengembang yang membuat [paket JPS](<https://docs.dewacloud.com/docs/jps/>) (mis. untuk otomatisasi tugas umum atau implementasi alur CI/CD yang kompleks). Selain itu, ini adalah alat yang sangat baik untuk penyetelan cepat dan pengujian paket.
+Opsi **Import > JPS** paling sering digunakan oleh pengembang yang membuat [paket JPS](<https://docs.dewacloud.com/docs/packaging-standard/>) (mis. untuk otomatisasi tugas umum atau implementasi alur CI/CD yang kompleks). Selain itu, ini adalah alat yang sangat baik untuk penyetelan cepat dan pengujian paket.
 
 1\. Setelah dimasukkan ke dalam editor ini, kode Anda akan secara otomatis diparse untuk kesalahan. Jika terdeteksi, mereka akan ditandai dengan ikon silang merah sebelum baris yang sesuai (arahkan ke atas untuk informasi tambahan tentang masalah tersebut). Selain itu, kode Anda disimpan dengan aman di penyimpanan lokal browser Anda, sehingga Anda dapat menutup seluruh frame _Import_ secara bebas (mis. untuk melakukan beberapa operasi lain di dashboard) dan kembali ke pemrograman nanti.
 
@@ -98,6 +98,6 @@ Jika Anda menghadapi masalah saat mengimpor paket JPS, jangan ragu untuk meminta
 ## Baca Juga{#whats-next}
 
   * [Export Environment](<https://docs.dewacloud.com/docs/environment-export/>)
-  * [Environment Transferring](<https://docs.dewacloud.com/docs/environment-transferred/>)
+  * [Environment Transferring](<https://docs.dewacloud.com/docs/environment-transferring/>)
   * [Account Collaboration](<https://docs.dewacloud.com/docs/account-collaboration/>)
   * [Share Environment](<https://docs.dewacloud.com/docs/share-environment/>)

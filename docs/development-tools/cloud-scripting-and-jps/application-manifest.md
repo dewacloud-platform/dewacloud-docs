@@ -18,6 +18,6 @@ Anda dapat menggunakan manifest yang dibuat untuk kebutuhan pribadi (misalnya, o
 
 ## Baca Juga{#whats-next}
 
-  * [JPS Overview](<https://docs.dewacloud.com/docs/jps/>)
+  * [JPS Overview](<https://docs.dewacloud.com/docs/packaging-standard/>)
   * [Cloud Scripting](<https://docs.cloudscripting.com/>)
   * [Platform Marketplace](<https://docs.dewacloud.com/docs/marketplace/>)

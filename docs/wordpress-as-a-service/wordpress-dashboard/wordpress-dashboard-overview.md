@@ -174,7 +174,6 @@ Anda perlu login kembali untuk melanjutkan pekerjaan Anda dengan dashboard.
 
 ## Baca Juga{#whats-next}
 
-- [WordPress PaaS](https://docs.dewacloud.com/docs/virtuozzo-application-platform-for-wordpress/)
 - [WordPress Project Installation](https://docs.dewacloud.com/docs/wp-dashboard-project-installation/)
 - [WordPress Project Management](https://docs.dewacloud.com/docs/wp-dashboard-project-management/)
 - [WordPress Topologies](https://docs.dewacloud.com/docs/wordpress-topologies/)

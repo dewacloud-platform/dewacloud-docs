@@ -275,7 +275,7 @@ webdefault.xml | /opt/jetty/etc
 ## Baca Juga {#whats-next}
 
   * [Tomcat Server](<https://docs.dewacloud.com/docs/tomcat/>)
-  * [TomEE](<https://docs.dewacloud.com/docs/tomee/>)
+  * [TomEE](<https://docs.dewacloud.com/docs/apache-tomee/>)
   * [Jetty](<https://docs.dewacloud.com/docs/jetty/>)
   * [GlassFish](<https://docs.dewacloud.com/docs/glassfish/>)
   * [Database Configuration](<https://docs.dewacloud.com/docs/database-configuration-files/>)

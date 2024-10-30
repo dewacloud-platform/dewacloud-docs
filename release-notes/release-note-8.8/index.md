@@ -68,11 +68,11 @@ Tombol pengalih baru “_**UTC time**_” ditambahkan ke tab _Riwayat Penagihan_
 
 ## Perubahan API{#api-changes}
 
-Dewacloud Application Platform menyediakan file sumber dengan semua metode API yang didukung dalam standar **[OpenAPI Specification](<https://swagger.io/resources/open-api/>)**. Paket ini telah ditinjau secara menyeluruh dalam rilis 8.8 saat ini dan diperbarui dengan banyak perbaikan, pengoptimalan, dan perbaikan. Seperti biasa, paket baru dapat diunduh dalam format YAML dan JSON dengan mengklik tautan yang sesuai di sudut kanan atas situs [Dewacloud Application Platform API](<https://docs.dewacloud.com/docs/application-platform-api-docs/>) :
+Dewacloud Application Platform menyediakan file sumber dengan semua metode API yang didukung dalam standar **[OpenAPI Specification](<https://swagger.io/resources/open-api/>)**. Paket ini telah ditinjau secara menyeluruh dalam rilis 8.8 saat ini dan diperbarui dengan banyak perbaikan, pengoptimalan, dan perbaikan. Seperti biasa, paket baru dapat diunduh dalam format YAML dan JSON dengan mengklik tautan yang sesuai di sudut kanan atas situs [Dewacloud Application Platform API](<https://docs.jelastic.com/api/>) :
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/release-notes/release-notes-8.8/02-download-openapi.png" alt="download OpenAPI" width="100%"/>
 
-[Info lebih lanjut](<https://docs.dewacloud.com/docs/application-platform-api-docs/>)
+[Info lebih lanjut](<https://docs.jelastic.com/api/>)
 
 
 

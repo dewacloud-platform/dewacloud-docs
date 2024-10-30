@@ -5,7 +5,7 @@ title: Marketplace
 ---
 # Marketplace
 
-Platform Marketplace adalah perpustakaan dari aplikasi yang paling populer dan paling banyak diminta, yang dikonfigurasi dan dioptimalkan dengan cara yang paling menguntungkan melalui [Packaging Standard](<https://docs.dewacloud.com/docs/jps/>) platform. Solusi ini dapat diinstal otomatis langsung dari dashboard, melewati banyak langkah deployment dan optimasi manual.
+Platform Marketplace adalah perpustakaan dari aplikasi yang paling populer dan paling banyak diminta, yang dikonfigurasi dan dioptimalkan dengan cara yang paling menguntungkan melalui [Packaging Standard](<https://docs.dewacloud.com/docs/packaging-standard/>) platform. Solusi ini dapat diinstal otomatis langsung dari dashboard, melewati banyak langkah deployment dan optimasi manual.
 
 Anda dapat mengakses **Marketplace** melalui tombol yang sesuai di sudut kiri atas dashboard.
 
@@ -173,6 +173,6 @@ Itu saja! Sekarang, Anda dapat menikmati menggunakan aplikasi Anda.
 
 ## Baca Juga{#whats-next}
 
-  * [JPS Overview](<https://docs.dewacloud.com/docs/jps/>)
+  * [JPS Overview](<https://docs.dewacloud.com/docs/packaging-standard/>)
   * [Application Manifest](<https://docs.dewacloud.com/docs/application-manifest/>)
   * [Cloud Scripting](<https://docs.cloudscripting.com/>)

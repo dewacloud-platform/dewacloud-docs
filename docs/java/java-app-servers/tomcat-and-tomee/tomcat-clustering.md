@@ -129,4 +129,4 @@ Konfigurasi High Availability adalah otomatis sehingga Anda dapat dengan mudah m
 ## Baca Juga{#whats-next}
 
   * [Tomcat](<https://docs.dewacloud.com/docs/tomcat/>)
-  * [TomEE](<https://docs.dewacloud.com/docs/tomee/>)
+  * [TomEE](<https://docs.dewacloud.com/docs/apache-tomee/>)

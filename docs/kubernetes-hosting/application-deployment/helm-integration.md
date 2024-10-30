@@ -221,7 +221,7 @@ Setelah penghapusan, Anda dapat memeriksa rilis yang sedang dideploy dengan peri
 
 ## Baca Juga{#whats-next}
 
-  * [Kubernetes Cluster Scaling](<https://docs.dewacloud.com/docs/scaling-kubernetes/>)
+  * [Kubernetes Cluster Scaling](<https://www.virtuozzo.com/company/blog/scaling-kubernetes/>)
   * [K8s YAML Deployments](<https://docs.dewacloud.com/docs/kubernetes-yaml-deployments/>)
   * [K8s Internal Networking](<https://docs.dewacloud.com/docs/kubernetes-internal-networking/>)
   * [K8s Exposing Services](<https://docs.dewacloud.com/docs/kubernetes-exposing-services/>)

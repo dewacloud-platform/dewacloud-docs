@@ -146,7 +146,7 @@ Platform ini juga memungkinkan Anda untuk memperluas fungsi server MariaDB/MySQL
    * sesuaikan [Jadwal Backup](<https://docs.dewacloud.com/docs/database-backups/>) untuk memastikan keamanan informasi di dalam DB Anda jika terjadi kegagalan server yang tak terduga
    * lihat instruksi [Akses Jarak Jauh](<https://docs.dewacloud.com/docs/remote-access-mysql/>) dan pelajari cara mengakses database Anda dari jarak jauh melalui klien desktop MySQL yang disukai
    * gunakan panduan [Impor/Ekspor Dump Files](<https://docs.dewacloud.com/docs/dump-import-export-to-mysql/>) untuk mengetahui cara membuat cadangan dan memulihkan data secara manual dari dump yang telah dibuat sebelumnya
-   * lihat [String Koneksi Database](<https://docs.dewacloud.com/docs/database-connection/>) untuk mendapatkan informasi lebih lanjut tentang cara mengonfigurasi koneksi ke berbagai jenis database
+   * lihat [String Koneksi Database](<https://docs.dewacloud.com/docs/database-connection-strings/>) untuk mendapatkan informasi lebih lanjut tentang cara mengonfigurasi koneksi ke berbagai jenis database
 
 ## Video Tutorial on MySQL Connection to Java Application{#video-tutorial-on-mysql-connection-to-java-application}
 
@@ -155,7 +155,6 @@ Anda dapat menggunakan versi video tutorial untuk melihat cara membuat environme
 ## Baca Juga{#whats-next}
 
    * [Akses Jarak Jauh ke MySQL/MariaDB](<https://docs.dewacloud.com/docs/remote-access-mysql/>)
-   * [Replikasi Master-Slave MySQL](<https://docs.dewacloud.com/docs/database-master-slave-replication/>)
-   * [Replikasi Master-Slave MariaDB](<https://docs.dewacloud.com/docs/mariadb-master-slave-replication/>)
+   * [Replikasi Master-Slave MySQL/MariaDB](<https://docs.dewacloud.com/docs/database-primary-secondary-replication/>)
    * [Backup Database](<https://docs.dewacloud.com/docs/database-backups/>)
    * [Konfigurasi Database](<https://docs.dewacloud.com/docs/database-configuration-files/>)

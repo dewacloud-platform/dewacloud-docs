@@ -18,7 +18,7 @@ Contoh real case yang diperluas (WordPress) tentang Kubernetes Cluster Scaling d
 
 ## Baca Juga{#whats-next}
 
-  * [Kubernetes Cluster Scaling](<https://docs.dewacloud.com/docs/scaling-kubernetes/>)
+  * [Kubernetes Cluster Scaling](<https://www.virtuozzo.com/company/blog/scaling-kubernetes/>)
   * [Horizontal Scaling](<https://docs.dewacloud.com/docs/horizontal-scaling>)
   * [Automatic Horizontal Scaling](<https://docs.dewacloud.com/docs/automatic-horizontal-scaling>)
   * [K8s Vertical Scaling](<https://docs.dewacloud.com/docs/kubernetes-vertical-scaling>)

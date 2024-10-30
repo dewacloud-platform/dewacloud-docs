@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /app-migration-between-clouds
+slug: /how-to-migrate-application
 title: App Migration between Clouds
 ---
 # Ekspor/Impor Environment: Cara Migrasi Aplikasi Antar Cloud
@@ -23,6 +23,6 @@ Saat ini, fitur Ekspor Environment hanya mengekspor informasi topologi. Environm
 
 ## Baca Juga{#whats-next}
 
-  * [Transfer Environment](<https://docs.dewacloud.com/docs/environment-transferred/>)
+  * [Transfer Environment](<https://docs.dewacloud.com/docs/environment-transferring/>)
   * [Kolaborasi Akun](<https://docs.dewacloud.com/docs/account-collaboration/>)
   * [Bagikan Environment](<https://docs.dewacloud.com/docs/share-environment/>)

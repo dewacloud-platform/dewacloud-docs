@@ -179,7 +179,7 @@ Informasi lebih lanjut: [Account Collaboration](https://www.virtuozzo.com/applic
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/dashboard-guide/25-change-owner-settings.png" alt="change owner settings" width="100%"/>
 
-Informasi lebih lanjut: [Environment Transferring](https://www.virtuozzo.com/application-platform-docs/environment-transferred/)
+Informasi lebih lanjut: [Environment Transferring](https://docs.dewacloud.com/docs/environment-transferring/)
 
 10. Pilih **Migration** untuk memindahkan environment Anda ke perangkat keras lain ([region](https://docs.dewacloud.com/docs/environment-regions/)).
 
@@ -376,7 +376,7 @@ Untuk ikhtisar terperinci tentang fitur [Account Collaboration](https://docs.dew
 
 ## Upgrade Trial Account & Balance{#upgrade-trial-account--balance}
 
-Tergantung pada [jenis akun](https://www.virtuozzo.com/application-platform-docs/types-of-accounts/) (trial atau billing), baik bagian **Upgrade Account** atau **Balance** ditampilkan di bagian atas panel dashboard.
+Tergantung pada [jenis akun](https://www.virtuozzo.com/application-platform-docs/account-types/) (trial atau billing), baik bagian **Upgrade Account** atau **Balance** ditampilkan di bagian atas panel dashboard.
 
 1. Jenis default untuk akun adalah _trial_, yang menyediakan periode hosting gratis (dibatasi oleh waktu atau uang bonus). Namun, biasanya dibatasi oleh jumlah sumber daya yang disediakan, environment/node yang diizinkan, dll.
 
@@ -384,7 +384,7 @@ Tergantung pada [jenis akun](https://www.virtuozzo.com/application-platform-docs
 
 Perluas menu tarik-turun **Upgrade Account** untuk melihat opsi berikut:
 
-- Gunakan tombol **Upgrade Account** untuk mendapatkan [akun yang sepenuhnya fungsional tanpa batasan](https://docs.dewacloud.com/docs/types-of-accounts/#billing).
+- Gunakan tombol **Upgrade Account** untuk mendapatkan [akun yang sepenuhnya fungsional tanpa batasan](https://docs.dewacloud.com/docs/account-types/#billing).
 - Opsi **Learn about Trial Limitations** membuka tab _[Account Limits](https://docs.dewacloud.com/docs/quotas-system/)_ yang sesuai di dalam bingkai _Quotas & Pricing_.
 - Klik pada **Learn about Pricing** untuk dialihkan ke halaman dokumentasi dengan informasi tentang [model penetapan harga](https://docs.dewacloud.com/docs/pricing-model/).
 - Pilih opsi **See statistics on recent resource usage** untuk membuka [sejarah penagihan](https://docs.dewacloud.com/docs/monitoring-consumed-resources/#billing-history) akun.
