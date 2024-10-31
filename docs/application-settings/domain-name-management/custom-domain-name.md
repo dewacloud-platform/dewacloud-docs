@@ -15,7 +15,7 @@ Sebelum memulai, mari kita pahami beberapa konsep dasar untuk pemahaman yang leb
   * **Root Domain** adalah kombinasi dari _second-_ dan _top-level domain names_ tanpa subdomain. Alamat seperti itu mewakili seluruh situs web, bukan halaman web tertentu. Setiap situs memiliki root domain unik, yang termasuk di semua halamannya dan subdomainnya.
   * **DNS** adalah sistem yang mengonversi nama domain teks menjadi alamat IP numerik, yang diperlukan untuk menemukan dan mengidentifikasi layanan web. Misalnya, ketika Anda mengetik _www.mydomain.com_ di bilah alamat browser, sistem akan mencari alamat IP aktual dari server yang meng-host halaman ini, misalnya _209.50.246.12_. Jika Anda mengetik _https://209.50.246.12/_, Anda akan tiba di situs yang sama.
 
-<img id="root-domain" src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/custom-domain-name/02-domain-name-components-scheme.png" alt="domain name components scheme" width="60%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/custom-domain-name/02-domain-name-components-scheme.png" alt="domain name components scheme" width="60%"/>
 
 :::tip
 Platform ini juga mendukung penuh gTLD + IDN Domain Names, sehingga Anda dapat menggunakan nama top-level domain yang terinternasionalisasi dan generik untuk domain eksternal Anda.
@@ -52,7 +52,7 @@ Setelah Anda memiliki [domain sendiri](#how-to-buy-a-domain-name), proses menamb
 Ada [berbagai jenis catatan DNS](#which-dns-record-to-use), yang dapat digunakan untuk mengarahkan ke lingkungan Anda:
 
   * _**[CNAME](https://en.wikipedia.org/wiki/CNAME_record)**_ \- memetakan domain kustom Anda ke domain lingkungan (memerlukan tambahan [pengikatan domain](#how-to-bind-domain-to-environment) melalui dashboard platform)
-  * _**[ANAME](https://en.wikipedia.org/wiki/CNAME_record#ANAME_record)**_ (jika didukung oleh server DNS Anda) - memetakan seluruh [root domain](#root-domain) (misalnya _example.com_) ke domain lingkungan Anda atau root domain lainnya
+  * _**[ANAME](https://en.wikipedia.org/wiki/CNAME_record#ANAME_record)**_ (jika didukung oleh server DNS Anda) - memetakan seluruh root domain (misalnya _example.com_) ke domain lingkungan Anda atau root domain lainnya
   * _**A Record**_ \- memetakan domain kustom Anda ke IP publik (memerlukan alamat IP eksternal yang terpasang di lingkungan)
 
 :::note
@@ -110,7 +110,7 @@ name1.mydomain.com > env1.hosterdomain.com
 name2.mydomain.com > env2.hosterdomain.com
 ```
 
-  * gunakan **ANAME** jika Anda perlu mengarahkan satu zona DNS ([root domain](#root-domain)) ke yang lain dengan semua subdomainnya diselesaikan melalui subdomain yang sama
+  * gunakan **ANAME** jika Anda perlu mengarahkan satu zona DNS (root domain) ke yang lain dengan semua subdomainnya diselesaikan melalui subdomain yang sama
 
 ```
 mydomain.com > hosterdomain.com  

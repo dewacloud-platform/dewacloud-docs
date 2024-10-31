@@ -17,7 +17,6 @@ Di sini, kami menawarkan garis besar konsisten dari komponen platform dasar deng
   * [Host](<#host>)
   * [Environment Region](<#environment-region>)
   * [Platform Installation](<#platform-installation>)
-  * [Cloud Union](<#cloud-union>)
 
 Dengan mengetahui tentang komponen dasar dan bagaimana mereka saling berhubungan, Anda dapat melanjutkan dengan skenario yang lebih kompleks yang tersedia di dalam platform.
 
