@@ -51,7 +51,7 @@ Setelah Anda memiliki [domain sendiri](#how-to-buy-a-domain-name), proses menamb
 
 Ada [berbagai jenis catatan DNS](#which-dns-record-to-use), yang dapat digunakan untuk mengarahkan ke lingkungan Anda:
 
-  * _**[CNAME](https://en.wikipedia.org/wiki/CNAME_record)**_ \- memetakan domain kustom Anda ke domain lingkungan (memerlukan tambahan [pengikatan domain](https://docs.dewacloud.com/docs/how-to-bind-domain-to-environment) melalui dashboard platform)
+  * _**[CNAME](https://en.wikipedia.org/wiki/CNAME_record)**_ \- memetakan domain kustom Anda ke domain lingkungan (memerlukan tambahan [pengikatan domain](#how-to-bind-domain-to-environment) melalui dashboard platform)
   * _**[ANAME](https://en.wikipedia.org/wiki/CNAME_record#ANAME_record)**_ (jika didukung oleh server DNS Anda) - memetakan seluruh [root domain](#root-domain) (misalnya _example.com_) ke domain lingkungan Anda atau root domain lainnya
   * _**A Record**_ \- memetakan domain kustom Anda ke IP publik (memerlukan alamat IP eksternal yang terpasang di lingkungan)
 
@@ -103,7 +103,7 @@ name1.mydomain.com > 111.111.111.111
 name2.mydomain.com > 111.111.111.112
 ```
 
-  * gunakan **CNAME** jika Anda ingin alias domain kustom ke nama lingkungan (memerlukan [pengikatan domain](https://docs.dewacloud.com/docs/how-to-bind-domain-to-environment))
+  * gunakan **CNAME** jika Anda ingin alias domain kustom ke nama lingkungan (memerlukan [pengikatan domain](#how-to-bind-domain-to-environment))
 
 ```
 name1.mydomain.com > env1.hosterdomain.com  
@@ -123,7 +123,7 @@ mynewcompany.com > myoldcompany.com
 ```
 
 ```
-mydomain.com > env1.hosterdomain.com (memerlukan [pengikatan domain](https://docs.dewacloud.com/docs/how-to-bind-domain-to-environment))  
+mydomain.com > env1.hosterdomain.com (memerlukan [pengikatan domain](#how-to-bind-domain-to-environment))  
 {subdomain}.mydomain.com > {subdomain}.env1.hosterdomain.com
 ```
 

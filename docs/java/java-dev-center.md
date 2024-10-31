@@ -47,7 +47,7 @@ Anda dapat memilih versi preferensi saat membuat environment, atau mengubahnya n
 Di dalam beragam software stack, platform ini mendukung [Java Engine](<https://docs.dewacloud.com/docs/java-engine-server/>) murni dan server aplikasi Java berikut:
 
   * [GlassFish](<https://docs.dewacloud.com/docs/glassfish/>)
-  * [Jetty](<https://docs.dewacloud.com/docs/jetty-server/>)
+  * [Jetty](<https://docs.dewacloud.com/docs/eclipse-jetty/>)
   * [Payara](<https://www.virtuozzo.com/company/blog/glassfish-payara-auto-clustering-cloud-hosting/>)
   * [Spring Boot](<https://www.virtuozzo.com/company/blog/hosting-spring-boot-java-applications/>)
   * [Tomcat](<https://docs.dewacloud.com/docs/tomcat/>)

@@ -21,7 +21,7 @@ Di sini kami menggunakan node load balancer NGINX, tetapi Anda bisa memilih yang
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Public%20IP%20for%20Access%20to%20Kubernetes/image9-3-768x392.png" alt="Kubernetes Worker IP" width="80%"/>
 
-3\. Setelah itu, buat [A record](<#how-to-configure-dns-record>) untuk [domain kustom](<https://docs.dewacloud.com/docs/custom-domains/>) menggunakan alamat IP yang ditambahkan pada langkah sebelumnya. Misalnya, **_cargo-tracker.jele.website_**.
+3\. Setelah itu, buat [A record](<https://docs.dewacloud.com/docs/custom-domains/#how-to-configure-dns-record>) untuk [domain kustom](<https://docs.dewacloud.com/docs/custom-domains/>) menggunakan alamat IP yang ditambahkan pada langkah sebelumnya. Misalnya, **_cargo-tracker.jele.website_**.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Public%20IP%20for%20Access%20to%20Kubernetes/image13-2-768x224.png" alt="Kubernetes Ingress" width="100%"/>
 

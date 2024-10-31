@@ -50,7 +50,7 @@ Add-on **[TimeZone Change](https://docs.dewacloud.com/docs/timezone-management/#
 
 Di sini:
 
-- _**\{jps\}**_ \- tautan ke file manifest add-on TimeZone Change, yaitu [https://raw.githubusercontent.com/jelastic-jps/time-zone-change/master/manifest.jps]("https://raw.githubusercontent.com/jelastic-jps/time-zone-change/master/manifest.jps")
+- _**\{jps\}**_ \- [tautan](https://raw.githubusercontent.com/jelastic-jps/time-zone-change/master/manifest.jps) ke file manifest add-on TimeZone Change 
 
 - _**\{envName\}**_ \- nama environment Anda yang ada, misalnya _my-app_
 - _**\{settings\}**_ \- sesuai dengan manifest, add-on ini mengharuskan Anda memberikan satu parameter tambahan - zona waktu yang diinginkan, misalnya `{“dashoard_url”:“**America/New_York** "}`

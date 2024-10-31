@@ -103,5 +103,5 @@ Itu saja. Dengan cara ini, Anda dapat mengelola environment variables GlassFish 
   * [Custom Variables](<https://docs.dewacloud.com/docs/custom-environment-variables/>)
   * [Tomcat](<https://docs.dewacloud.com/docs/tomcat/>)
   * [TomEE](<https://docs.dewacloud.com/docs/apache-tomee/>)
-  * [Jetty](<https://docs.dewacloud.com/docs/jetty-server/>)
+  * [Jetty](<https://docs.dewacloud.com/docs/eclipse-jetty/>)
   * [GlassFish](<https://docs.dewacloud.com/docs/glassfish/>)
