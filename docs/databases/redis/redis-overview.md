@@ -32,4 +32,4 @@ Gunakan informasi ini untuk melakukan konfigurasi yang diperlukan dan mengelola 
   * [Mengatur Lingkungan](<https://docs.dewacloud.com/docs/setting-up-environment/>)
   * [Hosting Database](<https://docs.dewacloud.com/docs/database-hosting/>)
   * [String Koneksi Database](<https://docs.dewacloud.com/docs/database-connection-strings/>)
-  * [Tutorial Diaspora*](<https://docs.dewacloud.com/docs/diaspora-tutorial/>)
+  * [Tutorial Diaspora*](<https://docs.dewacloud.com/docs/diaspora/>)

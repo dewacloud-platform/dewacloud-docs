@@ -112,7 +112,7 @@ Seperti semua aplikasi berbasis Django, Wagtail CMS mendukung berbagai jenis dat
   * **_SQLite_** adalah opsi default, yang tidak memerlukan konfigurasi tambahan (data akan disimpan secara lokal di **_~/ROOT/db.sqlite3_**); cepat, sederhana, dan ringan, sangat cocok untuk tujuan _development_ dan _testing_
   * **_external database_** (misalnya _MySQL_ atau _PostgreSQL_) adalah solusi yang lebih cocok untuk lingkungan _production_; menyediakan tingkat keamanan dan skalabilitas yang memadai
 
-Di bawah ini, kami akan memberikan panduan langkah demi langkah untuk menghubungkan database eksternal ke aplikasi Wagtail CMS Anda. Jika opsi pertama sudah cukup untuk keperluan Anda, lewati bagian ini dan lanjutkan ke [**Run Wagtail CMS**](<https://docs.dewacloud.com/docs/run-wagtail-cms>) berikutnya.
+Di bawah ini, kami akan memberikan panduan langkah demi langkah untuk menghubungkan database eksternal ke aplikasi Wagtail CMS Anda. Jika opsi pertama sudah cukup untuk keperluan Anda, lewati bagian ini dan lanjutkan ke **[Run Wagtail CMS](<#run-wagtail-cms>)** berikutnya.
 
 1\. Buat instance database yang diinginkan. Misalnya, gunakan tombol **Change Environment Topology** untuk menambahkan server **MariaDB** ke environment Anda dengan Wagtail CMS yang terinstal.
 

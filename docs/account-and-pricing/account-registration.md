@@ -15,8 +15,6 @@ Jika Anda perlu mereset atau mengganti password untuk akun platform Anda, silaka
 
 ## Sign Up{#sign-up}
 
-PaaS ditawarkan di berbagai platform di seluruh dunia, jadi jika Anda belum memiliki penyedia hosting tertentu dalam pikiran, cara terbaik untuk memilih yang paling sesuai adalah dengan membandingkan opsi melalui [Cloud Union](https://docs.dewacloud.com/docs/application-platform-partners/).
-
 :::tip
 Lihat panduan Getting Started kami untuk informasi umum tentang cara membuat akun baru.
 :::

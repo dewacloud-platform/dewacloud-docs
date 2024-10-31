@@ -15,9 +15,9 @@ Spesifikasi dari system containers memberikan beberapa keuntungan dan kekhususan
 
 * Ini dapat dianggap sebagai solusi _stateful_. System containers mendukung [live migration (melintasi host nodes, data centers, atau bahkan Clouds)](https://www.virtuozzo.com/company/blog/live-containers-migration-across-data-centers-aws-and-azure-integration/) dan tidak kehilangan data/status setelah reboot. Persistensi data semacam ini sangat cocok untuk menjalankan aplikasi dan layanan stateful yang hidup panjang (termasuk SQL, NoSQL, dan instance database in-memory).
 * System containers hidup berdampingan secara harmonis dengan ekosistem Java dan tidak memerlukan penyesuaian khusus agar proses Java sadar bahwa mereka berjalan di dalam containers.
-* System containers mendukung solusi yang ada untuk menerapkan hot redeployment tanpa perlu me-restart container atau runtime Java. Juga, mereka menyederhanakan dan mempercepat [clustering dari Java EE / Jakarta EE application servers](https://www.virtuozzo.com/company/blog/glassfish-payara-auto-clustering-cloud-hosting/).
+* System containers mendukung solusi yang ada untuk menerapkan hot redeployment tanpa perlu me-restart container atau runtime Java. Juga, mereka menyederhanakan dan mempercepat [clustering dari Java EE / Jakarta EE application servers](https://docs.dewacloud.com/docs/payara/).
 
-Ada beberapa implementasi yang berbeda dari system containers: _BSD jails_, _Linux vServer_, _Solaris Zones_, _OpenVZ/Virtuozzo_, _LXC/LXD_. Dalam kasus platform, solusi _[Virtuozzo](https://docs.dewacloud.com/docs/application-platform/)_ digunakan, yang membantu menjalankan ribuan system containers pada host node yang sama dan mempermudah pengelolaan mereka seperti sekumpulan proses.
+Ada beberapa implementasi yang berbeda dari system containers: _BSD jails_, _Linux vServer_, _Solaris Zones_, _OpenVZ/Virtuozzo_, _LXC/LXD_. 
 
 ## Baca Juga{#whats-next}
 

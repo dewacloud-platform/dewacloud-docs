@@ -18,7 +18,7 @@ Anda dapat menetapkan beberapa alamat IP melalui dashboard platform dengan menye
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/multiple-public-ip/02-wizard-add-multiple-ip.png" alt="wizard add multiple IP" width="100%"/>
 
-Di sini, Anda dapat memilih atau memasukkan jumlah alamat yang dibutuhkan untuk kedua jenis. Jika batas tercapai, hubungi [penyedia hosting](https://www.virtuozzo.com/application-platform-partners/) Anda untuk meningkatkan jumlah alamat IP yang tersedia.
+Di sini, Anda dapat memilih atau memasukkan jumlah alamat yang dibutuhkan untuk kedua jenis. Jika batas tercapai, hubungi [kami](https://www.dewaweb.com/submitticket.php?step=2&deptid=16/) untuk meningkatkan jumlah alamat IP yang tersedia.
 
 ## Mengelola Alamat IP Publik Multiple{#managing-multiple-public-ip-addresses}
 

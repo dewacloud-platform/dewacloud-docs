@@ -25,4 +25,4 @@ Sekarang Anda dapat menggunakan librari yang diunggah dalam proyek Anda!
 ## Baca Juga {#whats-next}
 
   * [Java Agent](<https://docs.dewacloud.com/docs/javaagent/>)
-  * [Application configuration](<https://docs.dewacloud.com/docs/application-configuration/>)
+  * [Application configuration](<https://docs.dewacloud.com/docs/configuration-file-manager/>)

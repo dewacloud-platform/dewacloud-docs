@@ -166,4 +166,4 @@ Itulah semuanya! Sekarang, repositori Gitblit Anda sendiri dan proyek di dalamny
 ## Baca Juga{#whats-next}
 
   * [Maven untuk Deploy melalui Git/SVN](<https://docs.dewacloud.com/docs/java-vcs-deployment/>)
-  * [Konfigurasi Aplikasi](<https://docs.dewacloud.com/docs/application-configuration/>)
+  * [Konfigurasi Aplikasi](<https://docs.dewacloud.com/docs/configuration-file-manager/>)

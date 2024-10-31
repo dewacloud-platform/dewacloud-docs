@@ -114,6 +114,6 @@ Jadi, sekarang Anda tahu beberapa cara dasar untuk melindungi aplikasi Anda deng
 ## Baca Juga{#whats-next}
 
   * [Tomcat Security](<https://docs.dewacloud.com/docs/tomcat-security/>)
-  * [Jetty Security](<https://docs.dewacloud.com/docs/jetty-security/>)
+  * [Java Options and Arguments](<https://docs.dewacloud.com/docs/java-options-arguments/>)
   * [Apache Security](<https://docs.dewacloud.com/docs/apache-security-configurations/>)
   * [NGINX-PHP Security](<https://docs.dewacloud.com/docs/nginx-security-configurations/>)

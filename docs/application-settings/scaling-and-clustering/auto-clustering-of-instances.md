@@ -62,7 +62,7 @@ Node master Jenkins dalam mode master-slave dengan pekerja **Java Engine** yang 
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/auto-clustering-of-instances/03-jenkins-cluster-scheme.svg" alt="Jenkins cluster scheme" width="30%"/>
 
-[Learn More »](https://docs.dewacloud.com/docs/jenkins/)
+[Learn More »](https://www.virtuozzo.com/company/blog/jenkins-cluster-hosting-continuous-integration-delivery/)
 
 ### WildFly{#wildfly}
 
@@ -200,7 +200,7 @@ Cluster penyimpanan yang dikonfigurasi secara otomatis, dapat diandalkan (volume
 
 ## Auto-Clustering Management{#auto-clustering-management}
 
-1\. Fitur _**Auto-Clustering**_ dapat diaktifkan untuk grup node melalui switcher dengan nama yang sama di bagian tengah topology wizard (jika tersedia untuk [stack yang dipilih](https://docs.dewacloud.com/docs/stacks/)).
+1\. Fitur _**Auto-Clustering**_ dapat diaktifkan untuk grup node melalui switcher dengan nama yang sama di bagian tengah topology wizard.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/auto-clustering-of-instances/14-wizard-auto-clustering-switcher.png" alt="wizard auto-clustering switcher" width="50%"/>
 

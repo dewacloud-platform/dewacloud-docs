@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-slug: /file-synchronization-in-cluster
+slug: /file-synchronization
 title: File Synchronization in Cluster
 ---
 # File Synchronization Between Several Application Servers in a Cluster
@@ -38,7 +38,7 @@ Dalam contoh kami, kami akan menggunakan aplikasi **WordPress**, yang di-deploy 
 Instruksi di bawah ini sepenuhnya sesuai untuk aplikasi serupa lainnya (Drupal, Joomla, Liferay, Redmine, dan sebagainya) yang didasarkan pada bahasa pemrograman yang didukung seperti Java, PHP, Ruby, dll.
 :::
 
-1\. Anda dapat menginstal aplikasi **WordPress** Anda [secara manual](https://docs.dewacloud.com/docs/wordpress/) atau menemukan paket sekali klik yang sesuai di [Marketplace](https://docs.dewacloud.com/docs/marketplace/) untuk men-deploy-nya secara otomatis.
+1\. Anda dapat menginstal aplikasi **WordPress** Anda secara manual atau menemukan paket sekali klik yang sesuai di [Marketplace](https://docs.dewacloud.com/docs/marketplace/) untuk men-deploy-nya secara otomatis.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/file-synchronization-in-cluster/03-marketplace-deploy-wordpress.png" alt="marketplace deploy WordPress" width="100%"/>
 
@@ -155,7 +155,7 @@ Punya pertanyaan tentang sinkronisasi file antara application servers? Jangan ra
 
 ## Baca Juga{#whats-next}
 
-  * [WordPress Cluster](https://docs.dewacloud.com/docs/wordpress-cluster-devops/)
+  * [WordPress Cluster](https://www.virtuozzo.com/application-platform-docs/wordpress-cluster-devops/)
   * [Horizontal Scaling](https://docs.dewacloud.com/docs/horizontal-scaling/)
   * [High Availability](https://docs.dewacloud.com/docs/auto-clustering/)
   * [Marketplace](https://docs.dewacloud.com/docs/marketplace/)

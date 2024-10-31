@@ -66,6 +66,6 @@ Itu saja! Semoga panduan ini bermanfaat bagi Anda.
 ## Baca Juga{#whats-next}
 
   * [Remote Access to PostgreSQL](<https://docs.dewacloud.com/docs/remote-access-postgres>)
-  * [Java Connection to PostgreSQL](<https://docs.dewacloud.com/docs/connection-to-postgresql>)
+  * [Java Connection to PostgreSQL](<https://docs.dewacloud.com/docs/java-connection-to-postgresql>)
   * [PHP Connection to PostgreSQL](<https://docs.dewacloud.com/docs/connection-to-postgresql-php>)
-  * [PostgreSQL Replication](<https://docs.dewacloud.com/docs/postgresql-database-replication>)
+  * [PostgreSQL Replication](<https://docs.dewacloud.com/docs/postgresql-auto-clustering>)

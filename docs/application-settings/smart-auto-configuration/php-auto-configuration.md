@@ -35,8 +35,8 @@ Anda dapat menggunakan variabel _PHP_MEMORY_LIMIT_ dan _PHP_MAX_EXECUTION_TIME_ 
 
 Saat ini, Anda perlu melakukan tindakan berikut berdasarkan jenis server aplikasi PHP Anda:
 
-  * [Smart Auto-Configuration (LiteSpeed, LLSMP)](https://docs.dewacloud.com/docs/smart-auto-configuration)
-  * [Legacy Implementation (Apache PHP, NGINX PHP)](https://docs.dewacloud.com/docs/legacy-implementation)
+  * [Smart Auto-Configuration (LiteSpeed, LLSMP)](#smart-auto-configuration)
+  * [Legacy Implementation (Apache PHP, NGINX PHP)](#legacy-implementation)
 
 :::warning
 Nilai direktif yang tidak sesuai dapat menyebabkan ketidakstabilan server Anda, jadi **tidak disarankan** untuk menerapkan perubahan manual kecuali Anda benar-benar memahami apa yang Anda lakukan.

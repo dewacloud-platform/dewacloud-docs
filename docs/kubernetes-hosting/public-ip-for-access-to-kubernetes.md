@@ -10,7 +10,7 @@ Dalam posting ini kami ingin menunjukkan bagaimana mengekspos aplikasi melalui s
 
 ## Dedicated Load Balancer untuk Akses Aplikasi
 
-1\. Pertama-tama, [instal cluster Kubernetes](<https://docs.dewacloud.com/docs/kubernetes-cluster-installation>) dari Jelastic marketplace dan deploy aplikasi. Sebagai contoh, kami akan menggunakan [Jakarta EE Cargo Tracker](<https://docs.dewacloud.com/docs/jakarta-ee-deployment-kubernetes/>).
+1\. Pertama-tama, [instal cluster Kubernetes](<https://docs.dewacloud.com/docs/kubernetes-cluster-installation>) dari Jelastic marketplace dan deploy aplikasi. Sebagai contoh, kami akan menggunakan [Jakarta EE Cargo Tracker](<https://www.virtuozzo.com/company/blog/jakarta-ee-deployment-kubernetes/>).
 
 2\. Klik **Change Environment Topology** di sebelah cluster Kubernetes Anda. Di jendela yang terbuka, tambahkan node Dedicated Load Balancer dan lampirkan alamat IP publik ke node tersebut.
 <img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Public%20IP%20for%20Access%20to%20Kubernetes/image1-5-768x522.png" alt="Public IP for Access to Kubernetes" width="100%"/>
@@ -21,7 +21,7 @@ Di sini kami menggunakan node load balancer NGINX, tetapi Anda bisa memilih yang
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Public%20IP%20for%20Access%20to%20Kubernetes/image9-3-768x392.png" alt="Kubernetes Worker IP" width="80%"/>
 
-3\. Setelah itu, buat [A record](<https://docs.dewacloud.com/docs/custom-domains/#how-to-configure-dns-record>) untuk [domain kustom](<https://docs.dewacloud.com/docs/custom-domains/>) menggunakan alamat IP yang ditambahkan pada langkah sebelumnya. Misalnya, **_cargo-tracker.jele.website_**.
+3\. Setelah itu, buat [A record](<#how-to-configure-dns-record>) untuk [domain kustom](<https://docs.dewacloud.com/docs/custom-domains/>) menggunakan alamat IP yang ditambahkan pada langkah sebelumnya. Misalnya, **_cargo-tracker.jele.website_**.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Public%20IP%20for%20Access%20to%20Kubernetes/image13-2-768x224.png" alt="Kubernetes Ingress" width="100%"/>
 

@@ -34,7 +34,7 @@ Jika penyedia layanan hosting Anda menawarkan beberapa environment regions, Anda
 
     <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-regions/choosing-regions/02-platform-marketplace-select-region.png" alt="platform Marketplace select region" max-width="100%"/>
 
-  * _**environment[import](<https://docs.dewacloud.com/docs/environment-export-import#import>)**_ 
+  * _**environment[import](<https://docs.dewacloud.com/docs/how-to-migrate-application#import>)**_ 
 
     <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-regions/choosing-regions/03-environment-import-select-region.png" alt="environment import select region" max-width="100%"/>
 

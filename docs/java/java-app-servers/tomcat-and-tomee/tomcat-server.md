@@ -176,7 +176,7 @@ Anda dapat mengatur beberapa nama domain pada server Tomcat untuk meningkatkan k
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-server/tomcat-server-23.png" alt="Tomcat multiple domains" width="100%"/>
 
-Seperti yang Anda lihat, platform ini membuat hosting Tomcat menjadi mudah dan fleksibel. Platform cloud ini menyediakan berbagai pengaturan yang sudah ditentukan sebelumnya agar Anda tidak perlu khawatir tentang tugas rutin. Pada saat yang sama, platform ini membuat server sepenuhnya dapat disesuaikan untuk konfigurasi kompleks tertentu. Mulailah dengan hosting cloud Tomcat yang mudah dari [PaaS](<https://docs.dewacloud.com/docs/application-platform/>) dan nikmati keuntungannya dalam paket siap pakai.
+Seperti yang Anda lihat, platform ini membuat hosting Tomcat menjadi mudah dan fleksibel. Platform cloud ini menyediakan berbagai pengaturan yang sudah ditentukan sebelumnya agar Anda tidak perlu khawatir tentang tugas rutin. Pada saat yang sama, platform ini membuat server sepenuhnya dapat disesuaikan untuk konfigurasi kompleks tertentu. 
 
 ## Baca Juga{#whats-next}
 

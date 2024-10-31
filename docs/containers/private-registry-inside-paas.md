@@ -19,7 +19,7 @@ Selanjutnya, Anda akan dapat dengan mudah mendeposisi image yang ditambahkan dar
 
 ## Deploy Private Registry{#deploy-private-registry}
 
-Template dasar untuk registry privat dapat ditemukan di antara images open-source lainnya di Docker Hub. Dengan demikian, Anda dapat dengan nyaman menghostingnya di dalam [PaaS installation](<https://docs.dewacloud.com/docs/application-platform-partners/>) yang diinginkan dengan membuat custom container yang sesuai:
+Template dasar untuk registry privat dapat ditemukan di antara images open-source lainnya di Docker Hub. Dengan demikian, Anda dapat dengan nyaman menghostingnya di dalam [Dewacloud](https://www.dewacloud.com/) yang diinginkan dengan membuat custom container yang sesuai:
 
 1\. Masuk ke akun PaaS Anda dan klik tombol **New Environment** di panel atas.
 

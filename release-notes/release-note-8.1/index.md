@@ -10,7 +10,7 @@ _Dokumen ini bersifat sementara dan dapat berubah._
 
 Dalam dokumen ini, Anda akan menemukan semua fitur baru, peningkatan, dan perubahan visual yang termasuk dalam rilis **Dewacloud PaaS 8.1**. 
 
-Versi saat ini terutama berfokus pada optimasi internal platform, peningkatan keamanan, dan fitur untuk penyedia layanan hosting. Administrator sistem bisa belajar lebih lanjut di [Catatan Rilis PaaS untuk Operasi](<https://docs.dewacloud.com/docs/private-release-notes-81/>).
+Versi saat ini terutama berfokus pada optimasi internal platform, peningkatan keamanan, dan fitur untuk penyedia layanan hosting. 
 
 :::info Perubahan
 

@@ -180,7 +180,7 @@ Seperti yang Anda lihat, semuanya berjalan lancar, karena aplikasi dapat terhubu
 Dokumentasi platform juga berisi sejumlah panduan tambahan untuk server MongoDB, yang mungkin berguna bahkan untuk pengguna berpengalaman dan akrab dengan subjek ini:
 
   * konfigurasikan [Replica Set](<https://docs.dewacloud.com/docs/mongodb-replica-set/>) dengan jumlah node MongoDB yang tidak genap untuk menerapkan replikasi master-slave dan failover otomatis secara bersamaan
-  * pastikan keamanan informasi melalui penyesuaian [Backups Scheduling](<https://docs.dewacloud.com/docs/mongo-backup-restore/>) \- ini mencegah kehilangan data dan memungkinkan untuk memulihkannya dalam kasus kegagalan server yang tidak terduga
+  * pastikan keamanan informasi melalui penyesuaian [Backups Scheduling](<https://docs.dewacloud.com/docs/database-backups/>) \- ini mencegah kehilangan data dan memungkinkan untuk memulihkannya dalam kasus kegagalan server yang tidak terduga
   * pelajari cara membangun [Remote Access](<https://docs.dewacloud.com/docs/remote-access-to-mongodb/>) ke database Anda untuk mendapatkan kemampuan bekerja dengan itu melalui aplikasi klien yang sesuai, bahkan tanpa perlu masuk ke dashboard kami
   * baca panduan [Dump Import/Export](<https://docs.dewacloud.com/docs/dump-import-export-to-mongodb/>) untuk menemukan cara melakukan backup data secara manual dengan file dump dan kemudian memulihkannya dari dump yang telah dibuat sebelumnya jika diperlukan
 

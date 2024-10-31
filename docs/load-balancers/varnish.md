@@ -88,6 +88,6 @@ Kami berharap instruksi ini akan membantu Anda untuk mengonfigurasi Varnish load
 
 ## Baca Juga{#whats-next}
 
-  * [Load Balancing Overview](<https://docs.dewacloud.com/docs/http-load-balancing/>)
+  * [Load Balancing Overview](<https://docs.dewacloud.com/docs/load-balancing/>)
   * [NGINX Load Balancing](<https://docs.dewacloud.com/docs/tcp-load-balancing/>)
   * [HAProxy](<https://docs.dewacloud.com/docs/haproxy/>)

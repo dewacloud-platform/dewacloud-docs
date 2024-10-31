@@ -1,9 +1,9 @@
 ---
 sidebar_position: 7
-slug: /name-based-virtual-host-in-apache
+slug: /name-based-apache-virtual-host
 title: Name-Based Virtual Host in Apache
 ---
-# Name-Based Virtual Host in Apache
+# Name-Based Virtual Host pada Apache
 
 Istilah Virtual Host mengacu pada praktik menjalankan lebih dari satu situs web pada satu mesin. Virtual host dapat berupa “_berbasis IP_”, yang berarti Anda memiliki alamat IP berbeda untuk setiap situs web, atau “_berbasis Nama_”, yang berarti Anda memiliki beberapa nama yang berjalan pada setiap alamat IP. Fakta bahwa mereka berjalan di server fisik yang sama tidak tampak bagi pengguna akhir.
 

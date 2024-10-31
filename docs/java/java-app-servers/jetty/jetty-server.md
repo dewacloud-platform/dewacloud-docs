@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
-slug: /jetty-server
-title: Jetty Server
+slug: /eclipse-jetty
+title: Ecliipse Jetty
 ---
 
 # Eclipse Jetty
@@ -42,7 +42,7 @@ Seperti yang dapat Anda lihat, server Eclipse Jetty telah aktif dan berjalan, se
 
 ## Baca Juga{#whats-next}
 
-  * [Jetty Environment Variables](<https://docs.dewacloud.com/docs/jetty-variables/>)
-  * [Jetty Security](<https://docs.dewacloud.com/docs/jetty-security/>)
+  * [Environment Variables](<https://docs.dewacloud.com/docs/default-environment-variables/>)
+  * [Java Options and Arguments](<https://docs.dewacloud.com/docs/java-options-arguments/>)
   * [Java App Server Configuration](<https://docs.dewacloud.com/docs/java-application-server-config/>)
   * [Deployment Guide](<https://docs.dewacloud.com/docs/deployment-guide/>)

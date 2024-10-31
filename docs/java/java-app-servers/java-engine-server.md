@@ -9,7 +9,7 @@ title: Java Engine Server
 **Java Engine** adalah software stack berupa image dari template dasar CentOS/AlmaLinux
 dengan JDK yang sudah terpasang. Ini menyediakan kebutuhan minimum yang diperlukan
 untuk hosting aplikasi Java, sambil memastikan kompatibilitas dengan semua
-[fitur platform](<https://docs.dewacloud.com/docs/what-is-paas-and-caas>) (penentuan skala vertikal dan horizontal otomatis, IP publik, grup
+[fitur platform](<https://docs.dewacloud.com/docs/what-is-platform-as-a-service>) (penentuan skala vertikal dan horizontal otomatis, IP publik, grup
 isolasi, aturan firewall, akses API dan SSH, dll.).
 
 Java Engine dirancang untuk deployment dan hosting aplikasi Java berdasarkan _fat JAR_/_uber JAR_ (yaitu JAR eksekusi dengan semua kelas,

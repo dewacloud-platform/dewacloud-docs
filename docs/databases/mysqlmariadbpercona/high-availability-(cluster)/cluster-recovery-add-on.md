@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-slug: /db-cluster-recovery-add-on
+slug: /db-cluster-recovery-addon
 title: Cluster Recovery Add-On
 ---
 # Database Cluster Recovery Add-On

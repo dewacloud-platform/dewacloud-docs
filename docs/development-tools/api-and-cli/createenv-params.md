@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-slug: /create-env-params
+slug: /create-env-api
 title: CreateEnv Params
 ---
 # Parameter untuk API CreateEnvironment
@@ -39,7 +39,7 @@ Dalam bagian _**nodes**_, penyesuaian yang lebih halus dapat dilakukan untuk men
 
 Nama | Deskripsi | Tipe | Contoh Nilai | Wajib  
 ---|---|---|---|---  
-_extip_ | [Public IP](<https://docs.dewacloud.com/docs/public-ipv4>) | boolean | _true_, _false_ | tidak  
+_extip_ | [Public IP](<https://docs.dewacloud.com/docs/public-ip>) | boolean | _true_, _false_ | tidak  
 _count_ | Jumlah nodes | integer | _1_, _2_, _3_, … | tidak  
 _fixedCloudlets_ | Jumlah cloudlet tetap | integer | _1_, _2_, _3_, … | ya  
 _flexibleCloudlets_ | Jumlah cloudlet fleksibel | integer | _1_, _2_, _3_, … tetapi tidak bisa kurang dari **fixedCloudlets** | ya  
@@ -58,7 +58,7 @@ Subbagian _**docker**_ dimaksudkan untuk menyatakan parameter khusus container D
 
 Nama | Deskripsi | Tipe | Contoh Nilai | Wajib  
 ---|---|---|---|---  
-_cmd_ | Konfigurasi [Run command](<https://docs.dewacloud.com/docs/docker-run>) | string | _run.sh_ | tidak  
+_cmd_ | Konfigurasi [Run command](<https://docs.dewacloud.com/docs/container-run-configuration/>) | string | _run.sh_ | tidak  
 _image_ | Nama image Docker dengan versi tag (opsional) | string | _ubuntu_, _tutum/apache-php_, _jelastic/tomcat8:latest_, dll. | ya  
 _nodeGroup_ | Layer environment tempat image seharusnya ditempatkan | string | _cp_ \- application server  
  _bl_ \- load balancer  
@@ -66,10 +66,10 @@ _nodeGroup_ | Layer environment tempat image seharusnya ditempatkan | string | _
  _sqldb_ \- SQl database  
  _cache_ \- cache node  
  _storage_ \- storage node | tidak (jika tidak ditentukan, image akan ditambahkan ke layer _Extra_)  
-_links_ | Parameter [Linking](<https://docs.dewacloud.com/docs/docker-links>) | array | dijelaskan dalam daftar expandable di bawah ini | tidak  
-_env_ | Daftar [environment variables](<https://docs.dewacloud.com/docs/docker-variables>) | objek | dijelaskan dalam daftar expandable di bawah ini | tidak  
+_links_ | Parameter [Linking](<https://docs.dewacloud.com/docs/container-links>) | array | dijelaskan dalam daftar expandable di bawah ini | tidak  
+_env_ | Daftar [environment variables](<https://docs.dewacloud.com/docs/container-variables>) | objek | dijelaskan dalam daftar expandable di bawah ini | tidak  
 _registry_ | Kredensial untuk registri pribadi | array | dijelaskan dalam daftar expandable di bawah ini | tidak  
-_volumes_ | Daftar [volumes](<https://docs.dewacloud.com/docs/docker-volumes>) lokal | array | dijelaskan dalam daftar expandable di bawah ini | tidak  
+_volumes_ | Daftar [volumes](<https://docs.dewacloud.com/docs/container-volumes>) lokal | array | dijelaskan dalam daftar expandable di bawah ini | tidak  
 _volumeMounts_ | Daftar direktori data [mounted](<https://docs.dewacloud.com/docs/mount-points>) | array | dijelaskan dalam daftar expandable di bawah ini | tidak  
 _volumesFrom_ | Daftar node untuk menyalin pengaturan volume dari | array | dijelaskan dalam daftar expandable di bawah ini | tidak  
   

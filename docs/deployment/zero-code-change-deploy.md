@@ -41,7 +41,7 @@ Untuk membuat hal di atas lebih jelas, mari kita pertimbangkan beberapa langkah 
      * ambil sumber dari repository GIT/SVN (selain itu, Anda dapat mengatur pembaruan otomatis)
      * gunakan plugin terintegrasi (_Maven_ , _Eclipse_ , _NetBeans_ , _IntelliJ IDEA_)
 
-Setelah proses inisiasi, terlepas dari tipe deployment yang dipilih, semua konfigurasi (misalnya, menghubungkan ke load balancer, pengaturan penggunaan memori, mengaktifkan SSL atau IP jika diperlukan, dll.) akan diatur oleh sistem secara otomatis. Tidak perlu mengubah kode sumber aplikasi - penyesuaian yang mungkin diperlukan hanyalah mengatur beberapa pengaturan aplikasi khusus karena lokasi baru (misalnya, alamat IP atau nama domain - semua konfigurasi server yang sesuai selalu tersedia untuk diedit langsung melalui dashboard platform dengan [File Manager](<https://docs.dewacloud.com/docs/application-configuration>) yang terintegrasi).
+Setelah proses inisiasi, terlepas dari tipe deployment yang dipilih, semua konfigurasi (misalnya, menghubungkan ke load balancer, pengaturan penggunaan memori, mengaktifkan SSL atau IP jika diperlukan, dll.) akan diatur oleh sistem secara otomatis. Tidak perlu mengubah kode sumber aplikasi - penyesuaian yang mungkin diperlukan hanyalah mengatur beberapa pengaturan aplikasi khusus karena lokasi baru (misalnya, alamat IP atau nama domain - semua konfigurasi server yang sesuai selalu tersedia untuk diedit langsung melalui dashboard platform dengan [File Manager](<https://docs.dewacloud.com/docs/configuration-file-manager>) yang terintegrasi).
 
 Dengan cara ini Anda dapat dengan mudah memigrasikan aplikasi apa pun ke PaaS dari Cloud, VPS, atau VM lainnya tanpa perlu penyesuaian kode khusus.
 

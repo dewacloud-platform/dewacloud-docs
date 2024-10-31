@@ -6,8 +6,6 @@ title: Payara
 
 # GlassFish & Payara Auto-Clustering: Menjalankan Aplikasi High-Availabilty Jakarta EE  dalam Cloud 
 
-# {#}
-
 Memastikan pengiriman layanan yang bebas masalah 24/7 adalah salah satu area yang paling sering dibahas dalam cloud hosting selama beberapa tahun terakhir. Solusi yang sangat jelas dan sering digunakan di sini adalah membangun infrastruktur berkluster untuk proyek Anda.
 
 Dengan bertujuan untuk membantu pelanggan kami menangani tugas yang tidak sepele dan menghemat waktu untuk aktivitas terkait proyek lainnya, kami menciptakan solusi khusus untuk ketersediaan tinggi, yang dirancang untuk memfasilitasi hosting aplikasi Jakarta EE – integrasi **Auto-Clustering** untuk server aplikasi **GlassFish** dan **Payara**.

@@ -10,8 +10,8 @@ Environment variables merupakan semacam placeholder, di mana Anda dapat menyimpa
 
 Panduan berikut akan memperkenalkan Anda pada detail tentang cara menambahkan environment variables kustom Anda ke server aplikasi Java tertentu:
 
-  * [Tomcat, TomEE atau Jetty](<https://docs.dewacloud.com/docs/#tomcat-tomee-and-jetty-variables>)
-  * [GlassFish](<https://docs.dewacloud.com/docs/#glassfish-variables>)
+  * [Tomcat, TomEE atau Jetty](<#tomcat-tomee-and-jetty-variables>)
+  * [GlassFish](<#glassfish-variables>)
 
 :::note
 Operasi yang sama dapat dilakukan dengan cara membangun koneksi SSH ke salah satu server Anda dan mendeklarasikan variabel dalam file konfigurasi yang sesuai via console.

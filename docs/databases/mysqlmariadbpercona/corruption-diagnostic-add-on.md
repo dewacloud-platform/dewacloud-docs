@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-slug: /db-corruption-diagnostic-add-on
+slug: /db-corruption-diagnostic-addon
 title: Corruption Diagnostic Add-On
 ---
 # MySQL/MariaDB/Percona Corruption Diagnostic Add-On

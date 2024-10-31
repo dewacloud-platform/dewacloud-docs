@@ -80,7 +80,7 @@ File log di dalam container secara otomatis berotasi, jadi ketika salah satu dar
 
 Jika Anda lebih suka mengelola containers Anda melalui terminal, Anda dapat dengan mudah menghubungkan ke salah satu dari mereka [via SSH](<https://docs.dewacloud.com/docs/ssh-access/>), tidak peduli apakah memiliki eksternal IP address terpasang atau tidak. Setelah terhubung, Anda mendapatkan kebebasan sejati untuk mengelola instances Anda dengan menjalankan operasi yang diperlukan langsung dari mesin lokal Anda.
 
-Selain itu, platform ini dilengkapi dengan [CLI client](<https://docs.dewacloud.com/docs/cli/>) khusus, yang memungkinkan menangani sebagian besar operasi yang diperlukan untuk pengelolaan siklus hidup aplikasi Anda, dengan menggunakan serangkaian skrip khusus. Struktur perintah ini dapat dicapai melalui hierarki [platform API](<https://docs.dewacloud.com/docs/api/>) sehingga Anda dapat dengan mudah terbiasa dengan klien tersebut.
+Selain itu, platform ini dilengkapi dengan [CLI client](<https://docs.dewacloud.com/docs/cli/>) khusus, yang memungkinkan menangani sebagian besar operasi yang diperlukan untuk pengelolaan siklus hidup aplikasi Anda, dengan menggunakan serangkaian skrip khusus. Struktur perintah ini dapat dicapai melalui hierarki [platform API](<https://docs.jelastic.com/api/>) sehingga Anda dapat dengan mudah terbiasa dengan klien tersebut.
 
 ## Baca Juga{#whats-next}
 

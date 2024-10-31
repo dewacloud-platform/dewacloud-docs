@@ -42,5 +42,5 @@ Itulah semuanya! Sekarang, custom Java agent Anda sudah berjalan.
   * [Environment Variables](<https://docs.dewacloud.com/docs/environment-variables/>)
   * [Custom Environment Variables](<https://docs.dewacloud.com/docs/custom-environment-variables/>)
   * [Java App Server Configuration](<https://docs.dewacloud.com/docs/java-application-server-config/>)
-  * [Upload JAR Files](<https://docs.dewacloud.com/docs/upload-jar-archieves/>)
-  * [Garbage Collector Agent](<https://docs.dewacloud.com/docs/garbage-collector-agent/>)
+  * [Upload JAR Files](<https://docs.dewacloud.com/docs/upload-jar-files/>)
+  * [Garbage Collector Agent](<https://www.virtuozzo.com/company/blog/garbage-collection/>)

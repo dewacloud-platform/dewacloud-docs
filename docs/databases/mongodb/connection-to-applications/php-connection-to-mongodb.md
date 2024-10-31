@@ -182,7 +182,7 @@ Jadi, Anda dapat menavigasi ke panel admin DB Anda untuk memastikan semuanya bek
 Pusat Pengembang platform juga mengandung sejumlah panduan MongoDB yang lebih spesifik, yang dapat berguna untuk berbagai tugas yang berbeda:
 
   * konfigurasikan [Replica Set](<https://docs.dewacloud.com/docs/mongodb-replica-set/>) dengan jumlah node MongoDB yang tidak genap untuk menerapkan replikasi master-slave dan failover otomatis secara bersamaan
-  * tingkatkan keamanan informasi Anda dengan mengatur [Backups Scheduling](<https://docs.dewacloud.com/docs/mongo-backup-restore/>), yang dapat mencegah kehilangan data atau meminimalkan konsekuensinya (melalui pemulihan) jika terjadi kegagalan server yang tidak terduga
+  * tingkatkan keamanan informasi Anda dengan mengatur [Backups Scheduling](<https://docs.dewacloud.com/docs/database-backups/>), yang dapat mencegah kehilangan data atau meminimalkan konsekuensinya (melalui pemulihan) jika terjadi kegagalan server yang tidak terduga
   * gunakan opsi [Remote Access](<https://docs.dewacloud.com/docs/remote-access-to-mongodb/>) untuk mengoperasikan database Anda langsung melalui aplikasi klien yang diinginkan, menghilangkan keperluan untuk masuk ke dashboard kami untuk itu
   * pelajari cara [Import & Export Dump](<https://docs.dewacloud.com/docs/dump-import-export-to-mongodb/>) file dengan menggunakan klien manajemen DB bawaan atau pihak ke-3 untuk dengan mudah membuat cadangan data Anda
 

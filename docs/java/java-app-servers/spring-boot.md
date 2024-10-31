@@ -238,7 +238,7 @@ Arsip aplikasi Anda akan ditempatkan pada lokasi ...**_target/\{app_name\}-\{app
 #### **Plugin Maven Jelastic**{#jelastic-maven-plugin}
 
 Sebagai opsi build & deployment gabungan yang lebih nyaman, pertimbangkan untuk menggunakan
-[Jelastic Maven plugin](<https://docs.dewacloud.com/docs/maven-plugin-jelastic/>),
+Jelastic Maven plugin,
 yang bertujuan untuk memfasilitasi pengiriman aplikasi Anda ke Cloud. Integrasikan
 itu dalam konfigurasi _pom.xml_ proyek Maven Anda dan dapatkan
 kemampuan untuk membangun arsip aplikasi dan langsung mendorongnya ke lingkungan target dengan perintah tunggal.

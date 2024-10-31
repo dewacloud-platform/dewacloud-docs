@@ -17,9 +17,9 @@ Dengan platform ini, Anda dapat menggunakan GlassFish tidak hanya sebagai server
 
 Dapatkan cluster GlassFish Anda siap dan berjalan hanya dalam beberapa menit menggunakan opsi instalasi sekali klik.
 
-Proses [instalasi aplikasi via widget](<https://docs.dewacloud.com/docs/app-packaging>) sederhana - cukup klik tombol **Get It Hosted Now**, ketik email Anda dan dapatkan cluster yang di-hosting sambil melewati langkah-langkah instalasi manual.
+Proses [instalasi aplikasi via widget](<https://docs.dewacloud.com/docs/marketplace>) sederhana - cukup klik tombol **Get It Hosted Now**, ketik email Anda dan dapatkan cluster yang di-hosting sambil melewati langkah-langkah instalasi manual.
 
-Solusi cluster GlassFish, diinstal dengan opsi ini, dibangun di atas [Docker containers](<https://docs.dewacloud.com/docs/dockers-overview>). Implementasi semacam itu memberikan reliabilitas tambahan dengan mengoperasikan setiap node, arsitektur cluster yang telah ditentukan (yaitu _Load Balancer_, _Worker Nodes_, _Domain Administration Server_), sebagai instance yang terisolasi. Dalam hal ini, [HAProxy](<https://hub.docker.com/r/jelastic/haproxy-managed-lb/>) Docker image digunakan sebagai _Load Balancer_ dan template [GlassFish](<https://github.com/jelastic-jps/glassfish>) berfungsi sebagai basis untuk _Worker nodes_ dan _DAS_.
+Solusi cluster GlassFish, diinstal dengan opsi ini, dibangun di atas [Docker containers](<https://docs.dewacloud.com/docs/container-types>). Implementasi semacam itu memberikan reliabilitas tambahan dengan mengoperasikan setiap node, arsitektur cluster yang telah ditentukan (yaitu _Load Balancer_, _Worker Nodes_, _Domain Administration Server_), sebagai instance yang terisolasi. Dalam hal ini, [HAProxy](<https://hub.docker.com/r/jelastic/haproxy-managed-lb/>) Docker image digunakan sebagai _Load Balancer_ dan template [GlassFish](<https://github.com/jelastic-jps/glassfish>) berfungsi sebagai basis untuk _Worker nodes_ dan _DAS_.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/glassfish/glassfish-cluster/glassfish-cluster-1.png" alt="JPS GlassFish Cluster on Docker" width="100%"/>
 

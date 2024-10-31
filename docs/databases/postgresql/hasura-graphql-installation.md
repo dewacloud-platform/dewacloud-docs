@@ -108,4 +108,4 @@ Sebagai alternatif, Anda dapat menggunakan _GraphQL Endpoint_ (ditentukan di bag
 
   * [Marketplace](<https://docs.dewacloud.com/docs/marketplace>)
   * [Docker Engine CE](<https://www.virtuozzo.com/company/blog/docker-engine-automatic-install-swarm-connect/>)
-  * [Building Docker Image](<https://docs.dewacloud.com/docs/building-docker>)
+  * [Building Docker Image](<https://docs.dewacloud.com/docs/building-custom-container>)

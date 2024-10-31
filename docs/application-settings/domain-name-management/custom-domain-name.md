@@ -15,7 +15,7 @@ Sebelum memulai, mari kita pahami beberapa konsep dasar untuk pemahaman yang leb
   * **Root Domain** adalah kombinasi dari _second-_ dan _top-level domain names_ tanpa subdomain. Alamat seperti itu mewakili seluruh situs web, bukan halaman web tertentu. Setiap situs memiliki root domain unik, yang termasuk di semua halamannya dan subdomainnya.
   * **DNS** adalah sistem yang mengonversi nama domain teks menjadi alamat IP numerik, yang diperlukan untuk menemukan dan mengidentifikasi layanan web. Misalnya, ketika Anda mengetik _www.mydomain.com_ di bilah alamat browser, sistem akan mencari alamat IP aktual dari server yang meng-host halaman ini, misalnya _209.50.246.12_. Jika Anda mengetik _https://209.50.246.12/_, Anda akan tiba di situs yang sama.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/custom-domain-name/02-domain-name-components-scheme.png" alt="domain name components scheme" width="60%"/>
+<img id="root-domain" src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/custom-domain-name/02-domain-name-components-scheme.png" alt="domain name components scheme" width="60%"/>
 
 :::tip
 Platform ini juga mendukung penuh gTLD + IDN Domain Names, sehingga Anda dapat menggunakan nama top-level domain yang terinternasionalisasi dan generik untuk domain eksternal Anda.
@@ -23,9 +23,9 @@ Platform ini juga mendukung penuh gTLD + IDN Domain Names, sehingga Anda dapat m
 
 Untuk menambahkan domain kustom, ikuti langkah-langkah berikut:
 
-  * [beli domain kustom](https://docs.dewacloud.com/docs/how-to-buy-a-domain-name)
-  * [konfigurasi catatan DNS](https://docs.dewacloud.com/docs/how-to-configure-dns-record)
-  * [hubungkan nama domain](https://docs.dewacloud.com/docs/how-to-bind-domain-to-environment) (jika diperlukan)
+  * [beli domain kustom](#how-to-buy-a-domain-name)
+  * [konfigurasi catatan DNS](#how-to-configure-dns-record)
+  * [hubungkan nama domain](#how-to-bind-domain-to-environment) (jika diperlukan)
 
 ## Cara Membeli Nama Domain{#how-to-buy-a-domain-name}
 
@@ -45,14 +45,14 @@ Langkah-langkah yang tepat dapat bervariasi berdasarkan pendaftar domain Anda. S
 
 ## Cara Mengonfigurasi Catatan DNS{#how-to-configure-dns-record}
 
-Setelah Anda memiliki [domain sendiri](https://docs.dewacloud.com/docs/how-to-buy-a-domain-name), proses menambahkan catatan DNS baru cukup sederhana (contoh menggunakan [GoDaddy](https://www.godaddy.com/)):
+Setelah Anda memiliki [domain sendiri](#how-to-buy-a-domain-name), proses menambahkan catatan DNS baru cukup sederhana (contoh menggunakan [GoDaddy](https://www.godaddy.com/)):
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/custom-domain-name/05-1-godaddy-add-dns-a-record.gif" alt="GoDaddy add DNS A Record" width="100%"/>
 
-Ada [berbagai jenis catatan DNS](https://docs.dewacloud.com/docs/which-dns-record-to-use), yang dapat digunakan untuk mengarahkan ke lingkungan Anda:
+Ada [berbagai jenis catatan DNS](#which-dns-record-to-use), yang dapat digunakan untuk mengarahkan ke lingkungan Anda:
 
   * _**[CNAME](https://en.wikipedia.org/wiki/CNAME_record)**_ \- memetakan domain kustom Anda ke domain lingkungan (memerlukan tambahan [pengikatan domain](https://docs.dewacloud.com/docs/how-to-bind-domain-to-environment) melalui dashboard platform)
-  * _**[ANAME](https://en.wikipedia.org/wiki/CNAME_record#ANAME_record)**_ (jika didukung oleh server DNS Anda) - memetakan seluruh [root domain](https://docs.dewacloud.com/docs/root-domain) (misalnya _example.com_) ke domain lingkungan Anda atau root domain lainnya
+  * _**[ANAME](https://en.wikipedia.org/wiki/CNAME_record#ANAME_record)**_ (jika didukung oleh server DNS Anda) - memetakan seluruh [root domain](#root-domain) (misalnya _example.com_) ke domain lingkungan Anda atau root domain lainnya
   * _**A Record**_ \- memetakan domain kustom Anda ke IP publik (memerlukan alamat IP eksternal yang terpasang di lingkungan)
 
 :::note
@@ -69,7 +69,7 @@ Berikut langkah-langkah untuk mengonfigurasi catatan untuk nama domain Anda.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/custom-domain-name/07-add-dns-record-to-domain-name.png" alt="add DNS record to domain name" width="100%"/>
 
-3\. Di dalam bingkai **Add Zone Record** yang ditampilkan, pilih [opsi yang diperlukan](https://docs.dewacloud.com/docs/which-dns-record-to-use) dari daftar drop-down **Type** (misalnya _A Record_).
+3\. Di dalam bingkai **Add Zone Record** yang ditampilkan, pilih [opsi yang diperlukan](#which-dns-record-to-use) dari daftar drop-down **Type** (misalnya _A Record_).
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/custom-domain-name/08-select-dns-record-type.png" alt="select DNS record type" width="100%"/>
 
@@ -110,7 +110,7 @@ name1.mydomain.com > env1.hosterdomain.com
 name2.mydomain.com > env2.hosterdomain.com
 ```
 
-  * gunakan **ANAME** jika Anda perlu mengarahkan satu zona DNS ([root domain](https://docs.dewacloud.com/docs/root-domain)) ke yang lain dengan semua subdomainnya diselesaikan melalui subdomain yang sama
+  * gunakan **ANAME** jika Anda perlu mengarahkan satu zona DNS ([root domain](#root-domain)) ke yang lain dengan semua subdomainnya diselesaikan melalui subdomain yang sama
 
 ```
 mydomain.com > hosterdomain.com  
@@ -129,7 +129,7 @@ mydomain.com > env1.hosterdomain.com (memerlukan [pengikatan domain](https://doc
 
 ## Cara Menghubungkan Domain ke Lingkungan{#how-to-bind-domain-to-environment}
 
-Saat bekerja **tanpa IP publik** (yaitu catatan DNS diarahkan ke nama lingkungan melalui [CNAME atau ANAME](https://docs.dewacloud.com/docs/which-dns-record-to-use)), Anda perlu **mengikat** nama domain yang sesuai. Ini diperlukan agar **Shared Load Balancers** dapat mengarahkan lalu lintas dengan benar ke lingkungan target.
+Saat bekerja **tanpa IP publik** (yaitu catatan DNS diarahkan ke nama lingkungan melalui [CNAME atau ANAME](#which-dns-record-to-use)), Anda perlu **mengikat** nama domain yang sesuai. Ini diperlukan agar **Shared Load Balancers** dapat mengarahkan lalu lintas dengan benar ke lingkungan target.
 
 :::note
 Pengikatan domain kustom melalui dashboard platform tidak diperlukan jika IP publik diaktifkan untuk lingkungan, karena lalu lintas masuk melewati **SLBs**.

@@ -96,7 +96,7 @@ const developmentToolsFeatureList: PlatformFeatureItem[] = [
     title: "Cloud Scripting & JPS",
     description:
       "Cloud Scripting dan JPS di Dewacloud menyediakan alat untuk mengotomatiskan manajemen aplikasi dan lingkungan cloud. Dengan fitur ini, Anda dapat menyederhanakan proses pengaturan dan distribusi aplikasi, memungkinkan instalasi yang cepat dan efisien. Pelajari cara memanfaatkan Cloud Scripting dan JPS untuk mengoptimalkan pengelolaan aplikasi Anda.",
-    link: "/docs/packaging-standard-overview",
+    link: "/docs/cloud-scripting-jps",
   },
   {
     title: "Account Collaboration",

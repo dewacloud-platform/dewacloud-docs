@@ -5,7 +5,7 @@ title: Environment Creation
 ---
 # CLI Tutorial: Environment Creation
 
-Pembuatan environments melalui command line dapat sangat berguna untuk berbagai solusi yang berbeda (misalnya, menangani [skenario DevOps yang kompleks](https://docs.dewacloud.com/docs/devops-jenkins)). Jadi, mari kita pertimbangkan cara ini dapat dilakukan.
+Pembuatan environments melalui command line dapat sangat berguna untuk berbagai solusi yang berbeda (misalnya, menangani [skenario DevOps yang kompleks](https://www.virtuozzo.com/application-platform-ops-docs/devops-jenkins/)). Jadi, mari kita pertimbangkan cara ini dapat dilakukan.
 
 1\. Pertama, kita akan mempertimbangkan beberapa variasi bagaimana operasi ini dapat diimplementasikan.
 

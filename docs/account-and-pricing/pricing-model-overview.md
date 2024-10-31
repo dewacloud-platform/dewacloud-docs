@@ -69,4 +69,3 @@ Menggabungkan penggunaan _Reserved_ dan _Dynamic_ cloudlets memungkinkan Anda un
   * [Sumber Daya yang Dikenakan Biaya](https://docs.dewacloud.com/docs/resource-consumption/) - pelajari apa yang dikenakan biaya di platform
   * [Memantau Sumber Daya yang Digunakan](https://docs.dewacloud.com/docs/monitoring-consumed-resources/) - periksa beban saat ini dan sejarah sumber daya yang digunakan
   * [Hemat Uang Cloud Anda](https://www.virtuozzo.com/company/blog/save-your-cloud-money/) - lihat beberapa tips tentang cara mengurangi konsumsi
-  * [Cloud Union](https://www.virtuozzo.com/application-platform-partners/) - bandingkan harga di platform penyedia hosting yang berbeda dan pilih yang paling sesuai

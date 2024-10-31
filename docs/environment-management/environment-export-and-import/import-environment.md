@@ -9,8 +9,6 @@ Fitur **Environment Import** pada platform memungkinkan eksekusi file _**.json**
 
 Mari kita tinjau cara bekerja dengan fungsionalitas impor platform secara mendetail pada contoh environment yang telah diekspor.
 
-**Note:** Agar environment yang diekspor dapat berfungsi dengan benar, harus dipindahkan ke instalasi PaaS dengan versi __yang sama atau lebih tinggi__. Anda dapat membandingkan versi platform di [Cloud Union](<https://docs.dewacloud.com/docs/application-platform-partners/>).
-
 1\. Klik tombol **Import** di bagian atas dashboard.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-export-and-import/import-environment/01-paas-main-buttons.png" alt="PaaS main buttons" max-width="100%"/>

@@ -90,7 +90,7 @@ Platform menawarkan banyak cara untuk bekerja dengan protokol keamanan [SSL](<ht
 
 ## Perubahan API{#api-changes}
 
-Di bawah ini, Anda dapat menemukan daftar semua perubahan pada API publik di versi platform 8.0.2 (dibandingkan dengan [7.3](<https://docs.dewacloud.com/release-notes/release-notes-73/#api-changes>) yang sebelumnya):
+Di bawah ini, Anda dapat menemukan daftar semua perubahan pada API publik di versi platform 8.0.2
 
   * Menambahkan metode baru ke dalam layanan **[environment> control](<https://docs.jelastic.com/api/private/#!/api/environment.Control>)** yang memungkinkan menambahkan dan mengelola data kustom dalam lingkungan – _**AddEnvProperty**_, _**RemoveEnvProperty**_, _**ApplyEnvProperty**_, _**GetEnvProperty**_
 

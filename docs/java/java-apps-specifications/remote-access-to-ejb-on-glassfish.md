@@ -132,4 +132,4 @@ Semoga tutorial ini membantu Anda memahami penggunaan dasar antarmuka remote. Ni
 ## Baca Juga {#whats-next}
 
   * [Public IP](<https://docs.dewacloud.com/docs/public-ip/>)
-  * [Deploy Java Application via Archive/URL](<https://docs.dewacloud.com/docs/upload-deploy-application/>)
+  * [Deploy Java Application via Archive/URL](<https://docs.dewacloud.com/docs/deployment-guide/>)

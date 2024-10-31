@@ -41,7 +41,7 @@ Untuk informasi lebih lanjut tentang spesifikasi hosting PHP di platform dan kem
 Klik **Redeploy** untuk mengonfirmasi perubahan.
 
 :::warning
-Dalam kasus beralih versi mesin ke PHP 7 untuk kontainer PHP legacy, Anda mungkin perlu [mendefinisikan ulang](<https://docs.dewacloud.com/docs/php-extensions/#activate-extension>) modul PHP yang termasuk secara manual, karena sebagian dari mereka telah diubah menjadi dinamis (yaitu untuk diaktifkan hanya jika diperlukan) dalam batasan rilis [PaaS 4.3](<https://docs.dewacloud.com/release-notes/release-notes-43/#php-modules-list-refactoringnbsp43--44>).
+Dalam kasus beralih versi mesin ke PHP 7 untuk kontainer PHP legacy, Anda mungkin perlu [mendefinisikan ulang](<https://docs.dewacloud.com/docs/php-extensions/#activate-extension>) modul PHP yang termasuk secara manual, karena sebagian dari mereka telah diubah menjadi dinamis (yaitu untuk diaktifkan hanya jika diperlukan) dalam batasan rilis [PaaS 4.3](<https://www.virtuozzo.com/application-platform-docs/release-notes-43/#php-modules-list-refactoringnbsp43--44>).
 :::
 
 ## Baca Juga{#whats-next}

@@ -209,5 +209,5 @@ Anda dapat menggunakan Peta Pratinjau untuk memperbesar dan menggeser sekitar da
 
 ## Baca Juga{#whats-next}
 
-  * [Java Connection to PostgreSQL](<https://docs.dewacloud.com/docs/connection-to-postgresql/>)
+  * [Java Connection to PostgreSQL](<https://docs.dewacloud.com/docs/java-connection-to-postgresql/>)
   * [Remote Access to PostgreSQL](<https://docs.dewacloud.com/docs/remote-access-postgres/>)

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /default=environment-variables
+slug: /default-environment-variables
 title: Environment Variables Default
 ---
 # Variabel Environment

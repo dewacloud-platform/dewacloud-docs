@@ -24,7 +24,7 @@ Untuk mendapatkan server GlassFish di platform, cukup:
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/glassfish/glassfish-server/glassfish-server-2.png" alt="glassfish 02serv run" width="100%"/>
 
-4\. Sekarang Anda dapat mengunggah paket aplikasi Java WAR dan [mendeploy](<https://docs.dewacloud.com/docs/upload-deploy-application>) nya ke environment.
+4\. Sekarang Anda dapat mengunggah paket aplikasi Java WAR dan [mendeploy](<https://docs.dewacloud.com/docs/deployment-guide>) nya ke environment.
 
 5\. Panel administrasi Glassfish dapat diakses langsung dari dashboard platform:
 
@@ -60,6 +60,5 @@ Idle| Dengan panel admin yang diluncurkan
   
 ## Baca Juga{#whats-next}
 
-  * [Environment Variables in GlassFish Admin Console](<https://docs.dewacloud.com/docs/environment-variables-in-glassfish/>)
+  * [Environment Variables in GlassFish Admin Console](<https://docs.dewacloud.com/docs/custom-environment-variables/>)
   * [Java Application Server Configuration](<https://docs.dewacloud.com/docs/java-application-server-config/>)
-  * [GlassFish Cluster](<https://docs.dewacloud.com/docs/glassfish-server-clustering/>)
