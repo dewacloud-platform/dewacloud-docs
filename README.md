@@ -1,41 +1,68 @@
-# Website
+<!-- PROJECT LOGO -->
+<p align="center">
+  <a href="https://www.dewacloud.com">
+    <img src="https://assets.dewacloud.com/dewacloud-docs/static/2-dewacloud-vertical-logo-gradient-version-dark-bg.png" alt="Logo" width="120">
+  </a>
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+  <h2 align="center">Dewacloud Docs</h3>
+
+  <p align="center">
+    Dewacloud's documentation portal, built with Docusaurus.
+    <br />
+    <a href="https://docs.dewacloud.com"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://app.infra.dewacloud.com">Access Platform</a>
+    ·
+    <a href="https://github.com/dewacloud-platform/dewacloud-docs/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/dewacloud-platform/dewacloud-docs/issues">Request Feature</a>
+  </p>
+</p>
+
+<!-- TABLE OF CONTENTS -->
+
+## Table of Contents
+
+- [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+
+
+## Built With
+
+- [Docusaurus](https://docusaurus.io/)
+- [React](https://reactjs.org/)
+- [Saas](https://sass-lang.com/)
+
+<!-- GETTING STARTED -->
+
+## Getting Started
+
+This section describes how you can get our documentation portal up and running on your machine.
+
+### Prerequisites
+
+- [node](https://nodejs.org/en/)
+- [npm](https://www.npmjs.com/)
 
 ### Installation
 
-```
-$ yarn
-```
+1. Clone the repo
 
-### Local Development
-
-```
-$ yarn start
+```sh
+git clone https://github.com/dyte-io/docs.git
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+2. Install NPM packages
 
-### Build
-
-```
-$ yarn build
+```sh
+npm install
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+3. Run the app
 
-### Deployment
-
-Using SSH:
-
+```sh
+npm start
 ```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

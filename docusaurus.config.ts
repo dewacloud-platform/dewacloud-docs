@@ -2,7 +2,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
-const githubRepo = "https://github.com/jon-mun/dewacloud-docs";
+const githubRepo = "https://github.com/dewacloud-platform/dewacloud-docs";
 
 const config: Config = {
   title: "Dewacloud",
