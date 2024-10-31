@@ -27,23 +27,23 @@ _Untuk menggunakan nama domain untuk aplikasi Anda, Anda perlu mendaftarkannya a
 
 3\. Dalam dialog **Environment Topology**, pilih server aplikasi Anda (misalnya, [Tomcat](https://docs.dewacloud.com/docs/tomcat/)), aktifkan **Public IPv4** untuk server Anda, dan ketik nama environment Anda, misalnya, _multibinding_.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-with-public-ip/02-environment-wizard.png" alt="environment wizard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-with-public-ip/02-environment-wizard.png" alt="environment wizard" max-width="100%"/>
 
 Dalam satu menit, environment Anda dengan **Tomcat** akan berhasil dibuat.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-with-public-ip/03-environment-for-multi-domains.png" alt="environment for multi domains" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-with-public-ip/03-environment-for-multi-domains.png" alt="environment for multi domains" max-width="100%"/>
 
 4\. Ikat **nama domain** Anda ke alamat IP Publik Tomcat, yang bisa Anda temukan di daftar drop-down untuk server. Prosedur pengikatan tergantung pada perusahaan hosting tempat Anda membeli domain.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-with-public-ip/04-server-public-ip.png" alt="server public IP" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-with-public-ip/04-server-public-ip.png" alt="server public IP" max-width="100%"/>
 
 5\. Unggah file/file war Anda ke **Deployment manager** dan deploy ke konteks yang berbeda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-with-public-ip/05-applications-deployed.png" alt="applications deployed" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-with-public-ip/05-applications-deployed.png" alt="applications deployed" max-width="100%"/>
 
 6\. Klik tombol **Config** untuk Tomcat.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-with-public-ip/06-tomcat-config.png" alt="Tomcat config" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-with-public-ip/06-tomcat-config.png" alt="Tomcat config" max-width="100%"/>
 
 7\. Arahkan ke file **server.xml** (_server directory_) dan atur konfigurasi untuk hosting beberapa domain (tambahkan _Host tags_ untuk setiap domain yang ingin Anda host).
 
@@ -66,7 +66,7 @@ Sebagai contoh:
 </Host>
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-with-public-ip/07-tomcat-server-xml.png" alt="Tomcat server xml" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-with-public-ip/07-tomcat-server-xml.png" alt="Tomcat server xml" max-width="100%"/>
 
 8\. **Save** perubahan dan **Restart** Tomcat.
 

@@ -27,26 +27,26 @@ Server aplikasi TomEE berjalan tanpa persyaratan runtime tambahan atau waktu sta
 
 2\. Dalam dialog wizard topologi, pilih **TomEE** sebagai server aplikasi Anda (di tab _**Java**_). Jika diperlukan, konfigurasikan penskalaan node ([vertical](<https://docs.dewacloud.com/docs/automatic-vertical-scaling/>) dan [horizontal](<https://docs.dewacloud.com/docs/horizontal-scaling/>)), [public IPs](<https://docs.dewacloud.com/docs/public-ip/>), nama environment, dll. Klik **Create** jika sudah siap.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomee-server/tomee-server-2.png" alt="TomEE environment topology wizard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomee-server/tomee-server-2.png" alt="TomEE environment topology wizard" max-width="100%"/>
 
 :::tip 
 Platform ini menyediakan opsi satu klik Auto-Clustering yang secara otomatis mengkonfigurasi kluster TomEE yang sangat tersedia. Hasilnya, Anda akan mendapatkan kluster Java siap jalan dengan sejumlah server TomEE yang saling terhubung dengan replikasi sesi dan load balancing yang sudah dikonfigurasikan sebelumnya.
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomee-server/tomee-server-3.png" alt="one click auto clustering" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomee-server/tomee-server-3.png" alt="one click auto clustering" max-width="100%"/>
 :::
 
 3\. Environment baru Anda dengan server aplikasi Apache TomEE Java akan dibuat dalam satu menit.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomee-server/tomee-server-4.png" alt="open TomEE in browser" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomee-server/tomee-server-4.png" alt="open TomEE in browser" max-width="100%"/>
 
 Klik tombol **Open in Browser** untuk mengakses halaman default server.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomee-server/tomee-server-5.png" alt="Apache TomEE home page" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomee-server/tomee-server-5.png" alt="Apache TomEE home page" max-width="100%"/>
 
 Sekarang, Anda dapat melanjutkan ke [deployment aplikasi](<https://docs.dewacloud.com/docs/deployment-guide/>).
 
 :::tip 
 Server Tomcat dan TomEE disediakan dengan variabel khusus HOT_DEPLOY (tidak diatur secara default) yang menentukan apakah server harus di-restart (false, disabled, 0) atau tidak (true, enabled, 1) selama proses deployment aplikasi. Hot deploy (tanpa restart) relatif lebih cepat dan memungkinkan untuk menghindari downtime selama proses deployment. Namun, ini tidak didukung oleh beberapa aplikasi dan oleh karena itu dinonaktifkan secara default. 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomee-server/tomee-server-6.png" alt="hot deploy" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomee-server/tomee-server-6.png" alt="hot deploy" max-width="100%"/>
 :::
 
 ## Baca Juga{#whats-next}

@@ -66,7 +66,7 @@ Beberapa spesifik dari implementasinya:
 
 Untuk mencegah masalah selama deployment atau pembaruan proyek, opsi restart node dan redeploy secara otomatis terkunci di dashboard. Peningkatan ini memastikan bahwa proses deployment aplikasi selesai sebelum memungkinkan pengelolaan lebih lanjut, yang mengurangi risiko gangguan yang tidak disengaja.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/release-notes/release-notes-8.10/01-restrict-restart-during-deploy.png" alt="pembatasan restart selama deploy" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/release-notes/release-notes-8.10/01-restrict-restart-during-deploy.png" alt="pembatasan restart selama deploy" max-width="100%"/>
 
 ## Perubahan API{#api-changes}
 

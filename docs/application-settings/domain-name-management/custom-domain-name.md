@@ -33,21 +33,21 @@ Langkah-langkah yang tepat dapat bervariasi berdasarkan pendaftar domain Anda. S
 
 1\. Masuk ke akun Anda atau daftar akun baru. Buka opsi **Sign In** di bagian atas dan klik tombol yang sama.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/custom-domain-name/03-log-into-domain-registrar.png" alt="log into domain registrar" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/custom-domain-name/03-log-into-domain-registrar.png" alt="log into domain registrar" max-width="100%"/>
 
 2\. Beralih ke halaman manajemen akun Anda dengan mengklik tombol **Visit My Account**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/custom-domain-name/04-manage-dns-account.png" alt="manage DNS account" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/custom-domain-name/04-manage-dns-account.png" alt="manage DNS account" max-width="100%"/>
 
 3\. Jika Anda belum memiliki domain, klik tautan _**Get one now**_ dan ikuti langkah-langkah yang disediakan untuk memilih dan membeli domain.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/custom-domain-name/05-get-custom-domain-name.png" alt="get custom domain name" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/custom-domain-name/05-get-custom-domain-name.png" alt="get custom domain name" max-width="100%"/>
 
 ## Cara Mengonfigurasi Catatan DNS{#how-to-configure-dns-record}
 
 Setelah Anda memiliki [domain sendiri](#how-to-buy-a-domain-name), proses menambahkan catatan DNS baru cukup sederhana (contoh menggunakan [GoDaddy](https://www.godaddy.com/)):
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/custom-domain-name/05-1-godaddy-add-dns-a-record.gif" alt="GoDaddy add DNS A Record" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/custom-domain-name/05-1-godaddy-add-dns-a-record.gif" alt="GoDaddy add DNS A Record" max-width="100%"/>
 
 Ada [berbagai jenis catatan DNS](#which-dns-record-to-use), yang dapat digunakan untuk mengarahkan ke lingkungan Anda:
 
@@ -63,19 +63,19 @@ Berikut langkah-langkah untuk mengonfigurasi catatan untuk nama domain Anda.
 
 1\. Temukan domain yang diperlukan di pendaftar domain Anda, dan klik **Manage DNS**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/custom-domain-name/06-manage-domain-name.png" alt="manage domain name" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/custom-domain-name/06-manage-domain-name.png" alt="manage domain name" max-width="100%"/>
 
 2\. Di bagian bawah bagian _**Records**_, klik tombol **Add**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/custom-domain-name/07-add-dns-record-to-domain-name.png" alt="add DNS record to domain name" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/custom-domain-name/07-add-dns-record-to-domain-name.png" alt="add DNS record to domain name" max-width="100%"/>
 
 3\. Di dalam bingkai **Add Zone Record** yang ditampilkan, pilih [opsi yang diperlukan](#which-dns-record-to-use) dari daftar drop-down **Type** (misalnya _A Record_).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/custom-domain-name/08-select-dns-record-type.png" alt="select DNS record type" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/custom-domain-name/08-select-dns-record-type.png" alt="select DNS record type" max-width="100%"/>
 
 4\. Selesaikan penambahan catatan yang dipilih.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/custom-domain-name/09-configure-dns-a-record.png" alt="configure DNS a record" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/custom-domain-name/09-configure-dns-a-record.png" alt="configure DNS a record" max-width="100%"/>
 
 Dalam kasus kami, untuk **A Record**:
 
@@ -137,11 +137,11 @@ Pengikatan domain kustom melalui dashboard platform tidak diperlukan jika IP pub
 
 1\. Di dalam dashboard platform, klik tombol **Settings** (ikon kunci inggris) untuk lingkungan yang perlu Anda hubungkan dengan nama domain.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/custom-domain-name/11-environment-settings.png" alt="environment settings" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/custom-domain-name/11-environment-settings.png" alt="environment settings" max-width="100%"/>
 
 2\. Di dalam tab menu _**Custom Domains**_ yang dipilih secara otomatis, gunakan bagian _Domain Binding_ untuk menentukan nama domain Anda (misalnya _www.myexternaldomain.com_ atau _myexternaldomain.com_) dan klik tombol **Bind**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/custom-domain-name/12-bind-custom-domain-to-environment.png" alt="bind custom domain to environment" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/custom-domain-name/12-bind-custom-domain-to-environment.png" alt="bind custom domain to environment" max-width="100%"/>
 
 :::note
 Diperlukan waktu beberapa menit hingga pengaturan URL baru ini berlaku.

@@ -24,13 +24,13 @@ Konsumsi **cloudlet dinamis** dihitung berdasarkan penggunaan Anda setiap jam be
 
 Jika Anda menggunakan kedua jenis cloudlet dalam environment Anda, Anda mungkin memiliki tier diskon yang berbeda untuk masing-masing tipe.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/automatic-discounts/01-automatic-discount-scheme.png" alt="automatic discount scheme" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/automatic-discounts/01-automatic-discount-scheme.png" alt="automatic discount scheme" max-width="100%"/>
 
 Anda dapat melihat tepatnya tier diskon dan harga yang sesuai di dalam dashboard platform Anda.
 
 Navigasi ke item menu **Balance > Quotas & Pricing**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/automatic-discounts/02-pricing-ram.png" alt="pricing RAM" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/automatic-discounts/02-pricing-ram.png" alt="pricing RAM" max-width="100%"/>
 
 
 Akun penuh memberikan Anda lebih banyak kemungkinan. Pertama-tama, batasan dikurangi. Kedua, Anda akan mendapatkan kesempatan untuk didukung sepenuhnya oleh hoster Anda.
@@ -41,7 +41,7 @@ Penyedia hosting pilihan Anda mungkin menyertakan disk space gratis, atau dapat 
 
 Anda dapat melihat tier diskon yang pasti, harga yang sesuai, dan jumlah gratis yang termasuk di dalam dashboard platform Anda. Navigasi ke item menu **Balance > Quotas & Pricing**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/automatic-discounts/03-pricing-disk.png" alt="pricing disk" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/automatic-discounts/03-pricing-disk.png" alt="pricing disk" max-width="100%"/>
 
 ## Traffic{#traffic}
 
@@ -55,7 +55,7 @@ Karena jumlah traffic dapat sangat bervariasi, tier diskon untuk traffic diatur 
 
 Anda dapat melihat tepatnya tier diskon, harga yang sesuai, dan jumlah gratis yang termasuk di dalam dashboard platform Anda. Navigasi ke item menu **Balance > Quotas & Pricing**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/automatic-discounts/04-pricing-traffic.png" alt="pricing traffic" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/automatic-discounts/04-pricing-traffic.png" alt="pricing traffic" max-width="100%"/>
 
 ## Options{#options}
 
@@ -67,7 +67,7 @@ Sebuah _**external IP**_ address menyediakan akses langsung dari luar cluster. B
 
 Anda dapat melihat harga yang ditetapkan oleh penyedia hosting pilihan Anda di dalam dashboard platform Anda. Navigasi ke item menu **Balance > Quotas & Pricing**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/automatic-discounts/05-pricing-options.png" alt="pricing options" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/automatic-discounts/05-pricing-options.png" alt="pricing options" max-width="100%"/>
 
 ## Software{#software}
 
@@ -75,7 +75,7 @@ Kebanyakan software stacks standar gratis sehingga Anda hanya membayar untuk res
 
 Biaya penggunaan software stacks tergantung pada tarif penyedia layanan hosting Anda. Navigasi ke item menu **Balance > Quotas & Pricing**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/automatic-discounts/06-pricing-software.png" alt="pricing software" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/automatic-discounts/06-pricing-software.png" alt="pricing software" max-width="100%"/>
 
 
 ## Baca Juga{#whats-next}

@@ -13,7 +13,7 @@ Selanjutnya, dapatkan string koneksi SSH untuk akun Anda dengan mengklik tombol 
 
 Dalam jendela **Account settings** yang terbuka, tab **SSH Keys > SSH Connect** akan terbuka secara default. Di sini, Anda dapat melihat informasi yang diperlukan untuk mengakses akun, termasuk string koneksi SSH. 
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ssh/ssh-access/ssh-gate/ssh-gate-2.png" alt="account settings ssh connect information" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ssh/ssh-access/ssh-gate/ssh-gate-2.png" alt="account settings ssh connect information" max-width="100%"/>
 
 :::tip 
 Di bagian kanan dari bagian tersebut, Anda dapat mengatur koneksi Web SSH ke node mana saja langsung di browser. 
@@ -29,7 +29,7 @@ Tergantung pada sistem operasi Anda, Anda perlu melakukan langkah-langkah beriku
 
 Buka terminal Anda dan jalankan string koneksi SSH. 
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ssh/ssh-access/ssh-gate/ssh-gate-3.png" alt="ssh access via terminal" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ssh/ssh-access/ssh-gate/ssh-gate-3.png" alt="ssh access via terminal" max-width="100%"/>
 
   * _**Windows**_
 
@@ -46,7 +46,7 @@ Untuk menambahkan kunci SSH pribadi Anda dengan PuTTY, unduh dan jalankan Pagean
 
 1\. Setelah terhubung, Anda akan melihat daftar [kelompok environment](<https://docs.dewacloud.com/docs/environment-groups>) (dengan jumlah container yang disediakan dalam tanda kurung) dan environment yang tidak dikelompokkan tersedia untuk akun Anda. Pilih titik yang diperlukan dengan memasukkan nomor yang sesuai. 
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ssh/ssh-access/ssh-gate/ssh-gate-6.png" alt="PaaS account via SSH" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ssh/ssh-access/ssh-gate/ssh-gate-6.png" alt="PaaS account via SSH" max-width="100%"/>
 
 :::note 
 Hanya environment yang sedang berjalan yang dapat diakses. 
@@ -54,7 +54,7 @@ Hanya environment yang sedang berjalan yang dapat diakses.
 
 2\. Setelah memilih environment, Anda akan melihat daftar lengkap dari containernya, yang dikelompokkan berdasarkan layer. Di sini, node induk (diperlukan untuk clustering, scaling, cloning, dll.) ditandai dengan tanda _[M]_. 
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ssh/ssh-access/ssh-gate/ssh-gate-7.png" alt="connect environment via SSH" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ssh/ssh-access/ssh-gate/ssh-gate-7.png" alt="connect environment via SSH" max-width="100%"/>
 
 Selain itu, setiap container dilengkapi dengan data **nodeid**, **LAN IP**, **WAN IP**, dan **Alias**. Untuk mengakses node yang diperlukan cukup masukkan nomornya.
 

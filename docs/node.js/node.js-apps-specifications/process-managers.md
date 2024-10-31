@@ -40,13 +40,13 @@ Misalnya, setelah pembuatan server Node.js, Anda dapat menampilkan list process 
 pm2 list
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/nodejs/process-manager/nodejs-process-manager-3.png" alt="PM2 list running processes" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/nodejs/process-manager/nodejs-process-manager-3.png" alt="PM2 list running processes" max-width="100%"/>
 
 Seperti yang bisa dilihat, ini menunjukkan aplikasi _draw-game_ default sedang berjalan.
 
 Selanjutnya, Anda dapat menghapus aplikasi ini dengan command _**pm2 delete**_.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/nodejs/process-manager/nodejs-process-manager-4.png" alt="PM2 delete process" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/nodejs/process-manager/nodejs-process-manager-4.png" alt="PM2 delete process" max-width="100%"/>
 
 PM2 juga memberi pengguna kemampuan untuk membuat file konfigurasi di mana semua opsi run ditampilkan dalam sebuah list, yang berguna untuk deployment aplikasi berbasis microservice, karena beberapa aplikasi dapat dideskripsikan dalam satu file. [Referensi file konfigurasi](https://pm2.keymetrics.io/docs/usage/application-declaration/) yang sesuai dapat ditemukan dengan mengikuti link yang disediakan (misalnya, file _**ecosystem.config.js**_ default digunakan untuk launching file aplikasi _server.js_ sebagai aplikasi _“draw game”_).
 
@@ -60,7 +60,7 @@ Jalankan command berikut untuk mendapatkan informasi utama tentang penggunaan ma
 forever --help
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/nodejs/process-manager/nodejs-process-manager-5.png" alt="forever process manager help" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/nodejs/process-manager/nodejs-process-manager-5.png" alt="forever process manager help" max-width="100%"/>
 
 Dengan menggunakan _forever_ Anda juga dapat menentukan opsi aplikasi dalam [file JSON](https://www.npmjs.com/package/forever#json-configuration-files). Misalnya, untuk game Draw default (secara default tersedia setelah penginstalan server Node.js), file _**/home/jelastic/ROOT/forever.json**_ akan seperti ini:
 

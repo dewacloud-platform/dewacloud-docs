@@ -23,7 +23,7 @@ Paket ini menyediakan ketersediaan tinggi dan failover out-of-box untuk cluster 
 
 1\. Temukan aplikasi _**MariaDB Multi-Region Cluster**_ (bagian **Clusters** atau gunakan kolom **Search**) di dalam platform [Marketplace](<https://docs.dewacloud.com/docs/marketplace/>).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/multi-region-cluster/multi-region-cluster-2.png" alt="MariaDB multi-region marketplace" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/multi-region-cluster/multi-region-cluster-2.png" alt="MariaDB multi-region marketplace" max-width="100%"/>
 
 2\. Di jendela instalasi yang terbuka, tentukan data berikut:
 
@@ -32,7 +32,7 @@ Paket ini menyediakan ketersediaan tinggi dan failover out-of-box untuk cluster 
   * **Environment** – berikan nama untuk isolasi dan [pengelompokan](<https://docs.dewacloud.com/docs/environment-groups/>) lingkungan cluster database Anda
   * **Display Name** – tetapkan nama khusus untuk lingkungan cluster
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/multi-region-cluster/multi-region-cluster-3.png" alt="install MariaDB multi-region cluster" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/multi-region-cluster/multi-region-cluster-3.png" alt="install MariaDB multi-region cluster" max-width="100%"/>
 
 Klik **Install** jika sudah siap.
 
@@ -40,11 +40,11 @@ Klik **Install** jika sudah siap.
 
 Untuk melihat semua environment yang terkait dengan mudah, Anda dapat beralih ke grup yang ditentukan pada langkah sebelumnya (_mdbcluster_ dalam kasus kami).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/multi-region-cluster/multi-region-cluster-4.png" alt="MariaDB cluster group" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/multi-region-cluster/multi-region-cluster-4.png" alt="MariaDB cluster group" max-width="100%"/>
 
 4\. Entry point cluster multi-region terdiri dari dua item (satu untuk setiap server Primary). Tautan mencakup nama cluster dan hostname ProxySQL. Jika kedua wilayah Primary down, gunakan hostname atau alamat IP dari node sekunder sebagai entry point.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/multi-region-cluster/multi-region-cluster-5.png" alt="MariaDB multi-region cluster environments" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/multi-region-cluster/multi-region-cluster-5.png" alt="MariaDB multi-region cluster environments" max-width="100%"/>
 
 ## Baca Juga{#whats-next}
 

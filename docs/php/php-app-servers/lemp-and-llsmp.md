@@ -29,13 +29,13 @@ Struktur topologi di dalam kontainer LEMP dan LLSMP adalah sebagai berikut:
 
 2\. Beralih ke tab _**PHP**_ dari topology wizard yang terbuka secara otomatis. Pilih **LEMP** (**LLSMP**) sebagai server aplikasi Anda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/lemp-and-lllsmp/03-lemp-environment-topology-wizard.png" alt="LEMP environment topology wizard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/lemp-and-lllsmp/03-lemp-environment-topology-wizard.png" alt="LEMP environment topology wizard" max-width="100%"/>
 
 Konfigurasikan parameter lain sesuai kebutuhan Anda (mis. [batas scaling](<https://docs.dewacloud.com/docs/automatic-vertical-scaling/>), [IP publik](<https://docs.dewacloud.com/docs/public-ip/>), [region](<https://docs.dewacloud.com/docs/environment-regions/>)) dan klik **Create** untuk melanjutkan.
 
 3\. Tunggu beberapa menit agar platform mengatur lingkungan Anda. Setelah dibuat, Anda dapat mengklik **Open in Browser** untuk melihat data _phpinfo()_ default di server Anda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/lemp-and-lllsmp/04-lemp-environment-created.png" alt="LEMP environment created" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/lemp-and-lllsmp/04-lemp-environment-created.png" alt="LEMP environment created" max-width="100%"/>
 
 Sekarang, Anda dapat melanjutkan ke [deployment](<https://docs.dewacloud.com/docs/deployment-guide/>) aplikasi Anda.
 
@@ -48,7 +48,7 @@ Saat bekerja dengan stack perangkat lunak LLSMP, semua kekhasan dari [LiteSpeed 
   * Alat administrasi _phpMyAdmin_ untuk _**MariaDB**_ dapat dihubungkan melalui port _8443_. Tautan dan kredensial akses yang tepat dapat ditemukan dalam email setelah pembuatan. Jika diperlukan, kata sandi dapat direset melalui dashboard dengan mengarahkan mouse ke server aplikasi dan memilih opsi **Additionally > Admin Panel > Reset Password**.
   * Database _**Redis**_ dapat diakses tanpa kata sandi tetapi hanya dari dalam kontainer (yaitu _localhost_).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/lemp-and-lllsmp/05-lemp-admin-panel-access.png" alt="LEMP admin panel access" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/lemp-and-lllsmp/05-lemp-admin-panel-access.png" alt="LEMP admin panel access" max-width="100%"/>
 
 :::tip
 Di dalam kontainer LEMP/LLSMP, Anda dapat membangun koneksi klien ke database melalui [protokol](https://dev.mysql.com/doc/refman/5.7/en/connection-options.html#option_general_protocol) SOCKET (localhost) dan TCP (127.0.0.1).
@@ -68,7 +68,7 @@ Baca panduan yang terhubung untuk mempelajari lebih lanjut tentang [koneksi PHP 
 Batas RAM ini dapat ditentukan dalam megabyte (m|mb|M|MB), gigabyte (g|gb|G|GB), atau persentase (%). Jika unit dihilangkan, nilainya dianggap sebagai persentase.
 :::
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/lemp-and-lllsmp/06-lemp-environment-variables.png" alt="LEMP environment variables" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/lemp-and-lllsmp/06-lemp-environment-variables.png" alt="LEMP environment variables" max-width="100%"/>
 
 Restart kontainer diperlukan untuk menerapkan perubahan pada parameter ini.
 

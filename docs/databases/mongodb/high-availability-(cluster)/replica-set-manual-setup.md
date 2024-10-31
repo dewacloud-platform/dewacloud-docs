@@ -17,7 +17,7 @@ Jadi, berikut adalah instruksi sederhana yang akan menunjukkan kepada Anda cara 
 
 Untuk memulai, Anda memerlukan setidaknya tiga node MongoDB untuk mengonfigurasi replica set, jadi mari kita [create such an environment](<https://docs.jelastic.com/setting-up-environment/>). Dalam contoh ini, kami akan mengalokasikan instance MongoDB versi 4.0.10 dalam satu environment.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-2.png" alt="mongodb replica set environment" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-2.png" alt="mongodb replica set environment" max-width="100%"/>
 
 Jika perlu, ubah **Environment Name** dan [Region](<https://docs.jelastic.com/environment-regions/>). Setelah instalasi selesai, Anda harus memastikan keamanan komunikasi node dengan bantuan file kunci autentikasi.
 
@@ -27,7 +27,7 @@ Autentikasi adalah proses jaminan keamanan penting yang memaksa setiap anggota r
 
 1\. Masuk ke salah satu node database melalui [Web SSH](<https://docs.jelastic.com/web-ssh-client/>).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-3.png" alt="mongodb replica set ssh" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-3.png" alt="mongodb replica set ssh" max-width="100%"/>
 
 2\. Gunakan file kunci Anda sendiri atau buat satu dengan [openssl](<https://en.wikipedia.org/wiki/OpenSSL>) (ukuran kunci dalam byte, misalnya 741, dan nama misalnya my.key) dengan perintah:
 
@@ -37,19 +37,19 @@ _**openssl rand -base64 741 > my.key**_
 
   * Klik pada tombol **Config** di sebelah node database Anda untuk mengakses [File Manager](<https://docs.jelastic.com/configuration-file-manager/>).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-4.png" alt="mongodb replica set config" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-4.png" alt="mongodb replica set config" max-width="100%"/>
 
   * Di tab konfigurasi yang dibuka, temukan file _**my.key**_ di bawah jalur: _**/home/jelastic/my.key**_ dan buka. Kemudian salin isinya ke clipboard.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-5.png" alt="mongodb replica set key" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-5.png" alt="mongodb replica set key" max-width="100%"/>
 
   * Di direktori **keys** (jalur lengkap adalah _**/var/lib/jelastic/keys**_), buat file yang akan digunakan oleh instance MongoDB untuk mengautentikasi satu sama lain, misalnya **mongo-set.key.**
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-6.png" alt="mongodb replica set file" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-6.png" alt="mongodb replica set file" max-width="100%"/>
 
   * Tempelkan konten clipboard ke dalamnya dan terapkan perubahan dengan Save untuk semua instance. Dengan demikian file **mongo-set.key** telah didistribusikan ke semua node MongoDB.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-7.png" alt="mongodb replica set save" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-7.png" alt="mongodb replica set save" max-width="100%"/>
 
 ## Configure the MongoDB Replication
 
@@ -61,19 +61,19 @@ _**replSetName: db-replication**_
 
 2\. Tambahkan parameter **keyFile** di bagian **security** yang harus menentukan jalur ke file kunci Anda (yang dalam kasus kami adalah _**/var/lib/jelastic/keys/mongo-set.key**_).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-8.png" alt="mongodb replica set security" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-8.png" alt="mongodb replica set security" max-width="100%"/>
 
 3\. Segera **Save** perubahan **untuk semua instance** menggunakan tombol yang sesuai di jendela editor.
 
 4\. **Restart** node **DB** Anda agar parameter konfigurasi baru diterapkan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-9.png" alt="mongodb replica set restart container" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-9.png" alt="mongodb replica set restart container" max-width="100%"/>
 
 **Note:** Perlu diingat bahwa setelah Anda menyelesaikan konfigurasi replica set, proses pemilihan PRIMARY database baru akan dipanggil selama semua node restart atau restart node PRIMARY (yaitu downtime database PRIMARY).
 
 5\. Selanjutnya, akses server MongoDB yang Anda anggap akan digunakan sebagai PRIMARY melalui protokol SSH.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-10.png" alt="mongodb replica set restart node" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-10.png" alt="mongodb replica set restart node" max-width="100%"/>
 
 **Note:** Setelah database PRIMARY dipilih, anggota replica set lainnya akan menjadi tidak dapat diakses untuk operasi tulis langsung, yang berarti bahwa setiap perubahan, konfigurasi, dll. (termasuk akses ke panel admin web) hanya dapat dilakukan untuk node PRIMARY yang saat ini. Jadi, Anda harus mengubah string koneksi di aplikasi Anda ke node PRIMARY yang baru, kecuali Anda telah mengatur [priorities](<https://docs.mongodb.com/manual/tutorial/force-member-to-be-primary/>) untuk semua anggota replica set yang menentukan satu node sebagai PRIMARY yang diutamakan.
 
@@ -83,7 +83,7 @@ _**replSetName: db-replication**_
 mongo -u {user} -p {password} {DB_name}
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-11.png" alt="mongodb replica set access" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-11.png" alt="mongodb replica set access" max-width="100%"/>
 
 Di mana:
 
@@ -105,7 +105,7 @@ Jelas, nilai dalam tanda kurung harus diganti dengan data yang sesuai, yaitu:
   * `{replica_set}` – nama grup database Anda yang direplikasi, ditentukan di awal bagian ini (db-replication dalam kasus kami)
   * `{current_db_ip}` – alamat IP dari kontainer database yang dipilih
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-12.png" alt="mongodb replica set parameters" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-12.png" alt="mongodb replica set parameters" max-width="100%"/>
 
 Dalam contoh kami:
 
@@ -113,11 +113,11 @@ Dalam contoh kami:
 **config = {_id : "db-replication", members : [{_id : 0, host:"172.25.2.119:27017"},]}**
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-13.png" alt="mongodb replica set configuration" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-13.png" alt="mongodb replica set configuration" max-width="100%"/>
 
 _**rs.initiate()**_
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-14.png" alt="mongodb replica set setup" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-14.png" alt="mongodb replica set setup" max-width="100%"/>
 
 8\. Eksekusi perintah berikut untuk database lainnya di mana `{db_ip}` adalah alamat IP dari setiap database:
 
@@ -125,11 +125,11 @@ _**rs.initiate()**_
 rs.add("{db_ip}:27017")
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-15.png" alt="mongodb replica set add" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-15.png" alt="mongodb replica set add" max-width="100%"/>
 
 9\. Setelah Anda menambahkan semua anggota replikasi, Anda akan mendapatkan replica set yang sepenuhnya fungsional. Jika Anda ingin memastikan bahwa semuanya dikonfigurasi dengan benar, eksekusi perintah **rs.status()** untuk mendapatkan informasi lengkap mengenai replica set Anda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-16.png" alt="mongodb replica set status" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-16.png" alt="mongodb replica set status" max-width="100%"/>
 
 ## ReplicaSet Arbiter
 
@@ -146,8 +146,8 @@ Mari kita tambahkan node Arbiter tambahan ke replica set kami:
 
 1\. Skalakan cluster database secara horizontal dengan satu node:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-17.png" alt="mongodb replica set add arbiter" width="100%"/>
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-18.png" alt="mongodb replica set add arbiter2" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-17.png" alt="mongodb replica set add arbiter" max-width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-18.png" alt="mongodb replica set add arbiter2" max-width="100%"/>
 
 2\. Di direktori **keys**, buat file kunci **mongo-set.key** dan tempelkan konten file yang serupa dari node database yang sebelumnya dikonfigurasi.
 
@@ -158,7 +158,7 @@ Mari kita tambahkan node Arbiter tambahan ke replica set kami:
 
 4\. Restart node yang baru ditambahkan untuk menerapkan parameter konfigurasi.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-19.png" alt="mongodb replica set restart" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-19.png" alt="mongodb replica set restart" max-width="100%"/>
 
 **Note:** Jangan restart semua node karena itu akan menyebabkan pemilihan PRIMARY baru kecuali Anda telah menetapkan prioritas untuk memaksa node tertentu untuk dipilih sebagai node database PRIMARY.
 
@@ -170,11 +170,11 @@ rs.addArb("{db_ip}:27017")
 
 _Di mana `{db_ip}` adalah alamat IP dari node yang baru ditambahkan._  
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-20.png" alt="mongodb replica set arbiter" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-20.png" alt="mongodb replica set arbiter" max-width="100%"/>
 
 6\. Terakhir, mari kita periksa apakah node yang baru ditambahkan telah menjadi Arbiter atau tidak. Untuk melakukan ini, masuk ke node baru melalui SSH dan hubungkan instance MongoDB dengan kredensial dari email yang sesuai yang Anda terima saat pembuatan node.  
  
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-21.png" alt="mongodb replica set arbiter access" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-21.png" alt="mongodb replica set arbiter access" max-width="100%"/>
 
 Seperti yang Anda lihat, node yang baru ditambahkan bertindak sebagai Arbiter dari **db-replication**, memastikan quorum dalam situasi apa pun.
 
@@ -186,12 +186,12 @@ Jelas, Anda akan memerlukan server aplikasi untuk itu (misalnya, Apache), jadi t
 
 1\. Tekan tombol **Change Environment Topology** dan tambahkan server.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-22.png" alt="mongodb replica set change topology" width="100%"/>
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-23.png" alt="mongodb replica set change topology2" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-22.png" alt="mongodb replica set change topology" max-width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-23.png" alt="mongodb replica set change topology2" max-width="100%"/>
 
 2\. Buka tab Configuration Manager untuk server **Apache** yang ditambahkan dengan memilih ikon **Config** di sampingnya.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-24.png" alt="mongodb replica set configure apache" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-24.png" alt="mongodb replica set configure apache" max-width="100%"/>
 
 3\. Navigasi ke direktori _**/var/www/webroot/ROOT**_, buka file **index.php** dan tempelkan kode berikut alih-alih konten defaultnya:
 
@@ -226,7 +226,7 @@ Di mana nilai berikut harus diganti dengan data yang sesuai:
 
 Sebagai hasilnya, Anda akan mendapatkan set string yang serupa:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-26.png" alt="mongodb replica set strings" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-26.png" alt="mongodb replica set strings" max-width="100%"/>
 
 Jangan lupa untuk **Save** file ini.
 
@@ -234,19 +234,19 @@ Jangan lupa untuk **Save** file ini.
 
 Untuk itu, buka folder **etc** dan buka file **php.ini**. Temukan bagian **[mongodb]** dan hapus titik koma sebelum baris **extension=mongodb.so** untuk mengaktifkan ekstensi ini.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-27.png" alt="mongodb replica set extension" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-27.png" alt="mongodb replica set extension" max-width="100%"/>
 
 5\. Untuk menerapkan konfigurasi baru, klik **Save** dalam jendela editor dan tekan tombol **Restart Nodes** di samping server aplikasi Anda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-28.png" alt="mongodb replica set restart server" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-28.png" alt="mongodb replica set restart server" max-width="100%"/>
 
 6\. Akhirnya, klik ikon **Open in Browser** di dekatnya.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-29.png" alt="mongodb replica set open" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-29.png" alt="mongodb replica set open" max-width="100%"/>
 
 Sebagai hasilnya, dalam tab browser baru, Anda akan melihat informasi tentang anggota replica set Anda dan aksesibilitas mereka.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-30.png" alt="mongodb replica set information" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/high-availability-cluster/replica-set-manual-setup/replica-set-manual-setup-30.png" alt="mongodb replica set information" max-width="100%"/>
 
 Baris pertama menampilkan hasil pengecekan ketersediaan replica set, yang dilakukan dengan perintah "ping" (baris 6 dari **index.php**):
 

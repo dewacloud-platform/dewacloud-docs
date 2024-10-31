@@ -15,7 +15,7 @@ Anda dapat menganggapnya sebagai memori jangka pendek untuk aplikasi Anda.
 Sistem ini menggunakan arsitektur klien-server. Server memelihara sebuah array asosiatif key-value; klien mengisi array ini dan melakukan query. Key memiliki panjang hingga 250 byte dan nilai maksimal 1 megabyte.
 
 <p>
-<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-3.png" alt="Memcached deployment scenario" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-3.png" alt="Memcached deployment scenario" max-width="100%"/>
 </p>
 
 **Memcached** juga memungkinkan Anda menggunakan memori dengan lebih baik.
@@ -41,14 +41,14 @@ Untuk mendapatkan **Memcached** di lingkungan Anda, cukup:
 
 
 <p>
-<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-1.png" alt="Memcached environment topology" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-1.png" alt="Memcached environment topology" max-width="100%"/>
 </p>
 
 
 Itu saja yang perlu Anda lakukan! Sekarang, Memcached tersedia di environment Anda.
 
 <p>
-<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-2.png" alt="environment with Memcached created" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-2.png" alt="environment with Memcached created" max-width="100%"/>
 </p>
 
 ## Baca Juga{#whats-next}

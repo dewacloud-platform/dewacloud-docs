@@ -15,12 +15,12 @@ Gunakan kredensial Anda untuk masuk ke platform dashboard.
 ### 2. Access Logs
 Klik ikon **Log** untuk node yang lognya ingin Anda lihat.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/log-files/1-log.png" alt="log button" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/log-files/1-log.png" alt="log button" max-width="100%"/>
 
 ### 3. View Logs
 Tab log akan muncul di bagian bawah dashboard Anda. Jika environment Anda berisi beberapa [nodes of the same type](https://docs.dewacloud.com/docs/horizontal-scaling/), gunakan daftar drop-down untuk memilih node yang lognya ingin Anda lihat.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/log-files/2-select-node.png" alt="select node to view logs" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/log-files/2-select-node.png" alt="select node to view logs" max-width="100%"/>
 
 ### 4. Manage Logs
 Anda dapat:
@@ -34,7 +34,7 @@ Secara default, fitur **Auto refresh** diaktifkan, me-refresh log setiap 3 detik
 ### 5. Delete Logs
 Untuk menghapus log, arahkan mouse ke atasnya dan klik tombol silang, atau pilih dan klik **Delete** di panel alat atas.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/log-files/4-delete.png" alt="delete log files" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/log-files/4-delete.png" alt="delete log files" max-width="100%"/>
 
 ### 6. Download Logs via FTP
 Log dapat diunduh menggunakan FTP. Untuk lebih jelas tentang instalasi dan penggunaan FTP/FTPS, lihat dokumen [FTP/FTPS Support](https://docs.dewacloud.com/docs/ftp-ftps-support/).

@@ -21,7 +21,7 @@ Di Dewacloud, instalasi Ubuntu VPS merupakan proses otomatis sepenuhnya, dilakuk
 Masuk ke dashboard Dewacloud dan buka wizard topologi environment dengan mengklik tombol **New Environment**. Pada menunya, aktifkan bagian _VPS_ di sudut kiri bawah dan pilih template _**Ubuntu**_ dari daftar opsi yang dapat diperluas.
 
 <p>
-<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/vps-ubuntu.png" alt="ubuntu vps topology wizard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/vps-ubuntu.png" alt="ubuntu vps topology wizard" max-width="100%"/>
 </p>
 
 Sesuaikan opsi lainnya (limit cloudlet, [jumlah](https://docs.dewacloud.com/docs/horizontal-scaling/) instance server dan nama untuk environment Anda) dan klik tombol **Create**.

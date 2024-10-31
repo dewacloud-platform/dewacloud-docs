@@ -31,13 +31,13 @@ Dapatkan server load balancer HAProxy Anda di platform dengan mengikuti langkah-
 
 3\. Load balancer bekerja dengan server aplikasi apa pun dan semua instance lainnya. Jadi pilih **Haproxy** di bagian _Balancing_ dari wizard menggunakan daftar drop-down yang sesuai (dilingkari pada gambar di bawah ini):
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/haproxy/02-environment-wizard.png" alt="environment wizard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/haproxy/02-environment-wizard.png" alt="environment wizard" max-width="100%"/>
 
 Kemudian pilih node lain yang Anda butuhkan untuk environment Anda dan tentukan jumlah sumber daya yang dialokasikan untuk masing-masing. Terakhir, ketik nama environment (misalnya _haproxy_) dan klik **Create**.
 
 4\. Environment Anda akan dibuat dalam beberapa menit.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/haproxy/03-environment-with-haproxy-created.png" alt="environment with HAProxy created" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/haproxy/03-environment-with-haproxy-created.png" alt="environment with HAProxy created" max-width="100%"/>
 
 Sekarang Anda telah memiliki HAProxy load-balancer yang terinstal dan siap digunakan di depan aplikasi Anda, dan dapat mulai menggunakannya atau, awalnya, menyesuaikannya sesuai kebutuhan Anda.
 
@@ -49,7 +49,7 @@ Seperti yang disebutkan di atas, HAProxy disediakan dengan panel admin terintegr
 
 dan menambahkan akhiran _**/haproxy_adm_panel**_ ke URL environment di bilah alamat browser. Setelah itu, Anda hanya perlu menentukan kredensial balancer (dikirimkan kepada Anda melalui email) di jendela otentikasi pop-up yang muncul.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/haproxy/05-haproxy-admin-panel.png" alt="HAProxy admin panel" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/haproxy/05-haproxy-admin-panel.png" alt="HAProxy admin panel" max-width="100%"/>
 
 Di halaman yang terbuka, Anda dapat melihat daftar balancer HAProxy dan server yang bekerja dengannya. Selain itu, setiap instance dilengkapi dengan informasi rinci tentang antrian, sesi, peringatan dan kesalahan, informasi pengecekan, dan lainnya. Beberapa tindakan konfigurasi dapat dilakukan menggunakan drop-down tepat di bawah tabel.
 
@@ -57,7 +57,7 @@ Selain itu, Anda dapat menentukan beberapa pengaturan tambahan dengan cara berik
 
 1\. Melalui dashboard dengan mengedit file konfigurasi utama **conf > _haproxy.conf_**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/haproxy/06-haproxy-config-file.png" alt="HAProxy config file" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/haproxy/06-haproxy-config-file.png" alt="HAProxy config file" max-width="100%"/>
 
 Di sini, Anda juga dapat menghubungkan server aplikasi ke balancer Anda (bahkan dari environment lain) untuk ditempatkan di belakangnya. Cukup tambahkan catatan yang sesuai ke bagian **backend bk_http** dalam format berikut:
 
@@ -74,7 +74,7 @@ Setelah konfigurasi ini selesai, **Save** perubahan yang dibuat dan **Restart** 
 
 2\. Melalui akses node HAProxy yang sesuai melalui [SSH Gateway](<https://docs.dewacloud.com/docs/ssh-access/>):
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/haproxy/07-haproxy-ssh-access.png" alt="HAProxy SSH access" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/haproxy/07-haproxy-ssh-access.png" alt="HAProxy SSH access" max-width="100%"/>
 
 Kami berharap Anda menikmati bekerja dengan HAProxy dan memanfaatkan GUI yang kuat untuk mendapatkan manfaat maksimal dari kemungkinan manajemen yang disediakan platform.
 

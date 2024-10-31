@@ -62,11 +62,11 @@ Jika public IP ditambahkan ke sebuah layer, **Access via SLB** secara otomatis d
 
 Layer dengan akses SLB yang dinonaktifkan diberi label sesuai di dashboard:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/shared-load-balancer/05-no-slb-access-label.png" alt="no SLB access label" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/shared-load-balancer/05-no-slb-access-label.png" alt="no SLB access label" max-width="100%"/>
 
 Mencoba mengakses node semacam itu akan menghasilkan **403 Forbidden** error:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/shared-load-balancer/06-403-forbidden-access.png" alt="403 forbidden access" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/shared-load-balancer/06-403-forbidden-access.png" alt="403 forbidden access" max-width="100%"/>
 
 ### Penggunaan Umum:
 - Menutup akses publik SLB ke node yang dimaksudkan untuk penggunaan internal saja (misalnya, basis data).

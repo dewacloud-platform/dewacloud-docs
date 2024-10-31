@@ -20,7 +20,7 @@ Mari kita jelajahi cara mengelola nama domain spesifik ini pada platform.
 1. Anda dapat menggunakan IDN saat menamai environment Anda melalui topology wizard.  
    Konfigurasikan pengaturan environment Anda dan masukkan nama yang diinginkan dalam bahasa apa pun di bidang **Environment name** (harus lebih dari 5 karakter). Lalu klik **Create**.  
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/container-dns-hostnames/02-nodeid-in-dashboard.png" alt="tld idn domain env wiz" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/container-dns-hostnames/02-nodeid-in-dashboard.png" alt="tld idn domain env wiz" max-width="100%"/>
 
    Berikut beberapa contoh lainnya:  
 
@@ -32,11 +32,11 @@ Mari kita jelajahi cara mengelola nama domain spesifik ini pada platform.
 
 2. Proses pembuatan environment akan berjalan seperti biasanya, dan environment baru Anda akan ditambahkan ke dashboard.  
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/container-dns-hostnames/04-layer-hostnames-example.png" alt="tld idn domain env created" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/container-dns-hostnames/04-layer-hostnames-example.png" alt="tld idn domain env created" max-width="100%"/>
 
 3. Jika Anda **Open in browser** environment IDN Anda, URL akan terlihat seperti gambar di bawah ini:  
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/container-dns-hostnames/05-container-linking-alias.png" alt="tld idn domain punycode" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/container-dns-hostnames/05-container-linking-alias.png" alt="tld idn domain punycode" max-width="100%"/>
 
    URL ini menggunakan Punycode untuk merepresentasikan karakter Unicode. Untuk menghindarinya, Anda dapat mengikat [custom domain name](https://docs.dewacloud.com/docs/custom-domains) ke environment Anda, termasuk IDN.
 
@@ -52,7 +52,7 @@ Baik domain internasional maupun generic top-level dapat dengan mudah diikat ke 
 
 Anda juga dapat menggunakan fitur [Swapping Domains](https://docs.dewacloud.com/docs/swap-domains) untuk bekerja dengan jenis domain ini.  
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/container-dns-hostnames/05-container-linking-alias.png" alt="tld idn domain swap domains" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/container-dns-hostnames/05-container-linking-alias.png" alt="tld idn domain swap domains" max-width="100%"/>
 
 ## Baca Juga
 

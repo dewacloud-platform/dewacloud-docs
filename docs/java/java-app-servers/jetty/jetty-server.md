@@ -26,17 +26,17 @@ Untuk mendapatkan server aplikasi Eclipse Jetty di platform, Anda perlu:
 
 2\. Dalam wizard topologi yang terbuka, beralih ke tab _**Java**_ dan pilih **Jetty** sebagai server aplikasi Anda:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/eclipse-jetty/eclipse-jetty-2.png" alt="topology wizard Eclipse Jetty server" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/eclipse-jetty/eclipse-jetty-2.png" alt="topology wizard Eclipse Jetty server" max-width="100%"/>
 
 Sesuaikan pengaturan lainnya sesuai kebutuhan Anda (misalnya, penskalaan [vertikal](<https://docs.dewacloud.com/docs/automatic-vertical-scaling/>) dan [horizontal](<https://docs.dewacloud.com/docs/horizontal-scaling/>) atau [public IPs](<https://docs.dewacloud.com/docs/public-ip/>)) dan klik **Create**.
 
 3\. Setelah environmnet dibuat, Anda dapat mengklik tombol **Open in Browser** di sebelahnya.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/eclipse-jetty/eclipse-jetty-3.png" alt="Jetty server open in browser button" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/eclipse-jetty/eclipse-jetty-3.png" alt="Jetty server open in browser button" max-width="100%"/>
 
 Sebuah halaman home server Jetty akan terbuka di halaman browser baru:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/eclipse-jetty/eclipse-jetty-4.png" alt="Jetty application server home page" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/eclipse-jetty/eclipse-jetty-4.png" alt="Jetty application server home page" max-width="100%"/>
 
 Seperti yang dapat Anda lihat, server Eclipse Jetty telah aktif dan berjalan, sehingga Anda dapat melanjutkan ke [deployment aplikasi](<https://docs.dewacloud.com/docs/deployment-guide/>).
 

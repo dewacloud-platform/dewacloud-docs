@@ -36,7 +36,7 @@ Jika diperlukan, sesuaikan lokasi kunci yang diinginkan dan passphrase (kami aka
 cat /home/jelastic/.ssh/id_rsa.pub  
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ssh/generate-ssh-key/generate-ssh-key-2.png" alt="view ssh key value console" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ssh/generate-ssh-key/generate-ssh-key-2.png" alt="view ssh key value console" max-width="100%"/>
 
 3\. Sekarang, Anda dapat [menambahkan kunci SSH yang dihasilkan](<https://docs.dewacloud.com/docs/ssh-add-key/>) ke akun PaaS Anda:
 

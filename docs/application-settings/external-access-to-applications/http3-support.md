@@ -60,7 +60,7 @@ Di bawah ini, Anda dapat melihat daftar paling akurat dari tumpukan perangkat lu
 
 Cukup [buat topologi lingkungan](https://www.virtuozzo.com/application-platform-docs/setting-up-environment/) yang mencakup salah satu dari application servers atau load balancers yang disebutkan di atas.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/http3-support/02-http3-ready-servers.png" alt="HTTP3 ready servers" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/http3-support/02-http3-ready-servers.png" alt="HTTP3 ready servers" max-width="100%"/>
 
 Di sini, Anda perlu melampirkan [alamat IP publik](https://docs.dewacloud.com/docs/public-ip/) untuk melewati Shared Load Balancer dan memungkinkan bekerja langsung dengan server melalui HTTP/3.
 

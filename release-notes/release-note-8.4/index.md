@@ -80,7 +80,7 @@ Selain itu, templat _Ubuntu 22.10_ dihentikan karena berakhirnya masa dukungan r
 
 Platform ini mengimplementasikan dukungan untuk templat OS **Debian 12** “bookworm” pada semua instalasi PaaS (tersedia untuk semua platform dimulai dengan rilis 8.4). Ini adalah versi LTS terbaru (Dukungan Jangka Panjang) dengan periode dukungan yang diperkirakan setidaknya lima tahun. Rilis baru ini berfokus pada kinerja, stabilitas, dan kemudahan penggunaan. Ini memberikan pembaruan besar dari paket default, membuat arsip paket terpisah untuk firmware non-gratis, memperluas dukungan arsitektur dan kernel, dan memperkenalkan banyak perbaikan, pengoptimalan, dan perbaikan keamanan lainnya. Untuk informasi lebih rinci, lihat catatan resmi [rilis Debian 12](<https://www.debian.org/releases/bookworm/releasenotes>).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/release-notes/release-notes-8.4/01-debian-12-vps.png" alt="Debian 12 VPS" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/release-notes/release-notes-8.4/01-debian-12-vps.png" alt="Debian 12 VPS" max-width="100%"/>
 
 Selain itu, **Debian 12** ditambahkan sebagai tumpukan [Elastic VPS](<https://docs.dewacloud.com/docs/vps-debian/>) bawaan di dashboard platform.
 

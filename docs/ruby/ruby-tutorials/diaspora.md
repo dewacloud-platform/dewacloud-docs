@@ -21,17 +21,17 @@ Mari kita pelajari cara membuat pod Diaspora* Anda sendiri dengan bantuan PaaS.
 
    Kemudian tentukan batas sumber daya untuk node yang dipilih. Terakhir, masukkan nama untuk environment Anda (mis. _diaspora-network_), dan klik tombol **Create**.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/01-environment-wizard.png" alt="environment wizard" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/01-environment-wizard.png" alt="environment wizard" max-width="100%"/>
 
 3. Setelah sekitar satu menit, environment baru Anda akan muncul di dashboard.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/02-environment-for-diaspora-created.png" alt="environment for Diaspora created" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/02-environment-for-diaspora-created.png" alt="environment for Diaspora created" max-width="100%"/>
 
 ## Diaspora* Deployment{#diaspora-deployment}
 
 1. Navigasikan ke [Diaspora GitHub repository](<https://github.com/diaspora/diaspora>). Di sana, ubah cabang ke _**master**_ dan klik tombol **Download ZIP**.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/03-download-diaspora-zip.png" alt="download Diaspora zip" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/03-download-diaspora-zip.png" alt="download Diaspora zip" max-width="100%"/>
 
    Anda akan ditawarkan untuk menyimpan arsip **.zip** dengan versi stabil Diaspora* terbaru.
 
@@ -49,17 +49,17 @@ Mari kita pelajari cara membuat pod Diaspora* Anda sendiri dengan bantuan PaaS.
 
 4. Proses deployment bisa memakan waktu, jadi harap bersabar. Akhirnya, Anda akan melihat konteks _test_ baru yang terdaftar untuk Apache.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/06-diaspora-application-deployed.png" alt="Diaspora application deployed" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/06-diaspora-application-deployed.png" alt="Diaspora application deployed" max-width="100%"/>
 
 ## Database Configurations{#database-configurations}
 
 1. Tekan tombol **Open in Browser** di sebelah node **MySQL** di environment Anda.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/07-open-mysql-in-browser.png" alt="open MySQL in browser" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/07-open-mysql-in-browser.png" alt="open MySQL in browser" max-width="100%"/>
 
 2. Pada tab browser yang terbuka, masuk menggunakan kredensial MySQL yang Anda terima saat pembuatan environment dan navigasikan ke bagian **SQL**.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/08-database-admin-sql-tab.png" alt="database admin SQL tab" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/08-database-admin-sql-tab.png" alt="database admin SQL tab" max-width="100%"/>
 
 3. Anda akan melihat formulir kosong untuk eksekusi permintaan SQL. Masukkan baris berikut di sana dan klik **Go** untuk membuat database baru bernama _diaspora_test_.
 
@@ -75,17 +75,17 @@ Mari kita pelajari cara membuat pod Diaspora* Anda sendiri dengan bantuan PaaS.
 
 5. Pada manager konfigurasi yang terbuka, navigasikan ke folder **webroot > config**, temukan file _**database.yml.example**_ dan salin isinya.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/11-database-yml-example.png" alt="database yml example" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/11-database-yml-example.png" alt="database yml example" max-width="100%"/>
 
 6. Kemudian buat file baru _**database.yml**_ di folder (**config**) yang sama dan tempelkan string yang telah disalin ke dalamnya.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/12-crerate-database-yml.png" alt="create database yml" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/12-crerate-database-yml.png" alt="create database yml" max-width="100%"/>
 
 7. Sekarang perlu untuk mengatur koneksi antara aplikasi Anda dan database MySQL.
 
    Temukan bagian untuk konfigurasi MySQL. Tentukan _**host**_ MySQL Anda (URL ke database Anda tanpa _http://_) dan kredensial yang Anda terima saat pembuatan environment di string _**username**_ dan _**password**_.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/13-configure-database-connection.png" alt="configure database connection" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/13-configure-database-connection.png" alt="configure database connection" max-width="100%"/>
 
    Jangan lupa untuk **Save** perubahan yang telah dibuat.
 
@@ -97,13 +97,13 @@ Mari kita pelajari cara membuat pod Diaspora* Anda sendiri dengan bantuan PaaS.
 
 2. Navigasikan ke folder **webroot > config** dan buat file baru _**diaspora.yml**_ di sana. Kemudian temukan file konfigurasi _**diaspora.yml.example**_ di folder yang sama, salin isinya, dan tempelkan ke file yang baru dibuat.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/14-create-diaspora-yml.png" alt="create diaspora yml" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/14-create-diaspora-yml.png" alt="create diaspora yml" max-width="100%"/>
 
 3. Setelah itu navigasikan ke bagian _**configuration**_ dalam file ini dan ubah nilai-nilai berikut:
 
    - Temukan string _**#url: “https://example.org/"**_ dan tempelkan URL environment Anda sebagai pengganti nilai _https://example.org/_ (Anda bisa menemukannya dengan menekan tombol **Open in Browser** untuk environment Anda dan menyalin URL di bilah alamat).
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/15-configure-environment-url.png" alt="configure environment URL" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/15-configure-environment-url.png" alt="configure environment URL" max-width="100%"/>
 
    - Gulir sedikit ke bawah dan temukan pengaturan untuk koneksi Redis jarak jauh dalam file yang sama:
 
@@ -118,21 +118,21 @@ Mari kita pelajari cara membuat pod Diaspora* Anda sendiri dengan bantuan PaaS.
 
      Hapus simbol **#** dari baris _**#redis: ‘redis://username:password@host:6379/0’**_. Kemudian ganti nilai dalam parameter ini dengan data Anda sendiri, yang diterima melalui email setelah pembuatan environment.
 
-     <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/16-redis-db-credentials-email.png" alt="Redis DB credentials email" width="100%"/>
+     <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/16-redis-db-credentials-email.png" alt="Redis DB credentials email" max-width="100%"/>
 
      Ubah nilai _**username**_ dan _**password**_ ke kredensial untuk akses admin ke node Redis Anda. Hal yang sama dengan kata _**host**_: ganti dengan **alamat DNS** yang dapat Anda temukan dalam surat ini.
 
-     <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/17-configure-redis-connection.png" alt="configure Redis connection" width="100%"/>
+     <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/17-configure-redis-connection.png" alt="configure Redis connection" max-width="100%"/>
 
    - Akhirnya, temukan baris _**#require_ssl: true**_ dan ubah nilai _true_ menjadi _false_.
 
-     <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/18-set-ssl-config-false.png" alt="set SSL config false" width="100%"/>
+     <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/18-set-ssl-config-false.png" alt="set SSL config false" max-width="100%"/>
 
    Saatnya untuk **Save** perubahan.
 
 4. Kemudian navigasikan ke file _**application.rb**_, yang terletak di folder **config** yang sama. Temukan string _**#config.i18n.default_locale = :de**_ dan ubah nilainya menjadi _**:en**_.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/19-set-default-locale-english.png" alt="set default locale English" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/19-set-default-locale-english.png" alt="set default locale English" max-width="100%"/>
 
    Jangan lupa untuk menekan tombol **Save** di panel atas.
 
@@ -145,13 +145,13 @@ Mari kita pelajari cara membuat pod Diaspora* Anda sendiri dengan bantuan PaaS.
    url: 'http://localhost:9887/'
    ```
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/20-dummy-url-override.png" alt="dummy URL override" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/20-dummy-url-override.png" alt="dummy URL override" max-width="100%"/>
 
    Silakan hapus baris yang dimulai dengan string _i_am_a_dummy_, dan ubah nilai parameter **url** menjadi URL host dari environment Anda (dapat dilihat di email yang Anda terima sebelumnya atau dengan menekan tombol **Open in Browser** di sebelah environment Anda dan menyalin URL di bilah alamat).
 
    Anda akan mendapatkan sesuatu seperti berikut:
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/21-url-override-to-environment.png" alt="URL override to environment" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/21-url-override-to-environment.png" alt="URL override to environment" max-width="100%"/>
 
    **Save** perubahan.
 
@@ -171,11 +171,11 @@ Mari kita pelajari cara membuat pod Diaspora* Anda sendiri dengan bantuan PaaS.
    Restart pertama server setelah menerapkan pengaturan baru mungkin memakan waktu, harap bersabar.
    :::
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/23-apache-restart-button.png" alt="Apache restart button" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/23-apache-restart-button.png" alt="Apache restart button" max-width="100%"/>
 
 8. Sekarang Anda dapat menekan tombol **Open in Browser** untuk environment Anda dan mulai bekerja dengan aplikasi Diaspora* Anda sendiri yang dihosting.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/24-diaspora-start-page.png" alt="Diaspora start page" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Diaspora/24-diaspora-start-page.png" alt="Diaspora start page" max-width="100%"/>
 
 Nikmati!
 

@@ -9,7 +9,7 @@ Dengan platform ini, hosting aplikasi Anda menjadi benar-benar fleksibel. Selain
 
 Proses scaling manual cukup sederhana - buka wizard environment topology dan gunakan tombol “**+**” dan “**-**” yang sesuai atau ketik jumlah yang diinginkan di panel tengah. Anda juga dapat menggunakan slider yang secara otomatis muncul saat melakukan penyesuaian.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/horizontal-scaling/01-topology-wizard-horizontal-scaling.png" alt="topology wizard horizontal scaling" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/horizontal-scaling/01-topology-wizard-horizontal-scaling.png" alt="topology wizard horizontal scaling" max-width="100%"/>
 
 :::tip
 Anda dapat mengotomatisasi horizontal scaling berdasarkan beban masuk dengan bantuan **tunable triggers**. Anda dapat menggunakan node awal (master) dari layer sebagai **storage server** untuk berbagi data dalam seluruh layer. Dalam kasus pengurangan skala (mis. mengurangi jumlah node), container terakhir yang ditambahkan ke layer adalah yang pertama dihapus (kecuali dipilih secara eksplisit).
@@ -53,17 +53,17 @@ Setiap grup node environment (layer) diberikan nama yang didedikasikan, yang, ji
 
 Memiliki beberapa node tipe yang sama dalam satu layer memungkinkan pengelolaan sinkron mereka. Dengan demikian, semua container dapat secara bersamaan [dikonfigurasi](https://docs.dewacloud.com/docs/container-configuration/), diperiksa untuk log dan statistik, [di-restart atau di-redeploy](https://docs.dewacloud.com/docs/container-redeploy/) melalui ikon yang sesuai.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/horizontal-scaling/04-scaled-nodes-management.png" alt="scaled nodes management" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/horizontal-scaling/04-scaled-nodes-management.png" alt="scaled nodes management" max-width="100%"/>
 
 Untuk mengoperasikan container tertentu secara terpisah, perluas string layer untuk melihat daftar lengkap nodenya. Masing-masing container ini adalah instance terisolasi yang memiliki _**Node ID**_ unik dan dapat diakses/dikonfigurasi secara terpisah dari yang lain. Node master layer dapat dengan mudah ditemukan karena ikon khusus.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/horizontal-scaling/05-nodes-in-scaled-layer.png" alt="nodes in scaled layer" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/horizontal-scaling/05-nodes-in-scaled-layer.png" alt="nodes in scaled layer" max-width="100%"/>
 
 Untuk memfasilitasi interaksi dengan banyak server dari tipe yang sama, platform juga memungkinkan menandai node tertentu dengan label yang sesuai, misalnya untuk mendefinisikan instance master dan slave dalam cluster DB.
 
 Cukup klik dua kali pada nilai _**Node ID: xxx**_ default (atau arahkan kursor ke atasnya untuk menampilkan ikon pensil khusus) dan tentukan nama alternatif yang diinginkan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/horizontal-scaling/06-aliases-for-scaled-nodes.png" alt="aliases for scaled nodes" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/horizontal-scaling/06-aliases-for-scaled-nodes.png" alt="aliases for scaled nodes" max-width="100%"/>
 
 Informasi lebih lanjut tentang fitur labeling ini dapat ditemukan di dokumen [Environment Aliases](https://docs.dewacloud.com/docs/environment-aliases/).
 
@@ -86,7 +86,7 @@ Platform menyediakan pengelolaan node yang sederhana, di mana Anda hanya perlu m
 
   * formulir _**Scaling Nodes**_ khusus di dashboard - dapat diakses menggunakan opsi **Additionally > Scaling Nodes** di sebelah layer atau **Additionally > Delete** di sebelah node tertentu 
   
-    <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/horizontal-scaling/08-delete-node-dashboard.png" alt="delete node dashboard" width="100%"/>
+    <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/horizontal-scaling/08-delete-node-dashboard.png" alt="delete node dashboard" max-width="100%"/>
 
 Dalam jendela **Scaling Nodes**, Anda dapat melakukan tindakan berikut:
 

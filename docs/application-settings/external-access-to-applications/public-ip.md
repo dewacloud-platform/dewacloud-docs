@@ -19,7 +19,7 @@ Platform mendukung dua versi [Internet Protocol](https://en.wikipedia.org/wiki/I
 
 Untuk mengikat alamat IP eksternal ke node yang dibutuhkan, Anda perlu mengaktifkan (atau [mengatur jumlah yang dibutuhkan](https://www.virtuozzo.com/application-platform-docs/multiple-public-ip/)) _Public IPv4_ / _Public IPv6_ dalam bagian tengah jendela **topology wizard**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/public-ip/02-wizard-add-public-ip.png" alt="wizard add public IP" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/public-ip/02-wizard-add-public-ip.png" alt="wizard add public IP" max-width="100%"/>
 
 :::warning
 Mengaktifkan Public IPv4 mematikan opsi Akses melalui SLB secara default. Hal ini dapat menyebabkan gangguan sementara (beberapa menit) dalam akses lingkungan karena cache DNS. Jika melampirkan IP eksternal untuk node yang diskalakan secara horizontal, setiap container dalam lapisan akan dilengkapi dengan kumpulan alamat sendiri.
@@ -27,7 +27,7 @@ Mengaktifkan Public IPv4 mematikan opsi Akses melalui SLB secara default. Hal in
 
 Untuk menemukan dan mengelola IP yang dialokasikan dalam lingkungan yang ada, perluas string _**node**_ yang sesuai dalam daftar topologi lingkungan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/public-ip/03-dashboard-manage-external-ip-addresses.png" alt="dashboard manage external ip addresses" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/public-ip/03-dashboard-manage-external-ip-addresses.png" alt="dashboard manage external ip addresses" max-width="100%"/>
 
 Di sini, saat melayang di atas IP, Anda dapat mengakses fungsionalitas berikut:
 

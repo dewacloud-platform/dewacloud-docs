@@ -38,7 +38,7 @@ Konfigurasi ini akan memberikan kemampuan kepada Anda untuk mengelola, me-restar
 
 1\. Pada awalnya, Anda harus memiliki setidaknya tiga environment yang dibuat: satu environment Apache frontend dan dua atau lebih environment Tomcat backend dengan aplikasi Java Anda yang di-hosted.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/03-tomcat-behind-apache-topology.png" alt="Tomcat behind Apache topology" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/03-tomcat-behind-apache-topology.png" alt="Tomcat behind Apache topology" max-width="100%"/>
 
 2\. Buka pengelola konfigurasi Apache (klik **Config** di sebelahnya).
 
@@ -61,7 +61,7 @@ Di tab yang muncul, buka file **/etc/httpd/conf/_httpd.conf_** dan tentukan konf
 </VirtualHost>
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/04-apache-httpd-conf.png" alt="Apache httpd.conf" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/04-apache-httpd-conf.png" alt="Apache httpd.conf" max-width="100%"/>
 
   * _**RewriteEngine On**_ digunakan untuk mengaktifkan kemampuan penulisan ulang
   * _**RewriteRule**_ dan _**ProxyPassReverse**_ menyatakan kondisi dan hasil penulisan ulang untuk kedua aplikasi
@@ -94,11 +94,11 @@ Seperti yang Anda lihat dalam skema di atas, Tomcat akan melayani aplikasi itu s
 
 1\. Mari kita bayangkan bahwa Anda memiliki dua environment yang terdaftar: yang pertama dengan server Tomcat dan aplikasi Anda yang di-hosted dan yang kedua dengan server Apache yang digunakan untuk melayani konten statis.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/08-static-content-topology.png" alt="static content topology" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/08-static-content-topology.png" alt="static content topology" max-width="100%"/>
 
 2\. Tekan tombol **Config** di sebelah server aplikasi Apache Anda dan navigasikan ke folder **var/www/webroot/ROOT**. Buat folder khusus untuk konten statis Anda (diberi nama, misalnya, _static_) dan unggah file yang diperlukan di sana.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/09-create-static-content-folder.png" alt="create static content folder" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/09-create-static-content-folder.png" alt="create static content folder" max-width="100%"/>
 
 3\. Kemudian buka file **/etc/httpd/conf/_httpd.conf_**.
 
@@ -118,7 +118,7 @@ Lakukan konfigurasi yang diperlukan dalam blok _< VirtualHost >_ seperti yang di
 </VirtualHost>
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/10-static-content-settings.png" alt="static content settings" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/10-static-content-settings.png" alt="static content settings" max-width="100%"/>
 
 Baris _**ProxyPass /static !**_ berarti kita tidak memproksi permintaan yang dimulai dengan kata kunci /stat.
 
@@ -148,7 +148,7 @@ Dengan langkah-langkah berikut, Anda dapat mengonfigurasi server Apache Anda unt
 
 1\. Kami akan menggunakan tiga environment terpisah: dua environment **Tomcat** backend dengan aplikasi Java Anda yang dideploy (perhatikan bahwa menggunakan konteks serupa untuk kedua aplikasi yang dideploy di kedua environment adalah persyaratan wajib) dan satu environment **Apache** frontend.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/15-load-balancing-topology.png" alt="load balancing topology" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/15-load-balancing-topology.png" alt="load balancing topology" max-width="100%"/>
 
 2\. Tekan tombol **Config** di sebelah node Apache Anda dan navigasikan ke folder **/etc/httpd/conf.d** di pengelola konfigurasi yang terbuka. Buat file _server_list_ baru di sana.
 
@@ -156,7 +156,7 @@ Dengan langkah-langkah berikut, Anda dapat mengonfigurasi server Apache Anda unt
 
 `servers {env1_name}.{hoster_domain}|{env2_name}.{hoster_domain}`
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/16-hosts-list-for-load-balancing.png" alt="hosts list for load balancing" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/16-hosts-list-for-load-balancing.png" alt="hosts list for load balancing" max-width="100%"/>
 
 4\. Kemudian buka file **/etc/httpd/conf/_httpd.conf_** dan tentukan konfigurasi berikut:
 
@@ -175,7 +175,7 @@ Dengan langkah-langkah berikut, Anda dapat mengonfigurasi server Apache Anda unt
 </VirtualHost>
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/17-load-balancing-settings.png" alt="load balancing settings" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-as-frontend/17-load-balancing-settings.png" alt="load balancing settings" max-width="100%"/>
 
   * _**RewriteEngine On**_ digunakan untuk mengaktifkan kemampuan penulisan ulang
   * _**RewriteMap**_ menetapkan jalur ke host yang dinyatakan dalam file _server_list_ yang dibuat sebelumnya.

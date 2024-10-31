@@ -18,11 +18,11 @@ Panduan ini akan memberikan contoh dasar bagaimana Anda dapat mengimplementasika
 
 1\. [Buat environment](<https://docs.dewacloud.com/docs/setting-up-environment/>) dengan server aplikasi **Node.js**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/lets-encrypt-with-nodejs/01-create-nodejs-environment.png" alt="create Node.js environment" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/lets-encrypt-with-nodejs/01-create-nodejs-environment.png" alt="create Node.js environment" max-width="100%"/>
 
 2\. Install add-on [Let’s Encrypt](<https://docs.dewacloud.com/docs/let's-encrypt-ssl>) untuk menghasilkan sertifikat SSL gratis untuk aplikasi Anda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/lets-encrypt-with-nodejs/02-install-lets-encrypt-addon.png" alt="install Let’s Encrypt add-on" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/lets-encrypt-with-nodejs/02-install-lets-encrypt-addon.png" alt="install Let’s Encrypt add-on" max-width="100%"/>
 
 Karena spesifikasi mesin Node.js, add-on Let’s Encrypt hanya menghasilkan sertifikat SSL. Anda harus menyesuaikan kode aplikasi Anda untuk membaca sertifikat dari:
 
@@ -111,7 +111,7 @@ The command should be adjusted for different process managers. Or you can start 
 
 Itu saja! Pergi ke aplikasi Node.js Anda melalui _**https://**_ untuk memverifikasi akses dan validitas sertifikat.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/lets-encrypt-with-nodejs/03-nodejs-application-ssl-access.png" alt="Node.js application SSL access" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/lets-encrypt-with-nodejs/03-nodejs-application-ssl-access.png" alt="Node.js application SSL access" max-width="100%"/>
 
 ## Pembaruan Sertifikat {#certificate-update}
 
@@ -125,7 +125,7 @@ Pergi ke folder **/var/lib/jelastic/keys/letsencrypt** (buat jika tidak ada) dan
 deployHook=sudo forever restart /home/jelastic/ROOT/server.js   
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/lets-encrypt-with-nodejs/04-lets-encrypt-update-webhook.png" alt="Let’s Encrypt update webhook" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/lets-encrypt-with-nodejs/04-lets-encrypt-update-webhook.png" alt="Let’s Encrypt update webhook" max-width="100%"/>
 
 :::tip
 Sebagai alternatif, Anda dapat menyediakan skrip .sh dengan perintah yang diperlukan:
@@ -141,7 +141,7 @@ Selain itu, Anda dapat mengkonfigurasi update hook melalui API dengan menggunaka
 
 Anda dapat memicu pembaruan sertifikat secara manual dari menu **Add-Ons** untuk server Node.js Anda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/lets-encrypt-with-nodejs/05-lets-encrypt-manual-update.png" alt="Lets Encrypt manual update" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/lets-encrypt-with-nodejs/05-lets-encrypt-manual-update.png" alt="Lets Encrypt manual update" max-width="100%"/>
 
 ## Rekomendasi Tambahan {#additional-recommendations}
 
@@ -149,7 +149,7 @@ Anda dapat memicu pembaruan sertifikat secara manual dari menu **Add-Ons** untuk
     * **Let’s Encrypt certificate** \- _/var/lib/jelastic/keys/fullchain.pem_
     * **Let’s Encrypt private key** \- _/var/lib/jelastic/keys/privkey.pem_
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/lets-encrypt-with-nodejs/06-lets-encrypt-certificates-variables.png" alt="Let’s Encrypt certificates variables" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/SSL/lets-encrypt-with-nodejs/06-lets-encrypt-certificates-variables.png" alt="Let’s Encrypt certificates variables" max-width="100%"/>
 
   * Saat bekerja dengan [Let’s Encrypt add-on via API](<https://docs.dewacloud.com/docs/let's-encrypt-ssl>), Anda dapat menggunakan parameter _**deployHook**_ untuk menangani logika khusus setelah sertifikat diterbitkan/diperbarui.
 

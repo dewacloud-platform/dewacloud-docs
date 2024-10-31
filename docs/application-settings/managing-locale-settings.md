@@ -17,7 +17,7 @@ locale -a
 
 Perintah ini akan menampilkan semua locale yang saat ini didukung dalam container Anda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/managing-locale-settings/01-container-default-locale-settings.png" alt="container default locale settings" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/managing-locale-settings/01-container-default-locale-settings.png" alt="container default locale settings" max-width="100%"/>
 
 ### 2. Tambahkan Dukungan Bahasa Baru
 
@@ -39,7 +39,7 @@ ls /usr/share/i18n/locales
   
 - `{codeset}`: Menentukan encoding karakter, biasanya `UTF-8`.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/managing-locale-settings/02-localedef-to-add-new-locale.png" alt="localedef to add new locale" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/managing-locale-settings/02-localedef-to-add-new-locale.png" alt="localedef to add new locale" max-width="100%"/>
 
 ### 3. Verifikasi Locale Baru
 
@@ -51,7 +51,7 @@ locale -a
 
 Ini akan menampilkan daftar yang diperbarui dengan bahasa yang baru ditambahkan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/managing-locale-settings/03-list-locale-settings.png" alt="list locale settings" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/managing-locale-settings/03-list-locale-settings.png" alt="list locale settings" max-width="100%"/>
 
 Sekarang, locale baru telah berhasil ditambahkan dan tersedia untuk digunakan oleh aplikasi Anda.
 

@@ -87,20 +87,20 @@ Untuk server aplikasi Apache file konfigurasi utama adalah _**httpd.conf**_ yang
 :::warning
 **Catatan:** Untuk melakukan konfigurasi kustom apa pun di file _**httpd.conf**_, Anda perlu menghapus string _#Jelastic autoconfiguration mark_ di awal file:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-server-configuration/05-autoconfiguration-mark.png" alt="autoconfiguration mark" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-server-configuration/05-autoconfiguration-mark.png" alt="autoconfiguration mark" max-width="100%"/>
 :::
 
 Jumlah pekerja untuk memproses permintaan PHP meningkat secara otomatis di server Apache tergantung pada jumlah cloudlet yang Anda nyatakan untuknya.
 
 Untuk memeriksanya, temukan dan ingat nilai _MaxClients_ di file _**httpd.conf**_.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-server-configuration/06-maxclients-value-before.png" alt="MaxClients value before" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-server-configuration/06-maxclients-value-before.png" alt="MaxClients value before" max-width="100%"/>
 
 Setelah itu, ubah topologi environment Anda dengan meningkatkan atau menurunkan batas cloudlet untuk server Anda.
 
 Kembali ke file _**httpd.conf**_ - jumlah _MaxClients_ telah meningkat/menurun.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-server-configuration/07-maxclients-value-after.png" alt="MaxClients value after" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-server-configuration/07-maxclients-value-after.png" alt="MaxClients value after" max-width="100%"/>
 
 :::warning
 **Catatan:** Fungsi ini akan dinonaktifkan jika Anda menghapus string _# Jelastic autoconfiguration mark_ di awal file _**httpd.conf**_

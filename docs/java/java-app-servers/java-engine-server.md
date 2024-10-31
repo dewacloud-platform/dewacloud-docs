@@ -33,14 +33,14 @@ pojok kiri atas.
 server **Java Engine** dan versi JDK yang diperlukan (dilingkari pada gambar
 di bawah ini).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/java-engine-server/java-engine-server-2.png" alt="Java Engine in topology wizard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/java-engine-server/java-engine-server-2.png" alt="Java Engine in topology wizard" max-width="100%"/>
 
 Sesuaikan parameter lainnya sesuai kebutuhan Anda, misalnya batas sumber daya,
 ruang disk, IP eksternal, [region](<https://docs.dewacloud.com/docs/environment-regions/>) (jika tersedia), dll. Klik **Create** untuk melanjutkan.
 
 3\. Lingkungan Anda seharusnya siap dalam satu menit.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/java-engine-server/java-engine-server-3.png" alt="Java Engine environment created" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/java-engine-server/java-engine-server-3.png" alt="Java Engine environment created" max-width="100%"/>
 
 Sekarang, Anda dapat mulai mengelola lingkungan Anda:
 

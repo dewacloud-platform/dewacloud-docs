@@ -22,7 +22,7 @@ Untuk dengan mudah mengatur **CentOS [Elastic VPS](https://docs.dewacloud.com/do
 Instance yang sesuai (misalnya, _**CentOS 6.8**_ atau _**CentOS 7.2**_) dapat ditemukan di bagian _VPS_ yang sesuai di sudut kiri bawah wizard (untuk panduan instalasi terperinci, lihat halaman [VPS Configuration](https://docs.dewacloud.com/docs/vps-configuration/)).
 
 <p>
-<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/vps-centos.png" alt="create CentOS VPS" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/vps-centos.png" alt="create CentOS VPS" max-width="100%"/>
 </p>
 
 

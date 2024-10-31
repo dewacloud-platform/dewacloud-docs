@@ -20,17 +20,17 @@ Load balancing dengan NGINX cocok untuk sebagian besar kasus karena skalabilitas
 
 1\. Masuk ke dashboard dan klik tombol **New Environment** di sudut kiri atas.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/nginx%20balancer/01-new-environment-button.png" alt="new environment button" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/nginx%20balancer/01-new-environment-button.png" alt="new environment button" max-width="100%"/>
 
 2\. Di dalam topology wizard yang terbuka secara otomatis, pilih **NGINX** di bagian _Balancing_ (dilingkari pada gambar di bawah). Jika load balancer ditambahkan ke environment dengan server aplikasi, semua konfigurasi yang diperlukan untuk mendistribusikan permintaan di antara instance yang tersedia akan diterapkan secara otomatis.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/nginx%20balancer/02-add-nginx-load-balancer.png" alt="add NGINX load balancer" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/nginx%20balancer/02-add-nginx-load-balancer.png" alt="add NGINX load balancer" max-width="100%"/>
 
 Selanjutnya, Anda perlu mengatur konfigurasi yang diinginkan untuk NGINX balancer Anda ([cloudlets](<https://docs.dewacloud.com/docs/cloudlet/>), ruang disk, [alamat IP](<https://docs.dewacloud.com/docs/public-ip/>), dll.), tambahkan stack lain yang diperlukan (misalnya, server aplikasi atau database), dan klik **Create**.
 
 3\. Tunggu beberapa saat hingga platform menyiapkan environment untuk Anda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/nginx%20balancer/03-environment-with-nginx-balancer.png" alt="environment with NGINX balancer" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/nginx%20balancer/03-environment-with-nginx-balancer.png" alt="environment with NGINX balancer" max-width="100%"/>
 
 Selamat, NGINX load balancer Anda siap digunakan! Sekarang, Anda bisa melanjutkan ke konfigurasinya.
 

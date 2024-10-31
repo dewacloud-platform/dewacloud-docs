@@ -34,17 +34,17 @@ Dan panduan di bawah ini akan memberikan wawasan tentang cara mengkonfigurasi du
 
 Kemudian setel batas penggunaan sumber daya untuk node yang dipilih dengan slider cloudlet, ketik nama environment (misalnya, _balancer-websockets_) dan klik **Create**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support/websockets-support-2.png" alt="environment wizard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support/websockets-support-2.png" alt="environment wizard" max-width="100%"/>
 
 3\. Dalam beberapa menit environment baru Anda akan muncul di dashboard.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support/websockets-support-3.png" alt="environment for WebSockets created" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support/websockets-support-3.png" alt="environment for WebSockets created" max-width="100%"/>
 
 4\. Unggah dan deploy aplikasi Anda ke konteks yang diinginkan (kami akan menggunakan yang default yaitu _ROOT_) menggunakan arsip/URL atau melalui repositori VCS jarak jauh - tautan ke instruksi yang sesuai dapat ditemukan di [Deployment Guide](<https://docs.dewacloud.com/docs/deployment-guide/>).
 
 Setelah ini selesai, nama sumber proyek Anda akan muncul di kolom panel _Deployed_.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support/websockets-support-4.png" alt="WebSockets application deployed" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support/websockets-support-4.png" alt="WebSockets application deployed" max-width="100%"/>
 
 ## NGINX Balancer Configurations{#nginx-balancer-configurations}
 
@@ -52,7 +52,7 @@ Sekarang Anda perlu mengubah pengaturan proxy default di server NGINX-balancer A
 
 1\. Akses tab **Configuration Manager** dengan memilih tombol **Config** untuk node balancer Anda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support/websockets-support-5.png" alt="NGINX config button" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support/websockets-support-5.png" alt="NGINX config button" max-width="100%"/>
 
 2\. Kemudian buka file _**nginx-jelastic.conf**_ dalam direktori **conf**, temukan blok _location_ di dalam bagian kode _server_ pertama dan tempelkan baris berikut tepat sebelum itu:
 
@@ -69,12 +69,12 @@ location /ws/ {
 di mana
 
   * `{appserver_ip}` \- Alamat IP dari node server aplikasi dengan aplikasi WebSockets Anda di-deploy. Dapat ditemukan dengan mengklik tombol **Additionally** untuk instance yang diperlukan.
-  <img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support/websockets-support-6.png" alt="application server IP" width="100%"/>
+  <img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support/websockets-support-6.png" alt="application server IP" max-width="100%"/>
   * `{port}` \- nomor port, didengarkan oleh aplikasi Anda
 
 Dalam kasus kami, pengaturan yang diperlukan akan terlihat seperti pada gambar di bawah ini:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support/websockets-support-7.png" alt="NGINX configuration file" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support/websockets-support-7.png" alt="NGINX configuration file" max-width="100%"/>
 
 :::note 
 Biasanya kami merekomendasikan untuk mengubah konfigurasi di dalam file `nginx.conf` dan menjaga konten file `nginx-jelastic.conf` sebagai pengaturan default/cadangan. Tetapi dalam kasus ini, karena perubahan yang diperlukan cukup sederhana dan kami yakin bahwa kami tahu apa yang kami lakukan, akan lebih mudah untuk bekerja langsung dengan file nginx-jelastic. 
@@ -82,7 +82,7 @@ Biasanya kami merekomendasikan untuk mengubah konfigurasi di dalam file `nginx.c
 
 3\. Itu saja untuk konfigurasi NGINX, jangan lupa untuk **Save** perubahan yang dibuat dan **Restart** balancer menggunakan tombol dengan nama yang sama.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support/websockets-support-8.png" alt="restart NGINX nodes" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support/websockets-support-8.png" alt="restart NGINX nodes" max-width="100%"/>
 
 ## Application Configurations{#application-configurations}
 
@@ -90,7 +90,7 @@ Setelah dukungan WebSockets diaktifkan, satu-satunya hal yang perlu dilakukan ad
 
 1\. Klik tombol **Config** di samping server aplikasi yang dipilih.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support/websockets-support-9.png" alt="Apache config button" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support/websockets-support-9.png" alt="Apache config button" max-width="100%"/>
 
 2\. Dalam tab **Configuration Manager** yang terbuka, Anda dapat mengakses file aplikasi Anda dengan menavigasi ke folder **webroot/ROOT** (atau, nama yang terakhir dapat berbeda jika Anda telah menentukan konteks khusus Anda selama penempatan aplikasi).
 
@@ -104,21 +104,21 @@ Di sini, nilai `{env_domain}` harus diganti dengan domain environment Anda (dapa
 
 Sebagai contoh, dalam kasus kami string ini tampak seperti berikut:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support/websockets-support-10.png" alt="wsUri string for Apache" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support/websockets-support-10.png" alt="wsUri string for Apache" max-width="100%"/>
 
 Jangan lupa untuk **Save** perubahan yang dilakukan.
 
 3\. Terakhir, **Restart** server aplikasi Anda dengan tombol yang sesuai untuk menerapkan konfigurasi baru.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support/websockets-support-11.png" alt="restart Apache nodes" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support/websockets-support-11.png" alt="restart Apache nodes" max-width="100%"/>
 
 4\. Setelah layanan aktif kembali, Anda dapat mengklik **Open in Browser** di sebelah environment Anda dan mengakses aplikasi Anda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support/websockets-support-12.png" alt="open application in browser" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support/websockets-support-12.png" alt="open application in browser" max-width="100%"/>
 
 5\. Hebat, kita sudah selesai!
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support/websockets-support-13.png" alt="WebSockets-based application" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/websockets/websockets-support/websockets-support-13.png" alt="WebSockets-based application" max-width="100%"/>
 
 Seperti yang Anda lihat, jendela chat kecil kita berjalan, memungkinkan mengirim dan menerima pesan secara real-time, tanpa menyegarkan tab browser.
 

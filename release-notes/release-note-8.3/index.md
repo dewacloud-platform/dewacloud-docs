@@ -65,7 +65,7 @@ Proses transisi akan berlangsung secara bertahap dan tidak mengganggu. Ini mengi
   * [Redeployment](<https://docs.dewacloud.com/docs/container-redeploy/>) dari CentOS 7 ke versi AlmaLinux 9 dari tumpukan dapat dilakukan tanpa hambatan. __Namun, menurunkan kembali ke CentOS 7 tidak didukung.__
   * Daftar terkini dari [tumpukan perangkat lunak](<https://docs.dewacloud.com/docs/software-stacks-versions/>) yang berbasis pada gambar AlmaLinux 9 dapat diperiksa dalam dokumen yang ditautkan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/release-notes/release-notes-8.3/01-almalinux-image-tags.png" alt="AlmaLinux image tags" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/release-notes/release-notes-8.3/01-almalinux-image-tags.png" alt="AlmaLinux image tags" max-width="100%"/>
 
 Bersamaan dengan implementasi gambar AlmaLinux 9, beberapa fungsionalitas baru diperkenalkan, termasuk pembaruan pembuatan kunci (_dukungan tanda tangan rsa-sha2-256 dan rsa-sha2-512_), klien Guacamole ([Web SSH](<https://docs.dewacloud.com/docs/web-ssh-client/>)) yang diperbarui, dan netfilter _nftables_ (menggantikan _iptables_). Solusi _nftables_ adalah pilihan baru yang direkomendasikan untuk manajemen aturan firewall. Ini menawarkan sintaks yang terintegrasi dan konsisten (bertentangan dengan utilitas _xtables_), kinerja tinggi melalui peta dan konkatinasi, dan peningkatan keamanan karena aturan tersebut diterjemahkan menjadi bytecode. Pada saat yang sama, semua antarmuka pengguna dashboard dan panggilan API tetap sama seperti sebelumnya sehingga proses pengelolaan tidak berubah.
 
@@ -79,7 +79,7 @@ Perubahan terkait tumpukan lainnya termasuk pembaruan daftar [distribusi OS yang
 
 Solusi **[Produk Berbasis Langganan](<https://docs.dewacloud.com/docs/subscription-products/>)** yang baru diimplementasikan lebih lanjut ditingkatkan dalam rilis saat ini untuk memastikan pengalaman terbaik bagi pelanggan. Semua perubahan baru terintegrasi dengan lancar ke dalam bagian _Langganan_ di dashboard yang didedikasikan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/release-notes/release-notes-8.3/02-subscriptions-new-features.png" alt="subscriptions new features" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/release-notes/release-notes-8.3/02-subscriptions-new-features.png" alt="subscriptions new features" max-width="100%"/>
 
 Salah satu fitur yang paling banyak diminta adalah kemungkinan untuk memperbarui jumlah instalasi untuk langganan yang ada. Dimulai dengan pembaruan platform 8.3, fungsionalitas yang sesuai sepenuhnya diterapkan. Jendela pembaruan tersedia dengan menggunakan opsi **Edit Subscription** yang baru. Di sini, pengguna dapat meningkatkan dan mengurangi _Quantity_ berdasarkan kebutuhan mereka:
 

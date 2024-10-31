@@ -47,7 +47,7 @@ Untuk mengatur autentikasi untuk **aplikasi** Apache Anda atau hanya untuk memis
     Require valid-user
     ```
 
-    <img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-security-configurations/01-apache-authentication.png" alt="Apache authentication" width="100%"/>
+    <img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-security-configurations/01-apache-authentication.png" alt="Apache authentication" max-width="100%"/>
 
   * **autentikasi untuk direktori terpisah** \- tambahkan string **Location** berikut yang menunjukkan jalur ke direktori yang diperlukan:
 
@@ -61,7 +61,7 @@ Untuk mengatur autentikasi untuk **aplikasi** Apache Anda atau hanya untuk memis
     </Location>
     ```
 
-    <img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-security-configurations/02-apache-directory-authentication.png" alt="Apache directory authentication" width="100%"/>
+    <img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-security-configurations/02-apache-directory-authentication.png" alt="Apache directory authentication" max-width="100%"/>
 
 6\. Simpan perubahan dan **Restart** server Apache.
 
@@ -87,11 +87,11 @@ Arahkan ke folder **/etc/httpd/conf** dan buka file _**httpd.conf**_ (atau _**.h
 
 1\. Untuk menetapkan kriteria akses berdasarkan IP, cukup tambahkan direktif yang diperlukan ke bagian [_Directory](https://httpd.apache.org/docs/2.4/mod/core.html#directory)_.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-security-configurations/04-apache-security-by-criteria.png" alt="Apache security by criteria" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-security-configurations/04-apache-security-by-criteria.png" alt="Apache security by criteria" max-width="100%"/>
 
 2\. Sebagai contoh yang lebih kompleks, Anda dapat mengkonfigurasi kebijakan akses dari beberapa kondisi (misalnya melalui direktif _RequireAll_) dan untuk folder server tertentu (cukup ubah bagian yang digarisbawahi dalam gambar di bawah).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-security-configurations/05-apache-security-with-require-directive.png" alt="Apache security using require directive" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-security-configurations/05-apache-security-with-require-directive.png" alt="Apache security using require directive" max-width="100%"/>
 
 3\. Jangan lupa untuk **Save** perubahan dan **Restart** server Apache Anda untuk menerapkan perubahan.
 
@@ -105,13 +105,13 @@ Menolak akses melalui IP hanya masuk akal jika Anda menggunakan fitur Public IP.
 
 Modul ini tersedia di platform secara default dan dapat dikonfigurasi melalui file _**/etc/httpd/conf.d/mod_security.conf**_.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-security-configurations/06-modsecurity.png" alt="modsecurity" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-security-configurations/06-modsecurity.png" alt="modsecurity" max-width="100%"/>
 
 Di sini Anda dapat mengedit konfigurasi default atau menambahkan konfigurasi kustom Anda sendiri.
 
 Misalnya, Anda dapat menambahkan beberapa **ModSecurity Rules** tambahan dengan mengunggahnya ke folder **/etc/httpd/modsecurity.d** (misalnya, ~**modsecurity_crs_11_brute_force.conf**~).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-security-configurations/07-modsecurity-rules.png" alt="modsecurity rules" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-security-configurations/07-modsecurity-rules.png" alt="modsecurity rules" max-width="100%"/>
 
 Aturan yang diunggah ke folder **modsecurity.d** atau **activated_rules** akan otomatis diaktifkan tanpa pengaturan tambahan. Ini dikonfigurasi dengan parameter default berikut di file _**/etc/httpd/conf.d/mod_security.conf**_:
 

@@ -21,7 +21,7 @@ Add-on dapat dipasang baik secara otomatis bersama dengan instalasi database clu
 
 1\. Pergi ke bagian **Add-Ons** di Marketplace dan pilih add-on **Database Corruption Diagnostic**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/corruption-diagnostic-addon/corruption-diagnostic-addon-1.png" alt="Marketplace Corruption Diagnostic add-on" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/corruption-diagnostic-addon/corruption-diagnostic-addon-1.png" alt="Marketplace Corruption Diagnostic add-on" max-width="100%"/>
 
 2\. Pada jendela instalasi yang terbuka, berikan data yang diperlukan:
 
@@ -29,7 +29,7 @@ Add-on dapat dipasang baik secara otomatis bersama dengan instalasi database clu
   * **Environment name** \- pilih environment dengan cluster database yang diperlukan dari daftar
   * **Nodes** \- pilih layer dengan cluster database
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/corruption-diagnostic-addon/corruption-diagnostic-addon-2.png" alt="install Corruption Diagnostic add-on" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/corruption-diagnostic-addon/corruption-diagnostic-addon-2.png" alt="install Corruption Diagnostic add-on" max-width="100%"/>
 
 Klik **Install** dan tunggu sebentar hingga add-on terpasang.
 
@@ -37,7 +37,7 @@ Klik **Install** dan tunggu sebentar hingga add-on terpasang.
 
 1\. Anda bisa menemukan add-on _**Database Corruption Diagnostic**_ di bawah tab **Add-On** untuk lapisan database.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/corruption-diagnostic-addon/corruption-diagnostic-addon-3.png" alt="installed add-ons" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/corruption-diagnostic-addon/corruption-diagnostic-addon-3.png" alt="installed add-ons" max-width="100%"/>
 
 2\. Klik tombol **Corruption Diagnostic** untuk menjalankan diagnostik untuk database Anda.
 

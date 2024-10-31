@@ -16,7 +16,7 @@ di mana:
   * `{src_env}` \- nama dari environment yang ingin Anda klon
   * `{new_env}` \- nama untuk salinan environment Anda
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/environment-cloning/environment-cloning-1.png" alt="CLI clone environment method" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/environment-cloning/environment-cloning-1.png" alt="CLI clone environment method" max-width="100%"/>
 
 Dalam beberapa menit, Anda akan mendapatkan environment baru dalam akun Anda, yang mirip dengan source.
 

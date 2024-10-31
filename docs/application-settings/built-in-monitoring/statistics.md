@@ -19,7 +19,7 @@ Anda dapat melihat statistik penggunaan untuk berbagai node di dalam environment
 1. **Log into the Platform Dashboard** dan navigasikan ke environment Anda.
 2. **Click the "Statistics" Button** di samping node yang ingin Anda pantau.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/statistics/env.png" alt="view app statistics env" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/statistics/env.png" alt="view app statistics env" max-width="100%"/>
 
 ### Types of Tracked Resources:
 Di panel statistik, Anda akan menemukan metrik untuk:
@@ -28,7 +28,7 @@ Di panel statistik, Anda akan menemukan metrik untuk:
 - **Network**: Lalu lintas internal dan eksternal (dalam MB)
 - **Disk**: Data yang disimpan (dalam MB) dan operasi I/O (dalam IOPS)
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/statistics/statistics.png" alt="view app statistics statistics" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/statistics/statistics.png" alt="view app statistics statistics" max-width="100%"/>
 
 ### Usage Limits:
 - **RAM** dan **CPU** bergantung pada jumlah [cloudlets](https://docs.dewacloud.com/docs/cloudlet/).
@@ -54,7 +54,7 @@ Untuk informasi lebih detail tentang konsumsi dan penagihan sumber daya, lihat [
 1. **View IOPS Data**:
    Data IOPS ditampilkan di bagian statistik **Disk**, bersama dengan metrik sumber daya lainnya. Arahkan mouse ke titik data untuk melihat informasi detail tentang ruang disk, IOPS, dan batas.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/statistics/disk-1.png" alt="view app statistics disk 1" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/statistics/disk-1.png" alt="view app statistics disk 1" max-width="100%"/>
 
 2. **Avoid Performance Degradation**:
    Garis putus-putus merah pada grafik menunjukkan batas IOPS, yang ditetapkan oleh penyedia hosting Anda. Jika container Anda mencapai batas ini, kinerja dapat terpengaruh secara negatif.
@@ -62,7 +62,7 @@ Untuk informasi lebih detail tentang konsumsi dan penagihan sumber daya, lihat [
 3. **Adjusting IOPS Limit**:
    Batas IOPS bergantung pada interval waktu yang dipilih. Sebagai contoh, dengan interval 1 jam, batas IOPS meningkat secara proporsional.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/statistics/disk-3.png" alt="view app statistics disk 3" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/statistics/disk-3.png" alt="view app statistics disk 3" max-width="100%"/>
 
 ## Baca Juga
 

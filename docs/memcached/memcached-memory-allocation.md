@@ -15,7 +15,7 @@ Sistem Memcached menggunakan **slab** alih-alih alokasi memory per item. Akibatn
 Setiap slab terdiri dari beberapa halaman berukuran 1 MB dan masing-masing halaman, pada gilirannya, terdiri dari jumlah blok atau chunk yang sama. Setelah penyimpanan data, Memcached menentukan ukuran data dan mencari alokasi yang sesuai di semua slab. Jika alokasi seperti itu ada, data ditulis ke dalamnya. Jika tidak ada alokasi yang sesuai, Memcached membuat slab baru dan membaginya menjadi blok dengan ukuran yang diperlukan. Jika Anda memperbarui item yang sudah disimpan dan nilainya yang baru melebihi ukuran alokasi blok tempat item tersebut disimpan sebelumnya, Memcached memindahkannya ke slab lain yang sesuai. !
 
 <p>
-<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-malloc-1.png" alt="memcached memory allocation 1" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-malloc-1.png" alt="memcached memory allocation 1" max-width="100%"/>
 </p>
 
 
@@ -25,7 +25,7 @@ Dengan platform, Anda mendapatkan kemungkinan untuk memodifikasi koefisien pertu
 
 _OPTIONS="-vv 2 >> /var/log/memcached/memcached.log -f 2 -n 32"_ 
 <p>
-<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-malloc-2.png" alt="memcached memory allocation memcached config" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-malloc-2.png" alt="memcached memory allocation memcached config" max-width="100%"/>
 </p>
 
 Dalam contoh ini _**-f 2**_ menunjukkan bahwa Anda akan melihat 14 slab dengan ukuran chunk yang digandakan, dan nilai setelah _**-n**_ mendefinisikan space minimum yang dialokasikan untuk key, flags, dan value.

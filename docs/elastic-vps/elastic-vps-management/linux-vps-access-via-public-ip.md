@@ -25,7 +25,7 @@ di mana
 
 - _**\{userName\}**_ - login yang diterima melalui email saat setup environment (_root_ secara default)
 - _**\{hostname\}**_ - Public IP address yang terpasang
-<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/vps-public-ip-2.png" alt="elastic vps ssh connection via public ip" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/vps-public-ip-2.png" alt="elastic vps ssh connection via public ip" max-width="100%"/>
 
 Jika terhubung untuk pertama kali, Anda mungkin diminta untuk mengonfirmasi akses dengan menambahkan alamat VPS Anda ke daftar host yang dikenal (ketik “_yes_” untuk melanjutkan). Selanjutnya, otentikasi di server dengan memberikan kata sandi (yang dikirim melalui email setelah pembuatan node).
 

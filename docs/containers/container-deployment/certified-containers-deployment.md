@@ -47,7 +47,7 @@ Jika perangkat lunak yang diperlukan tidak tersedia sebagai template certified, 
 
 5\. Anda dapat [mengkonfigurasi](<https://docs.dewacloud.com/docs/setting-up-environment/#configuring-nodes-resources-and-specifics>) node yang ditambahkan (_vertical_ dan _horizontal scaling_, _disk limit_, _public IPs_, dll.) melalui bagian tengah dari wizard. Certified containers dapat memiliki opsi tambahan, misalnya [Auto-Clustering](<https://docs.dewacloud.com/docs/auto-clustering/>).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/container/container-deployment/certified-containers-deployment/certified-containers-deployment-5.png" alt="environment with certified containers" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/container-deployment/certified-containers-deployment/certified-containers-deployment-5.png" alt="environment with certified containers" max-width="100%"/>
 
 Itu saja! Klik **Create** dan tunggu beberapa menit hingga environment dengan certified containers dapat dideploy.
 

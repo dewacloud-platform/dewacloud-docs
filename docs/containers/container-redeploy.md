@@ -32,14 +32,14 @@ Cara paling langsung dan ramah pengguna untuk melakukan redeploy tag template ad
 1\. Bingkai dialog redeployment khusus dapat diakses dengan dua cara berbeda:
 
   * pilih tombol **Redeploy Container(s)** di sebelah node atau layer yang diperlukan (untuk memperbarui semua container yang terdiri sekaligus)
-  <img src="https://assets.dewacloud.com/dewacloud-docs/container/container-redeploy/container-redeploy-1.png" alt="redeploy containers via UI" width="100%"/>
+  <img src="https://assets.dewacloud.com/dewacloud-docs/container/container-redeploy/container-redeploy-1.png" alt="redeploy containers via UI" max-width="100%"/>
 
   * klik ikon pensil di sebelah versi tag layer di topology wizard (ketika **Changing Environment Topology** dari environment yang ada)
-  <img src="https://assets.dewacloud.com/dewacloud-docs/container/container-redeploy/container-redeploy-2.png" alt="redeploy containers topology wizard" width="100%"/>
+  <img src="https://assets.dewacloud.com/dewacloud-docs/container/container-redeploy/container-redeploy-2.png" alt="redeploy containers topology wizard" max-width="100%"/>
 
 2\. Sebagai hasilnya, bingkai _**Redeploy containers**_ akan terbuka, di mana Anda dapat memilih **Tag** baru untuk container Anda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/container/container-redeploy/container-redeploy-3.png" alt="redeploy containers dialog" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/container-redeploy/container-redeploy-3.png" alt="redeploy containers dialog" max-width="100%"/>
 
 Anda juga dapat menyesuaikan beberapa opsi tambahan:
 
@@ -87,7 +87,7 @@ _**[environment.Control.RedeployContainers](<https://docs.jelastic.com/api/#!/ap
 
   * _**login**_ dan _**password**_ \- kredensial untuk mengakses image dari registry privat _(optional)_
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/container/container-redeploy/container-redeploy-6.png" alt="redeploy containers API" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/container-redeploy/container-redeploy-6.png" alt="redeploy containers API" max-width="100%"/>
 
 Konstruk berikut dapat digunakan untuk mendefinisikan update container dalam [automation scripts](<https://docs.cloudscripting.com/creating-manifest/actions/#api>) Anda:
 
@@ -119,7 +119,7 @@ Di sini, nilai _**\{nodeId\}**_ harus diganti dengan nomor ID dari node yang dib
 
 Setiap [platform-managed container](<https://docs.dewacloud.com/docs/software-stacks-versions/>) dilengkapi dengan file khusus _**/etc/jelastic/redeploy.conf**_, yang menyimpan daftar konfigurasi container yang kritis. Pengaturan ini secara otomatis dipertahankan oleh platform selama redeploy container. File ini dapat dengan mudah diakses melalui [embedded file manager](<https://docs.dewacloud.com/docs/configuration-file-manager/>) melalui shortcut _Favorites_.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/container/container-redeploy/container-redeploy-7.png" alt="redeploy.conf file manager shortcut" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/container-redeploy/container-redeploy-7.png" alt="redeploy.conf file manager shortcut" max-width="100%"/>
 
 File _**redeploy.conf**_ dibagi menjadi dua bagian [system](<https://docs.dewacloud.com/docs/#system-files-and-folders>) dan [custom](<https://docs.dewacloud.com/docs/#custom-files-and-folders>) dan dapat digunakan untuk [membuat cadangan file sistem](<https://docs.dewacloud.com/docs/#creating-file-backup-copy-upon-image-redeployment>).
 
@@ -244,7 +244,7 @@ $\{home\}/share/
 
 #### Custom Files and Folders{#custom-files-and-folders}
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/container/container-redeploy/container-redeploy-9.png" alt="custom files and folders" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/container-redeploy/container-redeploy-9.png" alt="custom files and folders" max-width="100%"/>
 
 **Catatan:** Ketika menyediakan “ _**custom files and folder**_ ”, hanya tambahkan file konfigurasi sistem yang diperlukan untuk memastikan operabilitas container selama redeployment. Gunakan [container volumes](<https://docs.dewacloud.com/docs/container-volumes/>) untuk kasus lain (misalnya untuk mempertahankan data aplikasi Anda).
 
@@ -266,7 +266,7 @@ Setelah redeploy, konfigurasi dari container lama dapat dengan mudah dikenali ol
 
 Misalnya, semua platform-managed PHP application servers secara default membuat cadangan untuk konfigurasi _**/etc/php.ini**_.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/container/container-redeploy/container-redeploy-10.png" alt="file backup via redeploy.conf" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/container-redeploy/container-redeploy-10.png" alt="file backup via redeploy.conf" max-width="100%"/>
 
 Setelah update container, Anda akan melihat versi baru dan sebelumnya dari _**php.ini**_ atau file lain yang dicadangkan:
 
@@ -274,7 +274,7 @@ Setelah update container, Anda akan melihat versi baru dan sebelumnya dari _**ph
   * _**\{file_name\}.\{time_stamp\}**_ \- versi cadangan dari file yang dibuat tepat sebelum operasi redeploy (file terpisah untuk setiap redeployment ke tag yang berbeda)
   * _**\{file_name\}.backup**_ \- cadangan terbaru dari file (secara otomatis menggantikan cadangan sebelumnya dengan nama yang sama)
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/container/container-redeploy/container-redeploy-11.png" alt="backup file successfully created" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/container-redeploy/container-redeploy-11.png" alt="backup file successfully created" max-width="100%"/>
 
 Dengan cara ini, Anda dapat dengan mudah beralih ke pengaturan yang digunakan sebelumnya dengan menggantikan file _**php.ini**_ dengan cadangannya (misalnya melalui penggantian nama atau penyalinan konten).
 

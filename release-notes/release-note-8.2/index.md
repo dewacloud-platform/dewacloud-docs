@@ -58,12 +58,12 @@ note Ketersediaan fitur ini tergantung pada pengaturan penyedia hosting tertentu
 
 Semua langganan yang tersedia tersedia di Marketplace di bawah bagian baru _**Subscription Plans**_. Setelah memilih, Anda akan melihat beberapa paket untuk dipilih (misalnya menawarkan jumlah sumber daya yang berbeda, fitur tambahan, dll.). Klik tombol **Beli** untuk opsi yang diinginkan untuk melihat dialog pembelian. Anda dapat membayar bulanan atau tahunan, mengaktifkan pembayaran otomatis dengan metode pembayaran default Anda, dan mengatur jumlah instance produk yang diperlukan dalam langganan Anda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/release-notes/release-notes-8.2/01-get-subscription-plan.png" alt="get subscription plan" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/release-notes/release-notes-8.2/01-get-subscription-plan.png" alt="get subscription plan" max-width="100%"/>
 
 Semua **Langganan** ditambahkan ke bagian yang didedikasikan dalam pengaturan akun. Di sini, Anda dapat melihat semua informasi yang relevan tentang langganan (termasuk faktur), menginstal/menghapus instance, dan menghentikan langganan.
 
 ![dashboard subscriptions section](#)
-<img src="https://assets.dewacloud.com/dewacloud-docs/release-notes/release-notes-8.2/02-dashboard-subscriptions-section.png" alt="dashboard subscriptions section" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/release-notes/release-notes-8.2/02-dashboard-subscriptions-section.png" alt="dashboard subscriptions section" max-width="100%"/>
 
 Karena konsep langganan, beberapa tindakan dibatasi untuk instance yang diinstal (misalnya penyesuaian topologi atau kloning lingkungan). Baca lebih lanjut tentang langganan dalam dokumen khusus **[Produk Berbasis Langganan](<https://docs.dewacloud.com/docs/subscription-products/>)**.
 

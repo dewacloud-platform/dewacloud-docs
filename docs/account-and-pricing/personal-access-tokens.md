@@ -5,7 +5,7 @@ title: Personal Access Tokens
 ---
 # Personal Access Tokens
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/personal-access-tokens/01-personal-access-tokens-logo.png" alt="personal access tokens logo" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/personal-access-tokens/01-personal-access-tokens-logo.png" alt="personal access tokens logo" max-width="100%"/>
 
 **Personal Access Tokens** adalah pendekatan alternatif untuk mengautentikasi permintaan API di platform, yang bila dibandingkan dengan metode berbasis sesi default, menawarkan fleksibilitas dan keandalan yang lebih besar.
 
@@ -28,7 +28,7 @@ Berikut, kita akan memeriksa proses pengelolaan personal access tokens menggunak
 
 1\. Buka bagian **Settings** dengan mengklik tombol dengan nama yang sama di sudut kanan atas dashboard.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/personal-access-tokens/02-user-account-settings.png" alt="user account settings" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/personal-access-tokens/02-user-account-settings.png" alt="user account settings" max-width="100%"/>
 
 2\. Dalam bingkai yang terbuka, pilih tab **Access Tokens** untuk melihat daftar semua token di akun. Panel alat di atas daftar menyediakan akses ke tombol berikut:
 
@@ -38,7 +38,7 @@ Berikut, kita akan memeriksa proses pengelolaan personal access tokens menggunak
   * **Remove** \- menghapus token yang dipilih
   * **Refresh** \- menampilkan perubahan terbaru pada daftar
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/personal-access-tokens/03-access-tokens-settings.png" alt="access tokens settings" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/personal-access-tokens/03-access-tokens-settings.png" alt="access tokens settings" max-width="100%"/>
 
 3\. Saat membuat yang baru atau menyesuaikan token yang ada, bingkai berikut ditampilkan, memungkinkan untuk menyesuaikan:
 
@@ -47,15 +47,15 @@ Berikut, kita akan memeriksa proses pengelolaan personal access tokens menggunak
   * _**API**_ \- nama set permintaan API: yang sudah ditentukan (_Extended Access_ , _IDE Plugins_ , _Marketplace_ , _Maven Plugin_) atau _Custom_ (dengan metode yang dipilih secara manual)
   * gunakan bidang _Search_, filter _Only Checked_ dan tautan ke API _Docs_ (ditampilkan saat melayang di atas metode tertentu) untuk mengatur izin yang diperlukan untuk token
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/personal-access-tokens/04-generate-access-token.png" alt="generate access token" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/personal-access-tokens/04-generate-access-token.png" alt="generate access token" max-width="100%"/>
 
 4\. Semua perubahan token pada akun memerlukan konfirmasi wajib dengan kata sandi sebelum diterapkan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/personal-access-tokens/05-password-confirmation.png" alt="password confirmation" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/personal-access-tokens/05-password-confirmation.png" alt="password confirmation" max-width="100%"/>
 
 5\. Selanjutnya, Anda akan melihat nilai access token. Pastikan Anda menyimpannya (gunakan tombol **Download**/**Copy**), karena itu tidak akan ditampilkan di mana pun lagi.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/personal-access-tokens/06-save-access-token.png" alt="save access token" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/personal-access-tokens/06-save-access-token.png" alt="save access token" max-width="100%"/>
 
 :::tip
 Jika Anda lupa atau kehilangan nilai token Anda, Anda dapat membuat yang baru dengan mengakses bingkai Edit Access Token dan mengklik tautan yang sesuai di bagian bawah. Dalam hal ini, nilai lama menjadi tidak valid, jadi semua otomasi yang ada dengan token ini harus diperbarui.
@@ -63,7 +63,7 @@ Jika Anda lupa atau kehilangan nilai token Anda, Anda dapat membuat yang baru de
 
 6\. Anda dapat **Remove** token yang tidak lagi diperlukan (gunakan **Shift** dan **Ctrl** untuk memilih beberapa) dengan tombol dengan nama yang sama di panel alat.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/personal-access-tokens/08-remove-access-token.png" alt="remove access token" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/personal-access-tokens/08-remove-access-token.png" alt="remove access token" max-width="100%"/>
 
 Konfirmasikan dalam pop-up dan berikan kata sandi untuk melanjutkan. Sekarang, Anda tahu cara mengelola personal access token di akun dan dapat menggunakannya dalam permintaan API Anda.
 
@@ -83,13 +83,13 @@ Di sini:
   * `${envName}` \- nama lingkungan target (mis. _my-project_)
   * `${token}` \- nilai token (pastikan memiliki izin untuk operasi yang dipanggil)
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/personal-access-tokens/09-stop-environment-api-request-with-token.png" alt="stop environment api request with token" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/personal-access-tokens/09-stop-environment-api-request-with-token.png" alt="stop environment api request with token" max-width="100%"/>
 
 Untuk operasi yang berhasil, Anda harus mendapatkan “_result_:0” sebagai respons (nilai non-zero menunjukkan kesalahan).
 
 2\. Sekarang, jika Anda kembali ke dashboard, Anda akan melihat lingkungan yang sesuai telah dihentikan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/personal-access-tokens/10-stopped-environment.png" alt="stopped environment" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/personal-access-tokens/10-stopped-environment.png" alt="stopped environment" max-width="100%"/>
 
 Itu saja! Manajemen API dengan token se-sederhana itu!
 

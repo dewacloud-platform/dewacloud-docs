@@ -9,7 +9,7 @@ title: System Containers
 
 System container menjalankan sistem init yang lengkap (_systemd_, _SysVinit_, _Upstart_, _OpenRC_, dll.), yang memungkinkan penciptaan beberapa proses (misalnya _OpenSSH_, _crond_, atau _syslogd_) dalam satu container di bawah OS yang sama. System containers paling cocok untuk aplikasi monolitik tradisional atau legacy, karena mereka memungkinkan penggunaan kembali arsitektur, alat, dan konfigurasi yang diterapkan untuk VMs.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/system-containers/services-in-application-and-system-containers.png" alt="services in application and system containers" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/system-containers/services-in-application-and-system-containers.png" alt="services in application and system containers" max-width="100%"/>
 
 Spesifikasi dari system containers memberikan beberapa keuntungan dan kekhususan:
 

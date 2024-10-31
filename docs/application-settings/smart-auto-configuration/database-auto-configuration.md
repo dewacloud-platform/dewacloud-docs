@@ -19,7 +19,7 @@ Mulai dari versi **5.7** dan **8.0** untuk **MySQL/Percona** dan **MariaDB 10.x*
 
 Jika Anda ingin mengubah secara manual pengaturan dari daftar di atas, Anda perlu mengatur variabel _**JELASTIC_AUTOCONFIG**_ [environment variable](https://docs.dewacloud.com/docs/container-variables/) ke " _false_ ", " _disable_ ", atau " _0_ ". Jika tidak, perubahan kustom Anda akan ditimpa.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/smart-auto-configuration/database-auto-configuration/01-paas-autoconfig-variable.png" alt="PaaS autoconfig variable" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/smart-auto-configuration/database-auto-configuration/01-paas-autoconfig-variable.png" alt="PaaS autoconfig variable" max-width="100%"/>
 
 :::tip
 Sebagai alternatif, Anda dapat mengganti pengaturan apa pun di file _/etc/my.cnf_ (termasuk yang dikelola oleh **Smart Auto-Configuration** platform) dengan menyatakan pengaturan tersebut di file _/etc/mysql/conf.d/custom.cnf_.
@@ -29,7 +29,7 @@ Sebagai alternatif, Anda dapat mengganti pengaturan apa pun di file _/etc/my.cnf
 
 Jika Anda ingin secara manual mengubah pengaturan auto-configured pada container lama, Anda perlu menghapus baris " _#Jelastic autoconfiguration mark._ " di awal file _**/etc/my.cnf**_.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/smart-auto-configuration/database-auto-configuration/02-paas-autoconfiguration-mark.png" alt="PaaS autoconfiguration mark" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/smart-auto-configuration/database-auto-configuration/02-paas-autoconfiguration-mark.png" alt="PaaS autoconfiguration mark" max-width="100%"/>
 
 ## Baca Juga{#whats-next}
 

@@ -27,7 +27,7 @@ Untuk melakukan konfigurasi yang diperlukan pada NGINX balancer, file _**nginx.c
 
 Dengan akses ke konfigurasi NGINX, Anda tidak hanya dapat mengedit file yang ada tetapi juga mengunggah file konfigurasi Anda sendiri dengan pengaturan kustom ke folder **conf.d**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/caching%20in%20nginx%20balancer/02-environment-wizard.png" alt="NGINX balancer custom conf.d settings" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/caching%20in%20nginx%20balancer/02-environment-wizard.png" alt="NGINX balancer custom conf.d settings" max-width="100%"/>
 
 [Back to the list](<https://docs.dewacloud.com/docs/#back>)
 

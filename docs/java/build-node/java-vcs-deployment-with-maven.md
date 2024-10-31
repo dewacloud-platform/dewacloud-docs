@@ -20,7 +20,7 @@ Anda dapat menambahkan proyek Java langsung ke node build Maven.
 
 1\. Pilih tombol **Add project** di sebelah lapisan _Maven_, node atau garis _Projects_ di bawahnya:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/maven-build-nodes/java-vcs-deployment-with-maven/maven-vcs-deployment-1.png" alt="Maven add project" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/maven-build-nodes/java-vcs-deployment-with-maven/maven-vcs-deployment-1.png" alt="Maven add project" max-width="100%"/>
 
 2\. Dalam kotak dialog yang terbuka, Anda perlu mengisi kolom yang diperlukan:
 
@@ -66,7 +66,7 @@ Proyek yang dibuat dengan opsi ini dapat secara otomatis diunggah ke Deployment 
 
   * **Delete** \- menghapus proyek ini dari Maven
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/maven-build-nodes/java-vcs-deployment-with-maven/maven-vcs-deployment-5.png" alt="Maven manage projects" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/maven-build-nodes/java-vcs-deployment-with-maven/maven-vcs-deployment-5.png" alt="Maven manage projects" max-width="100%"/>
 
 Ini adalah opsi GUI yang tersedia untuk manajemen node build Maven, untuk penyesuaian tambahan berkenalan dengan panduan [Maven Configuration](<https://docs.dewacloud.com/docs/maven-configuration/>).
 

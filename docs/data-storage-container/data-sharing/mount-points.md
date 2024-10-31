@@ -18,7 +18,7 @@ Saat membuat titik mount, platform mendukung dua protokol klien - **[NFS](<https
 
 1\. Jadi, untuk melakukan mount data ke container, klik tombol **Config** di sebelah container atau lapisan yang dipilih. Pada tab yang terbuka, beralih ke bagian _**Mount Points**_ di menu sebelah kiri Anda dan klik tombol **Mount**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/data%20sharing/mount%20points/02-create-new-mount.png" alt="create new mount" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/data%20sharing/mount%20points/02-create-new-mount.png" alt="create new mount" max-width="100%"/>
 
 2\. Formulir yang terbuka menyediakan tiga jenis operasi berikut:
 
@@ -26,7 +26,7 @@ Saat membuat titik mount, platform mendukung dua protokol klien - **[NFS](<https
   * **Master Container** \- berbagi data di seluruh node dari lapisan yang sama dalam environment saat ini
   * **External Server** \- mengakses data dari server jarak jauh di luar akun PaaS
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/data%20sharing/mount%20points/03-configure-mount-point.png" alt="configure mount point" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/data%20sharing/mount%20points/03-configure-mount-point.png" alt="configure mount point" max-width="100%"/>
 
 3\. Setelah memilih jenis operasi yang diperlukan, berikan detail lain sebagai berikut:
 
@@ -67,11 +67,11 @@ Jika bukan Shared Storage Container dedikasi yang telah dipilih sebagai data con
 
 4\. Dalam sekejap, titik mount Anda akan dibuat dan ditambahkan ke daftar. Jadi, Anda dapat **Navigate to directory** (klik dua kali pada rekaman yang sesuai) atau **Unmount** ketika itu menjadi tidak perlu.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/data%20sharing/mount%20points/04-manage-existing-mount.png" alt="manage existing mount" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/data%20sharing/mount%20points/04-manage-existing-mount.png" alt="manage existing mount" max-width="100%"/>
 
 5\. Setelah menavigasi ke dalam, Anda akan melihat konten yang sama seperti di server jarak jauh Anda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/data%20sharing/mount%20points/05-switch-between-nodes.png" alt="switch between nodes" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/data%20sharing/mount%20points/05-switch-between-nodes.png" alt="switch between nodes" max-width="100%"/>
 
 Berdasarkan konfigurasi mount, konten jarak jauh dapat diedit dari client atau tidak, serta tersedia untuk semua node lapisan atau hanya satu. Anda dapat beralih di antara node menggunakan daftar drop-down di menu sebelah kiri (dilingkari di atas).
 
@@ -89,7 +89,7 @@ Di sini:
   * _**\{gid\}**_ \- pengidentifikasi grup, yang ditampilkan dalam file _**/etc/group**_
   * _**\{path\}**_ \- jalur ke direktori atau file yang ingin Anda ubah haknya
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/data%20sharing/mount%20points/06-edit-access-permissions.png" alt="edit access permissions" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/data%20sharing/mount%20points/06-edit-access-permissions.png" alt="edit access permissions" max-width="100%"/>
 
 Platform mount points menyediakan sejumlah besar [skenario dan kemungkinan](<https://docs.dewacloud.com/docs/data-storage-container/>) untuk pengaturan dan pengendalian data tingkat lanjut.
 

@@ -9,13 +9,13 @@ title: Node.js Connection to MongoDB
 
 1\. Untuk mengikuti panduan ini, Anda memerlukan server _Node.js_ dan _MongoDB_, baik di dalam platform (Anda dapat [create](<https://docs.dewacloud.com/docs/setting-up-environment/>) kapan saja) atau di sumber eksternal mana pun.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/connection-to-applications/nodejs-connection/nodejs-connection-1.png" alt="MongoDB Node.js environment" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/connection-to-applications/nodejs-connection/nodejs-connection-1.png" alt="MongoDB Node.js environment" max-width="100%"/>
 
 Dalam kasus kami, kedua instance di-host dalam satu environment.
 
 2\. Sambungkan ke server aplikasi Anda melalui [SSH Gate](<https://docs.dewacloud.com/docs/ssh-gate/>).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/connection-to-applications/nodejs-connection/nodejs-connection-2.png" alt="SSH connection to Node.js" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/connection-to-applications/nodejs-connection/nodejs-connection-2.png" alt="SSH connection to Node.js" max-width="100%"/>
 
 3\. Selanjutnya, unduh dan instal [driver MongoDB resmi untuk Node.js](<https://github.com/mongodb/node-mongodb-native>):
 
@@ -23,7 +23,7 @@ Dalam kasus kami, kedua instance di-host dalam satu environment.
 npm install -s mongodb
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/connection-to-applications/nodejs-connection/nodejs-connection-3.png" alt="install MongoDB driver for Node.js" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/connection-to-applications/nodejs-connection/nodejs-connection-3.png" alt="install MongoDB driver for Node.js" max-width="100%"/>
 
 Dalam sekejap, paket akan terinstal dengan sukses.
 
@@ -49,7 +49,7 @@ Di sini, Anda perlu menyesuaikan [connection string](<https://docs.mongodb.com/m
   * `{port}` \- port yang digunakan untuk koneksi (gunakan yang default - _27017_)
   * `{database}` \- database yang diakses (misalnya, yang default - _admin_)
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/connection-to-applications/nodejs-connection/nodejs-connection-4.png" alt="MongoDB connection script" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/connection-to-applications/nodejs-connection/nodejs-connection-4.png" alt="MongoDB connection script" max-width="100%"/>
 
 Dengan skrip ini, Anda dapat mengakses server database yang ditentukan dan, jika koneksi berhasil dibangun, melihat frase “ _You are connected!_ ”.
 
@@ -59,7 +59,7 @@ Dengan skrip ini, Anda dapat mengakses server database yang ditentukan dan, jika
 node script.js
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/connection-to-applications/nodejs-connection/nodejs-connection-5.png" alt="check Node.js connection to MongoDB" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/connection-to-applications/nodejs-connection/nodejs-connection-5.png" alt="check Node.js connection to MongoDB" max-width="100%"/>
 
 Jika semuanya ditentukan dengan benar, Anda harus melihat string “ _You are connected!_ ” di terminal. Selanjutnya, Anda dapat [menambah kode](<http://mongodb.github.io/node-mongodb-native/2.2/api/>) untuk mengeksekusi semua tindakan yang diperlukan.
 

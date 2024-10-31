@@ -22,7 +22,7 @@ Semua manfaat ini dapat dicapai hanya dengan beberapa klik di dalam wizard topol
 
 Klik **New Environment** di dashboard dan pilih basis data **MariaDB/MySQL/Percona**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/auto-clustering/auto-clustering-2.png" alt="new environment" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/auto-clustering/auto-clustering-2.png" alt="new environment" max-width="100%"/>
 
 Aktifkan tombol **Auto-Clustering**. Hasilnya, dropdown dengan berbagai skema replikasi akan muncul:
 
@@ -46,11 +46,11 @@ Selama pembuatan klaster, platform secara otomatis menghasilkan kredensial akses
 
 1\. Klik tombol **Variables**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/auto-clustering/auto-clustering-4.png" alt="database variables" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/auto-clustering/auto-clustering-4.png" alt="database variables" max-width="100%"/>
 
 2\. Kemudian tekan **Add** untuk menyediakan kredensial basis data pengguna khusus melalui dua variabel **DB_USER** dan **DB_PASS** sebagai berikut:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/auto-clustering/auto-clustering-5.png" alt="add variables" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/auto-clustering/auto-clustering-5.png" alt="add variables" max-width="100%"/>
 
 3\. Tekan **Apply** dan kredensial kustom akan dikirimkan melalui email kepada Anda setelah instalasi klaster berhasil sebagai akses ke **PHP MyAdmin at Primary Node** dan **Entry Point** klaster basis data.
 
@@ -62,11 +62,11 @@ Jika Anda memutuskan untuk memperkecil topologi _primary-secondary/primary-prima
 
 Tergantung apakah Anda akan menggunakan aplikasi eksternal atau tidak, Anda dapat memutuskan [layer](<https://docs.dewacloud.com/docs/concept-and-terminology/#layer>) mana yang akan diekspos ke luar - semuanya atau hanya layer proxy entry point. Putar switch [SLB access](<https://docs.dewacloud.com/docs/shared-load-balancer/#deny-access-via-shared-load-balancer>) ke posisi yang diperlukan untuk setiap layer dan klik **Create**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/auto-clustering/auto-clustering-6.png" alt="database access via SLB" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/auto-clustering/auto-clustering-6.png" alt="database access via SLB" max-width="100%"/>
 
 Itu saja! Tidak ada konfigurasi yang diperlukan, klaster siap digunakan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/auto-clustering/auto-clustering-7.png" alt="database auto-cluster" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/auto-clustering/auto-clustering-7.png" alt="database auto-cluster" max-width="100%"/>
 
 ## Database Cluster Access Information{#database-cluster-access-information}
 
@@ -74,11 +74,11 @@ Setelah instalasi berhasil, Anda akan menerima sejumlah email dengan informasi k
 
   * **PHP MyAdmin at Primary Node** - antarmuka administrasi web dengan kredensial untuk mengakses server basis data untuk manajemen interaktif.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/auto-clustering/auto-clustering-8.png" alt="access phpMyAdmin" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/auto-clustering/auto-clustering-8.png" alt="access phpMyAdmin" max-width="100%"/>
 
   * **Entry Point for Connections to Database Cluster** - [hostname dan kredensial untuk menghubungkan](<https://docs.dewacloud.com/docs/container-dns-hostnames/#hostnames-for-specific-layers>) aplikasi ke klaster basis data. Node-node ini membentuk layer proxy yang disebut sebagai titik masuk untuk klaster basis data dengan hostname sebagai berikut: _**proxy.$\{envName\}.$\{platformDomain\}**_.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/auto-clustering/auto-clustering-9.gif" alt="ProxySQL DB replication" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/auto-clustering/auto-clustering-9.gif" alt="ProxySQL DB replication" max-width="100%"/>
 
 :::warning
 Jika Anda akan membuat dan menggunakan akun pengguna khusus setelah instalasi klaster, Anda harus menambahkannya ke tabel mysql_users pada setiap node ProxySQL, jika tidak, Anda tidak akan dapat menghubungkan ke basis data melalui layer proxy. Untuk melakukannya, keluarkan perintah di bawah ini:  
@@ -89,7 +89,7 @@ Substituteandwith credentials of a newly created database account.
 
   * **Cluster Orchestrator Panel** - kredensial untuk mengakses panel Orchestrator, yang ditujukan untuk manajemen klaster yang mudah. Gunakan kredensial yang diterima untuk mengakses panel admin dari [Orchestrator](<https://github.com/openark/orchestrator>) klaster yang terinstal pada node ProxySQL, yang memberikan kemungkinan untuk meninjau informasi topologi klaster: visualisasi topologi yang licin, masalah replikasi jika ada, distribusi baca/tulis, status pemeriksaan kesehatan dan penemuan otomatis node basis data yang baru ditambahkan, dll.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/auto-clustering/auto-clustering-10.png" alt="MySQL MariaDB Percona scheme" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/auto-clustering/auto-clustering-10.png" alt="MySQL MariaDB Percona scheme" max-width="100%"/>
 
 ## What Replication Type to Choose?{#what-replication-type-to-choose}
 

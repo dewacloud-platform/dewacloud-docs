@@ -14,9 +14,11 @@ Konsumsi sumber daya untuk setiap environment dikenakan biaya kepada pemilik aku
 
 Anda dapat melacak penggunaan sumber daya (_CPU_, _RAM_, _Network_, _Disk_) secara real-time melalui [pemantauan statistik](https://docs.dewacloud.com/docs/statistics-monitoring/) bawaan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/resource-charging/charged-resources/01-statistics-monitoring.png" alt="01-statistics-monitoring.png" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/resource-charging/charged-resources/01-statistics-monitoring.png" alt="01-statistics-monitoring.png" max-width="100%"/>
 
-:::note Sumber daya yang dikonsumsi oleh environment yang disediakan berdasarkan langganan dianggap gratis secara default. :::
+:::note
+Sumber daya yang dikonsumsi oleh environment yang disediakan berdasarkan langganan dianggap gratis secara default. 
+:::
 
 ## Sumber Daya yang Dikenakan Biaya Utama{#primary-chargeable-resources}
 
@@ -37,7 +39,9 @@ Ada dua jenis cloudlet:
 * _Cloudlets yang dipesan_ dipesan terlebih dahulu (menggunakan wizard topologi).
 * _Cloudlets dinamis_ diskalakan secara dinamis untuk aplikasi Anda.
 
-:::warning Anda tidak dikenakan biaya untuk RAM yang digunakan untuk cache disk dan buffer. :::
+:::warning
+Anda tidak dikenakan biaya untuk RAM yang digunakan untuk cache disk dan buffer. 
+:::
 
 Lebih banyak detail tentang biaya cloudlet dan perbedaan antara cloudlet Dipesan / Dinamis dapat ditemukan di dokumen [Sistem Harga](https://docs.dewacloud.com/docs/pricing-model/) dan [Diskon Otomatis](https://docs.dewacloud.com/docs/automatic-discounts/#ramcpu).
 
@@ -49,7 +53,9 @@ Sumber daya berikut dikenakan biaya di beberapa penyedia hosting, tetapi penyedi
 
 Penggunaan **Ruang Disk** diukur dalam GB. Seperti semua sumber daya platform, Anda hanya membayar untuk konsumsi aktual Anda (Anda tidak perlu membeli ruang tambahan "untuk jaga-jaga" jika membutuhkannya). Lebih banyak detail tentang biaya ruang disk dapat ditemukan di dokumen [Sistem Harga](https://docs.dewacloud.com/docs/pricing-model/) dan [Diskon Otomatis](https://docs.dewacloud.com/docs/automatic-discounts/#disk-space).
 
-:::tip Jika menghadapi kebutuhan untuk menyimpan data dalam node penyimpanan terpisah, pertimbangkan untuk menggunakan container data Master atau Compound untuk mengurangi konsumsi ruang disk dan mengurangi biaya environment secara keseluruhan. :::
+:::tip
+Jika menghadapi kebutuhan untuk menyimpan data dalam node penyimpanan terpisah, pertimbangkan untuk menggunakan container data Master atau Compound untuk mengurangi konsumsi ruang disk dan mengurangi biaya environment secara keseluruhan. 
+:::
 
 ### Lalu Lintas{#traffic}
 

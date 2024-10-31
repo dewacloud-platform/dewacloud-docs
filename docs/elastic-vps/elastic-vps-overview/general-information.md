@@ -11,7 +11,7 @@ title: General Information
 Platform ini memecahkan masalah elastisitas tersebut melalui implementasi yang disebut _**Elastic VPS**_ stacks. Elastic VPS menawarkan solusi tersebut dengan 4 pilihan OS yang berbeda - _[CentOS](https://docs.dewacloud.com/docs/vps-centos/)_ , _[Ubuntu](https://docs.dewacloud.com/docs/vps-ubuntu/)_ , _[Debian](https://docs.dewacloud.com/docs/vps-debian/)_ , dan _[Windows](https://docs.dewacloud.com/docs/win-vm/)_ - memungkinkan Anda memilih yang paling sesuai dengan kebutuhan spesifik Anda.
 
 <p>
-<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/vps-general-info.png" alt="elastic VPS" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/vps-general-info.png" alt="elastic VPS" max-width="100%"/>
 </p>
 
 Fitur unik dari Elastic VPS stacks adalah:

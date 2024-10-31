@@ -71,7 +71,7 @@ Maven | 1 | 16
   
 Jika Anda ingin mengubah nilai-nilai ini dan menskalakan lingkungan Anda, jumlah maksimum sumber daya yang tersedia (cloudlet) dapat ditingkatkan/dikurangi secara manual melalui wizard **Environment topology**. Untuk itu, gunakan slider cloudlet di bagian _Vertical Scaling_ dari panel tengahnya.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/automatic-vertical-scaling/04-environment-wizard.png" alt="environment wizard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/automatic-vertical-scaling/04-environment-wizard.png" alt="environment wizard" max-width="100%"/>
 
 :::note
 Jika Anda mengubah batas skalabilitas (yaitu jumlah cloudlet dinamis) untuk application server, database, atau cache nodes yang ada, lapisan yang sesuai akan dimulai ulang. Pesan peringatan yang sesuai akan ditampilkan langsung di wizard topologi:

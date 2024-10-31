@@ -25,7 +25,7 @@ Setiap container di platform secara otomatis mendapatkan nama domain internal ya
 
 Untuk itu, Anda hanya perlu memilih layer yang diperlukan dan menentukan alias untuk denominasi koneksi (sementara semua variabel yang sesuai akan mendapatkan prefix yang sesuai dengannya):
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/container/connect-to-custom-container/connect-1.png" alt="container linking" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/connect-to-custom-container/connect-1.png" alt="container linking" max-width="100%"/>
 
 Jangan lupa untuk **Save** dan **Apply** perubahan yang telah Anda buat.
 
@@ -41,9 +41,9 @@ Informasi yang sesuai dapat diperoleh dengan dua cara:
   * di dalam dashboard platform, data yang sama dapat ditemukan dengan cara berikut:
 
     * klik tombol **Open in Browser** di sebelah container yang Anda minati untuk membuka antarmuka node yang diperlukan di tab browser baru, sehingga Anda dapat dengan mudah menyalin domainnya dari bilah alamat.
-    <img src="https://assets.dewacloud.com/dewacloud-docs/container/connect-to-custom-container/connect-3.png" alt="container domain name" width="100%"/> Atau, cukup klik kanan pada string domain di bawah nama environment (dilingkari di atas) dan salin link yang diberikan.
+    <img src="https://assets.dewacloud.com/dewacloud-docs/container/connect-to-custom-container/connect-3.png" alt="container domain name" max-width="100%"/> Atau, cukup klik kanan pada string domain di bawah nama environment (dilingkari di atas) dan salin link yang diberikan.
     * alamat IP internal node dapat dilihat melalui memperluas daftar **Additionally** untuk container yang diperlukan, seperti yang ditunjukkan pada gambar di bawah. 
-    <img src="https://assets.dewacloud.com/dewacloud-docs/container/connect-to-custom-container/connect-4.png" alt="container internal IP" width="100%"/>
+    <img src="https://assets.dewacloud.com/dewacloud-docs/container/connect-to-custom-container/connect-4.png" alt="container internal IP" max-width="100%"/>
 
 Dengan cara ini, informasi yang diperoleh dapat digunakan untuk membangun koneksi internal ke containers Anda di platform.
 
@@ -53,7 +53,7 @@ Untuk mengakses container Anda dari luar platform (misalnya, dari Internet), And
 
 1\. Jika layanan atau aplikasi Anda, yang dijalankan dalam container, mendengarkan port _80_, maka itu akan otomatis diekspos ke jaringan eksternal (melalui nama domain yang ditugaskan) melalui [Shared Load Balancer](<https://docs.dewacloud.com/docs/shared-load-balancer/>) platform.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/container/connect-to-custom-container/connect-5.png" alt="custom container" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/connect-to-custom-container/connect-5.png" alt="custom container" max-width="100%"/>
 
 Dalam kasus seperti itu, Anda hanya perlu mengklik **Open in Browser** untuk node terkait untuk meluncurkannya (opsi ini berfungsi untuk koneksi HTTP).
 
@@ -63,13 +63,13 @@ Jika container Anda tidak memiliki IP eksternal yang dilampirkan, platform melak
 
 2\. Untuk implementasi yang lebih kompleks, platform menyediakan fungsionalitas [endpoints](<https://docs.dewacloud.com/docs/endpoints/>) khusus (tersedia di bagian dengan nama yang sama dalam **Settings** environment mana pun):
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/container/connect-to-custom-container/connect-6.png" alt="container endpoints" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/connect-to-custom-container/connect-6.png" alt="container endpoints" max-width="100%"/>
 
 Ini memungkinkan untuk membagikan port privat yang diperlukan pada container Anda melalui port publik acak yang dipilih di Shared Load Balancer platform, sehingga dapat diakses melalui **Access URL** yang disediakan.
 
 3\. Dan opsi terakhir, yang memberikan kebebasan maksimal (memungkinkan, misalnya, untuk mengamankan koneksi Anda dengan [Custom SSL](<https://docs.dewacloud.com/docs/custom-ssl/>), menghilangkan batasan pada jumlah koneksi yang bersamaan, dll.) adalah melampirkan alamat [public IP](<https://docs.dewacloud.com/docs/public-ip/>) ke container Anda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/container/connect-to-custom-container/connect-7.png" alt="container public IP" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/connect-to-custom-container/connect-7.png" alt="container public IP" max-width="100%"/>
 
 Dengan cara ini, aplikasi Anda dapat dikonfigurasi untuk mendengarkan port yang Anda butuhkan dan, dengan cara seperti itu, menjadi dapat diakses melalui jaringan eksternal.
 

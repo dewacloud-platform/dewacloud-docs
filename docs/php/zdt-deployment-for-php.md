@@ -36,7 +36,7 @@ Pertama-tama, kami akan mempertimbangkan secara lebih spesifik bagaimana mekanis
 
 1\. Untuk memulai, Anda memerlukan lingkungan PHP (baik [baru](<https://docs.dewacloud.com/docs/setting-up-environment/>) atau yang sudah ada) - kami akan menggunakan Apache untuk contoh ini:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/zdt-deployment-for-php/03-environment-wizard.png" alt="environment wizard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/zdt-deployment-for-php/03-environment-wizard.png" alt="environment wizard" max-width="100%"/>
 
 2\. Selanjutnya, lanjutkan ke [penerapan](<https://docs.dewacloud.com/docs/deployment-guide/>) aplikasi yang diperlukan. Selama prosedur ini, Anda perlu mencentang kotak yang sesuai pada frame konfirmasi yang tepat (tergantung pada jenis sumber proyek yang digunakan) untuk mengaktifkan opsi penerapan ZDT:
 
@@ -58,7 +58,7 @@ Aktifkan tanda penerapan zero-downtime menjadi aktif hanya saat mengerahkan ke k
 
 3\. _Selama penerapan awal_, folder **ROOT_timestamp** (yaitu _ROOT_year.mm.dd-hh.mm.ss_) dan file _ROOT_ khusus sebagai symlink ke folder ini dibuat di dalam direktori _**webroot**_ dari server aplikasi Anda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/zdt-deployment-for-php/06-first-application-deployed.png" alt="first application deployed" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/zdt-deployment-for-php/06-first-application-deployed.png" alt="first application deployed" max-width="100%"/>
 
 Seperti biasa, aplikasi siap menangani permintaan segera setelah proses penerapan selesai.
 
@@ -67,14 +67,14 @@ Jika menelusuri di dalam direktori ROOT, dikelilingi di atas, konten dari versi 
 ```
 ls -l /var/www/webroot
 ```
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/zdt-deployment-for-php/07-symlink-in-ssh.png" alt="symlink-in-ssh" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/zdt-deployment-for-php/07-symlink-in-ssh.png" alt="symlink-in-ssh" max-width="100%"/>
 
 Dengan cara ini, Anda dapat dengan mudah menemukan symlink, karena warnanya ditandai dalam daftar, dan melihat jalur pengalihan yang sebenarnya.
 :::
 
 4\. _Selama penerapan kedua_ (yaitu saat mendeploy pembaruan), folder **ROOT_timestamp** baru dibuat - dengan cara demikian, versi aplikasi saat ini dan pelanggan, yang saat ini menggunakannya, tidak terpengaruh.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/zdt-deployment-for-php/08-second-application-deployed.png" alt="second application deployed" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/zdt-deployment-for-php/08-second-application-deployed.png" alt="second application deployed" max-width="100%"/>
 
 Tepat setelah file baru dibongkar, symlink beralih ke folder baru ini, mengalihkan semua permintaan yang baru diterima ke folder tersebut. Di sini, folder pertama disimpan untuk memproses sesi pengguna "lama" (yaitu di mana penanganan dimulai sebelum alih symlink).
 
@@ -84,7 +84,7 @@ Saat memperbarui versi aplikasi menggunakan archive/URL, semua konten yang dihas
 
 5\. _Semua penerapan atomik berikutnya_ akan dilakukan dengan cara yang serupa. Selama masing-masing dari mereka, folder proyek tertua dihapus, sementara direktori **ROOT_timestamp** baru untuk versi proyek terbaru ditambahkan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/zdt-deployment-for-php/09-third-application-deployed.png" alt="second application deployed" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/zdt-deployment-for-php/09-third-application-deployed.png" alt="second application deployed" max-width="100%"/>
 
 Dengan cara ini, hanya 2 versi aplikasi yang telah diterapkan - versi terbaru dan yang sebelumnya - yang disimpan dalam server aplikasi secara bersamaan (namun, yang lebih lama juga dapat dengan mudah dihapus secara manual jika tidak lagi diperlukan). Ini memastikan tidak ada konsumsi ruang disk tambahan.
 
@@ -103,7 +103,7 @@ Dalam menelusuri detail penerapan teknis, dukungan opsi penerapan atomik di plat
 
 Fungsionalitas yang sesuai ditangani dengan bantuan modul _**mod_realdoc**_, yang mengontrol peralihan symlink yang disebutkan di atas. Modul ini dapat dikonfigurasi tambahan (jika diperlukan) melalui dashboard platform di dalam file **conf.d > _mod_realdoc.conf_**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/zdt-deployment-for-php/11-zdt-module-for-apache.png" alt="zero downtime module for Apache" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/zdt-deployment-for-php/11-zdt-module-for-apache.png" alt="zero downtime module for Apache" max-width="100%"/>
 
 :::tip 
 Di sini, parameter RealpathEvery mendefinisikan periode waktu di mana jalur tautan simbolik disimpan dan frekuensi penyegarannya. Nilai defaultnya (0, seperti yang ditentukan dalam komentar kode) diubah menjadi 2 untuk memastikan semua operasi yang diperlukan (yaitu penerapan dan peralihan) dapat diselesaikan sebelum mengalihkan permintaan ke versi proyek baru dan dengan demikian, mencegah pelambatan I/O. 
@@ -117,7 +117,7 @@ Untuk informasi lebih lanjut tentang detail modul ini, kunjungi halaman [source]
 
 Di sini, penerapan atomik dipastikan dengan cara fungsionalitas bawaan tanpa penyertaan modul tambahan - pengaturan yang sesuai dapat ditemukan pada bagian paling akhir dari file **conf > _nginx.conf_**:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/zdt-deployment-for-php/12-zdt-nginx-config.png" alt="zero downtime NGINX config" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/zdt-deployment-for-php/12-zdt-nginx-config.png" alt="zero downtime NGINX config" max-width="100%"/>
 
 Saat ini, seperti yang Anda ketahui bagaimana semua ini bekerja, kita dapat membandingkan kedua metode penerapan klasik dan atomik.
 
@@ -135,7 +135,7 @@ Jadi, mari kita evaluasi hasil untuk kedua metode penerapan dengan statistik sed
 
 Mari kita mulai dengan varian penerapan proyek yang paling umum digunakan, yaitu - _**klasik**_, yaitu instalasi dari satu paket terarsip tanpa opsi tambahan seperti ZDT diaktifkan:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/zdt-deployment-for-php/13-classic-deployment-graph.png" alt="classic deployment graph" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/zdt-deployment-for-php/13-classic-deployment-graph.png" alt="classic deployment graph" max-width="100%"/>
 
 Seperti yang Anda lihat, kami sebenarnya mendapatkan hasil yang cukup bagus:
 
@@ -145,7 +145,7 @@ Seperti yang Anda lihat, kami sebenarnya mendapatkan hasil yang cukup bagus:
 
 Sekarang, mari kita lakukan tes yang sama dengan pesaing kedua - _**ZDT**_. Untuk persepsi perbandingan yang lebih baik, kami akan tetap menggunakan legenda warna yang sama seperti sebelumnya:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/zdt-deployment-for-php/14-zdt-deployment-graph.png" alt="zero downtime deployment graph" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/zdt-deployment-for-php/14-zdt-deployment-graph.png" alt="zero downtime deployment graph" max-width="100%"/>
 
 _Response time_ tetap stabil dan hampir tidak berubah, tetapi Anda dapat melihat peningkatan sedikit selama prosedur pembaruan, yang disebabkan oleh proses penerapan tambahan yang berjalan seiring dengan pelayan
 
@@ -159,7 +159,7 @@ Perhatikan bahwa waktu penanganan minimum untuk metode klasik jauh lebih rendah 
 
 Selanjutnya, mari kita ulangi tes kami untuk jenis penerapan platform kedua (yaitu jika menggunakan repositori Git/SVN) untuk mengetahui apakah ZDT mempertahankan keuntungannya dalam kasus ini. Dan sekali lagi, kami akan mulai dengan metode _**klasik**_:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/zdt-deployment-for-php/15-vcs-classic-deployment-graph.png" alt="VCS classic deployment graph" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/zdt-deployment-for-php/15-vcs-classic-deployment-graph.png" alt="VCS classic deployment graph" max-width="100%"/>
 
 Karena sumber penerapan ditempatkan pada sumber daya jarak jauh, ini akan memerlukan waktu sedikit lebih lama dibandingkan dengan instalasi dari arsip yang sudah diunggah, yang sebenarnya membantu kita melihat perbedaannya dengan jelas. Sekarang _response time_ memiliki penurunan yang cukup panjang (hampir _4_ detik dalam kasus kami), disebabkan oleh ketidaktersediaan aplikasi (Anda dapat melihat permintaan yang masuk mulai gagal pada waktu yang sama - ini ditunjukkan dengan lonjakan pada grafik _errors_). Segala sesuatu yang lain tetap serupa dengan tipe penerapan sebelumnya.
 
@@ -169,7 +169,7 @@ Tidak seperti penerapan arsip (di mana proyek lama dihapus sepenuhnya sebelum pe
 
 Akhirnya, tes terakhir untuk pendekatan penerapan _**ZDT**_ melalui VCS juga sesuai dengan harapan kami dengan membawa _response time_ yang stabil dengan peningkatan kecilnya selama operasi seperti penanganan sesi pengguna dan penyalinan/pembaruan proyek.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/zdt-deployment-for-php/16-vcs-zdt-deployment-graph.png" alt="VCS zero downtime deployment graph" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/zdt-deployment-for-php/16-vcs-zdt-deployment-graph.png" alt="VCS zero downtime deployment graph" max-width="100%"/>
 
 Pada saat yang sama, Anda dapat melihat bahwa tidak ada _errors_ yang muncul dan semua permintaan yang masuk berhasil diproses.
 

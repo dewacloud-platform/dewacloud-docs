@@ -22,13 +22,13 @@ Dalam tutorial ini, kami akan mengulas dua contoh instalasi mesin Hasura GraphQL
 
 2\. Cari paket _**Docker Engine CE**_ dan mulai instalasinya.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/hasura-graphql-installation/hasura-3.png" alt="install docker engine ce from marketplace" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/hasura-graphql-installation/hasura-3.png" alt="install docker engine ce from marketplace" max-width="100%"/>
 
 3\. Untuk secara otomatis membuat Hasura dan database PostgreSQL dalam kontainer yang sama, pilih opsi _Deploy containers from compose.yml_, dan berikan konfigurasi default dari repository [Hasura on Docker](<https://github.com/hasura/graphql-engine/tree/master/install-manifests/docker-compose>):
 
 `https://raw.githubusercontent.com/hasura/graphql-engine/master/install-manifests/docker-compose/docker-compose.yaml`
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/hasura-graphql-installation/hasura-4.png" alt="deploy Hasura from compose.yml" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/hasura-graphql-installation/hasura-4.png" alt="deploy Hasura from compose.yml" max-width="100%"/>
 
 :::warning
 Instalasi memerlukan public IP, yang merupakan opsi berbayar yang tersedia hanya untuk pengguna billing.
@@ -42,7 +42,7 @@ Konfigurasikan kolom _Environment_, _[Display Name](<https://docs.dewacloud.com/
 http://{envDomain}:8080/console
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/hasura-graphql-installation/hasura-5.png" alt="Hasura admin panel" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/hasura-graphql-installation/hasura-5.png" alt="Hasura admin panel" max-width="100%"/>
 
 Itu saja! Sekarang, Anda dapat memberikan **Data** untuk database Anda melalui tab bernama sama di bagian atas dan mencoba kueri GraphQL setelahnya.
 
@@ -52,7 +52,7 @@ Jika Anda sudah memiliki database, Anda dapat menghubungkannya dengan mesin Hasu
 
 1\. Buat _**Docker Engine CE**_ standalone yang bersih melalui [Marketplace platform](<https://www.virtuozzo.com/application-platform-docs/marketplace/>).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/hasura-graphql-installation/hasura-6.png" alt="create clean docker engine ce" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/hasura-graphql-installation/hasura-6.png" alt="create clean docker engine ce" max-width="100%"/>
 
 2\. Setelah dibuat, sambungkan ke kontainer melalui [Web SSH](<https://docs.dewacloud.com/docs/web-ssh-client/>) dan buat file dengan konten berikut (misalnya, _**nano docker-run.sh**_):
 
@@ -64,7 +64,7 @@ docker run -d --restart=always -p 80:8080 \
 hasura/graphql-engine:v1.0.0
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/hasura-graphql-installation/hasura-7.png" alt="prepare Hasura installation command" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/hasura-graphql-installation/hasura-7.png" alt="prepare Hasura installation command" max-width="100%"/>
 
 Untuk informasi lebih lanjut tentang perintah [docker run](<https://docs.docker.com/engine/reference/run/>), lihat dokumentasi resmi. Dalam kasus kami, parameter-parameter sebagai berikut:
 
@@ -84,7 +84,7 @@ chmod +x docker-run.sh
 ./docker-run.sh
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/hasura-graphql-installation/hasura-8.png" alt="install Hasura with custom configurations" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/hasura-graphql-installation/hasura-8.png" alt="install Hasura with custom configurations" max-width="100%"/>
 
 Anda juga dapat menjalankan perintah _**docker ps**_ untuk memastikan bahwa layanan Hasura berjalan.
 

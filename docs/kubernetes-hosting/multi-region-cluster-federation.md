@@ -49,7 +49,7 @@ Instal [versi terbaru](<https://github.com/kubernetes-sigs/kubefed/branches/acti
 ```bash
 fedhost~$ helm install kubefed kubefed-charts/kubefed --version 0.7.0 --namespace kube-federation-system --create-namespace
 ```
-<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Multi-Region%20Cluster%20Federation/image8-2-1024x141.png" alt="Kubernetes Cluster Federation remote access testing" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Multi-Region%20Cluster%20Federation/image8-2-1024x141.png" alt="Kubernetes Cluster Federation remote access testing" max-width="100%"/>
 
 2\. Unduh versi terbaru [kubefedctl](<https://github.com/kubernetes-sigs/kubefed/releases>) alat baris perintah juga dan salin ke direktori _/usr/local/bin_:
 
@@ -106,7 +106,7 @@ Terapkan file konfigurasi:
 member1~$ kubectl apply -f member1.yaml
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Multi-Region%20Cluster%20Federation/image47-617.png" alt="access Kubernetes federation members" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Multi-Region%20Cluster%20Federation/image47-617.png" alt="access Kubernetes federation members" max-width="100%"/>
 
 4\. Untuk mendapatkan akses ke semua anggota Anda harus membuat konteks untuk masing-masingnya. Setiap konteks berisi nama cluster K8s, titik akhir cluster, nama pengguna dengan kredensial, dan namespace.
 
@@ -216,7 +216,7 @@ fedhost~$ kubefedctl join member1 --v=2 --host-cluster-context fedhost --kubefed
 
 Jika semuanya berjalan lancar tanpa kesalahan, Anda akan memiliki keluaran serupa:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Multi-Region%20Cluster%20Federation/image7-1.png" alt="Kubernetes Cluster Federation status" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Multi-Region%20Cluster%20Federation/image7-1.png" alt="Kubernetes Cluster Federation status" max-width="100%"/>
 
 Untuk memastikan bahwa join berfungsi, Anda bisa memeriksa status Federation dengan perintah:
 

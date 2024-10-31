@@ -27,15 +27,15 @@ Jadi, mari kita mulai dan mengujinya secara langsung.
 
 Karena kita akan menguji server **Apache PHP**, pilih server tersebut dan tentukan batasan penggunaan sumber daya menggunakan slider cloudlets. Kemudian tambahkan alamat **Public IP** untuk server ini dan ketikkan nama environment baru (misalnya, _balancer_). Klik **Create**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/testing%20load%20balancing/03-environment-wizard.png" alt="environment wizard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/testing%20load%20balancing/03-environment-wizard.png" alt="environment wizard" max-width="100%"/>
 
 3\. Dalam beberapa menit, environment Anda akan muncul di dashboard.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/testing%20load%20balancing/04-balancer-environment-created.png" alt="balancer environment created" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/testing%20load%20balancing/04-balancer-environment-created.png" alt="balancer environment created" max-width="100%"/>
 
 4\. Setelah environment berhasil dibuat, Anda dapat menerapkan aplikasi Anda ke dalamnya. Di sini kita akan menggunakan paket default **HelloWorld.zip**, jadi Anda hanya perlu **Deploy** ke environment yang diinginkan dengan tombol yang sesuai dan konfirmasi deployment di jendela yang terbuka.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/testing%20load%20balancing/05-deploy-hello-world-application.png" alt="deploy hello world application" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/testing%20load%20balancing/05-deploy-hello-world-application.png" alt="deploy hello world application" max-width="100%"/>
 
 ## Control Point Testing{#control-point-testing}
 
@@ -65,7 +65,7 @@ ab -n 500 -c 10 -g res1.tsv {URL_to_your_env}
 
 Gantikan bagian `{URL_to_your_env}` dengan tautan ke environment Anda (misalnya, _https://balancer.jelastic.com/_ dalam kasus kami). Untuk mendapatkannya, klik tombol **Open in Browser** di sebelah environment Anda dan salin URL yang sesuai dari bilah alamat browser.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/testing%20load%20balancing/06-open-in-browser.png" alt="open in browser" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/testing%20load%20balancing/06-open-in-browser.png" alt="open in browser" max-width="100%"/>
 
 Perintah yang ditentukan akan mengirimkan total 500 permintaan ke environment yang ditentukan, yang dibagi menjadi 10 permintaan bersamaan dalam satu waktu. Semua hasil akan disimpan di file _res1.tsv_ di dalam folder **home** Anda (atau masukkan path lengkap ke direktori yang diinginkan jika Anda ingin mengubah lokasi file).
 
@@ -77,31 +77,31 @@ Pengujian ini mungkin memakan waktu tergantung pada parameter yang telah Anda te
 
 3\. File hasil yang dibuat akan terlihat seperti gambar di bawah ini:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/testing%20load%20balancing/08-control-point-result.png" alt="control point result" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/testing%20load%20balancing/08-control-point-result.png" alt="control point result" max-width="100%"/>
 
 ## Change the Environment Configuration{#change-the-environment-configuration}
 
 1\. Kembali ke dashboard platform dan klik **Change environment topology** untuk environment _balancer_ Anda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/testing%20load%20balancing/09-change-environment-topology.png" alt="change environment topology" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/testing%20load%20balancing/09-change-environment-topology.png" alt="change environment topology" max-width="100%"/>
 
 2\. Di dalam jendela **Environment topology** yang terbuka, tambahkan lebih banyak server aplikasi (misalnya, satu instance Apache lagi) - gunakan tombol **+** di bagian _Horizontal scaling_ wizard untuk itu. Kemudian aktifkan fitur **Public IP** dan tetapkan batas sumber daya untuk node **NGINX-balancer** yang ditambahkan secara otomatis, karena menjadi titik masuk aplikasi Anda. Klik **Apply** untuk melanjutkan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/testing%20load%20balancing/10-environment-topology-with-balancer.png" alt="environment topology with balancer" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/testing%20load%20balancing/10-environment-topology-with-balancer.png" alt="environment topology with balancer" max-width="100%"/>
 
 3\. Setelah semua perubahan yang diperlukan berhasil diterapkan, Anda harus menonaktifkan sticky sessions untuk server balancer. Jika tidak, semua permintaan dari satu alamat IP akan dialihkan ke instance server aplikasi yang sama.
 
 Oleh karena itu, klik tombol **Config** di sebelah node Nginx.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/testing%20load%20balancing/11-nginx-config.png" alt="NGINX config" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/testing%20load%20balancing/11-nginx-config.png" alt="NGINX config" max-width="100%"/>
 
 4\. Arahkan ke file **conf > nginx-jelastic.conf**. File ini tidak dapat diedit, jadi salin semua isinya dan tempelkan ke file **nginx.conf** (terletak di folder yang sama) sebagai pengganti baris _include /etc/nginx/nginx-jelastic.conf;_ (dilingkari pada gambar berikut).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/testing%20load%20balancing/12-adjust-nginx-conf.png" alt="adjust nginx.conf" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/testing%20load%20balancing/12-adjust-nginx-conf.png" alt="adjust nginx.conf" max-width="100%"/>
 
 5\. Kemudian, temukan dua sebutan parameter _sticky path_ dalam kode (di bagian _DEFAULT UPSTREAM_ dan _UPSTREAMS LIST_) dan beri komentar seperti yang ditunjukkan di bawah ini.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/testing%20load%20balancing/13-disable-sticky-session.png" alt="disable sticky session" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/testing%20load%20balancing/13-disable-sticky-session.png" alt="disable sticky session" max-width="100%"/>
 
 :::note
 Jangan lewatkan penutup kurung kurawal setelah string sticky path tersebut, mereka harus tidak dikomentari.
@@ -109,7 +109,7 @@ Jangan lewatkan penutup kurung kurawal setelah string sticky path tersebut, mere
 
 6\. **Simpan** perubahan yang diterapkan dan **Restart** server NGINX.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/testing%20load%20balancing/14-nginx-node-restart.png" alt="NGINX node restart" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/testing%20load%20balancing/14-nginx-node-restart.png" alt="NGINX node restart" max-width="100%"/>
 
 ## Testing Balancer and Compare Results{#testing-balancer-and-compare-results}
 
@@ -139,7 +139,7 @@ set ylabel "response time (ms)"
 set datafile separator '\t'
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/testing%20load%20balancing/17-set-gnuplot-parameters.png" alt="set gnuplot parameters" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/testing%20load%20balancing/17-set-gnuplot-parameters.png" alt="set gnuplot parameters" max-width="100%"/>
 
 4\. Sekarang Anda siap untuk membuat grafik:
 
@@ -155,7 +155,7 @@ Perintah _plot_ ini akan membangun 2 grafik (dipisahkan dengan koma dalam perint
   * `title 'N'` memberikan nama tertentu untuk grafik untuk memudahkan pemisahan hasil pengujian
   * `with lines` digunakan agar grafik kita menjadi garis solid
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/testing%20load%20balancing/18-compose-graphs.png" alt="compose graphs" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/testing%20load%20balancing/18-compose-graphs.png" alt="compose graphs" max-width="100%"/>
 
 Anda akan mendapatkan gambar yang dibuat dan dibuka secara otomatis, mirip dengan yang berikut:
 

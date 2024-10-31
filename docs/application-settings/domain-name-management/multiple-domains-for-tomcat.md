@@ -9,25 +9,25 @@ Mengatur beberapa nama domain pada server Tomcat memungkinkan untuk meningkatkan
 
 1\. Masuk ke dashboard platform dan klik tombol **New Environment**:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-tomcat/01-paas-main-buttons.png" alt="PaaS main buttons" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-tomcat/01-paas-main-buttons.png" alt="PaaS main buttons" max-width="100%"/>
 
 2\. Di dialog **Environment Topology**, pilih server aplikasi Anda (misalnya [Tomcat 9](https://docs.dewacloud.com/docs/tomcat/)), dan ketik nama lingkungan Anda, misalnya _multibinding_.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-tomcat/02-topology-wizard.png" alt="topology wizard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-tomcat/02-topology-wizard.png" alt="topology wizard" max-width="100%"/>
 
 Dalam satu menit, lingkungan Anda akan berhasil dibuat.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-tomcat/03-new-tomcat-environment.png" alt="new Tomcat environment" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-tomcat/03-new-tomcat-environment.png" alt="new Tomcat environment" max-width="100%"/>
 
 3\. Anda dapat membeli dan mengatur nama domain sendiri alih-alih menggunakan yang default dengan menambahkan catatan CNAME atau dengan mengatur A Record. Baca lebih lanjut di dokumen [Custom External Domain Name Binding](https://docs.dewacloud.com/docs/custom-domains/).
 
 4\. Kembali ke dashboard platform, klik tombol **Settings** untuk lingkungan Anda dan ikat domain Anda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-tomcat/04-environment-settings-button.png" alt="environment settings button" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-tomcat/04-environment-settings-button.png" alt="environment settings button" max-width="100%"/>
 
 Dalam contoh kami, kami akan menggunakan _**tomcatfirst.tk**_ untuk nama domain pertama, dan _**tomcatsecond.tk**_ untuk yang kedua.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-tomcat/05-bind-custom-domain.png" alt="bind custom domain" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-tomcat/05-bind-custom-domain.png" alt="bind custom domain" max-width="100%"/>
 
 5\. Sekarang Anda perlu melakukan deploy proyek.
 
@@ -45,11 +45,11 @@ Ketika formulir **Deploy** muncul, pilih lingkungan Anda dan tetapkan konteks (*
 
 Kemudian lakukan deploy aplikasi ini ke lingkungan yang sama tetapi dengan konteks yang berbeda, (misalnya **tomcatsecond**).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-tomcat/08-deploy-second-app.png" alt="deploying second app into environment" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-tomcat/08-deploy-second-app.png" alt="deploying second app into environment" max-width="100%"/>
 
 Setelah deployment selesai, Anda memiliki dua aplikasi yang dideploy di lingkungan Anda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-tomcat/09-environment-with-two-apps-deployed.png" alt="environment with two apps" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-tomcat/09-environment-with-two-apps-deployed.png" alt="environment with two apps" max-width="100%"/>
 
 6\. Sekarang klik tombol **Config** untuk Tomcat dan navigasikan ke file _**server.xml**_ (di direktori **/opt/tomcat/conf**).
 
@@ -77,11 +77,11 @@ Dalam contoh kami, tambahkan kode berikut ke file _**server.xml**_:
 </Host>
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-tomcat/11-adjust-tomcat-settings.png" alt="configuring tomcat server" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-tomcat/11-adjust-tomcat-settings.png" alt="configuring tomcat server" max-width="100%"/>
 
 7\. **Save** perubahan dan **restart** Tomcat.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-tomcat/12-restart-nodes-button.png" alt="restart nodes button" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/domain-name-management/multiple-domains-for-tomcat/12-restart-nodes-button.png" alt="restart nodes button" max-width="100%"/>
 
 8\. Sekarang Anda dapat memeriksa hasilnya. Kedua aplikasi Anda akan tersedia melalui nama domain yang ditentukan yang berjalan pada satu server Tomcat.
 

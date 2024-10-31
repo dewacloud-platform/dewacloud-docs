@@ -21,7 +21,7 @@ Dan sekarang mari kita cari tahu cara mendapatkan lingkungan Anda sendiri dengan
 
 3. Anda akan melihat wizard topologi lingkungan terbuka. Navigasikan ke tab dengan bahasa pemrograman yang diinginkan dan pilih instance **Redis** dari daftar database NoSQL yang tersedia. Atur jumlah cloudlet tetap dan dinamis untuk itu, beri nama lingkungan Anda, dan klik tombol **Buat**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/redis/redis-overview/redis-overview-2.png" alt="select Redis NoSQL database versions" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/redis/redis-overview/redis-overview-2.png" alt="select Redis NoSQL database versions" max-width="100%"/>
 
 4. Setelah lingkungan berhasil dibuat, Anda akan menerima email dengan data node Redis Anda: alamat DNS, alamat IP, nomor port yang dapat dihubungkan, dan kredensial akses.
 

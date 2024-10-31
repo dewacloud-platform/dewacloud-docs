@@ -38,7 +38,7 @@ Modifikasi yang sesuai diterapkan secara otomatis untuk menambahkan/menghapus no
 
 Setiap kali cluster di-scale _in_ atau _out_, proses **rebalancing** berlangsung. Ini mewakili operasi otomatis redistribusi data di seluruh node yang tersedia dalam cluster. Selama operasi ini, cluster tetap sepenuhnya dapat berfungsi dan terus melayani serta menangani permintaan klien.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/couchbase/couchbase-3.png" alt="couchbase cluster one click" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/couchbase/couchbase-3.png" alt="couchbase cluster one click" max-width="100%"/>
 
 Dengan cara ini, solusi Couchbase tercluster yang otomatis scalable oleh Jelastic mampu beroperasi tanpa henti, memastikan ketersediaan tinggi layanan Anda dengan keterlibatan minimal dari pihak Anda.
 
@@ -50,13 +50,13 @@ Dengan solusi kemasan pra-siap untuk instalasi satu klik yang dipertimbangkan, p
 
 1. Masuk ke [Jelastic Cloud](<https://jelastic.cloud/?utm_source=blog-couchbase>) dengan kredensial Anda dan klik **Marketplace** di panel atas.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/couchbase/couchbase-4.png" alt="couchbase docker container" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/couchbase/couchbase-4.png" alt="couchbase docker container" max-width="100%"/>
 
 Di dalam bagian **Apps**, gunakan kotak pencarian untuk menemukan paket _Auto Scalable Couchbase Cluster_ dan pilih **Instal**.  
 
 2. Di jendela yang terbuka, atur jumlah _Nodes in Cluster_ yang akan dibuat (dengan mempertimbangkan bahwa nilai ini akan ditetapkan sebagai ukuran cluster minimal dan tidak dapat dikurangi karena auto-scaling). Kemudian ketik nama _Environment_, dan, jika diinginkan, nama _Display Name_ alternatif ([alias](<https://docs.jelastic.com/environment-aliases/?utm_source=blog-couchbase>)) untuk itu.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/couchbase/couchbase-5.png" alt="couchbase cloud hosting" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/couchbase/couchbase-5.png" alt="couchbase cloud hosting" max-width="100%"/>
 
 Juga, pilih [_Region_](<https://docs.jelastic.com/environment-regions/?utm_source=blog-couchbase>) perangkat keras yang diinginkan (jika ada beberapa yang tersedia) dan klik **Instal**.  
 
@@ -66,7 +66,7 @@ Juga, pilih [_Region_](<https://docs.jelastic.com/environment-regions/?utm_sourc
 
 Klik tautan **Web Console** dan masukkan data ini untuk mengakses panel manajemen Couchbase yang sesuai melalui HTTPS.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/couchbase/couchbase-7.png" alt="install couchbase cluster one click" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/couchbase/couchbase-7.png" alt="install couchbase cluster one click" max-width="100%"/>
 
 Di halaman awal yang terbuka, Anda akan melihat _Cluster Overview_ umum, yang terdiri dari bagian-bagian berikut:
 

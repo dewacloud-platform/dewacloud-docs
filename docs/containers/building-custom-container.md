@@ -182,7 +182,7 @@ Jadi, pilih tombol **New Environment** di bagian atas dashboard, pindah ke tab _
 
 1\. Di sini, Anda dapat menggunakan tab _Search_ (untuk menambahkan image dari repositori Docker Hub) atau beralih ke bagian _Custom_, di mana Anda dapat mengoperasikan images dari jenis apa pun (termasuk yang privat) dan menyimpan template Anda agar mudah diakses.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/container/building-custom-container/building-custom-container-1.png" alt="add new custom image" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/building-custom-container/building-custom-container-1.png" alt="add new custom image" max-width="100%"/>
 
 Kami akan mempertimbangkan yang terakhir, jadi, setelah di dalam, pilih layer environment yang diperlukan di sebelah kiri (_App. Servers_ dalam kasus kami) dan klik tombol **Add New Image**.
 
@@ -198,7 +198,7 @@ Kami menggunakan repositori Docker Hub publik, yang terletak di dalam Registry H
 
 3\. Setelah itu, image Anda akan muncul dalam daftar. Dari sini, image ini dapat ditambahkan ke topologi hanya dengan sekali klik. Selain itu, template ini akan diingat dan akan tetap terdaftar di sini sehingga dapat dengan mudah ditemukan selama pemilihan container selanjutnya (hingga Anda menghapusnya dari daftar _Custom_ secara manual).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/container/building-custom-container/building-custom-container-3.png" alt="create custom WildFly image" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/building-custom-container/building-custom-container-3.png" alt="create custom WildFly image" max-width="100%"/>
 
 Tetapkan sisa [configurations](<https://docs.dewacloud.com/docs/custom-containers-deployment/>) yang diperlukan sendiri (detail tentang opsi yang tersedia dapat dibaca dalam panduan yang ditautkan) dan selesaikan pembentukan environment.
 
@@ -212,7 +212,7 @@ Dalam kasus Anda belum menempatkan template Anda ke layer environment _App. Serv
 
 Akibatnya, Anda akan melihat halaman mulai WildFly default, yang berarti semuanya telah dikonfigurasi dengan benar dan container baru Anda sepenuhnya operasional.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/container/building-custom-container/building-custom-container-5.png" alt="custom WildFly home page" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/building-custom-container/building-custom-container-5.png" alt="custom WildFly home page" max-width="100%"/>
 
 Sama seperti yang dijelaskan di atas, Anda dapat membuat image yang sudah dikonfigurasi sebelumnya lainnya sesuai dengan tujuan Anda dan, selanjutnya, dengan mudah menjalankannya dalam platform!
 

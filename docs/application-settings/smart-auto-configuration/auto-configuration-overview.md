@@ -22,7 +22,7 @@ Stack yang tercantum di atas memiliki beberapa keunikan dalam mendukung implemen
 
 Jika Anda ingin menonaktifkan _Smart Auto-Configuration_, tambahkan (atau edit jika sudah ada) variabel ini dengan nilai _false_ melalui dashboard.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/smart-auto-configuration/auto-configuration-overview/01-paas-autoconfig-variable.png" alt="PaaS autoconfig variable" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/smart-auto-configuration/auto-configuration-overview/01-paas-autoconfig-variable.png" alt="PaaS autoconfig variable" max-width="100%"/>
 
 Jangan lupa untuk **Restart Node(s)** untuk menerapkan perubahan.
 

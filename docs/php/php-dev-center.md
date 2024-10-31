@@ -38,7 +38,7 @@ Daftar terbaru rilis yang tersedia pada platform disediakan melalui dokumen [Sof
 
 Anda dapat memilih versi mesin yang Anda butuhkan saat pembuatan environment dan dengan mudah beralih di antaranya setelahnya melalui [platform UI](<https://docs.dewacloud.com/docs/php-versions/>) yang intuitif.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-dev-center/02-php-environment-creation.png" alt="PHP environment creation" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-dev-center/02-php-environment-creation.png" alt="PHP environment creation" max-width="100%"/>
 
 ## PHP Application Servers{#php-application-servers}
 
@@ -49,7 +49,7 @@ Dua server aplikasi PHP disediakan secara default dan didukung oleh platform (mi
 
 Untuk melihat secara rinci bagaimana server ini dapat dikonfigurasi dan menemukan daftar file konfigurasi yang dapat diedit untuk masing-masing, lihat dokumen [PHP App Server Configuration](<https://docs.dewacloud.com/docs/php-application-server-config/>).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-dev-center/03-php-file-manager.png" alt="PHP file manager" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-dev-center/03-php-file-manager.png" alt="PHP file manager" max-width="100%"/>
 
 ## PHP Application Deployment{#php-application-deployment}
 
@@ -67,7 +67,7 @@ Untuk keperluan produksi, Anda dapat mengikat nama domain eksternal ke aplikasi 
 
 Dengan bantuan fitur [swapping domains](<https://docs.dewacloud.com/docs/swap-domains/>), pengguna akhir aplikasi Anda tidak akan mengalami downtime apa pun ketika Anda, misalnya, mendeply versi aplikasi baru. Anda dapat menempatkan versi aplikasi baru Anda dalam environment uji dan kemudian menukar URL dengan environment produksi hanya dalam beberapa klik.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-dev-center/05-php-domains-management.png" alt="PHP domains management" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-dev-center/05-php-domains-management.png" alt="PHP domains management" max-width="100%"/>
 
 Menggunakan [multiple domains](<https://docs.dewacloud.com/docs/multiple-domains-php/>) pada server PHP tunggal meningkatkan kegunaan, efisiensi, dan skalabilitas aplikasi, secara bersamaan menghemat biaya untuk kebutuhan mendirikan instance terpisah.
 
@@ -101,7 +101,7 @@ Untuk mengkonfigurasi pemicu untuk automatic horizontal scaling, buka bagian **S
 
 Dengan cara ini, Anda dapat mengkonfigurasi pemicu untuk stack dan sumber daya (CPU, RAM, Network, Disk) tertentu dalam environment Anda secara terpisah. Cukup tentukan kondisi scaling dan terapkan perubahan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-dev-center/08-php-auto-horizontal-scaling.png" alt="PHP auto horizontal scaling" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-dev-center/08-php-auto-horizontal-scaling.png" alt="PHP auto horizontal scaling" max-width="100%"/>
 
 Silakan, temukan lebih banyak detail tentang [automatic horizontal scaling](<https://docs.dewacloud.com/docs/automatic-horizontal-scaling/>) dalam dokumen yang sesuai.
 
@@ -150,7 +150,7 @@ Panduan konfigurasi tambahan tersedia untuk server aplikasi tertentu:
 
 Cara lain untuk memastikan perlindungan aplikasi adalah dengan menggunakan [container firewall feature](<https://docs.dewacloud.com/docs/container-firewall/>). Ini memungkinkan Anda mengontrol ketersediaan nodes baik dari dalam maupun luar platform.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-dev-center/10-php-container-firewall.png" alt="PHP container firewall" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-dev-center/10-php-container-firewall.png" alt="PHP container firewall" max-width="100%"/>
 
 Jelajahi kemungkinan tanpa batas dari PHP dengan platform ini.
 

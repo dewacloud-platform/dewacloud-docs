@@ -25,7 +25,7 @@ Gunakan daftar isi di bawah ini untuk menemukan informasi yang diperlukan dalam 
 
 Untuk menjalankan aplikasi Node.js Anda, Anda perlu [mengatur](<https://docs.dewacloud.com/docs/setting-up-environment/>) environment yang sesuai menggunakan **Topology Wizard**. Pilih tab _**Node.js**_, lalu pilih versi engine yang diperlukan untuk server aplikasi Anda dan tambahkan [software stack](<https://docs.dewacloud.com/docs/software-stacks-versions/>) lainnya jika diperlukan. Jika perlu, sesuaikan parameter lainnya, seperti jumlah cloudlets dan nodes, Public IPv4 dan IPv6, dll.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/nodejs/nodejs-dev/nodejs-dev-1.png" alt="Node.js cloud hosting" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/nodejs/nodejs-dev/nodejs-dev-1.png" alt="Node.js cloud hosting" max-width="100%"/>
 
 :::note 
 Setiap instance adalah container yang sepenuhnya terisolasi, sepenuhnya independen dan tidak dipengaruhi oleh stack lainnya. Selain itu, node yang discaling secara otomatis didistribusikan di seluruh server fisik (atau VM) untuk memastikan availability yang tinggi.
@@ -80,7 +80,7 @@ Dewacloud mendukung dua jenis package manager:
 
 Secara default, package manager _npm_ digunakan untuk server aplikasi NodeJS, tetapi jika diperlukan, _npm_ dapat dengan mudah diganti ke _yarn_. Caranya, akses frame [container variables](<https://docs.dewacloud.com/docs/container-variables/>) dan atur value _**PACKAGE_MANAGER**_ yang sesuai (baik _npm_ atau _yarn_).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/nodejs/nodejs-dev/nodejs-dev-4.png" alt="Node.js package manager" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/nodejs/nodejs-dev/nodejs-dev-4.png" alt="Node.js package manager" max-width="100%"/>
 
 ## Node.js Process Managers{#nodejs-process-managers}
 
@@ -101,7 +101,7 @@ Aplikasi Node.js Anda dapat dengan mudah dilengkapi dengan [custom domain](<http
 
 Selain itu, Anda dapat dengan cepat mengalihkan traffic antara environment Anda (mis. untuk mengarahkan pelanggan ke versi aplikasi yang lebih baru tanpa downtime) dengan memanfaatkan fitur [swap domains](<https://docs.dewacloud.com/docs/swap-domains/>) atau dengan bantuan metode _**SwapExtIps**_ [API](<https://docs.jelastic.com/api/#!/api/environment.Binder-method-SwapExtIps>)/[CLI](<https://docs.dewacloud.com/docs/cli-ip-swap/>) .
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/nodejs/nodejs-dev/nodejs-dev-5.png" alt="Node.js domain management" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/nodejs/nodejs-dev/nodejs-dev-5.png" alt="Node.js domain management" max-width="100%"/>
 
 ## Automatic Vertical Scaling{#automatic-vertical-scaling}
 
@@ -130,7 +130,7 @@ Selain itu, untuk distribusi request yang tepat, sebuah instance [load balancer]
 
 Akses bagian **Settings > Monitoring > Auto Horizontal** Scaling environment untuk mengatur trigger khusus yang dapat disesuaikan, yang memungkinkan meningkatkan atau mengurangi jumlah node sesuai dengan load aplikasi. Konfigurasikan jenis resource yang akan dipantau (_CPU_, _RAM_, _Network_, _Disk_) dan kondisi scaling yang tepat.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/nodejs/nodejs-dev/nodejs-dev-8.png" alt="Node.js automatic horizontal scaling" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/nodejs/nodejs-dev/nodejs-dev-8.png" alt="Node.js automatic horizontal scaling" max-width="100%"/>
 
 Pelajari lebih lanjut tentang [automatic horizontal scaling](<https://docs.dewacloud.com/docs/automatic-horizontal-scaling/>) dalam dokumen terhubung.
 

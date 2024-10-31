@@ -35,7 +35,7 @@ Tumpukan **OpenSearch** adalah komponen inti dan satu-satunya komponen wajib dar
 
 Setelah dibuat, node OpenSearch tersedia di port _9200_ untuk komunikasi internal antara node lingkungan dan port _4848_ untuk layanan eksternal melalui load balancer bersama. HTTP basic auth digunakan dalam kedua kasus (kata sandi dapat diatur ulang menggunakan tombol **Reset Password**).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/opensearch/opensearch-1.png" alt="OpenSearch reset password" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/opensearch/opensearch-1.png" alt="OpenSearch reset password" max-width="100%"/>
 
 Tumpukan OpenSearch mendapatkan semua fungsionalitas yang tersedia untuk template bersertifikat lainnya - manajer file dashboard, Web SSH, penampil log dashboard, dll.
 
@@ -49,7 +49,7 @@ Node OpenSearch tersedia melalui browser, tetapi hanya menampilkan JSON dengan r
 
 Setelah login, antarmuka OpenSearch Dashboards ditampilkan. Dashboard menyediakan UI untuk interaksi yang nyaman dengan API OpenSearch dan pengeditan data Anda (setelah membuat pola indeks).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/opensearch/opensearch-3.png" alt="OpenSearch Dashboard UI" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/opensearch/opensearch-3.png" alt="OpenSearch Dashboard UI" max-width="100%"/>
 
 :::warning
 OpenSearch Dashboards bukanlah tumpukan terpisah dan tidak dapat dibuat terpisah dari OpenSearch. Selain itu, terbatas pada satu node karena skala tidak memberikan manfaat tambahan.
@@ -61,7 +61,7 @@ Semua fungsionalitas reguler dari template bersertifikat (manajer file dashboard
 
 **Logstash** adalah komponen pemroses data dari cluster OpenSearch yang dikonfigurasi secara otomatis oleh platform. Di bawah ini, Anda dapat melihat contoh auto-konfigurasi default untuk _**/etc/logstash/conf.d/logstash-sample.conf**_:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/opensearch/opensearch-4.png" alt="Logstash configs" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/opensearch/opensearch-4.png" alt="Logstash configs" max-width="100%"/>
 
 Input untuk _[Beats](<https://www.virtuozzo.com/application-platform-docs/#beats-add-on>)_ ditetapkan pada port _5044_, dan output OpenSearch ditentukan dengan mengatur host, username, dan password untuk interkoneksi. [Plugin](<https://www.elastic.co/guide/en/logstash/current/working-with-plugins.html>) untuk jenis input lainnya dapat diinstal dengan alat _logstash-plugin_, dan konfigurasi dapat ditambahkan ke file yang sama (dengan port lain).
 
@@ -84,7 +84,7 @@ Untuk koneksi langsung, Anda perlu menambahkan baris berikut ke konfigurasi Open
 
   * _**latest**_ - untuk mengirim data ke OpenSearch melalui [Logstash](<https://docs.dewacloud.com/docs/#logstash>)
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/opensearch/opensearch-5.png" alt="Beats add-on" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/opensearch/opensearch-5.png" alt="Beats add-on" max-width="100%"/>
 
 Selama instalasi, Anda perlu memberikan data berikut:
 
@@ -111,7 +111,7 @@ Mengirim data secara bersamaan ke output OpenSearch dan Logstash tidak didukung 
 
 Pengaturan ini juga dapat diedit untuk add-on yang sudah terpasang menggunakan tombol **Configure**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/opensearch/opensearch-6.png" alt="configure Beats add-on" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/opensearch/opensearch-6.png" alt="configure Beats add-on" max-width="100%"/>
 
 ## Instalasi Cluster OpenSearch{#opensearch-cluster-installation}
 
@@ -119,7 +119,7 @@ Pembuatan Cluster OpenSearch di platform adalah proses yang sederhana dan sepenu
 
 Pilih tumpukan **OpenSearch** di bagian _database NoSQL_.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/opensearch/opensearch-7.png" alt="OpenSearch topology wizard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/opensearch/opensearch-7.png" alt="OpenSearch topology wizard" max-width="100%"/>
 
 Tumpukan secara otomatis dikonfigurasi sebagai cluster karena fitur [auto-clustering](<https://docs.dewacloud.com/docs/auto-clustering/>). Selain itu, Anda memiliki opsi tambahan untuk menambahkan komponen **OpenSearch Dashboards** dan **Logstash**.
 
@@ -131,11 +131,11 @@ Di bawah ini, kami membagikan hasil pengujian kinerja pada dua lingkungan Magent
 
   * _Magento dengan Elasticsearch_
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/opensearch/opensearch-8.png" alt="ElasticSearch statistics" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/opensearch/opensearch-8.png" alt="ElasticSearch statistics" max-width="100%"/>
 
   * _Magento dengan OpenSearch_
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/opensearch/opensearch-9.png" alt="OpenSearch statistics" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/opensearch/opensearch-9.png" alt="OpenSearch statistics" max-width="100%"/>
 
 Seperti yang Anda lihat, OpenSearch menyediakan fungsionalitas dan kinerja yang sama seperti Elasticsearch dan dapat digunakan sebagai pengganti yang sepenuhnya dapat dipertanggungjawabkan.
 

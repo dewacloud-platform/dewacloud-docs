@@ -9,7 +9,7 @@ title: Volume Provisioner
 
 Platform ini memungkinkan konfigurasi otomatis penyedia volume NFS selama [instalasi](<https://docs.dewacloud.com/docs/kubernetes-cluster-installation>). Solusi semacam itu secara otomatis menyediakan volume persisten setiap kali PVC dibuat. Dengan demikian, tidak perlu mengatur PV dengan _AccessMode_ atau _[StorageClass](<https://kubernetes.io/docs/concepts/storage/persistent-volumes/#class>)_ yang diinginkan secara manual.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/persistent%20data/Volume%20Provisioner/01-kubernetes-cluster-add-nfs-storage.png" alt="kubernetes cluster add nfs storage" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/persistent%20data/Volume%20Provisioner/01-kubernetes-cluster-add-nfs-storage.png" alt="kubernetes cluster add nfs storage" max-width="100%"/>
 
 :::tip
 Implementasi platform dari penyedia volume NFS untuk paket Kubernetes Cluster menggunakan _Shared Storage Container_ yang didedikasikan. Anda dapat menemukannya di topologi lingkungan. _jelastic-dynamic-volume_ adalah _StorageClass_ default di Kubernetes Cluster. Di sini, semua data disimpan di direktori /data.

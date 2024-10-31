@@ -17,11 +17,11 @@ Ikuti instruksi di bawah ini untuk mempelajari cara menghubungkan aplikasi PHP A
 
 2\. [Create](<https://docs.dewacloud.com/docs/setting-up-environment/>) sebuah environment dengan server aplikasi **PHP** (misalnya, _Apache PHP_) dan database **PostgreSQL**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/php-connection/php-connection-1.png" alt="create php environment with postgresql" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/php-connection/php-connection-1.png" alt="create php environment with postgresql" max-width="100%"/>
 
 3\. Periksa kotak masuk email Anda untuk pesan dengan kredensial database (login dan password).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/php-connection/php-connection-2.png" alt="postgresql credentials email" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/php-connection/php-connection-2.png" alt="postgresql credentials email" max-width="100%"/>
 
 Sekarang, Anda dapat mengakses database melalui panel admin web dan menghubungkannya ke aplikasi PHP Anda.
 
@@ -29,17 +29,17 @@ Sekarang, Anda dapat mengakses database melalui panel admin web dan menghubungka
 
 1\. Klik tombol **Config** untuk server _Apache_ Anda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/php-connection/php-connection-3.png" alt="apache php config button" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/php-connection/php-connection-3.png" alt="apache php config button" max-width="100%"/>
 
 2\. Arahkan ke folder **etc** dan buka file _**php.ini**_.
 
 Tambahkan baris **extension=pgsql.so** seperti yang ditunjukkan pada gambar di bawah ini.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/php-connection/php-connection-4.png" alt="apache php add pgsql module" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/php-connection/php-connection-4.png" alt="apache php add pgsql module" max-width="100%"/>
 
 3\. **Simpan** perubahan dan **Restart nodes** untuk server Apache Anda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/php-connection/php-connection-5.png" alt="apache php restart nodes button" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/php-connection/php-connection-5.png" alt="apache php restart nodes button" max-width="100%"/>
 
 4\. Terdapat dua fungsi utama **[PG functions](<http://php.net/manual/en/ref.pgsql.php>)** untuk beroperasi dengan server database:
 

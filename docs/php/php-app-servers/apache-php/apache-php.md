@@ -9,7 +9,7 @@ Platform ini mengadaptasi [Apache HTTP Server](<https://httpd.apache.org/>) ("_h
 
 :::note 
 Template ini menggunakan modernsystemdinitialization daemon. Daftar semua modul yang dimuat di server dapat dilihat dengan perintah apachectl -M atau pada halaman phpinfo default.
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-php/01-phpinfo-loaded-modules.png" alt="phpinfo loaded modules" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-php/01-phpinfo-loaded-modules.png" alt="phpinfo loaded modules" max-width="100%"/>
 :::
 
 Untuk mendapatkan server _Apache PHP_ Anda, ikuti langkah-langkah di bawah ini:
@@ -20,17 +20,17 @@ Untuk mendapatkan server _Apache PHP_ Anda, ikuti langkah-langkah di bawah ini:
 
 2\. Dalam _topology wizard_ yang terbuka, beralihlah ke tab **PHP** dan pilih _**Apache**_ sebagai server aplikasi Anda. Atur konfigurasi lain sesuai kebutuhan Anda (misalnya [cloudlets limit](<https://docs.dewacloud.com/docs/automatic-vertical-scaling/>), [public IPs](<https://docs.dewacloud.com/docs/public-ip/>), [region](<https://docs.dewacloud.com/docs/environment-regions/>), dll.).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-php/03-apache-php-topology-wizard.png" alt="Apache PHP topology wizard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-php/03-apache-php-topology-wizard.png" alt="Apache PHP topology wizard" max-width="100%"/>
 
 Ketik nama environment Anda dan klik **Create**.
 
 3\. Setelah environment dibuat, Anda dapat mengklik tombol **Open in Browser** di samping server aplikasi _Apache_:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-php/04-apache-php-open-in-browser.png" alt="Apache PHP open in browser" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-php/04-apache-php-open-in-browser.png" alt="Apache PHP open in browser" max-width="100%"/>
 
 4\. Pada halaman default yang terbuka, Anda akan melihat data _**phpinfo**_ server Anda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-php/05-apache-phpinfo-start-page.png" alt="Apache phpinfo start page" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-php/05-apache-phpinfo-start-page.png" alt="Apache phpinfo start page" max-width="100%"/>
 
 Sekarang, Anda dapat [mendeploy](<https://docs.dewacloud.com/docs/deployment-guide/>) aplikasi PHP Anda ke dalam environment.
 
@@ -46,7 +46,7 @@ Sebagai contoh, kami akan menunjukkan bagaimana Anda dapat mengubah ukuran file 
 
 1\. Klik tombol **Config** untuk server Apache Anda untuk mengakses [configuration file manager](<https://docs.dewacloud.com/docs/configuration-file-manager/>):
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-php/06-apache-php-config-button.png" alt="Apache PHP config button" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-php/06-apache-php-config-button.png" alt="Apache PHP config button" max-width="100%"/>
 
 2\. Buka file _**/etc/php.ini**_ (tersedia melalui pintasan _Favorites_) dan temukan parameter berikut:
 
@@ -63,7 +63,7 @@ Terlepas dari pengaturan ini, ukuran file maksimum yang dapat diunggah melalui p
 
 3\. Jangan lupa untuk **Save** perubahan dan **Restart Nodes** dari server aplikasi Anda untuk menerapkan pengaturan baru.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-php/09-apache-php-restart-nodes.png" alt="Apache PHP restart nodes" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/apache-php/09-apache-php-restart-nodes.png" alt="Apache PHP restart nodes" max-width="100%"/>
 
 Untuk informasi lebih lanjut tentang konfigurasi server PHP, lihat panduan yang sesuai:
 

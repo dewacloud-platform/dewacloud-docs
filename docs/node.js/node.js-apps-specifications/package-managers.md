@@ -15,7 +15,7 @@ Setiap server aplikasi Node.js yang dibuat di dalam platform disediakan dengan o
 Secara default, package manager _**npm**_ akan digunakan untuk deployment [archive](https://docs.dewacloud.com/docs/deployment-guide/#archive-deployment-configurations) atau [Git](https://docs.dewacloud.com/docs/deployment-guide/#git--svn-deployment-configurations) melalui dashboard Dewacloud, tetapi bisa dengan mudah diubah ke _**yarn**_ jika diperlukan. Untuk itu, buka menu _ [variable](https://docs.dewacloud.com/docs/container-variables/) dan atur _**PACKAGE_MANAGER** ke value _npm_ atau _yarn_.
 
 <p>
-<img src="https://assets.dewacloud.com/dewacloud-docs/nodejs/package-manager/npm.png" alt="NodeJS package manager variable" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/nodejs/package-manager/npm.png" alt="NodeJS package manager variable" max-width="100%"/>
 </p>
 
 Di bawah ini kami akan menjelaskan dasar-dasar dari kedua package manager tersebut, yang bertujuan untuk membantu Anda menentukan mana yang paling sesuai:

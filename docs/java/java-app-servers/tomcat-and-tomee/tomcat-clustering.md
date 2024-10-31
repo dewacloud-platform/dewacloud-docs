@@ -26,7 +26,7 @@ Jika salah satu server mengalami kegagalan, pengguna dari node tersebut akan sec
 
 3\. Pilih **Tomcat** sebagai server aplikasi yang ingin Anda gunakan, tentukan batas cloudlet dan nyalakan **High-availability** seperti yang ditunjukkan pada gambar di bawah ini. Tentukan nama lingkungan dan klik **Create**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-cluster/tomcat-cluster-3.png" alt="Tomcat cluster in topology wizard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-cluster/tomcat-cluster-3.png" alt="Tomcat cluster in topology wizard" max-width="100%"/>
 
 :::note 
 Horizontal scaling dan mode High Availability adalah dua fungsionalitas berbeda di platform. Dengan yang pertama, Anda memiliki beberapa server dan beban didistribusikan secara merata di antara jumlah instance yang dipilih dengan load balancer. Mode High Availability mengatur replikasi antara pasangan atau beberapa pasangan server menggunakan keanggotaan multicast.

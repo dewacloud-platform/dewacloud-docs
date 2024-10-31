@@ -21,7 +21,7 @@ Pembuatan VPS Debian semudah membuat certified stack lainnya dan dapat dilakukan
 Buka wizard topologi environment dengan mengklik tombol **New Environment** di bagian atas dashboard Dewacloud. Perluas bagian _VPS_ dan pilih template _**Debian**_ dan versi yang diperlukan dari opsi yang tersedia.
 
 <p>
-<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/vps-debian.png" alt="Debian VPS wizard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/vps-debian.png" alt="Debian VPS wizard" max-width="100%"/>
 </p>
 
 :::note

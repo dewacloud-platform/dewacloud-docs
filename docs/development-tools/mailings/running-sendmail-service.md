@@ -43,7 +43,7 @@ Cara termudah untuk membuka Sendmail adalah dengan mengaktifkan [public IP](<htt
 
 Kemudian cukup aktifkan switcher yang sesuai di lapisan _App Server_ dan konfirmasikan perubahan dengan tombol **Apply** di sudut kanan bawah frame wizard.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/mailings/running-sendmail-service/running-sendmail-service-4.png" alt="enable public IP" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/mailings/running-sendmail-service/running-sendmail-service-4.png" alt="enable public IP" max-width="100%"/>
 
 Setelah konfirmasi dan lampiran alamat IP eksternal, layanan Sendmail akan secara otomatis dimulai, sehingga Anda dapat langsung [menggunakannya](<https://docs.dewacloud.com/docs/#send-message-via-sendmail>).
 
@@ -69,7 +69,7 @@ di mana:
   * `{from_address}` - alamat email pengirim dalam format _mail@example.com_
   * `{to_address}` - alamat email penerima (dalam format _mail@example.com_ yang sama)
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/mailings/running-sendmail-service/running-sendmail-service-5.png" alt="send email with Sendmail" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/mailings/running-sendmail-service/running-sendmail-service-5.png" alt="send email with Sendmail" max-width="100%"/>
 
 3\. Untuk memastikan semuanya berfungsi seperti yang diharapkan, akses akun email yang Anda kirimi pesan dan periksa kotak masuk untuk pesan baru (pengiriman dapat memerlukan waktu hingga beberapa menit).
 

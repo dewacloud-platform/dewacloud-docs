@@ -7,7 +7,7 @@ title: MongoDB Sandbox
 
 Jika Anda ingin mencoba versi terbaru dari MongoDB, Anda memiliki opsi untuk mengujinya tanpa [biaya lisensi](<https://docs.dewacloud.com/docs/mongodb-license/>) tambahan. Pergi ke tab Marketplace di bagian atas dashboard Anda dan cari aplikasi **MongoDB Sandbox**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/mongodb-sandbox/01-marketplace-mongodb-sandbox.png" alt="Marketplace MongoDB Sandbox" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/mongodb-sandbox/01-marketplace-mongodb-sandbox.png" alt="Marketplace MongoDB Sandbox" max-width="100%"/>
 
 Jika Anda tidak dapat menemukan aplikasi tersebut, Anda dapat meminta penambahan template **MongoDB Sandbox**. Hubungi Tim Dukungan platform Anda (misalnya, dapat diakses langsung dari dashboard) dan minta akses ke gambar sandbox MongoDB untuk akun Anda.
 

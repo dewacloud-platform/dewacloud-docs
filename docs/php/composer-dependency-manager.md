@@ -22,7 +22,7 @@ Anda secara otomatis diberikan versi terbaru dari Composer selama pembuatan node
 
 1\. Terhubung ke node yang sesuai melalui SSH. Misalnya, menggunakan [Web SSH](<https://docs.dewacloud.com/docs/web-ssh-client/>) bawaan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/composer-dependency-manager/02-apache-web-ssh-access.png" alt="Apache Web SSH access" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/composer-dependency-manager/02-apache-web-ssh-access.png" alt="Apache Web SSH access" max-width="100%"/>
 
 2\. Unduh penginstal Composer dengan perintah berikut:
 
@@ -30,7 +30,7 @@ Anda secara otomatis diberikan versi terbaru dari Composer selama pembuatan node
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/composer-dependency-manager/03-ssh-download-composer-installer.png" alt="SSH download Composer installer" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/composer-dependency-manager/03-ssh-download-composer-installer.png" alt="SSH download Composer installer" max-width="100%"/>
 
 3\. Instal Composer ke direktori saat ini.
 
@@ -38,7 +38,7 @@ php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 php composer-setup.php --install-dir=./ --filename=composer
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/composer-dependency-manager/04-ssh-install-php-composer.png" alt="SSH install PHP Composer" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/composer-dependency-manager/04-ssh-install-php-composer.png" alt="SSH install PHP Composer" max-width="100%"/>
 
 :::tip 
 Jika diperlukan, Anda dapat berpindah ke direktori yang diperlukan sebelum operasi atau menyesuaikan jalur melalui parameter install-dir. Namun, Anda tidak dapat menginstal ke direktori **/usr/local/bin/** dengan instance Composer awal.
@@ -50,14 +50,14 @@ Jika diperlukan, Anda dapat berpindah ke direktori yang diperlukan sebelum opera
 ./composer about
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/composer-dependency-manager/05-ssh-php-composer-about.png" alt="SSH PHP Composer about" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/composer-dependency-manager/05-ssh-php-composer-about.png" alt="SSH PHP Composer about" max-width="100%"/>
 
 :::tip 
 Jika dependency manager berfungsi dengan baik, kami menyarankan untuk menghapus penginstal (karena tidak diperlukan lagi).  
 ```
 php -r "unlink('composer-setup.php');"
 ```
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/composer-dependency-manager/06-ssh-remove-composer-installer.png" alt="SSH Remove Composer Installer" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/composer-dependency-manager/06-ssh-remove-composer-installer.png" alt="SSH Remove Composer Installer" max-width="100%"/>
 
 :::
 

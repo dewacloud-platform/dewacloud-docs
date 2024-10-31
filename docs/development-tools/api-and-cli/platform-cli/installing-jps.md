@@ -46,7 +46,7 @@ Add-on **[TimeZone Change](https://docs.dewacloud.com/docs/timezone-management/#
 ~/jelastic/marketplace/jps/install --jps \{jps\} --envName \{envName\} --settings \{settings\} --nodeGroup \{nodeGroup\}
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/cli-install-jps/01-cli-install-timezone-addon.png" alt="CLI install timezone addon" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/cli-install-jps/01-cli-install-timezone-addon.png" alt="CLI install timezone addon" max-width="100%"/>
 
 Di sini:
 
@@ -64,7 +64,7 @@ Jika tidak ada masalah, skrip akan merespons dengan _“result”: 0_ (yaitu ope
 ~/jelastic/environment/file/read --envName \{envName\} --path "/var/log/jpsaddon.log" --nodeGroup \{nodeGroup\}
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/cli-install-jps/02-cli-read-file-on-application-server.png" alt="CLI read file on application server" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/cli-install-jps/02-cli-read-file-on-application-server.png" alt="CLI read file on application server" max-width="100%"/>
 
 Seperti yang Anda lihat, zona waktu telah berhasil diset seperti yang ditentukan pada langkah sebelumnya, _America/New_York_ dalam kasus kami. Waktu lokal pada kontainer terkait disesuaikan sesuai dengan zona waktu baru ini.
 
@@ -91,7 +91,7 @@ Jika diperlukan, Anda dapat menyediakan semua parameter dalam satu file dan meru
 }
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/cli-install-jps/03-create-config-with-example-jps.png" alt="create config with example JPS" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/cli-install-jps/03-create-config-with-example-jps.png" alt="create config with example JPS" max-width="100%"/>
 
 :::tip
 
@@ -105,7 +105,7 @@ Dimungkinkan untuk menyediakan URL ke file manifest Anda, daripada menentukannya
 ~/jelastic/marketplace/jps/install --myparams \{myparams.json\}
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/cli-install-jps/04-cli-install-jps-with-configuration-file.png" alt="CLI install JPS with configuration file" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/cli-install-jps/04-cli-install-jps-with-configuration-file.png" alt="CLI install JPS with configuration file" max-width="100%"/>
 
 :::tip
 
@@ -119,7 +119,7 @@ Jika diperlukan, Anda dapat secara eksplisit menyediakan parameter untuk mendefi
 
 3. Anda dapat memastikan bahwa nilai dari parameter yang disediakan telah berhasil dicatat melalui konsol platform (`https://app.[{platformDomain}](https://docs.dewacloud.com/docs/hosting-providers/)/console`).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/cli-install-jps/05-jps-installation-console-log.png" alt="JPS installation console log" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/cli-install-jps/05-jps-installation-console-log.png" alt="JPS installation console log" max-width="100%"/>
 
 Penggunaan file konfigurasi dengan daftar parameter yang telah ditentukan adalah cara yang bagus untuk menyederhanakan dan mengotomatisasi panggilan yang sering.
 

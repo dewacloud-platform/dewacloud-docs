@@ -24,7 +24,7 @@ Keamanan tambahan dapat diperoleh dengan menonaktifkan fungsi-fungsi berikut:
 _disable_functions = exec,passthru,shell_exec,system,proc_open,popen,curl_exec,curl_multi_exec,parse_ini_file,show_source_  
 
 ![insecure php functions](#)
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-security-settings/insecure-php-functions.png" alt="insecure php functions" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-security-settings/insecure-php-functions.png" alt="insecure php functions" max-width="100%"/>
 
 2\. Batasi jumlah **_sumber daya yang diizinkan_**, jika dapat diterima untuk aplikasi Anda:
 

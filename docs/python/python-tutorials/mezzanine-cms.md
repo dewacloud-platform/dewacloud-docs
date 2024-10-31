@@ -29,7 +29,7 @@ Untuk meng-host Mezzanine CMS, Anda memerlukan server aplikasi berbasis Python. 
 
 2\. Buka tab **Python**, di mana server aplikasi Apache Python yang diperlukan akan dipilih secara default.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/apache-python-application-server.png" alt="python cms" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/apache-python-application-server.png" alt="python cms" max-width="100%"/>
 
 :::note
 Mezzanine CMS belum mendukung **_Python 3.7_**, dan juga tidak mendukung **_Python 2.7_** setelah rilis _1.4_. Oleh karena itu, disarankan untuk memilih antara versi engine **_3.4-3.6_**.
@@ -39,7 +39,7 @@ Jika diperlukan, konfigurasikan pengaturan lainnya (misalnya [cloudlet limit](<h
 
 3\. Environment Anda akan muncul di dashboard dalam beberapa saat.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/mezzanine-environment.png" alt="mezzanine cms tutorial" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/mezzanine-environment.png" alt="mezzanine cms tutorial" max-width="100%"/>
 
 Sekarang, Anda dapat melanjutkan ke deployment aplikasi Mezzanine CMS (secara otomatis dari archive yang sudah dikemas sebelumnya atau secara manual).
 
@@ -65,11 +65,11 @@ Jika mengonfigurasi archive deployment sendiri, pastikan paket Mezzanine CMS And
 
 3\. Setelah deployment berhasil, klik **Open in Browser** di sebelah environment Anda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/open-mezzanine-app-in-browser.png" alt="django-based cms" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/open-mezzanine-app-in-browser.png" alt="django-based cms" max-width="100%"/>
 
 4\. Selesai, Mezzanine CMS Anda berjalan dalam beberapa menit!
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/application-welcome-page.png" alt="mezzanine sqlite" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/application-welcome-page.png" alt="mezzanine sqlite" max-width="100%"/>
 
 Mulailah bekerja dengan aplikasi Mezzanine CMS Anda (kredensial default untuk panel admin adalah - **_admin_** /**_default_**).
 
@@ -81,7 +81,7 @@ Proses deployment Mezzanine CMS dapat dibagi menjadi tiga langkah: instalasi, ko
 
 1\. Hubungkan ke server aplikasi Anda melalui [**Web SSH**](<https://docs.dewacloud.com/docs/web-ssh-client/>).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/mezzanine-cms-web-ssh.png" alt="mezzanine postgresql" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/mezzanine-cms-web-ssh.png" alt="mezzanine postgresql" max-width="100%"/>
 
 2\. Praktik umum menjalankan aplikasi web Python di virtual environment yang terisolasi adalah dengan menggunakan alat **virtual environment**, yang memungkinkan pengelolaan ketergantungan proyek secara independen dan tanpa hak administrator.
 
@@ -92,7 +92,7 @@ virtualenv virtenv
 source virtenv/bin/activate
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/mezzanine-web-ssh-session.png" alt="cloud cms" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/mezzanine-web-ssh-session.png" alt="cloud cms" max-width="100%"/>
 
 3\. Gunakan **_pip_** package manager untuk mengunduh Mezzanine content manager:
 
@@ -100,7 +100,7 @@ source virtenv/bin/activate
 pip install mezzanine
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/mezzanine-web-ssh-duplicate-session.png" alt="python cms" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/mezzanine-web-ssh-duplicate-session.png" alt="python cms" max-width="100%"/>
 
 :::note
 Pada server dengan versi **_Python 2.7_**, Anda harus mendefinisikan versi Mezzanine yang sesuai secara eksplisit, yaitu _pip install mezzanine==1.4_.
@@ -113,7 +113,7 @@ rm -rf ROOT
 mezzanine-project ROOT
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/install-mezzanine-project.png" alt="mezzanine hosting" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/install-mezzanine-project.png" alt="mezzanine hosting" max-width="100%"/>
 
 Sekarang, Anda perlu mengkonfigurasi database untuk aplikasi tersebut.
 
@@ -128,19 +128,19 @@ Jika opsi pertama sudah cukup bagi Anda, lewati bagian ini dan lanjutkan ke bagi
 
 1\. Buat instance database yang diinginkan. Sebagai contoh, kami akan menambahkan server **MySQL** ke environment terpisah.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/add-mysql-environment.png" alt="mezzanine mysql" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/add-mysql-environment.png" alt="mezzanine mysql" max-width="100%"/>
 
 2\. Masuk ke panel admin database Anda dengan kredensial dari email yang sesuai (dikirim secara otomatis setelah pembuatan node DB).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/login-to-the-database.png" alt="content management system" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/login-to-the-database.png" alt="content management system" max-width="100%"/>
 
 3\. Beralih ke tab **User accounts** dan klik tautan _Add user account_ untuk membuat akun baru yang akan digunakan oleh aplikasi Mezzanine CMS untuk mengakses database.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/user-accounts-overview.png" alt="django-based cms" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/user-accounts-overview.png" alt="django-based cms" max-width="100%"/>
 
 4\. Pada halaman yang terbuka, tentukan _User name_ /_Password_ yang diinginkan dan centang kotak _Create database with same name and grant all privileges_.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/add-native-mysql-user-account.png" alt="django-based cms" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/add-native-mysql-user-account.png" alt="django-based cms" max-width="100%"/>
 
 Gulir ke bawah dan klik **Go**.
 
@@ -159,7 +159,7 @@ DATABASES = {
 }
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/mezzanine-local-settings.png" alt="mezzanine cms settings" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/mezzanine-local-settings.png" alt="mezzanine cms settings" max-width="100%"/>
 
 Berikut ini:
 
@@ -176,7 +176,7 @@ Berikut ini:
 pip install mysqlclient
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/pip-install-mysqlclient.png" alt="mysql" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/pip-install-mysqlclient.png" alt="mysql" max-width="100%"/>
 
 :::note
 Untuk menginstal Python connector untuk database **_PostgreSQL_**, dapatkan modul _psycopg2_ menggunakan **_pip_**:
@@ -199,7 +199,7 @@ cd ROOT
 python manage.py createdb --noinput
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/create-db.png" alt="django framework" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/create-db.png" alt="django framework" max-width="100%"/>
 
 Penggunaan parameter _\--noinput_ secara otomatis membuat akun admin Mezzanine dengan kredensial **_admin_** /**_default_**.
 
@@ -225,7 +225,7 @@ from mezzanine.utils.conf import real_project_name
 application = get_wsgi_application()
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/run-mezzanine-application.png" alt="django framework" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/run-mezzanine-application.png" alt="django framework" max-width="100%"/>
 
 Jangan lupa untuk **Save** perubahan.
 
@@ -236,7 +236,7 @@ ln -sfT ~/ROOT/ROOT/wsgi.py ~/ROOT/wsgi.py
 python manage.py collectstatic
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/collect-a-static-content.png" alt="mezzanine cms" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/collect-a-static-content.png" alt="mezzanine cms" max-width="100%"/>
 
 Sekarang, konten statis aplikasi disimpan di direktori **~/ROOT/static**.
 
@@ -246,21 +246,21 @@ Sekarang, konten statis aplikasi disimpan di direktori **~/ROOT/static**.
 ALLOWED_HOSTS = ["{envDomain}"]
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/adjust-the-allowed-hosts.png" alt="mezzanine settings" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/adjust-the-allowed-hosts.png" alt="mezzanine settings" max-width="100%"/>
 
 5\. Selesai! Klik tombol **Open in Browser** di sebelah environment Anda untuk mengakses Mezzanine CMS.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/open-mezzanine-in-browser.png" alt="install mezzanine" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/open-mezzanine-in-browser.png" alt="install mezzanine" max-width="100%"/>
 
 6\. Halaman sambutan aplikasi akan terbuka secara default.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/application-welcome-page.png" alt="python application deployment" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/application-welcome-page.png" alt="python application deployment" max-width="100%"/>
 
 Ikuti hyperlink _Log in to the admin interface_ untuk mengakses panel admin.
 
 7\. Masuk dengan kredensial akun admin default (yaitu **admin** / **default**).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/mezzanine-dashboard.png" alt="mezzanine mysql" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/mezzanine-cms/mezzanine-dashboard.png" alt="mezzanine mysql" max-width="100%"/>
 
 :::tip
 Untuk alasan keamanan, disarankan untuk segera mengganti kata sandi default Anda setelah pertama kali masuk.

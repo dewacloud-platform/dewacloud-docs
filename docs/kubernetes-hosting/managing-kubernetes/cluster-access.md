@@ -20,7 +20,7 @@ Informasi yang sama juga disediakan melalui email notifikasi yang sesuai.
 
 2\. Ikuti tautan tersebut, pilih opsi **Token**, dan tempelkan nilai yang diperlukan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/managing%20kubernetes/Cluster%20Access/02-kubernetes-dashboard-token-access.png" alt="Kubernetes dashboard token access" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/managing%20kubernetes/Cluster%20Access/02-kubernetes-dashboard-token-access.png" alt="Kubernetes dashboard token access" max-width="100%"/>
 
 :::tip
 Anda juga dapat login dengan berkas kubeconfig; namun, Anda perlu menginstal kubectl dan mengatur konteks yang tepat (lihat bagian di bawah).
@@ -32,7 +32,7 @@ Anda juga dapat login dengan berkas kubeconfig; namun, Anda perlu menginstal kub
 kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep fulladmin | awk '{print $1}') | grep 'token:' | sed -e's/token:\| //g'
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/managing%20kubernetes/Cluster%20Access/03-view-kubernetes-access-token.png" alt="view Kubernetes access token" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/managing%20kubernetes/Cluster%20Access/03-view-kubernetes-access-token.png" alt="view Kubernetes access token" max-width="100%"/>
 
 Sekarang, Anda dapat mengakses Kubernetes Dashboard sekali lagi.
 
@@ -62,7 +62,7 @@ Jika Anda belum mengaktifkan Remote API selama instalasi, itu dapat dilakukan me
 kubectl get pods
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/managing%20kubernetes/Cluster%20Access/05-kubectl-access-to-kubernetes-cluster.png" alt="kubectl access to Kubernetes cluster" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/managing%20kubernetes/Cluster%20Access/05-kubectl-access-to-kubernetes-cluster.png" alt="kubectl access to Kubernetes cluster" max-width="100%"/>
 
 Anda harus melihat informasi tentang pods di namespace default.
 

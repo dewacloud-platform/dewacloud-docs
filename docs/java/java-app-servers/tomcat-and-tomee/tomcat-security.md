@@ -25,7 +25,7 @@ Untuk mengatur autentikasi di depan aplikasi web Anda yang dideploy ke server To
 <user username="test" password="test" roles="admin">
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-security/tomcat-security-1.png" alt="tomcat users" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-security/tomcat-security-1.png" alt="tomcat users" max-width="100%"/>
 
 Simpan perubahan yang dilakukan.
 
@@ -47,7 +47,7 @@ Simpan perubahan yang dilakukan.
 </login-config> 
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-security/tomcat-security-2.png" alt="web xml tomcat" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-security/tomcat-security-2.png" alt="web xml tomcat" max-width="100%"/>
 
 4\. Jangan lupa untuk **Save** perubahan dan **Restart** server aplikasi Tomcat Anda.
 
@@ -72,7 +72,7 @@ Jika Anda ingin menolak akses ke aplikasi web Anda untuk alamat IP klien tertent
 </Context> 
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-security/tomcat-security-4.png" alt="context xml" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-security/tomcat-security-4.png" alt="context xml" max-width="100%"/>
 
 :::note 
 Dalam kasus Anda telah melampirkan Public IP ke environment Anda, Anda dapat mengabaikan string ini: 

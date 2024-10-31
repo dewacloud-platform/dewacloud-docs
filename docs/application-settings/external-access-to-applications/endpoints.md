@@ -18,7 +18,7 @@ Fitur **Endpoints** memungkinkan pemetaan port TCP/UDP melalui Shared Load Balan
 
 Endpoints dapat diatur dari menu **Settings** di dashboard platform Anda. Untuk mengaksesnya, pilih **Settings** di sebelah lingkungan yang diinginkan dan klik **Endpoints**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/endpoints/2-env.png" alt="environment settings" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/endpoints/2-env.png" alt="environment settings" max-width="100%"/>
 
 ### Menambahkan Endpoints{#adding-endpoints}
 
@@ -30,7 +30,7 @@ Endpoints dapat diatur dari menu **Settings** di dashboard platform Anda. Untuk 
 
 **Port Publik** dan **URL Akses** akan secara otomatis diberikan oleh platform. Klik **Add** untuk menyelesaikan pembuatan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/endpoints/4-add.png" alt="add endpoint" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/endpoints/4-add.png" alt="add endpoint" max-width="100%"/>
 
 **Opsi yang Telah Dikonfigurasi Sebelumnya** (Contoh):
 
@@ -48,7 +48,7 @@ Untuk mengedit atau menghapus endpoint yang ada:
 - **Edit**: Pilih endpoint dan modifikasi pengaturan (kecuali pemilihan node).
 - **Remove**: Konfirmasi pilihan Anda untuk menghapus endpoint.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/endpoints/7-edit-remove.png" alt="edit remove endpoint" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/endpoints/7-edit-remove.png" alt="edit remove endpoint" max-width="100%"/>
 
 ## Use Cases Endpoints{#endpoints-use-cases}
 
@@ -80,11 +80,11 @@ Untuk antarmuka grafis, gunakan alat seperti MySQL Workbench:
    - **Username**: Pengguna basis data.
    - **Password**: Masukkan kata sandi atau simpan di Keychain.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/endpoints/11-wb-1.png" alt="mysql workbench connection" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/endpoints/11-wb-1.png" alt="mysql workbench connection" max-width="100%"/>
 
 2. **Akses Basis Data**: Klik dua kali koneksi untuk memulai dan mulai bekerja dengan basis data.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/endpoints/14-wb-4.png" alt="access database" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/endpoints/14-wb-4.png" alt="access database" max-width="100%"/>
 
 ### Tahap Pengembangan Multiple pada Server Aplikasi Tunggal{#multiple-development-stages-on-a-single-app-server}
 
@@ -93,7 +93,7 @@ Endpoints memungkinkan Anda menggunakan server aplikasi tunggal untuk beberapa l
 1. **Tambahkan Endpoint** untuk server Apache dan pilih port pribadi (mis. 81).
 2. **Terapkan aplikasi Anda dua kali** ke konteks berbeda (mis. `/prod` dan `/dev`).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/endpoints/18-ap-4.png" alt="deploy to different contexts" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/endpoints/18-ap-4.png" alt="deploy to different contexts" max-width="100%"/>
 
 3. **Modifikasi Konfigurasi Apache**:
    - Buka file `httpd.conf` dan tambahkan pendengar baru untuk port pribadi:
@@ -103,7 +103,7 @@ Endpoints memungkinkan Anda menggunakan server aplikasi tunggal untuk beberapa l
    ```
 
    - Buat dua bagian **VirtualHost**, satu untuk produksi dan satu untuk pengembangan.
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/endpoints/19-ap-5.png" alt="apache virtualhost configurations" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/endpoints/19-ap-5.png" alt="apache virtualhost configurations" max-width="100%"/>
 
 4. **Restart Apache** dan akses lingkungan produksi melalui URL normalnya, sementara menggunakan URL Akses endpoint untuk mencapai versi pengembangannya.
 

@@ -40,7 +40,7 @@ Di bawah ini, Anda dapat mempelajari tentang proses dan spesifikasi pembuatan se
   * _**server**_ – sertifikat server digunakan untuk menyediakan enkripsi TLS untuk koneksi ke database MongoDB.
   * _**client**_ – sertifikat klien yang dapat diunduh dapat digunakan untuk mengautentikasi koneksi klien ke server database.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/encryption-in-transit-addon/encryption-in-transit-addon-4.png" alt="MongoDB SSL certificates" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/encryption-in-transit-addon/encryption-in-transit-addon-4.png" alt="MongoDB SSL certificates" max-width="100%"/>
 
 **Konfigurasi MongoDB:**
 
@@ -55,7 +55,7 @@ net:
     allowConnectionsWithoutCertificates: true
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/encryption-in-transit-addon/encryption-in-transit-addon-5.png" alt="MongoDB SSL configurations" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/encryption-in-transit-addon/encryption-in-transit-addon-5.png" alt="MongoDB SSL configurations" max-width="100%"/>
 
 * Konfigurasinya menyediakan jalur ke file SSL server. Juga, termasuk opsi “_allowConnectionsWithoutCertificates: true_” untuk membuat penggunaan koneksi aman menjadi opsional. Jika dihapus, akan sulit bagi klien untuk terhubung ke server ini menggunakan koneksi yang tidak terenkripsi.
 
@@ -67,7 +67,7 @@ Add-on dapat ditemukan di bawah tab **Add-Ons** untuk lapisan yang sesuai. Anda 
 * **Renew server certs** – menghasilkan sertifikat SSL server ulang
 * **Renew client certs** – menghasilkan sertifikat SSL klien ulang
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/encryption-in-transit-addon/encryption-in-transit-addon-6.png" alt="managing MongoDB SSL add-on" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/encryption-in-transit-addon/encryption-in-transit-addon-6.png" alt="managing MongoDB SSL add-on" max-width="100%"/>
 
 Untuk menghapus add-on dari lapisan (termasuk konfigurasi khusus dan sertifikat SSL yang dihasilkan), buka menu di sudut kanan atas panel dan klik **Uninstall**.
 
@@ -83,7 +83,7 @@ Mari kita cek koneksi aman ke node MongoDB dengan menggunakan opsi _**tls**_ dan
 mongosh --tls --host \{hostName\} --tlsCAFile=\{path/to/root.pem\}
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/encryption-in-transit-addon/encryption-in-transit-addon-7.png" alt="MongoDB SSL connection" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/encryption-in-transit-addon/encryption-in-transit-addon-7.png" alt="MongoDB SSL connection" max-width="100%"/>
 
 ## Baca Juga{#whats-next}
 

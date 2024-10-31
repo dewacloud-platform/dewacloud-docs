@@ -15,11 +15,11 @@ Mari kita lihat bagaimana parameter diubah berdasarkan sumber daya yang dialokas
 
 Nilai konfigurasi modul _**prefork**_ dalam file _**/etc/httpd/conf/httpd.conf**_ adalah sebagai berikut:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/smart-auto-configuration/php-auto-configuration/05-apache-php-auto-configuration-16-cloudlets.png" alt="Apache PHP auto-configuration 16 cloudlets" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/smart-auto-configuration/php-auto-configuration/05-apache-php-auto-configuration-16-cloudlets.png" alt="Apache PHP auto-configuration 16 cloudlets" max-width="100%"/>
 
 2\. Sekarang, jika kami menetapkan batas sumber daya baru untuk server Apache PHP (**32 cloudlets**) dan menyegarkan file _**/etc/httpd/conf/httpd.conf**_:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/smart-auto-configuration/php-auto-configuration/06-apache-php-auto-configuration-32-cloudlets.png" alt="Apache PHP auto-configuration 32 cloudlets" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/smart-auto-configuration/php-auto-configuration/06-apache-php-auto-configuration-32-cloudlets.png" alt="Apache PHP auto-configuration 32 cloudlets" max-width="100%"/>
 
 Seperti yang Anda lihat, nilai direktif disesuaikan secara otomatis karena perubahan jumlah sumber daya yang tersedia.
 
@@ -46,7 +46,7 @@ Nilai direktif yang tidak sesuai dapat menyebabkan ketidakstabilan server Anda, 
 
 Jika Anda ingin mengubah pengaturan auto-configured secara manual, Anda perlu mengatur variabel _**JELASTIC_AUTOCONFIG**_ [environment variable](https://docs.dewacloud.com/docs/container-variables/) ke _false_ (_disabled_).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/smart-auto-configuration/php-auto-configuration/07-php-autoconfig-variable.png" alt="PHP auto-config variable" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/smart-auto-configuration/php-auto-configuration/07-php-autoconfig-variable.png" alt="PHP auto-config variable" max-width="100%"/>
 
 ### Legacy Implementation{#legacy-implementation}
 
@@ -54,11 +54,11 @@ Hapus baris dengan tanda optimisasi di awal file konfigurasi yang sesuai:
 
   * **Apache PHP** \- " _# Jelastic autoconfiguration mark_ " di dalam file _**/etc/httpd/conf/httpd.conf**_
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/smart-auto-configuration/php-auto-configuration/08-apache-php-autoconfiguration-mark.png" alt="Apache PHP autoconfiguration mark" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/smart-auto-configuration/php-auto-configuration/08-apache-php-autoconfiguration-mark.png" alt="Apache PHP autoconfiguration mark" max-width="100%"/>
 
   * **NGINX PHP** \- " _; Jelastic autoconfiguration mark_ " di dalam file _**/etc/php-fpm.conf**_
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/smart-auto-configuration/php-auto-configuration/09-nginx-php-autoconfiguration-mark.png" alt="NGINX PHP autoconfiguration mark" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/smart-auto-configuration/php-auto-configuration/09-nginx-php-autoconfiguration-mark.png" alt="NGINX PHP autoconfiguration mark" max-width="100%"/>
 
 Setelah baris yang sesuai dihapus, nilai parameter tidak akan lagi dikonfigurasi otomatis oleh mekanisme optimisasi platform sehingga Anda dapat menetapkan parameter kustom Anda. Jangan lupa untuk **Save** file untuk menerapkan konfigurasi baru.
 

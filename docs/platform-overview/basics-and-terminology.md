@@ -24,14 +24,14 @@ Dengan mengetahui tentang komponen dasar dan bagaimana mereka saling berhubungan
 
 **[Cloudlet](<https://docs.dewacloud.com/docs/concept-and-terminology/#cloudlet>)** adalah komponen infrastruktur platform terkecil. Ini adalah unit sumber daya khusus yang setara dengan _**128 MiB**_ **RAM** dan _**400 MHz**_ **CPU** secara bersamaan. Granularitas sumber daya yang tinggi ini memungkinkan sistem untuk mengalokasikan kapasitas yang tepat yang dibutuhkan oleh setiap instance di lingkungan. Ini memastikan [harga berbasis penggunaan](<https://docs.dewacloud.com/docs/pricing-model/>) yang benar-benar adil, sehingga hanya sumber daya yang benar-benar dikonsumsi yang dibayar.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/basics-terminology/01-cloudlet-resource-unit.png" alt="cloudlet - resource unit" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/basics-terminology/01-cloudlet-resource-unit.png" alt="cloudlet - resource unit" max-width="100%"/>
 
 Ada dua jenis cloudlet di platform ini:
 
   * **Reserved Cloudlets** adalah jumlah sumber daya tetap yang dipesan di muka dan dibebankan terlepas dari penggunaan aktual. Cloudlet yang direservasi lebih murah daripada yang dinamis dan direkomendasikan untuk digunakan ketika beban aplikasi permanen.
   * **Dynamic Cloudlets** ditambahkan dan dihapus secara otomatis sesuai dengan jumlah sumber daya yang diperlukan oleh aplikasi Anda (ditetapkan ketika beban meningkat dan dihapus segera setelah menurun). Cloudlet dinamis direkomendasikan untuk digunakan untuk aplikasi dengan beban variabel atau ketika tidak dapat diprediksi di muka, memastikan model pembebanan yang benar-benar berbasis penggunaan. Dengan cara ini, Anda membayar berdasarkan penggunaan sumber daya aktual dalam batas skala.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/basics-terminology/02-reserved-and-dynamic-cloudlets.png" alt="reserved and dynamic cloudlets" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/basics-terminology/02-reserved-and-dynamic-cloudlets.png" alt="reserved and dynamic cloudlets" max-width="100%"/>
 
 :::note
 Saat menghitung penggunaan cloudlet, sistem hanya mempertimbangkan penggunaan RAM atau CPU yang lebih besar per jam (bukan keduanya digabungkan). Misalnya, jika selama satu jam penggunaan CPU rata-rata Anda adalah 2400 MHz (6 cloudlet), dan penggunaan RAM puncak Anda adalah 1024 MiB (8 cloudlet), Anda membayar untuk 8 cloudlet - bukan total gabungan (14 cloudlet).
@@ -43,7 +43,7 @@ Fungsi cloudlet yang direservasi dan dinamis keduanya menyediakan diskon otomati
 
 **Container** (node) adalah instance virtual yang terisolasi, disediakan untuk penanganan stack perangkat lunak (seperti server aplikasi, database, load balancer, dll.) dan ditempatkan pada [host](<#host>) tertentu. Setiap container dapat diskalakan secara otomatis, baik [secara vertikal](<https://docs.dewacloud.com/docs/automatic-vertical-scaling/>) maupun [horizontal](<https://docs.dewacloud.com/docs/automatic-horizontal-scaling/>), sehingga hosting aplikasi menjadi sangat fleksibel.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/basics-terminology/03-container-secure-and-isolated-instance.png" alt="container - secure and isolated instance" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/basics-terminology/03-container-secure-and-isolated-instance.png" alt="container - secure and isolated instance" max-width="100%"/>
 
 Platform ini menyediakan [container bersertifikat](<https://docs.dewacloud.com/docs/software-stacks-versions/>) untuk _Java_, _PHP_, _Ruby_, _Node.js_, _Python_, _Go_, _.NET_ dan kemampuan untuk menerapkan container [Docker](<https://docs.dewacloud.com/docs/container-types/>) kustom. Setiap container memiliki IP pribadinya sendiri dan catatan DNS unik, sementara [public IP](<https://docs.dewacloud.com/docs/public-ip/>) dapat dengan mudah dilampirkan dalam [UI dashboard](<https://docs.dewacloud.com/docs/dashboard-guide/>) atau melalui [API](<https://docs.dewacloud.com/docs/api-overview/>).
 
@@ -60,7 +60,7 @@ Platform ini menyediakan [container bersertifikat](<https://docs.dewacloud.com/d
   * build node
   * ekstra (layer kustom; beberapa bisa ditambahkan untuk lingkungan [berbasis Docker](<https://docs.dewacloud.com/docs/container-types/>))
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/basics-terminology/04-layer-group-of-similar-containers.png" alt="layer - group of similar containers" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/basics-terminology/04-layer-group-of-similar-containers.png" alt="layer - group of similar containers" max-width="100%"/>
 
 Layer dirancang untuk melakukan berbagai tindakan dengan jenis container yang sama sekaligus. Misalnya, node dapat secara bersamaan dimulai ulang atau dideploy ulang, serta diskalakan secara horizontal:
 
@@ -75,7 +75,7 @@ Selain itu, container dari satu layer didistribusikan di berbagai [host](<#host>
 
 Ada sejumlah tindakan yang dapat dilakukan untuk seluruh lingkungan, seperti berhenti, mulai, kloning, migrasi ke region lain, berbagi dengan anggota tim untuk [kerja kolaboratif](<https://docs.dewacloud.com/docs/share-environment/>), melacak konsumsi sumber daya, dan lain-lain.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/basics-terminology/05-environment-interconnected-container-layers.png" alt="environment - interconnected container layers" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/basics-terminology/05-environment-interconnected-container-layers.png" alt="environment - interconnected container layers" max-width="100%"/>
 
 Setiap environment memiliki nama domain internal tingkat 3 secara default. Domain eksternal kustom dapat dengan mudah diikat melalui [CNAME atau A record](<https://docs.dewacloud.com/docs/custom-domains/>), dan bahkan lebih lanjut [dipertukarkan](<https://docs.dewacloud.com/docs/swap-domains/>) dengan environment lain untuk pengalihan lalu lintas.
 
@@ -87,7 +87,7 @@ Setiap environment memiliki nama domain internal tingkat 3 secara default. Domai
 Aplikasi dengan topologi yang lebih kompleks biasanya memerlukan lebih banyak fleksibilitas selama proses deploy atau update, sehingga lebih baik untuk mendistribusikan berbagai jenis server di beberapa environments, untuk dapat memelihara mereka secara mandiri.
 :::
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/basics-terminology/06-application-environments-of-a-single-project.png" alt="application - environments of a single project" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/basics-terminology/06-application-environments-of-a-single-project.png" alt="application - environments of a single project" max-width="100%"/>
 
 Kode sumber aplikasi atau biner yang dibangun dapat di-deploy dari:
 
@@ -101,7 +101,7 @@ Selain itu, sejumlah aplikasi yang sudah dipaketkan sebelumnya dapat ditemukan d
 
 **Host** adalah server fisik atau mesin virtual besar yang divirtualisasi melalui KVM, ESXi, Hyper-V, dll.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/basics-terminology/07-host-physical-or-virtual-server.png" alt="host - physical or virtual server" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/basics-terminology/07-host-physical-or-virtual-server.png" alt="host - physical or virtual server" max-width="100%"/>
 
 Host dipecah menjadi [container](<#container>) terisolasi kecil yang digunakan untuk membangun [environments](<#environment>). Partisi semacam itu memberikan multitenancy terdepan di industri, serta kepadatan tinggi dan pemanfaatan sumber daya cerdas dengan bantuan distribusi container sesuai dengan beban di seluruh host.
 
@@ -109,7 +109,7 @@ Host dipecah menjadi [container](<#container>) terisolasi kecil yang digunakan u
 
 **[Environment region](<https://docs.dewacloud.com/docs/environment-regions/>)** adalah sekumpulan [host](<#host>) yang diorkestrasi dalam jaringan terisolasi tunggal.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/basics-terminology/08-environment-region-hosts-group.png" alt="environment region - group of hosts" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/basics-terminology/08-environment-region-hosts-group.png" alt="environment region - group of hosts" max-width="100%"/>
 
 Setiap region environment memiliki kapasitasnya sendiri di pusat data tertentu, kumpulan alamat IP privat dan publik yang telah ditentukan, serta harga sumber daya yang sesuai. Selain itu, lokasi yang dipilih secara awal dapat dengan mudah diubah dengan [memigrasikan](<https://docs.dewacloud.com/docs/environment-regions-migration/>) proyek di antara region yang tersedia.
 
@@ -117,7 +117,7 @@ Setiap region environment memiliki kapasitasnya sendiri di pusat data tertentu, 
 
 **Platform** adalah sekelompok [environment regions](<#environment-region>) (di mana masing-masing dapat secara fisik terletak di Pusat Data terpisah, mewakili Cloud yang terisolasi) dan kluster orkestrator untuk mengontrol dan bertindak seperti sistem tunggal. Ini menyediakan berbagai kemungkinan untuk mengembangkan, mendistribusikan, menguji, menjalankan, debug, dan memelihara aplikasi karena beberapa opsi saat memilih perangkat keras - kapasitas, harga, lokasi, dll. yang berbeda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/basics-terminology/09-platform-orchestrator-environment-regions.png" alt="platform - environment regions with orchestrator" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/basics-terminology/09-platform-orchestrator-environment-regions.png" alt="platform - environment regions with orchestrator" max-width="100%"/>
 
 Sebagai hasilnya, Anda mendapatkan solusi multi-data center atau bahkan multi-cloud untuk menjalankan aplikasi Anda dalam satu panel. Selain itu, setiap Platform dikelola oleh penyedia layanan hosting terpisah dengan tim dukungan lokalnya.
 

@@ -19,7 +19,7 @@ Berikut cara Anda dapat mengatur dan mengelola pekerjaan Cron di platform.
 
 3. Dalam jendela **Environment topology**, pilih server aplikasi dan database yang ingin Anda gunakan (misalnya, _Tomcat_ dan _MySQL_). Ketik nama environment dan klik **Create**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/setting-up-cronjob/02-environment-wizard.png" alt="environment wizard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/setting-up-cronjob/02-environment-wizard.png" alt="environment wizard" max-width="100%"/>
 
 Environment Anda dengan node Tomcat dan MySQL akan dibuat dalam satu menit.
 
@@ -29,7 +29,7 @@ Environment Anda dengan node Tomcat dan MySQL akan dibuat dalam satu menit.
 
 1. Klik tombol **Config** untuk server aplikasi Anda (misalnya, Tomcat).
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/setting-up-cronjob/03-tomcat-config-button.png" alt="Tomcat config button" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/setting-up-cronjob/03-tomcat-config-button.png" alt="Tomcat config button" max-width="100%"/>
 
 2. Unggah skrip yang ingin Anda jalankan ke folder yang sesuai:
    - **home** (untuk server berbasis Java seperti Tomcat, TomEE, GlassFish, dll.)
@@ -55,7 +55,7 @@ Pastikan skrip yang ingin Anda jalankan dapat dieksekusi. Jika tidak, gunakan in
 
 1. Di tab konfigurasi, navigasikan ke folder **cron** dan buka file `{nodeName}`.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/setting-up-cronjob/07-cron-scheduler-file.png" alt="cron scheduler file" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/setting-up-cronjob/07-cron-scheduler-file.png" alt="cron scheduler file" max-width="100%"/>
 
 2. Tulis perintah dalam format **crontab** untuk menjadwalkan tugas Anda. Format untuk setiap cron job terdiri dari enam bidang yang dipisahkan oleh spasi:
 

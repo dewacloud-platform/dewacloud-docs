@@ -22,7 +22,7 @@ Setiap node (kecuali container [Docker](https://docs.dewacloud.com/docs/containe
 Ketersediaan UI **Container Firewall** bergantung pada penyedia hosting Anda. Hubungi dukungan platform Anda untuk meminta aktivasi jika Anda tidak melihat fitur ini.
 :::
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/container-firewall/02-firewall-environment-settings.png" alt="firewall environment settings" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/container-firewall/02-firewall-environment-settings.png" alt="firewall environment settings" max-width="100%"/>
 
 ### Tabs Available:{#tabs-available}
 
@@ -38,7 +38,7 @@ Setelah membuat container baru, platform secara otomatis mengisi bagian **Inboun
 Aturan default diambil berdasarkan port **EXPOSE** dalam dockerfile gambar.
 :::
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/container-firewall/03-container-firewall-inbound-rules.png" alt="container firewall inbound rules" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/container-firewall/03-container-firewall-inbound-rules.png" alt="container firewall inbound rules" max-width="100%"/>
 
 Aturan disusun sebagai berikut:
 

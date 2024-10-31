@@ -24,15 +24,15 @@ Selain opsi Auto-Clustering dalam topology wizard, sejumlah solusi clusterisasi 
 
 1. Pilih salah satu stack yang terdaftar dalam topology wizard. **Auto-Clustering** switcher yang sesuai akan tersedia di bagian tengah frame.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/what-is-auto-clustering/02-stack-auto-clustering-in-topology-wizard.png" alt="stack auto-clustering in topology wizard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/what-is-auto-clustering/02-stack-auto-clustering-in-topology-wizard.png" alt="stack auto-clustering in topology wizard" max-width="100%"/>
 
 2. Anda dapat mengarahkan kursor ke ikon **hint** untuk informasi tambahan tentang implementasi auto-clustering stack tertentu ini. Dalam deskripsi, Anda dapat menemukan tautan **Learn More** ke dokumentasi dengan gambaran yang lebih luas.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/what-is-auto-clustering/03-auto-cluster-description.png" alt="auto-cluster description" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/what-is-auto-clustering/03-auto-cluster-description.png" alt="auto-cluster description" max-width="100%"/>
 
 3. Juga, setelah mengaktifkan Auto-Clustering, beberapa konfigurasi tambahan dapat muncul untuk kustomisasi lebih lanjut dari cluster. Sebagai contoh, **MariaDB auto-cluster** memungkinkan untuk memilih _Scheme_ replikasi dan menambahkan _ProxySQL_ load balancer khusus untuk cluster database ini:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/what-is-auto-clustering/04-auto-cluster-additional-configs.png" alt="auto-cluster additional configs" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/what-is-auto-clustering/04-auto-cluster-additional-configs.png" alt="auto-cluster additional configs" max-width="100%"/>
 
 ## Materi Tambahan Auto-Clustering{#additional-materials-on-auto-clustering}
 

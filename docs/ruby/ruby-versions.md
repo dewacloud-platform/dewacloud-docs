@@ -24,7 +24,7 @@ Anda dapat memilih yang diperlukan selama [pembuatan environment](<https://docs.
 
 2. Dalam wizard topologi yang terbuka, beralih ke tab _**Ruby**_ dan pilih server aplikasi yang diinginkan (_Apache_ atau _NGINX_). Selanjutnya, pilih versi engine dengan daftar drop-down yang tepat di bagian tengah frame.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/ruby%20version/02-topology-wizard-choose-ruby-version.png" alt="topology wizard choose Ruby version" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/ruby%20version/02-topology-wizard-choose-ruby-version.png" alt="topology wizard choose Ruby version" max-width="100%"/>
 
 Atur konfigurasi lain yang diinginkan (misalnya batas cloudlets, [public IP](<https://docs.dewacloud.com/docs/public-ip/>), [region](<https://docs.dewacloud.com/docs/environment-regions/>), dll.) dan klik **Create**.
 
@@ -40,7 +40,7 @@ Untuk environment yang sudah ada, Anda dapat mengubah versi Ruby dengan [redeplo
 
    - dengan tombol **Redeploy container(s)** yang tepat di sebelah node/layer yang diperlukan.
 
-     <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/ruby%20version/04-redeploy-containers-button.png" alt="redeploy containers button" width="100%"/>
+     <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/ruby%20version/04-redeploy-containers-button.png" alt="redeploy containers button" max-width="100%"/>
 
 2. Di jendela yang terbuka, sesuaikan pengaturan berikut:
 

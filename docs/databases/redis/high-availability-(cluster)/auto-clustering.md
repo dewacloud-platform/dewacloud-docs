@@ -19,13 +19,13 @@ Jika Anda ingin belajar lebih banyak tentang spesifikasi Redis Cluster, merujukl
 
 Instalasi dan konfigurasi otomatis tersedia dengan opsi **[Redis Auto-Clustering](<https://docs.dewacloud.com/docs/auto-clustering/#redis>)** di wizard topologi.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/redis/high-availability-cluster/auto-clustering/auto-clustering-2.png" alt="Redis auto-clustering" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/redis/high-availability-cluster/auto-clustering/auto-clustering-2.png" alt="Redis auto-clustering" max-width="100%"/>
 
 Sebagai alternatif, Anda dapat mengimpor _**Redis Cluster**_ [package manifest](<https://github.com/jelastic-jps/redis-cluster/blob/main/manifest.jps>) atau menemukannya di dashboard dalam [Marketplace](<https://docs.dewacloud.com/docs/marketplace/>). Dalam kedua kasus, Anda akan melihat bingkai instalasi, di mana Anda dapat memberikan data berikut:
 
   * **Nodes count** \- mengatur total jumlah node Redis dalam cluster. Pensakalan dilakukan melalui pasangan _Primary-Secondary_. Jumlah minimal adalah **6** (3 node Primary dan 3 node Secondary) dan maksimal adalah **12** (6 node Primary dan 6 node Secondary).
   * **Enable Horizontal Auto-Scaling** \- melengkapi cluster dengan [pemicu penskalaan](<https://docs.dewacloud.com/docs/automatic-horizontal-scaling/#triggers-for-automatic-scaling>) untuk melakukan penskalaan horizontal otomatis. Pemindahan ulang otomatis dan penyeimbangan ulang akan dilakukan setelah penambahan dan sebelum penghapusan node Primary.
-  <img src="https://assets.dewacloud.com/dewacloud-docs/databases/redis/high-availability-cluster/auto-clustering/auto-clustering-3.png" alt="horizontal scaling trigger" width="100%"/>
+  <img src="https://assets.dewacloud.com/dewacloud-docs/databases/redis/high-availability-cluster/auto-clustering/auto-clustering-3.png" alt="horizontal scaling trigger" max-width="100%"/>
 
 :::tip
 Penskalaan akan dilakukan sesuai dengan kondisi berikut secara default: tambahkan 2 node ketika beban CPU atau Memori di atas 70% dari total kapasitas cluster selama lebih dari 5 menit (hingga total 12 node); kurangi 2 node ketika beban CPU atau Memori di bawah 40% dari total kapasitas cluster selama lebih dari 15 menit (tidak kurang dari 6 node)
@@ -38,7 +38,7 @@ Penskalaan akan dilakukan sesuai dengan kondisi berikut secara default: tambahka
 
 Klik **Install** ketika siap.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/redis/high-availability-cluster/auto-clustering/auto-clustering-4.png" alt="Redis Cluster installation window" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/redis/high-availability-cluster/auto-clustering/auto-clustering-4.png" alt="Redis Cluster installation window" max-width="100%"/>
 
 Setelah deployment selesai, Anda akan melihat pop-up sukses dengan kredensial panel admin Redis Cluster. Informasi yang sama juga akan dikirimkan ke email Anda.
 
@@ -46,7 +46,7 @@ Setelah deployment selesai, Anda akan melihat pop-up sukses dengan kredensial pa
 
 Cluster siap digunakan. Cobalah menghubungkan ke panel admin untuk melihat detail cluster dan melakukan konfigurasi serta kustomisasi yang diperlukan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/redis/high-availability-cluster/auto-clustering/auto-clustering-6.png" alt="Redis Cluster admin panel" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/redis/high-availability-cluster/auto-clustering/auto-clustering-6.png" alt="Redis Cluster admin panel" max-width="100%"/>
 
 Anda juga dapat terhubung melalui SSH (misalnya [Web SSH](<https://docs.dewacloud.com/docs/web-ssh-client/>)) untuk melakukan penyesuaian yang diperlukan. Misalnya, dengan menggunakan alat [_redis-cli_](<https://redis.io/docs/tools/#cli>) dan password dari email, Anda dapat terhubung ke cluster dan memverifikasi bahwa ia bekerja dengan benar:
 
@@ -55,7 +55,7 @@ redis-cli auth {passw0rd}
 cluster nodes
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/redis/high-availability-cluster/auto-clustering/auto-clustering-7.png" alt="Redis Cluster SSH access" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/redis/high-availability-cluster/auto-clustering/auto-clustering-7.png" alt="Redis Cluster SSH access" max-width="100%"/>
 
 Informasi ini dapat diperoleh di node cluster mana pun (baik Primary maupun Secondary). Dalam output ini, Anda dapat melihat jumlah node dalam cluster, ID mereka, alamat, peran, dan shards (hash slots) yang dialokasikan untuk masing-masing node.
 

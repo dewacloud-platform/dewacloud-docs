@@ -34,7 +34,7 @@ Beralih ke tab bahasa _Ruby_, pilih server aplikasi dan versi engine yang dibutu
 Both Apache Ruby and NGINX Ruby templates utilize a modern systemd initialization daemon.
 :::
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/ruby/ruby%20dev%20center/02-ruby-topology-wizard.png" alt="Ruby topology wizard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/ruby/ruby%20dev%20center/02-ruby-topology-wizard.png" alt="Ruby topology wizard" max-width="100%"/>
 
 :::note
 All instances are completely isolated and fully independent containers. Additionally, scaled out nodes are automatically distributed across the physical servers (or VMs), ensuring high availability.
@@ -112,7 +112,7 @@ Anda dapat menyediakan [custom domain](<https://docs.dewacloud.com/docs/custom-d
 
 Untuk mengalihkan lalu lintas dari satu environment ke environment lainnya (mis. untuk mengarahkan pelanggan ke versi aplikasi baru tanpa downtime), harus digunakan fitur [swap domains](<https://docs.dewacloud.com/docs/swap-domains/>). Ini juga tersedia sebagai metode _**SwapExtIps**_ [API](<https://docs.jelastic.com/api/#!/api/environment.Binder-method-SwapExtIps>)/[CLI](<https://docs.dewacloud.com/docs/cli-ip-swap/>).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/ruby/ruby%20dev%20center/05-ruby-domain-management.png" alt="Ruby domain management" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/ruby/ruby%20dev%20center/05-ruby-domain-management.png" alt="Ruby domain management" max-width="100%"/>
 
 ## Automatic Vertical Scaling{#automatic-vertical-scaling}
 
@@ -122,7 +122,7 @@ Salah satu fitur utama dari platform ini adalah penyediaan dinamis jumlah sumber
 
 Sebagai hasilnya, Anda secara otomatis mendapatkan keuntungan dari pendekatan pengisian _**[Pay-per-Use](<https://docs.dewacloud.com/docs/pricing-model/>)**_ yang benar-benar berorientasi pada pengguna dan tidak perlu menebak atau memprediksi beban yang masuk. Ini memastikan bahwa Anda [tidak pernah membayar lebih untuk sumber daya yang tidak digunakan](<https://www.virtuozzo.com/company/blog/deceptive-cloud-efficiency-do-you-really-pay-as-you-use/>) dan menghemat waktu Anda karena platform menghilangkan kebutuhan untuk menangani penyesuaian terkait beban atau melakukan perubahan arsitektur secara manual.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/ruby/ruby%20dev%20center/07-ruby-pay-per-use-pricing.png" alt="Ruby pay-per-use pricing" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/ruby/ruby%20dev%20center/07-ruby-pay-per-use-pricing.png" alt="Ruby pay-per-use pricing" max-width="100%"/>
 
 Rujuk ke dokumentasi [automatic vertical scaling](<https://docs.dewacloud.com/docs/automatic-vertical-scaling/>) untuk informasi lebih lanjut.
 
@@ -147,7 +147,7 @@ Anda dapat mengkonfigurasi [automatic horizontal scaling](<https://docs.dewaclou
 
 Prosesnya sederhana, akses **Settings > Monitoring > Auto Horizontal Scaling** di environment, pilih lapisan yang diperlukan dan sumber daya yang akan dipantau (_CPU_, _RAM_, _Network_, _Disk I/O_, _Disk IOPS_). Atur kondisi dan spesifikasi scaling yang tepat melalui formulir antarmuka pengguna yang intuitif.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/ruby/ruby%20dev%20center/09-ruby-automatic-horizontal-scaling.png" alt="Ruby automatic horizontal scaling" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/ruby/ruby%20dev%20center/09-ruby-automatic-horizontal-scaling.png" alt="Ruby automatic horizontal scaling" max-width="100%"/>
 
 Selain itu, hosting di PaaS memungkinkan penggunaan alat dan fitur bawaan lainnya, misalnya:
 

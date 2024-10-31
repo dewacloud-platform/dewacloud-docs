@@ -22,13 +22,13 @@ Mari kita periksa cara untuk mendistribusikan Java Bean ke hosting PaaS dan meng
 
 2\. Klik tombol **Create environment** untuk membuka wizard topologi environment. Pilih **GlassFish** sebagai application server Anda dan atur batasan cloudlet sesuai dengan kebutuhan konsumsi sumber daya aplikasi Java enterprise Anda. Aktifkan **Public IP** untuk GlassFish, ketik nama untuk environment Anda dan klik **Create**. 
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-apps-specifications/remote-access-to-ejb-on-glassfish/remote-access-ejb-1.png" alt="remote access to ejb glassfish create environment with glassfish" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-apps-specifications/remote-access-to-ejb-on-glassfish/remote-access-ejb-1.png" alt="remote access to ejb glassfish create environment with glassfish" max-width="100%"/>
 
 Tunggu sekitar satu menit untuk environment Anda dibuat.
 
 3\. Untuk melihat **Public IP** server GF Anda tekan tombol tambahan di sebelahnya. 
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-apps-specifications/remote-access-to-ejb-on-glassfish/remote-access-ejb-2.png" alt="glassfish public ip" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-apps-specifications/remote-access-to-ejb-on-glassfish/remote-access-ejb-2.png" alt="glassfish public ip" max-width="100%"/>
 
 ### B. Create the application{#b-create-the-application}
 
@@ -125,7 +125,7 @@ Sebagai contoh berkas **.ear** Anda dapat menggunakan [paket ini](<https://downl
 
 3\. Akhirnya, jalankan aplikasi Anda (tekan tombol **Open in browser** di sebelah environment-nya) dan periksa hasilnya. 
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-apps-specifications/remote-access-to-ejb-on-glassfish/remote-access-ejb-5.png" alt="upload archive" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-apps-specifications/remote-access-to-ejb-on-glassfish/remote-access-ejb-5.png" alt="upload archive" max-width="100%"/>
 
 Semoga tutorial ini membantu Anda memahami penggunaan dasar antarmuka remote. Nikmati!
 

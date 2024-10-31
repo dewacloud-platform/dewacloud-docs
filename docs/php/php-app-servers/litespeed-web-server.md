@@ -32,7 +32,7 @@ Pembuatan instance LiteSpeed Web Server baru di platform cukup mudah.
 
 2\. Dalam topology wizard yang terbuka, pindah ke tab mesin _**PHP**_ dan pilih **LiteSpeed Web Server** sebagai server aplikasi Anda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/litespeed-web-server/03-litespeed-application-server-wizard.png" alt="LiteSpeed application server wizard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/litespeed-web-server/03-litespeed-application-server-wizard.png" alt="LiteSpeed application server wizard" max-width="100%"/>
 
 :::note
 Anda mungkin ingin mengatur beberapa [dedicated environment variables](https://docs.dewacloud.com/docs/environment-variables/) untuk menyesuaikan LiteSpeed Web Server Anda: 
@@ -49,25 +49,25 @@ Anda mungkin ingin mengatur beberapa [dedicated environment variables](https://d
 
 - **WP_PROTECT_LIMIT** - menetapkan batas untuk fitur [WordPress Brute Force Attack Protection](https://www.litespeedtech.com/support/wiki/doku.php/litespeed_wiki:config:wordpress-protection) (_0|1|2-1000; 10_ secara default)
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/litespeed-web-server/04-litespeed-variables.png" alt="LiteSpeed variables" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/litespeed-web-server/04-litespeed-variables.png" alt="LiteSpeed variables" max-width="100%"/>
 :::
 
 Konfigurasi parameter lain yang diperlukan ([cloudlets](<https://docs.dewacloud.com/docs/automatic-vertical-scaling/>), ruang disk, [regions](<https://docs.dewacloud.com/docs/environment-regions/>), dll.) dan lanjutkan dengan tombol **Create**.
 
 3\. Setelah dibuat, Anda dapat melihat data default _phpinfo_ di server dengan mengklik **Open in Browser** di samping server LiteSpeed Anda:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/litespeed-web-server/05-litespeed-open-in-browser.png" alt="LiteSpeed open in browser" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/litespeed-web-server/05-litespeed-open-in-browser.png" alt="LiteSpeed open in browser" max-width="100%"/>
 
 4\. Untuk mulai mengelola server, akses **Admin Panel** dengan tombol yang sesuai di daftar _**Additionally**_ di sebelah lapisan (kredensial akses dikirim melalui email setelah pembuatan node).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/litespeed-web-server/06-litespeed-admin-panel.png" alt="LitesSeed admin panel" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/litespeed-web-server/06-litespeed-admin-panel.png" alt="LitesSeed admin panel" max-width="100%"/>
 
 :::warning
 Ada beberapa kekhususan saat bekerja dengan implementasi platform LiteSpeed melalui panel admin:
 
   * untuk memastikan stabilitas kontainer, [fitur redeploy native platform](<https://docs.dewacloud.com/docs/container-redeploy/>) harus digunakan sebagai pengganti fungsi **Actions > Version Manager**
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/litespeed-web-server/07-litespeed-version-management.png" alt="LiteSpeed version management" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/litespeed-web-server/07-litespeed-version-management.png" alt="LiteSpeed version management" max-width="100%"/>
 
   * pemberitahuan tentang kedaluwarsa kunci lisensi di **Actions > Server Log Viewer** harus diabaikan karena leasing dikelola secara otomatis oleh platform
 
@@ -86,7 +86,7 @@ Platform ini dengan mulus mengintegrasikan biaya lisensi LiteSpeed sesuai dengan
 
 Berdasarkan kebutuhan Anda, Anda dapat memilih paket yang diperlukan menggunakan tambahan _**LiteSpeed License Manager**_ yang secara otomatis diinstal pada semua node berbasis LiteSpeed (_LS Web Server_, _[LS ADC](<https://docs.dewacloud.com/docs/litespeed-web-adc/>)_, _[LLSMP](<https://docs.dewacloud.com/docs/lemp-llsmp/>)_).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/litespeed-web-server/09-litespeed-license-manager.png" alt="LiteSpeed license manager" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/litespeed-web-server/09-litespeed-license-manager.png" alt="LiteSpeed license manager" max-width="100%"/>
 
 :::tip
 Secara default, jenis lisensi dipilih berdasarkan RAM (yaitu sejumlah cloudlets) yang tersedia setelah pembuatan node:  
@@ -100,7 +100,7 @@ Add-on memungkinkan memilih paket LiteSpeed dengan menentukan batas yang diperlu
   * _**Workers**_ \- menunjukkan berapa banyak proses yang akan dihasilkan untuk melakukan pekerjaan server umum
   * _**Domains**_ \- menetapkan batas [domain tingkat-atas](<https://docs.dewacloud.com/docs/custom-domains/>) (subdomain tidak terbatas); setiap domain yang melebihi batas yang ditentukan akan mengakibatkan kesalahan 403
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/litespeed-web-server/10-configure-litespeed-license.png" alt="configure LiteSpeed license" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/litespeed-web-server/10-configure-litespeed-license.png" alt="configure LiteSpeed license" max-width="100%"/>
 
 | License Plan Name    | Domain Limit | Workers | RAM Limit, GB (max cloudlets) | Pricing (USD)       |
 |----------------------|-------------|---------|-------------------------------|---------------------|
@@ -119,13 +119,13 @@ Selain itu, add-on dapat secara otomatis mengonfigurasi ekstensi **LiteMage Cach
   * **Standard** \- 25000 objek di-cache (**40** USD/bulan)
   * **Unlimited** \- objek di-cache tak terbatas (**100** USD/bulan)
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/litespeed-web-server/11-litemage-cache-for-litespeed.png" alt="LiteMage cache for LiteSpeed" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/litespeed-web-server/11-litemage-cache-for-litespeed.png" alt="LiteMage cache for LiteSpeed" max-width="100%"/>
 
 :::warning
 Biaya pasti mungkin sedikit berbeda untuk platform dengan mata uang selain USD; itu tergantung pada tingkat konversi pada saat peristiwa penagihan setiap jam. Semua biaya akun dapat dilihat melalui **[Billing History](<https://docs.dewacloud.com/docs/monitoring-consumed-resources/#billing-history>)** di dashboard.
 :::
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/litespeed-web-server/12-litespeed-license-in-billing-history.png" alt="LiteSpeed license in billing history" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/litespeed-web-server/12-litespeed-license-in-billing-history.png" alt="LiteSpeed license in billing history" max-width="100%"/>
 
 ## Baca Juga{#whats-next}
 

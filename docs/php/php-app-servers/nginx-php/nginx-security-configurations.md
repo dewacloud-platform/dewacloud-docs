@@ -26,14 +26,14 @@ Untuk menyediakan ini, ikuti langkah-langkah berikut:
 
   * Unggah file yang dibuat ke direktori **/var/www/webroot/ROOT**.
 
-    <img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/nginx-php/nginx-security-configurations/10.png" alt="password hash nginx" width="100%"/>
+    <img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/nginx-php/nginx-security-configurations/10.png" alt="password hash nginx" max-width="100%"/>
 
   * Di direktori **/etc/nginx**, buka file _nginx.conf_ dan modifikasi konfigurasi direktori:
 
     * **autentikasi untuk seluruh aplikasi** Modifikasi konfigurasi lokasi dengan menambahkan string berikut:  
       _auth_basic “Restricted area”;  
       auth_basic_user_file /var/www/webroot/ROOT/.htpasswd;_  
-      <img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/nginx-php/nginx-security-configurations/11.png" alt="nginx security configurations 11" width="100%"/>
+      <img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/nginx-php/nginx-security-configurations/11.png" alt="nginx security configurations 11" max-width="100%"/>
 
     * **autentikasi untuk direktori terpisah**  
       Tambahkan string **location** berikut yang menunjukkan jalur ke direktori yang diperlukan:  
@@ -42,7 +42,7 @@ Untuk menyediakan ini, ikuti langkah-langkah berikut:
       auth_basic_user_file /var/www/webroot/ROOT/.htpasswd;
       }_`
 
-      <img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/nginx-php/nginx-security-configurations/12.png" alt="nginx directory authentication" width="100%"/>
+      <img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/nginx-php/nginx-security-configurations/12.png" alt="nginx directory authentication" max-width="100%"/>
 
   * Simpan perubahan dan mulai ulang **NGINX**  
     Akibatnya, saat mengakses aplikasi atau direktori yang dilindungi, pengguna akan diminta untuk melakukan autentikasi.
@@ -61,7 +61,7 @@ Anda dapat menyediakan keamanan untuk aplikasi Anda dengan menetapkan kriteria b
       `deny xx.xx.xx.x;`  
       `allow xx.xx.xx.x;`  
       `deny all;` 
-      <img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/nginx-php/nginx-security-configurations/13.png" alt="deny access nginx" width="100%"/>
+      <img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/nginx-php/nginx-security-configurations/13.png" alt="deny access nginx" max-width="100%"/>
 
     * **menolak akses ke direktori terpisah**  
       Tambahkan string **location** berikut yang menyatakan jalur ke **directory** yang diperlukan:  
@@ -74,7 +74,7 @@ Anda dapat menyediakan keamanan untuk aplikasi Anda dengan menetapkan kriteria b
       ```
 
 
-      <img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/nginx-php/nginx-security-configurations/14.png" alt="deny ip access" width="100%"/>
+      <img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/nginx-php/nginx-security-configurations/14.png" alt="deny ip access" max-width="100%"/>
 
 Akibatnya, pengguna dengan IP selain yang diizinkan akan melihat kesalahan 403 saat mencoba membuka aplikasi Anda.
 

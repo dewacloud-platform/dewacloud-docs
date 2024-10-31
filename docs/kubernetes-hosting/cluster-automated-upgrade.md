@@ -69,7 +69,7 @@ Pada saat yang sama, Anda harus tetap ingat bahwa zero downtime tidak hanya berg
 
 Jadi seluruh prosedur sepenuhnya otomatis dan tampak seperti di bawah ini.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Cluster%20Automated%20Upgrade/image2.gif" alt="kubernetes upgrade process" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Cluster%20Automated%20Upgrade/image2.gif" alt="kubernetes upgrade process" max-width="100%"/>
 
 ## Proses Pembaruan Cluster Kubernetes
 

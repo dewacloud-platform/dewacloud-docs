@@ -20,15 +20,15 @@ Platform-as-a-Service menyediakan langkah mudah untuk instalasi Tomcat.
 
 2\. Pilih versi **Tomcat** yang diinginkan untuk server aplikasi Anda, seperti yang ditunjukkan pada gambar di bawah ini. Platform cloud memungkinkan Anda menggunakan versi Apache Tomcat mulai dari 7 hingga Tomcat 10 terbaru, tergantung pada kebutuhan aplikasi Anda. Anda hanya perlu memilih dari versi yang tersedia di daftar drop-down:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-server/tomcat-server-1.png" alt="new Tomcat environment" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-server/tomcat-server-1.png" alt="new Tomcat environment" max-width="100%"/>
 
 Setelah lingkungan dibuat, Anda siap menggunakan server aplikasi Tomcat yang diinstal di sana. Untuk memeriksa apakah Tomcat berjalan, klik tombol **Open in Browser** di sebelah server aplikasi.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-server/tomcat-server-2.png" alt="Tomcat environment created" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-server/tomcat-server-2.png" alt="Tomcat environment created" max-width="100%"/>
 
 Jika Anda dapat melihat halaman sambutan Tomcat di browser Anda, server diinstal dengan benar.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-server/tomcat-server-3.png" alt="open Tomcat in browser" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-server/tomcat-server-3.png" alt="open Tomcat in browser" max-width="100%"/>
 
 Server aplikasi beroperasi di container terpisah (node), sebagai instance virtual yang terisolasi. Setiap container Tomcat memiliki IP pribadi dan catatan DNS yang unik.
 
@@ -40,7 +40,7 @@ Jika Anda perlu mengubah (memperbarui) versi server, Anda dapat melakukannya kap
 
 Cukup klik tombol **Redeploy Containers** di sebelah node server Apache Tomcat.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-server/tomcat-server-5.png" alt="Tomcat redeploy button" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-server/tomcat-server-5.png" alt="Tomcat redeploy button" max-width="100%"/>
 
 Pilih versi engine Tomcat dan JDK baru dalam dialog yang muncul dan konfirmasi perubahannya.
 
@@ -52,7 +52,7 @@ Platform ini membuat hosting Tomcat benar-benar fleksibel berkat penskalaan otom
 
 Untuk penyesuaian manual server Tomcat yang ada, klik **Change Environment Topology**:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-server/tomcat-server-7.png" alt="change environment topology button" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-server/tomcat-server-7.png" alt="change environment topology button" max-width="100%"/>
 
 ### Automatic Vertical Scaling{#automatic-vertical-scaling}
 
@@ -89,11 +89,11 @@ Penskalaan horizontal otomatis dapat diimplementasikan melalui pemicu yang dapat
 
 Untuk mengkonfigurasi pemicu untuk penskalaan horizontal otomatis, gunakan tombol **Settings** untuk environment yang diinginkan dan beralih ke bagian _**Auto Horizontal Scaling**_ untuk melanjutkan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-server/tomcat-server-11.png" alt="automatic horizontal scaling" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-server/tomcat-server-11.png" alt="automatic horizontal scaling" max-width="100%"/>
 
 Klik tombol **Add** untuk mengkonfigurasi pemicu untuk lapisan dan jenis sumber daya tertentu (CPU, RAM, Jaringan, Disk) dalam environment Anda. Tentukan kondisi penskalaan yang diperlukan dan **Apply** perubahan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-server/tomcat-server-12.png" alt="Tomcat automatic horizontal scaling" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-server/tomcat-server-12.png" alt="Tomcat automatic horizontal scaling" max-width="100%"/>
 
 Pelajari lebih lanjut tentang [automatic horizontal scaling](<https://docs.dewacloud.com/docs/automatic-horizontal-scaling/>) dalam dokumen terkait.
 
@@ -109,7 +109,7 @@ Cukup aktifkan opsi **[Auto-Clustering](<https://docs.dewacloud.com/docs/auto-cl
 Fitur Auto-Clustering untuk Tomcat dan TomEE tersedia sejak versi stack berikut: Tomcat-10.0.5; 9.0.45; 8.5.64; 7.0.108 TomEE-9.0.0-M3; 8.0.5 Versi yang lebih lama masih dapat beroperasi dengan fungsi clustering dan replikasi sesi sebelumnya.
 :::
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-server/tomcat-server-14.png" alt="enable Tomcat auto-clustering" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-server/tomcat-server-14.png" alt="enable Tomcat auto-clustering" max-width="100%"/>
 
 ## Deploy Application to Tomcat Environment{#deploy-application-to-tomcat-environment}
 
@@ -117,12 +117,12 @@ Ada beberapa opsi untuk [mendeploy aplikasi](<https://docs.dewacloud.com/docs/de
 
 :::tip 
 Server Tomcat dan TomEE disediakan dengan variabel khusus HOT_DEPLOY (tidak diatur secara default) yang menentukan apakah server harus di-restart (false, disabled, 0) atau tidak (true, enabled, 1) selama proses deployment aplikasi. Hot deploy (tanpa restart) relatif lebih cepat dan memungkinkan untuk menghindari downtime selama proses deployment. Namun, ini tidak didukung oleh beberapa aplikasi dan oleh karena itu dinonaktifkan secara default.
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-server/tomcat-server-15.png" alt="hot deploy" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-server/tomcat-server-15.png" alt="hot deploy" max-width="100%"/>
 :::
 
 1\. Buka **Deployment Manager** di bagian bawah dashboard dan klik tombol **Upload** di tab _Archive_.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-server/tomcat-server-16.png" alt="deployment manager" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-server/tomcat-server-16.png" alt="deployment manager" max-width="100%"/>
 
 2\. **Jelajah** file lokal Anda dan **Upload** proyek Anda (atau sediakan melalui _URL_). Archive Java umum memiliki ekstensi _WAR_ , _EAR_ , atau _ZIP_.
 
@@ -130,7 +130,7 @@ Server Tomcat dan TomEE disediakan dengan variabel khusus HOT_DEPLOY (tidak diat
 
 3\. Arahkan ke paket yang diperlukan dalam daftar dan klik tombol **Deploy to** yang muncul:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-server/tomcat-server-18.png" alt="deploy application from archive" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-server/tomcat-server-18.png" alt="deploy application from archive" max-width="100%"/>
 
 4\. Pilih environment yang sesuai, tentukan nama konteks (atau biarkan nilai ROOT default) dan mulai deploy aplikasi.
 
@@ -142,7 +142,7 @@ Pada langkah ini, Anda juga dapat menambahkan hooks deployment untuk menjalankan
 
 5\. Ketika proses selesai, Anda dapat melihat proyek Anda dalam deployment environment tersebut.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-server/tomcat-server-20.png" alt="application deployed" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-server/tomcat-server-20.png" alt="application deployed" max-width="100%"/>
 
 Ada lebih banyak opsi untuk mendeploy aplikasi Anda ke Tomcat, misalnya, melalui Git/SVN menggunakan [Maven build node](<https://docs.dewacloud.com/docs/java-vcs-deployment/>). Untuk informasi lebih lanjut, lihat [Deployment Guide](<https://docs.dewacloud.com/docs/deployment-guide/>).
 
@@ -158,7 +158,7 @@ Untuk membuat aplikasi Anda lebih portabel dan fleksibel, Anda dapat menggunakan
 
 File konfigurasi Tomcat tersedia untuk diedit langsung dari dashboard. Untuk mengaksesnya, klik tombol **Config** di sebelah server.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-server/tomcat-server-21.png" alt="configuration file manager" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-server/tomcat-server-21.png" alt="configuration file manager" max-width="100%"/>
 
 Direktori yang paling sering digunakan ditambahkan ke daftar _Favorites_ untuk akses cepat. Anda dapat mempelajari lebih lanjut tentang [konfigurasi server Tomcat](<https://docs.dewacloud.com/docs/java-application-server-config/>) dalam dokumen terkait.
 
@@ -168,13 +168,13 @@ Untuk membatasi akses ke proyek Anda yang dideploy ke server Tomcat, kami mereko
 
 Cara lain untuk memastikan keamanan aplikasi Anda adalah dengan fitur **Container Firewall**. Ini memungkinkan Anda untuk mengontrol ketersediaan node Anda baik dari dalam maupun luar platform. Konfigurasi container firewall Tomcat menggunakan informasi dari artikel [Container Firewall Management](<https://docs.dewacloud.com/docs/container-firewall/>).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-server/tomcat-server-22.png" alt="Tomcat firewall" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-server/tomcat-server-22.png" alt="Tomcat firewall" max-width="100%"/>
 
 ### Multiple Domains on Single Tomcat Server{#multiple-domains-on-single-tomcat-server}
 
 Anda dapat mengatur beberapa nama domain pada server Tomcat untuk meningkatkan kegunaan, efisiensi, dan skalabilitas aplikasi Anda, serta menghemat biaya tanpa harus mengonfigurasi instance terpisah. Untuk ini, sesuaikan file konfigurasi Tomcat seperti yang dijelaskan dalam instruksi [multiple domains](<https://docs.dewacloud.com/docs/multiple-domains-tomcat-server/>).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-server/tomcat-server-23.png" alt="Tomcat multiple domains" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/tomcat-and-tomee/tomcat-server/tomcat-server-23.png" alt="Tomcat multiple domains" max-width="100%"/>
 
 Seperti yang Anda lihat, platform ini membuat hosting Tomcat menjadi mudah dan fleksibel. Platform cloud ini menyediakan berbagai pengaturan yang sudah ditentukan sebelumnya agar Anda tidak perlu khawatir tentang tugas rutin. Pada saat yang sama, platform ini membuat server sepenuhnya dapat disesuaikan untuk konfigurasi kompleks tertentu. 
 

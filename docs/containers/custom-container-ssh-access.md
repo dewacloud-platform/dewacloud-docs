@@ -35,7 +35,7 @@ Jika Anda menghadapi masalah selama membangun koneksi, periksa aturan firewall u
 
 Jika Anda lupa kredensial container Anda atau kehilangan/menghapus email yang sesuai, Anda dapat memulihkannya kapan saja - cukup pilih opsi **Reset password** dalam daftar _**Additional**_ yang dapat diperluas (ikon gear) untuk node yang diperlukan (atau set dari mereka):
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/container/container-ssh-access/container-ssh-access-1.png" alt="reset custom container password" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/container-ssh-access/container-ssh-access-1.png" alt="reset custom container password" max-width="100%"/>
 
 Sebagai hasilnya, Anda akan menerima password baru melalui email dan dapat menggunakannya untuk mengoperasikan container Anda.
 

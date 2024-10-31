@@ -25,7 +25,7 @@ Juga, untuk environment yang sudah ada, versi engine yang digunakan dapat dengan
 
 1\. Masuk ke dashboard PaaS dan klik tombol **New Environment**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-versions/java-versions-1.png" alt="new Java environment" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-versions/java-versions-1.png" alt="new Java environment" max-width="100%"/>
 
 Di dalam wizard yang terbuka, beralih ke tab _**Java**_, pilih server aplikasi dan versi engine yang diinginkan (seperti yang ditunjukkan pada gambar di atas).
 

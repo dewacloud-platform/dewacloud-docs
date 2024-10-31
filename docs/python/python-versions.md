@@ -27,7 +27,7 @@ Versi ini dapat dipilih selama [pembuatan environment baru](<https://docs.dewacl
 
 2\. Navigasikan ke tab bahasa pemrograman _**Python**_, di mana **Apache Python** application server dipilih secara otomatis, dan pilih versi engine yang diinginkan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/python/python-versions/02-topology-wizard-select-python-version.png" alt="topology wizard select Python version" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/python-versions/02-topology-wizard-select-python-version.png" alt="topology wizard select Python version" max-width="100%"/>
 
 Sesuaikan pengaturan lainnya (misalnya [batas cloudlets](<https://docs.dewacloud.com/docs/automatic-vertical-scaling/>), [public IPs](<https://docs.dewacloud.com/docs/public-ip/>), [region](<https://docs.dewacloud.com/docs/environment-regions/>), dll.), berikan nama environment dan klik **Create**.
 
@@ -40,7 +40,7 @@ Versi dari instance Python yang sudah ada dapat diubah dengan fitur [container r
   * dari bagian tengah topology wizard (dapat diakses dengan tombol **Change Environment Topology** di sebelah environment yang sesuai)  
   <img src="https://assets.dewacloud.com/dewacloud-docs/python/python-versions/03-topology-wizard-redeploy-python-nodes.png" alt="topology wizard redeploy Python nodes" width="40%"/>
   * menggunakan tombol **Redeploy container(s)** di sebelah node atau layer yang diperlukan  
-    <img src="https://assets.dewacloud.com/dewacloud-docs/python/python-versions/04-redeploy-containers-button.png" alt="redeploy containers button" width="100%"/>
+    <img src="https://assets.dewacloud.com/dewacloud-docs/python/python-versions/04-redeploy-containers-button.png" alt="redeploy containers button" max-width="100%"/>
 
 2\. Dalam frame yang terbuka, Anda dapat menyesuaikan pengaturan berikut:
 

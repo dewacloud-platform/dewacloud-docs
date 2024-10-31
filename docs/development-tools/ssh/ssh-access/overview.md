@@ -11,7 +11,7 @@ Platform ini mendukung akses melalui SSH dalam salah satu cara berikut:
 
   * _**[SSH Gate](<https://docs.dewacloud.com/docs/ssh-gate-access/>)**_ \- Jenis koneksi ini didasarkan pada penggunaan _pasangan kunci SSH_ dan memungkinkan akses ke [seluruh akun PaaS](<https://docs.dewacloud.com/docs/ssh-gate-access/#ssh-access-to-platform-account>) atau hanya [container tertentu](<https://docs.dewacloud.com/docs/ssh-gate-access/#direct-access-to-container>); ini memberikan tingkat keamanan yang substansial, menghubungkan hanya instansi dengan **kunci SSH privat** yang sesuai dengan **kunci publik** yang tepat, disimpan dalam pengaturan akun platform Anda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ssh/ssh-access/overview/overview-1.png" alt="PaaS SSH access options" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ssh/ssh-access/overview/overview-1.png" alt="PaaS SSH access options" max-width="100%"/>
 
 Setelah mengakses node melalui SSH menggunakan salah satu metode yang dijelaskan di atas, Anda dapat mulai mengelola container Anda.
 

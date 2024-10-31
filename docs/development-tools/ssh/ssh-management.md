@@ -12,7 +12,7 @@ There are two ways to connect your server inside Jelastic PaaS over SSH:
 <img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ssh/ssh-management/ssh-management-1.png" alt="Application Servers Web SSH" width="80%"/>
 
   * **SSH Gate** \- alternatively, you can connect to your server via any preferred local SSH client basing on preliminary [generated](<https://docs.dewacloud.com/docs/ssh-generate-key/?utm_source=blog-ssh-to-container>) SSH keys pair (where the public key should be [added](<https://docs.dewacloud.com/docs/ssh-add-key/?utm_source=blog-ssh-to-container>) to your Account Settings, and the corresponding private key - being handled at your local machine) 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ssh/ssh-management/ssh-management-2.png" alt="SSH Keys" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ssh/ssh-management/ssh-management-2.png" alt="SSH Keys" max-width="100%"/>
    Once all the requirements are fulfilled, you can [establish an SSH connection](<https://docs.dewacloud.com/docs/ssh-gate-access/?utm_source=blog-ssh-to-container>) by means of the corresponding command line (circled above) from the same-named tab of your account settings.
   
   For the sake of simplicity and quick access, in this article we’ll leverage the inbuilt Web SSH tool; however, the described below commands can be used when working via remote local client absolutely similar.
@@ -66,7 +66,7 @@ _dimana_
 ls
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ssh/ssh-management/ssh-management-6.png" alt="Out of memory error" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ssh/ssh-management/ssh-management-6.png" alt="Out of memory error" max-width="100%"/>
 
 3\. Di antara beberapa perintah paling umum yang dimaksudkan untuk manajemen file, adalah:
 
@@ -103,7 +103,7 @@ Di sini, Anda dapat memeriksa data seperti total memori yang dialokasikan (**_Me
 uname -a
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ssh/ssh-management/ssh-management-9.png" alt="linux node ssh" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ssh/ssh-management/ssh-management-9.png" alt="linux node ssh" max-width="100%"/>
 
 Di sini Anda dapat melihat informasi tentang kernel server (nama, versi, tanggal rilis), nama host node, jenis CPU, OS, dll.
 
@@ -141,7 +141,7 @@ Anda dapat mengambil file yang diperlukan dari Internet (misalnya, arsip aplikas
 wget {link}
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ssh/ssh-management/ssh-management-13.png" alt="Tomcat Apache" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/ssh/ssh-management/ssh-management-13.png" alt="Tomcat Apache" max-width="100%"/>
 
 2\. Kemudian, Anda dapat **_unzip_** arsip yang diunduh dengan perintah yang sama:
 

@@ -25,7 +25,7 @@ Ada [sejumlah middleware yang tersedia](<https://doc.traefik.io/traefik/middlewa
 
 Sebelum permintaan dikirim ke layanan, ia dapat dimodifikasi dengan middleware yang terhubung ke router.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Traefik%20v2%20Ingress%20Controller/image4-1.png" alt="Traefik v2 Services" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Traefik%20v2%20Ingress%20Controller/image4-1.png" alt="Traefik v2 Services" max-width="100%"/>
 
 Berikut beberapa contoh untuk middleware yang digunakan dalam routing permintaan:
 
@@ -40,7 +40,7 @@ http:
           - "/foo"
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Traefik%20v2%20Ingress%20Controller/image1-2.png" alt="Traefik v2 StripPrefix" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Traefik%20v2%20Ingress%20Controller/image1-2.png" alt="Traefik v2 StripPrefix" max-width="100%"/>
 
   * Middleware **basicAuth** untuk menerapkan otorisasi dasar. Misalnya:
 
@@ -56,7 +56,7 @@ http:
 
 Middleware ini adalah alternatif untuk menentukan kredensial melalui [Kubernetes Secrets](<https://kubernetes.io/docs/concepts/configuration/secret/>) dan membatasi akses ke layanan:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Traefik%20v2%20Ingress%20Controller/image7.png" alt="Traefik v2 Dashboard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Traefik%20v2%20Ingress%20Controller/image7.png" alt="Traefik v2 Dashboard" max-width="100%"/>
 
 Dan ini adalah pengganti untuk anotasi Traefik v1
 
@@ -122,7 +122,7 @@ Selain dari Ingress standar, Jelastic KS sekarang mendukung sebuah [IngressRoute
 
 Di antara fitur lainnya, Traefik v2 mendukung Layanan khusus yang bertanggung jawab untuk mengkonfigurasi cara mencapai layanan Kubernetes yang sebenarnya yang pada akhirnya akan menangani permintaan masuk.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Traefik%20v2%20Ingress%20Controller/image6.png" alt="Traefik v2 BasicAuth" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Traefik%20v2%20Ingress%20Controller/image6.png" alt="Traefik v2 BasicAuth" max-width="100%"/>
 
 ```yaml
 http:
@@ -136,7 +136,7 @@ http:
 
 Selain itu, Traefik menawarkan serangkaian layanan internal. Anda bisa melihat contoh dalam file konfigurasi dari repositori Jelastic KS: ada akses ke layanan dashboard Traefik v2 bawaan via IngressRoute yang disediakan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Traefik%20v2%20Ingress%20Controller/image2-2-1024x487.png" alt="Traefik v2 in Jelastic Kubernetes" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/Traefik%20v2%20Ingress%20Controller/image2-2-1024x487.png" alt="Traefik v2 in Jelastic Kubernetes" max-width="100%"/>
 
 Ini hanya beberapa perubahan utama dalam Traefik v2 baru yang diterapkan dalam [Jelastic Kubernetes v1.21.2+](<https://github.com/jelastic-jps/kubernetes/tree/v1.21.2>). Anda bisa memeriksa daftar lengkapnya dalam [dokumentasi resmi terkait transisi dari Traefik v1 ke v2](<https://doc.traefik.io/traefik/migration/v1-to-v2/>).
 

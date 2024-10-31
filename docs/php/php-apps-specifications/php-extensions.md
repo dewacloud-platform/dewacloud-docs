@@ -208,21 +208,21 @@ Di bawah ini, Anda dapat mengetahui bagaimana hal ini dapat dilakukan:
 
 1\. Klik tombol **Config** untuk server aplikasi Anda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-apps-specifications/php-extensions/config.png" alt="php extensions config" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-apps-specifications/php-extensions/config.png" alt="php extensions config" max-width="100%"/>
 
 2\. Di dalam tab konfigurasi yang terbuka, pindahkan ke file **etc > _php.ini_** dan gulir ke bawah ke bagian _**Extensions provided by PaaS**_. Di sini, setiap ekstensi dinamis memiliki subbagian sendiri, di mana ekstensi dapat diaktifkan dan dikonfigurasi.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-apps-specifications/php-extensions/phpini.png" alt="php extensions phpini" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-apps-specifications/php-extensions/phpini.png" alt="php extensions phpini" max-width="100%"/>
 
 3\. Sekarang, temukan bagian yang diperlukan (mereka terdaftar dalam urutan alfabet) dan hapus komentar pada direktif _**extension=\{module_name\}.so**_ di dalam (yaitu hapus titik koma di awal baris yang sesuai) untuk mengaktifkannya:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-apps-specifications/php-extensions/soapso.png" alt="php extensions soapso" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-apps-specifications/php-extensions/soapso.png" alt="php extensions soapso" max-width="100%"/>
 
 Juga, di sini Anda dapat menyesuaikan ekstensi dengan menggunakan parameter konfigurasi yang tertera (atau menentukan parameter yang Anda butuhkan sendiri).
 
 4\. Setelah semua perubahan yang diperlukan dibuat, jangan lupa untuk **Save** dan **Restart** node untuk menerapkan konfigurasi baru.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-apps-specifications/php-extensions/restart.png" alt="php extensions restart" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-apps-specifications/php-extensions/restart.png" alt="php extensions restart" max-width="100%"/>
 
 ## Configure Extension{#configure-extension}
 
@@ -246,7 +246,7 @@ Selain semua modul yang tersedia di platform dengan bawaan, Anda juga memiliki k
 
 2\. Navigasikan ke dashboard platform dan klik tombol **Config** untuk server aplikasi PHP Anda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-apps-specifications/php-extensions/config.png" alt="php extensions config" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-apps-specifications/php-extensions/config.png" alt="php extensions config" max-width="100%"/>
 
 3\. Sekarang, menggunakan pengelola yang terbuka, unggah ekstensi kustom Anda ke folder **modules**.
 
@@ -258,7 +258,7 @@ Selain semua modul yang tersedia di platform dengan bawaan, Anda juga memiliki k
 extension={module_name}.so
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-apps-specifications/php-extensions/custom-module.png" alt="php extensions custom module" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-apps-specifications/php-extensions/custom-module.png" alt="php extensions custom module" max-width="100%"/>
 
 :::tip 
 Anda dapat menentukan semua pengaturan yang diperlukan untuk ekstensi Anda di bagian yang sama, jika diperlukan.
@@ -266,7 +266,7 @@ Anda dapat menentukan semua pengaturan yang diperlukan untuk ekstensi Anda di ba
 
 5\. **Simpan** perubahan dan **Restart** node.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-apps-specifications/php-extensions/restart.png" alt="php extensions restart" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-apps-specifications/php-extensions/restart.png" alt="php extensions restart" max-width="100%"/>
 
 Itu saja! Sekarang ekstensi kustom Anda diaktifkan.
 

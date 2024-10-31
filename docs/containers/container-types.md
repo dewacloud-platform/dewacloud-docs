@@ -53,7 +53,7 @@ _Custom Docker Containers_ adalah _Docker image_ (berdasarkan [sistem operasi da
 
 Dibandingkan dengan certified managed containers, opsi ini memberikan akses ke lebih banyak pilihan software stacks. Anda dapat memilih dari berbagai macam 3rd party Docker images yang tersedia di Docker Hub atau registri container publik atau privat kompatibel lainnya. Namun, operabilitas perangkat lunak dan kompatibilitas dalam platform tidak dapat dijamin karena dikelola oleh pemelihara image pihak ketiga yang bersangkutan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/container/container-types/container-types-6.png" alt="custom Docker containers" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/container-types/container-types-6.png" alt="custom Docker containers" max-width="100%"/>
 
 ## Docker Engine CE (Docker Native){#docker-engine-ce-docker-native}
 

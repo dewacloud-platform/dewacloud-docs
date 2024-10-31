@@ -31,7 +31,7 @@ Beralih ke tab bahasa _**Python**_ dan pilih versi engine yang diinginkan. _Apac
 Template ini menggunakan _systemd_ daemon modern.
 :::
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/python/python-dev-center/02-python-topology-wizard.png" alt="Python topology wizard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/python-dev-center/02-python-topology-wizard.png" alt="Python topology wizard" max-width="100%"/>
 
 :::note
 Setiap instance adalah container yang terisolasi sepenuhnya. Instance dari lapisan yang sama secara otomatis didistribusikan ke host yang tersedia untuk memastikan ketersediaan tinggi.
@@ -111,7 +111,7 @@ Jika diperlukan, nama domain default aplikasi Python Anda dapat diganti dengan [
 
 Selain itu, platform memungkinkan pengalihan lalu lintas antara dua lingkungan dengan cepat dan tanpa downtime (mis. untuk secara mulus mengarahkan pelanggan ke versi aplikasi yang lebih baru) menggunakan fungsionalitas [swap domains](<https://docs.dewacloud.com/docs/swap-domains/>) atau dengan bantuan _**SwapExtIps**_ [API](<https://docs.dewacloud.com/docs/cli-ip-swap/>).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/python/python-dev-center/06-python-custom-domains-management.png" alt="Python custom domains management" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/python-dev-center/06-python-custom-domains-management.png" alt="Python custom domains management" max-width="100%"/>
 
 ## Automatic Vertical Scaling{#automatic-vertical-scaling}
 
@@ -140,7 +140,7 @@ Untuk distribusi permintaan yang tepat, [_load balancer_](https://docs.dewacloud
 
 Navigasikan ke **Settings > [Auto Horizontal Scaling](<https://docs.dewacloud.com/docs/automatic-horizontal-scaling/>)** untuk mengatur _custom triggers_, yang memungkinkan penambahan/pengurangan jumlah node secara otomatis sesuai dengan beban aplikasi. Pilih jenis sumber daya yang akan dimonitor (_CPU_ , _RAM_ , _Network_ , _Disk_) dan kondisi scaling yang tepat, tindakan lainnya akan diotomatisasi. Anda akan diberi tahu tentang perubahan melalui notifikasi email jika opsi ini diaktifkan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/python/python-dev-center/09-python-automatic-horizontal-scaling.png" alt="Python automatic horizontal scaling" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/python/python-dev-center/09-python-automatic-horizontal-scaling.png" alt="Python automatic horizontal scaling" max-width="100%"/>
 
 ## Database Connection to Python Application{#database-connection-to-python-application}
 

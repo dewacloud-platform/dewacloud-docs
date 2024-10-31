@@ -60,7 +60,7 @@ Dalam rilis platform 8.8 saat ini, kemampuan untuk beralih antara _UTC_ dan _wak
 
 Tombol pengalih baru “_**UTC time**_” ditambahkan ke tab _Riwayat Penagihan_ (baik untuk seluruh akun maupun per lingkungan spesifik). Pilih waktu tampilan yang diinginkan dan klik **Refresh** untuk menerapkan. Status pengalihan juga akan mempengaruhi laporan CSV yang dapat diunduh.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/release-notes/release-notes-8.8/01-utc-billing-history.png" alt="riwayat penagihan UTC" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/release-notes/release-notes-8.8/01-utc-billing-history.png" alt="riwayat penagihan UTC" max-width="100%"/>
 
 [Info lebih lanjut](<https://docs.dewacloud.com/docs/monitoring-consumed-resources/#billing-history>)
 
@@ -70,7 +70,7 @@ Tombol pengalih baru “_**UTC time**_” ditambahkan ke tab _Riwayat Penagihan_
 
 Dewacloud Application Platform menyediakan file sumber dengan semua metode API yang didukung dalam standar **[OpenAPI Specification](<https://swagger.io/resources/open-api/>)**. Paket ini telah ditinjau secara menyeluruh dalam rilis 8.8 saat ini dan diperbarui dengan banyak perbaikan, pengoptimalan, dan perbaikan. Seperti biasa, paket baru dapat diunduh dalam format YAML dan JSON dengan mengklik tautan yang sesuai di sudut kanan atas situs [Dewacloud Application Platform API](<https://docs.jelastic.com/api/>) :
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/release-notes/release-notes-8.8/02-download-openapi.png" alt="download OpenAPI" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/release-notes/release-notes-8.8/02-download-openapi.png" alt="download OpenAPI" max-width="100%"/>
 
 [Info lebih lanjut](<https://docs.jelastic.com/api/>)
 

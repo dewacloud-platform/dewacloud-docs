@@ -19,13 +19,13 @@ Untuk menggunakan memcached untuk replikasi sesi ikuti petunjuk berikut.
 3. Dalam menu **Environment topology**, pilih dua atau lebih server yang ingin Anda gunakan (misalnya, dua instance **Tomcat**) dan node **Memcached**. Ketik nama environment (misalnya, _memcachedreplication_) dan klik **Create**.
 
 <p>
-<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-replication-1.png" alt="environment wizard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-replication-1.png" alt="environment wizard" max-width="100%"/>
 </p>
 
 4. Tunggu beberapa saat sampai environment terbuat.
 
 <p>
-<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-replication-2.png" alt="environment for Memcached replication" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-replication-2.png" alt="environment for Memcached replication" max-width="100%"/>
 </p>
 
 ## Konfigurasi
@@ -37,19 +37,19 @@ Download juga [memcached-session-manager-tc7-1.6.3.jar](http://code.google.com/p
 2. Klik **Config** untuk Tomcat.
 
 <p>
-<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-replication-3.png" alt="Tomcat config" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-replication-3.png" alt="Tomcat config" max-width="100%"/>
 </p>
 
 3. Di tab yang terbuka pilih folder **lib** dan unggah file **.jar** yang baru saja di-download.
 
 <p>
-<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-replication-4.png" alt="upload libraries" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-replication-4.png" alt="upload libraries" max-width="100%"/>
 </p>
 
 4. Masuk ke directory **conf** dan buka file **context.xml**.
 
 <p>
-<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-replication-5.png" alt="context xml" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-replication-5.png" alt="context xml" max-width="100%"/>
 </p>
 
 5. Perbarui **context.xml** agar berisi konfigurasi Manager untuk memcached-session-manager, seperti ini:
@@ -71,7 +71,7 @@ Download juga [memcached-session-manager-tc7-1.6.3.jar](http://code.google.com/p
 Anda dapat menggunakan [strategi serialisasi](http://code.google.com/p/memcached-session-manager/wiki/SerializationStrategies) lainnya sesuai kebutuhan, dalam kasus ini kami menggunakan [Kryo](http://code.google.com/p/kryo/), sebuah library serialisasi biner yang sangat cepat.
 
 <p>
-<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-replication-6.png" alt="configure context xml" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-replication-6.png" alt="configure context xml" max-width="100%"/>
 </p>
 
 6. Pada string _**memcachedNodes**_ tambahkan **host** memcached Anda dan **port** default (_11211_). Dalam kasus kami adalah:

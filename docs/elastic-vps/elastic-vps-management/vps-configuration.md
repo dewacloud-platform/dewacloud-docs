@@ -25,7 +25,7 @@ Untuk mengatur VPS Anda di dalam platform, ikuti langkah-langkah berikut.
 2. Di sini, klik bagian **VPS** di sudut kiri bawah dan pilih VPS yang dibutuhkan (_CentOS 7.9_ dalam contoh kami) dari daftar opsi yang dapat diperluas.
 
 <p>
-<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/vps-config-2.png" alt="elastic vps topology wizard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/vps-config-2.png" alt="elastic vps topology wizard" max-width="100%"/>
 </p>
 
 Tentukan batasan cloudlet untuk node ini, [tambahkan scaling limit](#elastic-vps-scaling) jika diperlukan, pilih [region](https://docs.dewacloud.com/docs/environment-regions/) yang diinginkan, ketik nama environment dan klik pada **Create**.
@@ -33,7 +33,7 @@ Tentukan batasan cloudlet untuk node ini, [tambahkan scaling limit](#elastic-vps
 3. Dalam beberapa saat, environment baru Anda dengan virtual server yang dipilih akan muncul di dashboard. Anda juga akan menerima notifikasi email dengan data administrasi (kredensial login/password dan URL akses).
 
 <p>
-<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/vps-config-3.png" alt="elastic VPS reset password button" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/vps-config-3.png" alt="elastic VPS reset password button" max-width="100%"/>
 </p>
 
 Anda juga bisa melihat private dan public IP address (jika sudah ditambahkan) secara langsung di dashboard. Jika Anda kehilangan akses ke server VPS Anda atau ingin mengubah kredensial admin untuknya, klik tombol **Reset Password** seperti yang ditunjukkan pada gambar di atas.
@@ -47,7 +47,7 @@ Fleksibilitas hosting VPS di platform dicapai berkat automatic scaling, baik sec
 Untuk scaling environment Anda, Anda perlu meningkatkan/menurunkan jumlah resource maksimum yang tersedia (cloudlets) dengan menyesuaikan slider cloudlet di bagian _Vertical Scaling per Node_.
 
 <p>
-<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/vps-config-4.png" alt="elastic VPS vertical scaling" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/vps-config-4.png" alt="elastic VPS vertical scaling" max-width="100%"/>
 </p>
 
 Fungsi [horizontal scaling](https://docs.dewacloud.com/docs/horizontal-scaling/) memungkinkan mudahnya menyesuaikan jumlah server dalam environment Anda menggunakan tombol “**-**” dan “**+**” yang sesuai. Di sini, Anda dapat memilih mode scaling yang diinginkan:
@@ -56,7 +56,7 @@ Fungsi [horizontal scaling](https://docs.dewacloud.com/docs/horizontal-scaling/)
 - _**Stateful**_ - secara berurutan menyalin sistem file dari container master ke dalam node baru
 
 <p>
-<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/vps-config-5.png" alt="elastic VPS horizontal scaling" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/vps-config-5.png" alt="elastic VPS horizontal scaling" max-width="100%"/>
 </p>
 
 Pastikan untuk **Apply** perubahan yang telah Anda buat.
@@ -70,7 +70,7 @@ Sebagian besar konfigurasi dasar pada instance VPS Anda dapat dilakukan langsung
 **[Configuration file manager](https://docs.dewacloud.com/docs/configuration-file-manager/)** bawaan dirancang untuk mengelola (membuat/menghapus, upload/download, mengedit) file di dalam container Anda, serta menyiapkan [mount point](https://docs.dewacloud.com/docs/mount-points/) dan mengelola [data yang di-export](https://docs.dewacloud.com/docs/storage-exports/).
 
 <p>
-<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/vps-config-6.png" alt="elastic VPS file manager" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/vps-config-6.png" alt="elastic VPS file manager" max-width="100%"/>
 </p>
 
 Tab yang sesuai dapat dibuka dengan mengklik tombol **Config** di samping node VPS yang diperlukan (atau keseluruhan layer).
@@ -80,7 +80,7 @@ Tab yang sesuai dapat dibuka dengan mengklik tombol **Config** di samping node V
 Tracking **[Log](https://docs.dewacloud.com/docs/log-files/)** adalah pilihan yang berguna untuk manajemen VPS Anda secara efisien. Di sini, data tentang semua aspek lifecycle container Anda dikumpulkan, yang bisa bermanfaat saat troubleshooting dan debugging aplikasi serta layanan Anda.
 
 <p>
-<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/vps-config-7.png" alt="elastic VPS log files" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/elastic-vps/vps-config-7.png" alt="elastic VPS log files" max-width="100%"/>
 </p>
 
 Tab logs dapat diakses dengan mengklik tombol **Log** di samping node VPS yang diperlukan (atau keseluruhan layer).

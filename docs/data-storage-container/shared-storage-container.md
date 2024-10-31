@@ -33,7 +33,7 @@ Dan di bawah ini kita akan mempertimbangkan bagaimana mengatur server Shared Sto
 
 Untuk membuat Shared Storage Container baru, aktifkan bagian _**Storage**_ yang sesuai di topology wizard. Opsi ini tersedia untuk semua jenis engine, termasuk container _Docker_.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/shared%20storage%20container/02-shared-storage-topology-wizard.png" alt="shared storage topology wizard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/shared%20storage%20container/02-shared-storage-topology-wizard.png" alt="shared storage topology wizard" max-width="100%"/>
 
 Di bagian tengah wizard, Anda dapat memberikan konfigurasi tambahan untuk Shared Storage Anda. Jumlah ruang penyimpanan yang disediakan dapat disesuaikan melalui kolom _Disk Limit_. Platform dapat secara otomatis mengkonfigurasi sebuah [cluster penyimpanan yang andal](<https://docs.dewacloud.com/docs/#shared-storage-auto-cluster>) (sebagai pengganti node terpisah) jika Anda mengaktifkan switcher _**Auto-Clustering**_. Juga, jika diperlukan, alamat [public IP](<https://docs.dewacloud.com/docs/public-ip/>) dapat dilampirkan ke node (baik IPv4 dan IPv6).
 
@@ -47,7 +47,7 @@ Klik **Create** saat sudah siap.
 
 Setelah mengaktifkan switcher **[Auto-Clustering](<https://docs.dewacloud.com/docs/auto-clustering/>)** untuk Shared Storage Container di topology wizard, platform secara otomatis mengkonfigurasi _replicated volume_ (mereplikasi file di seluruh brick dalam volume). Solusi seperti itu diimplementasikan berdasarkan paket-paket RPM _[GlusterFS](<https://www.gluster.org/>)_ yang telah dipasang dan dimaksudkan untuk environment di mana keandalan tinggi sangat penting.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/shared%20storage%20container/03-storage-auto-clustering.png" alt="storage auto-clustering" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/shared%20storage%20container/03-storage-auto-clustering.png" alt="storage auto-clustering" max-width="100%"/>
 
 :::tip
 Pertimbangkan spesifik berikut: Saat ini, konversi otomatis penyimpanan mandiri yang ada ke dalam cluster GlusterFS tidak didukung. Ikuti panduan migrasi manual. Auto-clustering Shared Storage memerlukan virtualisasi terbaru Virtuozzo 7 yang digunakan pada wilayah environment (tergantung pada penyedia hosting Anda) auto-cluster penyimpanan memerlukan 3 atau lebih node dan tidak dapat dinonaktifkan setelah pembuatan, skalasi dilakukan dengan dua langkah node untuk menjaga pengaturan voting yang berfungsi
@@ -83,7 +83,7 @@ Segera setelah pembuatan, Anda dapat langsung melanjutkan ke konfigurasi contain
 
 1\. Untuk operasi yang paling umum dengan penyimpanan Anda, pengelola file [configuration file manager](<https://docs.dewacloud.com/docs/configuration-file-manager/>) yang terpasang dapat digunakan. Untuk manajemen yang lebih kompleks, Anda mungkin lebih suka bekerja dengan beberapa third party tool (gunakan detail koneksi dari tab **SFTP / SSH Gate** yang dilingkari pada gambar di bawah).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/shared%20storage%20container/05-storage-file-manager.png" alt="storage file manager" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/shared%20storage%20container/05-storage-file-manager.png" alt="storage file manager" max-width="100%"/>
 
 :::tip
 Untuk berbagi file dengan instance lain dalam platform atau server eksternal, gunakan tab Mount Points dan Exports yang sesuai.
@@ -91,11 +91,11 @@ Untuk berbagi file dengan instance lain dalam platform atau server eksternal, gu
 
 2\. Akses [SSH](<https://docs.dewacloud.com/docs/ssh-access/>) (baik melalui klien SSH _web_ atau _local_) dapat dilakukan untuk mendapatkan kendali penuh atas server penyimpanan Anda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/shared%20storage%20container/06-web-ssh-connection-to-storage.png" alt="Web SSH connection to storage" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/shared%20storage%20container/06-web-ssh-connection-to-storage.png" alt="Web SSH connection to storage" max-width="100%"/>
 
 3\. Jika Anda ingin menggunakan Shared Storage Container Anda sebagai server eksternal (yaitu tidak hanya dalam instalasi PaaS saat ini) - aktifkan opsi [public IP](<https://docs.dewacloud.com/docs/public-ip/>) untuk membuatnya dapat diakses dari luar. Ikuti instruksi dalam panduan [NFS server configurations](<https://docs.dewacloud.com/docs/configure-external-nfs-server/>) yang berdedikasi.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/shared%20storage%20container/07-storage-public-ip.png" alt="storage public IP" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/shared%20storage%20container/07-storage-public-ip.png" alt="storage public IP" max-width="100%"/>
 
 Alamat IP yang terlampir pada _Shared Storage_ dapat dilihat melalui memperluas node yang sesuai di dashboard.
 
@@ -107,7 +107,7 @@ Alamat IP yang terlampir pada _Shared Storage_ dapat dilihat melalui memperluas 
 Opsi migrasi langsung tidak tersedia untuk migrasi environment dengan container Shared Storage. Jadi, untuk memeriksa node yang terpengaruh oleh tidak tersedianya sementara penyimpanan, gunakan ketersediaan komponen link yang sesuai yang dilingkari dalam gambar di bawah.
 :::
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/shared%20storage%20container/09-shared-storage-migration.png" alt="shared storage migration" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/shared%20storage%20container/09-shared-storage-migration.png" alt="shared storage migration" max-width="100%"/>
 
 Itu saja! Untuk sekarang, karena Anda sudah mengetahui poin utama dalam menangani Shared Storage Container Anda, jangan ragu untuk melanjutkan dan mengisi dengan konten yang diperlukan.
 

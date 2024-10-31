@@ -35,7 +35,7 @@ Dasar dari platform CLI diwakili oleh arsip _.jar_ yang dapat dieksekusi dan beb
 
 1\. Untuk memulai, autentikasi harus dilakukan. Autentikasi ini dipanggil secara otomatis saat penggunaan perintah CLI pertama, misalnya:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/platform-cli-overview/platform-cli-overview-2.png" alt="CLI authentication" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/platform-cli-overview/platform-cli-overview-2.png" alt="CLI authentication" max-width="100%"/>
 
 Cukup ikuti kuesioner yang muncul, tentukan nilai yang diminta:
 
@@ -50,7 +50,7 @@ Autentikasi juga dapat dimulai secara manual. Misalnya, jika Anda perlu beralih 
 ```
 ~/jelastic/users/authentication/signin --login {email} --password {password} --platformUrl {platformUrl}
 ```
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/platform-cli-overview/platform-cli-overview-3.png" alt="CLI environment login" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/platform-cli-overview/platform-cli-overview-3.png" alt="CLI environment login" max-width="100%"/>
 Di sini, nilai yang ada di dalam kurung harus diganti dengan parameter akun yang sesuai (dijelaskan di atas). Properti “result”: 0 dalam respons yang diterima (dilingkari pada gambar di atas) berarti bahwa operasi telah berhasil dilakukan dan tanpa kesalahan. Perilaku semacam itu berlaku untuk semua perintah yang Anda jalankan.
 :::
 
@@ -64,7 +64,7 @@ Secara default, perintah CLI dianggap berhasil dijalankan meskipun metode API ya
 ~/jelastic/help
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/platform-cli-overview/platform-cli-overview-4.png" alt="CLI help" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/platform-cli-overview/platform-cli-overview-4.png" alt="CLI help" max-width="100%"/>
 
 Di sini, Anda dapat melihat daftar hierarkis jenis perintah (metode) yang tersedia. Setiap metode memiliki folder dengan nama yang sama dengan beberapa skrip (i.e. fungsi yang tersedia) di dalamnya.
 
@@ -74,13 +74,13 @@ Di sini, Anda dapat melihat daftar hierarkis jenis perintah (metode) yang tersed
 ls ~/jelastic/environment/control
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/platform-cli-overview/platform-cli-overview-5.png" alt="CLI environment control list" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/platform-cli-overview/platform-cli-overview-5.png" alt="CLI environment control list" max-width="100%"/>
 
 Setiap fungsi yang disajikan dapat dengan mudah dipanggil menggunakan jalur lengkapnya.
 
 5\. Untuk informasi lebih lanjut tentang operasi tertentu, jalankan tanpa parameter untuk melihat daftar lengkap persyaratan yang terlewat.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/platform-cli-overview/platform-cli-overview-6.png" alt="CLI command help" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/platform-cli-overview/platform-cli-overview-6.png" alt="CLI command help" max-width="100%"/>
 
 Anda juga dapat memeriksa [API documentation](https://www.virtuozzo.com/application-platform-api-docs/) kami untuk mendapatkan informasi tambahan.
 

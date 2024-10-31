@@ -34,16 +34,16 @@ Jadi, masuklah ke [dashboard Jelastic Cloud](<https://jelastic.cloud/?utm_source
 untuk meluncurkan wizard topologi. Pindahlah ke tab bahasa **Java** dan pilih template **Spring Boot** dalam lapisan server aplikasi di
 panel sebelah kiri seperti yang ditunjukkan di bawah ini. Tetapkan jumlah [sumber daya yang dialokasikan](<https://docs.dewacloud.com/docs/automatic-vertical-scaling/>), ketik nama lingkungan Anda, dan klik **Create** untuk melanjutkan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/spring-boot/spring-boot-2.png" alt="spring boot application cloud hosting" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/spring-boot/spring-boot-2.png" alt="spring boot application cloud hosting" max-width="100%"/>
 
 2\. Ketika lingkungan baru Anda muncul di dashboard, Anda bisa mengklik **Buka
 di Browser** untuk meluncurkan sampel aplikasi Hello World yang sudah diinstal sebelumnya.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/spring-boot/spring-boot-3.png" alt="spring boot open in browser" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/spring-boot/spring-boot-3.png" alt="spring boot open in browser" max-width="100%"/>
 
 Dengan cara ini, Anda dapat memastikan instance Spring Boot Anda berfungsi dan berjalan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/spring-boot/spring-boot-4.png" alt="spring boot default site" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/spring-boot/spring-boot-4.png" alt="spring boot default site" max-width="100%"/>
 
 Sekarang, mari kita pertimbangkan bagaimana mengintegrasikan aplikasi Java kustom Anda ke dalam
 lingkungan Spring Boot yang telah dibuat.
@@ -109,7 +109,7 @@ Sebagai contoh, coba proyek Spring Boot sampel, yang mewakili aplikasi sederhana
 Untuk itu, **Upload** arsip dengan aplikasi Anda melalui **Manager Deployment** dan
 mulai deployment-nya dengan mengklik tombol **Deploy to**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/spring-boot/spring-boot-5.png" alt="spring boot deploy application" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/spring-boot/spring-boot-5.png" alt="spring boot deploy application" max-width="100%"/>
 
 Dalam dialog yang terbuka, pilih lingkungan tujuan (sebelumnya
 _dibuat spring-boot-app_ dalam kasus kami) dan konfirmasi **Deploy** dengan tombol yang sama.
@@ -129,7 +129,7 @@ lingkungan Spring Boot target secara jarak jauh dengan perintah berikut:
 Setelah deployment selesai, beri sistem beberapa waktu lagi untuk menjalankan
 layanan yang diperlukan (di mana penundaan bergantung langsung pada kompleksitas proyek Anda) - kemajuan operasi ini saat ini dapat dilacak secara real-time melalui **_run.log_** [log](<https://docs.dewacloud.com/docs/log-files/>) server.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/spring-boot/spring-boot-6.png" alt="spring boot logs" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/spring-boot/spring-boot-6.png" alt="spring boot logs" max-width="100%"/>
 
 Setelah selesai, antarmuka web aplikasi Anda (jika dijalankan pada
 port **_8080_** default) dapat diakses dengan cara yang sama seperti
@@ -260,11 +260,11 @@ UI Jelastic Cloud dengan alat yang terintegrasi dengan sesuai, misalnya:
 
   * gunakan [**Configuration Manager**](<https://docs.dewacloud.com/docs/configuration-file-manager/>) bawaan untuk membuat atau mengunggah file baru, mengedit atau menghapus yang sudah ada, mengatur [titik mount](<https://docs.dewacloud.com/docs/mount-points/>), dan mengelola [data yang di-export](<https://docs.dewacloud.com/docs/storage-exports/>) dari server lain
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/spring-boot/spring-boot-7.png" alt="spring boot file manager" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/spring-boot/spring-boot-7.png" alt="spring boot file manager" max-width="100%"/>
 
   * mengatur [opsi dan argumen Java](<https://docs.dewacloud.com/docs/java-options-arguments/>) kustom untuk server Anda dengan menyesuaikan variabel lingkungan **_JAVA_OPTS_** dan **_JAVA_ARGS_**
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/spring-boot/spring-boot-8.png" alt="spring boot variables" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/spring-boot/spring-boot-8.png" alt="spring boot variables" max-width="100%"/>
 
   * telusuri [**Logs**](<https://docs.dewacloud.com/docs/log-files/>) server untuk mendapatkan detail tentang operasi-run untuk administrasi layanan yang efisien dan pemecahan masalah
   * lacak [**Statistics**](<https://docs.dewacloud.com/docs/statistics-monitoring/>) pada sumber daya yang digunakan untuk mengetahui kapasitas yang sebenarnya dibutuhkan server Anda dan menentukan pendekatan terbaik untuk alokasinya 
@@ -318,7 +318,7 @@ triggers monitoring yang dapat disesuaikan yang didasarkan pada penggunaan jenis
   *  _Disk I/O_
   *  _Disk IOPS_
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/spring-boot/spring-boot-9.png" alt="spring boot application scaling" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/spring-boot/spring-boot-9.png" alt="spring boot application scaling" max-width="100%"/>
 
 **Note:** Ketika sebuah server diperbesar (baik dengan trigger atau
 [secara manual](<https://docs.dewacloud.com/docs/horizontal-scaling/>)), NGINX [load balancer](<https://docs.dewacloud.com/docs/load-balancing/>) akan secara otomatis
@@ -337,7 +337,7 @@ keamanan berikut:
 
   * Fungsi [SSL bawaan](<https://docs.dewacloud.com/docs/built-in-ssl/>) memungkinkan Anda segera menerapkan enkripsi untuk domain internal aplikasi Anda (yaitu _https://\{envName\}\{platformDomain\}_) dengan sertifikat wildcard Jelastic SSL  
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/spring-boot/spring-boot-10.png" alt="spring boot ssl configuration" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/spring-boot/spring-boot-10.png" alt="spring boot ssl configuration" max-width="100%"/>
 
   * [SSL kustom](<https://docs.dewacloud.com/docs/custom-ssl/>) dapat dikonfigurasikan untuk lingkungan berbasis Spring Boot dengan menambahkan salah satu dari balancer beban bersertifikat
   * sebagai alternatif SSL gratis, berlaku untuk domain internal dan kustom, sebuah aplikasi tambahan Jelastic yang dikembangkan secara khusus menggunakan [Let’s Encrypt](<https://docs.dewacloud.com/docs/let's-encrypt-ssl>) dapat digunakan (memerlukan [load balancer](<https://docs.dewacloud.com/docs/load-balancing/>) bersertifikat)

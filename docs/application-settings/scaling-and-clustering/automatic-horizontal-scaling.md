@@ -26,9 +26,9 @@ Untuk mengonfigurasi trigger untuk automatic horizontal scaling, ikuti langkah-l
 Saat satu server aplikasi bersertifikat (bukan container Docker kustom) di-scale out pada environment tanpa load balancers, NGINX balancer ditambahkan secara otomatis. Jika Anda memerlukan balancer lain untuk aplikasi Anda, itu harus ditambahkan secara manual sebelum peristiwa scaling pertama.
 :::
 
-1\. Klik tombol **Settings** untuk environment yang diperlukan. <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/automatic-horizontal-scaling/02-environment-settings-button.png" alt="environment settings button" width="100%"/>
+1\. Klik tombol **Settings** untuk environment yang diperlukan. <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/automatic-horizontal-scaling/02-environment-settings-button.png" alt="environment settings button" max-width="100%"/>
 
-2\. Di tab yang terbuka, navigasikan ke bagian **Monitoring > Auto Horizontal Scaling**, di mana Anda dapat melihat daftar scaling triggers yang dikonfigurasi untuk environment saat ini (jika ada). <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/automatic-horizontal-scaling/03-auto-horizontal-scaling-settings.png" alt="auto horizontal scaling settings" width="100%"/>
+2\. Di tab yang terbuka, navigasikan ke bagian **Monitoring > Auto Horizontal Scaling**, di mana Anda dapat melihat daftar scaling triggers yang dikonfigurasi untuk environment saat ini (jika ada). <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/automatic-horizontal-scaling/03-auto-horizontal-scaling-settings.png" alt="auto horizontal scaling settings" max-width="100%"/>
 
 Gunakan tombol di panel alat untuk mengelola auto horizontal scaling untuk environment:
 
@@ -39,7 +39,7 @@ Gunakan tombol di panel alat untuk mengelola auto horizontal scaling untuk envir
 
 Klik **Add** untuk melanjutkan.
 
-3\. Pilih layer environment yang diperlukan dari daftar drop-down dan pilih tipe sumber daya yang akan dimonitor melalui salah satu tab yang sesuai (_CPU_, _Memory_, _Network_, _Disk I/O_, _Disk IOPS_). <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/automatic-horizontal-scaling/04-auto-horizontal-scaling-triggers.png" alt="auto horizontal scaling triggers" width="100%"/>
+3\. Pilih layer environment yang diperlukan dari daftar drop-down dan pilih tipe sumber daya yang akan dimonitor melalui salah satu tab yang sesuai (_CPU_, _Memory_, _Network_, _Disk I/O_, _Disk IOPS_). <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/automatic-horizontal-scaling/04-auto-horizontal-scaling-triggers.png" alt="auto horizontal scaling triggers" max-width="100%"/>
 
 :::tip
 Node awal (master) dapat digunakan sebagai **storage server** untuk berbagi data dalam seluruh layer, termasuk node yang ditambahkan melalui automatic horizontal scaling. Batas _CPU_ dan _Memory_ dihitung berdasarkan jumlah _cloudlets_ yang dialokasikan (unit sumber daya khusus platform, yang mewakili 400 MHz CPU dan 128 MiB RAM secara bersamaan).
@@ -90,7 +90,7 @@ Dalam contoh di bawah ini, kami akan menerapkan beban tinggi selama 5 menit (lih
   * _**add node**_ ketika beban RAM rata-rata lebih dari 65% selama minimal 5 menit
   * _**remove node**_ ketika beban RAM rata-rata kurang dari 20% selama minimal 10 menit
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/automatic-horizontal-scaling/09-node-load-statistics.png" alt="node load statistics" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/automatic-horizontal-scaling/09-node-load-statistics.png" alt="node load statistics" max-width="100%"/>
 
 Sekarang, mari kita lihat perilaku automatic horizontal scaling:
 
@@ -106,7 +106,7 @@ Selain itu, Anda dapat menyesuaikan periode untuk menampilkan aktivitas trigger 
   * **Nodes** tipe yang diterapkan scaling
   * **Info** tentang kondisi eksekusi trigger
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/automatic-horizontal-scaling/11-list-scaling-events.png" alt="list scaling events" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/automatic-horizontal-scaling/11-list-scaling-events.png" alt="list scaling events" max-width="100%"/>
 
 Selain itu, dengan mengarahkan kursor ke rekaman tertentu, Anda dapat memeriksa **Loading Value** (penggunaan sumber daya pada saat eksekusi) dan **Node Count** (jumlah node yang dihasilkan).
 

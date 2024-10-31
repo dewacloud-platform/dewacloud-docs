@@ -15,7 +15,7 @@ Di bawah ini, kami akan mengamati semua perintah yang tersedia untuk manajemen m
 ~/jelastic/environment/file/getmountpoints --envName {env_name} --nodeId {node_ID}
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/mount-points/mount-points-1.png" alt="platform CLI get mount points" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/mount-points/mount-points-1.png" alt="platform CLI get mount points" max-width="100%"/>
 
 di mana
 
@@ -32,7 +32,7 @@ Juga, dimungkinkan untuk menggunakan "nodeGroup" alih-alih "nodeId" untuk memili
 ~/jelastic/environment/file/getexportedlist --envName {env_name} --nodeId {node_ID}
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/mount-points/mount-points-2.png" alt="platform CLI get exported list" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/mount-points/mount-points-2.png" alt="platform CLI get exported list" max-width="100%"/>
 
 3. Untuk menambahkan mount point ke node tunggal, metode CLI _**AddMountPointById**_ berikut digunakan:
 
@@ -40,7 +40,7 @@ Juga, dimungkinkan untuk menggunakan "nodeGroup" alih-alih "nodeId" untuk memili
 ~/jelastic/environment/file/addmountpointbyid --envName {env_name} --nodeId {node_ID} --path {local_path} --protocol {protocol} --sourcePath {source_path} --sourceNodeId {source_node_ID} --readOnly {true/false}
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/mount-points/mount-points-3.png" alt="platform CLI add mount point by ID" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/mount-points/mount-points-3.png" alt="platform CLI add mount point by ID" max-width="100%"/>
 
 di mana
 
@@ -62,7 +62,7 @@ di mana
   ```
   ~/jelastic/environment/file/checkcrossmount --envName {env_name} --nodeId {env_name} --sourceNodeId {source_node_ID}
   ```
-  <img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/mount-points/mount-points-4.png" alt="check cross mount" width="100%"/>
+  <img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/mount-points/mount-points-4.png" alt="check cross mount" max-width="100%"/>
   Seperti yang dapat Anda lihat dalam gambar di atas, akan ada cross mount (yaitu nilai true), jika kami mencoba untuk memasang dari penyimpanan kami (111109) ke node 128994, karena data sudah dibagikan di arah yang berlawanan (dari 128994 ke 111109). Tetapi jika nilai yang Anda terima adalah false, mount point antara nodes dapat ditambahkan.
   :::
  
@@ -72,7 +72,7 @@ di mana
 ~/jelastic/environment/file/removemountpointbyid --envName {env_name} --nodeId {node_ID} --path {local_path}
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/mount-points/mount-points-5.png" alt="platform CLI remove mount point by ID" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/mount-points/mount-points-5.png" alt="platform CLI remove mount point by ID" max-width="100%"/>
 
 5. Juga, dimungkinkan untuk menambahkan mount points ke seluruh layer environment, tanpa perlu memanggil perintah terpisah untuk setiap node:
 
@@ -80,7 +80,7 @@ di mana
 ~/jelastic/environment/file/addmountpointbygroup --envName {env_name} --nodeGroup {env_layer} --path {local_path} --protocol {protocol} --sourcePath {source_path} --sourceNodeId {source_node_ID} --readOnly {true/false}
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/mount-points/mount-points-6.png" alt="platform CLI add mount point by group" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/mount-points/mount-points-6.png" alt="platform CLI add mount point by group" max-width="100%"/>
 
 di mana
 
@@ -101,7 +101,7 @@ di mana
 ~/jelastic/environment/file/removemountpointbygroup --envName {env_name} --nodeGroup {env_layer} --path {local_path}
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/mount-points/mount-points-7.png" alt="platform CLI remove mount point by group" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/platform-cli/mount-points/mount-points-7.png" alt="platform CLI remove mount point by group" max-width="100%"/>
 
 Itu saja! Sekarang, Anda tahu cara mengelola mount points Anda melalui platform CLI.
 

@@ -8,7 +8,7 @@ title: Volumes
 
 Tab **Volumes** berisi daftar data volumes yang di-mount pada container saat ini, yang dirancang untuk menjaga data secara independen dari siklus hidup container. Mereka ditampilkan dalam bentuk jalur ke titik mount yang sesuai di dalam node:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/container/configuration/volumes/volumes-1.png" alt="volumes layer settings" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/configuration/volumes/volumes-1.png" alt="volumes layer settings" max-width="100%"/>
 
 Menyimpan data dalam volumes memungkinkan berbagai operasi internal (misalnya, [redeploying](<https://docs.dewacloud.com/docs/container-redeploy/>) container ke versi tag yang lain) dilakukan tanpa mempengaruhi atau kehilangan data. Pemeliharaan konten volume semacam itu memberikan tingkat integritas yang tinggi untuk data Anda.
 
@@ -24,25 +24,25 @@ Selain itu, Anda memiliki kemampuan untuk mount dan mengelola custom volumes And
 
   * _**[Local Filesystem](<https://docs.dewacloud.com/docs/local-filesystem-storage/>)**_ \- direktori yang ditentukan akan digunakan sebagai penyimpanan lokal, dimaksudkan untuk menjaga data secara independen dari siklus hidup container saat ini (serta oleh node lainnya)
   
-    <img src="https://assets.dewacloud.com/dewacloud-docs/container/configuration/volumes/volumes-2.png" alt="add local filesystem volume" width="100%"/>
+    <img src="https://assets.dewacloud.com/dewacloud-docs/container/configuration/volumes/volumes-2.png" alt="add local filesystem volume" max-width="100%"/>
 
   * _**[Data Container](<https://docs.dewacloud.com/docs/mount-points/>)**_ \- jenis volume ini memungkinkan untuk mount data dari layer lain dalam akun Anda 
   
-    <img src="https://assets.dewacloud.com/dewacloud-docs/container/configuration/volumes/volumes-3.png" alt="add data container volume" width="100%"/>
+    <img src="https://assets.dewacloud.com/dewacloud-docs/container/configuration/volumes/volumes-3.png" alt="add data container volume" max-width="100%"/>
 
   * _**[Master Container](<https://docs.dewacloud.com/docs/mount-points/>)**_ \- data, yang disimpan dalam volume semacam itu, secara fisik ditempatkan pada node yang awalnya dibuat dari layer (yang disebut “master node”) dan secara otomatis dibagikan dengan semua instances lainnya pada layer ini 
   
-    <img src="https://assets.dewacloud.com/dewacloud-docs/container/configuration/volumes/volumes-4.png" alt="add master container volume" width="100%"/>
+    <img src="https://assets.dewacloud.com/dewacloud-docs/container/configuration/volumes/volumes-4.png" alt="add master container volume" max-width="100%"/>
 
   * _**[External Server](<https://docs.dewacloud.com/docs/mount-points/>)**_ \- opsi ini dimaksudkan untuk mount data dari server NFS eksternal (baik penyimpanan pihak ketiga custom Anda atau [container di platform lain](<https://docs.dewacloud.com/docs/configure-external-nfs-server/>)) 
   
-    <img src="https://assets.dewacloud.com/dewacloud-docs/container/configuration/volumes/volumes-5.png" alt="add external server volume" width="100%"/>
+    <img src="https://assets.dewacloud.com/dewacloud-docs/container/configuration/volumes/volumes-5.png" alt="add external server volume" max-width="100%"/>
 
 Ketika semua parameter untuk jenis mount yang dipilih ditentukan (detailnya dapat dilihat dalam panduan yang terhubung), klik **Add** untuk menyelesaikan konfigurasi.
 
 2\. Dengan opsi **Edit** di panel atas (atau dengan mengklik dua kali pada catatan yang sesuai), Anda dapat mengubah beberapa pengaturan untuk volumes yang sudah ada:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/container/configuration/volumes/volumes-6.png" alt="edit container volume" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/configuration/volumes/volumes-6.png" alt="edit container volume" max-width="100%"/>
 
 Di sini, **Local Path** adalah nilai yang tidak dapat diubah, tetapi Anda masih dapat mengalihkan metode mounting (dengan pindah ke tab yang berbeda) dan/atau menyesuaikan izin akses (dengan switcher **Read Only**).
 
@@ -56,7 +56,7 @@ Jangan lupa untuk **Apply** perubahan yang Anda buat.
   * volumes yang sudah ditentukan (yaitu default) tidak dapat dihapus (sementara masih tersedia untuk diedit)
   * jika Anda ingin menghapus volume tetapi mempertahankan [mount point](<https://docs.dewacloud.com/docs/mount-points/>), hapus tanda centang dari kotak _Unmount path_
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/container/configuration/volumes/volumes-7.png" alt="remove container volume" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/configuration/volumes/volumes-7.png" alt="remove container volume" max-width="100%"/>
 
 Konfirmasi keputusan Anda dalam bingkai pop-up yang muncul.
 

@@ -27,7 +27,7 @@ Dapatkan server load balancer LiteSpeed Web ADC Anda sendiri di platform dengan 
 
 2\. Konfigurasikan topologi yang diinginkan melalui wizard yang terbuka dan pilih **LiteSpeed Web ADC** sebagai load balancer Anda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/litespeed%20web%20adc/03-litespeed-adc-in-topology-wizard.png" alt="LiteSpeed ADC in topology wizard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/litespeed%20web%20adc/03-litespeed-adc-in-topology-wizard.png" alt="LiteSpeed ADC in topology wizard" max-width="100%"/>
 
 :::tip
 Anda dapat menerapkan beberapa penyesuaian pada LiteSpeed ADC Anda dengan mengatur beberapa variabel environment khusus:  
@@ -41,11 +41,11 @@ Klik **Create** untuk melanjutkan.
 
 3\. Jika Anda mengklik tombol **Open in Browser** untuk LiteSpeed balancer, salah satu server aplikasi backend akan secara otomatis diakses.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/litespeed%20web%20adc/05-litespeed-adc-open-in-browser.png" alt="LiteSpeed ADC open in browser" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/litespeed%20web%20adc/05-litespeed-adc-open-in-browser.png" alt="LiteSpeed ADC open in browser" max-width="100%"/>
 
 4\. Untuk mengelola load balancer Anda, Anda dapat mengakses **Admin Panel**. Klik tombol yang sesuai dalam daftar _**Additionally**_ di sebelah lapisan (kredensial akses dikirim melalui email setelah pembuatan node).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/litespeed%20web%20adc/06-litespeed-adc-admin-panel.png" alt="LiteSpeed ADC admin panel" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/litespeed%20web%20adc/06-litespeed-adc-admin-panel.png" alt="LiteSpeed ADC admin panel" max-width="100%"/>
 
 :::warning
 Ada beberapa spesifik saat bekerja dengan implementasi platform LiteSpeed melalui panel admin:  
@@ -65,7 +65,7 @@ Platform ini secara mulus mengintegrasikan biaya lisensi LiteSpeed sesuai dengan
 
 Berdasarkan kebutuhan Anda, Anda dapat memilih paket yang diperlukan menggunakan add-on khusus _**LiteSpeed License Manager**_ yang secara otomatis diinstal pada semua node berbasis LiteSpeed ([LS Web Server](<https://docs.dewacloud.com/docs/litespeed-web-server/>), LS ADC, [LLSMP](<https://docs.dewacloud.com/docs/lemp-llsmp/>)).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/litespeed%20web%20adc/09-litespeed-adc-license-manager.png" alt="LiteSpeed ADC license manager" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/litespeed%20web%20adc/09-litespeed-adc-license-manager.png" alt="LiteSpeed ADC license manager" max-width="100%"/>
 
 Add-on memungkinkan beralih antara paket dengan menyesuaikan jumlah _**Workers**_ (proses untuk melakukan pekerjaan server umum). Selain itu, solusi caching _**LiteMage**_ (dengan objek yang di-cache secara publik tanpa batas) dapat otomatis dikonfigurasi untuk LiteSpeed ADC dengan harga tambahan sebesar **149$** per bulan.
 
@@ -104,17 +104,17 @@ Di bagian ini, kami akan menunjukkan cara menonaktifkan pemeriksaan kesehatan ot
 
 1\. Masuk ke konsol LiteSpeed ADC dan masuk ke bagian **Configuration > Clusters > clusterHTTP > Worker Group**:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/litespeed%20web%20adc/12-litespeed-adc-work-group-configurations.png" alt="LiteSpeed ADC work group configurations" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/litespeed%20web%20adc/12-litespeed-adc-work-group-configurations.png" alt="LiteSpeed ADC work group configurations" max-width="100%"/>
 
 2\. Temukan pengaturan _**Ping URL**_ dan kosongkan nilainya.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/litespeed%20web%20adc/13-litespeed-adc-ping-url.png" alt="LiteSpeed ADC ping URL" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/litespeed%20web%20adc/13-litespeed-adc-ping-url.png" alt="LiteSpeed ADC ping URL" max-width="100%"/>
 
 Ulangi operasi ini untuk semua Kelompok Pekerja.
 
 3\. Lakukan **Graceful Restart** untuk menerapkan pengaturan baru.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/litespeed%20web%20adc/11-litespeed-adc-license-in-billing-history.png" alt="LiteSpeed ADC graceful restart" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/litespeed%20web%20adc/11-litespeed-adc-license-in-billing-history.png" alt="LiteSpeed ADC graceful restart" max-width="100%"/>
 
 :::warning
 Setelah operasi awal (yang memerlukan penonaktifan pemeriksaan kesehatan) selesai, pastikan untuk mengembalikan parameter Ping URL untuk memastikan bahwa masalah sebenarnya dengan backend tidak terlewatkan.

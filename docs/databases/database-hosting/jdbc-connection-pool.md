@@ -30,7 +30,7 @@ Di sini, baik GlassFish dan Payara Java application servers menyediakan dukungan
 
 3. Di wizard topologi, beralih ke tab _**Java**_, pilih **GlassFish** atau **Payara** sebagai application server Anda dan tambahkan database yang diperlukan (sebagai contoh, kami menggunakan _GlassFish_ dan _MySQL_). Selanjutnya, atur batas sumber daya untuk container Anda dan ketik nama environment yang diinginkan.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/jdbc-connection-pool/jdbc-connection-pool-2.png" alt="create GlassFish environment topology wizard" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/jdbc-connection-pool/jdbc-connection-pool-2.png" alt="create GlassFish environment topology wizard" max-width="100%"/>
 
    Klik **Create**, tunggu beberapa menit untuk mendapatkan environment baru Anda, dan lanjutkan ke pembuatan JDBC connection pool.
 
@@ -38,13 +38,13 @@ Di sini, baik GlassFish dan Payara Java application servers menyediakan dukungan
 
 1. Klik tombol **Open in Browser** untuk node MySQL Anda.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/jdbc-connection-pool/jdbc-connection-pool-3.png" alt="access MySQL database admin panel" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/jdbc-connection-pool/jdbc-connection-pool-3.png" alt="access MySQL database admin panel" max-width="100%"/>
 
    Gunakan email yang diterima dengan kredensial database untuk login ke panel _**phpMyAdmin**_ yang terbuka.
 
 2. Setelah masuk, beralih ke tab _**User accounts**_ dan klik tautan **Add user account**. Di dalam formulir yang terbuka, tentukan semua data yang diperlukan dan centang opsi _Create database with same name and grant all privileges_.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/jdbc-connection-pool/jdbc-connection-pool-4.png" alt="create pooling user and database" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/jdbc-connection-pool/jdbc-connection-pool-4.png" alt="create pooling user and database" max-width="100%"/>
 
    Klik **Go** di bagian bawah halaman untuk memulai penambahan database dan pengguna untuk connection pooling.
 
@@ -52,11 +52,11 @@ Di sini, baik GlassFish dan Payara Java application servers menyediakan dukungan
 
 1. JDBC MySQL connector disediakan secara default dengan stack (terletak di direktori **/opt/glassfish/glassfish/domains/domain1/lib** pada server GlassFish Anda atau **/opt/payara/glassfish/domains/domain1/lib** pada Payara), jadi Anda tidak perlu mengunggahnya secara manual.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/jdbc-connection-pool/jdbc-connection-pool-5.png" alt="JDBC MySQL connector for GlassFish" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/jdbc-connection-pool/jdbc-connection-pool-5.png" alt="JDBC MySQL connector for GlassFish" max-width="100%"/>
 
 2. Login ke **Admin panel** GlassFish (atau Payara), menggunakan kredensial dari email yang sesuai.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/jdbc-connection-pool/jdbc-connection-pool-6.png" alt="access GlassFish admin panel" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/jdbc-connection-pool/jdbc-connection-pool-6.png" alt="access GlassFish admin panel" max-width="100%"/>
 
 3. Navigasikan ke bagian **Resources > JDBC > JDBC Connection Pools** dan klik tombol **New** pada panel alat. Di dalam formulir yang muncul, isi kolom berikut:
 
@@ -64,7 +64,7 @@ Di sini, baik GlassFish dan Payara Java application servers menyediakan dukungan
    * _Resource Type_ - pilih item _javax.sql.DataSource_ dari daftar drop-down
    * _Database Driver Vendor_ - pilih opsi _MySQL_
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/jdbc-connection-pool/jdbc-connection-pool-7.png" alt="create new JDBC connection pool" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/jdbc-connection-pool/jdbc-connection-pool-7.png" alt="create new JDBC connection pool" max-width="100%"/>
 
    Klik tombol **Next** untuk melanjutkan.
 
@@ -77,17 +77,17 @@ Di sini, baik GlassFish dan Payara Java application servers menyediakan dukungan
    * **Password** - simpan password untuk pengguna yang ditentukan
    * **URL** dan **Url** - tetapkan JDBC connection string dalam format _jdbc:mysql://**\{db_host\}**:3306/_; placeholder _**\{db_host\}**_ dapat digantikan dengan hostname node (_node166355-gf-pooling.jelastic.com_) atau alamat IP (_192.168.2.57_)
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/jdbc-connection-pool/jdbc-connection-pool-8.png" alt="add additional pool properties" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/jdbc-connection-pool/jdbc-connection-pool-8.png" alt="add additional pool properties" max-width="100%"/>
 
    Setelah properti ini ditentukan, klik **Finish**.
 
 5. Untuk memverifikasi aksesibilitas, pilih connection pool yang baru saja Anda buat dan klik tombol **Ping**. Jika semuanya berfungsi dengan baik, Anda akan melihat pesan pop-up _Ping Succeeded_.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/jdbc-connection-pool/jdbc-connection-pool-9.png" alt="ping JDBC connection pool" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/jdbc-connection-pool/jdbc-connection-pool-9.png" alt="ping JDBC connection pool" max-width="100%"/>
 
 6. Pergi ke bagian **Resources > JDBC > JDBC Resources** dan klik tombol **New** untuk membuat JDBC resources untuk pooling. Di jendela yang terbuka, berikan _JNDI Name_ yang diinginkan dan pilih _Pool Name_ Anda dari daftar drop-down.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/jdbc-connection-pool/jdbc-connection-pool-10.png" alt="create new JDBC resource" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/jdbc-connection-pool/jdbc-connection-pool-10.png" alt="create new JDBC resource" max-width="100%"/>
 
    Konfirmasi pembuatan resources dengan tombol **OK** di bagian atas.
 

@@ -22,7 +22,7 @@ Anda dapat memilih versi yang Anda butuhkan saat pembuatan environment dan denga
 
 2\. Arahkan ke tab bahasa _**PHP**_ dan pilih server aplikasi yang diinginkan. Pilih versi mesin yang diinginkan melalui daftar drop-down kedua di panel tengah.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-versions/02-php-environment-wizard.png" alt="PHP environment wizard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-versions/02-php-environment-wizard.png" alt="PHP environment wizard" max-width="100%"/>
 
 Tentukan batas sumber daya, pilih [region](<https://docs.dewacloud.com/docs/environment-regions/>) yang diinginkan, ketik nama environment Anda (atau biarkan default) dan klik tombol **Create**.
 
@@ -32,7 +32,7 @@ Untuk informasi lebih lanjut tentang spesifikasi hosting PHP di platform dan kem
 
 3\. Untuk mengubah versi PHP untuk environment yang sudah ada, klik ikon **Redeploy containers** di samping layer yang sesuai.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-versions/03-php-redeploy-button.png" alt="PHP redeploy button" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-versions/03-php-redeploy-button.png" alt="PHP redeploy button" max-width="100%"/>
 
 4\. Pilih versi mesin yang diperlukan dalam daftar _Tag_ dari frame yang dibuka.
 

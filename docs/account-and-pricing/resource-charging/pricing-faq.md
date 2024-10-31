@@ -38,7 +38,7 @@ Dengan platform, Anda hanya membayar untuk sumber daya yang dikonsumsi. Harga da
 
 Arahkan ke item menu **Balance > Quotas & Pricing**. Di sini Anda akan melihat serangkaian tab yang menampilkan informasi harga untuk setiap jenis sumber daya yang tersedia di platform.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/resource-charging/pricing-FAQ/01-quotas-and-pricing.png" alt="quotas and pricing" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/resource-charging/pricing-FAQ/01-quotas-and-pricing.png" alt="quotas and pricing" max-width="100%"/>
 
 Pilih yang Anda minati untuk melihat harga dan skala diskon yang ditawarkan oleh penyedia hosting Anda. Anda dapat menemukan lebih banyak informasi tentang sistem harga dan diskon dalam dokumen [Sistem Harga](https://docs.dewacloud.com/docs/pricing-model/) dan [Diskon Otomatis](https://docs.dewacloud.com/docs/automatic-discounts/).
 
@@ -48,7 +48,7 @@ Perlu dicatat bahwa berbagai tumpukan perangkat lunak disediakan secara gratis d
 
 Untuk mengurangi pengeluaran Anda, Anda dapat _menghentikan environment Anda_ ketika tidak dibutuhkan. Misalnya, jika Anda menggunakan environment Anda sebagai uji atau dev dan Anda tidak menggunakannya pada malam hari dan akhir pekan - Anda tidak perlu membayar untuk sumber daya yang tidak Anda gunakan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/resource-charging/pricing-FAQ/02-stop-environment.png" alt="stop environment" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/resource-charging/pricing-FAQ/02-stop-environment.png" alt="stop environment" max-width="100%"/>
 
 Dengan cara ini, **RAM (Memory)**, **CPU**, dan **lalu lintas** tidak akan dikenakan biaya.
 

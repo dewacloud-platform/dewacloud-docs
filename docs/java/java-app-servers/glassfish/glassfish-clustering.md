@@ -21,7 +21,7 @@ Proses [instalasi aplikasi via widget](<https://docs.dewacloud.com/docs/marketpl
 
 Solusi cluster GlassFish, diinstal dengan opsi ini, dibangun di atas [Docker containers](<https://docs.dewacloud.com/docs/container-types>). Implementasi semacam itu memberikan reliabilitas tambahan dengan mengoperasikan setiap node, arsitektur cluster yang telah ditentukan (yaitu _Load Balancer_, _Worker Nodes_, _Domain Administration Server_), sebagai instance yang terisolasi. Dalam hal ini, [HAProxy](<https://hub.docker.com/r/jelastic/haproxy-managed-lb/>) Docker image digunakan sebagai _Load Balancer_ dan template [GlassFish](<https://github.com/jelastic-jps/glassfish>) berfungsi sebagai basis untuk _Worker nodes_ dan _DAS_.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/glassfish/glassfish-cluster/glassfish-cluster-1.png" alt="JPS GlassFish Cluster on Docker" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/glassfish/glassfish-cluster/glassfish-cluster-1.png" alt="JPS GlassFish Cluster on Docker" max-width="100%"/>
 
 Untuk mendapatkan wawasan yang lebih baik tentang pemasangan dan pengelolaan paket ini, rujuk ke halaman [GlassFish Cluster dengan Automatic Load Balancing](<https://www.virtuozzo.com/company/blog/how-to-configure-glassfish-cluster-with-automatic-load-balancing/>).
 
@@ -37,7 +37,7 @@ Jika Anda ingin menguasai sepenuhnya konfigurasi dan deployment GlassFish cluste
 
 Sesuai dengan arsitektur clustering GlassFish native, ini menggunakan konsep **administrative domain**. Administrative domain semacam itu terdiri dari **clusters** dan **instances**, yang dikelola menggunakan **Domain Administration Server** (DAS).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/glassfish/glassfish-cluster/glassfish-cluster-2.png" alt="glassfish clustering" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/glassfish/glassfish-cluster/glassfish-cluster-2.png" alt="glassfish clustering" max-width="100%"/>
 
 Untuk manajemen repository pusat, Anda dapat menggunakan **Admin Console**, GUI interaktif yang mendukung semua fitur GlassFish yang tersedia. **Group Management Service** (GMS) menyediakan informasi tentang cluster, dan DAS, seperti yang disebutkan di atas, bertanggung jawab untuk mengelola Java instances dalam administrative domain.
 
@@ -51,7 +51,7 @@ Selain itu, Anda disediakan sistem penskalaan lengkap: dengan penskalaan [horizo
 
 Untuk mendapatkan lingkungan cluster dengan GlassFish yang siap di platform ini, cukup pilih GlassFish sebagai server aplikasi Anda dan tingkatkan jumlah node seperti yang ditunjukkan pada gambar.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/glassfish/glassfish-cluster/glassfish-cluster-4.png" alt="glassfish hosting" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-servers/glassfish/glassfish-cluster/glassfish-cluster-4.png" alt="glassfish hosting" max-width="100%"/>
 
 Jangan lupa untuk mengaktifkan fitur **High Availability**: ini akan memasangkan semua node untuk menciptakan cluster(s).
 

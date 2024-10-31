@@ -11,7 +11,7 @@ Platform dapat diinstal di atas server **bare metal** atau solusi **IaaS** pihak
 
 Setiap **environment** adalah kumpulan dari container virtual terisolasi yang menyediakan semua fasilitas yang diperlukan untuk suatu aplikasi tertentu. Selama pembuatan environment, container yang diminta diambil dari pool template container yang telah dibuat sebelumnya. Hal ini membantu mempercepat provisioning dan berarti hanya membutuhkan waktu satu menit untuk menjalankan environments kompleks. Setiap stack berlokasi di dalam container terisolasi, yang menghilangkan risiko potensi pengaruh satu stack terhadap yang lain.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/architecture-overview/infrastructure-level/hardware-node.png" alt="infrastructure level hardware node" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/architecture-overview/infrastructure-level/hardware-node.png" alt="infrastructure level hardware node" max-width="100%"/>
 
 ## Baca Juga{#whats-next}
 

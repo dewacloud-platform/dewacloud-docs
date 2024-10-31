@@ -8,7 +8,7 @@ title: Ports
 
 Tab **Ports** memberikan informasi umum tentang pengelolaan port container di platform.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/container/configuration/ports/ports-1.png" alt="ports layer settings" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/container/configuration/ports/ports-1.png" alt="ports layer settings" max-width="100%"/>
 
 Port berikut ini dibuka secara default:
 

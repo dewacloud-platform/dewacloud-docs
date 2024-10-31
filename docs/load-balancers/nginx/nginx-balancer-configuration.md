@@ -19,7 +19,7 @@ NGINX balancer ditambahkan secara otomatis jika Anda memilih beberapa app server
 
 Untuk melakukan konfigurasi yang diperlukan pada NGINX balancer, file _**nginx.conf**_, yang terletak di folder **conf**, digunakan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/nginx%20balancer%20configuration/01-nginx-conf-file.png" alt="NGINX balancer configuration file" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/nginx%20balancer%20configuration/01-nginx-conf-file.png" alt="NGINX balancer configuration file" max-width="100%"/>
 
 [Back to the list](<https://docs.dewacloud.com/docs/#back>)
 
@@ -27,7 +27,7 @@ Untuk melakukan konfigurasi yang diperlukan pada NGINX balancer, file _**nginx.c
 
 Dengan akses ke konfigurasi NGINX, Anda tidak hanya dapat mengedit file yang ada tetapi juga mengunggah file konfigurasi Anda sendiri dengan pengaturan kustom ke folder **conf.d**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/nginx%20balancer%20configuration/02-nginx-confd-settings.png" alt="NGINX balancer custom conf.d settings" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/nginx%20balancer%20configuration/02-nginx-confd-settings.png" alt="NGINX balancer custom conf.d settings" max-width="100%"/>
 
 [Back to the list](<https://docs.dewacloud.com/docs/#back>)
 
@@ -39,7 +39,7 @@ Anda dapat menemukan lebih banyak informasi di dokumen [NGINX Load Balancing](<h
 
 Untuk mengatur [caching di NGINX](<https://docs.dewacloud.com/docs/nginx-caching/>) klik tautan dan ikuti instruksinya.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/nginx%20balancer%20configuration/03-mappings-xml-file.png" alt="NGINX balancer TCP mappings" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/nginx%20balancer%20configuration/03-mappings-xml-file.png" alt="NGINX balancer TCP mappings" max-width="100%"/>
 
 [Back to the list](<https://docs.dewacloud.com/docs/#back>)
 

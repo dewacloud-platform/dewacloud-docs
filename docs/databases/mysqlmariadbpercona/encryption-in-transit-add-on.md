@@ -17,11 +17,11 @@ Add-on dapat dipasang di atas node **MySQL/MariaDB/Percona** dan **ProxySQL** (u
 Add-on ini juga tersedia dari Marketplace dan dapat diimpor dari repositori GitHub yang sesuai.
 :::
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/encryption-in-transit-addon/encryption-in-transit-addon-1.png" alt="MySQL SSL add-on" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/encryption-in-transit-addon/encryption-in-transit-addon-1.png" alt="MySQL SSL add-on" max-width="100%"/>
 
 2\. Dalam jendela instalasi yang terbuka, pilih **Environment** dan **Node Group(s)** target di mana add-on akan dipasang.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/encryption-in-transit-addon/encryption-in-transit-addon-2.png" alt="install MySQL SSL add-on" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/encryption-in-transit-addon/encryption-in-transit-addon-2.png" alt="install MySQL SSL add-on" max-width="100%"/>
 
 :::warning
 Baik lapisan MySQL/MariaDB/Percona dan ProxySQL (jika ditambahkan) harus dipilih untuk solusi clustered.
@@ -43,7 +43,7 @@ Di bawah ini Anda dapat mempelajari tentang proses dan spesifikasi pembuatan ser
     * _**server**_ – sertifikat server digunakan untuk memberikan enkripsi TLS dari koneksi ke database
     * _**client**_ – sertifikat client yang dapat diunduh dapat digunakan untuk mengotentikasi koneksi klien ke server database
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/encryption-in-transit-addon/encryption-in-transit-addon-4.png" alt="SSL add-on certificates" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/encryption-in-transit-addon/encryption-in-transit-addon-4.png" alt="SSL add-on certificates" max-width="100%"/>
 
 **Konfigurasi MySQL/MariaDB/Percona:**
 
@@ -57,7 +57,7 @@ Di bawah ini Anda dapat mempelajari tentang proses dan spesifikasi pembuatan ser
     #require_secure_transport=ON
     ```
   
-  <img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/encryption-in-transit-addon/encryption-in-transit-addon-5.png" alt="SSL configuration file" width="100%"/>
+  <img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/encryption-in-transit-addon/encryption-in-transit-addon-5.png" alt="SSL configuration file" max-width="100%"/>
 
   * Konfigurasinya menyediakan jalur ke file SSL server dan daftar cipher yang didukung. Juga, termasuk opsi (dikomentari secara default) untuk membuat server meminta penggunaan koneksi aman. Jika diubah, klien tidak akan dapat terhubung ke server ini menggunakan koneksi biasa yang tidak terenkripsi.
 
@@ -90,7 +90,7 @@ Untuk menghapus add-on dari layer (termasuk konfigurasi khusus dan sertifikat SS
 
 1\. Fungsionalitas “**encryption in transit** ” (_**server-side encryption**_) berfungsi segera setelah pemasangan add-on. Anda dapat memeriksanya dengan menghubungkan ke database menggunakan kredensial dari email. Untuk koneksi jarak jauh, Anda bisa menambahkan [endpoint](<https://docs.dewacloud.com/docs/endpoints/>) atau [public IP](<https://docs.dewacloud.com/docs/public-ip/>):
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/encryption-in-transit-addon/encryption-in-transit-addon-7.png" alt="database endpoint" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/encryption-in-transit-addon/encryption-in-transit-addon-7.png" alt="database endpoint" max-width="100%"/>
 
 Gunakan perintah berikut untuk menghubungkan ke database:
 
@@ -110,7 +110,7 @@ Di sini:
 
 Setelah terhubung, jalankan perintah _**status**_ dan periksa lini SSL di output.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/encryption-in-transit-addon/encryption-in-transit-addon-8.png" alt="MySQL remote connection with SSL" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/encryption-in-transit-addon/encryption-in-transit-addon-8.png" alt="MySQL remote connection with SSL" max-width="100%"/>
 
 2\. Ketika terhubung ke server, Anda dapat mengonfigurasi penggunaan sertifikat klien untuk otentikasi untuk mendapatkan _**server- dan client-side encryption**_. Jalankan perintah di bawah ini untuk membuat otentikasi SSL wajib untuk pengguna yang ditentukan. Misalnya, kita akan memberikan “_**user-2700607**_ ” (gantilah placeholder `{user}`) dari email yang diterima setelah pembuatan environment:
 
@@ -121,7 +121,7 @@ ALTER USER '{user}'@'localhost' REQUIRE X509;
 FLUSH PRIVILEGES;
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/encryption-in-transit-addon/encryption-in-transit-addon-9.png" alt="alter user command" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/encryption-in-transit-addon/encryption-in-transit-addon-9.png" alt="alter user command" max-width="100%"/>
 
 :::warning
 Common name (CN) tidak diperiksa, setiap sertifikat yang ditandatangani dengan certificate authority (CA) ini akan dianggap sesuai. Jika Anda ingin memeriksa CN dari sertifikat klien (yaitu apakah sertifikat diterbitkan untuk pengguna tertentu), jalankan perintah berikut: `FLUSH PRIVILEGES; ALTER USER '{user}'@'%' REQUIRE SUBJECT 'CN={user}'; ALTER USER '{user}'@'localhost' REQUIRE SUBJECT 'CN={user}'; FLUSH PRIVILEGES;`, Juga, jika Anda ingin menggunakan sertifikat saja untuk login, Anda bisa menghapus persyaratan password dengan perintah ALTER USER juga.
@@ -133,7 +133,7 @@ Sekarang, berikan server klien (komputer/container/VM) dengan file sertifikat SS
 mysql –h {host} -P {port} -u {user} -p --ssl-mode=required --ssl-ca={path/to/root.crt} --ssl-cert={path/to/client.crt} --ssl-key={path/to/client.key}
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/encryption-in-transit-addon/encryption-in-transit-addon-10.png" alt="SSL connection with client certificates" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/encryption-in-transit-addon/encryption-in-transit-addon-10.png" alt="SSL connection with client certificates" max-width="100%"/>
 
 :::tip
 Untuk menghindari menentukan sertifikat sebagai argumen, Anda dapat menambahkan opsi semacam itu ke file my.cnf di server klien:

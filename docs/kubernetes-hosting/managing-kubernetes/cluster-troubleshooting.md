@@ -29,11 +29,11 @@ Anda dapat menggunakan _kubectl_ atau _Kubernetes Dashboard_ untuk melacak dan m
 
   * **Events** di _Kubernetes Dashboard_  
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/managing%20kubernetes/Cluster%20Troubleshooting/02-kubernetes-dashboard-events.png" alt="kubernetes dashboard events" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/managing%20kubernetes/Cluster%20Troubleshooting/02-kubernetes-dashboard-events.png" alt="kubernetes dashboard events" max-width="100%"/>
 
   * contoh output dari perintah _**kubectl get events -n $namespace**_  
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/managing%20kubernetes/Cluster%20Troubleshooting/03--kubectl-get-events.png" alt="kubectl get events" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/kubernetes%20hosting/managing%20kubernetes/Cluster%20Troubleshooting/03--kubectl-get-events.png" alt="kubectl get events" max-width="100%"/>
 
 ### Pod Logs{#pod-logs}
 

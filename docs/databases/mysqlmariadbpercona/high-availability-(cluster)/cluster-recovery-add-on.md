@@ -32,7 +32,7 @@ Seorang pengguna _replica_ ditambahkan untuk melakukan validasi cluster. Juga, p
   * **REPLICA_USER:** repl-xxxxxx
   * **REPLICA_PSWD:** xxxxxxxxxxxx
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/cluster-recovery-addon/cluster-recovery-addon-1.png" alt="replica user credentials" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/cluster-recovery-addon/cluster-recovery-addon-1.png" alt="replica user credentials" max-width="100%"/>
 
 Selain itu, akses SSH dikonfigurasikan antara node database (dengan set kunci SSH khusus) untuk memungkinkan penyalinan data dengan _rsync_ selama prosedur pemulihan.
 
@@ -40,7 +40,7 @@ Selain itu, akses SSH dikonfigurasikan antara node database (dengan set kunci SS
 
 Add-on tersedia melalui platform Marketplace. Sebagai alternatif, Anda dapat mengimpor paket _**[Database Cluster Recovery](<https://github.com/jelastic-jps/mysql-cluster/tree/master/addons/recovery>)**_ yang sesuai dari GitHub.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/cluster-recovery-addon/cluster-recovery-addon-2.png" alt="database recovery add-on" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/cluster-recovery-addon/cluster-recovery-addon-2.png" alt="database recovery add-on" max-width="100%"/>
 
 Dalam jendela konfirmasi yang terbuka, berikan data yang diperlukan:
 
@@ -48,11 +48,11 @@ Dalam jendela konfirmasi yang terbuka, berikan data yang diperlukan:
   * **Environment name** \- pilih environment dengan cluster database yang diperlukan dari daftar
   * **Nodes** \- pilih lapisan dengan cluster database
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/cluster-recovery-addon/cluster-recovery-addon-3.png" alt="recovery add-on installation" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/cluster-recovery-addon/cluster-recovery-addon-3.png" alt="recovery add-on installation" max-width="100%"/>
 
 Klik **Install** dan tunggu beberapa menit agar add-on terinstal. Ini akan muncul dalam daftar add-on dari lapisan yang sesuai.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/cluster-recovery-addon/cluster-recovery-addon-4.png" alt="recovery add-on actions" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/cluster-recovery-addon/cluster-recovery-addon-4.png" alt="recovery add-on actions" max-width="100%"/>
 
 ## Penggunaan Add-On{#add-on-usage}
 
@@ -67,7 +67,7 @@ Hasil dari tindakan _**Cluster Diagnostic**_ dapat berupa “_Cluster is OK_” 
 
 Untuk detail yang lebih lengkap, Anda dapat mengklik tombol **Show Logs** untuk membuka file _**/var/log/db_recovery.log**_:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/cluster-recovery-addon/cluster-recovery-addon-6.png" alt="recovery add-on logs" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mysql-mariadb-percona/high-availability-cluster/cluster-recovery-addon/cluster-recovery-addon-6.png" alt="recovery add-on logs" max-width="100%"/>
 
 Jika ada masalah yang ditemukan, Anda dapat mencoba menyelesaikannya secara otomatis dengan tindakan _**Cluster Recovery**_. Ini harus dapat menangani sebagian besar masalah dan sepenuhnya memulihkan operabilitas cluster:
 

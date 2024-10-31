@@ -184,7 +184,7 @@ Otomatisasi untuk implementasi Redis Cluster yang terdistribusi - penyimpanan st
 
 Clusterisasi otomatis mesin pencari open-source yang didorong oleh komunitas, yang menyediakan pencarian teks lengkap yang terdistribusi dan mendukung banyak tenant. Solusi ini menyediakan pengaturan bawaan untuk menambahkan _OpenSearch Dashboards_ untuk visualisasi data dan _Logstash_ untuk memproses log.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/auto-clustering-of-instances/12.2-opensearch-cluster-scheme.png" alt="OpenSearch cluster scheme" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/auto-clustering-of-instances/12.2-opensearch-cluster-scheme.png" alt="OpenSearch cluster scheme" max-width="100%"/>
 
 [Learn More »](https://docs.dewacloud.com/docs/opensearch-cluster/)
 
@@ -221,7 +221,7 @@ Info tambahan tentang berbagai tipe cluster database dapat dilihat dengan mengar
 
 3\. Pengaturan lainnya dapat [dikonfigurasi](https://docs.dewacloud.com/docs/setting-up-environment/) seperti halnya environment biasa.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/auto-clustering-of-instances/20-glassfish-cluster-at-dashboard.png" alt="glassfish cluster at dashboard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/auto-clustering-of-instances/20-glassfish-cluster-at-dashboard.png" alt="glassfish cluster at dashboard" max-width="100%"/>
 
 :::warning
 Setelah dikonfigurasi, auto-clustering tidak dapat dinonaktifkan dari topology wizard.
@@ -233,7 +233,7 @@ Setelah dikonfigurasi, auto-clustering tidak dapat dinonaktifkan dari topology w
 https://app.infra.dewacloud.com/
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/auto-clustering-of-instances/21-cloud-scripting-console.png" alt="cloud scripting console" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/auto-clustering-of-instances/21-cloud-scripting-console.png" alt="cloud scripting console" max-width="100%"/>
 
 Sebagai contoh, Anda dapat menggunakan informasi ini untuk debugging saat mengembangkan solusi paket dengan Cloud Scripting, yang memanfaatkan fitur auto-clustering.
 

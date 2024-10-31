@@ -13,7 +13,7 @@ Sebelum pemasangan add-on, Anda perlu membuat instansi penyimpanan khusus untuk 
 
 1\. Jika Anda tidak memiliki, itu dapat dibuat dalam beberapa menit menggunakan paket **Backup Storage** khusus di [Marketplace](<https://docs.dewacloud.com/docs/marketplace/>) platform.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/backup-restore-addon/backup-restore-addon-1.png" alt="marketplace backup storage" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/backup-restore-addon/backup-restore-addon-1.png" alt="marketplace backup storage" max-width="100%"/>
 
 Jika Anda sudah memiliki penyimpanan semacam itu, Anda dapat melewati ke langkah _keempat_.
 
@@ -23,11 +23,11 @@ Jika Anda sudah memiliki penyimpanan semacam itu, Anda dapat melewati ke langkah
   * **Display Name** – [alias environment](<https://docs.dewacloud.com/docs/environment-aliases/>)
   * **Region** – [region environment](<https://docs.dewacloud.com/docs/environment-regions/>) (jika ada beberapa)
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/backup-restore-addon/backup-restore-addon-2.png" alt="backup storage installation" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/backup-restore-addon/backup-restore-addon-2.png" alt="backup storage installation" max-width="100%"/>
 
 3\. Klik tombol Install dan tunggu beberapa menit untuk pembuatan penyimpanan. Ini akan secara otomatis ditambahkan ke grup “_Backup storage nodes_”.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/backup-restore-addon/backup-restore-addon-3.png" alt="backup storage environment" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/backup-restore-addon/backup-restore-addon-3.png" alt="backup storage environment" max-width="100%"/>
 
 :::tip
 Satu penyimpanan dapat digunakan oleh sebanyak mungkin database yang diperlukan.
@@ -45,17 +45,17 @@ Temukan _**Database Backup/Restore Add-On**_ yang diperlukan dan klik **Install*
     * **Pre-defined** – pilih dari daftar interval backup standar (setiap jam, harian, mingguan, bulanan)
     * **Custom** – pilih Waktu yang tepat, Hari yang diperlukan dalam minggu, dan Zona Waktu 
 
-    <img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/backup-restore-addon/backup-restore-addon-5.png" alt="custom backup schedule" width="100%"/>
+    <img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/backup-restore-addon/backup-restore-addon-5.png" alt="custom backup schedule" max-width="100%"/>
 
     * **Manual (crontab)** \- berikan ekspresi berbasis [cron](<https://en.wikipedia.org/wiki/Cron#Overview>) sederhana (menggunakan zona waktu UTC) untuk menjadwalkan backup 
 
-    <img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/backup-restore-addon/backup-restore-addon-6.png" alt="crontab backup schedule" width="100%"/>
+    <img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/backup-restore-addon/backup-restore-addon-6.png" alt="crontab backup schedule" max-width="100%"/>
 
   * **Backup storage** – pilih dari daftar penyimpanan backup yang dipasang pada akun 
   * **Number of backups** – atur jumlah backup terbaru yang akan disimpan untuk database saat ini
   * **Database User** dan **Database Password** – berikan kredensial pengguna untuk mengakses database
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/backup-restore-addon/backup-restore-addon-7.png" alt="backup restore add-on installation" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/backup-restore-addon/backup-restore-addon-7.png" alt="backup restore add-on installation" max-width="100%"/>
 
 6\. Dalam satu menit, Anda akan melihat pop-up keberhasilan instalasi.
 
@@ -91,7 +91,7 @@ Untuk memulihkan database dari backup, Anda perlu memilih opsi **Restore** untuk
   * **Restore from** – pilih environment target (beberapa opsi mungkin tersedia jika add-on backup digunakan pada beberapa environments)
   * **Backup** – pilih dari daftar backup untuk environment yang dipilih (nama mengandung stempel waktu untuk identifikasi cepat)
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/backup-restore-addon/backup-restore-addon-10.png" alt="restore from backup" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/databases/mongodb/backup-restore-addon/backup-restore-addon-10.png" alt="restore from backup" max-width="100%"/>
 
 Klik **Restore** dan konfirmasikan melalui pop-up. Setelah dimulai, tindakan tidak dapat dibatalkan atau dikembalikan. Anda akan melihat notifikasi keberhasilan di dashboard setelah proses selesai.
 

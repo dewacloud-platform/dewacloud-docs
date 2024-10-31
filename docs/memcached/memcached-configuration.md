@@ -20,7 +20,7 @@ Informasi lebih lanjut tentang penggunaan Memcached dapat Anda temukan dalam dok
 File konfigurasi utama Memcached terletak di path **etc/sysconfig/**, namun secara default file config **memcached** juga sudah dipin di tab Favorites.
 
 <p>
-<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-config-1.png" alt="memcached configuration conf" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-config-1.png" alt="memcached configuration conf" max-width="100%"/>
 </p>
 
 
@@ -32,7 +32,7 @@ Sekarang Anda dapat menggunakannya untuk berbagai keperluan hanya dengan merefer
 
 _/var/lib/jelastic/keys/\{key_file_name\}_ 
 <p>
-<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-config-2.png" alt="memcached configuration memcached key" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/memcached/memcached-config-2.png" alt="memcached configuration memcached key" max-width="100%"/>
 </p>
 
 ## Baca Juga{#whats-next}

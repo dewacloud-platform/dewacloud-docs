@@ -19,7 +19,7 @@ Dalam panduan ini, kita akan membahas cara mengatur penjadwal tugas Quartz di cl
 
 3. Dalam jendela **Environment topology**, pilih **Tomcat** sebagai server aplikasi Anda dan konfigurasikan batas cloudlet. Beri nama lingkungan Anda (misalnya, _quartz_) dan klik **Create**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/quartz-scheduling/02-environment-wizard.png" alt="environment wizard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/quartz-scheduling/02-environment-wizard.png" alt="environment wizard" max-width="100%"/>
 
 Lingkungan Anda akan siap dalam satu menit.
 
@@ -141,7 +141,7 @@ public class QuartzServlet extends HttpServlet {
 
 3. **Buka aplikasi Anda di browser**. Arahkan ke servlet Quartz (misalnya, `http://{env_name}.{hoster_domain}/quartz` berdasarkan pemetaan servlet) dan periksa log untuk melihat output eksekusi pekerjaan.
 
-    <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/quartz-scheduling/05-tomcat-log.png" alt="Tomcat log" width="100%"/>
+    <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scheduling-configuration/quartz-scheduling/05-tomcat-log.png" alt="Tomcat log" max-width="100%"/>
 
 Penjadwalan Quartz sekarang akan menjalankan pekerjaan Anda setiap menit, sesuai konfigurasi.
 

@@ -11,17 +11,17 @@ Untuk menggunakan Name-Based Virtual Host, ikuti langkah-langkah berikut:
 
 1\. Klik tombol **Config** untuk server Apache di environment Anda.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/name-based-virtual-host-in-apache/1.png" alt="name based apache virtual host 1" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/name-based-virtual-host-in-apache/1.png" alt="name based apache virtual host 1" max-width="100%"/>
 
 2\. Navigasikan ke file _**/etc/httpd/conf/httpd.conf**_.
 
 3\. Sebelum Anda benar-benar mulai mengonfigurasi virtual host Anda, pastikan Anda memiliki baris **NameVirtualHosts** yang tidak dikomentari: 
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/name-based-virtual-host-in-apache/2.png" alt="name based apache virtual host 2" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/name-based-virtual-host-in-apache/2.png" alt="name based apache virtual host 2" max-width="100%"/>
 
 4\. Kemudian temukan blok **< VirtualHost >**. Anda harus membuat blok _< VirtualHost >_ untuk setiap host berbeda yang ingin Anda layani.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/name-based-virtual-host-in-apache/3.png" alt="name based apache virtual host 3" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/name-based-virtual-host-in-apache/3.png" alt="name based apache virtual host 3" max-width="100%"/>
 
 :::note
 Argumen untuk direktif < VirtualHost > harus sesuai dengan direktif NameVirtualHost yang didefinisikan (dalam kasus kami adalah *:80).
@@ -34,7 +34,7 @@ Di dalam setiap blok _< VirtualHost >_, Anda setidaknya akan memerlukan dua dire
 
 5\. Jika banyak server ingin dapat diakses oleh lebih dari satu nama, Anda dapat menggunakan direktif **ServerAlias**, ditempatkan di dalam bagian _< VirtualHost >_. Anda dapat memasukkan di sana semua nama yang dapat digunakan orang untuk melihat situs web Anda. Dengan memasukkan nama ini Anda juga dapat menggunakan karakter wildcards “*” dan “?”.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/name-based-virtual-host-in-apache/4.png" alt="name based apache virtual host 4" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/apache-php/name-based-virtual-host-in-apache/4.png" alt="name based apache virtual host 4" max-width="100%"/>
 
 6\. Akhirnya, Anda dapat menyesuaikan konfigurasi virtual host dengan menempatkan direktif lainnya di dalam kontainer _< VirtualHost >_. Sebagian besar direktif dapat ditempatkan di kontainer ini dan kemudian akan mengubah konfigurasi hanya dari virtual host yang relevan.
 

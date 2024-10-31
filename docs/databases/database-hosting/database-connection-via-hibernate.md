@@ -17,7 +17,7 @@ Mari kita lakukan langkah demi langkah:
 
 1. Buat environment dengan server database (MySQL dalam contoh ini):
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/database-connection-via-hibernate/db-connection-hibernate-1.png" alt="database hibernate env created" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/database-connection-via-hibernate/db-connection-hibernate-1.png" alt="database hibernate env created" max-width="100%"/>
 
 2. Buat pengguna baru di database:
 
@@ -51,7 +51,7 @@ Mari kita lakukan langkah demi langkah:
 
    :::note
    Jangan lupa untuk memasukkan nilai yang benar ke dalam string `hibernate.connection.url`, menggantikan teks di dalam kurung kurawal. `jdbc:mysql://mysql{node_id}.{your_env_name}.{hoster_domain}:3306/jelasticDb` di mana `{node_id}` adalah ID dari kontainer dengan server MySQL yang ingin Anda akses. Ini dapat dilihat di dashboard:
-   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/database-connection-via-hibernate/db-connection-hibernate-2.png" alt="database hibernate env nodeid" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/database-connection-via-hibernate/db-connection-hibernate-2.png" alt="database hibernate env nodeid" max-width="100%"/>
    :::
 
    **_hibernate.revenge.xml_**

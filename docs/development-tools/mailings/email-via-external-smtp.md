@@ -20,7 +20,7 @@ PHPMailer adalah kelas pengiriman email penuh fitur klasik untuk PHP, kompatibel
 
 3\. Pilih server aplikasi **Apache** dan tentukan batas cloudlet untuk itu. Kemudian aktifkan fitur **Public IP** untuk node Apache, ketik nama untuk environment baru Anda (misalnya, _phpmailer_) dan klik **Create**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/mailings/email-via-external-smtp/email-via-external-smtp-1.png" alt="create PHP environment" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/mailings/email-via-external-smtp/email-via-external-smtp-1.png" alt="create PHP environment" max-width="100%"/>
 
 4\. Unduh **[script PHPMailer](<https://download.jelastic.com/public.php?service=files&t=1c0e6f02fd2da054818b86182fc5747d&download&path=//phpmailer.test.tar.gz>)** (di sini kami menyediakan versi khusus kami yang mengecualikan semua pengaturan tambahan dan ditargetkan hanya pada SMTP).
 
@@ -108,7 +108,7 @@ Anda dapat menggunakan contoh kami:
 <form method=POST ation=#> From <input type=text name=from><br /> To <input type=text name=to><br /> Subject <input type=text name=subj><br /> Type your message <input type=text name=text><br /> <input type=submit name=sub value=Send> </form> <?php if ($_POST['sub']){ system ("echo {$_POST['text']} | mail -s {$_POST['subj']} -r {$_POST['from']} {$_POST['to']}");} ?>  
 ```    
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/mailings/email-via-external-smtp/email-via-external-smtp-14.png" alt="mailtest page PHP code" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/mailings/email-via-external-smtp/email-via-external-smtp-14.png" alt="mailtest page PHP code" max-width="100%"/>
 
 4\. Kemudian **Open in Browser** lingkungan Anda dan tambahkan nama file Anda ke akhir URL. Anda akan melihat formulir berikut:
 

@@ -9,7 +9,7 @@ Platform Marketplace adalah perpustakaan dari aplikasi yang paling populer dan p
 
 Anda dapat mengakses **Marketplace** melalui tombol yang sesuai di sudut kiri atas dashboard.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/cloud-scripting-and-jps/marketplace/marketplace-1.png" alt="packaged solutions marketplace" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/cloud-scripting-and-jps/marketplace/marketplace-1.png" alt="packaged solutions marketplace" max-width="100%"/>
 
 Dalam bagian yang terbuka, Anda dapat menemukan daftar solusi yang dikategorikan untuk menginstal **Applications** baru dari awal dan konfigurasi **Add-Ons** untuk memperbarui environment yang sudah ada. Saat ini, platform mengelola dan memelihara paket JPS berikut, menyediakan instalasi satu klik di semua platform:
 
@@ -140,7 +140,7 @@ Di bawah ini, kami akan memberikan contoh instalasi solusi yang dikemas.
 
 2\. Kami akan menggunakan **WordPress Standalone Kit** sebagai contoh. Pilih dari hasil pencarian yang diusulkan untuk segera membuka bingkai instalasi. Atau, Anda dapat menemukan solusi yang diperlukan secara manual dalam daftar yang dikategorikan (bagian _Content Management_ dalam kasus kami), arahkan kursor ke atas untuk membuka detail tambahan, dan klik **Install**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/cloud-scripting-and-jps/marketplace/marketplace-3.png" alt="install solution from marketplace" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/cloud-scripting-and-jps/marketplace/marketplace-3.png" alt="install solution from marketplace" max-width="100%"/>
 
 3\. Berdasarkan paket tertentu, Anda mungkin perlu memberikan beberapa data tambahan untuk menyesuaikan solusi hingga sesuai kebutuhan Anda. Sebagai contoh, itu bisa menjadi jumlah node yang diinginkan atau ketersediaan opsi spesifik.
 
@@ -156,7 +156,7 @@ Klik **Install** untuk melanjutkan.
 
 :::tip 
 Anda dapat melacak proses instalasi paket JPS dengan detail melalui console Cloud Scripting. Saat masuk ke akun dashboard Anda, tambahkan sufiks /console ke URL: https://app.{platformDomain}/console 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/cloud-scripting-and-jps/marketplace/marketplace-6.png" alt="platform console" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/cloud-scripting-and-jps/marketplace/marketplace-6.png" alt="platform console" max-width="100%"/>
 :::
 
 5\. Setelah semua konfigurasi yang diperlukan, Anda akan melihat bingkai keberhasilan. Dalam kasus kami, itu juga menyediakan data administrasi yang sesuai (yang juga dikirim melalui email notifikasi yang sesuai).
@@ -167,7 +167,7 @@ Klik tombol **Open in Browser**.
 
 6\. Aplikasi siap pakai Anda akan dibuka di tab browser baru.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/cloud-scripting-and-jps/marketplace/marketplace-8.png" alt="WordPress automatically installed" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/cloud-scripting-and-jps/marketplace/marketplace-8.png" alt="WordPress automatically installed" max-width="100%"/>
 
 Itu saja! Sekarang, Anda dapat menikmati menggunakan aplikasi Anda.
 

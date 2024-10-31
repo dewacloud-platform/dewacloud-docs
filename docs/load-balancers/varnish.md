@@ -29,13 +29,13 @@ Jadi, jika Anda ingin mendapatkan Varnish sebagai load balancer untuk lingkungan
 
 3\. Di dalam tab bahasa pemrograman mana pun yang Anda pilih, aktifkan bagian _Balancing_ wizard dan pilih **Varnish** menggunakan daftar drop-down yang sesuai.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/varnish/env-wiz.png" alt="Varnish environment wizard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/varnish/env-wiz.png" alt="Varnish environment wizard" max-width="100%"/>
 
 Atur konfigurasi lain yang diperlukan (tambahkan server aplikasi dan instance lainnya, nyatakan batasan sumber daya melalui slider cloudlets, aktifkan [IP eksternal](<https://docs.dewacloud.com/docs/public-ip/>) untuk node, dll.). Kemudian beri nama environment baru Anda (misalnya _varnish_) dan lanjutkan dengan tombol **Create**.
 
 4\. Dalam beberapa menit, environment Anda akan dibuat.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/varnish/env-created.png" alt="Varnish created" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/varnish/env-created.png" alt="Varnish created" max-width="100%"/>
 
 Itulah semua tentang instalasi Varnish! Sekarang Anda dapat melanjutkan ke konfigurasinya.
 
@@ -45,11 +45,11 @@ Load balancer Varnish dapat disesuaikan sesuai kebutuhan Anda dengan salah satu 
 
   * melalui akses ke server yang diperlukan melalui [SSH Gateway](<https://docs.dewacloud.com/docs/ssh-access/>) platform: 
 
-    <img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/varnish/ssh.png" alt="Varnish SSH" width="100%"/>
+    <img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/varnish/ssh.png" alt="Varnish SSH" max-width="100%"/>
 
   * atau dengan menggunakan file manager tersemat untuk mengedit file konfigurasi: 
 
-    <img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/varnish/config-button.png" alt="Varnish config button" width="100%"/>
+    <img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/varnish/config-button.png" alt="Varnish config button" max-width="100%"/>
 
 Berikut adalah beberapa contoh konfigurasi yang dapat dilakukan langsung melalui dashboard:
 
@@ -64,7 +64,7 @@ di mana nilai-nilai berikut harus diganti dengan milik Anda sendiri:
   * _server_identifier_ \- nama yang diinginkan dari server yang dihubungkan
   * _server_internal_ip_ \- alamat dari server yang diperlukan, yang dapat ditemukan melalui tombol **Additionally** di sampingnya
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/varnish/config.png" alt="Varnish configs" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/varnish/config.png" alt="Varnish configs" max-width="100%"/>
 
 Setelah itu, tambahkan string lain sedikit lebih rendah di bagian _**sub vcl_init**_ di bawah baris _new myclust = directors.hash();_ dalam format berikut:
 
@@ -78,11 +78,11 @@ Setelah konfigurasi ini selesai, **Simpan** perubahan yang dibuat dan **Restart*
 
 2\. Terapkan modul Varnish khusus ke server Anda dengan cara mengunggahnya ke folder **vmods**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/varnish/mods.png" alt="Varnish modules" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/varnish/mods.png" alt="Varnish modules" max-width="100%"/>
 
 3\. Sesuaikan parameter awal demon Varnish, yang dibaca dari file konfigurasi **sysconfig > _varnish_** setiap kali balancer mulai.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/varnish/demon.png" alt="varnish daemon" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/varnish/demon.png" alt="varnish daemon" max-width="100%"/>
 
 Kami berharap instruksi ini akan membantu Anda untuk mengonfigurasi Varnish load balancer sesuai kebutuhan Anda.
 

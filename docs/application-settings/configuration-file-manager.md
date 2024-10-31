@@ -9,11 +9,11 @@ Platform configuration manager adalah alat yang sangat berguna, yang memungkinka
 
 Untuk membuka configuration manager, arahkan mouse ke node yang diperlukan dan klik tombol **Config** (yang memiliki ikon kunci pas).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/configuration-file-manager/1.png" alt="Config button" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/configuration-file-manager/1.png" alt="Config button" max-width="100%"/>
 
 Di bagian tengah dashboard, tab konfigurasi yang sesuai akan terbuka.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/configuration-file-manager/2.png" alt="config manager tab" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/configuration-file-manager/2.png" alt="config manager tab" max-width="100%"/>
 
 Di sini tersedia beberapa bagian berikut:
 
@@ -44,14 +44,14 @@ Anda juga dapat terhubung ke container melalui SSH untuk mendapatkan lebih banya
 1. Saat beralih ke bagian _**Root**_ dari config manager, Anda akan melihat pohon sistem file di bagian kanan, dengan string path dan daftar **Actions for the current directory** yang dapat diperluas di panel alat di atas. Opsi-opsi ini menyediakan fungsi berikut:
 
   * dengan mudah beralih antar direktori di dalam path dengan mengklik folder antara. Juga, Anda dapat menentukan lokasi target secara manual dengan mengetiknya di kolom input yang sesuai, yang muncul saat mengklik ruang kosong di mana saja pada bar path 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/configuration-file-manager/3.png" alt="file manager’s navigation string" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/configuration-file-manager/3.png" alt="file manager’s navigation string" max-width="100%"/>
 
   * daftar aksi berisi sejumlah fungsi untuk manajemen direktori yang dipilih, seperti refresh konten, pembuatan item baru, penambahan item yang dipilih ke favorit, penghapusan item, atau mounting direktori jarak jauh 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/configuration-file-manager/4.png" alt="current directory actions in file manager" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/configuration-file-manager/4.png" alt="current directory actions in file manager" max-width="100%"/>
 
 2. Di bawah panel alat, Anda dapat melihat pohon file, yang dimaksudkan untuk navigasi sederhana di antara mereka dan menampilkan informasi tambahan tentang file yang disertakan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/configuration-file-manager/5.png" alt="managing selected file" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/configuration-file-manager/5.png" alt="managing selected file" max-width="100%"/>
 
 Dalam kolom-kolomnya, data berikut disajikan:
 
@@ -66,7 +66,7 @@ Hanya tipe file _regular_ yang dapat diedit melalui Config manager.
 
 3. Setiap file yang dibuka (klik dua kali atau pilih aksi **Open** yang sesuai) akan ditampilkan dalam sub-tab terpisah, sehingga Anda dapat beralih di antara mereka tanpa menutup yang sebelumnya, yang membuatnya lebih nyaman untuk menjelajahi sistem file.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/configuration-file-manager/6.png" alt="search inside of a file" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/configuration-file-manager/6.png" alt="search inside of a file" max-width="100%"/>
 
 Selain itu, untuk menyederhanakan operasi pengelolaan dan pengeditan file, opsi **Search** yang sesuai dapat digunakan, tersedia melalui tombol dengan nama yang sama di panel atas.
 
@@ -77,7 +77,7 @@ Cukup ketik potongan teks yang diperlukan untuk menemukan dan menyorot semua kec
 
 4. Setelah Anda selesai mengedit file, jangan lupa untuk **Save** perubahan yang telah Anda buat dengan tombol yang sesuai di bagian atas. Jika Anda bekerja dengan lapisan beberapa node, Anda akan diminta tambahan apakah perlu menyimpan perubahan yang dibuat _hanya untuk instance saat ini_ atau _untuk semua instance_.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/configuration-file-manager/7.png" alt="types of file saving" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/configuration-file-manager/7.png" alt="types of file saving" max-width="100%"/>
 
 :::tip
 Saat menyimpan perubahan yang dibuat di file konfigurasi mana pun, pop-up konfirmasi akan muncul. Jika Anda merasa yakin dan ingin melewati pesan ini di masa mendatang, centang opsi “Do not show this dialog again”. Akibatnya, semua edit berikutnya akan disimpan secara instan tanpa meminta konfirmasi ulang. Pengaturan ini akan diterapkan untuk semua jenis file konfigurasi di semua environment Anda.

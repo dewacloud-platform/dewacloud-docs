@@ -15,7 +15,7 @@ Instance yang baru ditambahkan dapat disinkronkan dengan node pertama yang ditam
 
 3\. Di jendela **Environment topology**, pilih satu application server dan instance lain jika diperlukan. Kemudian ketik nama environment Anda dan klik **Create**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/data-synchronization/01-environment-wizard.png" alt="environment wizard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/data-synchronization/01-environment-wizard.png" alt="environment wizard" max-width="100%"/>
 
 4\. Unggah proyek Anda menggunakan **Deployment Manager**.
 
@@ -29,7 +29,7 @@ Instance yang baru ditambahkan dapat disinkronkan dengan node pertama yang ditam
 
 7\. Terakhir, skalakan environment Anda secara horizontal dengan menambahkan jumlah server yang diperlukan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/data-synchronization/04-data-synchronization-during-scaling.png" alt="data synchronization during scaling" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/scaling-and-clustering/data-synchronization/04-data-synchronization-during-scaling.png" alt="data synchronization during scaling" max-width="100%"/>
 
 :::note
 Anda perlu menggunakan file manager saat men-deploy aplikasi Anda untuk mencapai efek sinkronisasi. Tidak ada konfigurasi dan perubahan data lebih lanjut yang disinkronkan, hanya yang awal. Selain itu, Anda dapat menyinkronkan data Anda dengan bantuan modul WebDav. Lihat informasi detail tentang mengaktifkan dan menggunakan modul WebDav di platform. Jika diperlukan untuk menyinkronkan sesuatu di environment yang sudah ada, Anda dapat menguranginya menjadi satu node dan kemudian menambahkannya kembali ke jumlah instance yang diperlukan. Anda juga dapat menggunakan modul WebDAV atau melakukan sinkronisasi manual melalui configuration manager. Anda dapat menggunakan node awal (master) dari layer sebagai **storage server** untuk berbagi data dalam seluruh layer.

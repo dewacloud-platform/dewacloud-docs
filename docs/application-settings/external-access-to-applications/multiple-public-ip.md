@@ -16,7 +16,7 @@ Baik Public IPv4 dan IPv6 adalah opsi berbayar, dikenai biaya secara terpisah be
 
 Anda dapat menetapkan beberapa alamat IP melalui dashboard platform dengan menyesuaikan spinner **Public IPv4** dan **Public IPv6** saat membuat atau memodifikasi topologi lingkungan.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/multiple-public-ip/02-wizard-add-multiple-ip.png" alt="wizard add multiple IP" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/multiple-public-ip/02-wizard-add-multiple-ip.png" alt="wizard add multiple IP" max-width="100%"/>
 
 Di sini, Anda dapat memilih atau memasukkan jumlah alamat yang dibutuhkan untuk kedua jenis. Jika batas tercapai, hubungi [kami](https://www.dewaweb.com/submitticket.php?step=2&deptid=16/) untuk meningkatkan jumlah alamat IP yang tersedia.
 
@@ -28,7 +28,7 @@ Pada dashboard utama, alamat IP yang diberikan ke setiap node dalam lingkungan d
 - **Public IPv4**: Alamat IPv4 eksternal atau daftar alamat yang diperluas.
 - **Public IPv6**: Alamat IPv6 eksternal atau daftar alamat yang diperluas.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/multiple-public-ip/03-dashboard-managing-multiple-ip.png" alt="dashboard managing multiple IP" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/multiple-public-ip/03-dashboard-managing-multiple-ip.png" alt="dashboard managing multiple IP" max-width="100%"/>
 
 Setiap alamat IP memiliki opsi **Copy to clipboard** dan **Detach**. Anda juga dapat mengelola jumlah total IP yang diberikan melalui tombol **Attach/Detach IP(s)** di sebelah judul daftar.
 
@@ -42,7 +42,7 @@ Kotak **Node Settings** menampilkan jumlah alamat yang saat ini ditetapkan. Tomb
 
 Anda juga dapat melihat semua alamat IP yang diberikan ke container dalam detail topologi lingkungan saat terhubung melalui [SSH Gate](https://docs.dewacloud.com/docs/ssh-access/).
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/multiple-public-ip/05-multiple-public-ip-in-ssh.png" alt="multiple public IP in SSH" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/external-access-to-applications/multiple-public-ip/05-multiple-public-ip-in-ssh.png" alt="multiple public IP in SSH" max-width="100%"/>
 
 Alamat eksternal container ditampilkan di bawah kolom **WAN IP**, sedangkan kolom **LAN IP** mencantumkan alamat internal.
 

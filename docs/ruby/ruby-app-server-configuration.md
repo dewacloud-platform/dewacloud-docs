@@ -24,7 +24,7 @@ Modul **Passenger** digunakan untuk semua environment Ruby yang baru dibuat seca
 
 1. Klik tombol **Config** di sebelah server aplikasi _NGINX Ruby_ Anda.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Ruby%20App%20Server%20Configuration/01-nginx-ruby-server-config-button.png" alt="nginx ruby server config button" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Ruby%20App%20Server%20Configuration/01-nginx-ruby-server-config-button.png" alt="nginx ruby server config button" max-width="100%"/>
 
 2. Dalam panel [configuration file manager](<https://docs.dewacloud.com/docs/configuration-file-manager>) yang terbuka, navigasikan ke file **/etc/nginx/_nginx.conf_**. Temukan string _**include app_servers**_:
 
@@ -32,7 +32,7 @@ Modul **Passenger** digunakan untuk semua environment Ruby yang baru dibuat seca
    - _include app_servers/nginx-puma.conf_
    - _include app_servers/nginx-passenger.conf_
 
-     <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Ruby%20App%20Server%20Configuration/02-nginxconf-include-application-server-modules.png" alt="nginxconf include application server modules" width="100%"/>
+     <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Ruby%20App%20Server%20Configuration/02-nginxconf-include-application-server-modules.png" alt="nginxconf include application server modules" max-width="100%"/>
 
 3. Uncomment string dengan modul yang diperlukan dan comment yang sebelumnya aktif.
 
@@ -44,7 +44,7 @@ Modul **Passenger** digunakan untuk semua environment Ruby yang baru dibuat seca
 
 4. **Save** perubahan dan **Restart Nodes** dari server aplikasi NGINX untuk menerapkannya.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Ruby%20App%20Server%20Configuration/04-nginx-ruby-server-restart-nodes.png" alt="nginx ruby server restart nodes" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Ruby%20App%20Server%20Configuration/04-nginx-ruby-server-restart-nodes.png" alt="nginx ruby server restart nodes" max-width="100%"/>
 
 5. Akses node Anda melalui SSH (misalnya menggunakan [Web SSH](<https://docs.dewacloud.com/docs/web-ssh-client>)) dan jalankan modul yang dipilih dengan perintah yang sesuai dieksekusi dari direktori proyek:
 
@@ -57,7 +57,7 @@ Modul **Passenger** digunakan untuk semua environment Ruby yang baru dibuat seca
    Untuk server aplikasi Unicorn jalankan perintah `unicorn_rails -c config/unicorn.rb -D &` sebagai gantinya.
    :::
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Ruby%20App%20Server%20Configuration/05--nginx-ruby-start-puma-application-server-via-ssh.png" alt="nginx ruby start puma application server via ssh" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/ruby/Ruby%20App%20Server%20Configuration/05--nginx-ruby-start-puma-application-server-via-ssh.png" alt="nginx ruby start puma application server via ssh" max-width="100%"/>
 
 :::warning
 Jika Anda ingin beralih ke modul yang berbeda, dapat dilakukan dengan cara yang sama, tetapi Anda perlu menghentikan server aplikasi yang saat ini berjalan: untuk Puma: `pumactl -F config/puma.rb --pidfile puma.pid -S puma.state stop` untuk Unicorn: `ps aux | grep 'unicorn' | awk '{print $2}' | xargs kill -QUIT`

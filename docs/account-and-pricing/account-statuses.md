@@ -34,7 +34,7 @@ Ini terjadi dalam dua kasus. Pertama, jika Anda secara pribadi meminta untuk men
 
 Jika Anda ingin memulihkan akun Anda, masuklah ke dashboard dan isi ulang saldo Anda agar menjadi positif.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/account-statues/01-contact-support.png" alt="Contact Support" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/account-statues/01-contact-support.png" alt="Contact Support" max-width="100%"/>
 
 :::note
 Untuk menghapus akun Anda dan berhenti berlangganan dari email kami, silakan hubungi Dukungan Hoster Anda. Untuk itu, klik tombol Bantuan di panel atas dashboard dan pilih item Contact Support di menu drop-down.

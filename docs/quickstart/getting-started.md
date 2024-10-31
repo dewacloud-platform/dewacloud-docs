@@ -57,13 +57,13 @@ Anda dapat mengakses [platform Marketplace](<https://www.virtuozzo.com/applicati
 1. Klik tombol **Marketplace** di bagian atas dashboard.
 
 
-  <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/3-market-place.png" alt="PaaS main buttons" width="100%"/>
+  <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/3-market-place.png" alt="PaaS main buttons" max-width="100%"/>
 
 
 2. Temukan solusi yang diperlukan dalam daftar yang dikategorikan di sebelah kiri atau menggunakan kolom pencarian di bagian atas.
 
 
-  <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/4-marketplace-browser.png" alt="application marketplace" width="100%"/>
+  <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/4-marketplace-browser.png" alt="application marketplace" max-width="100%"/>
 
 
 Arahkan ke plank aplikasi dan klik tombol **Install**.
@@ -85,7 +85,7 @@ Jika Anda ingin mendistribusikan aplikasi kustom dan mengendalikan proses deploy
 1. Klik tombol **New Environment** di sudut kiri atas dashboard.
 
 
-  <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/6-new-environment.png" alt="PaaS main buttons" width="100%"/>
+  <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/6-new-environment.png" alt="PaaS main buttons" max-width="100%"/>
 
 
 2. **Topology Wizard** akan terbuka, di mana Anda dapat [mengatur environment](<https://docs.dewacloud.com/docs/setting-up-environment/>). Di antara fitur utama platform yang dapat konfigurasikan melalui formulir ini, ada:
@@ -95,14 +95,14 @@ Jika Anda ingin mendistribusikan aplikasi kustom dan mengendalikan proses deploy
   * [automatic vertical scaling](<https://docs.dewacloud.com/docs/automatic-vertical-scaling/>) untuk memastikan harga yang adil dan [horizontal scaling](<https://docs.dewacloud.com/docs/automatic-horizontal-scaling/>) untuk menyediakan fleksibilitas dan keandalan
   * lampiran [public IP](<https://docs.dewacloud.com/docs/public-ip/>) untuk akses langsung dari Internet
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/7-aplikasi-pertama.png" alt="topology wizard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/7-aplikasi-pertama.png" alt="topology wizard" max-width="100%"/>
 
 Untuk sekarang, mari kita buat aplikasi server Tomcat tunggal.
 
 3. Dalam satu menit, environment Anda akan muncul di dashboard.
 
 
-  <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/8-deployment-manager.png" alt="dashboard environment created" width="100%"/>
+  <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/8-deployment-manager.png" alt="dashboard environment created" max-width="100%"/>
 
 
 4. Platform ini mendukung berbagai cara [deployment aplikasi](<https://docs.dewacloud.com/docs/deployment-guide/>) otomatis sehingga Anda dapat memilih opsi yang paling sesuai. Untuk contoh ini, kami akan menunjukkan deployment aplikasi _Hello World_ default dari arsip di deployment manager (terletak di bagian bawah dashboard).
@@ -120,13 +120,13 @@ Arahkan ke proyek dan klik tombol **Deploy to**.
 5. Dalam frame _**Deploy**_ yang terbuka, pilih _Environment_ Anda dan lanjutkan dengan tombol **Deploy**.
 
 
-  <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/10-open-in-browser.png" alt="application deploy dialog" width="100%"/>
+  <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/10-open-in-browser.png" alt="application deploy dialog" max-width="100%"/>
 
 
 6. Tunggu pop-up deployment berhasil dan klik **Open in Browser** untuk memastikan semuanya berfungsi dengan baik.
 
 
-  <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/10-open-in-browser.png" alt="open in browser button" width="100%"/>
+  <img src="https://assets.dewacloud.com/dewacloud-docs/quickstart/10-open-in-browser.png" alt="open in browser button" max-width="100%"/>
 
 
 Dengan demikian, jika aplikasi Anda memerlukan sejumlah pengaturan tambahan atau tidak memiliki antarmuka web, jangan ragu untuk menggunakan berbagai [alat konfigurasi](<https://docs.dewacloud.com/docs/container-configuration/>) yang ada.

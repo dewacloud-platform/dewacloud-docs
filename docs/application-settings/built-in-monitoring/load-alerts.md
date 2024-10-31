@@ -20,17 +20,17 @@ Untuk mengonfigurasi alert kustom, ikuti langkah-langkah ini:
 1. **Open Environment Settings**:
    - Masuk ke platform dashboard dan klik tombol **Settings** untuk environment yang diinginkan.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/load-alerts/1.png" alt="load alerts 1" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/load-alerts/1.png" alt="load alerts 1" max-width="100%"/>
 
 2. **Navigate to Load Alerts**:
    - Di tab pengaturan, pergi ke **Monitoring > Load Alerts**.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/load-alerts/2.png" alt="load alerts 2" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/load-alerts/2.png" alt="load alerts 2" max-width="100%"/>
 
 3. **Managing Alerts**:
    - Anda akan melihat daftar trigger yang sudah dikonfigurasi (jika tersedia). Trigger ini memantau sumber daya seperti _RAM_, _CPU_, _Disk_, _Inodes_, dan _Network Traffic_ dan memberi tahu Anda ketika konsumsi mendekati batas.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/load-alerts/3.png" alt="load alerts 3" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/load-alerts/3.png" alt="load alerts 3" max-width="100%"/>
 
    Anda dapat menggunakan toolbar untuk:
    - **Add** alert baru
@@ -53,7 +53,7 @@ Untuk mengonfigurasi alert kustom, ikuti langkah-langkah ini:
 5. **Alert List**:
    - Alert yang baru dibuat akan muncul dalam daftar dengan nama yang telah Anda tetapkan. Anda dapat mengelola alert menggunakan opsi yang tersedia di toolbar.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/load-alerts/5.png" alt="load alerts 5" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/load-alerts/5.png" alt="load alerts 5" max-width="100%"/>
 
 6. **Email Notifications**:
    - Ketika penggunaan sumber daya melebihi ambang batas yang ditetapkan, Anda akan menerima notifikasi email dengan detail tentang beban, rekomendasi, dan tautan untuk menyesuaikan batasan scaling.
@@ -68,12 +68,12 @@ Untuk memeriksa riwayat eksekusi alert:
 1. **Open Event History**:
    - Navigasikan ke **Monitoring > Events History**. Tipe notifikasi _Load Alerts_ akan dipilih secara default.
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/load-alerts/7.png" alt="load alerts 7" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/load-alerts/7.png" alt="load alerts 7" max-width="100%"/>
 
 2. **Specify Time Period**:
    - Gunakan daftar _Period_ untuk memilih interval waktu yang Anda inginkan untuk melihat alerts (_day_, _week_, _month_, atau _custom_).
 
-   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/load-alerts/8.png" alt="load alerts 8" width="100%"/>
+   <img src="https://assets.dewacloud.com/dewacloud-docs/application_settings/built-in-monitoring/load-alerts/8.png" alt="load alerts 8" max-width="100%"/>
 
 3. **View Alerts**:
    - Anda akan melihat daftar semua alerts yang diaktifkan dalam periode waktu yang dipilih, menunjukkan tanggal, nama alert, tipe node, kondisi, dan apakah alert berhasil.

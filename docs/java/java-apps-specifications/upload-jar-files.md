@@ -12,13 +12,13 @@ Untuk mengunggah file **.jar**:
 
   * Klik tombol **Config** untuk instance yang diinginkan. 
 
-  <img src="https://assets.dewacloud.com/dewacloud-docs/java/java-apps-specifications/upload-jar-files/upload-jar-files-1.png" alt="lib" width="100%"/>
+  <img src="https://assets.dewacloud.com/dewacloud-docs/java/java-apps-specifications/upload-jar-files/upload-jar-files-1.png" alt="lib" max-width="100%"/>
 
   * Pada tab yang terbuka, arahkan mouse Anda ke folder **lib** dan klik **Upload**.
 
 **Unggah multi-file Java tersedia!**
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-apps-specifications/upload-jar-files/upload-jar-files-2.png" alt="java file" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-apps-specifications/upload-jar-files/upload-jar-files-2.png" alt="java file" max-width="100%"/>
 
 Sekarang Anda dapat menggunakan librari yang diunggah dalam proyek Anda!
 

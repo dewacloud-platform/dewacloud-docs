@@ -30,7 +30,7 @@ Untuk melakukan caching ikuti instruksi berikut:
 
 3\. Buat lingkungan dengan NGINX sebagai server aplikasi, tentukan batasan cloudlet, ketik nama environment, dan klik tombol **Create**.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/nginx-php/caching-in-nginx-app-server/02-environment-wizard.png" alt="environment wizard" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/nginx-php/caching-in-nginx-app-server/02-environment-wizard.png" alt="environment wizard" max-width="100%"/>
 
 Dalam satu menit lingkungan Anda akan dibuat dan muncul dalam daftar environment.
 
@@ -44,7 +44,7 @@ Dalam satu menit lingkungan Anda akan dibuat dan muncul dalam daftar environment
 
 Untuk menggunakan eAccelerator, Anda harus menghapus komentar di bagian **Accelerators**:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/nginx-php/caching-in-nginx-app-server/04-nginx-php-eaccelerator.png" alt="NGINX PHP eAccelerator" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/nginx-php/caching-in-nginx-app-server/04-nginx-php-eaccelerator.png" alt="NGINX PHP eAccelerator" max-width="100%"/>
 
 Sekarang Anda perlu menentukan direktori yang akan digunakan untuk disk cache. Untuk itu tambahkan baris berikut seperti yang ditunjukkan pada gambar di bawah ini:
 
@@ -52,7 +52,7 @@ Sekarang Anda perlu menentukan direktori yang akan digunakan untuk disk cache. U
 eaccelerator.cache_dir = /var/lib/nginx/cache
 ```
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/nginx-php/caching-in-nginx-app-server/05-eaccelerator-cache-directory.png" alt="eAccelerator cache directory" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/nginx-php/caching-in-nginx-app-server/05-eaccelerator-cache-directory.png" alt="eAccelerator cache directory" max-width="100%"/>
 
 Semua pengaturan tambahan dapat Anda temukan [di sini](<https://github.com/eaccelerator/eaccelerator/wiki/Settings>).
 
@@ -60,7 +60,7 @@ Semua pengaturan tambahan dapat Anda temukan [di sini](<https://github.com/eacce
 
 Untuk menggunakan akselerator APC, Anda hanya perlu menghapus komentar di bagian Accelerators:
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/nginx-php/caching-in-nginx-app-server/06-nginx-php-apc.png" alt="NGINX PHP APC" width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/php/php-app-servers/nginx-php/caching-in-nginx-app-server/06-nginx-php-apc.png" alt="NGINX PHP APC" max-width="100%"/>
 
 Untuk mengetahui fungsi tambahan APC yang tersedia, ikuti [tautan ini](<https://www.php.net/manual/en/book.apcu.php>).
 
