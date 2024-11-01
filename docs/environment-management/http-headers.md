@@ -19,7 +19,9 @@ Rantai IP atau rantai IPs (jika permintaan melewati beberapa proxy)
 alamat IP paling kanan dalam **x-forwarded-for**  
 **x-host** | Nama domain asal dari server (untuk virtual hosting) dan opsional nomor port TCP. | _\{envName\}.\{platformDomain}_ 
 **x-uri** | Mengidentifikasi nama atau sumber daya web. | _/_  
-:::tip Header keamanan tambahan digunakan untuk beberapa stack tertentu. :::
+:::tip
+Header keamanan tambahan digunakan untuk beberapa stack tertentu. 
+:::
 
 Daftar header HTTP yang didukung dapat bervariasi berdasarkan topologi dari environment yang terhubung. Karena spesifikasi akses eksternal (melalui [resolver/SLB](<https://docs.dewacloud.com/docs/shared-load-balancer/>) atau [public IP](<https://docs.dewacloud.com/docs/public-ip/>)), ada empat kemungkinan skenario ketika bekerja dengan platform:
 
