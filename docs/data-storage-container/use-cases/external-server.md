@@ -14,7 +14,7 @@ Jadi, jika Anda memiliki server penyimpanan dengan konten yang telah terstruktur
 
 Sebaliknya, jika Anda baru merencanakan untuk membuat penyimpanan yang sangat kinerja dan andal, pertimbangkan untuk memanfaatkan [Shared Storage Container](<https://docs.dewacloud.com/docs/shared-storage-container/>). Itu disediakan dengan semua software yang diperlukan yang sudah terpasang, sehingga Anda dapat [memanfaatkan penyimpanan tersebut](<https://docs.dewacloud.com/docs/dedicated-storage/>) segera setelah pembuatan tanpa konfigurasi tambahan yang diperlukan.
 
-## Pelajari cara:[![](#)](<https://docs.dewacloud.com/docs/external-nfs-storage/#learn-how-to>)
+## Pelajari cara:{#learn-how-to}
 
   * Menambahkan [mount points](<https://docs.dewacloud.com/docs/mount-points/>) untuk mengakses data dalam folder jarak jauh
   * [Ekspor data](<https://docs.dewacloud.com/docs/storage-exports/>) dari satu node ke node lainnya
