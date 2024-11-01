@@ -21,7 +21,8 @@ _**Gemfile**_ mendukung deklarasi versi non-ketat (misalnya, lebih besar dari ve
 
 Selain itu, jika aplikasi Anda menggunakan ketergantungan khusus (non-publik), Anda perlu menentukan URL repository mereka di Gemfile. Dengan cara ini, Bundler akan dapat mengunduh dan menginstal gem tersebut.
 
-:::warning Ketika mengulang deployment environment Ruby, pastikan bahwa versi engine baru tercakup dengan benar dalam Gemfile. Jika tidak, Anda akan mendapatkan kesalahan ketidaksesuaian setelah prosesnya. Kami merekomendasikan untuk menggunakan deklarasi versi Ruby yang tidak ketat dalam Gemfile Anda, misalnya ruby “~> 2.6.0”. Bentuk fleksibel seperti itu mencegah Anda dari mengganggu proses deployment atau CI Anda sambil memungkinkan peningkatan versi Ruby Anda.
+:::warning 
+Ketika mengulang deployment environment Ruby, pastikan bahwa versi engine baru tercakup dengan benar dalam Gemfile. Jika tidak, Anda akan mendapatkan kesalahan ketidaksesuaian setelah prosesnya. Kami merekomendasikan untuk menggunakan deklarasi versi Ruby yang tidak ketat dalam Gemfile Anda, misalnya ruby “~> 2.6.0”. Bentuk fleksibel seperti itu mencegah Anda dari mengganggu proses deployment atau CI Anda sambil memungkinkan peningkatan versi Ruby Anda.
 :::
 
 ## Baca Juga{#whats-next}
