@@ -15,7 +15,7 @@ Selain itu, jika berbicara tentang proyek yang lebih kompleks dan rumit (yang me
   * _**pengujian**_ \- untuk memastikan kualitas dengan menemukan dan menganalisis masalah yang mungkin terjadi
   * _**produksi**_ \- versi aplikasi terbaru yang disediakan untuk digunakan oleh pelanggan akhir
 
-Di bawah ini, kami akan memberikan informasi tentang [cara membuat salinan environment](<https://docs.dewacloud.com/docs/#how-to-clone-environment>) dan beberapa [kasus penggunaan umum](<https://docs.dewacloud.com/docs/#common-use-cases>).
+Di bawah ini, kami akan memberikan informasi tentang [cara membuat salinan environment](#how-to-clone-environment) dan beberapa [kasus penggunaan umum](#common-use-cases).
 
 :::note
 Poin-poin spesifik berikut perlu diperhatikan saat menggandakan environment di platform: berdasarkan mode scaling layer, container yang digandakan akan dibuat dari image dasar yang sesuai (stateless) atau disalin dari container master (stateful). Anda mungkin mengalami pembekuan jangka pendek pada container sumber karena migrasi status memori ke node yang digandakan (spesifik implementasi mirip dengan live migration). Saat menggandakan environment berbasis Windows, container akan dihentikan sementara, jadi bersiaplah untuk downtime singkat.

@@ -26,7 +26,7 @@ Daftar server database yang tersedia dapat bervariasi dan tergantung pada pengat
 
 Ketika server database yang sesuai telah dibuat, Anda akan menerima notifikasi email dengan kredensial (_URL akses_ , _login_ dan _password_) ke panel administrasi database.
 
-3\. Untuk meluncurkan panel admin database Anda, klik tombol **Open in Browser** di sebelah node database yang dituju di dashboard (atau susun URL panel admin [secara manual](<https://docs.dewacloud.com/docs/#database-admin-panel-url>)).
+3\. Untuk meluncurkan panel admin database Anda, klik tombol **Open in Browser** di sebelah node database yang dituju di dashboard (atau susun URL panel admin [secara manual](#database-admin-panel-url)).
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/databases/databases-hosting/db-hosting-overview/db-hosting-overview-3.png" alt="access database admin panel" max-width="100%"/>
 

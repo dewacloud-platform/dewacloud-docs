@@ -11,8 +11,8 @@ title: Hasura GraphQL Installation
 
 Dalam tutorial ini, kami akan mengulas dua contoh instalasi mesin Hasura GraphQL di platform:
 
-  * [Automatic Deployment with Local PostgreSQL Database](<https://docs.dewacloud.com/docs/#automatic-deployment-with-local-postgresql-database>)
-  * [Manual Deployment with External PostgreSQL Database](<https://docs.dewacloud.com/docs/#manual-deployment-with-external-postgresql-database>)
+  * [Automatic Deployment with Local PostgreSQL Database](#automatic-deployment-with-local-postgresql-database)
+  * [Manual Deployment with External PostgreSQL Database](#manual-deployment-with-external-postgresql-database)
 
 ## Automatic Deployment with Local PostgreSQL Database{#automatic-deployment-with-local-postgresql-database}
 

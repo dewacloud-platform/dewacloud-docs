@@ -11,10 +11,10 @@ Platform memungkinkan Anda mengonfigurasi **autentikasi dua faktor** (2FA) untuk
 
 Berikut, kami akan menjelaskan langkah demi langkah manajemen fitur autentikasi dua faktor:
 
-  * [aktifkan 2FA](https://docs.dewacloud.com/docs/#enable)
-  * [kelola kode pemulihan](https://docs.dewacloud.com/docs/#manage)
-  * [nonaktifkan 2FA](https://docs.dewacloud.com/docs/#disable)
-  * [bekerja dengan API](https://docs.dewacloud.com/docs/#api)
+  * [aktifkan 2FA](#enable-two-factor-authentication)
+  * [kelola kode pemulihan](#manage-recovery-codes)
+  * [nonaktifkan 2FA](#disable-two-factor-authentication)
+  * [bekerja dengan API](#using-api-with-two-factor-authentication)
 
 ## Aktifkan Autentikasi Dua Faktor{#enable-two-factor-authentication}
 

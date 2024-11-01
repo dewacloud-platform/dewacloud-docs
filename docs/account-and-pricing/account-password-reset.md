@@ -8,7 +8,7 @@ title: Reset Kata Sandi Akun
 
 Platform memastikan bahwa kata sandi akun diperbarui secara berkala melalui mekanisme deprecasi otomatis. Secara default, kata sandi kadaluarsa setelah 180 hari (dengan beberapa pemberitahuan sebelumnya) dan perlu diperbarui untuk memulihkan akses ke akun.
 
-Jika Anda masih memiliki akses ke akun Anda, ikuti alur [ubah kata sandi](https://docs.dewacloud.com/docs/#change-password). Jika Anda lupa kata sandi saat ini atau sudah kadaluarsa, platform menyediakan alur yang andal dan aman untuk [mereset kata sandi](https://docs.dewacloud.com/docs/#reset-password) Anda.
+Jika Anda masih memiliki akses ke akun Anda, ikuti alur [ubah kata sandi](#change-password). Jika Anda lupa kata sandi saat ini atau sudah kadaluarsa, platform menyediakan alur yang andal dan aman untuk [mereset kata sandi](#reset-password) Anda.
 
 ## Persyaratan Kata Sandi{#password-requirements}
 

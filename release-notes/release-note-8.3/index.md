@@ -14,11 +14,11 @@ Dalam dokumen ini, Anda akan menemukan semua fitur baru, peningkatan, dan peruba
 
 ## Gambar OS Dasar AlmaLinux 9{#almalinux-9-base-os-image}
 
-Memulai proses transisi bertahap tumpukan perangkat lunak yang bersertifikat ke gambar berbasis _AlmaLinux 9_ [Pelajari lebih lanjut](<#almalinux-9-base-os-image>)
+Memulai proses transisi bertahap tumpukan perangkat lunak yang bersertifikat ke gambar berbasis _AlmaLinux 9_ [Pelajari lebih lanjut](#almalinux-9-base-os-image)
 
 ## Peningkatan Langganan{#subscription-improvements}
 
-Mengimplementasikan fitur baru untuk solusi langganan, termasuk pembaruan langganan, migrasi, dan menonaktifkan/mengaktifkan opsi _Auto Pay_ [Pelajari lebih lanjut](<#subscription-improvements>)
+Mengimplementasikan fitur baru untuk solusi langganan, termasuk pembaruan langganan, migrasi, dan menonaktifkan/mengaktifkan opsi _Auto Pay_ [Pelajari lebih lanjut](#subscription-improvements)
 
 :::
 
@@ -26,15 +26,15 @@ Mengimplementasikan fitur baru untuk solusi langganan, termasuk pembaruan langga
 
 ## Pemrakarsa Aksi untuk Email{#action-initiator-for-emails}
 
-Memperluas notifikasi email kolaborasi dengan data “_pemrakarsa aksi_” untuk membantu pelacakan aktivitas akun [Pelajari lebih lanjut](<#action-initiator-for-emails>)
+Memperluas notifikasi email kolaborasi dengan data “_pemrakarsa aksi_” untuk membantu pelacakan aktivitas akun [Pelajari lebih lanjut](#action-initiator-for-emails)
 
 ## Perubahan API{#api-changes}
 
-Mencantumkan semua perubahan pada API platform publik dalam rilis saat ini [Pelajari lebih lanjut](<#api-changes>)
+Mencantumkan semua perubahan pada API platform publik dalam rilis saat ini [Pelajari lebih lanjut](#api-changes)
 
 ## Versi Tumpukan Perangkat Lunak{#software-stack-versions}
 
-Daftar terkini dari template OS yang didukung dan versi tumpukan perangkat lunak [Pelajari lebih lanjut](<#software-stack-versions>)
+Daftar terkini dari template OS yang didukung dan versi tumpukan perangkat lunak [Pelajari lebih lanjut](#software-stack-versions)
 
 :::
 
@@ -42,11 +42,11 @@ Daftar terkini dari template OS yang didukung dan versi tumpukan perangkat lunak
 
 ## Perbaikan yang Kompatibel dengan Versi Sebelumnya{#fixes-compatible-with-prior-versions}
 
-Perbaikan bug yang diimplementasikan dalam rilis saat ini dan diintegrasikan ke dalam versi platform sebelumnya melalui patch yang sesuai [Pelajari lebih lanjut](<#fixes-compatible-with-prior-versions>)
+Perbaikan bug yang diimplementasikan dalam rilis saat ini dan diintegrasikan ke dalam versi platform sebelumnya melalui patch yang sesuai [Pelajari lebih lanjut](#fixes-compatible-with-prior-versions)
 
 ## Perbaikan Bug{#bug-fixes}
 
-Daftar perbaikan yang diterapkan pada platform dimulai dari rilis saat ini [Pelajari lebih lanjut](<#bug-fixes>)
+Daftar perbaikan yang diterapkan pada platform dimulai dari rilis saat ini [Pelajari lebih lanjut](#bug-fixes)
 
 :::
 
@@ -110,7 +110,7 @@ Dewacloud Application Platform menyediakan fungsionalitas [kolaborasi](<https://
 
 Di bawah ini, Anda dapat menemukan daftar semua perubahan pada API publik di versi platform 8.3 (dibandingkan dengan yang sebelumnya [8.2.2](<https://docs.dewacloud.com/release-notes/release-notes-82/#api-changes>)):
 
-  * Menambahkan metode API baru _**SetAutopay**_, _**MoveProduct**_, _**UpdateSubscription**_, _**UpcomingInvoice**_, dan _**DiscardUpdateSubscription**_ karena perubahan [langganan](<#subscription-improvements>).
+  * Menambahkan metode API baru _**SetAutopay**_, _**MoveProduct**_, _**UpdateSubscription**_, _**UpcomingInvoice**_, dan _**DiscardUpdateSubscription**_ karena perubahan [langganan](#subscription-improvements).
   * Menambahkan parameter baru _**invalidateSessions**_ untuk semua metode reset password, yang memungkinkan mengakhiri semua sesi pengguna aktif (kecuali yang saat ini).
 
 Tinjauan lengkap dokumentasi API telah dimulai untuk memberikan deskripsi komprehensif tentang semua metode dan parameter mereka. Saat ini, sebagian besar layanan _billing_ dan _environment_ telah diperbarui. Anda dapat mengharapkan cakupan penuh selama beberapa rilis mendatang.

@@ -12,18 +12,18 @@ Operasi seperti itu disebut _**redeploy**_ dan memiliki spesifik berikut ketika 
 
   * data pengguna custom dan file sistem sensitif dipertahankan selama update: 
     * konten dari _**[volumes](<https://docs.dewacloud.com/docs/container-volumes/>)**_ (baik yang default maupun custom)
-    * file yang tercantum dalam _**[/etc/jelastic/redeploy.conf](<https://docs.dewacloud.com/docs/#saving-custom-data-during-container-redeploy>)**_ (konfigurasi khusus dari stacks), yang diperlukan untuk memastikan operabilitas container
+    * file yang tercantum dalam _**[/etc/jelastic/redeploy.conf](#saving-custom-data-during-container-redeploy)**_ (konfigurasi khusus dari stacks), yang diperlukan untuk memastikan operabilitas container
     * konfigurasi terkait _**AutoFS dan NFS**_ (_/etc/autofs.jelastic_ , _/etc/auto.master_ , _/etc/exports_)
     * _**firewall configurations**_ (_/etc/sysconfig/iptables-custom_ , _/etc/sysconfig/iptables4-jelastic_ , _/etc/sysconfig/iptables6-jelastic_ , _/etc/iptables/rules.v4_)
     * _**SSH access data**_ (_/root/.ssh/authorized_keys_ , _/root/.ssh/authorized_keys2_ , _/root/.ssh/id_rsa_)
   * semua custom [configurations](<https://docs.dewacloud.com/docs/container-configuration/>) yang telah ditentukan sebelumnya (seperti _run commands_ , _links_ , _variables_ , dll.) tidak akan terpengaruh
   * jika beroperasi dengan [multiple](<https://docs.dewacloud.com/docs/horizontal-scaling/>) (instances yang diskalakan secara horizontal), update dapat dilakukan pada containers satu per satu, yaitu secara implisit tanpa downtime
 
-Dengan cara ini, Anda dapat memperbarui container berbasis Docker Anda ke tag (versi) baru tanpa mempengaruhi aplikasi di dalamnya. Dengan platform ini, redeployment container dapat dilakukan hanya dalam beberapa klik melalui [dashboard UI](<https://docs.dewacloud.com/docs/#update-container-via-dashboard>) atau dengan mudah diotomatisasi [via API](<https://docs.dewacloud.com/docs/#update-container-via-platform-apicscli>).
+Dengan cara ini, Anda dapat memperbarui container berbasis Docker Anda ke tag (versi) baru tanpa mempengaruhi aplikasi di dalamnya. Dengan platform ini, redeployment container dapat dilakukan hanya dalam beberapa klik melalui [dashboard UI](#update-container-via-dashboard) atau dengan mudah diotomatisasi [via API](#update-container-via-platform-apicscli).
 
 **Catatan:** Saat bekerja dengan database _MySQL_, _MariaDB_, atau _Percona_, [downgrading](<https://dev.mysql.com/doc/refman/8.0/en/downgrading.html>) (yaitu melakukan redeploy ke versi yang lebih rendah) tidak didukung. Jika operasi ini diperlukan, kami merekomendasikan [membuat cadangan](<https://docs.dewacloud.com/docs/database-backups/>) dan memulihkan database setelah redeploy (atau secara keseluruhan di container terpisah).
 
-Untuk mempelajari tentang [menyimpan atau membuat cadangan data custom](<https://docs.dewacloud.com/docs/#saving-custom-data-during-container-redeploy>) selama redeploy, lihat bagian yang sesuai di bawah.
+Untuk mempelajari tentang [menyimpan atau membuat cadangan data custom](#saving-custom-data-during-container-redeploy) selama redeploy, lihat bagian yang sesuai di bawah.
 
 ## Update Container via Dashboard{#update-container-via-dashboard}
 
@@ -121,7 +121,7 @@ Setiap [platform-managed container](<https://docs.dewacloud.com/docs/software-st
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/container/container-redeploy/container-redeploy-7.png" alt="redeploy.conf file manager shortcut" max-width="100%"/>
 
-File _**redeploy.conf**_ dibagi menjadi dua bagian [system](<https://docs.dewacloud.com/docs/#system-files-and-folders>) dan [custom](<https://docs.dewacloud.com/docs/#custom-files-and-folders>) dan dapat digunakan untuk [membuat cadangan file sistem](<https://docs.dewacloud.com/docs/#creating-file-backup-copy-upon-image-redeployment>).
+File _**redeploy.conf**_ dibagi menjadi dua bagian [system](#system-files-and-folders) dan [custom](#custom-files-and-folders) dan dapat digunakan untuk [membuat cadangan file sistem](#creating-file-backup-copy-upon-image-redeployment).
 
 #### System Files and Folders{#system-files-and-folders}
 

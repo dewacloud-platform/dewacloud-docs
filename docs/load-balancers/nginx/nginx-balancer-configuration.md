@@ -5,13 +5,15 @@ title: NGINX Balancer Configuration
 ---
 # NGINX Balancer Configuration
 
+<p id="back">
 File konfigurasi NGINX berikut tersedia:
+</p>
 
 Folder | File | Path  
 ---|---|---  
-[conf](<https://docs.dewacloud.com/docs/#conf>) | nginx.conf | /etc/nginx  
-[conf.d](<https://docs.dewacloud.com/docs/#confd>) |  | /etc/nginx/conf.d  
-[tcpmaps](<https://docs.dewacloud.com/docs/#tcpmaps>) | mappings.xml | /etc/nginx/tcpmaps  
+[conf](#conf) | nginx.conf | /etc/nginx  
+[conf.d](#confd) |  | /etc/nginx/conf.d  
+[tcpmaps](#tcpmaps) | mappings.xml | /etc/nginx/tcpmaps  
   
 NGINX balancer ditambahkan secara otomatis jika Anda memilih beberapa app servers.
 
@@ -21,7 +23,7 @@ Untuk melakukan konfigurasi yang diperlukan pada NGINX balancer, file _**nginx.c
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/nginx%20balancer%20configuration/01-nginx-conf-file.png" alt="NGINX balancer configuration file" max-width="100%"/>
 
-[Back to the list](<https://docs.dewacloud.com/docs/#back>)
+[Back to the list](#back)
 
 ## CONF.D{#confd}
 
@@ -29,7 +31,7 @@ Dengan akses ke konfigurasi NGINX, Anda tidak hanya dapat mengedit file yang ada
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/nginx%20balancer%20configuration/02-nginx-confd-settings.png" alt="NGINX balancer custom conf.d settings" max-width="100%"/>
 
-[Back to the list](<https://docs.dewacloud.com/docs/#back>)
+[Back to the list](#back)
 
 ## TCPMAPS{#tcpmaps}
 
@@ -41,7 +43,7 @@ Untuk mengatur [caching di NGINX](<https://docs.dewacloud.com/docs/nginx-caching
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/load%20balancers/NGINX/nginx%20balancer%20configuration/03-mappings-xml-file.png" alt="NGINX balancer TCP mappings" max-width="100%"/>
 
-[Back to the list](<https://docs.dewacloud.com/docs/#back>)
+[Back to the list](#back)
 
 ## Baca Juga{#whats-next}
 

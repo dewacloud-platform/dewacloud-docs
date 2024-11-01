@@ -26,7 +26,7 @@ Tergantung pada server aplikasi tertentu yang Anda gunakan, lokasi tepatnya mung
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-variables/java-option-and-arguments/01-variables-conf-file.png" alt="file variables.conf untuk opsi Java" max-width="100%"/>
 
-Jika diperlukan, Anda dapat [mengubah ulang opsi memori utama](<https://docs.dewacloud.com/docs/#redefining-main-java-parameters>) melalui variabel container.
+Jika diperlukan, Anda dapat [mengubah ulang opsi memori utama](#redefining-main-java-parameters) melalui variabel container.
 
 2\. Jangan lupa untuk **Restart node** agar perubahan diterapkan.
 

@@ -25,9 +25,9 @@ title: Shared Storage Container
 
 Dan di bawah ini kita akan mempertimbangkan bagaimana mengatur server Shared Storage seperti itu di dalam platform, beberapa tips tentang pengelolaannya, dan kekhususan kasus penggunaannya:
 
-  * [Storage Container Creation](<https://docs.dewacloud.com/docs/#storage-container-creation>)
-  * [Shared Storage Auto-Cluster](<https://docs.dewacloud.com/docs/#shared-storage-auto-cluster>)
-  * [Storage Container Management](<https://docs.dewacloud.com/docs/#storage-container-management>)
+  * [Storage Container Creation](#storage-container-creation)
+  * [Shared Storage Auto-Cluster](#shared-storage-auto-cluster)
+  * [Storage Container Management](#storage-container-management)
 
 ## Storage Container Creation{#storage-container-creation}
 
@@ -35,7 +35,7 @@ Untuk membuat Shared Storage Container baru, aktifkan bagian _**Storage**_ yang 
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/shared%20storage%20container/02-shared-storage-topology-wizard.png" alt="shared storage topology wizard" max-width="100%"/>
 
-Di bagian tengah wizard, Anda dapat memberikan konfigurasi tambahan untuk Shared Storage Anda. Jumlah ruang penyimpanan yang disediakan dapat disesuaikan melalui kolom _Disk Limit_. Platform dapat secara otomatis mengkonfigurasi sebuah [cluster penyimpanan yang andal](<https://docs.dewacloud.com/docs/#shared-storage-auto-cluster>) (sebagai pengganti node terpisah) jika Anda mengaktifkan switcher _**Auto-Clustering**_. Juga, jika diperlukan, alamat [public IP](<https://docs.dewacloud.com/docs/public-ip/>) dapat dilampirkan ke node (baik IPv4 dan IPv6).
+Di bagian tengah wizard, Anda dapat memberikan konfigurasi tambahan untuk Shared Storage Anda. Jumlah ruang penyimpanan yang disediakan dapat disesuaikan melalui kolom _Disk Limit_. Platform dapat secara otomatis mengkonfigurasi sebuah [cluster penyimpanan yang andal](#shared-storage-auto-cluster) (sebagai pengganti node terpisah) jika Anda mengaktifkan switcher _**Auto-Clustering**_. Juga, jika diperlukan, alamat [public IP](<https://docs.dewacloud.com/docs/public-ip/>) dapat dilampirkan ke node (baik IPv4 dan IPv6).
 
 :::tip
 Karena tipe container ini dikembangkan secara khusus untuk digunakan sebagai server data storage, Anda perlu mempertimbangkan beberapa spesifikas tentang konfigurasinya: meskipun RAM & CPU bukan sumber daya utama dari penyimpanan, mereka masih dikonsumsi oleh node karena beroperasi melalui jaringan (jumlah tertentu tergantung pada beban) jika nilai maksimum ruang disk per node penyimpanan tidak cukup, harap hubungi tim dukungan penyedia hosting Anda dan meminta perbesaran batas akun yang sesuai harga node bergantung terutama pada jumlah ruang disk yang digunakan (bukan batasnya) dan lalu lintas jaringan eksternal (cek biaya ini di Quotas & Pricing > Pricing > Disk Space atau Traffic)

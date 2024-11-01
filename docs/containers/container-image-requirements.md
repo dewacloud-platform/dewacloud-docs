@@ -8,8 +8,8 @@ title: Container Image Requirements
 
 Saat ini, platform containers memiliki persyaratan berikut untuk base image:
 
-  * [Supported OS Distributions](<https://docs.dewacloud.com/docs/#supported-os-distributions>)
-  * [Supported Architectures](<https://docs.dewacloud.com/docs/#supported-architectures>)
+  * [Supported OS Distributions](#supported-os-distributions)
+  * [Supported Architectures](#supported-architectures)
 
 ## Supported OS Distributions{#supported-os-distributions}
 

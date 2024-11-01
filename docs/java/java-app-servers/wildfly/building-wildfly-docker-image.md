@@ -26,9 +26,9 @@ Di bawah ini, kita akan mempertimbangkan semua spesifikasinya untuk image kustom
 
 Jadi, mari kita ikuti langkah-langkah operasi yang diperlukan satu per satu:
 
-  * [menyusun dockerfile](<https://docs.dewacloud.com/docs/#composing-dockerfile>)
-  * [menambahkan image ke repository](<https://docs.dewacloud.com/docs/#adding-image-to-repository>)
-  * [deployment image di platform](<https://docs.dewacloud.com/docs/#deploying-image-at-platform>)
+  * [menyusun dockerfile](#composing-dockerfile)
+  * [menambahkan image ke repository](#adding-image-to-repository)
+  * [deployment image di platform](#deploying-image-at-platform)
 
 ## Menyusun Dockerfile{#composing-dockerfile}
 

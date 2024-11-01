@@ -10,8 +10,8 @@ title: GlassFish Clustering
 
 Dengan platform ini, Anda dapat menggunakan GlassFish tidak hanya sebagai server terpisah untuk hosting aplikasi Java Anda tetapi juga sebagai instance cluster dengan ketersediaan tinggi yang dapat mereplikasi secara penuh. Mari kita lihat cara mengatur GlassFish cluster di platform ini dengan dua cara berbeda:
 
-  * [instalasi otomatis via JPS](<https://docs.dewacloud.com/docs/#auto-deploy>)
-  * [deployment manual](<https://docs.dewacloud.com/docs/#manual-deploy>)
+  * [instalasi otomatis via JPS](#glassfish-cluster-automatic-deployment-via-jps-package)
+  * [deployment manual](#glassfish-cluster-manual-deployment)
 
 ## GlassFish Cluster Automatic Deployment via JPS Package{#glassfish-cluster-automatic-deployment-via-jps-package}
 

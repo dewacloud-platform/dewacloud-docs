@@ -33,8 +33,8 @@ Kebijakan harga di berbagai environment regions dapat bervariasi berdasarkan par
 
 Turunkan tab hingga bagian _**Live migration**_ ditempatkan, baik dengan switcher khusus yang ditampilkan atau menyediakan beberapa info tambahan, tergantung pada target region yang dipilih. Di sini Anda dapat menentukan jenis migrasi mana (di antara dua yang disediakan) yang harus digunakan:
 
-  * **[live migration](<https://docs.dewacloud.com/docs/#live-migration>)** \- tersedia hanya antara environment regions, ditandai dengan label _**LM**_ khusus dalam daftar (biasanya, hanya untuk region dalam datacenter yang sama)
-  * **[offline migration](<https://docs.dewacloud.com/docs/#offline-migration>)** \- dapat digunakan untuk semua environment regions
+  * **[live migration](#live-migration)** \- tersedia hanya antara environment regions, ditandai dengan label _**LM**_ khusus dalam daftar (biasanya, hanya untuk region dalam datacenter yang sama)
+  * **[offline migration](#offline-migration)** \- dapat digunakan untuk semua environment regions
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-regions/migration-between-regions/05-select-target-region.png" alt="select target region" max-width="100%"/>
 
@@ -60,7 +60,7 @@ Jika memilih jenis migrasi ini, relokasi environment akan dilakukan secara impli
 Meskipun manfaat dari live (online) migration sudah jelas, ingatlah bahwa ini tidak cocok untuk semua kasus. Kami sangat menyarankan Anda untuk menghindari penggunaan live migration containers untuk: environments/containers dengan beban tinggi - downtime tak terduga dengan kesalahan “502 - environment stopped” (biasanya singkat, di bawah 10 detik)active database containers,Big Data - kemungkinan kerusakan atau hilangnya data yang sedang diproses karena sifat dari online migration dan pembekuan koneksi jaringan/operasi berhubungan I/O disk selama proses migrasi 
 :::
 
-Jika mode [offline](<https://docs.dewacloud.com/docs/#offline-migration>) diperlukan - cukup matikan switcher yang sesuai.
+Jika mode [offline](#offline-migration) diperlukan - cukup matikan switcher yang sesuai.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-regions/migration-between-regions/08-disable-live-migration.png" alt="disable live migration" max-width="100%"/>
 

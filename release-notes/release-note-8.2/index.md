@@ -14,7 +14,7 @@ Dalam dokumen ini, Anda akan menemukan semua fitur baru, peningkatan, dan peruba
 
 ## Solusi Berbasis Langganan{#subscription-based-solutions}
 
-Mengimplementasikan dukungan asli untuk solusi berbasis langganan dengan harga tetap [Pelajari lebih lanjut](<#subscription-based-solutions>)
+Mengimplementasikan dukungan asli untuk solusi berbasis langganan dengan harga tetap [Pelajari lebih lanjut](#subscription-based-solutions)
 
 :::
 
@@ -22,15 +22,15 @@ Mengimplementasikan dukungan asli untuk solusi berbasis langganan dengan harga t
 
 ## Pengisian Ulang dengan Kartu 3DS{#refilling-with-3ds-cards}
 
-Memberikan pemberitahuan bahwa langkah tambahan diperlukan untuk menyelesaikan faktur jika metode pembayaran yang dipilih menggunakan 3DS [Pelajari lebih lanjut](<#refilling-with-3ds-cards>)
+Memberikan pemberitahuan bahwa langkah tambahan diperlukan untuk menyelesaikan faktur jika metode pembayaran yang dipilih menggunakan 3DS [Pelajari lebih lanjut](#refilling-with-3ds-cards)
 
 ## Perubahan API{#api-changes}
 
-Mencantumkan semua perubahan pada API platform publik dalam rilis saat ini [Pelajari lebih lanjut](<#api-changes>)
+Mencantumkan semua perubahan pada API platform publik dalam rilis saat ini [Pelajari lebih lanjut](#api-changes)
 
 ## Versi Tumpukan Perangkat Lunak{#software-stack-versions}
 
-Daftar terkini dari template OS yang didukung dan versi tumpukan perangkat lunak [Pelajari lebih lanjut](<#software-stack-versions>)
+Daftar terkini dari template OS yang didukung dan versi tumpukan perangkat lunak [Pelajari lebih lanjut](#software-stack-versions)
 
 :::
 
@@ -38,11 +38,11 @@ Daftar terkini dari template OS yang didukung dan versi tumpukan perangkat lunak
 
 ## Perbaikan yang Kompatibel dengan Versi Sebelumnya{#fixes-compatible-with-prior-versions}
 
-Perbaikan bug yang diimplementasikan dalam rilis saat ini dan diintegrasikan ke dalam versi platform sebelumnya melalui patch yang sesuai [Pelajari lebih lanjut](<#fixes-compatible-with-prior-versions>)
+Perbaikan bug yang diimplementasikan dalam rilis saat ini dan diintegrasikan ke dalam versi platform sebelumnya melalui patch yang sesuai [Pelajari lebih lanjut](#fixes-compatible-with-prior-versions)
 
 ## Perbaikan Bug{#bug-fixes}
 
-Daftar perbaikan yang diterapkan pada platform dimulai dari rilis saat ini [Pelajari lebih lanjut](<#bug-fixes>)
+Daftar perbaikan yang diterapkan pada platform dimulai dari rilis saat ini [Pelajari lebih lanjut](#bug-fixes)
 
 :::
 
@@ -83,7 +83,7 @@ Ketika mengisi saldo akun menggunakan metode pembayaran yang disimpan dengan 3DS
 
 Di bawah ini, Anda dapat menemukan daftar semua perubahan pada API publik di versi platform 8.2.2 (dibandingkan dengan yang sebelumnya [8.0.2](<https://docs.dewacloud.com/release-notes/release-notes-802/#api-changes>)):
 
-  * Menambahkan layanan **[Billing> Subscriptions](<https://docs.jelastic.com/api/#!/api/billing.Subscription>)** baru dengan metode API untuk mendukung fitur [subscriptions](<#subscription-based-solutions>).
+  * Menambahkan layanan **[Billing> Subscriptions](<https://docs.jelastic.com/api/#!/api/billing.Subscription>)** baru dengan metode API untuk mendukung fitur [subscriptions](#subscription-based-solutions).
 
 [Info lebih lanjut](<https://docs.jelastic.com/api/>)
 

@@ -10,7 +10,7 @@ title: Deploying Apps via Gitblit
 
 Jadi, mari kita cari tahu bagaimana cara meng-host Gitblit di platform dan, selanjutnya, menyederhanakan manajemen aplikasi Anda dengan bantuannya. Anda dapat secara otomatis mendapatkan instance **Gitblit** yang telah dikonfigurasi sebelumnya dan siap digunakan dalam beberapa menit menggunakan widget instalasi satu klik kami:
 
-Cukup klik **Get it hosted now** dan masukkan alamat email Anda untuk meluncurkan Gitblit dan mendapatkan kemampuan untuk melanjutkan langsung ke bagian panduan [pembuatan repositori](<https://docs.dewacloud.com/docs/#create-repository>), melewati langkah-langkah instalasi manual.
+Cukup klik **Get it hosted now** dan masukkan alamat email Anda untuk meluncurkan Gitblit dan mendapatkan kemampuan untuk melanjutkan langsung ke bagian panduan [pembuatan repositori](#create-a-gitblit-repository), melewati langkah-langkah instalasi manual.
 
 Daftar lengkap aplikasi, yang tersedia untuk instalasi satu klik, dapat ditemukan di halaman [Marketplace kami](<https://www.virtuozzo.com/application-platform/marketplace/>) atau di bagian [yang sesuai](<https://docs.dewacloud.com/docs/marketplace/>) di dashboard.
 

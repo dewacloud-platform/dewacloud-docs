@@ -9,13 +9,13 @@ PaaS adalah platform cloud multibahasa sejati, yang saat ini menyediakan Java, P
 
 Dalam panduan ini, Anda akan diperkenalkan dengan fitur unik dari hosting Go dan diperkenalkan dengan kemungkinan terkait Go di dalam platform. Gunakan tabel konten di bawah ini untuk menemukan informasi yang diperlukan di dalam panduan dengan lebih cepat:
 
-  * [Go Environment Hosting](<https://docs.dewacloud.com/docs/#go-environment-hosting>)
-  * [Golang Versioning](<https://docs.dewacloud.com/docs/#golang-versioning>)
-  * [Go Application Deployment](<https://docs.dewacloud.com/docs/#go-application-deployment>)
-  * [Domains Management](<https://docs.dewacloud.com/docs/#domains-management>)
-  * [Automatic Vertical Scaling](<https://docs.dewacloud.com/docs/#automatic-vertical-scaling>)
-  * [Manual Horizontal Scaling](<https://docs.dewacloud.com/docs/#manual-horizontal-scaling>)
-  * [Automatic Horizontal Scaling](<https://docs.dewacloud.com/docs/#automatic-horizontal-scaling>)
+  * [Go Environment Hosting](#go-environment-hosting)
+  * [Golang Versioning](#golang-versioning)
+  * [Go Application Deployment](#go-application-deployment)
+  * [Domains Management](#domains-management)
+  * [Automatic Vertical Scaling](#automatic-vertical-scaling)
+  * [Manual Horizontal Scaling](#manual-horizontal-scaling)
+  * [Automatic Horizontal Scaling](#automatic-horizontal-scaling)
 
 ## Go Environment Hosting{#go-environment-hosting}
 

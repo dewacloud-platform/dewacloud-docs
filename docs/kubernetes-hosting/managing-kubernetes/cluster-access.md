@@ -7,8 +7,8 @@ title: Cluster Access
 
 Setelah [instalasi cluster](<https://docs.dewacloud.com/docs/kubernetes-cluster-installation/>) berhasil, ada beberapa cara untuk mengaksesnya untuk memulai manajemen:
 
-  * [Kubernetes Dashboard](<https://docs.dewacloud.com/docs/#kubernetes-dashboard>)
-  * [kubectl client](<https://docs.dewacloud.com/docs/#kubectl-client>)
+  * [Kubernetes Dashboard](#kubernetes-dashboard)
+  * [kubectl client](#kubectl-client)
 
 ### Kubernetes Dashboard{#kubernetes-dashboard}
 

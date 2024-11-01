@@ -15,7 +15,7 @@ Proses scaling manual cukup sederhana - buka wizard environment topology dan gun
 Anda dapat mengotomatisasi horizontal scaling berdasarkan beban masuk dengan bantuan **tunable triggers**. Anda dapat menggunakan node awal (master) dari layer sebagai **storage server** untuk berbagi data dalam seluruh layer. Dalam kasus pengurangan skala (mis. mengurangi jumlah node), container terakhir yang ditambahkan ke layer adalah yang pertama dihapus (kecuali dipilih secara eksplisit).
 :::
 
-Selanjutnya, Anda dapat memilih [mode scaling](https://docs.dewacloud.com/docs/#scaling-modes) yang diperlukan dari daftar drop-down yang sesuai. Untuk detail lebih lanjut, lihat bagian [horizontal scaling specifics](https://docs.dewacloud.com/docs/#horizontal-scaling-specifics) di bawah ini.
+Selanjutnya, Anda dapat memilih [mode scaling](#scaling-modes) yang diperlukan dari daftar drop-down yang sesuai. Untuk detail lebih lanjut, lihat bagian [horizontal scaling specifics](#horizontal-scaling-specifics) di bawah ini.
 
 ## Scaling Modes{#scaling-modes}
 

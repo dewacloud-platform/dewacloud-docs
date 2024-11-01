@@ -7,9 +7,9 @@ title: Cluster Troubleshooting
 
 Paket **Kubernetes Cluster** adalah produk yang sangat kompleks, yang mencakup berbagai langkah yang diperlukan untuk menyiapkan solusi. Di sini, setiap tindakan dapat gagal karena berbagai alasan, yang harus dianalisis untuk mencegah terjadinya masalah di masa depan. Di bawah ini, kami akan meninjau langkah-langkah pemecahan masalah utama selama berbagai tahap dan untuk beberapa file log:
 
-  * [K8s Installation](<#install>)
-  * [Events Tracking](<#events>)
-  * [Pod Logs](<#pod-logs>)
+  * [K8s Installation](#install)
+  * [Events Tracking](#events)
+  * [Pod Logs](#pod-logs)
 
 ### K8s Installation{#install}
 

@@ -9,7 +9,7 @@ Ketika berusaha menjaga informasi dalam database PostgreSQL Anda tetap aman, hal
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/connection-to-applications/ssl-connection/ssl-connection-1.png" alt="SSL for PostgreSQL" width="70%"/>
 
-Di bawah ini, kami akan mengeksplorasi [penyesuaian server database](<https://docs.dewacloud.com/docs/#postgresql-server-configuration>) yang tepat, diperlukan untuk pengaktifan SSL, dan pembuatan sertifikat untuk itu. Kemudian, kami akan membuat dan menambahkan sertifikat untuk mesin [klien](<https://docs.dewacloud.com/docs/#client-certificates>), dan akhirnya, akan membangun koneksi aman ke server kami melalui alat [pgAdmin](<https://docs.dewacloud.com/docs/#establish-connection-via-pgadmin>). Jadi, mari kita mulai!
+Di bawah ini, kami akan mengeksplorasi [penyesuaian server database](#postgresql-server-configuration) yang tepat, diperlukan untuk pengaktifan SSL, dan pembuatan sertifikat untuk itu. Kemudian, kami akan membuat dan menambahkan sertifikat untuk mesin [klien](#client-certificates), dan akhirnya, akan membangun koneksi aman ke server kami melalui alat [pgAdmin](#establish-connection-via-pgadmin). Jadi, mari kita mulai!
 
 ## PostgreSQL Server Configuration{#postgresql-server-configuration}
 
@@ -150,7 +150,7 @@ Jangan lupa untuk menyimpan perubahan ini.
 
 Sekarang, mari buat satu set file sertifikat SSL lagi untuk instansi klien, untuk mendukung koneksi aman di kedua sisi.
 
-1\. Kembali ke jendela terminal dengan koneksi SSH ke server PostgreSQL Anda yang telah Anda operasikan selama [pengaturan server](<https://docs.dewacloud.com/docs/#postgresql-server-configuration>) (atau sambungkan kembali ke sana) - Anda akan memerlukan sertifikat server Anda untuk tindakan selanjutnya.
+1\. Kembali ke jendela terminal dengan koneksi SSH ke server PostgreSQL Anda yang telah Anda operasikan selama [pengaturan server](#postgresql-server-configuration) (atau sambungkan kembali ke sana) - Anda akan memerlukan sertifikat server Anda untuk tindakan selanjutnya.
 
 Begitu di dalam, buatlah kunci pribadi untuk klien (juga tanpa _pass phrase_, sama seperti yang dilakukan pada bagian sebelumnya), misalnya dalam direktori **tmp**:
 

@@ -6,7 +6,7 @@ title: Manual Database Backups
 
 # Manual Database Backups
 
-Platform menyediakan semua [stack database bersertifikasi](<https://docs.dewacloud.com/docs/software-stacks-versions/#databases>) dengan skrip yang mudah dan nyaman untuk melakukan backup data yang tersimpan. Dengan demikian, proses ini sederhana hanya dengan menyediakan parameter yang diperlukan dan dapat diselesaikan dalam beberapa menit. Di sini, tidak diperlukan pengetahuan khusus – cukup ikuti [langkah-langkah pengaturan](<https://docs.dewacloud.com/docs/#backups-scheduling>) untuk mengonfigurasi ekspresi _cron_ yang sesuai.
+Platform menyediakan semua [stack database bersertifikasi](<https://docs.dewacloud.com/docs/software-stacks-versions/#databases>) dengan skrip yang mudah dan nyaman untuk melakukan backup data yang tersimpan. Dengan demikian, proses ini sederhana hanya dengan menyediakan parameter yang diperlukan dan dapat diselesaikan dalam beberapa menit. Di sini, tidak diperlukan pengetahuan khusus – cukup ikuti [langkah-langkah pengaturan](#backups-scheduling) untuk mengonfigurasi ekspresi _cron_ yang sesuai.
 
 Selain itu, kami akan menunjukkan cara bekerja dengan backup yang dibuat:
 

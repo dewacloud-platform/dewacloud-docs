@@ -192,9 +192,9 @@ Sisanya dari ekstensi yang disediakan bersifat _**dinamis**_, yaitu mereka terma
   
 Di bawah ini, Anda dapat menemukan cara:
 
-  * [mengaktifkan ekstensi](<https://docs.dewacloud.com/docs/#activate-extension>)
-  * [mengkonfigurasi ekstensi](<https://docs.dewacloud.com/docs/#configure-extension>)
-  * [menambahkan ekstensi kustom Anda](<https://docs.dewacloud.com/docs/#add-custom-extension>)
+  * [mengaktifkan ekstensi](#activate-extension)
+  * [mengkonfigurasi ekstensi](#configure-extension)
+  * [menambahkan ekstensi kustom Anda](#add-custom-extension)
 
 ## Activate Extension{#activate-extension}
 

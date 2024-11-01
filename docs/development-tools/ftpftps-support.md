@@ -37,18 +37,18 @@ Untuk mendapatkan manfaat dari FTP dengan platform, Anda perlu memenuhi tiga per
 
 Mari kita lihat langkah demi langkah proses menambahkan FTP ke environment Anda:
 
-  * [Create Environment](<https://docs.dewacloud.com/docs/#create-env>)
-  * [Install FTP](<https://docs.dewacloud.com/docs/#install>)
-  * [Using FTP](<https://docs.dewacloud.com/docs/#usage>)
-  * [Transfer Files](<https://docs.dewacloud.com/docs/#file-transfer>)
-  * [Download Log Files](<https://docs.dewacloud.com/docs/#download-logs>)
-  * [Synchronize Files](<https://docs.dewacloud.com/docs/#synch-files>)
-  * [Edit Configuration Files](<https://docs.dewacloud.com/docs/#edit-configs>)
-  * [Deploy Application via FTP](<https://docs.dewacloud.com/docs/#deploy>)
-  * [Switching FTPS](<https://docs.dewacloud.com/docs/#ftps>)
-  * [Reset FTP Password](<https://docs.dewacloud.com/docs/#reset-password>)
-  * [State Custom FTP Password](<https://docs.dewacloud.com/docs/#custom-password>)
-  * [Uninstall FTP](<https://docs.dewacloud.com/docs/#uninstall>)
+  * [Create Environment](#create-environment)
+  * [Install FTP](#install-ftp)
+  * [Using FTP](#using-ftp)
+  * [Transfer Files](#transfer-files)
+  * [Download Log Files](#download-log-files)
+  * [Synchronize Files](#synchronize-files)
+  * [Edit Configuration Files](#edit-configuration-files)
+  * [Deploy Application via FTP](#deploy-application-via-ftp)
+  * [Switching FTPS](#switching-ftps)
+  * [Reset FTP Password](#reset-ftp-password)
+  * [State Custom FTP Password](#state-custom-ftp-password)
+  * [Uninstall FTP](#uninstall-ftp)
 
 ## Create Environment{#create-environment}
 

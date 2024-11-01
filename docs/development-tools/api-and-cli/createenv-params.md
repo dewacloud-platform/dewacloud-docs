@@ -9,9 +9,9 @@ Pembuatan environment baru pada platform dapat diotomatisasi dengan berbagai car
 
 Berikut ini kami memberikan deskripsi untuk semua pengaturan tersebut dengan contoh penggunaannya melalui CLI. Mereka dibagi menjadi 3 bagian utama sebagai array dari metode _~/jelastic/environment/control/createenvironment_, dinamai sesuai dengan denominasi array yang sesuai - dua yang umum dan daftar parameter khusus untuk pembuatan container Docker:
 
-  * [env](<https://docs.dewacloud.com/docs/#common-environment-configurations>)
-  * [nodes](<https://docs.dewacloud.com/docs/#nodes-configurations>)
-  * [docker](<https://docs.dewacloud.com/docs/#docker-based-environment-configurations>)
+  * [env](#common-environment-configurations)
+  * [nodes](#nodes-configurations)
+  * [docker](#docker-based-environment-configurations)
 
 ## Konfigurasi Common Environment{#common-environment-configurations}
 
@@ -45,7 +45,7 @@ _fixedCloudlets_ | Jumlah cloudlet tetap | integer | _1_, _2_, _3_, … | ya
 _flexibleCloudlets_ | Jumlah cloudlet fleksibel | integer | _1_, _2_, _3_, … tetapi tidak bisa kurang dari **fixedCloudlets** | ya  
 _displayName_ | Nama [alias](<https://docs.dewacloud.com/docs/environment-aliases>) Node | string | _my-node-alias_ | tidak  
 _nodeType_ | Jenis stack | string | _docker_, _tomcat6_, _tomcat7_, _tomee_, _mysql5_, _apache2_, _nginxphp_, dll. (lihat daftar lengkap nilai yang tersedia [di sini](<https://docs.dewacloud.com/docs/application-manifest#nodeTypeList>)) | ya  
-_docker_ | Daftar pengaturan container Docker | array | cek bagian yang sesuai [di bawah](<https://docs.dewacloud.com/docs/#docker>) | hanya untuk _docker_ **nodeType**  
+_docker_ | Daftar pengaturan container Docker | array | cek bagian yang sesuai [di bawah](#docker-based-environment-configurations) | hanya untuk _docker_ **nodeType**  
   
 Contoh:
 ```

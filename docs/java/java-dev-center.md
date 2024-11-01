@@ -11,15 +11,15 @@ Platform ini saat ini mendukung multibahasa, awalnya diciptakan sebagai Java Clo
 
 Gunakan daftar isi di bawah ini untuk menemukan informasi yang diperlukan dalam panduan lebih cepat:
 
-  * [Java Versions](<https://docs.dewacloud.com/docs/#java-versions>)
-  * [Java Application Servers](<https://docs.dewacloud.com/docs/#java-application-servers>)
-  * [Java Environment Creation](<https://docs.dewacloud.com/docs/#java-environment-creation>)
-  * [Java Application Deployment](<https://docs.dewacloud.com/docs/#java-application-deployment>)
-  * [Domains Management](<https://docs.dewacloud.com/docs/#domains-management>)
-  * [Automatic Vertical Scaling](<https://docs.dewacloud.com/docs/#automatic-vertical-scaling>)
-  * [Horizontal Scaling: Manual and Automatic](<https://docs.dewacloud.com/docs/#horizontal-scaling-manual-and-automatic>)
-  * [Java Clusterization](<https://docs.dewacloud.com/docs/#java-clusterization>)
-  * [Database Connection to Java Application](<https://docs.dewacloud.com/docs/#database-connection-to-java-application>)
+  * [Java Versions](#java-versions)
+  * [Java Application Servers](#java-application-servers)
+  * [Java Environment Creation](#java-environment-creation)
+  * [Java Application Deployment](#java-application-deployment)
+  * [Domains Management](#domains-management)
+  * [Automatic Vertical Scaling](#automatic-vertical-scaling)
+  * [Horizontal Scaling: Manual and Automatic](#horizontal-scaling-manual-and-automatic)
+  * [Java Clusterization](#java-clusterization)
+  * [Database Connection to Java Application](#database-connection-to-java-application)
 
 ## Java Versions{#java-versions}
 

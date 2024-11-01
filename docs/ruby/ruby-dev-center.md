@@ -13,16 +13,16 @@ Platform ini menyediakan integrasi langsung dari server web Ruby, menyediakan se
 
 Dalam artikel ini, kita akan membahas fitur-fitur khas dari hosting [Ruby](<https://www.ruby-lang.org/en/>) dan memperkenalkan kemungkinan terkait Ruby di dalam platform. Gunakan daftar isi di bawah ini untuk menemukan informasi yang diperlukan dalam panduan ini dengan lebih cepat:
 
-- [Ruby Environment Hosting](<https://docs.dewacloud.com/docs/#ruby-environment-hosting>)
-  - [Ruby Application Servers](<https://docs.dewacloud.com/docs/#ruby-application-servers>)
-  - [Ruby Versioning](<https://docs.dewacloud.com/docs/#ruby-versioning>)
-- [Ruby Application Deployment](<https://docs.dewacloud.com/docs/#ruby-application-deployment>)
-- [Ruby Dependency Management](<https://docs.dewacloud.com/docs/#ruby-dependency-management>)
-- [Ruby Post Deploy Configuration](<https://docs.dewacloud.com/docs/#ruby-post-deploy-configuration>)
-- [Domains Management](<https://docs.dewacloud.com/docs/#domains-management>)
-- [Automatic Vertical Scaling](<https://docs.dewacloud.com/docs/#automatic-vertical-scaling>)
-- [Manual Horizontal Scaling](<https://docs.dewacloud.com/docs/#manual-horizontal-scaling>)
-- [Automatic Horizontal Scaling](<https://docs.dewacloud.com/docs/#automatic-horizontal-scaling>)
+- [Ruby Environment Hosting](#ruby-environment-hosting)
+  - [Ruby Application Servers](#ruby-application-servers)
+  - [Ruby Versioning](#ruby-versioning)
+- [Ruby Application Deployment](#ruby-application-deployment)
+- [Ruby Dependency Management](#ruby-dependency-management)
+- [Ruby Post Deploy Configuration](#ruby-post-deploy-configuration)
+- [Domains Management](#domains-management)
+- [Automatic Vertical Scaling](#automatic-vertical-scaling)
+- [Manual Horizontal Scaling](#manual-horizontal-scaling)
+- [Automatic Horizontal Scaling](#automatic-horizontal-scaling)
 
 ## Ruby Environment Hosting{#ruby-environment-hosting}
 

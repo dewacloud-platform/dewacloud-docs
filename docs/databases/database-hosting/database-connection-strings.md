@@ -17,8 +17,8 @@ Menentukan **localhost** dalam connection string tidak akan berfungsi untuk mela
 
 Bergantung pada engine yang mendukung environment Anda, lihat salah satu bagian di bawah ini:
 
-  * [Java](<https://docs.dewacloud.com/docs/#database-connection-for-java-apps>)
-  * [PHP](<https://docs.dewacloud.com/docs/#database-connection-for-php-apps>)
+  * [Java](#database-connection-for-java-apps)
+  * [PHP](#database-connection-for-php-apps)
 
 ## Database Connection for Java Apps {#database-connection-for-java-apps}
 

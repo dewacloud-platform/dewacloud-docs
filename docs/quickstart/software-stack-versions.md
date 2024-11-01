@@ -7,11 +7,11 @@ title: Software Stack Versions
 
 Di halaman ini, Anda dapat menemukan daftar stack dan engine perangkat lunak terbaru yang disediakan oleh platform:
 
-  * [Load Balancers](<#lb>)
-  * [Application Servers](<#app-servers>)
-  * [Databases](<#databases>)
-  * [Additional Stacks](<#additional>)
-  * [Engines](<#engines>)
+  * [Load Balancers](#lb)
+  * [Application Servers](#app-servers)
+  * [Databases](#databases)
+  * [Additional Stacks](#additional)
+  * [Engines](#engines)
 
 Setiap software stack tetap didukung oleh platform hingga tanggal end-of-life (EOL) yang diberitahukan oleh pengelola upstream masing-masing. Setelah EOL, stack tidak lagi tersedia untuk pembuatan environment baru, tetapi yang sudah ada tetap dapat beroperasi sepenuhnya (termasuk redeploy, cloning, horizontal scaling).
 

@@ -9,14 +9,14 @@ Dokumen ini merupakan gambaran umum dari konsep dasar platform, solusi serbaguna
 
 Di sini, kami menawarkan garis besar konsisten dari komponen platform dasar dengan petunjuk ke dokumentasi yang sesuai, yaitu:
 
-  * [Cloudlet](<#cloudlet>)
-  * [Container](<#container>)
-  * [Layer](<#layer>)
-  * [Environment](<#environment>)
-  * [Application](<#application>)
-  * [Host](<#host>)
-  * [Environment Region](<#environment-region>)
-  * [Platform Installation](<#platform-installation>)
+  * [Cloudlet](#cloudlet)
+  * [Container](#container)
+  * [Layer](#layer)
+  * [Environment](#environment)
+  * [Application](#application)
+  * [Host](#host)
+  * [Environment Region](#environment-region)
+  * [Platform Installation](#platform-installation)
 
 Dengan mengetahui tentang komponen dasar dan bagaimana mereka saling berhubungan, Anda dapat melanjutkan dengan skenario yang lebih kompleks yang tersedia di dalam platform.
 
@@ -41,7 +41,7 @@ Fungsi cloudlet yang direservasi dan dinamis keduanya menyediakan diskon otomati
 
 ## Container{#container}
 
-**Container** (node) adalah instance virtual yang terisolasi, disediakan untuk penanganan stack perangkat lunak (seperti server aplikasi, database, load balancer, dll.) dan ditempatkan pada [host](<#host>) tertentu. Setiap container dapat diskalakan secara otomatis, baik [secara vertikal](<https://docs.dewacloud.com/docs/automatic-vertical-scaling/>) maupun [horizontal](<https://docs.dewacloud.com/docs/automatic-horizontal-scaling/>), sehingga hosting aplikasi menjadi sangat fleksibel.
+**Container** (node) adalah instance virtual yang terisolasi, disediakan untuk penanganan stack perangkat lunak (seperti server aplikasi, database, load balancer, dll.) dan ditempatkan pada [host](#host) tertentu. Setiap container dapat diskalakan secara otomatis, baik [secara vertikal](<https://docs.dewacloud.com/docs/automatic-vertical-scaling/>) maupun [horizontal](<https://docs.dewacloud.com/docs/automatic-horizontal-scaling/>), sehingga hosting aplikasi menjadi sangat fleksibel.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/basics-terminology/03-container-secure-and-isolated-instance.png" alt="container - secure and isolated instance" max-width="100%"/>
 
@@ -49,7 +49,7 @@ Platform ini menyediakan [container bersertifikat](<https://docs.dewacloud.com/d
 
 ## Layer{#layer}
 
-**Layer**, juga disebut sebagai **Node group**, adalah sekumpulan [container](<#container>) serupa dalam satu [environment](<#environment>). Ada sekumpulan layer yang telah ditentukan sebelumnya di dalam platform [topology wizard](<https://docs.dewacloud.com/docs/setting-up-environment/>) untuk container bersertifikat, seperti:
+**Layer**, juga disebut sebagai **Node group**, adalah sekumpulan [container](#container) serupa dalam satu [environment](#environment). Ada sekumpulan layer yang telah ditentukan sebelumnya di dalam platform [topology wizard](<https://docs.dewacloud.com/docs/setting-up-environment/>) untuk container bersertifikat, seperti:
 
   * load balancer (LB)
   * compute (CP)
@@ -67,11 +67,11 @@ Layer dirancang untuk melakukan berbagai tindakan dengan jenis container yang sa
   * secara manual melalui [dashboard](<https://docs.dewacloud.com/docs/dashboard-guide/>), [API platform](<https://docs.dewacloud.com/docs/api-overview/>), [CLI](<https://docs.dewacloud.com/docs/cli/>)
   * secara otomatis berdasarkan [load triggers](<https://docs.dewacloud.com/docs/automatic-horizontal-scaling/>)
 
-Selain itu, container dari satu layer didistribusikan di berbagai [host](<#host>) menggunakan aturan anti-affinity, memastikan lebih banyak keandalan dan ketersediaan tinggi untuk aplikasi yang di-host.
+Selain itu, container dari satu layer didistribusikan di berbagai [host](#host) menggunakan aturan anti-affinity, memastikan lebih banyak keandalan dan ketersediaan tinggi untuk aplikasi yang di-host.
 
 ## Environment{#environment}
 
-**Environment** adalah kumpulan dari [container](<#container>) terisolasi untuk menjalankan layanan aplikasi tertentu. Platform ini menyediakan alat bawaan untuk pengelolaan [environment](<https://docs.dewacloud.com/docs/setting-up-environment/>) yang nyaman (mis. konfigurasi, pemantauan, pemecahan masalah, dll.).
+**Environment** adalah kumpulan dari [container](#container) terisolasi untuk menjalankan layanan aplikasi tertentu. Platform ini menyediakan alat bawaan untuk pengelolaan [environment](<https://docs.dewacloud.com/docs/setting-up-environment/>) yang nyaman (mis. konfigurasi, pemantauan, pemecahan masalah, dll.).
 
 Ada sejumlah tindakan yang dapat dilakukan untuk seluruh lingkungan, seperti berhenti, mulai, kloning, migrasi ke region lain, berbagi dengan anggota tim untuk [kerja kolaboratif](<https://docs.dewacloud.com/docs/share-environment/>), melacak konsumsi sumber daya, dan lain-lain.
 
@@ -103,11 +103,11 @@ Selain itu, sejumlah aplikasi yang sudah dipaketkan sebelumnya dapat ditemukan d
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/basics-terminology/07-host-physical-or-virtual-server.png" alt="host - physical or virtual server" max-width="100%"/>
 
-Host dipecah menjadi [container](<#container>) terisolasi kecil yang digunakan untuk membangun [environments](<#environment>). Partisi semacam itu memberikan multitenancy terdepan di industri, serta kepadatan tinggi dan pemanfaatan sumber daya cerdas dengan bantuan distribusi container sesuai dengan beban di seluruh host.
+Host dipecah menjadi [container](#container) terisolasi kecil yang digunakan untuk membangun [environments](#environment). Partisi semacam itu memberikan multitenancy terdepan di industri, serta kepadatan tinggi dan pemanfaatan sumber daya cerdas dengan bantuan distribusi container sesuai dengan beban di seluruh host.
 
 ## Environment Region{#environment-region}
 
-**[Environment region](<https://docs.dewacloud.com/docs/environment-regions/>)** adalah sekumpulan [host](<#host>) yang diorkestrasi dalam jaringan terisolasi tunggal.
+**[Environment region](<https://docs.dewacloud.com/docs/environment-regions/>)** adalah sekumpulan [host](#host) yang diorkestrasi dalam jaringan terisolasi tunggal.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/basics-terminology/08-environment-region-hosts-group.png" alt="environment region - group of hosts" max-width="100%"/>
 
@@ -115,7 +115,7 @@ Setiap region environment memiliki kapasitasnya sendiri di pusat data tertentu, 
 
 ## Platform Installation{#platform-installation}
 
-**Platform** adalah sekelompok [environment regions](<#environment-region>) (di mana masing-masing dapat secara fisik terletak di Pusat Data terpisah, mewakili Cloud yang terisolasi) dan kluster orkestrator untuk mengontrol dan bertindak seperti sistem tunggal. Ini menyediakan berbagai kemungkinan untuk mengembangkan, mendistribusikan, menguji, menjalankan, debug, dan memelihara aplikasi karena beberapa opsi saat memilih perangkat keras - kapasitas, harga, lokasi, dll. yang berbeda.
+**Platform** adalah sekelompok [environment regions](#environment-region) (di mana masing-masing dapat secara fisik terletak di Pusat Data terpisah, mewakili Cloud yang terisolasi) dan kluster orkestrator untuk mengontrol dan bertindak seperti sistem tunggal. Ini menyediakan berbagai kemungkinan untuk mengembangkan, mendistribusikan, menguji, menjalankan, debug, dan memelihara aplikasi karena beberapa opsi saat memilih perangkat keras - kapasitas, harga, lokasi, dll. yang berbeda.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/platform-overview/basics-terminology/09-platform-orchestrator-environment-regions.png" alt="platform - environment regions with orchestrator" max-width="100%"/>
 

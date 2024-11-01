@@ -32,25 +32,25 @@ Di bawah ini Anda dapat melihat daftar file konfigurasi yang tersedia untuk died
 
 | Folder | File | Path |
 |---|---|---|
-| [etc](https://docs.dewacloud.com/docs/#etc) | php.ini | /etc |
-| [conf.d](https://docs.dewacloud.com/docs/#confd) | modules.conf, aliases.conf, geoip.conf, mod_security.conf, php.conf, ssl.conf, welcome.conf | /etc/httpd/conf.d/ |
-| [conf](https://docs.dewacloud.com/docs/#conf) | httpd.conf | /etc/httpd/conf/ |
-| [webroot](https://docs.dewacloud.com/docs/#webroot) |  | /var/www/webroot |
-| [cron](https://docs.dewacloud.com/docs/#cron) | apache | /var/spool/cron |
-| [keys](https://docs.dewacloud.com/docs/#keys) |  | /var/lib/jelastic/keys |
-| [modules](https://docs.dewacloud.com/docs/#modules) |  | /usr/lib64/php/modules |
+| [etc](#etc) | php.ini | /etc |
+| [conf.d](#confd) | modules.conf, aliases.conf, geoip.conf, mod_security.conf, php.conf, ssl.conf, welcome.conf | /etc/httpd/conf.d/ |
+| [conf](#conf) | httpd.conf | /etc/httpd/conf/ |
+| [webroot](#webroot) |  | /var/www/webroot |
+| [cron](#cron) | apache | /var/spool/cron |
+| [keys](#keys) |  | /var/lib/jelastic/keys |
+| [modules](#modules) |  | /usr/lib64/php/modules |
 
 ### NGINX-PHP{#nginx-php}
 
 | Folder | File | Path |
 |---|---|---|
-| [etc](https://docs.dewacloud.com/docs/#etc) | php-fpm.conf, php.ini | /etc |
-| [conf.d](https://docs.dewacloud.com/docs/#confd) | virtual.conf, ssl.conf | /etc/nginx/conf.d |
-| [conf](https://docs.dewacloud.com/docs/#conf) | nginx.conf | /etc/nginx |
-| [webroot](https://docs.dewacloud.com/docs/#webroot) |  | /var/www/webroot |
-| [cron](https://docs.dewacloud.com/docs/#cron) | nginx | /var/spool/cron |
-| [keys](https://docs.dewacloud.com/docs/#keys) |  | /var/lib/jelastic/keys |
-| [modules](https://docs.dewacloud.com/docs/#modules) |  | /usr/lib64/php/modules |
+| [etc](#etc) | php-fpm.conf, php.ini | /etc |
+| [conf.d](#confd) | virtual.conf, ssl.conf | /etc/nginx/conf.d |
+| [conf](#conf) | nginx.conf | /etc/nginx |
+| [webroot](#webroot) |  | /var/www/webroot |
+| [cron](#cron) | nginx | /var/spool/cron |
+| [keys](#keys) |  | /var/lib/jelastic/keys |
+| [modules](#modules) |  | /usr/lib64/php/modules |
 
 Klik pada tautan untuk mendapatkan lebih banyak informasi tentang pengaturan mana yang dapat diubah di folder yang sesuai.
 

@@ -10,8 +10,8 @@ Dengan UI platform yang intuitif, Anda dapat dengan cepat melakukan deployment a
 
 Panduan ini menunjukkan beberapa langkah dasar yang diperlukan untuk memulai dengan platform ini:
 
-  * [sign up](<#sign-up-how-to-create-an-account>)
-  * [deploy application](<#deploy-application>)
+  * [sign up](#sign-up-how-to-create-an-account)
+  * [deploy application](#deploy-application)
 
 ## Sign Up: How to Create an Account {#sign-up-how-to-create-an-account}
 
@@ -47,8 +47,8 @@ Itu saja, platform akan mengirimkan email konfirmasi kepada Anda secara otomatis
 
 Ketika Anda mengakses platform dashboard untuk pertama kalinya, tutorial singkat (dapat diaktifkan secara manual melalui opsi **Help > Tutorial**) akan dimulai secara otomatis. Ini memberikan gambaran umum tentang platform dan panduan langkah demi langkah untuk pembuatan environment pertama Anda dan deployment aplikasi. Ikuti tips ini atau lewati tutorial dan gunakan langkah-langkah yang dijelaskan di bawah ini:
 
-  * [automatic deployment from application Marketplace](<#application-marketplace>)
-  * [manual deployment via dashboard](<#manual-deployment>)
+  * [automatic deployment from application Marketplace](#application-marketplace)
+  * [manual deployment via dashboard](#manual-deployment)
 
 ### Application Marketplace {#application-marketplace}
 

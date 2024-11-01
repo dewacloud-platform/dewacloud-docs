@@ -11,17 +11,17 @@ _OpenSearch berasal dari Elasticsearch 7.10.2 yang dilisensikan di bawah Apache 
 
 Panduan ini memberikan informasi tentang:
 
-  * [Ikhtisar Komponen Cluster OpenSearch](<https://docs.dewacloud.com/docs/#opensearch-cluster-components-overview>)
-  * [Instalasi Cluster OpenSearch](<https://docs.dewacloud.com/docs/#opensearch-cluster-installation>)
-  * [Kinerja OpenSearch vs Elasticsearch](<https://docs.dewacloud.com/docs/#opensearch-vs-elasticsearch-performance>)
+  * [Ikhtisar Komponen Cluster OpenSearch](#opensearch-cluster-components-overview)
+  * [Instalasi Cluster OpenSearch](#opensearch-cluster-installation)
+  * [Kinerja OpenSearch vs Elasticsearch](#opensearch-vs-elasticsearch-performance)
 
 ## Ikhtisar Komponen Cluster OpenSearch{#opensearch-cluster-components-overview}
 
 Platform menyediakan Cluster OpenSearch menggunakan tiga tumpukan bersertifikat yang disatukan menjadi satu solusi auto-clustering:
 
-  * **[OpenSearch](<https://docs.dewacloud.com/docs/#opensearch>)** - mesin pencari open-source yang dipimpin oleh komunitas yang menyediakan pencarian teks penuh yang terdistribusi dan dapat multi-penyewa
-  * **[OpenSearch Dashboards](<https://docs.dewacloud.com/docs/#opensearch-dashboards>)** (opsional) - visualisasi untuk data yang disimpan di dalam node _OpenSearch_ (berasal dari _Kibana 7.10.2_)
-  * **[Logstash](<https://docs.dewacloud.com/docs/#logstash>)** (opsional) - pemrosesan data
+  * **[OpenSearch](#opensearch)** - mesin pencari open-source yang dipimpin oleh komunitas yang menyediakan pencarian teks penuh yang terdistribusi dan dapat multi-penyewa
+  * **[OpenSearch Dashboards](#opensearch-dashboards)** (opsional) - visualisasi untuk data yang disimpan di dalam node _OpenSearch_ (berasal dari _Kibana 7.10.2_)
+  * **[Logstash](#logstash)** (opsional) - pemrosesan data
 
 :::tip
 Selain itu, add-on Beats dapat diinstal untuk pengirim data satu tujuan yang mengirim data dari node klien ke Logstash atau OpenSearch.
@@ -82,7 +82,7 @@ Untuk koneksi langsung, Anda perlu menambahkan baris berikut ke konfigurasi Open
 1compatibility.override_main_response_version: true
 :::
 
-  * _**latest**_ - untuk mengirim data ke OpenSearch melalui [Logstash](<https://docs.dewacloud.com/docs/#logstash>)
+  * _**latest**_ - untuk mengirim data ke OpenSearch melalui [Logstash](#logstash)
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/databases/opensearch/opensearch-5.png" alt="Beats add-on" max-width="100%"/>
 

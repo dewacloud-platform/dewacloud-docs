@@ -7,9 +7,9 @@ title: PHP Connection to PostgreSQL
 
 Ikuti instruksi di bawah ini untuk mempelajari cara menghubungkan aplikasi PHP Anda, yang di-host di dalam platform, ke server database PostgreSQL:
 
-  * [create environment](<https://docs.dewacloud.com/docs/#create-environment>)
-  * [configure PHP server](<https://docs.dewacloud.com/docs/#configure-database-connection>)
-  * [check connection](<https://docs.dewacloud.com/docs/#connection-check-up>)
+  * [create environment](#create-environment)
+  * [configure PHP server](#configure-database-connection)
+  * [check connection](#connection-check-up)
 
 ## Create Environment{#create-environment}
 

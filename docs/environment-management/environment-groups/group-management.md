@@ -7,10 +7,10 @@ title: Group Management
 
 Panduan di bawah ini berisi informasi tentang opsi manajemen dasar yang disediakan platform untuk beroperasi dengan [environment groups](<https://docs.dewacloud.com/docs/environment-groups>). Yaitu, kita akan mendapatkan wawasan lebih dalam tentang cara:
 
-  * [Assign Group to Environment](<https://docs.dewacloud.com/docs/#assign-group>)
-  * [Add Subgroup](<https://docs.dewacloud.com/docs/#add-subgroup>)
-  * [Edit Group](<https://docs.dewacloud.com/docs/#edit-group>)
-  * [Remove Group](<https://docs.dewacloud.com/docs/#remove-group>)
+  * [Assign Group to Environment](#assign-group-to-environment)
+  * [Add Subgroup](#add-subgroups)
+  * [Edit Group](#edit-group)
+  * [Remove Group](#remove-group)
 
 ## Assign Group to Environment{#assign-group-to-environment}
 

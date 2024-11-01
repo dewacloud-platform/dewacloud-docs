@@ -19,9 +19,9 @@ Helm menginstal _**chart**_ ke dalam Kubernetes, menciptakan _**release**_ baru 
 
 Dalam panduan ini, kami akan mencakup semua tahap utama bekerja dengan Helm:
 
-  * [mencari chart dan bekerja dengan repository](<#finding-helm-charts>)
-  * [memasang aplikasi Helm baru](<#installing-helm-package>)
-  * [mengelola aplikasi yang sudah ada](<#managing-helm-applications>)
+  * [mencari chart dan bekerja dengan repository](#finding-helm-charts)
+  * [memasang aplikasi Helm baru](#installing-helm-package)
+  * [mengelola aplikasi yang sudah ada](#managing-helm-applications)
 
 :::tip
 Helm tidak hanya berguna untuk solusinya yang siap pakai, tetapi juga sebagai alat versioning dan standardisasi untuk pengembangan proyek. Awalnya, ketika Anda bekerja pada proyek kecil, pendekatan deployment yang ter-script dapat mencukupi untuk kebutuhan Anda. Namun, kompleksitas dapat meningkat dengan cepat, memerlukan lebih banyak penyesuaian pada file YAML Anda. Misalnya, bahkan untuk deployment di lingkungan staging dan produksi memerlukan penyesuaian seperti URL database. Pada titik tertentu, Anda mungkin merasa bahwa sulit untuk melacak interaksi dan ketergantungan komponen. Biasanya, ini berarti bahwa kompleksitas lingkungan Anda melebihi skrip deployment buatan sendiri. Dalam situasi seperti itu, mungkin ini adalah saat yang tepat untuk mempertimbangkan Helm sebagai solusi potensial yang akan menggantikan skrip buatan Anda.
@@ -77,7 +77,7 @@ Untuk memasang paket baru, gunakan perintah _**helm install**_. Secara sederhana
   * _**\{name\}**_ \- sebuah nama release yang Anda pilih (misal. _mywordpress_)
   * _**\{chart\}**_ \- nama chart yang ingin Anda pasang (misal. _[bitnami/wordpress](<https://github.com/bitnami/charts/tree/master/bitnami/wordpress/>)_)
 
-Selain itu, Anda dapat menyediakan opsi chart untuk menyesuaikan aplikasi (lihat lebih detail di [bagian mengelola Helm](<#managing-helm-applications>)). Misalnya, mari kita ubah nama blog dengan parameter _\--set wordpressBlogName='My Blog!'_.
+Selain itu, Anda dapat menyediakan opsi chart untuk menyesuaikan aplikasi (lihat lebih detail di [bagian mengelola Helm](#managing-helm-applications)). Misalnya, mari kita ubah nama blog dengan parameter _\--set wordpressBlogName='My Blog!'_.
 
 ```bash
 helm install --set wordpressBlogName='My Blog!' mywordpress bitnami/wordpress
@@ -143,7 +143,7 @@ helm show values bitnami/wordpress | less
 Jika diperlukan, Anda dapat menggunakan perintah upgrade dengan bendera _--reset-values_ untuk mengatur ulang nilai kustom apa pun dan menggunakan yang terpasang dalam chart.
 :::
 
-Karena spesifik dari chart WordPress kami dari [bagian penginstalan](<#installing-helm-package>), Anda harus menyediakan kata sandi saat ini saat meningkatkan rilis. Mari tambahkan nilai-nilai ini ke variabel yang sesuai untuk kenyamanan:
+Karena spesifik dari chart WordPress kami dari [bagian penginstalan](#installing-helm-package), Anda harus menyediakan kata sandi saat ini saat meningkatkan rilis. Mari tambahkan nilai-nilai ini ke variabel yang sesuai untuk kenyamanan:
 
 ```bash
 export WORDPRESS_PASSWORD=$(kubectl get secret --namespace "default" mywordpress -o jsonpath="{.data.wordpress-password}" | base64 --decode)

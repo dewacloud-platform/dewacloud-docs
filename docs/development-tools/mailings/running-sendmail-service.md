@@ -11,9 +11,9 @@ title: Running Sendmail Service
 
 Platform ini menyediakan Sendmail yang sudah termasuk dalam semua build server aplikasi secara default. Namun, kemampuan untuk menjalankan layanan ini di dalam container tergantung pada pengaturan penyedia hosting tertentu - di beberapa platform, layanan ini mungkin hanya tersedia jika ada [public IP](<https://docs.dewacloud.com/docs/public-ip/>) yang terhubung. Jadi, mari kita lihat bagaimana cara:
 
-  * [memeriksa ketersediaan Sendmail](<https://docs.dewacloud.com/docs/#check-sendmail-availability>)
-  * [mengaktifkan Sendmail jika tidak berjalan](<https://docs.dewacloud.com/docs/#enable-sendmail>)
-  * [mengirim pesan uji](<https://docs.dewacloud.com/docs/#send-message-via-sendmail>)
+  * [memeriksa ketersediaan Sendmail](#check-sendmail-availability)
+  * [mengaktifkan Sendmail jika tidak berjalan](#enable-sendmail)
+  * [mengirim pesan uji](#send-message-via-sendmail)
 
 ## Check Sendmail Availability{#check-sendmail-availability}
 
@@ -45,7 +45,7 @@ Kemudian cukup aktifkan switcher yang sesuai di lapisan _App Server_ dan konfirm
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/development-tools/api-and-cli/mailings/running-sendmail-service/running-sendmail-service-4.png" alt="enable public IP" max-width="100%"/>
 
-Setelah konfirmasi dan lampiran alamat IP eksternal, layanan Sendmail akan secara otomatis dimulai, sehingga Anda dapat langsung [menggunakannya](<https://docs.dewacloud.com/docs/#send-message-via-sendmail>).
+Setelah konfirmasi dan lampiran alamat IP eksternal, layanan Sendmail akan secara otomatis dimulai, sehingga Anda dapat langsung [menggunakannya](#send-message-via-sendmail).
 
 :::tip 
 Sebagai pilihan, Anda dapat mengajukan permohonan kepada tim Dukungan host Anda dan bernegosiasi untuk mendapatkan izin menjalankan Sendmail pada server tanpa alamat eksternal terpasang. 

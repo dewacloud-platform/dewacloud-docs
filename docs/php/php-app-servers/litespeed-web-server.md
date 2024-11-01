@@ -21,7 +21,7 @@ Struktur server aplikasi LiteSpeed yang kaya fitur mencakup spesifikasi berikut:
   * dukungan untuk plugin caching, fitur anti-DDoS tercanggih, keamanan WAF bawaan, dll.
 
 :::warning
-Sebagai perangkat lunak komersial, LiteSpeed Web Server tidak dapat didistribusikan secara bebas, yaitu memerlukan lisensi untuk diterapkan pada platform. Jika bekerja dengan server aplikasi ini, Anda akan dikenakan [biaya tambahan](<https://docs.dewacloud.com/docs/#license-pricing>) untuk penggunaan lisensi yang disebutkan di atas.
+Sebagai perangkat lunak komersial, LiteSpeed Web Server tidak dapat didistribusikan secara bebas, yaitu memerlukan lisensi untuk diterapkan pada platform. Jika bekerja dengan server aplikasi ini, Anda akan dikenakan [biaya tambahan](#license-pricing) untuk penggunaan lisensi yang disebutkan di atas.
 :::
 
 Pembuatan instance LiteSpeed Web Server baru di platform cukup mudah.

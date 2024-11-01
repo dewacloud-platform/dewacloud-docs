@@ -18,10 +18,10 @@ Direktif ini dapat menggantikan sebagian dari konfigurasi global server untuk di
 
 Mari kita periksa setiap jenis konfigurasi keamanan yang dapat Anda terapkan untuk melindungi aplikasi Anda:
 
-  * [Authentication](<https://docs.dewacloud.com/docs/#setting-up-the-authentication-request>)
-  * [Setting up the access criteria](<https://docs.dewacloud.com/docs/#security-through-setting-up-criteria>)
-  * [Configuring mod_security module](<https://docs.dewacloud.com/docs/#configuring-mod_security-module>)
-  * [Server version hiding](<https://docs.dewacloud.com/docs/#hide-apache-server-version>)
+  * [Authentication](#setting-up-the-authentication-request)
+  * [Setting up the access criteria](#security-through-setting-up-criteria)
+  * [Configuring mod_security module](#configuring-mod_security-module)
+  * [Server version hiding](#hide-apache-server-version)
 
 ## Setting Up the Authentication Request{#setting-up-the-authentication-request}
 

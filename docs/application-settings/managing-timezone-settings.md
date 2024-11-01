@@ -5,9 +5,9 @@ title: Managing Timezone Settings
 ---
 # Managing Timezone Data
 
-Secara default, semua container di platform menggunakan zona waktu UTC. Namun, Anda dapat mengubahnya ke zona waktu yang diinginkan menggunakan _**[TimeZone Change](https://docs.dewacloud.com/docs/#timezone-add-on)**_ add-on. Sebagai alternatif, Anda dapat secara manual memperbarui zona waktu untuk server aplikasi Java dan PHP.
+Secara default, semua container di platform menggunakan zona waktu UTC. Namun, Anda dapat mengubahnya ke zona waktu yang diinginkan menggunakan _**[TimeZone Change](#timezone-add-on)**_ add-on. Sebagai alternatif, Anda dapat secara manual memperbarui zona waktu untuk server aplikasi Java dan PHP.
 
-## Menggunakan TimeZone Add-On
+## Menggunakan TimeZone Add-On{#timezone-add-on}
 
 Anda dapat dengan mudah menginstal add-on _TimeZone Change_ untuk menyesuaikan zona waktu environment Anda:
 

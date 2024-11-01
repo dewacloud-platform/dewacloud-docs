@@ -15,8 +15,8 @@ Di sini, statistik dikumpulkan untuk seluruh layer, sehingga jika ada tiga node 
 
 Di bawah ini, kita akan membahas cara:
 
-  * [set triggers for automatic scaling](https://docs.dewacloud.com/docs/#configure-triggers)
-  * [view triggers execution history](https://docs.dewacloud.com/docs/#execution-history)
+  * [set triggers for automatic scaling](#triggers-for-automatic-scaling)
+  * [view triggers execution history](#triggers-execution-history)
 
 ## Triggers for Automatic Scaling{#triggers-for-automatic-scaling}
 

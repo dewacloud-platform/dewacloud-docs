@@ -19,7 +19,7 @@ Dalam jendela **Account settings** yang terbuka, tab **SSH Keys > SSH Connect** 
 Di bagian kanan dari bagian tersebut, Anda dapat mengatur koneksi Web SSH ke node mana saja langsung di browser. 
 :::
 
-Sekarang, Anda dapat mengakses [seluruh akun PaaS](<https://docs.dewacloud.com/docs/#account>) atau hanya [container tertentu](<https://docs.dewacloud.com/docs/#container>) dengan klien SSH lokal Anda.
+Sekarang, Anda dapat mengakses [seluruh akun PaaS](#ssh-access-to-platform-account) atau hanya [container tertentu](#direct-access-to-container) dengan klien SSH lokal Anda.
 
 ## SSH Access to Platform Account{#ssh-access-to-platform-account}
 

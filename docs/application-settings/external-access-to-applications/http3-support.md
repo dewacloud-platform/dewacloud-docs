@@ -8,16 +8,16 @@ title: HTTP/3 Support
 
 **HTTP/3** (sebelumnya dikenal sebagai " _HTTP over QUIC_ ") adalah versi ketiga besar yang akan datang dari keluarga Protokol Transfer Hiperteks. Dari segi fitur, ini sangat mirip dengan HTTP/2 tetapi menawarkan beberapa keuntungan signifikan karena perubahan pada metode pemanfaatan yang mendasarinya. Secara khusus, HTTP/3 dibangun di atas protokol transport _**QUIC**_, yang bekerja di atas UDP alih-alih TCP.
 
-Saat ini, HTTP/3 sudah disediakan oleh beberapa solusi (misalnya _LiteSpeed_ dan _NGINX_) dan telah [diadopsi oleh platform](https://docs.dewacloud.com/docs/#http3-support-implementation) melalui rilis terbaru dari tumpukan berikut:
+Saat ini, HTTP/3 sudah disediakan oleh beberapa solusi (misalnya _LiteSpeed_ dan _NGINX_) dan telah [diadopsi oleh platform](#http3-support-implementation) melalui rilis terbaru dari tumpukan berikut:
 
   * _**load balancers:** [LiteSpeed Web ADC](https://docs.dewacloud.com/docs/litespeed-web-adc/), [Varnish](https://docs.dewacloud.com/docs/varnish/), [NGINX](https://docs.dewacloud.com/docs/nginx-load-balancer/)_
   * _**application servers:** [LiteSpeed WS](https://docs.dewacloud.com/docs/litespeed-web-server/), [LLSMP & LEMP](https://docs.dewacloud.com/docs/lemp-llsmp/), [NGINX PHP](https://docs.dewacloud.com/docs/nginx-php/), [NGINX Ruby](https://docs.dewacloud.com/docs/nginx-ruby/)_
 
 Di bawah ini, Anda dapat memeriksa:
 
-  * [prasyarat teknis dari implementasi HTTP/3](https://docs.dewacloud.com/docs/#technical-implementation-specificspreconditions)
-  * [keuntungan dari HTTP/3 (QUIC)](https://docs.dewacloud.com/docs/#http3-quic-key-features)
-  * [integrasi dalam platform](https://docs.dewacloud.com/docs/#http3-support-implementation)
+  * [prasyarat teknis dari implementasi HTTP/3](#technical-implementation-specificspreconditions)
+  * [keuntungan dari HTTP/3 (QUIC)](#http3-quic-key-features)
+  * [integrasi dalam platform](#http3-support-implementation)
 
 ## Technical Implementation Specifics/Preconditions{#technical-implementation-specificspreconditions}
 

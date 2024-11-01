@@ -8,10 +8,10 @@ title: Pemantauan Sumber Daya yang Dikonsumsi
 
 Memantau sumber daya yang dikonsumsi oleh aplikasi Anda memungkinkan Anda untuk merencanakan anggaran dan mengendalikan pengeluaran dana. Di bawah ini, kami akan menjelaskan bagaimana hal ini diimplementasikan di platform:
 
-* [Perkiraan Biaya Environment](https://docs.dewacloud.com/docs/#estimated-environment-cost)
-* [Penggunaan Sumber Daya Saat Ini](https://docs.dewacloud.com/docs/#current-resource-usage)
-* [Statistik Konsumsi](https://docs.dewacloud.com/docs/#statistics-of-consumption)
-* [Riwayat Penagihan](https://docs.dewacloud.com/docs/#billing-history)
+* [Perkiraan Biaya Environment](#estimated-environment-cost)
+* [Penggunaan Sumber Daya Saat Ini](#current-resource-usage)
+* [Statistik Konsumsi](#statistics-of-consumption)
+* [Riwayat Penagihan](#billing-history)
 
 ## Perkiraan Biaya Environment{#estimated-environment-cost}
 

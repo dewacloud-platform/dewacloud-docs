@@ -10,8 +10,8 @@ title: Deployment Hooks
 
 Berikut ini kita akan mengulas cara bekerja dengan hooks di platform ini dan akan me-review beberapa kasus penggunaan umum dengan instruksi langkah demi langkah dimana fungsi ini bisa sangat berguna:
 
-* [Manajemen Hooks](https://docs.dewacloud.com/docs/#hooks-management)
-* [Kasus Penggunaan Hooks](https://docs.dewacloud.com/docs/#hooks-use-cases)
+* [Manajemen Hooks](#hooks-management)
+* [Kasus Penggunaan Hooks](#hooks-use-cases)
 
 ## Hooks Management{#hooks-management}
 

@@ -14,7 +14,7 @@ Platform ini mendukung semua rilis utama terbaru dari engine Ruby dan menyediaka
 
 Daftar terkini dari rilis yang tersedia di platform disediakan melalui dokumen [Software Stack Versions](<https://docs.dewacloud.com/docs/software-stacks-versions/#engines>) yang diperbarui secara reguler (mingguan).
 
-Anda dapat memilih yang diperlukan selama [pembuatan environment](<https://docs.dewacloud.com/docs/#create-ruby-environment>) dan dengan cepat [beralih antara](<https://docs.dewacloud.com/docs/#change-ruby-version>) versi tersebut setelahnya.
+Anda dapat memilih yang diperlukan selama [pembuatan environment](#create-ruby-environment) dan dengan cepat [beralih antara](#change-ruby-version) versi tersebut setelahnya.
 
 ## Create Ruby Environment{#create-ruby-environment}
 

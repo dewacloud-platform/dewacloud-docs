@@ -21,7 +21,7 @@ Struktur topologi di dalam kontainer LEMP dan LLSMP adalah sebagai berikut:
   * server database _MariaDB 10_ bawaan digunakan untuk menyimpan data proyek Anda
   * database _Redis 6_ tambahan diluncurkan secara default sebagai solusi caching objek
 
-[Peculiarities dari stacks](<https://docs.dewacloud.com/docs/#lemp--llsmp-peculiarities>) lainnya dapat dilihat di bagian yang sesuai di bawah ini. Sekarang, mari kita melalui langkah-langkah instalasi yang diperlukan.
+[Peculiarities dari stacks](#lemp--llsmp-peculiarities) lainnya dapat dilihat di bagian yang sesuai di bawah ini. Sekarang, mari kita melalui langkah-langkah instalasi yang diperlukan.
 
 1\. Masuk ke dashboard platform Anda ([daftar](<https://docs.dewacloud.com/docs/getting-started/#sign-up-how-to-create-an-account>) jika Anda belum memilikinya) dan klik tombol **New Environment** di bagian atas halaman.
 

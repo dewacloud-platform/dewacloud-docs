@@ -19,11 +19,11 @@ Berbicara tentang containers saat ini, orang sering memikirkan teknologi Docker,
 
 Dalam platform, berbagai jenis container dapat digunakan untuk berbagai kasus penggunaan:
 
-  * [Certified Managed Containers](<https://docs.dewacloud.com/docs/#certified-managed-containers>)
-  * [Virtual Private Servers (Elastic VPS)](<https://docs.dewacloud.com/docs/#virtual-private-servers-elastic-vps>)
-  * [Custom Docker Containers](<https://docs.dewacloud.com/docs/#custom-docker-containers>)
-  * [Docker Engine CE (Docker Native)](<https://docs.dewacloud.com/docs/#docker-engine-ce-docker-native>)
-  * [Kubernetes Cluster](<https://docs.dewacloud.com/docs/#kubernetes-cluster>)
+  * [Certified Managed Containers](#certified-managed-containers)
+  * [Virtual Private Servers (Elastic VPS)](#virtual-private-servers-elastic-vps)
+  * [Custom Docker Containers](#custom-docker-containers)
+  * [Docker Engine CE (Docker Native)](#docker-engine-ce-docker-native)
+  * [Kubernetes Cluster](#kubernetes-cluster)
 
 Di bawah ini kita akan meninjau setiap kasus secara rinci, serta memberikan beberapa petunjuk tentang opsi mana yang dapat lebih sesuai untuk proyek Anda.
 

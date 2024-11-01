@@ -24,8 +24,8 @@ Di dalam bagian **User Settings** yang terbuka, Anda memiliki dua sub-bagian kol
 
 Sekarang, ikuti instruksi di bawah ini untuk mengatur kolaborasi:
 
-* [kirim undangan kolaborasi](https://docs.dewacloud.com/docs/#send-collaboration-invite) (sebagai akun utama)
-* [terima undangan kolaborasi](https://docs.dewacloud.com/docs/#accept-collaboration-invite) (sebagai anggota kolaborasi)
+* [kirim undangan kolaborasi](#send-collaboration-invite) (sebagai akun utama)
+* [terima undangan kolaborasi](#accept-collaboration-invite) (sebagai anggota kolaborasi)
 
 ## Kirim Undangan Kolaborasi{#send-collaboration-invite}
 
@@ -68,7 +68,7 @@ jika Anda perlu membagikan satu environment, itu dapat dilakukan dari konfiguras
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/accounts-collaboration/create-collaboration/05-collaboration-pending-acceptance.png" alt="collaboration pending acceptance" max-width="100%"/>
 
-Sekarang, Anda menunggu anggota untuk [menerima undangan](https://docs.dewacloud.com/docs/#accept-collaboration-invite). Setiap perubahan pada undangan akan ditampilkan di tab **Members**. Juga, Anda akan mendapatkan notifikasi email yang sesuai tentang keputusan pengguna.
+Sekarang, Anda menunggu anggota untuk [menerima undangan](#accept-collaboration-invite). Setiap perubahan pada undangan akan ditampilkan di tab **Members**. Juga, Anda akan mendapatkan notifikasi email yang sesuai tentang keputusan pengguna.
 
 4\. Jika diperlukan, Anda dapat memilih anggota kolaborasi untuk melakukan penyesuaian yang diperlukan:
 
@@ -88,7 +88,7 @@ Untuk kenyamanan, kolaborasi yang dihentikan (termasuk kasus anggota yang pergi 
 
 ## Terima Undangan Kolaborasi{#accept-collaboration-invite}
 
-Tunggu akun utama untuk [mengirim undangan kolaborasi](https://docs.dewacloud.com/docs/#send-collaboration-invite) bagi Anda.
+Tunggu akun utama untuk [mengirim undangan kolaborasi](#send-collaboration-invite) bagi Anda.
 
 1\. Periksa kotak masuk email Anda untuk undangan. Itu harus terlihat seperti berikut:
 

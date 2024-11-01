@@ -10,7 +10,7 @@ title: Exporting Data for Sharing
 
 Platform ini menyediakan dukungan yang diperluas untuk [berbagi data](<https://docs.dewacloud.com/docs/data-storage-container/>) antara instance di dalam akun yang sama. Panel UI khusus tersedia di dashboard untuk menyederhanakan ekspor yang diperlukan dari server (dijelaskan dalam panduan ini) dan operasi [mount pada klien](<https://docs.dewacloud.com/docs/mount-points/>). Anda hanya perlu melakukan salah satu dari opsi ini, dan platform akan otomatis menerapkan konfigurasi terkait pada instance kedua yang sesuai.
 
-Jadi, mari kita tinjau bagaimana Anda dapat [berbagi direktori](<https://docs.dewacloud.com/docs/#directory-export>) pada container Anda dan bagaimana mengelola semua [ekspor container](<https://docs.dewacloud.com/docs/#managing-exports>).
+Jadi, mari kita tinjau bagaimana Anda dapat [berbagi direktori](#directory-export) pada container Anda dan bagaimana mengelola semua [ekspor container](#managing-exports).
 
 ## Directory Export{#directory-export}
 
@@ -51,7 +51,7 @@ Itu saja! Selama operasi, platform secara otomatis mengkonfigurasi [mount point]
 
 ## Managing Exports{#managing-exports}
 
-Selain [mengekspor direktori](<https://docs.dewacloud.com/docs/#directory-export>), bagian **Exports** memungkinkan mengelola catatan yang sudah ada.
+Selain [mengekspor direktori](#directory-export), bagian **Exports** memungkinkan mengelola catatan yang sudah ada.
 
 1\. Semua direktori yang dibagikan dari container ini ke node mana pun di platform yang sama ditampilkan di sini (data yang diekspor [secara eksternal](<https://docs.dewacloud.com/docs/configure-external-nfs-server/>) tidak akan ditampilkan).
 
@@ -73,7 +73,7 @@ Informasi berikut dapat ditemukan di sini:
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/data%20sharing/exporting%20data%20for%20sharing/08-manage-exports.png" alt="manage exports" max-width="100%"/>
 
-  * dengan opsi **Export**, Anda dapat [berbagi direktori apa pun](<https://docs.dewacloud.com/docs/#directory-export>) di dalam container dengan node lain di akun Anda
+  * dengan opsi **Export**, Anda dapat [berbagi direktori apa pun](#directory-export) di dalam container dengan node lain di akun Anda
   * tombol **Unmount** menghentikan pembagian data dengan node klien yang dipilih
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/data-storage/data%20sharing/exporting%20data%20for%20sharing/09-unmount-export.png" alt="unmount export" width="50%"/>

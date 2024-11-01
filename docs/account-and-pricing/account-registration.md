@@ -5,9 +5,9 @@ title: Account Registration
 ---
 # Account Management
 
-  * [Sign Up: How to Create an Account](https://docs.dewacloud.com/docs/#sign-up)
-  * [Sign In to the Dashboard](https://docs.dewacloud.com/docs/#sign-in)
-  * [Sign out](https://docs.dewacloud.com/docs/#sign-out)
+  * [Sign Up: How to Create an Account](#sign-up)
+  * [Sign In to the Dashboard](#sign-in)
+  * [Sign out](#sign-out)
 
 :::tip
 Jika Anda perlu mereset atau mengganti password untuk akun platform Anda, silakan cek panduan terkait.
@@ -21,32 +21,23 @@ Lihat panduan Getting Started kami untuk informasi umum tentang cara membuat aku
 
 Anda juga dapat mendaftar langsung dari situs web utama.
 
-1\. Pergi ke `https://www.virtuozzo.com/paas-cloud-hosting/` dan masukkan email Anda untuk pendaftaran.
+1\. Pergi ke [https://www.dewacloud.com](https://www.dewacloud.com/) dan masukkan email Anda untuk pendaftaran.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/account-registration/00-sign-up-for-free-trial.png" alt="sign up for free trial" max-width="100%"/>
 
-2\. Pilih penyedia layanan yang diinginkan dan masukkan beberapa data akun dasar di formulir yang muncul.
+2\. Periksa inbox email Anda untuk aktivasi akun. Anda akan menerima email dari Dewacloud yang berisi tautan aktivasi '**Activate Trial Account**'.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/account-registration/01-select-service-provider.png" alt="select service provider" max-width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/account-registration/01-email-inbox.png" alt="check email inbox" max-width="100%" width="60%"/>
 
-Terima syarat penggunaan dan kebijakan privasi, lalu klik **Sign Up**.
-
-3\. Periksa kotak masuk email Anda. Tergantung pada penyedia hosting yang Anda pilih, Anda dapat menerima salah satu dari pesan berikut:
-
-  * Jika email _Welcome to PaaS_ Anda berisi kredensial yang dihasilkan secara otomatis, gunakan saja untuk masuk ke dashboard dan nikmati
-  * Atau, Anda akan diberikan URL aktivasi khusus. Klik untuk menyelesaikan pendaftaran akun Anda dengan bantuan formulir berikut:
+3\. Tentukan password yang diinginkan untuk akun Anda dan konfirmasikan di kolom yang sesuai.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/account-registration/02-set-account-password.png" alt="set account password" max-width="100%"/>
-
-Tentukan password yang diinginkan untuk akun Anda dan konfirmasikan di kolom yang sesuai.
-
-Bergantung pada pengaturan penyedia hosting Anda, formulir aktivasi ini juga dapat berisi widget [captcha](https://docs.dewacloud.com/docs/#captcha-verification) atau widget [verifikasi nomor ponsel](https://docs.dewacloud.com/docs/#mobile-number-verification):
 
 ### Captcha Verification{#captcha-verification}
 
 Widget captcha menampilkan gambar dengan serangkaian karakter acak dan kolom input untuk mengetikkan karakter tersebut.
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/account-registration/03-account-activation-captcha.png" alt="account activation captcha" max-width="100%"/>
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/account-registration/03-account-activation-captcha.png" alt="account activation captcha" max-width="100%" width="40%"/>
 
 Jika Anda tidak dapat mengidentifikasi simbol yang ditampilkan, gambar dapat dimuat ulang menggunakan ikon panah bulat di sebelah kanan.
 
@@ -60,14 +51,14 @@ Satu nomor telepon hanya dapat digunakan untuk satu pendaftaran akun.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/account-registration/04-account-activation-with-mobile-phone.png" alt="account activation with mobile phone" max-width="100%"/>
 
-Setelah Anda mengklik tombol **Send**, kode aktivasi akan dikirimkan ke nomor ponsel yang ditentukan melalui SMS atau diberikan melalui panggilan telepon otomatis (tergantung pada pengaturan penyedia hosting). Formulir akan diperluas dengan satu kolom lagi untuk memasukkan kode tersebut.
+Setelah Anda mengklik tombol **Send**, kode aktivasi akan dikirimkan ke nomor ponsel yang ditentukan melalui SMS atau diberikan melalui panggilan telepon otomatis. Formulir akan diperluas dengan satu kolom lagi untuk memasukkan kode tersebut.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/account-registration/05-account-activation-with-phone-code.png" alt="account activation with phone code" max-width="100%"/>
 
 Isi setiap kolom dengan digit terpisah dari kode yang diterima.
 
 :::note
-Jumlah percobaan untuk memasukkan kode aktivasi dibatasi dan tergantung pada pengaturan penyedia hosting Anda. Jika batas ini terlampaui, Anda perlu menggunakan nomor telepon lain untuk menyelesaikan pendaftaran.
+Jumlah percobaan untuk memasukkan kode aktivasi dibatasi. Jika batas ini terlampaui, Anda perlu menggunakan nomor telepon lain untuk menyelesaikan pendaftaran.
 :::
 
 Jika tidak ada SMS/panggilan yang diterima, Anda dapat **Edit the phone number** (jika nomor yang dimasukkan salah) atau **Contact support** (jika ada masalah lain dan Anda memerlukan bantuan).

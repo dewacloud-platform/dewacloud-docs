@@ -23,7 +23,7 @@ Mari kita tinjau cara bekerja dengan fungsionalitas impor platform secara mendet
 
   <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-export-and-import/import-environment/03-import-via-url.png" alt="import via URL" max-width="100%"/>
 
-  * _**JPS**_ \- editor built-in untuk memasukkan dan mengedit kode atau menyusun solusi Anda sendiri dari awal (lihat bagian [JPS deployment and troubleshooting](<https://docs.dewacloud.com/docs/#jps-deployment--troubleshooting>) di bawah untuk informasi lebih lanjut)
+  * _**JPS**_ \- editor built-in untuk memasukkan dan mengedit kode atau menyusun solusi Anda sendiri dari awal (lihat bagian [JPS deployment and troubleshooting](#jps-deployment-troubleshooting) di bawah untuk informasi lebih lanjut)
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-export-and-import/import-environment/04-import-via-jps.png" alt="import via JPS" max-width="100%"/>
 

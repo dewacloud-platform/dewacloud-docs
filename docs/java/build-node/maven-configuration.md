@@ -10,8 +10,8 @@ title: Maven Configuration
 
 Semua pengaturan server Maven yang dapat disesuaikan dapat diatur dan/atau diubah dengan:
 
-  * [configuration files](<https://docs.dewacloud.com/docs/#maven-configuration-files>)
-  * [environment variables](<https://docs.dewacloud.com/docs/#maven-specific-variables>)
+  * [configuration files](#maven-configuration-files)
+  * [environment variables](#maven-specific-variables)
 
 ## Maven Configuration Files{#maven-configuration-files}
 
@@ -19,12 +19,12 @@ File konfigurasi utama dari node build Maven dapat ditemukan dalam direktori ser
 
 Folder | Path  
 ---|---  
-[PROJECTS](<https://docs.dewacloud.com/docs/#projects>) | _/var/lib/jelastic/PROJECTS_  
-[conf](<https://docs.dewacloud.com/docs/#conf>) | _/opt/maven/conf_  
-[hooks](<https://docs.dewacloud.com/docs/#hooks>) | _/var/lib/jelastic/hooks_  
-[latest](<https://docs.dewacloud.com/docs/#latest>) | _/usr/java/latest_  
-[keys](<https://docs.dewacloud.com/docs/#keys>) | _/var/lib/jelastic/keys_  
-[vcs](<https://docs.dewacloud.com/docs/#vcs>) | _/var/lib/jelastic/vcs_  
+[PROJECTS](#projects) | _/var/lib/jelastic/PROJECTS_  
+[conf](#conf) | _/opt/maven/conf_  
+[hooks](#hooks) | _/var/lib/jelastic/hooks_  
+[latest](#latest) | _/usr/java/latest_  
+[keys](#keys) | _/var/lib/jelastic/keys_  
+[vcs](#vcs) | _/var/lib/jelastic/vcs_  
   
 ### PROJECTS{#projects}
 

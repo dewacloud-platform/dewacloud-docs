@@ -7,10 +7,10 @@ title: Memory Leak Processes
 
 Perhatikan secara khusus proses dalam grup ini sebagai penyebab paling mungkin dari masalah out-of-memory Anda (diurutkan berdasarkan peran server):
 
-  * [Load Balancers](https://docs.dewacloud.com/docs/#load-balancers)
-  * [Application Servers](https://docs.dewacloud.com/docs/#application-servers)
-  * [Database Servers](https://docs.dewacloud.com/docs/#database-servers)
-  * [Common Processes for Different-Type Stacks](https://docs.dewacloud.com/docs/#common-processes)
+  * [Load Balancers](#load-balancers)
+  * [Application Servers](#application-servers)
+  * [Database Servers](#database-servers)
+  * [Common Processes for Different-Type Stacks](#common-processes-for-different-type-stacks)
 
 ## Load Balancers{#load-balancers}
 

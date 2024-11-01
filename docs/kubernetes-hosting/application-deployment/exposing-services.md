@@ -9,9 +9,9 @@ Sementara komponen aplikasi Anda dapat berkomunikasi satu sama lain melalui [ser
 
 Kubernetes mendukung tiga jenis layanan untuk membangun koneksi internal dan eksternal ke aplikasi:
 
-  * [ClusterIP](<https://docs.dewacloud.com/docs/#clusterip>)
-  * [NodePort](<https://docs.dewacloud.com/docs/#nodeport>)
-  * [LoadBalancer](<https://docs.dewacloud.com/docs/#loadbalancer>)
+  * [ClusterIP](#clusterip)
+  * [NodePort](#nodeport)
+  * [LoadBalancer](#loadbalancer)
 
 ## ClusterIP{#clusterip}
 

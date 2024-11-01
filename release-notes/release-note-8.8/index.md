@@ -14,7 +14,7 @@ Dalam dokumen ini, Anda akan menemukan semua fitur baru, peningkatan, dan peruba
 
 ## Infrastruktur Berbasis AlmaLinux{#almalinux-based-infrastructure}
 
-Memperbarui komponen infrastruktur platform berdasarkan image OS dasar modern _AlmaLinux 9_ [Pelajari lebih lanjut](<#almalinux-based-infrastructure>)
+Memperbarui komponen infrastruktur platform berdasarkan image OS dasar modern _AlmaLinux 9_ [Pelajari lebih lanjut](#almalinux-based-infrastructure)
 
 :::
 
@@ -22,15 +22,15 @@ Memperbarui komponen infrastruktur platform berdasarkan image OS dasar modern _A
 
 ## Pengalih Waktu UTC/Lokal untuk Riwayat Penagihan{#utclocal-time-switch-for-billing-history}
 
-Menambahkan kemampuan untuk beralih antara UTC dan waktu lokal saat bekerja dengan tab _Riwayat Penagihan_ dan laporan CSV yang dapat diunduh [Pelajari lebih lanjut](<#utclocal-time-switch-for-billing-history>)
+Menambahkan kemampuan untuk beralih antara UTC dan waktu lokal saat bekerja dengan tab _Riwayat Penagihan_ dan laporan CSV yang dapat diunduh [Pelajari lebih lanjut](#utclocal-time-switch-for-billing-history)
 
 ## Perubahan API{#api-changes}
 
-Mencantumkan semua perubahan pada API platform publik dalam rilis saat ini [Pelajari lebih lanjut](<#api-changes>)
+Mencantumkan semua perubahan pada API platform publik dalam rilis saat ini [Pelajari lebih lanjut](#api-changes)
 
 ## Versi Tumpukan Perangkat Lunak{#software-stack-versions}
 
-Daftar terkini dari template OS yang didukung dan versi tumpukan perangkat lunak [Pelajari lebih lanjut](<#software-stack-versions>)
+Daftar terkini dari template OS yang didukung dan versi tumpukan perangkat lunak [Pelajari lebih lanjut](#software-stack-versions)
 
 :::
 
@@ -38,11 +38,11 @@ Daftar terkini dari template OS yang didukung dan versi tumpukan perangkat lunak
 
 ## Perbaikan yang Kompatibel dengan Versi Sebelumnya{#fixes-compatible-with-prior-versions}
 
-Perbaikan bug yang diimplementasikan dalam rilis saat ini dan diintegrasikan ke dalam versi platform sebelumnya melalui patch yang sesuai [Pelajari lebih lanjut](<#fixes-compatible-with-prior-versions>)
+Perbaikan bug yang diimplementasikan dalam rilis saat ini dan diintegrasikan ke dalam versi platform sebelumnya melalui patch yang sesuai [Pelajari lebih lanjut](#fixes-compatible-with-prior-versions)
 
 ## Perbaikan Bug{#bug-fixes}
 
-Daftar perbaikan yang diterapkan pada platform dimulai dari rilis saat ini [Pelajari lebih lanjut](<#bug-fixes>)
+Daftar perbaikan yang diterapkan pada platform dimulai dari rilis saat ini [Pelajari lebih lanjut](#bug-fixes)
 
 :::
 

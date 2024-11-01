@@ -8,8 +8,8 @@ title: Container Volumes
 Fungsi manajemen [Container (Docker) Volumes](https://docs.dewacloud.com/docs/container-volumes/) di platform memungkinkan pembuatan [local storage](https://docs.dewacloud.com/docs/local-filesystem-storage/) yang persisten, dirancang agar tidak terpengaruh oleh berbagai operasi selama siklus hidup container. Pembuatan penyimpanan semacam itu tepat di dalam container membantu memastikan tingkat integritas yang tinggi dan mencegah kehilangan data penting. 
 
 Menggunakan platform CLI, Anda dapat mengkonfigurasi container volumes dengan dua cara:
-* [dalam pengaturan topologi](https://docs.dewacloud.com/docs/#set-volumes-via-environment-topology)
-* [melalui metode CLI langsung](https://docs.dewacloud.com/docs/#direct-volumes-management)
+* [dalam pengaturan topologi](#set-volumes-via-environment-topology)
+* [melalui metode CLI langsung](#direct-volumes-management)
 
 ## Configure Volumes via Environment Topology{#set-volumes-via-environment-topology}
 

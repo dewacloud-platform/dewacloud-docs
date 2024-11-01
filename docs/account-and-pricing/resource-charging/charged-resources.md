@@ -8,9 +8,9 @@ title: Sumber Daya yang Dikenakan Biaya
 
 Konsumsi sumber daya untuk setiap environment dikenakan biaya kepada pemilik akun setiap jam.
 
-* [Sumber Daya yang Dikenakan Biaya Utama](https://docs.dewacloud.com/docs/#primary-chargeable-resources)
-* [Biaya Tergantung Penyedia](https://docs.dewacloud.com/docs/#provider-dependent-charges)
-* [Ekstra Opsional](https://docs.dewacloud.com/docs/#optional-extras)
+* [Sumber Daya yang Dikenakan Biaya Utama](#primary-chargeable-resources)
+* [Biaya Tergantung Penyedia](#provider-dependent-charges)
+* [Ekstra Opsional](#optional-extras)
 
 Anda dapat melacak penggunaan sumber daya (_CPU_, _RAM_, _Network_, _Disk_) secara real-time melalui [pemantauan statistik](https://docs.dewacloud.com/docs/statistics-monitoring/) bawaan.
 

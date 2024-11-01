@@ -13,12 +13,12 @@ Untuk banyak aplikasi yang paling banyak digunakan (seperti _WordPress_, _Drupal
 
 Untuk membantu Anda mengatasi masalah konten yang tidak tersinkronisasi saat membangun solusi cluster untuk aplikasi Anda, platform menyediakan add-on khusus **File Synchronization**, yang ditujukan untuk menjaga kesamaan set file yang diunggah di beberapa instance web server. Sinkronisasi ini dapat diterapkan tidak hanya dalam batas satu environment (yaitu, untuk satu node yang di-scale secara horizontal) tetapi bahkan di seluruh application server dalam dua environment yang terpisah, terlepas dari apakah mereka menjalankan stack dan/atau aplikasi yang sama atau berbeda.
 
-Ikuti panduan di bawah ini untuk menyelami [implementasi spesifik](https://docs.dewacloud.com/docs/#file-synchronization-add-on-implementation) dari solusi ini dan untuk menemukan bagaimana cara kerjanya dalam praktik dengan langkah-langkah berikut:
+Ikuti panduan di bawah ini untuk menyelami [implementasi spesifik](#file-synchronization-add-on-implementation) dari solusi ini dan untuk menemukan bagaimana cara kerjanya dalam praktik dengan langkah-langkah berikut:
 
-  * [Install Example WordPress Application](https://docs.dewacloud.com/docs/#install-application)
-  * [Test File Upload Without Synchronization](https://docs.dewacloud.com/docs/#test-file-upload-without-synchronization)
-  * [Apply File Synchronization](https://docs.dewacloud.com/docs/#apply-file-synchronization)
-  * [Check Sync Logs](https://docs.dewacloud.com/docs/#check-logs)
+  * [Install Example WordPress Application](#install-application)
+  * [Test File Upload Without Synchronization](#test-file-upload-without-synchronization)
+  * [Apply File Synchronization](#apply-file-synchronization)
+  * [Check Sync Logs](#check-logs)
 
 ## File Synchronization Add-on Implementation{#file-synchronization-add-on-implementation}
 

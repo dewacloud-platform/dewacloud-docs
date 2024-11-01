@@ -12,8 +12,8 @@ Untuk menangani Docker image Anda sendiri, registry yang sesuai harus ada. Sebag
 
 Jadi, mari mencari tahu bagaimana mendapatkannya di platform dengan beberapa langkah berikut dalam hitungan menit:
 
-  * [deploying private registry](<https://docs.dewacloud.com/docs/#deploy-private-registry>)
-  * [adding image to registry](<https://docs.dewacloud.com/docs/#add-image-to-registry>)
+  * [deploying private registry](#deploy-private-registry)
+  * [adding image to registry](#add-image-to-registry)
 
 Selanjutnya, Anda akan dapat dengan mudah mendeposisi image yang ditambahkan dari [private registry](<https://docs.dewacloud.com/docs/custom-containers-deployment/>) Anda ke platform.
 

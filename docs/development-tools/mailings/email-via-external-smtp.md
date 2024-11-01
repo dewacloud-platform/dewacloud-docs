@@ -7,8 +7,8 @@ title: Email via External SMTP
 
 **SMTP** (Simple Mail Transfer Protocol) adalah standar untuk mengirim email melalui jaringan Internet protocol (IP). Komunikasi antara pengirim dan penerima dilakukan melalui string perintah yang memancar dan mengirim data menggunakan saluran data stream yang andal, biasanya koneksi TCP. Dalam tutorial ini, kami akan menunjukkan cara mengirim email melalui SMTP menggunakan hosting PaaS PHP. Di sini kami menyajikan dua cara untuk melakukan pengaturan ini:
 
-  * [dengan menggunakan PHPMailer](<https://docs.dewacloud.com/docs/#phpmailer-for-email-sending>)
-  * [dengan mengonfigurasi kode khusus dari bentuk untuk pengiriman email](<https://docs.dewacloud.com/docs/#using-custom-form-for-email-sending>)
+  * [dengan menggunakan PHPMailer](#phpmailer-for-email-sending)
+  * [dengan mengonfigurasi kode khusus dari bentuk untuk pengiriman email](#using-custom-form-for-email-sending)
 
 ## PHPMailer untuk Pengiriman Email{#phpmailer-for-email-sending}
 

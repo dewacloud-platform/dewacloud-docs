@@ -9,9 +9,9 @@ Variabel lingkungan merupakan semacam placeholder, di mana Anda dapat menyimpan 
 
 Dalam panduan ini, kami akan menjelaskan cara-cara paling umum untuk menambahkan variabel kustom Anda untuk node apa pun dalam platform:
 
-- [melalui bagian _variables_ khusus di dashboard](<https://docs.dewacloud.com/docs/#dashboard>)
-- [menggunakan _file konfigurasi shell_](<https://docs.dewacloud.com/docs/#shell>)
-- [melalui file _variables.conf_ (khusus untuk Java)](<https://docs.dewacloud.com/docs/#java>)
+- [melalui bagian _variables_ khusus di dashboard](#customize-environment-variables-via-ui)
+- [menggunakan _file konfigurasi shell_](#set-up-environment-variables-via-shell-configs)
+- [melalui file _variables.conf_ (khusus untuk Java)](#adjust-java-environment-variables-via-configuration-manager)
 
 ## Menyesuaikan Variabel Lingkungan melalui UI{#customize-environment-variables-via-ui}
 

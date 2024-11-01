@@ -7,12 +7,12 @@ title: Galera Cluster Recovery
 
 Instruksi ini mencantumkan batasan dan masalah paling umum saat hosting **[MariaDB Galera Cluster](<https://www.virtuozzo.com/company/blog/mariadb-galera-cluster-replication/>)** di platform. Ikuti panduan ini untuk menemukan kemungkinan masalah dan solusi pemulihan untuk masalah yang sudah terjadi:
 
-  * [Galera Cluster Limitations](<https://docs.dewacloud.com/docs/#galera-cluster-limitations>)
-  * [Stop/Start/Restart Specifics](<https://docs.dewacloud.com/docs/#stopstartrestart-specifics>)
-  * [Node with Maximum Transactions](<https://docs.dewacloud.com/docs/#node-with-maximum-transactions>)
-  * [Starting Cluster after Crash](<https://docs.dewacloud.com/docs/#starting-cluster-after-crash>)
-  * [Single Node Failure](<https://docs.dewacloud.com/docs/#single-node-failure>)
-  * [Monitoring Galera Cluster](<https://docs.dewacloud.com/docs/#monitoring-galera-cluster>)
+  * [Galera Cluster Limitations](#galera-cluster-limitations)
+  * [Stop/Start/Restart Specifics](#stopstartrestart-specifics)
+  * [Node with Maximum Transactions](#node-with-maximum-transactions)
+  * [Starting Cluster after Crash](#starting-cluster-after-crash)
+  * [Single Node Failure](#single-node-failure)
+  * [Monitoring Galera Cluster](#monitoring-galera-cluster)
 
 ## Galera Cluster Limitations{#galera-cluster-limitations}
 
@@ -96,7 +96,7 @@ CT-44999 /# grep safe_to_bootstrap /var/lib/mysql/grastate.dat
 safe_to_bootstrap: 0
 ```
 
-4\. Pada [node with maximum transactions](<https://docs.dewacloud.com/docs/#node-with-maximum-transactions>), atur **safe_to_bootstrap** menjadi **1** dan mulai proses _mysql_.
+4\. Pada [node with maximum transactions](#node-with-maximum-transactions), atur **safe_to_bootstrap** menjadi **1** dan mulai proses _mysql_.
 
 ```bash
 CT-44999 /# sed -i 's/safe_to_bootstrap: 0/safe_to_bootstrap: 1/g' /var/lib/mysql/grastate.dat
@@ -123,11 +123,11 @@ Namun, jika terjadi kesalahan, periksa _**mysqld.log**_ pada node _kedua_ ini. C
 2020-11-19 16:55:20 0 [ERROR] WSREP: gcs/src/gcs_group.cpp:group_post_state_exchange():422: Reversing history: 3151891 -> 3150782, this member has applied 1109 more events than the primary component.Data loss is possible. Aborting.
 ```
 
-Jika catatan seperti itu ada, node _kedua_ Anda memiliki lebih banyak transaksi daripada yang awalnya dipilih (yaitu node pertama di mana Anda mengatur **safe_to_bootstrap** ke **1**). Kembali ke [awal dari bagian ini](<https://docs.dewacloud.com/docs/#starting-cluster-after-crash>) dan mulai ulang, menggunakan node _kedua_ di langkah keempat.
+Jika catatan seperti itu ada, node _kedua_ Anda memiliki lebih banyak transaksi daripada yang awalnya dipilih (yaitu node pertama di mana Anda mengatur **safe_to_bootstrap** ke **1**). Kembali ke [awal dari bagian ini](#starting-cluster-after-crash) dan mulai ulang, menggunakan node _kedua_ di langkah keempat.
 
 ## Single Node Failure{#single-node-failure}
 
-Penyebab paling umum dari crash node adalah ketidakmungkinan untuk memproses permintaan karena beberapa [batasan](<https://docs.dewacloud.com/docs/#galera-cluster-limitations>) yang diabaikan. Anda dapat memeriksa log _**/var/log/mysql/mysqld.log**_ untuk error semacam itu.
+Penyebab paling umum dari crash node adalah ketidakmungkinan untuk memproses permintaan karena beberapa [batasan](#galera-cluster-limitations) yang diabaikan. Anda dapat memeriksa log _**/var/log/mysql/mysqld.log**_ untuk error semacam itu.
 
 Untuk memulihkan sebuah node, Anda perlu:
 

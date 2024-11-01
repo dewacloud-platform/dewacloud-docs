@@ -17,7 +17,7 @@ Platform ini menyediakan semua versi terbaru dari bahasa pemrograman Python dan 
 Daftar terbaru dari rilis yang tersedia di platform disediakan melalui dokumen [Software Stack Versions](<https://docs.dewacloud.com/docs/software-stacks-versions/#engines>) yang diperbarui secara teratur (mingguan).
 :::
 
-Versi ini dapat dipilih selama [pembuatan environment baru](<https://docs.dewacloud.com/docs/#create-python-environment>) dan disesuaikan untuk [instance Python yang sudah ada](<https://docs.dewacloud.com/docs/#change-python-version>).
+Versi ini dapat dipilih selama [pembuatan environment baru](#create-python-environment) dan disesuaikan untuk [instance Python yang sudah ada](#change-python-version).
 
 ## Create Python Environment{#create-python-environment}
 

@@ -11,15 +11,15 @@ Dewacloud menyediakan integrasi NodeJS siap pakai yang cepat, ringan, dan dapat 
 
 Gunakan daftar isi di bawah ini untuk menemukan informasi yang diperlukan dalam panduan lebih cepat:
 
-  * [Node.js Environment Hosting](<#nodejs-environment-hosting>)
-  * [Node.js Versioning](<#nodejs-versioning>)
-  * [Node.js Application Deployment](<#nodejs-application-deployment>)
-  * [Node.js Package Managers](<#nodejs-package-managers>)
-  * [Node.js Process Managers](<#nodejs-process-managers>)
-  * [Domains Management](<#domains-management>)
-  * [Automatic Vertical Scaling](<#automatic-vertical-scaling>)
-  * [Manual Horizontal Scaling](<#manual-horizontal-scaling>)
-  * [Automatic Horizontal Scaling](<#automatic-horizontal-scaling>)
+  * [Node.js Environment Hosting](#nodejs-environment-hosting)
+  * [Node.js Versioning](#nodejs-versioning)
+  * [Node.js Application Deployment](#nodejs-application-deployment)
+  * [Node.js Package Managers](#nodejs-package-managers)
+  * [Node.js Process Managers](#nodejs-process-managers)
+  * [Domains Management](#domains-management)
+  * [Automatic Vertical Scaling](#automatic-vertical-scaling)
+  * [Manual Horizontal Scaling](#manual-horizontal-scaling)
+  * [Automatic Horizontal Scaling](#automatic-horizontal-scaling)
 
 ## Node.js Environment Hosting{#nodejs-environment-hosting}
 

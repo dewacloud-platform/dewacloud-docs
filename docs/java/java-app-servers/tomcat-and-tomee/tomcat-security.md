@@ -8,8 +8,8 @@ title: Tomcat Security
 
 Instruksi ini menunjukkan cara melindungi aplikasi yang berjalan di server **Tomcat** di platform. Kami merekomendasikan dua solusi cara membatasi akses ke aplikasi Anda:
 
-  * [request the user authentication](<https://docs.dewacloud.com/docs/#authentication>)
-  * [deny the access for specified IP addresses](<https://docs.dewacloud.com/docs/#deny-client-ip-addresses>)
+  * [request the user authentication](#authentication)
+  * [deny the access for specified IP addresses](#deny-client-ip-addresses)
 
 Anda dapat memilih salah satu dari mereka atau menggunakan kedua metode bersama-sama.
 

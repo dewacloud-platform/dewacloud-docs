@@ -8,10 +8,10 @@ title: Configuration Tools
 
 Platform ini menyediakan kemampuan untuk mengelola semua aspek utama dari siklus hidup containers secara langsung melalui [dashboard](<https://docs.dewacloud.com/docs/dashboard-guide/>). Ini mendukung sejumlah berbagai alat, yang dimaksudkan untuk membantu Anda mengonfigurasi environments Anda:
 
-  * [settings wizard](<https://docs.dewacloud.com/docs/#container-layer-settings-wizard>)
-  * [embedded file manager](<https://docs.dewacloud.com/docs/#configuration-file-manager>)
-  * [log files](<https://docs.dewacloud.com/docs/#log-files>)
-  * [SSH access ](<https://docs.dewacloud.com/docs/#ssh-access-to-container>)
+  * [settings wizard](#container-layer-settings-wizard)
+  * [embedded file manager](#configuration-file-manager)
+  * [log files](#log-files)
+  * [SSH access ](#ssh-access-to-container)
 
 ## Container Layer Settings Wizard{#container-layer-settings-wizard}
 

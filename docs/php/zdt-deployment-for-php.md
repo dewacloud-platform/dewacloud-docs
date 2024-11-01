@@ -24,9 +24,9 @@ Ketersediaan fungsionalitas ini bergantung pada pengaturan penyedia hosting Anda
 
 Di bawah ini, kita akan menjelajahi mekanisme ini lebih detail dengan menjelaskan:
 
-  * [aliran kerja penerapan ZDT](<https://docs.dewacloud.com/docs/#workflow>)
-  * [bagaimana fungsionalitas ZDT dipastikan di platform](<https://docs.dewacloud.com/docs/#implementation>)
-  * [perbandingan mode penerapan atomik dan klasik](<https://docs.dewacloud.com/docs/#comparison>)
+  * [aliran kerja penerapan ZDT](#zdt-deployment-workflow)
+  * [bagaimana fungsionalitas ZDT dipastikan di platform](#zdt-implementation-at-php-servers)
+  * [perbandingan mode penerapan atomik dan klasik](#comparison-and-summary)
 
 Jadi, mari kita mulai!
 

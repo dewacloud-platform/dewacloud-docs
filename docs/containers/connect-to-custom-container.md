@@ -14,8 +14,8 @@ Di bawah ini kita akan mendapatkan wawasan yang sangat rinci tentang cara menghu
 
 Jadi, mari kita lihat cara untuk:
 
-  * [mengatur koneksi internal container](<https://docs.dewacloud.com/docs/#internal-connection>)
-  * [mengakses container dari luar](<https://docs.dewacloud.com/docs/#external-connection>)
+  * [mengatur koneksi internal container](#internal-connection)
+  * [mengakses container dari luar](#external-connection)
 
 ## Internal Connection{#internal-connection}
 

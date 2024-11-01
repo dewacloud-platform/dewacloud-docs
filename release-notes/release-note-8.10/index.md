@@ -14,7 +14,7 @@ Dalam dokumen ini, Anda akan menemukan semua fitur baru, peningkatan, dan peruba
 
 ## Peningkatan Kinerja Riwayat Tagihan{#billing-history-performance-enhancement}
 
-Menambahkan database dengan data tagihan yang diagregasi untuk mempercepat permintaan riwayat tagihan yang paling sering [Pelajari lebih lanjut](<#billing-history-performance-enhancement>)
+Menambahkan database dengan data tagihan yang diagregasi untuk mempercepat permintaan riwayat tagihan yang paling sering [Pelajari lebih lanjut](#billing-history-performance-enhancement)
 
 :::
 
@@ -22,15 +22,15 @@ Menambahkan database dengan data tagihan yang diagregasi untuk mempercepat permi
 
 ## Pembatasan Restart Node saat Deployment Proyek{#restrict-node-restart-during-project-deploy}
 
-Mengunci tombol restart dan redeploy node di dashboard selama deployment atau pembaruan proyek [Pelajari lebih lanjut](<#restrict-node-restart-during-project-deploy>)
+Mengunci tombol restart dan redeploy node di dashboard selama deployment atau pembaruan proyek [Pelajari lebih lanjut](#restrict-node-restart-during-project-deploy)
 
 ## Perubahan API{#api-changes}
 
-Mencantumkan semua perubahan pada API platform publik dalam rilis saat ini [Pelajari lebih lanjut](<#api-changes>)
+Mencantumkan semua perubahan pada API platform publik dalam rilis saat ini [Pelajari lebih lanjut](#api-changes)
 
 ## Versi Tumpukan Perangkat Lunak{#software-stack-versions}
 
-Daftar terkini dari template OS yang didukung dan versi tumpukan perangkat lunak [Pelajari lebih lanjut](<#software-stack-versions>)
+Daftar terkini dari template OS yang didukung dan versi tumpukan perangkat lunak [Pelajari lebih lanjut](#software-stack-versions)
 
 :::
 
@@ -38,11 +38,11 @@ Daftar terkini dari template OS yang didukung dan versi tumpukan perangkat lunak
 
 ## Perbaikan yang Kompatibel dengan Versi Sebelumnya{#fixes-compatible-with-prior-versions}
 
-Perbaikan bug yang diimplementasikan dalam rilis saat ini dan diintegrasikan ke dalam versi platform sebelumnya melalui patch yang sesuai [Pelajari lebih lanjut](<#fixes-compatible-with-prior-versions>)
+Perbaikan bug yang diimplementasikan dalam rilis saat ini dan diintegrasikan ke dalam versi platform sebelumnya melalui patch yang sesuai [Pelajari lebih lanjut](#fixes-compatible-with-prior-versions)
 
 ## Perbaikan Bug{#bug-fixes}
 
-Daftar perbaikan yang diterapkan pada platform dimulai dari rilis saat ini [Pelajari lebih lanjut](<#bug-fixes>)
+Daftar perbaikan yang diterapkan pada platform dimulai dari rilis saat ini [Pelajari lebih lanjut](#bug-fixes)
 
 :::
 

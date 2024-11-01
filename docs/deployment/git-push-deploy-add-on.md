@@ -26,7 +26,7 @@ Alur kerja bergantung pada bahasa pemrograman yang digunakan dalam proyek Anda:
 
 Untuk instalasi add-on yang tepat, Anda perlu menyediakan _Personal API Token_ untuk akun Git Anda. Ini memungkinkan paket untuk mengatur webhook untuk repositori yang bersangkutan, yang akan memulai redeployment aplikasi setiap kali ada perubahan yang diberikan ke kodenya.
 
-Jadi mari kita buat satu, ikuti instruksi di bawah sesuai dengan VCS Git yang digunakan, yaitu [GitHub](https://docs.dewacloud.com/docs/#generating-access-token-on-github) atau [GitLab](https://docs.dewacloud.com/docs/#generating-access-token-on-gitlab).
+Jadi mari kita buat satu, ikuti instruksi di bawah sesuai dengan VCS Git yang digunakan, yaitu [GitHub](#generating-access-token-on-github) atau [GitLab](#generating-access-token-on-gitlab).
 
 ### Generating Access Token on GitHub{#generating-access-token-on-github}
 
@@ -42,7 +42,7 @@ Setelah dialihkan, salin dan simpan akses token yang ditampilkan di tempat lain 
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/deployment/git-push-deploy-add-on/04-github-copy-token.png" alt="GitHub Copy Token" max-width="100%"/>
 
-Setelah ini selesai, lanjutkan ke bagian **[Install Git-Push-Deploy Package](https://docs.dewacloud.com/docs/#install-git-push-deploy-package)** langsung di bawah artikel ini.
+Setelah ini selesai, lanjutkan ke bagian **[Install Git-Push-Deploy Package](#install-git-push-deploy-package)** langsung di bawah artikel ini.
 
 ### Generating Access Token on GitLab{#generating-access-token-on-gitlab}
 

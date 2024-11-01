@@ -19,31 +19,29 @@ Untuk melakukan konfigurasi yang diperlukan, tekan tombol **Config** di sebelah 
   * hanya untuk server yang dipilih - klik tombol **Save only for current instance** dari menu drop-down
   * untuk semua server - klik **Save**
 
-<img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-server-configuration/java-app-server-configuration-2.png" alt="java application server config save for current" width="80%"/>
+<img id="back" src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-server-configuration/java-app-server-configuration-2.png" alt="java application server config save for current" width="80%"/>
 
 :::warning
 Jika Anda membuat/mengganti nama file atau folder di Configuration manager, ini hanya akan diterapkan pada daftar node yang dipilih. Anda tidak bisa menyimpan perubahan ini untuk semua app server yang tersedia di environment. Jika Anda juga ingin membuat/mengganti nama file atau folder di server lainnya, Anda harus melakukannya secara manual.
 :::
 
-Di bawah ini Anda akan melihat daftar file konfigurasi yang tersedia untuk diedit di Java application servers:
-
-  * [Tomcat](<https://docs.dewacloud.com/docs/#tomcat>)
-  * [TomEE](<https://docs.dewacloud.com/docs/#tomee>)
-  * [GlassFish](<https://docs.dewacloud.com/docs/#glassfish>)
-  * [Jetty](<https://docs.dewacloud.com/docs/#jetty>)
+  * [Tomcat](#tomcat)
+  * [TomEE](#tomee)
+  * [GlassFish](#glassfish)
+  * [Jetty](#jetty)
 
 Untuk mendapatkan informasi lebih lanjut tentang pengaturan mana yang dapat diubah dalam folder config yang disediakan, gunakan deskripsi yang sesuai:
 
-  * [server](<https://docs.dewacloud.com/docs/#server>)
-  * [home](<https://docs.dewacloud.com/docs/#home>)
-  * [webapps/work](<https://docs.dewacloud.com/docs/#webapps--work>)
-  * [JAVA_HOME](<https://docs.dewacloud.com/docs/#java_home>)
-  * [lib](<https://docs.dewacloud.com/docs/#lib>)
-  * [cron](<https://docs.dewacloud.com/docs/#cron>)
-  * [keys](<https://docs.dewacloud.com/docs/#keys>)
-  * [contexts](<https://docs.dewacloud.com/docs/#contexts>)
-  * [server_lib](<https://docs.dewacloud.com/docs/#server_lib>)
-  * [apps](<https://docs.dewacloud.com/docs/#apps>)
+  * [server](#server)
+  * [home](#home)
+  * [webapps/work](#webapps--work)
+  * [JAVA_HOME](#java_home)
+  * [lib](#lib)
+  * [cron](#cron)
+  * [keys](#keys)
+  * [contexts](#contexts)
+  * [server_lib](#server_lib)
+  * [apps](#apps)
 
 ## SERVER{#server}
 
@@ -75,7 +73,7 @@ File ini hanya tersedia untuk aplikasi server Tomcat dan TomEE. Untuk mengonfigu
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-server-configuration/java-app-server-configuration-3.png" alt="java application server config 9" width="80%"/>
 
-[Kembali ke daftar](<https://docs.dewacloud.com/docs/#back>)
+[Kembali ke daftar](#back)
 
 ## HOME{#home}
 
@@ -89,7 +87,7 @@ Sebagai hasil, Anda dapat membuat konfigurasi dengan menentukan path ke file yan
 Meskipun direktori server, yang merujuk ke folder ini, dapat dinamaitempuntuk beberapa server, tidak pernah dibersihkan secara otomatis oleh sistem platform.
 :::
 
-[Kembali ke daftar](<https://docs.dewacloud.com/docs/#back>)
+[Kembali ke daftar](#back)
 
 ## WEBAPPS / WORK{#webapps--work}
 
@@ -97,7 +95,7 @@ Folder **webapps** (untuk Tomcat/TomEE) dan **work** (untuk Jetty) digunakan unt
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-server-configuration/java-app-server-configuration-5.png" alt="java application server config 1" width="80%"/>
 
-[Kembali ke daftar](<https://docs.dewacloud.com/docs/#back>)
+[Kembali ke daftar](#back)
 
 ## JAVA_HOME{#java_home}
 
@@ -105,7 +103,7 @@ Folder **JAVA_HOME** berisi file konfigurasi java dan librari. Di sini, Anda dap
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-server-configuration/java-app-server-configuration-6.png" alt="java application server config java home" width="80%"/>
 
-[Kembali ke daftar](<https://docs.dewacloud.com/docs/#back>)
+[Kembali ke daftar](#back)
 
 ## LIB{#lib}
 
@@ -113,7 +111,7 @@ Folder **lib** digunakan untuk menyimpan librari **jar** default dan mengunggah 
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-server-configuration/java-app-server-configuration-7.png" alt="java application server config lib" width="80%"/>
 
-[Kembali ke daftar](<https://docs.dewacloud.com/docs/#back>)
+[Kembali ke daftar](#back)
 
 ## CRON{#cron}
 
@@ -123,7 +121,7 @@ Informasi detail tentang konfigurasi Cronjob dapat ditemukan dalam dokumen [Sett
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-server-configuration/java-app-server-configuration-8.png" alt="java application server config 4" width="80%"/>
 
-[Kembali ke daftar](<https://docs.dewacloud.com/docs/#back>)
+[Kembali ke daftar](#back)
 
 ## KEYS{#keys}
 
@@ -135,7 +133,7 @@ Ini dapat digunakan untuk berbagai kasus dengan hanya menyatakan path ke kunci A
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-server-configuration/java-app-server-configuration-9.png" alt="java application server config java key" width="80%"/>
 
-[Kembali ke daftar](<https://docs.dewacloud.com/docs/#back>)
+[Kembali ke daftar](#back)
 
 ## CONTEXTS{#contexts}
 
@@ -143,7 +141,7 @@ Folder **contexts** berisi file konfigurasi XML untuk setiap konteks yang didepl
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-server-configuration/java-app-server-configuration-10.png" alt="java application server config context" width="80%"/>
 
-[Kembali ke daftar](<https://docs.dewacloud.com/docs/#back>)
+[Kembali ke daftar](#back)
 
 ## SERVER_LIB{#server_lib}
 
@@ -151,7 +149,7 @@ Folder **server_lib** adalah direktori konfigurasi GlassFish dengan semua librar
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-server-configuration/java-app-server-configuration-11.png" alt="java application server config serverlib" width="80%"/>
 
-[Kembali ke daftar](<https://docs.dewacloud.com/docs/#app_server>)
+[Kembali ke daftar](#back)
 
 ## APPS{#apps}
 
@@ -159,7 +157,7 @@ Folder **apps** TomEE digunakan untuk menyimpan aplikasi EE yang tidak dibungkus
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/java/java-app-server-configuration/java-app-server-configuration-12.png" alt="java application server config apps" width="80%"/>
 
-[Kembali ke daftar](<https://docs.dewacloud.com/docs/#back>)
+[Kembali ke daftar](#back)
 
 ## Tomcat{#tomcat}
 
@@ -186,13 +184,13 @@ lib |  | /opt/tomcat/lib
 cron | tomcat | /var/spool/cron  
 keys |  | /var/lib/jelastic/keys  
   
-[Kembali ke daftar](<https://docs.dewacloud.com/docs/#back>)
+[Kembali ke daftar](#back)
 
 ## TomEE{#tomee}
 
 Folder | File | Path  
 ---|---|---  
-[server](<https://docs.dewacloud.com/docs/#server>) | catalina.policy  
+[server](#server) | catalina.policy  
 server.xml  
 catalina.properties  
 tomcat-users.xml  
@@ -202,21 +200,21 @@ variables.conf
 logging.properties  
 tomee.xml  
 system.properties | /opt/tomcat/conf/  
-[home](<https://docs.dewacloud.com/docs/#home>) |  | /opt/tomcat/temp  
-[webapps](<https://docs.dewacloud.com/docs/#webapps--work>) |  | /opt/tomcat/webapps  
-[apps](<https://docs.dewacloud.com/docs/#apps>) |  | /opt/tomcat/apps  
-[JAVA_HOME](<https://docs.dewacloud.com/docs/#java_home>) |  | /usr/java/default  
-[lib](<https://docs.dewacloud.com/docs/#lib>) |  | /opt/tomcat/lib  
-[cron](<https://docs.dewacloud.com/docs/#cron>) | tomcat | /var/spool/cron  
-[keys](<https://docs.dewacloud.com/docs/#keys>) |  | /var/lib/jelastic/keys  
+[home](#home) |  | /opt/tomcat/temp  
+[webapps](#webapps--work) |  | /opt/tomcat/webapps  
+[apps](#apps) |  | /opt/tomcat/apps  
+[JAVA_HOME](#java_home) |  | /usr/java/default  
+[lib](#lib) |  | /opt/tomcat/lib  
+[cron](#cron) | tomcat | /var/spool/cron  
+[keys](#keys) |  | /var/lib/jelastic/keys  
   
-[Kembali ke daftar](<https://docs.dewacloud.com/docs/#back>)
+[Kembali ke daftar](#back)
 
 ## GlassFish{#glassfish}
 
 Folder | File | Path  
 ---|---|---  
-[server](<https://docs.dewacloud.com/docs/#server>) | default-web.xml  
+[server](#server) | default-web.xml  
 domain.xml  
 domain.xml.bak  
 domain.xml.orig  
@@ -231,19 +229,19 @@ wss-server-config-2.0.xml | /opt/glassfish3/glassfish/domains/
 domain1/config  
 **gfcluster-config** (in _server_ folder) | logging.properties | /opt/glassfish3/glassfish/domains/  
 domain1/config/gfcluster-config  
-[home](<https://docs.dewacloud.com/docs/#home>) |  | /opt/glassfish3/temp  
-[JAVA_HOME](<https://docs.dewacloud.com/docs/#java_home>) |  | /usr/java/latest  
-[server_lib](<https://docs.dewacloud.com/docs/#server_lib>) |  | /opt/glassfish3/glassfish/lib/  
-[cron](<https://docs.dewacloud.com/docs/#cron>) | glassfish | /var/spool/cron  
-[keys](<https://docs.dewacloud.com/docs/#keys>) |  | /var/lib/jelastic/keys  
+[home](#home) |  | /opt/glassfish3/temp  
+[JAVA_HOME](#java_home) |  | /usr/java/latest  
+[server_lib](#server_lib) |  | /opt/glassfish3/glassfish/lib/  
+[cron](#cron) | glassfish | /var/spool/cron  
+[keys](#keys) |  | /var/lib/jelastic/keys  
   
-[Kembali ke daftar](<https://docs.dewacloud.com/docs/#back>)
+[Kembali ke daftar](#back)
 
 ## Jetty{#jetty}
 
 Folder | File | Path  
 ---|---|---  
-[server](<https://docs.dewacloud.com/docs/#server>) | jdbcRealm.properties  
+[server](#server) | jdbcRealm.properties  
 jetty-ajp.xml  
 jetty-bio.xml  
 jetty-jaas.xml  
@@ -262,15 +260,15 @@ realm.properties
 spnego.properties  
 variables.conf  
 webdefault.xml | /opt/jetty/etc  
-[home](<https://docs.dewacloud.com/docs/#home>) |  | /opt/jetty/home  
-[contexts](<https://docs.dewacloud.com/docs/#contexts>) |  | /opt/jetty/contexts/  
-[work](<https://docs.dewacloud.com/docs/#webapps--work>) |  | /opt/jetty/work  
-[JAVA_HOME](<https://docs.dewacloud.com/docs/#java_home>) |  | /usr/java/latest  
-[lib](<https://docs.dewacloud.com/docs/#lib>) |  | /opt/jetty/lib  
-[cron](<https://docs.dewacloud.com/docs/#cron>) | jetty | /var/spool/cron  
-[keys](<https://docs.dewacloud.com/docs/#keys>) |  | /var/lib/jelastic/keys  
+[home](#home) |  | /opt/jetty/home  
+[contexts](#contexts) |  | /opt/jetty/contexts/  
+[work](#webapps--work) |  | /opt/jetty/work  
+[JAVA_HOME](#java_home) |  | /usr/java/latest  
+[lib](#lib) |  | /opt/jetty/lib  
+[cron](#cron) | jetty | /var/spool/cron  
+[keys](#keys) |  | /var/lib/jelastic/keys  
   
-[Kembali ke daftar](<https://docs.dewacloud.com/docs/#back>)
+[Kembali ke daftar](#back)
 
 ## Baca Juga {#whats-next}
 

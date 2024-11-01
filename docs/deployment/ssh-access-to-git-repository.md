@@ -13,13 +13,13 @@ Untuk mencapai keamanan lebih, Anda juga dapat mengakses repository GIT privat A
 
 Untuk mengakses repository GIT privat Anda menggunakan protokol SSH yang aman, ikuti langkah-langkah sederhana di bawah ini:
 
-1. [Buat Keychain SSH](https://docs.dewacloud.com/docs/#generate-ssh-keychain)
-2. [Tambahkan Kunci SSH Privat ke Akun Platform](https://docs.dewacloud.com/docs/#add-private-ssh-key-to-platform-account)
-3. [Tambahkan Kunci SSH Publik ke Akun Git](https://docs.dewacloud.com/docs/#add-public-ssh-key-to-git-account)
-   * [GitHub](https://docs.dewacloud.com/docs/#github)
-   * [GitLab](https://docs.dewacloud.com/docs/#gitlab)
-   * [Bitbucket](https://docs.dewacloud.com/docs/#bitbucket)
-4. [Deploy Proyek via SSH](https://docs.dewacloud.com/docs/#deploy-project-via-ssh)
+1. [Buat Keychain SSH](#generate-ssh-keychain)
+2. [Tambahkan Kunci SSH Privat ke Akun Platform](#add-private-ssh-key-to-platform-account)
+3. [Tambahkan Kunci SSH Publik ke Akun Git](#add-public-ssh-key-to-git-account)
+   * [GitHub](#github)
+   * [GitLab](#gitlab)
+   * [Bitbucket](#bitbucket)
+4. [Deploy Proyek via SSH](#deploy-project-via-ssh)
 
 ## Buat Keychain SSH{#generate-ssh-keychain}
 
@@ -63,9 +63,9 @@ Jika repository GIT Anda terletak di server privat yang jauh, cukup unggah kunci
 
 Jika Anda menggunakan layanan hosting proyek berbasis web, ikuti panduan langkah demi langkah yang sesuai di bawah ini. Sebagai contoh, kami akan memfokuskan perhatian pada tiga layanan paling populer:
 
-* [GitHub](https://docs.dewacloud.com/docs/#github)
-* [GitLab](https://docs.dewacloud.com/docs/#gitlab)
-* [Bitbucket](https://docs.dewacloud.com/docs/#bitbucket)
+* [GitHub](#github)
+* [GitLab](#gitlab)
+* [Bitbucket](#bitbucket)
 
 ### GitHub{#github}
 

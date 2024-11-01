@@ -11,7 +11,7 @@ title: JPS Overview
 
 Paket JPS didasarkan pada manifest instalasi JSON. File ini digunakan untuk menggambarkan proses pembuatan environment, deployment dan konfigurasi aplikasi, alokasi sumber daya, dan pengaturan batas skala untuk setiap server dalam sebuah environment.
 
-Teknologi ini memungkinkan untuk [mengotomatisasi skenario CI/CD yang kompleks](<https://docs.dewacloud.com/docs/#application-cicd-automation-with-cloud-scripting>) dan mendistribusikan solusi siap pakai Anda dengan mudah menggunakan [widget instalasi satu klik](<https://docs.dewacloud.com/docs/#widget-for-instant-application-deploy>).
+Teknologi ini memungkinkan untuk [mengotomatisasi skenario CI/CD yang kompleks](#application-cicd-automation-with-cloud-scripting) dan mendistribusikan solusi siap pakai Anda dengan mudah menggunakan [widget instalasi satu klik](#widget-for-instant-application-deploy).
 
 ## Otomatisasi CI/CD Aplikasi dengan Cloud Scripting{#application-cicd-automation-with-cloud-scripting}
 

@@ -11,15 +11,15 @@ Platform ini menyediakan integrasi _Apache_ application server yang dapat diskal
 
 Melalui artikel ini, Anda akan mengenal alat dan fitur utama yang tersedia di platform untuk memberikan tingkat hosting cloud Python yang diperlukan. Gunakan daftar isi di bawah ini untuk menemukan informasi yang dibutuhkan lebih cepat:
 
-  * [Python Environment Hosting](<#python-environment-hosting>)
-  * [Python Versioning](<#python-versioning>)
-  * [Python Application Deployment](<#python-application-deployment>)
-  * [Python Packages/Modules Management](<#python-packagesmodules-management>)
-  * [Domains Management](<#domains-management>)
-  * [Automatic Vertical Scaling](<#automatic-vertical-scaling>)
-  * [Manual Horizontal Scaling](<#manual-horizontal-scaling>)
-  * [Automatic Horizontal Scaling](<#automatic-horizontal-scaling>)
-  * [Database Connection to Python Application](<#database-connection-to-python-application>)
+  * [Python Environment Hosting](#python-environment-hosting)
+  * [Python Versioning](#python-versioning)
+  * [Python Application Deployment](#python-application-deployment)
+  * [Python Packages/Modules Management](#python-packagesmodules-management)
+  * [Domains Management](#domains-management)
+  * [Automatic Vertical Scaling](#automatic-vertical-scaling)
+  * [Manual Horizontal Scaling](#manual-horizontal-scaling)
+  * [Automatic Horizontal Scaling](#automatic-horizontal-scaling)
+  * [Database Connection to Python Application](#database-connection-to-python-application)
 
 ## Python Environment Hosting{#python-environment-hosting}
 

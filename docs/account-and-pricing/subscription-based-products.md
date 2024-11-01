@@ -10,7 +10,7 @@ _Ketersediaan fitur ini tergantung pada pengaturan penyedia hosting tertentu._
 Platform dapat menawarkan beberapa produk berdasarkan model langganan. Alurnya standar untuk implementasi layanan langganan modern – klien dikenakan biaya satu kali dan mendapatkan produk yang ditentukan untuk periode tertentu. Solusi ini memberikan alternatif harga tetap terhadap model [berbasis penggunaan](https://docs.dewacloud.com/docs/pricing-model/) default.  
 Mari kita lihat bagaimana cara kerjanya.
 
-## Pembelian Langganan
+## Pembelian Langganan{#purchasing-subscription}
 
 1. Semua produk yang tersedia untuk pengguna ditampilkan dalam tab **Subscription Plans** yang didedikasikan pada [Marketplace](https://www.virtuozzo.com/application-platform-docs/marketplace/).
 
@@ -39,7 +39,7 @@ Mari kita lihat bagaimana cara kerjanya.
 
 4. Faktur akan dihasilkan segera setelah menekan tombol **Subscribe & Pay**.
 
-   Setelah itu, langganan Anda akan ditambahkan ke bagian akun khusus, di mana Anda dapat [mengelola semua langganan Anda](https://docs.dewacloud.com/docs/#managing-subscriptions).
+   Setelah itu, langganan Anda akan ditambahkan ke bagian akun khusus, di mana Anda dapat [mengelola semua langganan Anda](#managing-subscriptions).
 
    <img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/subscription-based-products/04-successfully-purchaced-subscription-plan.png" alt="successfully purchased subscription plan" max-width="100%"/>
 
@@ -47,7 +47,7 @@ Mari kita lihat bagaimana cara kerjanya.
    Dalam jendela Marketplace awal, tombol **Buy** akan digantikan oleh tombol **Install**, yang memungkinkan Anda untuk segera memasang paket yang diperoleh (sama seperti solusi standar apa pun). Kemudian, setelah semua instalasi yang tersedia diterapkan, tombol akan berubah menjadi **Upgrade**.  
    :::
 
-## Mengelola Langganan
+## Mengelola Langganan{#managing-subscriptions}
 
 Seluruh **Langganan** ditambahkan ke bagian khusus di pengaturan akun. Pada awalnya, semua entri baru berada dalam status _Incomplete_, yang akan diperbarui segera setelah faktur yang sesuai terpenuhi (atau kedaluwarsa). Di sini, Anda dapat melihat semua detail langganan, membeli paket baru, memasang (menghapus) instans yang sesuai, dan melihat faktur.
 
@@ -71,7 +71,7 @@ Tabel langganan menyediakan informasi berikut:
    <img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/subscription-based-products/06-subscriptions-tools-panel.png" alt="subscriptions tools panel" max-width="100%"/>
 
    Tombol-tombol pada panel alat memungkinkan Anda untuk:
-    - **Buy** [langganan baru](https://docs.dewacloud.com/docs/#purchasing-subscription), yang akan dialihkan ke bagian Marketplace yang sesuai.
+    - **Buy** [langganan baru](#purchasing-subscription), yang akan dialihkan ke bagian Marketplace yang sesuai.
     - **Install** paket untuk langganan yang ada.
     - **Edit** langganan untuk mengubah jumlah pemasangan dan opsi _Auto Pay_.
     - **Refresh** informasi dalam daftar.

@@ -9,13 +9,13 @@ Dalam panduan ini, kami akan mencantumkan semua file konfigurasi utama di server
 
 Folder | Path | Database Types  
 ---|---|---  
-[conf](<https://docs.dewacloud.com/docs/#conf>) | /var/lib/pgsql/data | PostgreSQL  
-[etc](<https://docs.dewacloud.com/docs/#etc>) | /etc | all  
-[cron](<https://docs.dewacloud.com/docs/#cron>) | /var/spool/cron | all  
-[scripts](<https://docs.dewacloud.com/docs/#scripts>) | /var/lib/jelastic/bin | all  
-[backup](<https://docs.dewacloud.com/docs/#backup>) | /var/lib/jelastic/backup | all  
-[keys](<https://docs.dewacloud.com/docs/#keys>) | /var/lib/jelastic/keys | all  
-[conf.d](<https://docs.dewacloud.com/docs/#confd>) | /etc/httpd/conf.d | MySQL, MariaDB, Percona, PostgreSQL  
+[conf](#conf) | /var/lib/pgsql/data | PostgreSQL  
+[etc](#etc) | /etc | all  
+[cron](#cron) | /var/spool/cron | all  
+[scripts](#scripts) | /var/lib/jelastic/bin | all  
+[backup](#backup) | /var/lib/jelastic/backup | all  
+[keys](#keys) | /var/lib/jelastic/keys | all  
+[conf.d](#confd) | /etc/httpd/conf.d | MySQL, MariaDB, Percona, PostgreSQL  
   
 ## ETC {#etc}
 

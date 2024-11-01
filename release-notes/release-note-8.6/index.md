@@ -14,15 +14,15 @@ Dalam dokumen ini, Anda akan menemukan semua fitur baru, peningkatan, dan peruba
 
 ## Perubahan Izin Skrip Kolaborasi{#collaboration-scripts-permissions}
 
-Mengubah perilaku skrip kustom yang diinstal oleh anggota kolaborasi untuk dijalankan di bawah sesi akun yang menginstal solusi [Pelajari lebih lanjut](<#collaboration-scripts-permissions>)
+Mengubah perilaku skrip kustom yang diinstal oleh anggota kolaborasi untuk dijalankan di bawah sesi akun yang menginstal solusi [Pelajari lebih lanjut](#collaboration-scripts-permissions)
 
 ## Membatasi Ubuntu 16.04{#deprecating-ubuntu-1604}
 
-Gambar OS dasar dan tumpukan VPS _Ubuntu 16.04_ dihentikan [Pelajari lebih lanjut](<#deprecating-ubuntu-1604>)
+Gambar OS dasar dan tumpukan VPS _Ubuntu 16.04_ dihentikan [Pelajari lebih lanjut](#deprecating-ubuntu-1604)
 
 ## Versi Tumpukan Perangkat Lunak{#software-stack-versions}
 
-Daftar terkini dari template OS yang didukung dan versi tumpukan perangkat lunak [Pelajari lebih lanjut](<#software-stack-versions>)
+Daftar terkini dari template OS yang didukung dan versi tumpukan perangkat lunak [Pelajari lebih lanjut](#software-stack-versions)
 
 :::
 
@@ -30,11 +30,11 @@ Daftar terkini dari template OS yang didukung dan versi tumpukan perangkat lunak
 
 ## Perbaikan yang Kompatibel dengan Versi Sebelumnya{#fixes-compatible-with-prior-versions}
 
-Perbaikan bug yang diimplementasikan dalam rilis saat ini dan diintegrasikan ke dalam versi platform sebelumnya melalui patch yang sesuai [Pelajari lebih lanjut](<#fixes-compatible-with-prior-versions>)
+Perbaikan bug yang diimplementasikan dalam rilis saat ini dan diintegrasikan ke dalam versi platform sebelumnya melalui patch yang sesuai [Pelajari lebih lanjut](#fixes-compatible-with-prior-versions)
 
 ## Perbaikan Bug{#bug-fixes}
 
-Daftar perbaikan yang diterapkan pada platform dimulai dari rilis saat ini [Pelajari lebih lanjut](<#bug-fixes>)
+Daftar perbaikan yang diterapkan pada platform dimulai dari rilis saat ini [Pelajari lebih lanjut](#bug-fixes)
 
 :::
 

@@ -13,10 +13,10 @@ Langkah pertama dari hosting aplikasi apa pun adalah pembuatan [environment](<ht
 
 2\. Di dalam dialog _**topology wizard**_ yang terbuka, Anda dapat mengatur semua kustomisasi yang diperlukan. Kami merekomendasikan melakukan penyesuaian dalam urutan berikut:
 
-  * [pilih bahasa pemrograman](<https://docs.dewacloud.com/docs/#choosing-programming-language-or-specific-deployment-option>) atau solusi deployment khusus (_Docker Engine_ atau _Kubernetes Cluster_)
-  * [atur topology](<https://docs.dewacloud.com/docs/#configuring-topology>) dengan menambahkan stack perangkat lunak yang diperlukan
-  * [konfigurasikan resources dan spesifikasi nodes](<https://docs.dewacloud.com/docs/#configuring-nodes-resources-and-specifics>)
-  * tinjau estimasi, beri nama environment, dan [konfirmasi pembuatan](<https://docs.dewacloud.com/docs/#reviewing-and-confirming-environment-creation>)
+  * [pilih bahasa pemrograman](#choosing-programming-language-or-specific-deployment-option) atau solusi deployment khusus (_Docker Engine_ atau _Kubernetes Cluster_)
+  * [atur topology](#configuring-topology) dengan menambahkan stack perangkat lunak yang diperlukan
+  * [konfigurasikan resources dan spesifikasi nodes](#configuring-nodes-resources-and-specifics)
+  * tinjau estimasi, beri nama environment, dan [konfirmasi pembuatan](#reviewing-and-confirming-environment-creation)
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/setting-up-environment/02-configure-environment-via-wizard.png" alt="configure environment via wizard" max-width="100%"/>
 

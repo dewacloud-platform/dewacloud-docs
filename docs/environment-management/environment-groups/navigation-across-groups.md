@@ -11,8 +11,8 @@ Mengorganisir aplikasi ke dalam [environment groups](<https://docs.dewacloud.com
 
 Anda dapat beralih dan menavigasi antar grup environment Anda dengan elemen UI berikut:
 
-  * [via the Tags column](<https://docs.dewacloud.com/docs/#via-tags>)
-  * [via the Env Groups menu](<https://docs.dewacloud.com/docs/#via-env-groups>)
+  * [via the Tags column](#navigation-via-tags)
+  * [via the Env Groups menu](#navigation-via-env-groups-panel)
 
 ## Navigation via Tags{#navigation-via-tags}
 

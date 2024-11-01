@@ -11,9 +11,9 @@ Platform command-line interface (**CLI**) dirancang untuk menyederhanakan intera
 
 Manfaat utama di sini adalah alat otomasi canggih dan relatif sederhana yang disediakan CLI untuk pengembang. Perintah teks sederhana dapat dengan mudah dikelompokkan ke dalam skrip dan, dengan cara seperti itu, membentuk mekanisme yang kuat untuk mencapai berbagai tujuan: dari otomatisasi tugas yang paling umum dan sering, hingga memantau aplikasi dan mengelola proses DevOps yang kompleks.
 
-Jadi, mari kita mulai dengan [platform CLI installation](https://docs.dewacloud.com/docs/#cli-installation) dan ungkapkan beberapa [key points](https://docs.dewacloud.com/docs/#getting-started) penggunaannya sebelum melangkah lebih jauh.
+Jadi, mari kita mulai dengan [platform CLI installation](#cli-installation) dan ungkapkan beberapa [key points](#getting-started) penggunaannya sebelum melangkah lebih jauh.
 
-Selanjutnya, Anda dapat mendalami dengan [platform CLI tutorials](https://docs.dewacloud.com/docs/#cli-tutorials) untuk operasi tertentu.
+Selanjutnya, Anda dapat mendalami dengan [platform CLI tutorials](#cli-tutorials) untuk operasi tertentu.
 
 ## CLI Installation{#cli-installation}
 

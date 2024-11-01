@@ -19,10 +19,10 @@ Node load balancing secara otomatis ditambahkan ke dalam environment jika Anda m
 
 Sekarang ketika environment sudah siap, Anda dapat melanjutkan ke konfigurasi metode perlindungan yang diinginkan menggunakan petunjuk di bawah ini:
 
-  * [Authentication](<https://docs.dewacloud.com/docs/#authentication>) membuat akses aplikasi dilindungi dengan kata sandi
-  * Mekanisme [IP Address Deny](<https://docs.dewacloud.com/docs/#ip-address-deny>) digunakan untuk melarang akses aplikasi dari IP tertentu
+  * [Authentication](#authentication) membuat akses aplikasi dilindungi dengan kata sandi
+  * Mekanisme [IP Address Deny](#ip-address-deny) digunakan untuk melarang akses aplikasi dari IP tertentu
 
-Kami juga akan memperhatikan cara untuk [menggabungkan](<https://docs.dewacloud.com/docs/#methods-combination>) metode yang disebutkan untuk digunakan secara bersamaan. Jadi, mari kita cari tahu cara menerapkannya ke environment Anda. Ayo mulai!
+Kami juga akan memperhatikan cara untuk [menggabungkan](#methods-combination) metode yang disebutkan untuk digunakan secara bersamaan. Jadi, mari kita cari tahu cara menerapkannya ke environment Anda. Ayo mulai!
 
 ## Authentication{#authentication}
 

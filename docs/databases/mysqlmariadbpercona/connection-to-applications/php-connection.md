@@ -7,11 +7,11 @@ title: PHP Connection
 
 **MySQL**, **MariaDB**, dan **Percona** adalah database open source yang sangat populer, digunakan oleh pengembang di seluruh dunia. Ikuti instruksi di bawah ini untuk mempelajari cara menghubungkan aplikasi PHP Anda, yang di-host di dalam platform, ke salah satu server DB ini:
 
-  * [buat environment](<https://docs.dewacloud.com/docs/#environment-creation>)
-  * [koneksi ke database](<https://docs.dewacloud.com/docs/#connection-to-database>)
-  * [periksa koneksi](<https://docs.dewacloud.com/docs/#checking-connection>)
-  * [eksekusi permintaan](<https://docs.dewacloud.com/docs/#executing-simple-request>)
-  * [konfigurasi tambahan](<https://docs.dewacloud.com/docs/#useful-to-know>)
+  * [buat environment](#environment-creation)
+  * [koneksi ke database](#connection-to-database)
+  * [periksa koneksi](#checking-connection)
+  * [eksekusi permintaan](#executing-simple-request)
+  * [konfigurasi tambahan](#useful-to-know)
 
 ## Environment Creation{#environment-creation}
 

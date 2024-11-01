@@ -13,9 +13,9 @@ Dalam tutorial ini, kami akan memeriksa cara menghubungkan server Apache dan Tom
 
 Ikuti instruksi berikut untuk mengetahui tiga kasus paling populer dalam menggunakan pengaturan semacam itu.
 
-  * [Rewriting links](<https://docs.dewacloud.com/docs/#rewriting-links>)
-  * [Serving static content](<https://docs.dewacloud.com/docs/#static-content-processing>)
-  * [Load balancing](<https://docs.dewacloud.com/docs/#load-balancing>)
+  * [Rewriting links](#rewriting-links)
+  * [Serving static content](#static-content-processing)
+  * [Load balancing](#load-balancing)
 
 ## Rewriting Links{#rewriting-links}
 

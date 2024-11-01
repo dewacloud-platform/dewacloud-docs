@@ -14,7 +14,7 @@ Platform ini dapat secara otomatis membuat _**custom containers**_ berdasarkan i
 Platform ini memberikan dukungan pada software stacks yang paling populer dengan memastikan operabilitas template dan pembaruan rutin ke versi terbaru (certified containers).
 :::
 
-Dalam panduan ini, Anda akan mengetahui cara memulai dengan _custom Docker containers_ \- bagaimana membuat dan mengelola semua jenis aplikasi dan layanan yang tersedia di [Docker Hub](<https://docs.dewacloud.com/docs/#custom-containers-from-docker-hub>) atau [custom private registry](<https://docs.dewacloud.com/docs/#containers-from-customprivate-registry>).
+Dalam panduan ini, Anda akan mengetahui cara memulai dengan _custom Docker containers_ \- bagaimana membuat dan mengelola semua jenis aplikasi dan layanan yang tersedia di [Docker Hub](#custom-containers-from-docker-hub) atau [custom private registry](#containers-from-customprivate-registry).
 
 ## Custom Containers from Docker Hub{#custom-containers-from-docker-hub}
 
@@ -30,7 +30,7 @@ Beralih ke layer yang diinginkan dan lanjutkan dengan tombol **Select Image**.
 
   * _Quick Start_, yang menyediakan set template yang paling populer/rekomendasikan untuk layer saat ini (tab ini mungkin tidak ada tergantung pada pengaturan penyedia layanan hosting Anda)
   * _Search_, yang memungkinkan anda menemukan template yang diinginkan di registry pusat Docker Hub
-  * _Custom_, di mana Anda bisa menambahkan template Anda sendiri dari [custom/private registries](<https://docs.dewacloud.com/docs/#containers-from-customprivate-registry>)
+  * _Custom_, di mana Anda bisa menambahkan template Anda sendiri dari [custom/private registries](#containers-from-customprivate-registry)
   * _Favorite_, dimana Anda bisa menyimpan images untuk akses cepat (misalnya yang Anda anggap akan digunakan di masa depan)
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/container/container-deployment/custom-containers-deployment/custom-containers-deployment-3.png" alt="wizard search for image" max-width="100%"/>

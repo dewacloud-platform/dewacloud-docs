@@ -19,8 +19,8 @@ Dengan cara seperti ini, Anda mendapatkan fleksibilitas yang mengesankan untuk m
 
 Jadi, bacalah panduan lengkap tentang mengelola environment regions untuk aplikasi Anda di bawah ini dan dapatkan efisiensi maksimal dari fitur signifikan ini - cari tahu cara untuk:
 
-  * [select an environment region](<https://docs.dewacloud.com/docs/#select-environment-region>)
-  * [view details about regions](<https://docs.dewacloud.com/docs/#view-details-about-regions>)
+  * [select an environment region](#select-environment-region)
+  * [view details about regions](#view-details-about-regions)
 
 ## Select Environment Region{#select-environment-region}
 
@@ -44,7 +44,7 @@ Satu-satunya pengecualian adalah operasi [cloning](<https://docs.dewacloud.com/d
 Jumlah/nama/deskripsi/parameter dari region yang disediakan didefinisikan oleh masing-masing penyedia hosting secara individual; oleh karena itu, ini dapat bervariasi pada instalasi PaaS yang berbeda. Setelah memilih perangkat keras tertentu, domain environment (ditampilkan di sebelah kolom dengan namanya) mungkin juga berubah, tergantung pada pengaturan region tersebut.
 :::
 
-Pilih salah satu dari region yang disediakan (disarankan untuk [mengetahui detailnya](<https://docs.dewacloud.com/docs/#view-details>) terlebih dahulu) untuk menempatkan environment Anda di sana secara otomatis. Setelah pembuatan, Anda akan melihat environment baru Anda muncul di dashboard dengan ikon kecil khusus yang ditugaskan untuk region tersebut:
+Pilih salah satu dari region yang disediakan (disarankan untuk [mengetahui detailnya](#view-details-about-regions) terlebih dahulu) untuk menempatkan environment Anda di sana secara otomatis. Setelah pembuatan, Anda akan melihat environment baru Anda muncul di dashboard dengan ikon kecil khusus yang ditugaskan untuk region tersebut:
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/environment-regions/choosing-regions/04-view-environment-regions-in-dashboard.png" alt="view environment regions in dashboard" max-width="100%"/>
 

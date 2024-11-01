@@ -13,8 +13,8 @@ Instruksi di bawah ini menjelaskan langkah-langkah untuk membuat kunci SSH. Seja
 
 Ikuti langkah-langkah di salah satu bagian berikut (berdasarkan sistem operasi Anda):
 
-  * [Linux/MacOS](<https://docs.dewacloud.com/docs/#for-linuxmacos>)
-  * [Windows](<https://docs.dewacloud.com/docs/#for-windows>)
+  * [Linux/MacOS](#for-linuxmacos)
+  * [Windows](#for-windows)
 
 ## For Linux/MacOS{#for-linuxmacos}
 

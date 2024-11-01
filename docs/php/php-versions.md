@@ -14,7 +14,7 @@ Dalam batasan PHP hosting di platform, versi mesin PHP berikut didukung:
 
 Daftar terkini rilis yang tersedia di platform disediakan melalui dokumen [Software Stack Versions](<https://docs.dewacloud.com/docs/software-stacks-versions/#engines>) yang diperbarui secara teratur (mingguan).
 
-Anda dapat memilih versi yang Anda butuhkan saat pembuatan environment dan dengan mudah [beralih di antaranya](<https://docs.dewacloud.com/docs/#switch>) setelahnya melalui topology wizard. Alur kerjanya adalah sebagai berikut:
+Anda dapat memilih versi yang Anda butuhkan saat pembuatan environment dan dengan mudah beralih di antaranya setelahnya melalui topology wizard. Alur kerjanya adalah sebagai berikut:
 
 1\. Klik tombol **New Environment** di panel atas dashboard untuk membuka frame _Environment Wizard_.
 

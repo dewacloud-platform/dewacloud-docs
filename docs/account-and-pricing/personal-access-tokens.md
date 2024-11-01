@@ -19,8 +19,8 @@ Di antara keuntungan token, yang berikut dapat disorot:
 
 Platform menyediakan antarmuka visual yang sepenuhnya fungsional untuk pengelolaan token langsung di dashboard (mulai dari versi 5.5), yang menjadikannya cara yang lebih disukai untuk mengautentikasi integrasi API apa pun (terutama pada akun dengan [autentikasi dua faktor](https://docs.dewacloud.com/docs/two-factor-authentication) diaktifkan):
 
-  * [Manage Access Tokens](https://docs.dewacloud.com/docs/#manage)
-  * [Use Access Tokens](https://docs.dewacloud.com/docs/#use)
+  * [Manage Access Tokens](#managing-access-tokens)
+  * [Use Access Tokens](#using-access-tokens)
 
 ## Mengelola Access Tokens{#managing-access-tokens}
 

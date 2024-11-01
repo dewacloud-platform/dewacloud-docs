@@ -9,18 +9,18 @@ Platform ini menyediakan fitur otomatisasi cluster on-demand untuk beberapa temp
 
 Berikut ini poin-poin yang akan kita bahas:
 
-  * [supported stacks](https://docs.dewacloud.com/docs/#templates-with-supported-auto-clustering) (dengan spesifik cluster)
-  * [auto-clustering management](https://docs.dewacloud.com/docs/#auto-clustering-management)
-  * [cloud scripting usage](https://docs.dewacloud.com/docs/#setting-up-auto-clusterization-with-cloud-scripting)
+  * [supported stacks](#templates-with-supported-auto-clustering) (dengan spesifik cluster)
+  * [auto-clustering management](#auto-clustering-management)
+  * [cloud scripting usage](#setting-up-auto-clusterization-with-cloud-scripting)
 
 ## Templates with Supported Auto-Clustering{#templates-with-supported-auto-clustering}
 
 Saat ini, template berikut mendukung fitur clustering yang baru ditambahkan (dengan lebih banyak stack yang akan ditambahkan di masa mendatang):
 
-  * **application servers** \- _[Tomcat/TomEE](https://docs.dewacloud.com/docs/#tomcattomee)_ , _[GlassFish](https://docs.dewacloud.com/docs/#glassfish)_ , _[Payara](https://docs.dewacloud.com/docs/#payara)_ , _[Jenkins](https://docs.dewacloud.com/docs/#jenkins)_ , _[WildFly](https://docs.dewacloud.com/docs/#wildfly)_
-  * **SQL databases** \- _[MySQL](https://docs.dewacloud.com/docs/#mysql)_ , _[MariaDB](https://docs.dewacloud.com/docs/#mariadb)_ , _[Percona](https://docs.dewacloud.com/docs/#percona)_ , _[PostgreSQL](https://docs.dewacloud.com/docs/#postgresql)_
-  * **NoSQL database** \- _[Couchbase](https://docs.dewacloud.com/docs/#couchbase)_ , _[MongoDB](https://docs.dewacloud.com/docs/#mongodb)_ , _[Redis](https://docs.dewacloud.com/docs/#redis)_ , _[OpenSearch](https://docs.dewacloud.com/docs/#opensearch)_
-  * **storage server** \- _[Shared Storage Container](https://docs.dewacloud.com/docs/#shared-storage-container)_
+  * **application servers** \- _[Tomcat/TomEE](#tomcattomee)_ , _[GlassFish](#glassfish)_ , _[Payara](#payara)_ , _[Jenkins](#jenkins)_ , _[WildFly](#wildfly)_
+  * **SQL databases** \- _[MySQL](#mysql)_ , _[MariaDB](#mariadb)_ , _[Percona](#percona)_ , _[PostgreSQL](#postgresql)_
+  * **NoSQL database** \- _[Couchbase](#couchbase)_ , _[MongoDB](#mongodb)_ , _[Redis](#redis)_ , _[OpenSearch](#opensearch)_
+  * **storage server** \- _[Shared Storage Container](#shared-storage-container)_
 
 :::tip
 Penyedia hosting layanan tertentu Anda dapat mengonfigurasi dan menerapkan auto-clustering untuk beberapa stack tambahan yang tidak terdefinisi dalam daftar.

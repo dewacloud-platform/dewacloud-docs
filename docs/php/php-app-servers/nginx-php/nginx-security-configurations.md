@@ -9,12 +9,12 @@ Dalam tutorial ini, kami akan menunjukkan cara menyiapkan konfigurasi keamanan t
 
 Anda dapat menggunakan jenis konfigurasi keamanan berikut:
 
-  * [Authentication](<https://docs.dewacloud.com/docs/#a>)
-  * [Setting up the access criteria](<https://docs.dewacloud.com/docs/#b>)
+  * [Authentication](#a)
+  * [Setting up the access criteria](#b)
 
 ****
 
-**A. Security through authentication**
+## A. Security through authentication{#a}
 
 Untuk menyediakan ini, ikuti langkah-langkah berikut:
 
@@ -51,7 +51,7 @@ Untuk menyediakan ini, ikuti langkah-langkah berikut:
 
 ****
 
-**B. Security through setting up criteria**
+## B. Security through setting up criteria{#b}
 
 Anda dapat menyediakan keamanan untuk aplikasi Anda dengan menetapkan kriteria berbeda, misalnya, mengizinkan atau menolak akses berdasarkan alamat IP.
 

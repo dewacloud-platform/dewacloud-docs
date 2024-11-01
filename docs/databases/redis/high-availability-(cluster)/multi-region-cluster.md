@@ -37,7 +37,7 @@ Kedua topologi menyediakan ketersediaan tinggi dan kemampuan failover secara out
   * **Lingkungan** \- beri nama untuk [pengelompokan](<https://docs.dewacloud.com/docs/environment-groups/>) lingkungan cluster database Anda
   * **Buat kelompok lingkungan terpisah** – centang untuk [mengisolasi](<https://docs.dewacloud.com/docs/environment-isolation/#private-network-isolation>) kelompok lingkungan
   * **Aktifkan Alamat IP Eksternal untuk node cluster** – centang untuk menambahkan [IP publik](<https://docs.dewacloud.com/docs/public-ip/>) ke node cluster (tiga IP per wilayah), yang diperlukan jika klien Redis berada di luar platform
-  * **Topologi** – pilih antara topologi _**Kinerja Maksimum**_ atau _**Keandalan Maksimum**_ (detail dapat ditemukan di bagian [Topologi Cluster](<https://docs.dewacloud.com/docs/#database-cluster-topology>) di atas)
+  * **Topologi** – pilih antara topologi _**Kinerja Maksimum**_ atau _**Keandalan Maksimum**_ (detail dapat ditemukan di bagian [Topologi Cluster](#database-cluster-topology) di atas)
   * **Wilayah** \- pilih wilayah platform di mana lingkungan cluster akan diterapkan. Untuk topologi _**Keandalan Maksimum**_, wilayah pertama akan menjadi tuan rumah server utama dan yang lainnya - database sekunder (salinan)
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/databases/redis/high-availability-cluster/multi-region-cluster/multi-region-cluster-4.png" alt="install Redis multi-region cluster" max-width="100%"/>

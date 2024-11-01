@@ -6,10 +6,10 @@ title: FAQ Harga
 
 # FAQ Harga
 
-* [Apa yang Dikenakan Biaya?](https://docs.dewacloud.com/docs/#what-is-charged)
-* [Di Mana Sumber Daya yang Dikonsumsi Dapat Dilihat?](https://docs.dewacloud.com/docs/#consumed-resources)
-* [Berapa Biaya Sumber Daya?](https://docs.dewacloud.com/docs/#resource-cost)
-* [Bagaimana Cara Mengurangi Konsumsi?](https://docs.dewacloud.com/docs/#decrease-consumption)
+* [Apa yang Dikenakan Biaya?](#what-is-charged)
+* [Di Mana Sumber Daya yang Dikonsumsi Dapat Dilihat?](#where-the-consumed-resources-can-be-seen)
+* [Berapa Biaya Sumber Daya?](#how-much-do-resources-cost)
+* [Bagaimana Cara Mengurangi Konsumsi?](#how-to-decrease-the-consumption)
 
 ## Apa yang Dikenakan Biaya?{#what-is-charged}
 

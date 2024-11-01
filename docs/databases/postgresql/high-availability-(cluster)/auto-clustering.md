@@ -17,8 +17,8 @@ Mari kita lihat bagaimana cluster database Primary-Secondary PostgreSQL dapat di
 
 Platform menyediakan dua cara otomatis untuk mendapatkan cluster PostgreSQL:
 
-  * [Pre-Packaged Marketplace Solution](<https://docs.dewacloud.com/docs/#pre-packaged-marketplace-solution>)
-  * [Topology Wizard Auto-Clustering](<https://docs.dewacloud.com/docs/#topology-wizard-auto-clustering>)
+  * [Pre-Packaged Marketplace Solution](#pre-packaged-marketplace-solution)
+  * [Topology Wizard Auto-Clustering](#topology-wizard-auto-clustering)
 
 ### Pre-Packaged Marketplace Solution{#pre-packaged-marketplace-solution}
 
@@ -58,13 +58,13 @@ Selanjutnya, Anda dapat sepenuhnya memanfaatkan kekuatan kustomisasi wizard untu
 
 Di bawah ini, kami menyediakan beberapa informasi bermanfaat tentang manajemen cluster PostgreSQL:
 
-  * [Cluster Entry Point](<https://docs.dewacloud.com/docs/#cluster-entry-point>)
-  * [Cluster Admin Panels](<https://docs.dewacloud.com/docs/#cluster-admin-panels>)
-  * [Primary PostgreSQL Configuration](<https://docs.dewacloud.com/docs/#primary-postgresql-configuration>)
-  * [Configuring Standby](<https://docs.dewacloud.com/docs/#configuring-standby>)
-  * [Replication Check](<https://docs.dewacloud.com/docs/#replication-check>)
-  * [Automatic Failover Scenario](<https://docs.dewacloud.com/docs/#automatic-failover-scenario>)
-  * [Manual Failover Scenario](<https://docs.dewacloud.com/docs/#manual-failover-scenario>)
+  * [Cluster Entry Point](#cluster-entry-point)
+  * [Cluster Admin Panels](#cluster-admin-panels)
+  * [Primary PostgreSQL Configuration](#primary-postgresql-configuration)
+  * [Configuring Standby](#configuring-standby)
+  * [Replication Check](#replication-check)
+  * [Automatic Failover Scenario](#automatic-failover-scenario)
+  * [Manual Failover Scenario](#manual-failover-scenario)
 
 ### Cluster Entry Point{#cluster-entry-point}
 
@@ -192,7 +192,7 @@ sudo service postgresql restart
 
 ### Automatic Failover Scenario{#automatic-failover-scenario}
 
-Fitur _**automatic failover**_ untuk cluster PostgreSQL diimplementasikan dengan bantuan node _Pgpool-II_ dan tidak tersedia untuk topologi tanpa itu ([konfigurasi manual](<https://docs.dewacloud.com/docs/#manual-failover-scenario>) diperlukan). Node load balancing secara otomatis mendeteksi jika database primary down dan mempromosikan salah satu secondary yang tersedia. Setelah node yang bermasalah kembali, node tersebut akan secara otomatis ditambahkan kembali ke cluster (sebagai secondary) dengan semua data yang hilang dipulihkan menggunakan utilitas _pg_rewind_.
+Fitur _**automatic failover**_ untuk cluster PostgreSQL diimplementasikan dengan bantuan node _Pgpool-II_ dan tidak tersedia untuk topologi tanpa itu ([konfigurasi manual](#manual-failover-scenario) diperlukan). Node load balancing secara otomatis mendeteksi jika database primary down dan mempromosikan salah satu secondary yang tersedia. Setelah node yang bermasalah kembali, node tersebut akan secara otomatis ditambahkan kembali ke cluster (sebagai secondary) dengan semua data yang hilang dipulihkan menggunakan utilitas _pg_rewind_.
 
 ### Manual Failover Scenario{#manual-failover-scenario}
 
@@ -241,7 +241,7 @@ Sekarang database Anda kembali berfungsi dan siap untuk menangani permintaan bac
 
 #### Cluster Restoration{#cluster-restoration}
 
-Dengan alamat primary baru, Anda dapat dengan mudah menghindari penyesuaian string koneksi aplikasi Anda dengan mengubah alamat IP dari database primary. Untuk melakukan ini, Anda harus meletakkan [load balancer](<https://docs.dewacloud.com/docs/#automatic-failover-scenario>) di depan cluster yang akan memantau status komponennya dan mengarahkan lalu lintas ke primary saat ini. Di bawah ini, kami akan menunjukkan cara memulihkan topologi cluster asli sehingga tidak diperlukan perubahan di frontend.
+Dengan alamat primary baru, Anda dapat dengan mudah menghindari penyesuaian string koneksi aplikasi Anda dengan mengubah alamat IP dari database primary. Untuk melakukan ini, Anda harus meletakkan [load balancer](#automatic-failover-scenario) di depan cluster yang akan memantau status komponennya dan mengarahkan lalu lintas ke primary saat ini. Di bawah ini, kami akan menunjukkan cara memulihkan topologi cluster asli sehingga tidak diperlukan perubahan di frontend.
 
 Alasan lain topologi harus dipulihkan terkait dengan memastikan kemampuan scaling dari cluster. Hanya topologi asli yang dapat di-scale in/out secara horizontal.
 
@@ -295,7 +295,7 @@ Dimana:
   * _172.25.2.31_ \- alamat IP node primary saat ini.
   * _/var/lib/pgsql/data_ \- direktori data PostgreSQL.
 
-4\. Pastikan alamat IP dalam parameter _**host**_ yang dijelaskan di langkah kedua dari [Configuring Standby](<https://docs.dewacloud.com/docs/#configuring-standby>) berisi alamat IP primary sebelumnya yang benar.
+4\. Pastikan alamat IP dalam parameter _**host**_ yang dijelaskan di langkah kedua dari [Configuring Standby](#configuring-standby) berisi alamat IP primary sebelumnya yang benar.
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/databases/postgresql/high-availability-cluster/auto-clustering/auto-clustering-27.png" alt="recheck primary connection info" max-width="100%"/>
 

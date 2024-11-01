@@ -7,8 +7,8 @@ title: Dump Import/Export
 
 Anda dapat mengimpor dan mengekspor file dump ke MongoDB dengan dua cara:
 
-  * [menggunakan **klien MongoDB**](<https://docs.dewacloud.com/docs/#mongodb-client-database-master>)
-  * [menggunakan alat GUI administrasi **RockMongo**](<https://docs.dewacloud.com/docs/#rockmongo-admin-panel>)
+  * [menggunakan **klien MongoDB**](#mongodb-client-database-master)
+  * [menggunakan alat GUI administrasi **RockMongo**](#rockmongo-admin-panel)
 
 :::note
 Jika Anda ingin menggunakan klien MongoDB, Anda perlu mengaktifkan fitur IP publik di node MongoDB Anda.
