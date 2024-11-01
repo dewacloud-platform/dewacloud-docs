@@ -14,7 +14,7 @@ Dengan cara ini, Anda dapat memanfaatkan fungsionalitas penyimpanan bersama tanp
 
 Juga ingat, bahwa file lokal dapat diambil oleh aplikasi jauh lebih cepat dibandingkan ketika mereka diakses melalui jaringan. Jadi, misalnya, jika Anda memiliki dua node dengan salah satunya mendistribusikan beberapa konten statis dan lainnya - hanya mengeluarkan atas permintaan, solusi terbaik adalah dengan mengatur penyimpanan di container pertama untuk memastikan distribusi yang lebih cepat dan mencegah jaringan dari menjadi bottleneck.
 
-## Pelajari cara:[![](#)](<https://docs.dewacloud.com/docs/compound-container-storage/#learn-how-to>)
+## Pelajari cara:{#learn-how-to}
 
   * Menambahkan [mount points](<https://docs.dewacloud.com/docs/mount-points/>) untuk mengakses data dalam folder jarak jauh
   * [Ekspor data](<https://docs.dewacloud.com/docs/storage-exports/>) dari satu node ke node lainnya

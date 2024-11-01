@@ -29,7 +29,7 @@ Dengan cara ini, Anda dapat berbagi beberapa konten untuk layanan pihak ketiga y
 
 Dengan menggunakan opsi ini, Anda bahkan dapat membangun solusi berbagi antarcloud Anda sendiri dan/atau beroperasi dengan data yang sama dari instalasi PaaS yang berbeda - temukan konfigurasi server NFS yang diperlukan untuk implementasi semacam itu dalam panduan yang ditautkan.
 
-## Pelajari cara:[![](#)](<https://docs.dewacloud.com/docs/dedicated-storage/#learn-how-to>)
+## Pelajari cara:{#learn-how-to}
 
   * Mengoperasikan [Shared Storage Container](<https://docs.dewacloud.com/docs/shared-storage-container/>)
   * Menambahkan [mount points](<https://docs.dewacloud.com/docs/mount-points/>) untuk mengakses data dalam folder jarak jauh

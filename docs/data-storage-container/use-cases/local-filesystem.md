@@ -12,7 +12,7 @@ Jenis penyimpanan ini digunakan untuk menyimpan data yang perlu dipertahankan se
 
 Di antara keuntungan utama dari jenis penyimpanan sistem file lokal ini, dapat diakui sebagai kesederhanaan pengendalian data dan ketersediaannya secara penuh secara lokal (karena tidak ada masalah jaringan yang dapat mempengaruhi aksesibilitasnya). Penyimpanan semacam ini dapat digunakan, misalnya, untuk menyimpan file log, yang tidak ingin Anda hapus, atau untuk file konfigurasi load balancer Anda, agar tidak kehilangan struktur penghubung node yang ada.
 
-## Pelajari cara:[![](#)](<https://docs.dewacloud.com/docs/local-filesystem-storage/#learn-how-to>)
+## Pelajari cara:{#learn-how-to}
 
   * Menambahkan [mount points](<https://docs.dewacloud.com/docs/mount-points/>) untuk mengakses data dalam folder jarak jauh
   * [Ekspor data](<https://docs.dewacloud.com/docs/storage-exports/>) dari satu node ke node lainnya

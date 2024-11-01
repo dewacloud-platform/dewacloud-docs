@@ -15,7 +15,7 @@ Dalam kasus seperti ini, Anda tidak memerlukan container penyimpanan terpisah da
 
 Dengan cara ini, Anda menghilangkan duplikasi data, mengurangi konsumsi ruang disk, yang juga mengurangi biaya lingkungan secara keseluruhan. Selain itu, karena node Penyimpanan terpisah tidak digunakan di sini (karena semuanya disimpan dalam master container lapisan), tidak ada elemen lingkungan tambahan (dan dengan demikian dana) yang diperlukan untuk menerapkan struktur ini.
 
-## Pelajari cara:[![](#)](<https://docs.dewacloud.com/docs/primary-container-storage/#learn-how-to>)
+## Pelajari cara:{#learn-how-to}
 
   * Menambahkan [mount points](<https://docs.dewacloud.com/docs/mount-points/>) untuk mengakses data dalam folder jarak jauh
   * [Eksport data](<https://docs.dewacloud.com/docs/storage-exports/>) dari satu node ke node lainnya
