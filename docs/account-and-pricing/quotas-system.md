@@ -13,26 +13,26 @@ Izin akun yang sebenarnya dapat dilihat melalui jendela **Quotas & Pricing > Acc
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/quotas-system/01-quotas-and-pricing-account-limits.png" alt="quotas and pricing account limits" max-width="100%"/>
 
-Kuota  
----  
-Jumlah maksimum lingkungan yang dapat Anda buat  
-Jumlah maksimum node per lingkungan  
-Jumlah maksimum node per kelompok node (layer)  
-Ukuran maksimum server dalam cloudlet (128 MiB RAM dan 400 MHz CPU)  
-Ruang disk maksimum yang tersedia per node  
-Ruang disk maksimum yang tersedia per node penyimpanan  
-Bandwidth jaringan eksternal  
-Opsi untuk mengatur kluster ketersediaan tinggi  
-Alamat IPv4 publik  
-Jumlah maksimum alamat IPv4 publik per lingkungan  
-Jumlah maksimum alamat IPv4 publik per node  
-Alamat IPv6 publik  
-Jumlah maksimum alamat IPv6 publik per lingkungan  
-Jumlah maksimum alamat IPv6 publik per node  
-Periode selama Anda dapat menggunakan akun percobaan  
-Jumlah minimal uang di akun, yang memungkinkan Anda membuat lingkungan  
-SSL bawaan  
-Domain khusus  
+| **Kuota**                                                                    |
+|------------------------------------------------------------------------------|
+| Jumlah maksimum lingkungan yang dapat Anda buat                              |
+| Jumlah maksimum node per lingkungan                                          |
+| Jumlah maksimum node per kelompok node (layer)                               |
+| Ukuran maksimum server dalam cloudlet (128 MiB RAM dan 400 MHz CPU)          |
+| Ruang disk maksimum yang tersedia per node                                   |
+| Ruang disk maksimum yang tersedia per node penyimpanan                       |
+| Bandwidth jaringan eksternal                                                 |
+| Opsi untuk mengatur kluster ketersediaan tinggi                              |
+| Alamat IPv4 publik                                                           |
+| Jumlah maksimum alamat IPv4 publik per lingkungan                            |
+| Jumlah maksimum alamat IPv4 publik per node                                  |
+| Alamat IPv6 publik                                                           |
+| Jumlah maksimum alamat IPv6 publik per lingkungan                            |
+| Jumlah maksimum alamat IPv6 publik per node                                  |
+| Periode selama Anda dapat menggunakan akun percobaan                          |
+| Jumlah minimal uang di akun, yang memungkinkan Anda membuat lingkungan      |
+| SSL bawaan                                                                   |
+| Domain khusus                                                                |
   
 ## Baca Juga{#whats-next}
 
