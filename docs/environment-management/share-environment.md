@@ -17,7 +17,8 @@ Untuk berbagi environment, pilih environment tersebut dan buka tab **Settings > 
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/share-environment/01-environment-collaboration-settings.png" alt="environment collaboration settings" max-width="100%"/>
 
-:::tip Saat mengakses tab ini sebagai kolaborator, Anda hanya dapat memeriksa peran Anda sendiri untuk environment yang dibagikan saat ini. Namun, pemilik environment dapat membagikan akses dan kemungkinan manajemen melalui kebijakan _Collaboration_ (tidak dapat mengedit peran sendiri).
+:::tip
+Saat mengakses tab ini sebagai kolaborator, Anda hanya dapat memeriksa peran Anda sendiri untuk environment yang dibagikan saat ini. Namun, pemilik environment dapat membagikan akses dan kemungkinan manajemen melalui kebijakan _Collaboration_ (tidak dapat mengedit peran sendiri).
 :::
 
 1\. Tabel ini memberikan informasi rinci tentang akses ke environment saat ini. Anda dapat menemukan semua data yang diperlukan dalam empat kolom berikut:
@@ -40,7 +41,8 @@ Untuk berbagi environment, pilih environment tersebut dan buka tab **Settings > 
 
 <img src="https://assets.dewacloud.com/dewacloud-docs/environment-management/share-environment/05-environment-direct-access-dialog.png" alt="environment direct access dialog" max-width="100%"/>
 
-:::tip Saat mengundang anggota baru, alurnya mirip dengan yang dijelaskan dalam panduan _Create Collaboration_. Pengguna menerima email undangan dan dapat menerimanya atau menolaknya.
+:::tip
+Saat mengundang anggota baru, alurnya mirip dengan yang dijelaskan dalam panduan _Create Collaboration_. Pengguna menerima email undangan dan dapat menerimanya atau menolaknya.
 :::
 
 3\. Anda dapat memilih catatan yang ada dalam daftar untuk **Edit** peran __langsung__ yang ditetapkan atau **Remove** akses __langsung__ ke environment saat ini.
