@@ -59,7 +59,9 @@ Berdasarkan statistik yang diterima, Anda dapat mengubah batasan skala [vertikal
 
 Alat penting untuk analisis anggaran adalah pelacakan riwayat penagihan, yang dapat Anda temukan di bagian yang sesuai dari dashboard platform. Jika diperlukan, laporan dapat diunduh ke perangkat lokal Anda.
 
-1\. Gunakan tombol **Billing History** <img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/resource-charging/monitoring-consumed-resources/06-billing-history-search-parameters.png" alt="billing icon" max-width="100%"/> di sebelah lingkungan spesifik Anda atau arahkan ke opsi **Balance > Billing History** akun di menu atas untuk meninjau biaya sumber daya yang dikonsumsi.
+1\. Gunakan tombol **Billing History** di sebelah lingkungan spesifik Anda atau arahkan ke opsi **Balance > Billing History** akun di menu atas untuk meninjau biaya sumber daya yang dikonsumsi.
+
+<img src="https://assets.dewacloud.com/dewacloud-docs/account-&-pricing/resource-charging/monitoring-consumed-resources/06-billing-history-search-parameters.png" alt="billing icon" max-width="100%"/>
 
 2\. Di panel kiri, Anda dapat menyesuaikan parameter pencarian untuk mempersonalisasi laporan riwayat penagihan Anda:
 
