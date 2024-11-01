@@ -4,7 +4,7 @@
     <img src="https://assets.dewacloud.com/dewacloud-docs/static/2-dewacloud-vertical-logo-gradient-version-dark-bg.png" alt="Logo" width="120">
   </a>
 
-  <h2 align="center">Dewacloud Docs</h3>
+  <h2 align="center">Dewacloud Docs</h2>
 
   <p align="center">
     Dewacloud's documentation portal, built with Docusaurus.
